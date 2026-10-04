@@ -50,7 +50,7 @@ jobs:
         run: |
           test -s us/data.json || { echo "No US data, keeping the current site"; exit 1; }
           mkdir _site
-          cp -r index.html config.js app.js app.css india us analyzer funds _site/
+          cp -r index.html config.js app.js app.css assets india us analyzer funds _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

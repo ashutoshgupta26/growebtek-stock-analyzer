@@ -81,9 +81,8 @@
   }
   function copyDevice() { copy(deviceId(), 'Device ID copied'); }
 
-  var LOGO = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 3 6-8"/><path d="M15 6h3v3"/><path d="M3 21h18"/></svg>';
   function logoHtml(sub) {
-    return '<a class="gw-logo" href="' + root() + 'index.html"><span class="gw-logo-mark">' + LOGO + '</span><span style="min-width:0"><span class="gw-logo-t">Growebtek <span>AI Stock &amp; Fund Analyzer</span></span><br><span class="gw-logo-s">' + esc(sub || 'Smart market insights') + '</span></span></a>';
+    return '<a class="gw-logo" href="' + root() + 'index.html"><span class="gw-logo-mark"><img src="' + root() + 'assets/logo-mark.png" alt="Growebtek"></span><span style="min-width:0"><span class="gw-logo-t">Growebtek <span>AI Stock &amp; Fund Analyzer</span></span><br><span class="gw-logo-s">' + esc(sub || 'Smart market insights') + '</span></span></a>';
   }
   function deviceChip() {
     var id = deviceId();

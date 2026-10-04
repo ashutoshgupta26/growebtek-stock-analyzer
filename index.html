@@ -7,12 +7,14 @@
 <meta name="description" content="Growebtek AI Stock & Fund Analyzer: live Indian and US market reports, stock analysis and comparison, mutual fund analysis and comparison.">
 <meta name="theme-color" content="#6d5efc">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%235b5bf6'/><stop offset='.5' stop-color='%23ec4899'/><stop offset='1' stop-color='%23f97316'/></linearGradient></defs><rect width='32' height='32' rx='9' fill='url(%23g)'/><path d='M6 22l6-7 5 4 8-10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="app.css">
 <style>
 .hero{padding:34px 0 10px;text-align:center}
+.hero-logo{display:block;margin:0 auto 14px;height:clamp(96px,16vw,130px);width:auto;background:#fff;border-radius:20px;padding:6px 12px;box-shadow:0 10px 30px rgba(30,64,175,.12)}
 .hero h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.035em}
 .hero h1 span{background:var(--gw-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{color:var(--gw-ink-2);font-size:clamp(15px,2vw,17px);max-width:620px;margin:12px auto 0}
@@ -106,7 +108,7 @@
       '<div class="gw-bar"><div class="gw-bar-in">' + GW.logoHtml('Smart market insights') + '</div></div>' +
       '<div class="gw-wrap">' +
       (msg ? '<div class="banner" role="status">' + esc(msg) + '</div>' : '') +
-      '<section class="hero"><h1>Growebtek <span>AI Stock &amp; Fund Analyzer</span></h1>' +
+      '<section class="hero"><img class="hero-logo" src="assets/logo.png" alt="Growebtek IT Solutions"><h1>Growebtek <span>AI Stock &amp; Fund Analyzer</span></h1>' +
       '<p>Live Indian and US market reports, deep stock analysis and mutual fund insights. Clear, colourful and always up to date.</p>' +
       '<div class="feat"><span class="gw-chip pink">🇮🇳 India report</span><span class="gw-chip indigo">🇺🇸 US report</span><span class="gw-chip amber">📊 Stock analyzer</span><span class="gw-chip green">💰 Fund analyzer</span></div></section>' +
       '<div class="auth">' +
