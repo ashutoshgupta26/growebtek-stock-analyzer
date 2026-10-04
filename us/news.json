@@ -3,7 +3,7 @@
  "asOfLabel": "Oct 2, 2026, 4:00 PM ET",
  "session": "Last session report",
  "mood": "Mildly bullish",
- "summary": "The S&P 500 closed up 0.73% at 7,722.72 (range 7,700.51–7,754.67). Dow +250.40 pts (+0.49%), Nasdaq +1.19%. Consumer Discretionary leads (+1.13%), Health Care lags (−0.01%). Top gainer ARM (+5.18%), top loser ACN (−6.31%). 10-year Treasury yield 5.28% (+4 bp).",
+ "summary": "The S&P 500 closed up 0.73% at 7,722.72 (range 7,700.51–7,754.67). Dow +250.36 pts (+0.49%), Nasdaq +1.19%. Consumer Discretionary leads (+1.13%), Health Care lags (−0.01%). Top gainer ARM (+5.18%), top loser ACN (−6.31%). 10-year Treasury yield 5.28% (+4 bp).",
  "conclusion": "The S&P 500 closed up 0.73% at 7,722.72, Nasdaq +1.19%. Breadth: 78 up, 54 down among 134 tracked stocks. Watch 7,695 support and 7,750 resistance next session.",
  "bull": {
   "level": "Above 7,750",
@@ -62,7 +62,7 @@
   },
   {
    "symbol": "ACN",
-   "reason": "Down 6.31%, top loser. In news: Analysts Conflicted on These Technology Names: Lyft (LYFT),…"
+   "reason": "Down 6.31%, top loser. In news: Accenture stock falls 6 percent after earnings rally"
   },
   {
    "symbol": "APP",
@@ -74,15 +74,15 @@
   },
   {
    "symbol": "NVDA",
-   "reason": "Most traded: $31.5B (+1.34%). In news: NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August…"
+   "reason": "Most traded: $31.6B (+1.34%). In news: NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August…"
   },
   {
    "symbol": "MU",
-   "reason": "Most traded: $28.5B (−2.05%). In news: How Nvidia, Micron and a surprising jobs report drove last week's…"
+   "reason": "Most traded: $29.4B (−2.05%). In news: How Nvidia, Micron and a surprising jobs report drove last week's…"
   },
   {
    "symbol": "AMD",
-   "reason": "Most traded: $12.2B (+2.95%). In news: AMD Beat on Revenue, Profit, and Guidance — So Why Did the Stock…"
+   "reason": "Most traded: $12.6B (+2.95%). In news: AMD Beat on Revenue, Profit, and Guidance — So Why Did the Stock…"
   }
  ],
  "gainerReasons": {
@@ -91,7 +91,7 @@
   "ORCL": "In news: ORCL Stock Drops Amid Lower-Than-Expected Q1 Earnings, Unchanged Sales Outlook"
  },
  "loserReasons": {
-  "ACN": "In news: Analysts Conflicted on These Technology Names: Lyft (LYFT), Accenture (ACN) and Intuit…",
+  "ACN": "In news: Accenture stock falls 6 percent after earnings rally",
   "NKE": "In news: Nike, Inc. Stock 12‑Month Price Target Cut to $38.09, Implies 12% Upside",
   "MU": "In news: How Nvidia, Micron and a surprising jobs report drove last week's stock action"
  },
@@ -100,14 +100,14 @@
   "Technology": "In news: NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August 26…",
   "Industrials": "In news: FAA Reportedly Finds Boeing 737 Max Software Issue Poses No Safety Risk",
   "Consumer Staples": "In news: Consumer staples sector falls 3% in Q3 as oil, inflation and tech rotation weigh",
-  "Energy": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+  "Energy": "In news: OPEC+ Holds November Oil Output Steady: What It Means for Oil Prices",
   "Health Care": "In news: Here's Exactly Why I'm Not Afraid of Pfizer's 6% Dividend Yield"
  },
  "assetReasons": {
-  "Gold": "In news: Top bank revises 2026 gold price forecast as investors reassess rally",
-  "Silver": "In news: Silver Price Forecast: Strong Dollar and High Yields Put $50 in Focus",
-  "Brent": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
-  "Crude (WTI)": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+  "Gold": "In news: Gold and Silver Prices Decrease in Local Market",
+  "Silver": "In news: Gold and Silver Prices Decrease in Local Market",
+  "Brent": "In news: OPEC+ Holds November Oil Output Steady: What It Means for Oil Prices",
+  "Crude (WTI)": "In news: OPEC+ Holds November Oil Output Steady: What It Means for Oil Prices",
   "Bitcoin": "In news: Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises"
  },
  "stockNews": [
@@ -174,16 +174,10 @@
  ],
  "econNews": [
   {
-   "title": "Hassett says ‘overall economy’ is ‘really, really booming,’ despite a bleak jobs report. | CNN Politics",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeEduM0U1aGxlX25WUW16dktJM21sSVZsRHdQZDd6WHROYTVWWXRzc2VTY2RrRldOVmV5LTRiN3FjTjAxYzIta2hUalRMWWF4YTJ6bWQ4NjZmdF84cV92N2ZkcDlST01JRjQ5am5tSFF3RWxJWHVsdkdpeGJBTy1tWkpacmhBRjVLMWJBOW5HcnRwSERhU0JrWGdKVElzR3c1NTE0Y2UtaHRnb1lGTG40RFdzV0lZOC11Tl9ESWN5TDMzNW5nS0FQVVdMVQ?oc=5",
-   "src": "CNN",
-   "ts": 1791132000000
-  },
-  {
-   "title": "Week Ahead for FX, Bonds: Fed Minutes in Focus as Near-Term Rate-Hike Prospects Dim",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNd0pFZWhSVE1ibzBDZHRBWDE0MWNOQ1pMdUdNVUM5SXNnWVlLa1JWRy05c1ZzbmxIcDlDVVB6eUV4a2lfSWo3YVM4REdCNDU5U0dZRGhBTFFZRFkyRV9BVE0wUTIxcW5sM1ZERWVMWXZfb3ZlRmdBelNlQlVBajhCckZkUUh3NzhTWXRobTBsM3RHNU13WjdnZE0tNWtjVWVrbVZtUzQ3ck8zV3lXMnVMeC11Z2xzNTRPWHJTNktvRWFucHlZU3ZGb0tQRTNMa1U?oc=5",
-   "src": "WSJ",
-   "ts": 1791130426000
+   "title": "Hassett says ‘overall economy’ is ‘really, really booming,’ despite a bleak jobs report",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAxV1JubEI0SUVIRW1JVjI3b25leDNKTVVuYUF2VGhmQ1c3NVJIVTdGTDNHQnJWVklPRVppVUd5ZHZMR3NKb2d3M25yVTBER1c0SEQtY25QR1BvR1drZFZN0gFcQVVfeXFMTXRXeUE5aUlLbW1ieGtxanh2SWZwUUg4b1pxY0htWEMyVm5mb2lXbEdSN2ZXaUswcFU0dEFZbEE4VTNhVG1iajA3UVN0NHZaT3VNdUlLY0F4TG5naWc?oc=5",
+   "src": "modernghana.com",
+   "ts": 1791134273000
   },
   {
    "title": "Hassett defends Trump economy despite voter concerns on inflation",
@@ -206,7 +200,7 @@
   {
    "title": "Eric Basmajian: Cyclical payrolls signal changes in economic momentum",
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZHB6S1o4ZFh0VFFlNUs5S0EySFNSbnJ0ZGRnZE93VVQ2dDd6c0tWTHBjdHBVdXJ0a25RRVhNdEpJQzFZN2lMMDQydXVHQmFuYmZ3ZTFzZTZhN1RwMFpreXR0enM2cHI4YTFuTlcyQXdQSWpRTWhWRk8yWExjYVB0ZF9veWpFT1lXbkxLRUNGUHlYd3RJWnhNOQ?oc=5",
-   "src": "Traders Union",
+   "src": "tradersunion.com",
    "ts": 1791114318000
   },
   {
@@ -220,9 +214,21 @@
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uaVBhRS1zcmc0Y2lJT2FXT2hidUstSXFZeUI3S3pqR2lNend0ZFVMVUd5X0lhT0JiakR4U2J4bTc5N3lpblVIRGdIdC1tV01mcmh0ZQ?oc=5",
    "src": "bloomingbit",
    "ts": 1791104609000
+  },
+  {
+   "title": "Global economy squeezed by weak US job growth, eurozone inflation",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOR19xZlNPSFZoTl9WX3dpQzFsRFIzNHIzTzh2TzRYTGZ4MFFkVGpudk9RQW1tTTVBOEEtTUJGNktPTnNfd25OSUZJZzFsZVFhbTAyOXgxSDFYblQxZjJhdEFIcHBiUjNMQkR0VGprZk5MUEs1N3ZhMjdfT25MVDZnb2Y5OXJBeEJ0R2M4X0dqcHRZQ3Fzc2VpLVBhWHRNSUxkUmhKMF9EOHVpa0pRUlNXb1VB?oc=5",
+   "src": "NewsBytes",
+   "ts": 1791099964000
   }
  ],
  "earnings": [
+  {
+   "title": "Genesco stock reports stronger earnings and higher guidance",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQV8xUEJuNjdRLVh1aDg4MFFaTnVTRHd4LXZLNUdOSFQ3Si1LZWRIcEg3cjF5TUdzbjhCdUFhOHR3eTJkSWRzRXNTaTJaQko0TUNfOUN2OVNTaTdBX0t0ZDhkTjJBY00xTl9rTFgwMDJPMEtuVzEtU01kR2twelNFT0xrcGJwNkpFanpCU2hUZU4tQmdtdnYwYVhrMG5xbGVad0hGYUlEdnhQMElUT3RfVGJHZDV4Zlcxb3V6dXU4NA?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791134707000
+  },
   {
    "title": "Ulta Beauty tops consumer discretionary gainers in Q3; MGM Resorts declines",
    "url": "https://seekingalpha.com/news/4649479-ulta-beauty-tops-consumer-discretionary-gainers-in-q3-mgm-resorts-declines?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
@@ -236,48 +242,54 @@
    "ts": 1791126327000
   },
   {
-   "title": "Carnival and CarMax Pop on Strong Earnings, but Challenges Remain",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSXlUQ1VIcFFhYVh5TS1wWVUwZzJvMF9Vc1hUOHk0RFJOXzA5a21IWEhsX2RQMGthNE8ycHpxRXd4MUN3czdPYV9wSmlWTWZpU2VXZHAwMTE4UWdWWDBtZm5Kb0ZydEEwR04zR2xCOG9MNlFBc3lndjRTSHBpQ2Q0U0ZRRjVTYk5JYkphdndmc2VjZ3haTzZqOV9NNGVtd2g0bkRV?oc=5",
-   "src": "MarketBeat",
-   "ts": 1791085399000
+   "title": "Cencora stock heads into November 4 earnings after guidance raise",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOc0dxbTlaUzJTMjZ6b0xKeWJIdHg5alIzVmZTS0pNNG5YNm54by1aSGFiVWRWOXJXS3V4azQ5dTVzblRieFBGNmZseTJOM1ptN0ctNG55YjMzX0V3YWc3a3NwWE8xUHhka29xeXd2NW1XOEtmRGVPR3g3Q0dRMkJBTm5LUmlXamJ4dFdCMzJFcG9LU0ZVOVRmX0loT1NhaFQ2UmhqTjk4YzRTTmZVUFB6TGdLZVh5dnM2WFFrUmR2eWVMVUpXZ1VF?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791124486000
   },
   {
-   "title": "APP Stock Plunges 28% After-Hours On Revenue Miss And Soft Guidance — But CFO Says SEC Probe On Firm Now Closed",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPSTFURTBkOWVDcHVPZXFSVGFFaXR0MjBQLXhSR2ZUVnNOOEtVM0V2ZWN6S0htN3pCTXBfRk9hcTZZT1YxZC0zaVYzR0lFWFp2anA5cF93akEwT3FBakhZWDBXelRibmEzV3VNZTZISkd0cENHa2dDdVVtVjVraFlnaUF6NmlOQVluTlFwR05hTzY5cmEzMldRNU0tN3NFR0p1b0I1eTdEUkhVVmtaUzFlb0tONmJSNkJ2dzM1ZlFFQVZ3V1Ntenl1QVB0LW91U3ZHLTBuTEdjZzA4UHJTVld2ZldhX1dkR0ZibDNQYW5tX1NaMlh5YVhTLUJ6NG9WQWZqaXc?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791076834000
+   "title": "Talanx stock reports record half-year earnings and higher guidance.",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQN1FrVWt4RjBCQ1ZDV2hMZ0wwXzVXZ3FNVVh5UmpnM0VyeWVEUjNNYUpSbWZTcm9OLTI0Q2VKbW5YQURKVVV5ckpoZmtTc19xdVVNOXUxNnhad1BGNkpMbXlZR2Q0OXZGaGVvRG5jQjdBZmhvYVFkdWx0Sy15VzJ4Y0hDTW1PSzRjeG9ENHhDNjRMb0RkWE90bGg0OHpDYVFOd2d6dEFjN3BOTmhHM3hCOEt1NFUwZWVvTzdlbmVlSDlOdXF2anFmRA?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791112555000
   },
   {
-   "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points — So Why Is PLTR Down 26% YTD?",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNmM2SURNRGVLR0RMNmJYbUJidUVteEZBTkRuejNZX2JTMHo4SG5jVnhlbFBrd0FsUFpSTmg3ZGp6RlpzalpSNTlNVElFRGVJRVdQWjJQb2N4WndtWXpHNFZMQVNlLUJrNEpRMDd1X3kyUHk3cWtIeFBLNGpOOEF1MVc0cXBkUlZHcVhjenM2MDhmQ1NRbGk5TFVPV0xTbGNxRHQ2YlRMcnNINVhrOG9aUUZWQl9wa3BWRTItVmpMcHhVNUNoZXZuLTN4dUJ0Nm5HLWp4MTEtUFo0eFQ0RWYxa1VvVkZZR1JPdVh4XzhMdFBmNGY5MUY5a3NMVmxLSjBTWjlFOHBXb01mSkk?oc=5",
-   "src": "TradingKey",
-   "ts": 1791071083000
+   "title": "Target stock posts Q2 earnings beat and raises 2026 guidance",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYlBBRXNVdHByM0RydFVKam9sTGszS2dhbGRaQlVzQjdTdXQyYkJ1OFNpNXJmay1HMHpEa2hjUGprYnhacEpIbU1KOWRzTzRiWUMzWWktdFd6WlF3WDBEYzV0MzJ4ZDcxVTZSMzZ5ZzdETF9SUzh1SXNtVHZPRWRkNjMtOXdmQTUwZzhIT2xNQW53ODNzVTVWdmxCcncxNnR1TnhUMmJYX25paU03OUJJLWkxVjR5Q0t5aTNsRmcxSFk?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791111084000
   },
   {
-   "title": "NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August 26 Guidance Test Will Prove Sustainability",
-   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOSmppUFVTbFJ6dEtndmF2WUUxekw4NWQxMG1NU09JSFV3bVpvVEs1VnZaU1ZucDlSSHJScHA5clJwM1RUcEUta24xVW5tZHNSN0dScTItRkViakl5UTk3NlgzRlFvM0JPTU1DRG5ybVdPdjI3VDZEeVVMN1Zjc2dCTVM2Z055UHcxZTliZ3J0aVRPeGFycG15MTFRam5BazM3aVpVeGpDRXlPSjBYUXhlRENpd1BscVF1SWViM01FYW9vdXg0ZjB5OUNIU2pOSXV2VnBfS1puSzE0aEhhZlk0N2xMRDB4eDJEV2o2UmZtangyWWVNa05vbU5ld3ctUGQ2cG9UYnlDdWxlWGhUa3J5c3Rvd1pKZHp3Ym80?oc=5",
-   "src": "TradingKey",
-   "ts": 1791069749000
+   "title": "Toho Bank stock gains as profit guidance rises 21.4 percent",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObVNFUVduTVdpdVJGZmdDeGFKSmRpN3FKeFlSMGxUUVB3ZVBBVlVwclJWeHZXaHRHcFA4dDdHLVpLS3QtQVp1bkswWVE3Ny1STkgtU19NOVRjc0pIeDhTT1B5WVZwZ2lQNDhFa2MwRWx2Y0xXNnNIMzZfWllvTXpFeWpoaHlybWdYeFV4cUJ1b2gyUnV4aTdUdjRWLXNTVmh0aWNIWUFoTUY5Y2ttZTkxVjZWektXbjhmRmxSRU1Wbw?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791109277000
   },
   {
-   "title": "DDOG Stock Heads For Record Single-Day Drop Despite Q2 Earnings Beat, Raised Guidance",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnFOT1gzNG5VV0tFOGVlN1M5RFVkS0lIUWFSdWg4eTVZbFJYNlZ0RW5oc2ZrODJTa25DY3BiUGd6YzhoVTc4S0VuRnpnQ0dzUDZhMjFrNHhhdFRhc0hwWG1UMXVxNFN5RkktejJDS3R6Vlc5WkhVXzFfc0JzRkJrVWlJSTlyTmJsczZyRWpMY3l2QkJjSU1DdzVFWEE4ZkpRc004V3NhUG9udGFMMjVCOEgzYVFyaTF4MjkwM3hsM2R5MjBFeldsU2NjWGE?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791064191000
-  },
-  {
-   "title": "ORCL Stock Drops Amid Lower-Than-Expected Q1 Earnings, Unchanged Sales Outlook",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTElUUE5qX0JmNkR2aTBEM012bGNpME5CQ0xFTEYzMEFVdWhwdENISFBUQjEyOWxta3luaVpMRFZIVTJVd1c3WEo5Q21SZXA5cVF3UG9UUkJJcHhPRVVDTmRjdkpqSFJhbmhaZ01JdVF3dWpSOF8zT2Z1RUhwTUItZDNNQWIzWEFpRWpSSEVCT0Z6cnZsVUN0MjVMYUd3a0tCTDVPWkhra1ByYXVUMUdHRDk5a1loSW14cWVaWHhma2Q5dXMyR0QycDVqcmlrSEJzUE9YbDM0SzY?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791063711000
+   "title": "RWE stock gains 1.20 percent after higher 2026 EPS guidance",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQjlvR21wODNtTjRmVzEzRV81X1FWWkFyaGRxeTBVQjFzblBEdm1oOGNtbV9FUDJsMEJ4dEQ2MDVvMm56VmpndW1FaWVsY3pvazNCT3ZPbFR2N1ZxWkowdGUtU2RKaktENlV6MWNVbG5hNjBRTzdkV0pmdVBrTnJHb1V6QnZyOEhhaEI2R3pNZlFuX05HV1dMVDdQU2lOa0REalR3RWtoeHhrZk95OHk5VElycEZtcl9OTER3b181dw?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791106910000
   }
  ],
  "analyst": [
   {
-   "title": "WMT Shares Slip After-Hours On Weak Guidance, So Why Did This Analyst Raise Its Price Target?",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVDU2UVlwejlOT3FHZVNDajdUbFRNY3UteklXR2k4Z09sV3FROXo4RF9lS0FOcXVoVkZoNl83b2hicHMwT05CcUZYYmVrajhqYlR1VHhpZUJ2NEg1SklNUXlXcnpCcVRHbTVXUHczenlIeVk1VGhzTmJIcmxHOW16VlZUVnJHaFZBeVZoTnZvYUhiRnNIVHJ0aGt6LVczdVFnTVU4QXRla1FYN3AtcGV0V1hCZUQxbE03ZURmQy13VkMwVERJU19JNTdMdU40elp5Zmc?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791086395000
+   "title": "CVEO stock gets a USD 42.00 price target after a Q2 revenue beat",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVldTZEMzSy1xRzl4b3hoY1dxOEV2Skl1V3ZoYTRpclpkdGxIOWdnM0g5eFhXVTdhZXhZc3NwSEVqdjYyY1k4UDliWjlpUDczdzZtNjJyUmFja1BPRk1nQVBDWkRTQWtWSmltck1xeWp2eEhncGFVRi11Nnk0eFRzMVZfWEV2Qm01cmpLZUUwX21CTjJpc2dhYTFHZWxmLVBwSUNoRHBNdDkxaE83aUhnVEFLSFd0YklzSU9icHJnTXludmRjYXc?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791125979000
+  },
+  {
+   "title": "MBAI Forecast — Price Target — Prediction for 2027",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pQm9WdVJyWTJSWHFISHpoSlpWbEhnVTJQM2ZoNjRrbkxWcG0zSVJvMGp2RGd6T0Q2WDZrejJuYmJkc1JQVXNILW1VLVpjbTlrQUlzYV85ZUlScm1XeExNcEMtb3h0b1ZacTJ1ZDlfQUpCUWdqV01FN0t3?oc=5",
+   "src": "TradingView",
+   "ts": 1791114523000
+  },
+  {
+   "title": "Commerzbank's Capital Returns Hold Firm as UniCredit's Boardroom Ambitions and Analyst Downgrades We",
+   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQNTlqTEFsalcxOWwyRzBCZ3ExM0lGY3ZmLV9tWnFtRFdHMmp2dVBJOEVQRG1zNU5sREpkUDZEVEd1NkJIdDQxNkhEVXR0Qjc0LUt4SzlMQm5yV2JtQ3ZTWHVNc21xbllUTk5fTVFkM211MzZkbnZPZDRkSmwxZHlkUzMyUWJ5Rk5MZ0RpS0RrSmw1bTcwLVBzYUotTllJX2xyY0h5TXBkV2xwdEZpbUtwMl9qel9ZQ0J2Sy1rbk91TUtDYVdzaFdpZXhrejhpWHZBWm1rWjdTTjZQR3dFaHJBYVFzTHpTMWZKRXZQSGlPNjRZdlN1clFEZFNOTS1vdw?oc=5",
+   "src": "AD HOC NEWS",
+   "ts": 1791114074000
   },
   {
    "title": "WDAY Stock Downgraded Despite Q2 Beat – Analysts Flag Risk Of Another ‘Guide Down’",
@@ -308,18 +320,6 @@
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNMUlsNURjOHVKcVV3VjdNbThCSnRzcGN1NXU1aVlCUDQ5b0gzTlZOVnZybktTQ2dJOVc2OTkwRkliaEVGeG9wT0U0VXJWLVp1ZmJZQV9aT3Z6dzVwR2pBWk9zLVJfcTBfT19tUEFiVHo2c0xBVS1CQThLanl0aDdVNGhHekZVX1FVT3RjcXJyUVN0clE1YVY1N3hZVTJydEtzVktmX01ZcFk4Z25RQW9GSmpDVVJFYjk5WGZLY05lQ24ya2wzdlZ5c3lqRVRDUVdRdVYyQlJ1ZmhMdUk?oc=5",
    "src": "TradingView",
    "ts": 1791066005000
-  },
-  {
-   "title": "CELH Stock Clocks Second Consecutive Week Of Losses Amid UK Ban Concerns, Analyst Price Target Cuts",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOejdWblVleUYtX1VJSTJNUXRNeXJ1YmdielBqdzhVanVXd3ROU01qV2RuLUJUVlFHX2hJYmZyQk44UFpjZy1Qc3NOWVVKNXlDSnRjOGFwVV84YmVmZlFuZ01lc243QXktZFlMdVg4VkVPUEQ0ajZTVk0zUWpqZ3BrbGktWkw5TWRYUVhCR1phTU9BajNHcnA5QVVGaTJRYVhkZXhxU1JQd21ucDhpSXFNVU5qMXJLRzVvcmdrZ2doUE5KaHFQTWNsWnlIRzFyQnhMY1ZTZ2lZUF9mc0R5TS1ZdUlNejlKc1RqTmZGaWdRYUlUYUJZ?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791059474000
-  },
-  {
-   "title": "MU Stock Rallies Premarket After Blowout Q3 Report: JPMorgan Nearly Triples Price Target On AI Demand Boom",
-   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOczNTNEVXZUdTZzZuNS1UNkk3TmNSVGVNN2NMdnhacEtWYUtSUDhQNWtHalI2NVpvMWY3RnNiNzJOdWUtb2dTQXRRNThEUG5yNTM4ZWRBX0pUNmN2YzRHVWxVSUJqT25yemF5Q0RNMnItMzlkMGNvREJTeDVfUXp3UzluRWVVcVFWYmZUaEU2aHdBSjY5R3Q2MGE3TGl2QjdKTWZFUlBzdllpTHcxZlhRZlhYRDF2bjdacHpaNTlFQ2dUS2xsN1JoWFJyTlVfUnRmUnZjRVlGQlhsd1pDNVI3bEFlTDc5ZjA4cUxJLVlyQUtaX2tGaHg4SWppcjI2d1E?oc=5",
-   "src": "Stocktwits",
-   "ts": 1791054931000
   }
  ],
  "ipoNews": [
@@ -362,6 +362,18 @@
  ],
  "commodNews": [
   {
+   "title": "OPEC+ Holds November Oil Output Steady: What It Means for Oil Prices",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQakdZWmlnVkJSd0lyV2x1bGlVUVhMUHlQT3JlcE9FbHJpbXg2d3htODJuLUlaMTV0VzJVaFRzT2pRc2FGOE9ZVDJFa1hDZmVZVmFBdU8ya2NjYlNEMzF3QzFmRjB1Z1RpcThabzJnXzZYOW56a1pRdUlxekFSZzE4NFpYLU0wc3QzVWRzWEZMX2w5SEl4LU9IVm1jOFFlVlVJWWJjOVBtdHJmUQ?oc=5",
+   "src": "BBN Times",
+   "ts": 1791134313000
+  },
+  {
+   "title": "Gold and Silver Prices Decrease in Local Market",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRnJTeXNVUnNmSlRkeWRzNk9DejlzNVZuRWxwSExUSFJBdXo1eGx1Q1k0c2prZTZXSTZtZGVtNDhOaGdRU2QwekduRGxJTkhKVExKX0NaTHpLQTRZWENpT1VEblUtdlh6VzJEU0RLOVd1VFZtV1dsSUM3aUFCcEVRUFNtOFFZbEUxMUJZcDcxcUl3THFDckZBZlpqbjNPQ0NWSlFIaDRHcFphM19IOENUUm52dkY?oc=5",
+   "src": "Ratopati",
+   "ts": 1791133425000
+  },
+  {
    "title": "Top bank revises 2026 gold price forecast as investors reassess rally",
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2RUdOYXhaMm5BUzkxVngwRG1uNGNNb0staGJQWlFMejhfWXVSRUYwT2g3dUU0MzVsWUZIWTRlREM5cm16NjFxNkJzclo0aWU1cWFGOEZaZ0QtOFJjOW9ER3BFR0ZWN1hHWFE?oc=5",
    "src": "thestreet.com",
@@ -374,32 +386,20 @@
    "ts": 1791130281000
   },
   {
+   "title": "Domestic gasoline, diesel prices to stay unchanged",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAyakg2NUVyOXJSY0pXS2x0NHVmNWViRHVKZmFUaUpmOXk2VFpKc1RZVXVKRjZVSmpudmpEdDgyaUYzQ0FiWkxFVU00TzcyNDdGcE5Tb21xU1pNbjhHVFE5ZnpoazZkUVBfcF9pNm4yNnhIbVlGN3c?oc=5",
+   "src": "Taipei Times",
+   "ts": 1791129600000
+  },
+  {
    "title": "Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY3h6Q0VDeV9ZdHpNR3JoM1I3V0t4M3BpODZVZ1JYNVFvR010ckZkQVYxNUQtRWNDUjZpZFRkd082SXd0NnlqSUhndzVuQXB1S2x2U0N0WHp0NDdFb1pQbzZGb25lSm90c0Rya1pETXh1Y01tNmVLcnlndkw1Z0l2dTNVS1V6Wk9IaXREMzJhR1VRSV8wN2hvbmVISUV0SHhXYllmNlFGVnY3YlBoa2c?oc=5",
    "src": "CryptoRank",
    "ts": 1791126970000
-  },
-  {
-   "title": "Gold shopping picks up in China as gold prices pull back",
-   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yRXpEeEZTdHA3OHNIUEdFQjRTd00zUDJIaDljYnYwR1VXMElYemE0YUpST3llQThrWkRZTnhqakhieXB5TnVNbFp2Zy16a1lxdV9qR3lCUG1Gc2NGT1NuOdIBXEFVX3lxTE11ZVNaNXFYZXM3QnZzMEdzUTVkYTMxbU1TVEU4cG9jZ0ppaWprRHJ6S2FidEtGTFh5dzdFRXNjU1hDY28zX083dzR5aGRWLVdjUmM3MGxUT29zQm0z?oc=5",
-   "src": "Modern Ghana",
-   "ts": 1791124200000
-  },
-  {
-   "title": "Bitcoin Price Prediction: Can BTC Reach $92,000 Or $97,000 This Week?",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanRGWElUd1V0Q2NCVUJfM01TUlpJRUVWb3lPUDlFMXI3YjN3RjFVZkRTVWhUVHlVb1pmYmZMbnRDNFdrLXIwUkp5MEhUeGluTlkwYzFld3d5M1NwVkpnbUpxVWNuWDJXWmNZOG1tTUk4N0JKNlh3dm9JRmZ2QjQtSnZCZWVKaWNsNXZlcnNsWTV1YUZMbjF2bGJlclBYbHlidldJ?oc=5",
-   "src": "CryptoRank",
-   "ts": 1791123477000
-  },
-  {
-   "title": "Diesel prices could fall below $2 a litre in coming months: expert",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVRvWUlDUDNMcnRKeFpxWktFejNwYWZER1V0azAyV3dyUHZoSnU0SlZKcC1XaVVGcXlWazZBYkNOVGdlSVVGek1tbXRCZzhiSWNNMmVyLVJHbFdfbkM4M3NEZXdhckVRbF9zZUpnamZuUXQ0LUxJM0xSN1M2bUkzVXVqLWRIdUNBX05SU3pMUFZWVzZxVXdaS25vOHpxc1hWOHItNDJB?oc=5",
-   "src": "CTV News",
-   "ts": 1791121521000
   }
  ],
  "nextSession": "Mon Oct 5, 2026",
  "generated": "Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; summary, mood and levels computed from prices.",
- "updated": "2026-10-04T17:08:33.878Z",
+ "updated": "2026-10-04T17:29:52.240Z",
  "errors": []
 }
