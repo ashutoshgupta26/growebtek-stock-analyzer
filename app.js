@@ -1,0 +1,130 @@
+/* Growebtek AI Stock & Fund Analyzer — shared app logic (device ID, session, backend calls, app bar). */
+(function () {
+  'use strict';
+  var CFG = window.GW_CONFIG || {};
+  var KEY_DEV = 'gw_device', KEY_SES = 'gw_session', KEY_CHK = 'gw_checked';
+  var ALPHA = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+
+  // ---------- device id: 16 characters, made once per browser ----------
+  function readCookie(n) { var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : null; }
+  function writeCookie(n, v) { document.cookie = n + '=' + encodeURIComponent(v) + ';path=/;max-age=' + 60 * 60 * 24 * 3650 + ';SameSite=Lax'; }
+  function valid(id) { return /^[A-Z0-9]{16}$/.test(id || ''); }
+  function deviceId() {
+    var id = null;
+    try { id = localStorage.getItem(KEY_DEV); } catch (e) {}
+    if (!valid(id)) id = readCookie(KEY_DEV);
+    if (!valid(id)) {
+      var b = new Uint8Array(16); crypto.getRandomValues(b); id = '';
+      for (var i = 0; i < 16; i++) id += ALPHA[b[i] % ALPHA.length];
+    }
+    try { localStorage.setItem(KEY_DEV, id); } catch (e) {}
+    writeCookie(KEY_DEV, id);
+    return id;
+  }
+  function prettyId(id) { return id.replace(/(.{4})(?=.)/g, '$1-'); }
+
+  // ---------- session ----------
+  function session() {
+    try {
+      var s = JSON.parse(localStorage.getItem(KEY_SES) || 'null');
+      if (s && s.token && s.exp > Date.now()) return s;
+    } catch (e) {}
+    return null;
+  }
+  function setSession(s) { localStorage.setItem(KEY_SES, JSON.stringify(s)); localStorage.setItem(KEY_CHK, String(Date.now())); }
+  function clearSession() { localStorage.removeItem(KEY_SES); localStorage.removeItem(KEY_CHK); }
+
+  // ---------- backend ----------
+  function api(action, data, opts) {
+    opts = opts || {};
+    if (!CFG.API_URL) return Promise.reject(new Error('The app is not connected to its backend yet.'));
+    var s = session();
+    var body = Object.assign({ action: action, deviceId: deviceId(), token: s ? s.token : '' }, data || {});
+    var ctl = 'AbortController' in window ? new AbortController() : null;
+    var to = ctl ? setTimeout(function () { ctl.abort(); }, opts.timeout || 45000) : null;
+    // text/plain keeps this a "simple" request (no CORS preflight), which Apps Script needs.
+    return fetch(CFG.API_URL, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctl ? ctl.signal : undefined, redirect: 'follow' })
+      .then(function (r) { if (!r.ok) throw new Error('Server is busy (' + r.status + '). Please try again.'); return r.json(); })
+      .then(function (j) {
+        if (to) clearTimeout(to);
+        if (j && j.error === 'auth' && !opts.noRedirect) { clearSession(); goHome('expired'); throw new Error(j.message || 'Session expired'); }
+        if (j && j.error) throw new Error(j.message || j.error);
+        return j;
+      }, function (e) {
+        if (to) clearTimeout(to);
+        if (e && e.name === 'AbortError') throw new Error('This is taking too long. Please try again.');
+        if (e instanceof TypeError) throw new Error('Could not reach the server. Check your internet and try again.');
+        throw e;
+      });
+  }
+
+  // ---------- paths ----------
+  function root() { return CFG.ROOT || (document.querySelector('script[src$="app.js"]').getAttribute('src').replace(/app\.js$/, '') || './'); }
+  function goHome(reason) { location.href = root() + 'index.html' + (reason ? '#' + reason : ''); }
+
+  // ---------- UI helpers ----------
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  var toastEl, toastT;
+  function toast(msg) {
+    if (!toastEl) { toastEl = document.createElement('div'); toastEl.className = 'gw-toast'; toastEl.setAttribute('role', 'status'); document.body.appendChild(toastEl); }
+    toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT);
+    toastT = setTimeout(function () { toastEl.classList.remove('show'); }, 2200);
+  }
+  function copy(text, label) {
+    var done = function () { toast((label || 'Copied') + ' ✓'); };
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text).then(done, fallback);
+    fallback();
+    function fallback() {
+      var t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch (e) { toast('Copy failed — please copy by hand'); } t.remove();
+    }
+  }
+  function copyDevice() { copy(deviceId(), 'Device ID copied'); }
+
+  var LOGO = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 3 6-8"/><path d="M15 6h3v3"/><path d="M3 21h18"/></svg>';
+  function logoHtml(sub) {
+    return '<a class="gw-logo" href="' + root() + 'index.html"><span class="gw-logo-mark">' + LOGO + '</span><span style="min-width:0"><span class="gw-logo-t">Growebtek <span>AI Stock &amp; Fund Analyzer</span></span><br><span class="gw-logo-s">' + esc(sub || 'Smart market insights') + '</span></span></a>';
+  }
+  function deviceChip() {
+    var id = deviceId();
+    return '<span class="gw-dev" title="Your unique Device ID">Device ID <b>' + prettyId(id) + '</b><button class="gw-btn-ic" type="button" data-gw-copy>Copy</button></span>';
+  }
+  // Top bar for signed-in pages. opts: {sub, home:boolean}
+  function appBar(opts) {
+    opts = opts || {};
+    var bar = document.createElement('div');
+    bar.className = 'gw-bar'; bar.id = 'gw-bar';
+    bar.innerHTML = '<div class="gw-bar-in">' + logoHtml(opts.sub) + deviceChip() +
+      (opts.home === false ? '' : '<a class="gw-nav-btn" href="' + root() + 'index.html" title="Dashboard"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span class="lbl">Dashboard</span></a>') +
+      '<button class="gw-nav-btn out" type="button" data-gw-logout title="Log out"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l-5-5 5-5"/><path d="M5 12h12"/></svg><span class="lbl">Logout</span></button></div>';
+    document.body.insertBefore(bar, document.body.firstChild);
+    return bar;
+  }
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('[data-gw-copy]')) copyDevice();
+    if (e.target.closest('[data-gw-logout]')) logout();
+  });
+  function logout() {
+    var s = session();
+    if (s) api('logout', {}, { noRedirect: true, timeout: 4000 }).catch(function () {});
+    clearSession(); goHome();
+  }
+
+  // Protect a sub page: no valid session -> home. Re-checks with the server every 10 minutes
+  // so removed or expired users are signed out.
+  function guard(opts) {
+    var s = session();
+    if (!s) { goHome('login'); return null; }
+    var last = +localStorage.getItem(KEY_CHK) || 0;
+    if (Date.now() - last > 10 * 60 * 1000) {
+      api('me').then(function () { localStorage.setItem(KEY_CHK, String(Date.now())); }).catch(function () {});
+    }
+    setTimeout(function () { if (!session()) goHome('expired'); }, Math.max(0, s.exp - Date.now()) + 500);
+    if (!opts || opts.bar !== false) appBar(opts);
+    return s;
+  }
+
+  window.GW = { cfg: CFG, deviceId: deviceId, prettyId: prettyId, session: session, setSession: setSession, clearSession: clearSession,
+    api: api, guard: guard, appBar: appBar, logout: logout, toast: toast, copy: copy, copyDevice: copyDevice, esc: esc,
+    logoHtml: logoHtml, deviceChip: deviceChip, root: root, goHome: goHome };
+})();

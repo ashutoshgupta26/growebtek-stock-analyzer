@@ -1,0 +1,405 @@
+{
+ "asOf": "2026-10-02",
+ "asOfLabel": "Oct 2, 2026, 4:00 PM ET",
+ "session": "Last session report",
+ "mood": "Mildly bullish",
+ "summary": "The S&P 500 closed up 0.73% at 7,722.72 (range 7,700.51–7,754.67). Dow +250.40 pts (+0.49%), Nasdaq +1.19%. Consumer Discretionary leads (+1.13%), Health Care lags (−0.01%). Top gainer ARM (+5.18%), top loser ACN (−6.31%). 10-year Treasury yield 5.28% (+4 bp).",
+ "conclusion": "The S&P 500 closed up 0.73% at 7,722.72, Nasdaq +1.19%. Breadth: 78 up, 54 down among 134 tracked stocks. Watch 7,695 support and 7,750 resistance next session.",
+ "bull": {
+  "level": "Above 7,750",
+  "text": "A sustained move above the pivot resistance 7,750 would put buyers in control; next resistance 7,780. Session high: 7,754.67."
+ },
+ "bear": {
+  "level": "Below 7,695",
+  "text": "Slipping under the pivot support 7,695 would favor sellers; next support 7,670. Session low: 7,700.51."
+ },
+ "pivots": {
+  "P": 7726,
+  "R1": 7750,
+  "R2": 7780,
+  "S1": 7695,
+  "S2": 7670
+ },
+ "risks": [
+  "VIX at 15.31 (−6.59%)",
+  "10-year Treasury yield at 5.28% (+4 bp): high yields pressure valuations",
+  "Brent crude at $102.25 (−0.06%) feeds inflation worries"
+ ],
+ "events": [
+  {
+   "date": "2026-10-28",
+   "label": "Fed (FOMC) rate decision, 2:00 PM ET",
+   "when": "Wed Oct 28, 2026"
+  },
+  {
+   "date": "2026-11-26",
+   "label": "NYSE closed: Thanksgiving Day",
+   "when": "Thu Nov 26, 2026"
+  },
+  {
+   "date": "2026-11-27",
+   "label": "Early close 1:00 PM ET: Day after Thanksgiving",
+   "when": "Fri Nov 27, 2026"
+  },
+  {
+   "date": "2026-12-09",
+   "label": "Fed (FOMC) rate decision, 2:00 PM ET + economic projections",
+   "when": "Wed Dec 9, 2026"
+  }
+ ],
+ "trending": [
+  {
+   "symbol": "ARM",
+   "reason": "Up 5.18%, top gainer"
+  },
+  {
+   "symbol": "TSLA",
+   "reason": "Up 4.65%. In news: Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises"
+  },
+  {
+   "symbol": "TXN",
+   "reason": "Up 4.44%"
+  },
+  {
+   "symbol": "ACN",
+   "reason": "Down 6.31%, top loser. In news: Analysts Conflicted on These Technology Names: Lyft (LYFT),…"
+  },
+  {
+   "symbol": "APP",
+   "reason": "Down 4.65%"
+  },
+  {
+   "symbol": "NKE",
+   "reason": "Down 3.64%. In news: Nike, Inc. Stock 12‑Month Price Target Cut to $38.09, Implies 12%…"
+  },
+  {
+   "symbol": "NVDA",
+   "reason": "Most traded: $31.5B (+1.34%). In news: NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August…"
+  },
+  {
+   "symbol": "MU",
+   "reason": "Most traded: $28.5B (−2.05%). In news: How Nvidia, Micron and a surprising jobs report drove last week's…"
+  },
+  {
+   "symbol": "AMD",
+   "reason": "Most traded: $12.2B (+2.95%). In news: AMD Beat on Revenue, Profit, and Guidance — So Why Did the Stock…"
+  }
+ ],
+ "gainerReasons": {
+  "TSLA": "In news: Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises",
+  "SMCI": "In news: Super Micro (SMCI): $60B Backlog, 15-17% Margin Guidance, Stock Consolidates Near $31.87",
+  "ORCL": "In news: ORCL Stock Drops Amid Lower-Than-Expected Q1 Earnings, Unchanged Sales Outlook"
+ },
+ "loserReasons": {
+  "ACN": "In news: Analysts Conflicted on These Technology Names: Lyft (LYFT), Accenture (ACN) and Intuit…",
+  "NKE": "In news: Nike, Inc. Stock 12‑Month Price Target Cut to $38.09, Implies 12% Upside",
+  "MU": "In news: How Nvidia, Micron and a surprising jobs report drove last week's stock action"
+ },
+ "sectorReasons": {
+  "Consumer Discretionary": "In news: Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises",
+  "Technology": "In news: NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August 26…",
+  "Industrials": "In news: FAA Reportedly Finds Boeing 737 Max Software Issue Poses No Safety Risk",
+  "Consumer Staples": "In news: Consumer staples sector falls 3% in Q3 as oil, inflation and tech rotation weigh",
+  "Energy": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+  "Health Care": "In news: Here's Exactly Why I'm Not Afraid of Pfizer's 6% Dividend Yield"
+ },
+ "assetReasons": {
+  "Gold": "In news: Top bank revises 2026 gold price forecast as investors reassess rally",
+  "Silver": "In news: Silver Price Forecast: Strong Dollar and High Yields Put $50 in Focus",
+  "Brent": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+  "Crude (WTI)": "In news: Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+  "Bitcoin": "In news: Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises"
+ },
+ "stockNews": [
+  {
+   "title": "Trump adviser Hassett calls on Powell to leave Fed board after renovation report",
+   "url": "https://seekingalpha.com/news/4650040-trump-adviser-hassett-calls-on-powell-to-leave-fed-board-after-renovation-report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791131898000
+  },
+  {
+   "title": "SoftBank’s Son warns of AI safety risks despite $65B OpenAI bet",
+   "url": "https://seekingalpha.com/news/4650039-softbank-s-son-warns-of-ai-safety-risks-despite-65b-openai-bet?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791130971000
+  },
+  {
+   "title": "Starknet's STRK coin extends surge as trading volume jumps",
+   "url": "https://seekingalpha.com/news/4650038-starknets-strk-coin-extends-surge-as-trading-volume-jumps?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791130225000
+  },
+  {
+   "title": "AI rally defies 24-yr high in Treasury yields, but risks are building",
+   "url": "https://seekingalpha.com/news/4650037-ai-rally-defies-24-yr-high-in-treasury-yields-but-risks-are-building?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791128045000
+  },
+  {
+   "title": "Here are 3 things we're watching in the stock market in the week ahead",
+   "url": "https://www.cnbc.com/investingclub/2026/10/04/here-are-3-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+   "src": "CNBC",
+   "ts": 1791127985000
+  },
+  {
+   "title": "Fed Chair Kevin Warsh Just Used 5 Words to Describe the Fed's First Rate Hike Since 2023, Saying The Fed \"Removed A Dose of Accommodation.\" Should Investors Brace for More Hikes This Year?",
+   "url": "https://www.nasdaq.com/articles/fed-chair-kevin-warsh-just-used-5-words-describe-feds-first-rate-hike-2023-saying-fed",
+   "src": "Nasdaq",
+   "ts": 1791126600000
+  },
+  {
+   "title": "Everyone's Watching Oklo and NuScale for Nuclear Exposure. This Company Actually Fuels Them.",
+   "url": "https://www.nasdaq.com/articles/everyones-watching-oklo-and-nuscale-nuclear-exposure-company-actually-fuels-them",
+   "src": "Nasdaq",
+   "ts": 1791125821000
+  },
+  {
+   "title": "FAA Reportedly Finds Boeing 737 Max Software Issue Poses No Safety Risk",
+   "url": "https://www.nasdaq.com/articles/faa-reportedly-finds-boeing-737-max-software-issue-poses-no-safety-risk",
+   "src": "Nasdaq",
+   "ts": 1791125622000
+  },
+  {
+   "title": "American Airlines adds cash-and-miles bookings as loyalty battle heats up",
+   "url": "https://seekingalpha.com/news/4650036-american-airlines-adds-cash-and-miles-bookings-as-loyalty-battle-heats-up?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791125189000
+  },
+  {
+   "title": "The Bond Market's Warning Is Getting Louder, and History Says Investors Should Pay Attention",
+   "url": "https://www.nasdaq.com/articles/bond-markets-warning-getting-louder-and-history-says-investors-should-pay-attention",
+   "src": "Nasdaq",
+   "ts": 1791124500000
+  }
+ ],
+ "econNews": [
+  {
+   "title": "Hassett says ‘overall economy’ is ‘really, really booming,’ despite a bleak jobs report. | CNN Politics",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeEduM0U1aGxlX25WUW16dktJM21sSVZsRHdQZDd6WHROYTVWWXRzc2VTY2RrRldOVmV5LTRiN3FjTjAxYzIta2hUalRMWWF4YTJ6bWQ4NjZmdF84cV92N2ZkcDlST01JRjQ5am5tSFF3RWxJWHVsdkdpeGJBTy1tWkpacmhBRjVLMWJBOW5HcnRwSERhU0JrWGdKVElzR3c1NTE0Y2UtaHRnb1lGTG40RFdzV0lZOC11Tl9ESWN5TDMzNW5nS0FQVVdMVQ?oc=5",
+   "src": "CNN",
+   "ts": 1791132000000
+  },
+  {
+   "title": "Week Ahead for FX, Bonds: Fed Minutes in Focus as Near-Term Rate-Hike Prospects Dim",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNd0pFZWhSVE1ibzBDZHRBWDE0MWNOQ1pMdUdNVUM5SXNnWVlLa1JWRy05c1ZzbmxIcDlDVVB6eUV4a2lfSWo3YVM4REdCNDU5U0dZRGhBTFFZRFkyRV9BVE0wUTIxcW5sM1ZERWVMWXZfb3ZlRmdBelNlQlVBajhCckZkUUh3NzhTWXRobTBsM3RHNU13WjdnZE0tNWtjVWVrbVZtUzQ3ck8zV3lXMnVMeC11Z2xzNTRPWHJTNktvRWFucHlZU3ZGb0tQRTNMa1U?oc=5",
+   "src": "WSJ",
+   "ts": 1791130426000
+  },
+  {
+   "title": "Hassett defends Trump economy despite voter concerns on inflation",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOb1NqRmJtaFhFcU80UGRXT2JzTzJ0aTFvZDk1Y2g2ZnR5Qmk0THRVVGRSclhBeldnMldVbXJ0ZHhBZ1plU3Fuc1dGMUkxSi11TFBma01BLTREZ1NEZ1JBX3FkcEs3TjlsdVNwVG5yNlVWdDF2MFUwSF9JT1pzMzVZLVZGTWF2aWpIOXBQNG51cURUckdaSENxRnBBdjJ5dFFE?oc=5",
+   "src": "CNN",
+   "ts": 1791125059000
+  },
+  {
+   "title": "U.S. Economy Shows Slower Hiring as Mortgage Rates and Inflation Stay High",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZjB6M3dyZzFQRUF6eklsdVM2QkJpRDQ5R3JpYkI5dk1oaWlmWmdQWFNSMkM0RnZ0OV9Pb3ZLVmtWN0xNeU1aOXpnX25JS2ZHajNleXB5dGg0MThhcGVaQ2lpS1F1UUVpdEtpWlhFdXhGNXZiRkdWeVlXMHFLZjhJOUlJNldQQllkTXlfWDMzV1dIQnNJeF96QlZNdVVmcTVndUMxVC0zZ3VWQQ?oc=5",
+   "src": "790 KABC",
+   "ts": 1791122307000
+  },
+  {
+   "title": "US hiring slows and unemployment ticks higher with a month remaining before Americans head to polls",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNc1MyYktsV2c0ajFtZkZETUh3X01OaXFaMXZqYkozbWVMakRBUVphNUhzY1M2SGo1SlhYRktwSlEwWFo5RHZwNllGX2dnWXZjeDB4YjZGaUd4NThoWjFFdkMteERER3VKTjNtOVQzOENidS05Q0UyMkNOeXpQRVh3Y2lzajBDUTZTdjNHTTNTR0ZZQTluNjBGUFRSbHVHdDRvRVN4V2dkeHF3S245QXNKWC05Y0dncU81SGpUaVYyX3FsQlNTNUw0N1VKY25YMFdydUJ1ekdZbGI?oc=5",
+   "src": "WCCB Charlotte",
+   "ts": 1791120456000
+  },
+  {
+   "title": "Eric Basmajian: Cyclical payrolls signal changes in economic momentum",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZHB6S1o4ZFh0VFFlNUs5S0EySFNSbnJ0ZGRnZE93VVQ2dDd6c0tWTHBjdHBVdXJ0a25RRVhNdEpJQzFZN2lMMDQydXVHQmFuYmZ3ZTFzZTZhN1RwMFpreXR0enM2cHI4YTFuTlcyQXdQSWpRTWhWRk8yWExjYVB0ZF9veWpFT1lXbkxLRUNGUHlYd3RJWnhNOQ?oc=5",
+   "src": "Traders Union",
+   "ts": 1791114318000
+  },
+  {
+   "title": "Australia’s Chalmers blames U.S.-Iran war for higher inflation, borrowing costs",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR0hTdTlBRlVmeU9NYTFHc2lsbzcxQXdnSGlqQlFTbFIyb1V2bWY0VmFROGJicGl1eHZYNjZ0bGplSGZnSHItV2tValdieGd6MldOS2I4VU1jaE1sU2NHSFZxM0JXNkNoc3l2ZFJPU3ZnUFBWMGtyd25EeW1wSThmZ0NJY2h1YUJZTFhudGNQdGhNVkJrSDZxa3JlOXN4czhTS2NqUFp5M1lVOTc4bjQ2cTBOeDByQW9fMGNXZXRabmlxZ3Rr?oc=5",
+   "src": "Investing.com",
+   "ts": 1791105131000
+  },
+  {
+   "title": "[Weekly Economic and Crypto Calendar] Fed's September FOMC Minutes in Focus",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uaVBhRS1zcmc0Y2lJT2FXT2hidUstSXFZeUI3S3pqR2lNend0ZFVMVUd5X0lhT0JiakR4U2J4bTc5N3lpblVIRGdIdC1tV01mcmh0ZQ?oc=5",
+   "src": "bloomingbit",
+   "ts": 1791104609000
+  }
+ ],
+ "earnings": [
+  {
+   "title": "Ulta Beauty tops consumer discretionary gainers in Q3; MGM Resorts declines",
+   "url": "https://seekingalpha.com/news/4649479-ulta-beauty-tops-consumer-discretionary-gainers-in-q3-mgm-resorts-declines?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791133546000
+  },
+  {
+   "title": "Consumer staples sector falls 3% in Q3 as oil, inflation and tech rotation weigh",
+   "url": "https://seekingalpha.com/news/4649201-consumer-staples-sector-falls-3-in-q3-as-oil-inflation-and-tech-rotation-weigh?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+   "src": "Seeking Alpha",
+   "ts": 1791126327000
+  },
+  {
+   "title": "Carnival and CarMax Pop on Strong Earnings, but Challenges Remain",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSXlUQ1VIcFFhYVh5TS1wWVUwZzJvMF9Vc1hUOHk0RFJOXzA5a21IWEhsX2RQMGthNE8ycHpxRXd4MUN3czdPYV9wSmlWTWZpU2VXZHAwMTE4UWdWWDBtZm5Kb0ZydEEwR04zR2xCOG9MNlFBc3lndjRTSHBpQ2Q0U0ZRRjVTYk5JYkphdndmc2VjZ3haTzZqOV9NNGVtd2g0bkRV?oc=5",
+   "src": "MarketBeat",
+   "ts": 1791085399000
+  },
+  {
+   "title": "APP Stock Plunges 28% After-Hours On Revenue Miss And Soft Guidance — But CFO Says SEC Probe On Firm Now Closed",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPSTFURTBkOWVDcHVPZXFSVGFFaXR0MjBQLXhSR2ZUVnNOOEtVM0V2ZWN6S0htN3pCTXBfRk9hcTZZT1YxZC0zaVYzR0lFWFp2anA5cF93akEwT3FBakhZWDBXelRibmEzV3VNZTZISkd0cENHa2dDdVVtVjVraFlnaUF6NmlOQVluTlFwR05hTzY5cmEzMldRNU0tN3NFR0p1b0I1eTdEUkhVVmtaUzFlb0tONmJSNkJ2dzM1ZlFFQVZ3V1Ntenl1QVB0LW91U3ZHLTBuTEdjZzA4UHJTVld2ZldhX1dkR0ZibDNQYW5tX1NaMlh5YVhTLUJ6NG9WQWZqaXc?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791076834000
+  },
+  {
+   "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points — So Why Is PLTR Down 26% YTD?",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQNmM2SURNRGVLR0RMNmJYbUJidUVteEZBTkRuejNZX2JTMHo4SG5jVnhlbFBrd0FsUFpSTmg3ZGp6RlpzalpSNTlNVElFRGVJRVdQWjJQb2N4WndtWXpHNFZMQVNlLUJrNEpRMDd1X3kyUHk3cWtIeFBLNGpOOEF1MVc0cXBkUlZHcVhjenM2MDhmQ1NRbGk5TFVPV0xTbGNxRHQ2YlRMcnNINVhrOG9aUUZWQl9wa3BWRTItVmpMcHhVNUNoZXZuLTN4dUJ0Nm5HLWp4MTEtUFo0eFQ0RWYxa1VvVkZZR1JPdVh4XzhMdFBmNGY5MUY5a3NMVmxLSjBTWjlFOHBXb01mSkk?oc=5",
+   "src": "TradingKey",
+   "ts": 1791071083000
+  },
+  {
+   "title": "NVIDIA Q1 FY2027: Revenue $81.6B Beat, Data Center +92%, but August 26 Guidance Test Will Prove Sustainability",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOSmppUFVTbFJ6dEtndmF2WUUxekw4NWQxMG1NU09JSFV3bVpvVEs1VnZaU1ZucDlSSHJScHA5clJwM1RUcEUta24xVW5tZHNSN0dScTItRkViakl5UTk3NlgzRlFvM0JPTU1DRG5ybVdPdjI3VDZEeVVMN1Zjc2dCTVM2Z055UHcxZTliZ3J0aVRPeGFycG15MTFRam5BazM3aVpVeGpDRXlPSjBYUXhlRENpd1BscVF1SWViM01FYW9vdXg0ZjB5OUNIU2pOSXV2VnBfS1puSzE0aEhhZlk0N2xMRDB4eDJEV2o2UmZtangyWWVNa05vbU5ld3ctUGQ2cG9UYnlDdWxlWGhUa3J5c3Rvd1pKZHp3Ym80?oc=5",
+   "src": "TradingKey",
+   "ts": 1791069749000
+  },
+  {
+   "title": "DDOG Stock Heads For Record Single-Day Drop Despite Q2 Earnings Beat, Raised Guidance",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcnFOT1gzNG5VV0tFOGVlN1M5RFVkS0lIUWFSdWg4eTVZbFJYNlZ0RW5oc2ZrODJTa25DY3BiUGd6YzhoVTc4S0VuRnpnQ0dzUDZhMjFrNHhhdFRhc0hwWG1UMXVxNFN5RkktejJDS3R6Vlc5WkhVXzFfc0JzRkJrVWlJSTlyTmJsczZyRWpMY3l2QkJjSU1DdzVFWEE4ZkpRc004V3NhUG9udGFMMjVCOEgzYVFyaTF4MjkwM3hsM2R5MjBFeldsU2NjWGE?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791064191000
+  },
+  {
+   "title": "ORCL Stock Drops Amid Lower-Than-Expected Q1 Earnings, Unchanged Sales Outlook",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTElUUE5qX0JmNkR2aTBEM012bGNpME5CQ0xFTEYzMEFVdWhwdENISFBUQjEyOWxta3luaVpMRFZIVTJVd1c3WEo5Q21SZXA5cVF3UG9UUkJJcHhPRVVDTmRjdkpqSFJhbmhaZ01JdVF3dWpSOF8zT2Z1RUhwTUItZDNNQWIzWEFpRWpSSEVCT0Z6cnZsVUN0MjVMYUd3a0tCTDVPWkhra1ByYXVUMUdHRDk5a1loSW14cWVaWHhma2Q5dXMyR0QycDVqcmlrSEJzUE9YbDM0SzY?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791063711000
+  }
+ ],
+ "analyst": [
+  {
+   "title": "WMT Shares Slip After-Hours On Weak Guidance, So Why Did This Analyst Raise Its Price Target?",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVDU2UVlwejlOT3FHZVNDajdUbFRNY3UteklXR2k4Z09sV3FROXo4RF9lS0FOcXVoVkZoNl83b2hicHMwT05CcUZYYmVrajhqYlR1VHhpZUJ2NEg1SklNUXlXcnpCcVRHbTVXUHczenlIeVk1VGhzTmJIcmxHOW16VlZUVnJHaFZBeVZoTnZvYUhiRnNIVHJ0aGt6LVczdVFnTVU4QXRla1FYN3AtcGV0V1hCZUQxbE03ZURmQy13VkMwVERJU19JNTdMdU40elp5Zmc?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791086395000
+  },
+  {
+   "title": "WDAY Stock Downgraded Despite Q2 Beat – Analysts Flag Risk Of Another ‘Guide Down’",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMGdja2FwZnJGZ3RtN1V4TklvNGZmQURKQkRwNWRzS0NqS01yMnVXbzlqcGp6QUFnNUxDa3J3b2syYUNia2JEbU1iRnpQMENWUGgwM0hNN1JiYVVmUzlLdFhhLWJ6RHRpVW93ck5yNy1ZZE1sUjdCdXg0M01NSGwydUtOcko1SjFIZUV0dWdsRElrU1M1YlJGUS1Cck8wMHkyLU1LMGdKc010ZDJyUXNyVGtCaDM5XzRSV2p6NjdBRjFudk03cWk4MG9WZDJBTVNzd2xhVFNOdHc2QQ?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791078846000
+  },
+  {
+   "title": "SNOW Stock Set To Reclaim 200-DMA For First Time In 4 Months - Analyst Says Snowflake Could Start Trading Like An ‘AI Winner’",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMTcyeVlQQTBQWkxCQ1ZnSk5uLTZLZzRxeWR5QnljUUg4QWh3cVNfN0RvV29iZEFKUUU5V1pWQ1l6WW5kb3hUVkJLUE1yZWtGNlotLU5oU0JSb1R6dzh4Q0RqcE9GMk9raE1Va2RibDdDamVpd19yLUtQVzBwMXZpQnFWdG1MOWM3alZ2V29mTkZGcWxYdzRaYWJQSG5YRzYyMDNoZlhyS1dFblpZMU56TWlGR1pReUJubnczampMX1NXTllzdEFtVWNlaw?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791073546000
+  },
+  {
+   "title": "International Business Machines Corporation Stock 12‑Month Price Target Cut to $240.55, Implies 8% Upside",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQOXdnOFhXWHMzejZRVEllbWMzSnM2cVhxYUtkYWxCU0paTnJseS1CbHpuazQ4OGdOcHFhdTNHUlBmV1lKTlJSZVI4aGdfWHdVTVNCdDVKZGYxeTVWWjdxRE5iM296alQ1RU9naUNEenB3amJwb3VPQVFIeXhVdVFrQVNWX1FSbjdGOFBpZEVhTXYwN25wZkpST0Z3U1p6WEwtdFFWaEl5Znp6SmpDWERYM29rVVVWYk5ORVFNa3NKUnhWWWFyZjV0YkxLM3Q4c2FjSXdZdDNjSWRkcTJjby1BQzczaDA0blM2NzRMR0RwQUZsbEpncDZz?oc=5",
+   "src": "TradingView",
+   "ts": 1791066006000
+  },
+  {
+   "title": "Sociedad Quimica y Minera S.A. Stock 12‑Month Price Target Raised to $88.91, Implies 38% Upside",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdzBSWlZwUnU0UzFvU2U2eW05dHJhZFlBWlJFczJzV0trbFN5ZDVMYVV0d3JzZWhobHFheDR4X0NBVFpCUGpEUTYyNHh4YktVV3Q1dmRCTjc1UkxUMzNlcVhPbXdHdTFUTkdBdkhpbkl3RXpHdE1TRHNlUU12N2JaSTNfZEVrMWQ5a1h4Znk2ZzhuTkN0alVjWEg1ckJqS29ucUszOFRlZmw2am1JckNURWllUEN6S3k3Y21kWTY1ZFFMTkFlTVVaaGI2TmlPYlItTHRLTGgzMFRjYXFXenktbWFDRnNXcEFV?oc=5",
+   "src": "TradingView",
+   "ts": 1791066006000
+  },
+  {
+   "title": "Albemarle Corporation Stock 12‑Month Price Target Cut to $173.29, Implies 66% Upside",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNMUlsNURjOHVKcVV3VjdNbThCSnRzcGN1NXU1aVlCUDQ5b0gzTlZOVnZybktTQ2dJOVc2OTkwRkliaEVGeG9wT0U0VXJWLVp1ZmJZQV9aT3Z6dzVwR2pBWk9zLVJfcTBfT19tUEFiVHo2c0xBVS1CQThLanl0aDdVNGhHekZVX1FVT3RjcXJyUVN0clE1YVY1N3hZVTJydEtzVktmX01ZcFk4Z25RQW9GSmpDVVJFYjk5WGZLY05lQ24ya2wzdlZ5c3lqRVRDUVdRdVYyQlJ1ZmhMdUk?oc=5",
+   "src": "TradingView",
+   "ts": 1791066005000
+  },
+  {
+   "title": "CELH Stock Clocks Second Consecutive Week Of Losses Amid UK Ban Concerns, Analyst Price Target Cuts",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOejdWblVleUYtX1VJSTJNUXRNeXJ1YmdielBqdzhVanVXd3ROU01qV2RuLUJUVlFHX2hJYmZyQk44UFpjZy1Qc3NOWVVKNXlDSnRjOGFwVV84YmVmZlFuZ01lc243QXktZFlMdVg4VkVPUEQ0ajZTVk0zUWpqZ3BrbGktWkw5TWRYUVhCR1phTU9BajNHcnA5QVVGaTJRYVhkZXhxU1JQd21ucDhpSXFNVU5qMXJLRzVvcmdrZ2doUE5KaHFQTWNsWnlIRzFyQnhMY1ZTZ2lZUF9mc0R5TS1ZdUlNejlKc1RqTmZGaWdRYUlUYUJZ?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791059474000
+  },
+  {
+   "title": "MU Stock Rallies Premarket After Blowout Q3 Report: JPMorgan Nearly Triples Price Target On AI Demand Boom",
+   "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOczNTNEVXZUdTZzZuNS1UNkk3TmNSVGVNN2NMdnhacEtWYUtSUDhQNWtHalI2NVpvMWY3RnNiNzJOdWUtb2dTQXRRNThEUG5yNTM4ZWRBX0pUNmN2YzRHVWxVSUJqT25yemF5Q0RNMnItMzlkMGNvREJTeDVfUXp3UzluRWVVcVFWYmZUaEU2aHdBSjY5R3Q2MGE3TGl2QjdKTWZFUlBzdllpTHcxZlhRZlhYRDF2bjdacHpaNTlFQ2dUS2xsN1JoWFJyTlVfUnRmUnZjRVlGQlhsd1pDNVI3bEFlTDc5ZjA4cUxJLVlyQUtaX2tGaHg4SWppcjI2d1E?oc=5",
+   "src": "Stocktwits",
+   "ts": 1791054931000
+  }
+ ],
+ "ipoNews": [
+  {
+   "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+   "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+   "src": "CNBC",
+   "ts": 1791120159000
+  },
+  {
+   "title": "Singapore debuts a state-backed dating app for young government workers as it works to slow a demographic crisis",
+   "url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
+   "src": "CNBC",
+   "ts": 1791090589000
+  },
+  {
+   "title": "GBC IPO News - Atlanta area bank Georgia Banking Company files for a direct listing on the Nasdaq",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUjUyUmpyeFlNSV9YaFY2LTRpbThoNVFCZERlU3ZnTzRJMzd0UHNCa0VlZzZWTE1VR2NUTW5WamZ5dm5obkJyTEM5Ri01LU1mbDExQ3VyUXRhbUFOamNuTWEyNEpPVmQ4NFM0REdUZUVuY2d2Zm8teWJJR284YzAwWmNJeDlqNkk5by13bFdMbS1vbV9aT3djM2ZIcF9uajRkbmtpZzROWlh6VlZWV3QzMnZ3TXFLNHJjdGo0enJaR1hMc3JK?oc=5",
+   "src": "renaissancecapital.com",
+   "ts": 1790978520000
+  },
+  {
+   "title": "Georgia Banking Company, Atlanta Community and Commercial Bank, Files for NASDAQ IPO",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOUdvX1RxOTBTOUhpbE4xWlpDNENMXzNFUHdNeEJPSWw2QUZ5WHh0RXA2UHN2ZEtsX1NOT09rcDJoRVVKX1pFOGxCUmRpRGRZdDZaemJPUmNpRVJFbmU4a09NaFVweXJqZWd2MFJNUkVYQnVvLTRPa2dlTWZSSDhHT0t6MlNhMy05Sl96c0dmVWRPWS02Wl9YZnZWSFJGR1NQVFJzdTJJT1Vhb0VicC0zeldHTmN3aUNWMndRRzZGX2xSd2pFTXV2TTktay1nWHk4ejB6ZkNGR0wxX3h3?oc=5",
+   "src": "TradingView",
+   "ts": 1790976481000
+  },
+  {
+   "title": "LPC, Electrical Equipment Distributor, Files for Nasdaq Capital Market IPO",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNenZ5Z0JWekJOOGR4Y2xPZDgxS3JyUGlFMEVVSWJlcy0zMkliRURmdFljNmJwTUo4TkZOS2pGbDBLTVd6X1lBMDZ4X3VHMktmSjVSYUVCTmtzWm00R0hnZS04Z2EzYXlNN3NMSXZzSXBkR1NsSnI3VUJ4c3J3RlNSY1Fpbi1GWm84d0paSEdFTTl6NHlrUHdOcVdaeTlkUXdRRkpvZVMxUTBPRVhtYnREWmkzWHNiU3ctWDZHUnljY1lzWF9lVjZjTUVMdGZaVGM?oc=5",
+   "src": "TradingView",
+   "ts": 1790969221000
+  },
+  {
+   "title": "SPCX Stock Slides Ahead Of Nasdaq-100 Debut: Billionaire Value Investor Says Its ‘Third-Rate’ AI Is Getting ‘Kicked Around’ By Anthropic, OpenAI",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbDdTTWJPSmRqZlJCRE5oOHFicFlLWWdpVXAzczB5UHZjcW1ra3VkcVBOV2hNc254TkxoLWZCbUZUYmpjZ0lpMEdGWENxTzNWT2ZpdXJCTnJlZlZvaUQ2WnJTU2E4Z0RaMDZJOHNScnNOOVJhZmNjSjAxT3gxUWZkM2dFcm96enQyb3BlLUtVMXRiaGlvYl93S3dSWURTQjJVRGt4eTFYNDBISHhaTlBtSmUwMDlZVXdGVjgwQg?oc=5",
+   "src": "Stocktwits",
+   "ts": 1790927764000
+  }
+ ],
+ "commodNews": [
+  {
+   "title": "Top bank revises 2026 gold price forecast as investors reassess rally",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA2RUdOYXhaMm5BUzkxVngwRG1uNGNNb0staGJQWlFMejhfWXVSRUYwT2g3dUU0MzVsWUZIWTRlREM5cm16NjFxNkJzclo0aWU1cWFGOEZaZ0QtOFJjOW9ER3BFR0ZWN1hHWFE?oc=5",
+   "src": "thestreet.com",
+   "ts": 1791130380000
+  },
+  {
+   "title": "Tesla’s Bitcoin Treasury Nears $1 Billion as Price Rises",
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9PckFodlBZV2tvVkFzcGNaZzJZNFB3bl9DS2xPOG1iXzdDVktYUUFzeXJKempxc2NKMGs0cTJ6cEpFd3JDQjU1M3hiQlJVNGswLUNXZUFoUHo?oc=5",
+   "src": "Cryptonews.net",
+   "ts": 1791130281000
+  },
+  {
+   "title": "Oil Flows Recover to 98%, Prices Fall Even as 4th Vessel Is Hit in Hormuz",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY3h6Q0VDeV9ZdHpNR3JoM1I3V0t4M3BpODZVZ1JYNVFvR010ckZkQVYxNUQtRWNDUjZpZFRkd082SXd0NnlqSUhndzVuQXB1S2x2U0N0WHp0NDdFb1pQbzZGb25lSm90c0Rya1pETXh1Y01tNmVLcnlndkw1Z0l2dTNVS1V6Wk9IaXREMzJhR1VRSV8wN2hvbmVISUV0SHhXYllmNlFGVnY3YlBoa2c?oc=5",
+   "src": "CryptoRank",
+   "ts": 1791126970000
+  },
+  {
+   "title": "Gold shopping picks up in China as gold prices pull back",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yRXpEeEZTdHA3OHNIUEdFQjRTd00zUDJIaDljYnYwR1VXMElYemE0YUpST3llQThrWkRZTnhqakhieXB5TnVNbFp2Zy16a1lxdV9qR3lCUG1Gc2NGT1NuOdIBXEFVX3lxTE11ZVNaNXFYZXM3QnZzMEdzUTVkYTMxbU1TVEU4cG9jZ0ppaWprRHJ6S2FidEtGTFh5dzdFRXNjU1hDY28zX083dzR5aGRWLVdjUmM3MGxUT29zQm0z?oc=5",
+   "src": "Modern Ghana",
+   "ts": 1791124200000
+  },
+  {
+   "title": "Bitcoin Price Prediction: Can BTC Reach $92,000 Or $97,000 This Week?",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanRGWElUd1V0Q2NCVUJfM01TUlpJRUVWb3lPUDlFMXI3YjN3RjFVZkRTVWhUVHlVb1pmYmZMbnRDNFdrLXIwUkp5MEhUeGluTlkwYzFld3d5M1NwVkpnbUpxVWNuWDJXWmNZOG1tTUk4N0JKNlh3dm9JRmZ2QjQtSnZCZWVKaWNsNXZlcnNsWTV1YUZMbjF2bGJlclBYbHlidldJ?oc=5",
+   "src": "CryptoRank",
+   "ts": 1791123477000
+  },
+  {
+   "title": "Diesel prices could fall below $2 a litre in coming months: expert",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVRvWUlDUDNMcnRKeFpxWktFejNwYWZER1V0azAyV3dyUHZoSnU0SlZKcC1XaVVGcXlWazZBYkNOVGdlSVVGek1tbXRCZzhiSWNNMmVyLVJHbFdfbkM4M3NEZXdhckVRbF9zZUpnamZuUXQ0LUxJM0xSN1M2bUkzVXVqLWRIdUNBX05SU3pMUFZWVzZxVXdaS25vOHpxc1hWOHItNDJB?oc=5",
+   "src": "CTV News",
+   "ts": 1791121521000
+  }
+ ],
+ "nextSession": "Mon Oct 5, 2026",
+ "generated": "Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; summary, mood and levels computed from prices.",
+ "updated": "2026-10-04T17:08:33.878Z",
+ "errors": []
+}

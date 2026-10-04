@@ -1,0 +1,4 @@
+_t*.html
+node_modules/
+*.local.gs
+.DS_Store

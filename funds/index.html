@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mutual Fund Analyzer · Growebtek AI Stock &amp; Fund Analyzer</title>
+<meta name="description" content="Analyze and compare Indian mutual funds and global funds & ETFs: returns, SIP XIRR, risk, rolling returns and an AI fund score.">
+<meta name="theme-color" content="#6d5efc">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%235b5bf6'/><stop offset='.5' stop-color='%23ec4899'/><stop offset='1' stop-color='%23f97316'/></linearGradient></defs><rect width='32' height='32' rx='9' fill='url(%23g)'/><path d='M6 22l6-7 5 4 8-10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://api.mfapi.in" crossorigin>
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="funds.css">
+</head>
+<body class="gw">
+<main class="gw-wrap fx">
+  <section class="fx-hero">
+    <div>
+      <h1>Mutual Fund <span>Analyzer</span></h1>
+      <p>Returns, SIP growth, risk, consistency and an AI fund score from full NAV history. Compare up to 4 funds side by side.</p>
+    </div>
+  </section>
+
+  <section class="gw-card fx-ctl" aria-label="Find a fund">
+    <div class="fx-top">
+      <div class="fx-seg" id="srcTabs" role="tablist" aria-label="Fund type">
+        <button type="button" role="tab" data-src="mf" aria-selected="true">Indian Mutual Funds</button>
+        <button type="button" role="tab" data-src="gl" aria-selected="false">Global Funds &amp; ETFs</button>
+      </div>
+      <div class="fx-seg sm" id="modeTabs" role="tablist" aria-label="Mode">
+        <button type="button" role="tab" data-mode="analyze" aria-selected="true">Analyze</button>
+        <button type="button" role="tab" data-mode="compare" aria-selected="false">Compare<span class="cnt" id="cmpCnt" hidden>0</span></button>
+      </div>
+    </div>
+    <div class="fx-search">
+      <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input class="gw-input" id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search a fund, e.g. Parag Parikh Flexi Cap" aria-label="Search funds" aria-autocomplete="list" aria-controls="dd" role="combobox" aria-expanded="false">
+      <span class="gw-spin dark" id="qSpin" hidden></span>
+      <ul class="fx-dd" id="dd" role="listbox" hidden></ul>
+    </div>
+    <div class="fx-picks" id="picks"></div>
+    <div class="fx-picks" id="recent" hidden></div>
+    <div class="fx-tray" id="tray" hidden></div>
+  </section>
+
+  <div id="view" aria-live="polite"></div>
+
+  <p class="gw-foot"><b>Not investment advice.</b> Figures are computed from historical NAV / price data and are for education only. Past performance does not guarantee future returns. Mutual fund investments are subject to market risks; read all scheme-related documents carefully.</p>
+</main>
+<script src="../config.js"></script>
+<script src="../app.js"></script>
+<script src="funds.js"></script>
+</body>
+</html>

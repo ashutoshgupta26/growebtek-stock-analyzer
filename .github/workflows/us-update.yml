@@ -1,0 +1,46 @@
+name: Update US market report
+
+on:
+  schedule:
+    # US market hours incl. pre-market and after hours (13:00-21:59 UTC, Mon-Fri): every 5 minutes.
+    # GitHub may delay scheduled runs by a few minutes.
+    - cron: "*/5 13-21 * * 1-5"
+    # Otherwise: every hour
+    - cron: "0 0-12,22-23 * * 1-5"
+    - cron: "0 * * * 0,6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-us-report
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch US prices
+        run: node scripts/us-prices.mjs
+        continue-on-error: true
+      - name: Fetch US news and build commentary
+        run: node scripts/us-news.mjs
+        continue-on-error: true
+      - name: Commit changes
+        run: |
+          git add us/data.json us/news.json 2>/dev/null || true
+          if git diff --cached --quiet -- us/data.json us/news.json; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update US market data $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          git push

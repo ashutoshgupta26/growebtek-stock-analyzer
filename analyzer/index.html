@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stock Analyzer · Growebtek AI Stock &amp; Fund Analyzer</title>
+<meta name="description" content="Analyze any listed stock worldwide: price chart, returns, technicals, fundamentals, analyst view, AI scorecard, and side-by-side comparison.">
+<meta name="theme-color" content="#6d5efc">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%235b5bf6'/><stop offset='.5' stop-color='%23ec4899'/><stop offset='1' stop-color='%23f97316'/></linearGradient></defs><rect width='32' height='32' rx='9' fill='url(%23g)'/><path d='M6 22l6-7 5 4 8-10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="analyzer.css">
+</head>
+<body class="gw">
+<main class="gw-wrap">
+  <section class="an-hero">
+    <div>
+      <h1>AI <span>Stock Analyzer</span></h1>
+      <p>Any listed company, any country. Get a full analysis in its own currency, or compare up to 4 stocks side by side.</p>
+    </div>
+    <div class="an-tabs" role="tablist" aria-label="Mode">
+      <button type="button" role="tab" id="tab-analyze" aria-selected="true" aria-controls="panel-analyze">📊 Analyze</button>
+      <button type="button" role="tab" id="tab-compare" aria-selected="false" aria-controls="panel-compare">⚖️ Compare <span class="cnt" id="cmp-cnt">0</span></button>
+    </div>
+  </section>
+
+  <section class="gw-card an-search">
+    <div class="an-sbox">
+      <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" class="gw-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search a company or symbol, e.g. Reliance, Apple, Toyota" aria-label="Search stocks" role="combobox" aria-expanded="false" aria-controls="dd" aria-autocomplete="list">
+      <span class="gw-spin dark" id="q-spin" hidden></span>
+      <div class="an-dd" id="dd" role="listbox" hidden></div>
+    </div>
+    <div class="an-picks" id="picks"></div>
+    <div class="an-picks" id="recent" hidden></div>
+  </section>
+
+  <section id="panel-analyze" role="tabpanel" aria-labelledby="tab-analyze">
+    <div class="an-out" id="an-out"></div>
+  </section>
+
+  <section id="panel-compare" role="tabpanel" aria-labelledby="tab-compare" hidden>
+    <div class="an-out">
+      <div class="gw-card">
+        <h2>⚖️ Compare stocks <span class="sub">2 to 4 stocks, any countries</span></h2>
+        <div class="an-cmpbar" id="cmp-chips"></div>
+        <p class="an-hint" id="cmp-hint"></p>
+      </div>
+      <div id="cmp-out" class="an-out" style="margin-top:0"></div>
+    </div>
+  </section>
+</main>
+<footer class="gw-foot">© <span id="yr"></span> Growebtek AI Stock &amp; Fund Analyzer · For information and education only · Not investment advice</footer>
+<script src="../config.js"></script>
+<script src="../app.js"></script>
+<script src="analyzer.js"></script>
+</body>
+</html>
