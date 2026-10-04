@@ -125,7 +125,8 @@
       '<form id="f-admin" novalidate hidden><div class="gw-field"><label for="a-mob">Admin mobile number</label><input class="gw-input" id="a-mob" inputmode="numeric" autocomplete="username" placeholder="10-digit mobile number" maxlength="14"></div>' +
       '<div class="gw-field"><label for="a-pw">Password</label><div class="pw"><input class="gw-input" id="a-pw" type="password" autocomplete="current-password" placeholder="Admin password"><button type="button" id="a-eye">Show</button></div></div>' +
       '<div class="gw-err" id="a-err" role="alert"></div><button class="gw-btn" style="width:100%" type="submit">Login as admin</button></form>' +
-      '</section></div></div>';
+      '</section></div>' + GW.installCard() + '</div>';
+    GW.bindInstall();
 
     app.querySelectorAll('[data-tab]').forEach(function (b) {
       b.onclick = function () {
@@ -172,7 +173,8 @@
       (isAdmin ? '<span class="gw-chip indigo">Admin access</span>' : s.expiry ? '<span class="gw-chip ' + (dl <= 7 ? 'amber' : 'green') + '">Access till ' + fmtDate(s.expiry) + (dl <= 7 ? ' · ' + Math.max(dl, 0) + ' day' + (dl === 1 ? '' : 's') + ' left' : '') + '</span>' : '') + '</div>' +
       '<nav class="tiles" aria-label="Sections">' + TILES.map(function (t) {
         return '<a class="tile ' + t[1] + '" href="' + t[0] + '"><span class="ic" aria-hidden="true">' + t[2] + '</span><span><h3>' + t[3] + '</h3><p>' + esc(t[4]) + '</p></span><span class="go">Open →</span></a>';
-      }).join('') + '</nav>' + (isAdmin ? '<section class="admin" id="admin"></section>' : '');
+      }).join('') + '</nav>' + GW.installCard() + (isAdmin ? '<section class="admin" id="admin"></section>' : '');
+    GW.bindInstall();
     if (isAdmin) renderAdmin();
     else GW.api('me').then(function (r) { if (r.expiry && r.expiry !== s.expiry) { s.expiry = r.expiry; s.name = r.name; GW.setSession(s); renderDash(s); } }).catch(function () {});
   }

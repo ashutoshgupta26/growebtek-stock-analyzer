@@ -13,6 +13,7 @@
     var id = null;
     try { id = localStorage.getItem(KEY_DEV); } catch (e) {}
     if (!valid(id)) id = readCookie(KEY_DEV);
+    if (!valid(id)) { var u = (location.search.match(/[?&]did=([A-Z0-9]{16})(?:&|$)/) || [])[1]; if (valid(u)) id = u; } // from a Safari / iPhone shortcut
     if (!valid(id)) {
       var b = new Uint8Array(16); crypto.getRandomValues(b); id = '';
       for (var i = 0; i < 16; i++) id += ALPHA[b[i] % ALPHA.length];
@@ -123,7 +124,67 @@
     return s;
   }
 
+  // ---------- desktop / home-screen shortcut (installable app) ----------
+  // Chrome, Edge and Android share storage with the shortcut, so the Device ID stays the same.
+  // Safari / iPhone / iPad give a shortcut its own storage, so the ID travels in the shortcut's address (?did=).
+  var UA = navigator.userAgent || '';
+  var IOS = /iPad|iPhone|iPod/.test(UA) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var SAFARI = IOS || (/Safari\//.test(UA) && !/Chrome|Chromium|Edg|OPR|Firefox|Android/.test(UA));
+  var ANDROID = /Android/.test(UA);
+  var installEvt = null;
+  function standalone() { return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true; }
+  (function setupInstall() {
+    var head = document.head;
+    if (!SAFARI) { var m = document.createElement('link'); m.rel = 'manifest'; m.href = root() + 'manifest.webmanifest'; head.appendChild(m); }
+    [['apple-mobile-web-app-capable', 'yes'], ['mobile-web-app-capable', 'yes'], ['apple-mobile-web-app-title', 'Growebtek']].forEach(function (x) {
+      var t = document.createElement('meta'); t.name = x[0]; t.content = x[1]; head.appendChild(t);
+    });
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register(root() + 'sw.js').catch(function () {});
+    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvt = e; });
+    window.addEventListener('appinstalled', function () { installEvt = null; toast('Shortcut added ✓'); var c = document.getElementById('gw-install'); if (c) c.remove(); });
+  })();
+  function installSteps() {
+    if (IOS) return ['Tap the <b>Share</b> button <span aria-hidden="true">⬆️</span> at the bottom (or top) of Safari.', 'Choose <b>Add to Home Screen</b>, then tap <b>Add</b>.', 'Open Growebtek from your home screen.'];
+    if (SAFARI) return ['In the Safari menu bar choose <b>File → Add to Dock</b>.', 'Click <b>Add</b>.', 'Open Growebtek from your Dock.'];
+    if (ANDROID) return ['Tap the browser menu <b>⋮</b> at the top right.', 'Choose <b>Add to Home screen</b> or <b>Install app</b>.', 'Open Growebtek from your home screen.'];
+    if (/Firefox/.test(UA)) return ['Firefox cannot make app shortcuts.', 'Open this page in <b>Chrome</b> or <b>Edge</b> and tap <b>Add shortcut</b> there.'];
+    return ['Click the <b>install</b> icon <span aria-hidden="true">⊕</span> at the right end of the address bar,', 'or open the browser menu <b>⋮</b> → <b>Cast, save and share</b> → <b>Install page as app</b> (Edge: <b>Apps → Install this site as an app</b>).', 'Growebtek opens from your desktop, Start menu or taskbar.'];
+  }
+  function installCard() {
+    if (standalone()) return '';
+    return '<section class="gw-card gw-install" id="gw-install" aria-labelledby="gw-inst-h">' +
+      '<div class="gw-install-ic" aria-hidden="true">📲</div><div class="gw-install-tx"><h2 id="gw-inst-h">Add shortcut to your desktop or mobile</h2>' +
+      '<p>Open Growebtek in one tap, like an app. Your Device ID <b>' + prettyId(deviceId()) + '</b> stays linked to the shortcut.</p>' +
+      '<div class="gw-install-steps" id="gw-inst-steps" hidden></div></div>' +
+      '<button class="gw-btn" type="button" id="gw-inst-btn">Add shortcut</button></section>';
+  }
+  function bindInstall() {
+    var btn = document.getElementById('gw-inst-btn'); if (!btn) return;
+    btn.onclick = function () {
+      if (installEvt) {
+        var ev = installEvt; installEvt = null;
+        try {
+          Promise.resolve(ev.prompt()).catch(showSteps);
+          (ev.userChoice || Promise.resolve({})).then(function (r) { if (r.outcome === 'dismissed') showSteps(); }).catch(function () {});
+        } catch (err) { showSteps(); }
+        return;
+      }
+      showSteps();
+    };
+    function showSteps() {
+      if (SAFARI) { // the shortcut keeps this address, so it carries the Device ID
+        var u = new URL(location.href); u.searchParams.set('did', deviceId()); u.hash = '';
+        history.replaceState(null, '', u.pathname + u.search);
+      }
+      var box = document.getElementById('gw-inst-steps');
+      box.innerHTML = '<ol>' + installSteps().map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ol>' +
+        (IOS || SAFARI ? '<p class="gw-install-note">Log in once inside the shortcut with your mobile number.</p>' : '');
+      box.hidden = false;
+    }
+  }
+
   window.GW = { cfg: CFG, deviceId: deviceId, prettyId: prettyId, session: session, setSession: setSession, clearSession: clearSession,
     api: api, guard: guard, appBar: appBar, logout: logout, toast: toast, copy: copy, copyDevice: copyDevice, esc: esc,
-    logoHtml: logoHtml, deviceChip: deviceChip, root: root, goHome: goHome };
+    logoHtml: logoHtml, deviceChip: deviceChip, root: root, goHome: goHome,
+    installCard: installCard, bindInstall: bindInstall, standalone: standalone };
 })();
