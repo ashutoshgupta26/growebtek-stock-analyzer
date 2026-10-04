@@ -1,4 +1,4 @@
-name: Update US market report
+name: Update US data and publish site
 
 on:
   schedule:
@@ -8,39 +8,52 @@ on:
     # Otherwise: every hour
     - cron: "0 0-12,22-23 * * 1-5"
     - cron: "0 * * * 0,6"
+  push:
+    branches: [main]
   workflow_dispatch:
 
+# The whole site is published from here. US data goes straight to GitHub Pages and is never committed, so the repo does not grow.
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: update-us-report
+  group: pages
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 8
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Load the last published US data
+        run: |
+          mkdir -p us
+          for f in data.json news.json; do
+            curl -fsSL -m 20 "https://ashutoshgupta26.github.io/growebtek-stock-analyzer/us/$f?t=$(date +%s)" -o "us/$f.tmp" && mv "us/$f.tmp" "us/$f" || rm -f "us/$f.tmp"
+          done
       - name: Fetch US prices
         run: node scripts/us-prices.mjs
         continue-on-error: true
       - name: Fetch US news and build commentary
         run: node scripts/us-news.mjs
         continue-on-error: true
-      - name: Commit changes
+      - name: Build site
         run: |
-          git add us/data.json us/news.json 2>/dev/null || true
-          if git diff --cached --quiet -- us/data.json us/news.json; then
-            echo "No changes"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update US market data $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
-          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-          git push
+          test -s us/data.json || { echo "No US data, keeping the current site"; exit 1; }
+          mkdir _site
+          cp -r index.html config.js app.js app.css india us analyzer funds _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+          retention-days: 1
+      - id: deploy
+        uses: actions/deploy-pages@v4
