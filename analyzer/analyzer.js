@@ -933,7 +933,7 @@
         '<ul class="an-list con" style="margin-top:10px">' + (m.cons || []).map(function (x) { return '<li><i>!</i><span>' + esc(x) + '</span></li>'; }).join('') + '</ul></div>';
     }).join('') + '</div></div>';
     h += '<div class="gw-card"><h2>📰 Latest news</h2><div class="' + g + '">' + ms.map(function (m) {
-      var n = (m.news || []).slice(0, 4);
+      var n = (m.news || []).slice(0, 5);
       return '<div class="an-ccol">' + colHead(m) + (n.length ? '<ul class="an-news">' + n.map(function (x) {
         return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener noreferrer">' + esc(x.title) + '</a><small>' + esc(x.src || '') + (x.ts ? ' · ' + esc(ago(x.ts)) : '') + '</small></li>';
       }).join('') + '</ul>' : '<p class="muted">No recent news.</p>') + '</div>';

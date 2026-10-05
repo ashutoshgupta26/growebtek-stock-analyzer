@@ -15,6 +15,9 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v8' });
+  var ns = e && e.parameter && e.parameter.news;
+  if (ns) { try { var nk = 'n8:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
   return json_({ ok: true, app: 'Growebtek AI Stock & Fund Analyzer', time: new Date().toISOString() });
 }
@@ -272,7 +275,7 @@ function raw_(o) { // flatten Yahoo {raw, fmt} objects
 function security_(q, isFund) {
   var sym = String(q.symbol || '').trim().toUpperCase();
   if (!/^[A-Z0-9.\-^=&]{1,20}$/.test(sym)) throw fail_('invalid', 'Unknown symbol.');
-  var key = (isFund ? 'f:' : 'k:') + sym;
+  var key = (isFund ? 'f8:' : 'k8:') + sym;
   var hit = cacheGet_(key); if (hit) return hit;
   var range = isFund ? '10y' : '5y';
   var ch = yahoo_('/v8/finance/chart/' + encodeURIComponent(sym) + '?range=' + range + '&interval=1d&includeAdjustedClose=true&events=div%2Csplit', false);
@@ -308,45 +311,66 @@ function security_(q, isFund) {
   return out;
 }
 
-// Company-specific news: Google News (Indian sources for NSE/BSE listings) + Yahoo, keeping only headlines about the company.
+// Company-specific news, for any listing worldwide: Google News (local edition) by name and by ticker + Yahoo, keeping only headlines about the company.
 function stockNews_(sym, name) {
-  var nm = String(name || sym).replace(/\s*\(.*?\)\s*/g, ' ').trim();
-  for (var i = 0; i < 2; i++) nm = nm.replace(/[.,]?\s*\b(limited|ltd|inc|incorporated|corporation|corp|plc|co|company|holdings?|group|class [a-z])\.?\s*$/i, '').trim();
+  var nm = String(name || sym).replace(/\s*\(.*?\)\s*/g, ' ').replace(/&amp;/g, '&').trim();
+  for (var i = 0; i < 3; i++) nm = nm.replace(/[.,]?\s*\b(limited|ltd|inc|incorporated|corporation|corp|plc|co|company|holdings?|group|class [a-z]|aktiengesellschaft|ag|se|sa|s\.a|nv|n\.v|spa|s\.p\.a|ab|asa|oyj|kgaa|bhd|berhad|tbk|pcl|nl)\.?\s*$/i, '').trim();
   nm = nm || sym;
-  var india = /\.(NS|BO)$/.test(sym), tick = sym.replace(/\.[A-Z]+$/, '').replace(/^\^/, '');
+  var suf = (sym.match(/\.([A-Z]+)$/) || [])[1] || '', india = suf === 'NS' || suf === 'BO';
+  var tick = sym.replace(/\.[A-Z]+$/, '').replace(/^\^/, '').replace(/-/g, ' ');
   var esc = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
   var words = nm.split(/\s+/), short = words.length > 2 ? words.slice(0, 2).join(' ') : nm;
-  var gq = '("' + nm + '"' + (short !== nm ? ' OR "' + short + '"' : '') + ') ' + (india ? 'share' : 'stock') + ' when:14d';
-  var gurl = 'https://news.google.com/rss/search?q=' + encodeURIComponent(gq) + (india ? '&hl=en-IN&gl=IN&ceid=IN:en' : '&hl=en-US&gl=US&ceid=US:en');
-  var yurl = 'https://query2.finance.yahoo.com/v1/finance/search?quotesCount=0&newsCount=12&q=' + encodeURIComponent(nm);
-  var rs = [];
-  try { rs = UrlFetchApp.fetchAll([gurl, yurl].map(function (u) { return { url: u, muteHttpExceptions: true, headers: { 'User-Agent': UA } }; })); } catch (e) {}
-  var all = [];
+  var ed = { NS: 'IN', BO: 'IN', L: 'GB', AX: 'AU', TO: 'CA', V: 'CA', HK: 'HK', SI: 'SG', NZ: 'NZ', JO: 'ZA' }[suf] || 'US';
+  var gnews = function (q) { return 'https://news.google.com/rss/search?q=' + encodeURIComponent(q) + '&hl=en-' + ed + '&gl=' + ed + '&ceid=' + ed + ':en'; };
+  var tickOk = tick.length > 1 && /[A-Za-z]/.test(tick) && tick.toLowerCase() !== nm.toLowerCase();
+  var names = '("' + nm + '"' + (short !== nm ? ' OR "' + short + '"' : '') + ')';
+  var reqs = [gnews(names + ' ' + (india ? '(share OR shares OR stock OR NSE OR BSE)' : '(stock OR shares)') + ' when:30d'),
+    'https://query2.finance.yahoo.com/v1/finance/search?quotesCount=0&newsCount=15&q=' + encodeURIComponent(nm)];
+  if (tickOk) reqs.push(gnews('"' + tick + '" ' + (india ? '(NSE OR BSE OR share)' : '(stock OR shares)') + ' when:30d'));
   var dec = function (t) { return String(t || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim(); };
   var tag = function (b, n) { var m = b.match(new RegExp('<' + n + '[^>]*>([\\s\\S]*?)</' + n + '>')); return m ? dec(m[1]) : ''; };
-  if (rs[0] && rs[0].getResponseCode() === 200) {
-    (rs[0].getContentText().match(/<item[\s>][\s\S]*?<\/item>/g) || []).forEach(function (b) {
-      var t = tag(b, 'title'), src = tag(b, 'source');
-      if (src) t = t.replace(new RegExp('\\s+-\\s+' + esc(src) + '$'), '');
-      all.push({ title: t, url: tag(b, 'link'), src: src || 'Google News', ts: Date.parse(tag(b, 'pubDate')) || 0, g: 1 });
+  var all = [];
+  var take = function (rs) {
+    rs.forEach(function (r, ix) {
+      if (!r || r.getResponseCode() !== 200) return;
+      var body = r.getContentText();
+      if (/^\s*\{/.test(body)) { try { (JSON.parse(body).news || []).forEach(function (n) { all.push({ title: n.title, url: n.link, src: n.publisher, ts: (n.providerPublishTime || 0) * 1000 }); }); } catch (e) {} return; }
+      (body.match(/<item[\s>][\s\S]*?<\/item>/g) || []).forEach(function (b) {
+        var t = tag(b, 'title'), src = tag(b, 'source');
+        if (src) t = t.replace(new RegExp('\\s+-\\s+' + esc(src) + '$'), '');
+        all.push({ title: t, url: tag(b, 'link'), src: src || 'Google News', ts: Date.parse(tag(b, 'pubDate')) || 0, g: 1 });
+      });
     });
-  }
-  if (rs[1] && rs[1].getResponseCode() === 200) {
-    try { (JSON.parse(rs[1].getContentText()).news || []).forEach(function (n) { all.push({ title: n.title, url: n.link, src: n.publisher, ts: (n.providerPublishTime || 0) * 1000 }); }); } catch (e) {}
-  }
-  // relevance: the headline must name the company (first word of its name, two words if the first is generic) or its ticker
-  var generic = words.length > 1 && /^(the|tata|bajaj|adani|hdfc|icici|sbi|state|bank|indian|india|general|american|united|first|national|new|big|grand|southern|global)$/i.test(words[0]);
-  var alts = [esc((generic ? words.slice(0, 2).join(' ') : words[0]).toLowerCase())];
-  if (tick.length > 2 && !/^\d+$/.test(tick)) alts.push(esc(tick.toLowerCase()));
-  var rx = new RegExp('(^|[^a-z0-9])(' + alts.join('|') + ')($|[^a-z0-9])', 'i');
-  var seen = {}, out = [];
-  // a one-word name (e.g. "Eternal", "Apple") also needs a market word, and filler (market-size reports, fund filings) is dropped
-  var fin = /\b(shares|stocks?|nse|bse|sensex|nifty|nasdaq|nyse|s&p|dow|target|q[1-4]|fy\d*|results?|earnings|ipo|dividend|ltd|limited|inc|profit|revenue|orders?|rating|upgrade|downgrade|buy|sell|hold|price|market cap|ceo|deal|acquir\w*|stake|investors?|analysts?|brokerage|rally|falls?|jumps?|surges?|slips?|gains?|crore|lakh|billion|million|bonus|split|sales|launch\w*)\b/i;
-  var junk = /stock price, news|share price, news|news, quote|option chain|stock quote|market (report|size|share)|forecast to 20\d\d|cagr of|(stock|shares?|position|stake|holdings?) (sold|bought|purchased|acquired|cut|raised|trimmed|lowered|increased|decreased|boosted|reduced) by|(sells|buys|acquires|purchases) [\d,]+ shares|has \$?[\d.,]+ (million|billion)? ?(stock )?(position|holdings|stake)/i;
-  var single = words.length === 1, tickRx = tick.length > 2 && tick.toLowerCase() !== nm.toLowerCase() ? new RegExp('(^|[^a-z0-9])' + esc(tick.toLowerCase()) + '($|[^a-z0-9])', 'i') : null;
-  all.filter(function (x) { return x.title && x.title.length > 15 && x.url && rx.test(x.title) && !junk.test(x.title) && (!x.g || !single || fin.test(x.title) || tickRx && tickRx.test(x.title)); })
-    .sort(function (p, q) { return q.ts - p.ts; })
-    .forEach(function (x) { var k = x.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 60); if (!seen[k] && out.length < 10) { seen[k] = 1; out.push(x); } });
+  };
+  var fetch = function (urls) { try { return UrlFetchApp.fetchAll(urls.map(function (u) { return { url: u, muteHttpExceptions: true, headers: { 'User-Agent': UA } }; })); } catch (e) { return []; } };
+  take(fetch(reqs));
+  // relevance: a headline naming the company in full (or its ticker) is kept; one naming only the first word of the
+  // name (e.g. "Siemens", "ABB") also needs a sign it is about this listing, so a parent or namesake company is left out
+  var generic = words.length > 1 && /^(the|tata|bajaj|adani|hdfc|icici|sbi|state|bank|indian|india|general|american|united|first|national|new|big|grand|southern|global|bharat|hindustan|mahindra|birla|aditya|godrej|jsw|larsen)$/i.test(words[0]);
+  var b = function (s) { return new RegExp('(^|[^a-z0-9\\u0900-\\u097f])(' + s + ')($|[^a-z0-9\\u0900-\\u097f])', 'i'); };
+  // a one-word name, or a ticker that is just the first word of the name, is only a weak match
+  var strong = words.length > 1 ? [esc(short.toLowerCase()), esc(nm.toLowerCase())] : [];
+  if (generic) strong.push(esc(words.slice(0, 2).join(' ').toLowerCase()));
+  var strongRx = strong.length ? b(strong.join('|')) : null, weakRx = generic ? null : b(esc(words[0].toLowerCase()));
+  // tickers are matched in capitals only, so SHOP or BEL do not match the words shop or bel
+  var tickRx = tickOk && tick.length > 2 && tick.toLowerCase() !== words[0].toLowerCase() ? new RegExp('(^|[^A-Za-z0-9])' + esc(tick.toUpperCase()) + '($|[^A-Za-z0-9])') : null;
+  // a namesake or parent company: the first word followed by another company word, e.g. Siemens Energy, ABB Power
+  var other = new RegExp('(^|[^a-z0-9])' + esc(words[0].toLowerCase()) + '\\W+(energy|healthineers|ag|se|aktiengesellschaft|gamesa|mobility|group|inc|corp|corporation|plc|holdings?|motors?|financial|capital|power|global|international|usa|us|uk|europe|japan|china|germany|asia|music|entertainment)\\b', 'i');
+  var full = String(name || '').toLowerCase(), namesake = function (t) { var m = t.match(other); return !!m && full.indexOf(m[2].toLowerCase()) < 0; };
+  var foreign = /\b(eur|usd|chf|gbp|swx|xetra|nyse|nasdaq|pre-market|frankfurt)\b|\$\s?\d/i;
+  var fin = /\b(shares?|stocks?|nse|bse|sensex|nifty|nasdaq|nyse|s&p|dow|target|q[1-4]|fy\d*|results?|earnings|ipo|dividend|ltd|limited|inc|profit|revenue|orders?|rating|upgrade|downgrade|buy|sell|hold|price|market cap|ceo|deal|acquir\w*|stake|investors?|analysts?|brokerage|rally|falls?|jumps?|surges?|slips?|gains?|crore|lakh|billion|million|bonus|split|sales|launch\w*)\b/i;
+  var local = india ? /\b(india|indian|nse|bse|sensex|nifty|ltd|limited|crore|lakh|rs|inr|dalal)\b|₹|[ऀ-ॿ]/i : fin;
+  var junk = /stock price, news|share price, news|news, quote|options? chain|live price|tokeni[sz]ed stock|, [^,]+ live,|stock quote|share price (today|live)|stock price (today|live)|price - live|price & chart|stock forecasts?\b|historical (data|prices)|market (report|size|share)|forecast to 20\d\d|cagr of|(stock|shares?|position|stake|holdings?) (sold|bought|purchased|acquired|cut|raised|trimmed|lowered|increased|decreased|boosted|reduced) by|(sells|buys|acquires|purchases) [\d,]+ shares|has \$?[\d.,]+ (million|billion)? ?(stock )?(position|holdings|stake)/i;
+  var pick = function () {
+    var seen = {}, out = [];
+    all.filter(function (x) { return x.title && x.title.length > 15 && x.url && !junk.test(x.title) && (strongRx && strongRx.test(x.title) || tickRx && tickRx.test(x.title) || weakRx && weakRx.test(x.title) && local.test(x.title) && !namesake(x.title) && !(india && foreign.test(x.title))); })
+      .sort(function (p, q) { return q.ts - p.ts; })
+      .forEach(function (x) { var k = x.title.toLowerCase().replace(/[^a-z0-9ऀ-ॿ]+/g, ' ').trim().slice(0, 60); if (!seen[k] && out.length < 10) { seen[k] = 1; out.push(x); } });
+    return out;
+  };
+  var out = pick();
+  // thinly covered stocks: widen to any date and to the plain name
+  if (out.length < 5) { take(fetch([gnews(names), gnews('"' + nm + '"' + (tickOk ? ' OR "' + tick + '"' : ''))])); out = pick(); }
   return out;
 }
 
