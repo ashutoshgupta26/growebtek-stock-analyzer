@@ -1,7 +1,6 @@
 name: Update US data and publish site
 
 on:
-    - cron: "0 * * * 0,6"
   push:
     branches: [main]
   workflow_dispatch:
