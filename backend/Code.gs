@@ -300,13 +300,53 @@ function security_(q, isFund) {
   }
   var news = [];
   try {
-    var nm = (summary && summary.price && (summary.price.shortName || summary.price.longName)) || chart.meta.name || sym;
-    nm = String(nm).replace(/\b(limited|ltd\.?|inc\.?|corporation|corp\.?|plc|co\.?)\s*$/i, '').trim();
-    var nj = yahoo_('/v1/finance/search?quotesCount=0&newsCount=8&q=' + encodeURIComponent(nm), false);
-    news = ((nj && nj.news) || []).map(function (n) { return { title: n.title, url: n.link, src: n.publisher, ts: (n.providerPublishTime || 0) * 1000 }; });
+    var nm = (summary && summary.price && (summary.price.longName || summary.price.shortName)) || chart.meta.name || sym;
+    news = stockNews_(sym, nm);
   } catch (e) {}
   var out = { symbol: sym, chart: chart, summary: summary, news: news, fetched: Date.now() };
   cachePut_(key, out, 600);
+  return out;
+}
+
+// Company-specific news: Google News (Indian sources for NSE/BSE listings) + Yahoo, keeping only headlines about the company.
+function stockNews_(sym, name) {
+  var nm = String(name || sym).replace(/\s*\(.*?\)\s*/g, ' ').trim();
+  for (var i = 0; i < 2; i++) nm = nm.replace(/[.,]?\s*\b(limited|ltd|inc|incorporated|corporation|corp|plc|co|company|holdings?|group|class [a-z])\.?\s*$/i, '').trim();
+  nm = nm || sym;
+  var india = /\.(NS|BO)$/.test(sym), tick = sym.replace(/\.[A-Z]+$/, '').replace(/^\^/, '');
+  var esc = function (s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
+  var words = nm.split(/\s+/), short = words.length > 2 ? words.slice(0, 2).join(' ') : nm;
+  var gq = '("' + nm + '"' + (short !== nm ? ' OR "' + short + '"' : '') + ') ' + (india ? 'share' : 'stock') + ' when:14d';
+  var gurl = 'https://news.google.com/rss/search?q=' + encodeURIComponent(gq) + (india ? '&hl=en-IN&gl=IN&ceid=IN:en' : '&hl=en-US&gl=US&ceid=US:en');
+  var yurl = 'https://query2.finance.yahoo.com/v1/finance/search?quotesCount=0&newsCount=12&q=' + encodeURIComponent(nm);
+  var rs = [];
+  try { rs = UrlFetchApp.fetchAll([gurl, yurl].map(function (u) { return { url: u, muteHttpExceptions: true, headers: { 'User-Agent': UA } }; })); } catch (e) {}
+  var all = [];
+  var dec = function (t) { return String(t || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim(); };
+  var tag = function (b, n) { var m = b.match(new RegExp('<' + n + '[^>]*>([\\s\\S]*?)</' + n + '>')); return m ? dec(m[1]) : ''; };
+  if (rs[0] && rs[0].getResponseCode() === 200) {
+    (rs[0].getContentText().match(/<item[\s>][\s\S]*?<\/item>/g) || []).forEach(function (b) {
+      var t = tag(b, 'title'), src = tag(b, 'source');
+      if (src) t = t.replace(new RegExp('\\s+-\\s+' + esc(src) + '$'), '');
+      all.push({ title: t, url: tag(b, 'link'), src: src || 'Google News', ts: Date.parse(tag(b, 'pubDate')) || 0, g: 1 });
+    });
+  }
+  if (rs[1] && rs[1].getResponseCode() === 200) {
+    try { (JSON.parse(rs[1].getContentText()).news || []).forEach(function (n) { all.push({ title: n.title, url: n.link, src: n.publisher, ts: (n.providerPublishTime || 0) * 1000 }); }); } catch (e) {}
+  }
+  // relevance: the headline must name the company (first word of its name, two words if the first is generic) or its ticker
+  var generic = words.length > 1 && /^(the|tata|bajaj|adani|hdfc|icici|sbi|state|bank|indian|india|general|american|united|first|national|new|big|grand|southern|global)$/i.test(words[0]);
+  var alts = [esc((generic ? words.slice(0, 2).join(' ') : words[0]).toLowerCase())];
+  if (tick.length > 2 && !/^\d+$/.test(tick)) alts.push(esc(tick.toLowerCase()));
+  var rx = new RegExp('(^|[^a-z0-9])(' + alts.join('|') + ')($|[^a-z0-9])', 'i');
+  var seen = {}, out = [];
+  // a one-word name (e.g. "Eternal", "Apple") also needs a market word, and filler (market-size reports, fund filings) is dropped
+  var fin = /\b(shares|stocks?|nse|bse|sensex|nifty|nasdaq|nyse|s&p|dow|target|q[1-4]|fy\d*|results?|earnings|ipo|dividend|ltd|limited|inc|profit|revenue|orders?|rating|upgrade|downgrade|buy|sell|hold|price|market cap|ceo|deal|acquir\w*|stake|investors?|analysts?|brokerage|rally|falls?|jumps?|surges?|slips?|gains?|crore|lakh|billion|million|bonus|split|sales|launch\w*)\b/i;
+  var junk = /stock price, news|share price, news|news, quote|option chain|stock quote|market (report|size|share)|forecast to 20\d\d|cagr of|(stock|shares?|position|stake|holdings?) (sold|bought|purchased|acquired|cut|raised|trimmed|lowered|increased|decreased|boosted|reduced) by|(sells|buys|acquires|purchases) [\d,]+ shares|has \$?[\d.,]+ (million|billion)? ?(stock )?(position|holdings|stake)/i;
+  var single = words.length === 1, tickRx = tick.length > 2 && tick.toLowerCase() !== nm.toLowerCase() ? new RegExp('(^|[^a-z0-9])' + esc(tick.toLowerCase()) + '($|[^a-z0-9])', 'i') : null;
+  all.filter(function (x) { return x.title && x.title.length > 15 && x.url && rx.test(x.title) && !junk.test(x.title) && (!x.g || !single || fin.test(x.title) || tickRx && tickRx.test(x.title)); })
+    .sort(function (p, q) { return q.ts - p.ts; })
+    .forEach(function (x) { var k = x.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 60); if (!seen[k] && out.length < 10) { seen[k] = 1; out.push(x); } });
   return out;
 }
 
