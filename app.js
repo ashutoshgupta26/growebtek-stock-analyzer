@@ -136,7 +136,7 @@
   (function setupInstall() {
     var head = document.head;
     if (!SAFARI) { var m = document.createElement('link'); m.rel = 'manifest'; m.href = root() + 'manifest.webmanifest'; head.appendChild(m); }
-    [['apple-mobile-web-app-capable', 'yes'], ['mobile-web-app-capable', 'yes'], ['apple-mobile-web-app-title', 'Growebtek']].forEach(function (x) {
+    [['apple-mobile-web-app-capable', 'yes'], ['mobile-web-app-capable', 'yes'], ['apple-mobile-web-app-title', 'Growebtek Stock Market'], ['application-name', 'Growebtek Stock Market']].forEach(function (x) {
       var t = document.createElement('meta'); t.name = x[0]; t.content = x[1]; head.appendChild(t);
     });
     if ('serviceWorker' in navigator) navigator.serviceWorker.register(root() + 'sw.js').catch(function () {});
@@ -144,9 +144,9 @@
     window.addEventListener('appinstalled', function () { installEvt = null; toast('Shortcut added ✓'); var c = document.getElementById('gw-install'); if (c) c.remove(); });
   })();
   function installSteps() {
-    if (IOS) return ['Tap the <b>Share</b> button <span aria-hidden="true">⬆️</span> at the bottom (or top) of Safari.', 'Choose <b>Add to Home Screen</b>, then tap <b>Add</b>.', 'Open Growebtek from your home screen.'];
-    if (SAFARI) return ['In the Safari menu bar choose <b>File → Add to Dock</b>.', 'Click <b>Add</b>.', 'Open Growebtek from your Dock.'];
-    if (ANDROID) return ['Tap the browser menu <b>⋮</b> at the top right.', 'Choose <b>Add to Home screen</b> or <b>Install app</b>.', 'Open Growebtek from your home screen.'];
+    if (IOS) return ['Tap the <b>Share</b> button <span aria-hidden="true">⬆️</span> at the bottom (or top) of Safari.', 'Choose <b>Add to Home Screen</b>, then tap <b>Add</b>.', 'Open Growebtek Stock Market from your home screen.'];
+    if (SAFARI) return ['In the Safari menu bar choose <b>File → Add to Dock</b>.', 'Click <b>Add</b>.', 'Open Growebtek Stock Market from your Dock.'];
+    if (ANDROID) return ['Tap the browser menu <b>⋮</b> at the top right.', 'Choose <b>Add to Home screen</b> or <b>Install app</b>.', 'Open Growebtek Stock Market from your home screen.'];
     if (/Firefox/.test(UA)) return ['Firefox cannot make app shortcuts.', 'Open this page in <b>Chrome</b> or <b>Edge</b> and tap <b>Add shortcut</b> there.'];
     return ['Click the <b>install</b> icon <span aria-hidden="true">⊕</span> at the right end of the address bar,', 'or open the browser menu <b>⋮</b> → <b>Cast, save and share</b> → <b>Install page as app</b> (Edge: <b>Apps → Install this site as an app</b>).', 'Growebtek opens from your desktop, Start menu or taskbar.'];
   }

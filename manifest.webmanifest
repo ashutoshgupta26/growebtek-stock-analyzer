@@ -1,6 +1,6 @@
 {
-  "name": "Growebtek AI Stock & Fund Analyzer",
-  "short_name": "Growebtek",
+  "name": "Growebtek Stock Market",
+  "short_name": "Growebtek Stock Market",
   "description": "Live Indian and US market reports, stock analysis and mutual fund analysis.",
   "id": "./",
   "start_url": "./",
