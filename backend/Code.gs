@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v8.1' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v9' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
@@ -275,7 +275,7 @@ function raw_(o) { // flatten Yahoo {raw, fmt} objects
 function security_(q, isFund) {
   var sym = String(q.symbol || '').trim().toUpperCase();
   if (!/^[A-Z0-9.\-^=&]{1,20}$/.test(sym)) throw fail_('invalid', 'Unknown symbol.');
-  var key = (isFund ? 'f8:' : 'k8:') + sym;
+  var key = (isFund ? 'f9:' : 'k9:') + sym;
   var hit = cacheGet_(key); if (hit) return hit;
   var range = isFund ? '10y' : '5y';
   var ch = yahoo_('/v8/finance/chart/' + encodeURIComponent(sym) + '?range=' + range + '&interval=1d&includeAdjustedClose=true&events=div%2Csplit', false);
@@ -301,6 +301,7 @@ function security_(q, isFund) {
       sectors: (th.sectorWeightings || []).map(function (o) { var k = Object.keys(o)[0]; return { sector: k, pct: o[k] }; }),
       stock: th.stockPosition, bond: th.bondPosition, cash: th.cashPosition, pe: th.equityHoldings && th.equityHoldings.priceToEarnings, pb: th.equityHoldings && th.equityHoldings.priceToBook };
   }
+  if (summary && !isFund) { try { summary.fundTs = fundTs_(sym); } catch (e) {} }
   var news = [];
   try {
     var nm = (summary && summary.price && (summary.price.longName || summary.price.shortName)) || chart.meta.name || sym;
@@ -308,6 +309,29 @@ function security_(q, isFund) {
   } catch (e) {}
   var out = { symbol: sym, chart: chart, summary: summary, news: news, fetched: Date.now() };
   cachePut_(key, out, 600);
+  return out;
+}
+
+// Statement figures (annual, latest quarter, trailing 12M) used to fill ratios Yahoo leaves empty (ROE, current ratio, cash flow, PEG, ...).
+function fundTs_(sym) {
+  var A = ["FreeCashFlow", "OperatingCashFlow", "CapitalExpenditure", "NetIncome", "StockholdersEquity", "CurrentAssets", "CurrentLiabilities", "TotalRevenue", "EBITDA", "TotalDebt", "CashAndCashEquivalents", "DilutedEPS", "Inventory"];
+  var Q = ["StockholdersEquity", "CurrentAssets", "CurrentLiabilities", "TotalDebt", "CashAndCashEquivalents", "Inventory"];
+  var T = ["NetIncome", "FreeCashFlow", "OperatingCashFlow", "TotalRevenue", "EBITDA", "DilutedEPS"];
+  var types = A.map(function (t) { return "annual" + t; }).concat(Q.map(function (t) { return "quarterly" + t; }), T.map(function (t) { return "trailing" + t; }));
+  var now = Math.floor(Date.now() / 1000);
+  var j = yahoo_("/ws/fundamentals-timeseries/v1/finance/timeseries/" + encodeURIComponent(sym) + "?type=" + types.join(",") + "&period1=" + (now - 6 * 365 * 86400) + "&period2=" + now, false);
+  var res = j && j.timeseries && j.timeseries.result;
+  if (!res || !res.length) return null;
+  var out = { a: {}, q: {}, t: {} };
+  res.forEach(function (x) {
+    var ty = x.meta && x.meta.type && x.meta.type[0]; if (!ty) return;
+    var rows = (x[ty] || []).filter(function (r) { return r && r.reportedValue && isFinite(r.reportedValue.raw); })
+      .map(function (r) { return [r.asOfDate, r.reportedValue.raw]; }).sort(function (p, q) { return p[0] < q[0] ? -1 : 1; });
+    if (!rows.length) return;
+    var m = ty.match(/^(annual|quarterly|trailing)(.+)$/); if (!m) return;
+    if (m[1] === "annual") out.a[m[2]] = rows.slice(-4);
+    else out[m[1] === "quarterly" ? "q" : "t"][m[2]] = rows[rows.length - 1];
+  });
   return out;
 }
 

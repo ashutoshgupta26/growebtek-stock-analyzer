@@ -219,6 +219,43 @@
     et.forEach(function (x) { if (x.period === '+1y' && ok(x.growth)) m.fund.epsNext = x.growth; if (x.period === '0y' && ok(x.growth)) m.fund.epsCur = x.growth; });
     var yrs = pick(sm, 'earnings') !== null ? null : (sm.earnings && sm.earnings.financialsChart && sm.earnings.financialsChart.yearly) || [];
     if (yrs && yrs.length >= 3 && yrs[0].revenue > 0 && yrs[yrs.length - 1].revenue > 0) m.fund.rev3 = Math.pow(yrs[yrs.length - 1].revenue / yrs[0].revenue, 1 / (yrs.length - 1)) - 1;
+    // fill gaps from statement figures (Yahoo leaves some ratios empty, e.g. ROE / current ratio / cash flow for many Indian listings)
+    var ts = sm.fundTs || null, F0 = m.fund;
+    F0.ocf = pick(fd, 'operatingCashflow');
+    if (ts) {
+      var A0 = ts.a || {}, Q0 = ts.q || {}, T0 = ts.t || {};
+      var last = function (k) { var r = Q0[k] || (A0[k] && A0[k][A0[k].length - 1]); return r ? r[1] : null; };
+      var ttm = function (k) { var r = T0[k] || (A0[k] && A0[k][A0[k].length - 1]); return r ? r[1] : null; };
+      var ann = function (k) { return (A0[k] || []).map(function (r) { return r[1]; }); };
+      var eq = last('StockholdersEquity'), ni = ttm('NetIncome'), rev = ttm('TotalRevenue'), debt = last('TotalDebt');
+      if (!ok(F0.roe) && ok(ni) && ok(eq) && eq > 0) F0.roe = ni / eq;
+      if (!ok(F0.cr) && ok(last('CurrentAssets')) && last('CurrentLiabilities') > 0) F0.cr = last('CurrentAssets') / last('CurrentLiabilities');
+      if (!ok(F0.ocf)) F0.ocf = ttm('OperatingCashFlow');
+      if (!ok(F0.fcf)) F0.fcf = ok(ttm('FreeCashFlow')) ? ttm('FreeCashFlow') : ok(ttm('OperatingCashFlow')) && ok(ttm('CapitalExpenditure')) ? ttm('OperatingCashFlow') + ttm('CapitalExpenditure') : null;
+      if (!ok(F0.de) && ok(debt) && ok(eq) && eq > 0) F0.de = debt / eq;
+      if (!ok(F0.margin) && ok(ni) && rev > 0) F0.margin = ni / rev;
+      var rv = ann('TotalRevenue'), nv = ann('NetIncome');
+      if (!ok(F0.revG) && rv.length >= 2 && rv[rv.length - 2] > 0) F0.revG = rv[rv.length - 1] / rv[rv.length - 2] - 1;
+      if (!ok(F0.earnG) && nv.length >= 2 && nv[nv.length - 2] > 0) F0.earnG = nv[nv.length - 1] / nv[nv.length - 2] - 1;
+      if (!ok(F0.rev3) && rv.length >= 3 && rv[0] > 0 && rv[rv.length - 1] > 0) F0.rev3 = Math.pow(rv[rv.length - 1] / rv[0], 1 / (rv.length - 1)) - 1;
+      if (!curMismatch) {
+        var ebitda = pick(fd, 'ebitda'); if (!ok(ebitda)) ebitda = ttm('EBITDA');
+        if (!ok(F0.ev) && ok(m.mcap) && ebitda > 0) { var evx = (m.mcap + (debt || 0) - (last('CashAndCashEquivalents') || 0)) / ebitda; if (evx > 0 && evx < 300) F0.ev = evx; }
+        var sh = pick(ks, 'sharesOutstanding');
+        if (!ok(F0.pb) && sh > 0 && eq > 0) F0.pb = m.price / (eq / sh);
+      }
+      var ep = ann('DilutedEPS');
+      if (ep.length >= 3 && ep[0] > 0 && ep[ep.length - 1] > 0) F0.eps3 = Math.pow(ep[ep.length - 1] / ep[0], 1 / (ep.length - 1)) - 1;
+    }
+    F0.na = {};
+    if (/bank/i.test(ap.industry || '') || /bank/i.test(pr.longName || '') && /financial/i.test(ap.sector || '')) { // banks report no current assets/liabilities or EBITDA
+      if (!ok(F0.cr)) F0.na['Current ratio'] = 1; if (!ok(F0.ev)) F0.na['EV / EBITDA'] = 1;
+    }
+    if (ok(F0.pb) && F0.pb > 60 && curMismatch) F0.pb = null; // Yahoo mixes pence / dollars for some listings
+    if (!ok(F0.peg) && ok(F0.pe) && F0.pe > 0) {
+      var gr = ok(F0.epsNext) && F0.epsNext > 0 ? F0.epsNext : ok(F0.eps3) && F0.eps3 > 0 ? F0.eps3 : null;
+      if (gr) { var pg = F0.pe / (gr * 100); if (pg > 0 && pg < 20) F0.peg = pg; }
+    }
 
     // analyst
     var rt = sm.recommendationTrend && sm.recommendationTrend.trend && sm.recommendationTrend.trend[0];
@@ -605,12 +642,13 @@
       kv('Max drawdown 1Y', '<span class="dn">' + pct(T.dd1, 1) + '</span>') + kv('Max drawdown 5Y', '<span class="dn">' + pct(T.dd5, 1) + '</span>') +
       '</div><div class="an-h3">Support &amp; resistance</div><div class="an-sr">' + lad + '</div></div>';
     var fcfTxt = ok(F.fcf) ? big(F.fcf, F.finCur) + (mainCur(F.finCur) !== mainCur(cur) ? ' <small class="muted">(' + esc(F.finCur) + ')</small>' : '') : '–';
+    var naBank = '<span class="muted" style="font-size:12px">N/A for banks</span>';
     h += '<div class="gw-card"><h2>🏦 Fundamentals</h2><div class="an-kv">' +
       kv('P/E (TTM)', ratio(F.pe, 1, 'x')) + kv('Forward P/E', ratio(F.fpe, 1, 'x')) + kv('Price / Book', ratio(F.pb, 2, 'x')) + kv('PEG', ratio(F.peg, 2)) +
-      kv('EV / EBITDA', ratio(F.ev, 1, 'x')) + kv('Dividend yield', pct(F.dy, 2)) + kv('ROE', pct(F.roe, 1)) + kv('Profit margin', pct(F.margin, 1)) +
-      kv('Revenue growth', pctHtml(F.revG)) + kv('Earnings growth', pctHtml(F.earnG)) + kv('Debt / Equity', ratio(F.de, 2, 'x')) + kv('Current ratio', ratio(F.cr, 2)) +
-      kv('Free cash flow', fcfTxt) + kv('Market cap', big(m.mcap, cur)) +
-      '</div><p class="gw-disc">Growth is latest quarter vs a year ago. “–” means the figure is not available.</p></div></div>';
+      kv('EV / EBITDA', F.na['EV / EBITDA'] ? naBank : ratio(F.ev, 1, 'x')) + kv('Dividend yield', pct(F.dy, 2)) + kv('ROE', pct(F.roe, 1)) + kv('Profit margin', pct(F.margin, 1)) +
+      kv('Revenue growth', pctHtml(F.revG)) + kv('Earnings growth', pctHtml(F.earnG)) + kv('Debt / Equity', ratio(F.de, 2, 'x')) + kv('Current ratio', F.na['Current ratio'] ? naBank : ratio(F.cr, 2)) +
+      kv('Operating cash flow', ok(F.ocf) ? big(F.ocf, F.finCur) : '–') + kv('Free cash flow', fcfTxt) + kv('Market cap', big(m.mcap, cur)) +
+      '</div><p class="gw-disc">Growth is latest quarter vs a year ago (or latest year, where quarterly data is missing). “–” means the figure is not available.</p></div></div>';
 
     // analyst + profile
     var ah = '<div class="gw-card"><h2>🧑‍💼 Analyst view</h2>';
@@ -888,6 +926,7 @@
       ['Earnings growth', function (m) { return m.fund.earnG; }, pctHtmlPlain, 'hi'],
       ['Debt / Equity', function (m) { return m.fund.de; }, function (v) { return ratio(v, 2, 'x'); }, 'lo'],
       ['Current ratio', function (m) { return m.fund.cr; }, function (v) { return ratio(v, 2); }, 'hi'],
+      ['Operating cash flow', function (m) { return m.fund.ocf; }, function (v, m) { return big(v, m.fund.finCur); }, null],
       ['Free cash flow', function (m) { return m.fund.fcf; }, function (v, m) { return big(v, m.fund.finCur); }, null],
       ['grp', 'Analyst view'],
       ['Rating', anLbl, txt, null],
@@ -920,7 +959,7 @@
         var cand = vals.map(function (v, i) { return [v, i]; }).filter(function (x) { return typeof x[0] === 'number' && ok(x[0]) && (r[3] !== 'loPos' || x[0] > 0); });
         if (cand.length >= 2) { cand.sort(function (a, b) { return r[3] === 'hi' ? b[0] - a[0] : a[0] - b[0]; }); if (cand[0][0] !== cand[1][0]) best = cand[0][1]; }
       }
-      h += '<tr><td>' + r[0] + '</td>' + vals.map(function (v, i) { return '<td class="r num' + (i === best ? ' best' : '') + '">' + (v == null || (typeof v === 'number' && !ok(v)) ? '<span class="muted">–</span>' : r[2](v, ms[i])) + '</td>'; }).join('') + '</tr>';
+      h += '<tr><td>' + r[0] + '</td>' + vals.map(function (v, i) { return '<td class="r num' + (i === best ? ' best' : '') + '">' + (v == null || (typeof v === 'number' && !ok(v)) ? '<span class="muted"' + (ms[i].fund && ms[i].fund.na && ms[i].fund.na[r[0]] ? ' style="font-size:12px">N/A for banks' : '>–') + '</span>' : r[2](v, ms[i])) + '</td>'; }).join('') + '</tr>';
     });
     h += '</tbody></table></div><div class="an-picks" style="margin-top:12px"><span class="lb">Full analysis</span>' + ms.map(function (m) { return '<button type="button" class="an-pick" data-goan="' + esc(m.sym) + '">' + esc(m.short) + ' →</button>'; }).join('') + '</div></div>';
 
