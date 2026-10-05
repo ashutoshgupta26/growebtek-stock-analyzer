@@ -367,24 +367,26 @@ var MKT_ = function() {
   let PART = "", MARKED = [];
   const hostOf = (u) => String(u).split("/")[2] || "";
   const hangKey = (h) => "mkt:hang:" + PART + ":" + h;
-  const blocked = (h) => {
-    if (MARKED.indexOf(h) >= 0) return false;
+  const NEVER = ["www.nseindia.com"];
+  const markOf = (h) => {
+    if (MARKED.indexOf(h) >= 0) return "";
     try {
-      return !!CacheService.getScriptCache().get(hangKey(h));
+      return CacheService.getScriptCache().get(hangKey(h)) || "";
     } catch (e) {
-      return false;
+      return "";
     }
   };
-  function mark(hosts) {
+  const blocked = (h) => NEVER.indexOf(h) >= 0 || markOf(h) === "s";
+  function mark(hosts, v) {
     try {
       const c = CacheService.getScriptCache();
       const old = MARKED.filter((h) => hosts.indexOf(h) < 0);
       if (old.length) c.removeAll(old.map(hangKey));
       const o = {};
       hosts.forEach((h) => {
-        o[hangKey(h)] = "1";
+        o[hangKey(h)] = v;
       });
-      c.putAll(o, 7200);
+      c.putAll(o, 21600);
       MARKED = hosts.slice();
     } catch (e) {
     }
@@ -426,10 +428,11 @@ var MKT_ = function() {
     };
   };
   function prefetch(list) {
-    const todo = list.filter((x) => !MEMO[x[0]] && !blocked(hostOf(x[0])));
+    const todo = list.filter((x) => !MEMO[x[0]] && !blocked(hostOf(x[0])) && !markOf(hostOf(x[0])));
     if (!todo.length || late()) return;
     const t = Date.now();
-    mark(todo.map((x) => hostOf(x[0])).filter((h, i, a) => a.indexOf(h) === i));
+    const hs = todo.map((x) => hostOf(x[0])).filter((h, i, a) => a.indexOf(h) === i);
+    mark(hs, hs.length > 1 ? "b" : "s");
     try {
       UrlFetchApp.fetchAll(todo.map((x) => {
         const a = withAuth(x[0], x[1]);
@@ -448,7 +451,7 @@ var MKT_ = function() {
       note(url, "skipped", Date.now());
       return FAIL;
     }
-    mark([hostOf(url)]);
+    mark([hostOf(url)], "s");
     const a = withAuth(url, opts), t = Date.now();
     try {
       const r = UrlFetchApp.fetch(a[0], toReq(a[0], a[1]));
