@@ -364,6 +364,38 @@ var MKT_ = function() {
     if (!YA || !YA.crumb || !YH.test(url)) return [url, o];
     return [url + (url.indexOf("?") < 0 ? "?" : "&") + "crumb=" + encodeURIComponent(YA.crumb), Object.assign({}, o || {}, { headers: Object.assign({}, o && o.headers || {}, { Cookie: YA.cookie }) })];
   };
+  let PART = "", MARKED = [];
+  const hostOf = (u) => String(u).split("/")[2] || "";
+  const hangKey = (h) => "mkt:hang:" + PART + ":" + h;
+  const blocked = (h) => {
+    if (MARKED.indexOf(h) >= 0) return false;
+    try {
+      return !!CacheService.getScriptCache().get(hangKey(h));
+    } catch (e) {
+      return false;
+    }
+  };
+  function mark(hosts) {
+    try {
+      const c = CacheService.getScriptCache();
+      const old = MARKED.filter((h) => hosts.indexOf(h) < 0);
+      if (old.length) c.removeAll(old.map(hangKey));
+      const o = {};
+      hosts.forEach((h) => {
+        o[hangKey(h)] = "1";
+      });
+      c.putAll(o, 7200);
+      MARKED = hosts.slice();
+    } catch (e) {
+    }
+  }
+  function unmark() {
+    try {
+      if (MARKED.length) CacheService.getScriptCache().removeAll(MARKED.map(hangKey));
+    } catch (e) {
+    }
+    MARKED = [];
+  }
   const FAIL = { getResponseCode: () => 599, getContentText: () => "", getAllHeaders: () => ({}) };
   const toReq = (url, o) => ({ url, method: o && o.method || "get", headers: o && o.headers || {}, muteHttpExceptions: true, followRedirects: true });
   const wrap = (r) => {
@@ -394,9 +426,10 @@ var MKT_ = function() {
     };
   };
   function prefetch(list) {
-    const todo = list.filter((x) => !MEMO[x[0]]);
+    const todo = list.filter((x) => !MEMO[x[0]] && !blocked(hostOf(x[0])));
     if (!todo.length || late()) return;
     const t = Date.now();
+    mark(todo.map((x) => hostOf(x[0])).filter((h, i, a) => a.indexOf(h) === i));
     try {
       UrlFetchApp.fetchAll(todo.map((x) => {
         const a = withAuth(x[0], x[1]);
@@ -411,6 +444,11 @@ var MKT_ = function() {
   }
   function raw(url, opts) {
     if (late()) return FAIL;
+    if (blocked(hostOf(url))) {
+      note(url, "skipped", Date.now());
+      return FAIL;
+    }
+    mark([hostOf(url)]);
     const a = withAuth(url, opts), t = Date.now();
     try {
       const r = UrlFetchApp.fetch(a[0], toReq(a[0], a[1]));
@@ -1796,6 +1834,8 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
       return v || get(key + ":last");
     }
     cache().put(busy, "1", 45);
+    PART = feed2 + ":" + kind;
+    MARKED = [];
     try {
       v = build();
       if (v) {
@@ -1806,6 +1846,7 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
       console.error("market " + key + ": " + e);
       v = null;
     } finally {
+      unmark();
       cache().remove(busy);
     }
     return v || get(key + ":last");
