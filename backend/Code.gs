@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (feed) { try { return json_(marketFeed_(String(feed))); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
+  if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
   return json_({ ok: true, app: 'Growebtek AI Stock & Fund Analyzer', time: new Date().toISOString() });
 }
 
@@ -352,8 +352,19 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-var MKT_ = /* @__PURE__ */ function() {
+var MKT_ = function() {
   const MEMO = {};
+  let T0 = Date.now(), LIMIT = 45, LOG = [], YA = null, YA_TRIES = 0;
+  const late = () => Date.now() - T0 > LIMIT * 1e3;
+  const note = (url, status, t) => {
+    if (LOG.length < 300) LOG.push(String(url).replace(/^https?:\/\//, "").slice(0, 70) + " " + status + " " + (Date.now() - t) + "ms");
+  };
+  const YH = /^https:\/\/query[12]\.finance\.yahoo\.com\/v[78]\//;
+  const withAuth = (url, o) => {
+    if (!YA || !YA.crumb || !YH.test(url)) return [url, o];
+    return [url + (url.indexOf("?") < 0 ? "?" : "&") + "crumb=" + encodeURIComponent(YA.crumb), Object.assign({}, o || {}, { headers: Object.assign({}, o && o.headers || {}, { Cookie: YA.cookie }) })];
+  };
+  const FAIL = { getResponseCode: () => 599, getContentText: () => "", getAllHeaders: () => ({}) };
   const toReq = (url, o) => ({ url, method: o && o.method || "get", headers: o && o.headers || {}, muteHttpExceptions: true, followRedirects: true });
   const wrap = (r) => {
     const code = r.getResponseCode();
@@ -384,31 +395,48 @@ var MKT_ = /* @__PURE__ */ function() {
   };
   function prefetch(list) {
     const todo = list.filter((x) => !MEMO[x[0]]);
-    if (!todo.length) return;
+    if (!todo.length || late()) return;
+    const t = Date.now();
     try {
-      UrlFetchApp.fetchAll(todo.map((x) => toReq(x[0], x[1]))).forEach((r, i) => {
+      UrlFetchApp.fetchAll(todo.map((x) => {
+        const a = withAuth(x[0], x[1]);
+        return toReq(a[0], a[1]);
+      })).forEach((r, i) => {
         MEMO[todo[i][0]] = r;
       });
+      note("[" + todo.length + "] " + todo[0][0], "all", t);
     } catch (e) {
+      note("[" + todo.length + "] " + todo[0][0], "ERR", t);
     }
   }
-  const YH = /^https:\/\/query[12]\.finance\.yahoo\.com\/v[78]\//;
+  function raw(url, opts) {
+    if (late()) return FAIL;
+    const a = withAuth(url, opts), t = Date.now();
+    try {
+      const r = UrlFetchApp.fetch(a[0], toReq(a[0], a[1]));
+      note(url, r.getResponseCode(), t);
+      return r;
+    } catch (e) {
+      note(url, "ERR", t);
+      throw e;
+    }
+  }
   function fetch(url, opts) {
     let r = MEMO[url];
     delete MEMO[url];
-    if (!r) r = UrlFetchApp.fetch(url, toReq(url, opts));
+    if (!r) r = raw(url, opts);
     let res = wrap(r);
-    if (YH.test(url) && (res.status === 401 || res.status === 403 || res.status === 429)) {
-      const a = yahooAuth_(res.status !== 429);
-      if (a && a.crumb) {
-        const h = Object.assign({}, opts && opts.headers || {}, { Cookie: a.cookie });
-        res = wrap(UrlFetchApp.fetch(url + (url.indexOf("?") < 0 ? "?" : "&") + "crumb=" + encodeURIComponent(a.crumb), toReq(url, { headers: h })));
-      }
+    if (YH.test(url) && (res.status === 401 || res.status === 403 || res.status === 429) && YA_TRIES < 2 && !late()) {
+      YA_TRIES++;
+      const t = Date.now();
+      YA = yahooAuth_(YA_TRIES > 1 || YA && YA.crumb);
+      note("yahoo crumb", YA && YA.crumb ? "ok" : "none", t);
+      if (YA && YA.crumb) res = wrap(raw(url, opts));
     }
     return res;
   }
   const sleep = (ms) => {
-    if (ms > 400) Utilities.sleep(Math.min(ms, 1500));
+    if (ms > 400 && !late()) Utilities.sleep(Math.min(ms, 1500));
   };
   const Promise_all = (a) => a;
   const YAHOO = "https://query1.finance.yahoo.com";
@@ -1196,22 +1224,22 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
     const trading = isTradingDay(nowEt.date, nowEt.dow);
     const early = NYSE_EARLY.has(nowEt.date);
     const closeMin = early ? 780 : 960;
-    let status = "closed", note;
+    let status = "closed", note2;
     if (trading && nowEt.min >= 570 && nowEt.min < closeMin) {
       status = "open";
-      note = early ? "Market open (early close 1:00 PM ET)" : "Market open";
+      note2 = early ? "Market open (early close 1:00 PM ET)" : "Market open";
     } else if (trading && nowEt.min >= 240 && nowEt.min < 570) {
       status = "pre";
-      note = "Pre-market: regular session opens 9:30 AM ET";
+      note2 = "Pre-market: regular session opens 9:30 AM ET";
     } else if (trading && nowEt.min >= closeMin && nowEt.min < 1200) {
       status = "post";
-      note = "After-hours trading: regular session closed";
-    } else if (nowEt.dow === 0 || nowEt.dow === 6) note = "Weekend: market closed";
-    else if (!trading) note = "NYSE holiday: market closed";
-    else if (nowEt.min < 240) note = "Market closed: opens 9:30 AM ET";
-    else note = "Market closed for the day";
+      note2 = "After-hours trading: regular session closed";
+    } else if (nowEt.dow === 0 || nowEt.dow === 6) note2 = "Weekend: market closed";
+    else if (!trading) note2 = "NYSE holiday: market closed";
+    else if (nowEt.min < 240) note2 = "Market closed: opens 9:30 AM ET";
+    else note2 = "Market closed for the day";
     const payload = {
-      market: { status, note, sessionDate, earlyClose: NYSE_EARLY.has(sessionDate != null ? sessionDate : ""), hours: "9:30 AM\u20134:00 PM ET, Mon\u2013Fri" },
+      market: { status, note: note2, sessionDate, earlyClose: NYSE_EARLY.has(sessionDate != null ? sessionDate : ""), hours: "9:30 AM\u20134:00 PM ET, Mon\u2013Fri" },
       indices,
       sectors,
       gainers,
@@ -1782,19 +1810,27 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
     }
     return v || get(key + ":last");
   }
-  function feed(name) {
+  function feed(name, debug) {
     const b = B[name];
     if (!b) return { ok: false, error: "unknown feed" };
+    T0 = Date.now();
+    LOG = [];
+    YA = null;
+    YA_TRIES = 0;
     const cap = (s) => Math.min(s, toOpen(name));
     const live = (d) => d && d.market && d.market.status === "open";
+    LIMIT = 45;
     const data = part(name, "data", () => b[0]({ data: get("mkt:" + name + ":data:last") || {}, news: get("mkt:" + name + ":news:last") || {} }), (d) => cap(live(d) ? 120 : 900));
-    if (!data) return { ok: false, error: "no data" };
+    if (!data) return debug ? { ok: false, error: "no data", log: LOG } : { ok: false, error: "no data" };
+    LIMIT = 100;
     const news = part(name, "news", () => b[1]({ data, news: get("mkt:" + name + ":news:last") || {} }), () => cap(live(data) ? 600 : 1800));
-    return { ok: true, feed: name, data, news: news || {} };
+    const out = { ok: true, feed: name, data, news: news || {} };
+    if (debug) out.log = LOG.concat(["total " + (Date.now() - T0) + "ms"]);
+    return out;
   }
   return { feed };
 }();
-function marketFeed_(name) {
-  return MKT_.feed(name);
+function marketFeed_(name, debug) {
+  return MKT_.feed(name, debug);
 }
 // ===== END LIVE MARKET REPORTS =====
