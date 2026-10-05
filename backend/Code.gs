@@ -15,9 +15,9 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v8' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v8.1' });
   var ns = e && e.parameter && e.parameter.news;
-  if (ns) { try { var nk = 'n8:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
+  if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
   return json_({ ok: true, app: 'Growebtek AI Stock & Fund Analyzer', time: new Date().toISOString() });
 }
@@ -357,7 +357,7 @@ function stockNews_(sym, name) {
   // a namesake or parent company: the first word followed by another company word, e.g. Siemens Energy, ABB Power
   var other = new RegExp('(^|[^a-z0-9])' + esc(words[0].toLowerCase()) + '\\W+(energy|healthineers|ag|se|aktiengesellschaft|gamesa|mobility|group|inc|corp|corporation|plc|holdings?|motors?|financial|capital|power|global|international|usa|us|uk|europe|japan|china|germany|asia|music|entertainment)\\b', 'i');
   var full = String(name || '').toLowerCase(), namesake = function (t) { var m = t.match(other); return !!m && full.indexOf(m[2].toLowerCase()) < 0; };
-  var foreign = /\b(eur|usd|chf|gbp|swx|xetra|nyse|nasdaq|pre-market|frankfurt)\b|\$\s?\d/i;
+  var foreign = /\b(eur|usd|chf|gbp|aud|cad|hkd|swx|xetra|nyse|nasdaq|asx|tsx|lse|hkex|sgx|otc|pre-market|frankfurt|australia|aussie)\b|\$\s?\d/i;
   var fin = /\b(shares?|stocks?|nse|bse|sensex|nifty|nasdaq|nyse|s&p|dow|target|q[1-4]|fy\d*|results?|earnings|ipo|dividend|ltd|limited|inc|profit|revenue|orders?|rating|upgrade|downgrade|buy|sell|hold|price|market cap|ceo|deal|acquir\w*|stake|investors?|analysts?|brokerage|rally|falls?|jumps?|surges?|slips?|gains?|crore|lakh|billion|million|bonus|split|sales|launch\w*)\b/i;
   var local = india ? /\b(india|indian|nse|bse|sensex|nifty|ltd|limited|crore|lakh|rs|inr|dalal)\b|₹|[ऀ-ॿ]/i : fin;
   var junk = /stock price, news|share price, news|news, quote|options? chain|live price|tokeni[sz]ed stock|, [^,]+ live,|stock quote|share price (today|live)|stock price (today|live)|price - live|price & chart|stock forecasts?\b|historical (data|prices)|market (report|size|share)|forecast to 20\d\d|cagr of|(stock|shares?|position|stake|holdings?) (sold|bought|purchased|acquired|cut|raised|trimmed|lowered|increased|decreased|boosted|reduced) by|(sells|buys|acquires|purchases) [\d,]+ shares|has \$?[\d.,]+ (million|billion)? ?(stock )?(position|holdings|stake)/i;
