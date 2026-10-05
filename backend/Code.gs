@@ -439,8 +439,8 @@ var MKT_ = (function() {
         return toReq(a[0], a[1]);
       })).forEach((r, i) => {
         MEMO[todo[i][0]] = r;
+        note(todo[i][0], r.getResponseCode() + " [batch of " + todo.length + "]", t);
       });
-      note("[" + todo.length + "] " + todo[0][0], "all", t);
     } catch (e) {
       note("[" + todo.length + "] " + todo[0][0], "ERR", t);
     }
@@ -759,7 +759,7 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
     return __result;
   }
   function indiaNews(__in) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v;
     const readJson = (x) => x;
     const DATA = __in.data, NEWS = __in.news;
     let __result = null;
@@ -864,7 +864,7 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
     const finNews = pick(feeds.fin, 6, seen);
     const ipoNews = pick(feeds.ipo, 3, seen);
     const earnings = pick(feeds.results, 5, seen);
-    const MC = "https://www.moneycontrol.com/markets/fii-dii-data/", GROWW = "https://groww.in/v1/api/primaries/v1/ipo/open";
+    const MC = "https://www.moneycontrol.com/markets/fii-dii-data/", TL = "https://trendlyne.com/macro-data/fii-dii/latest/cash-pastmonth/", GROWW = "https://groww.in/v1/api/primaries/v1/ipo/open";
     function mcFii() {
       var _a2, _b2, _c2, _d2;
       try {
@@ -877,6 +877,23 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
         const [y, mo, da] = String(d.date).split("-");
         const date = `${da}-${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+mo - 1]}-${y}`;
         return [{ cat: "FII/FPI", date, buy: null, sell: null, net: num(d.fiiCM) }, { cat: "DII", date, buy: null, sell: null, net: num(d.diiCM) }].filter((x) => isFinite(x.net));
+      } catch (e) {
+        return null;
+      }
+    }
+    function tlFii() {
+      try {
+        const r = get2(TL, { headers: { Accept: "text/html" } }, 2);
+        if (!r) return null;
+        const html = r.text().replace(/\s+/g, " ");
+        const one = (who, cat) => {
+          const m = html.match(new RegExp(who + " were net (buyers|sellers) of \u20B9 ?(-?[\\d.,]+) Cr in the cash segment on (\\d{1,2}) (\\w{3}) (\\d{4})"));
+          if (!m) return null;
+          const v = Math.abs(+m[2].replace(/,/g, ""));
+          return { cat, date: `${m[3].padStart(2, "0")}-${m[4]}-${m[5]}`, buy: null, sell: null, net: m[1] === "sellers" ? -v : v };
+        };
+        const out2 = [one("FII", "FII/FPI"), one("DII", "DII")].filter((x) => x && isFinite(x.net));
+        return out2.length ? out2 : null;
       } catch (e) {
         return null;
       }
@@ -901,10 +918,10 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
         return null;
       }
     }
-    prefetch([[MC, { headers: { "User-Agent": UA, Accept: "text/html" } }], [GROWW, { headers: { "User-Agent": UA, Accept: "application/json" } }]]);
-    const [fiiRaw, ipoRaw, caRaw, holRaw] = [mcFii(), growwIpo(), nse("corporates-corporateActions?index=equities"), nse("holiday-master?type=trading")];
-    const fiidii = (fiiRaw == null ? void 0 : fiiRaw.length) ? fiiRaw : (errors.push("fii/dii"), (_c = prev.fiidii) != null ? _c : []);
-    const ipos = Array.isArray(ipoRaw) ? ipoRaw : (errors.push("ipo"), (_d = prev.ipos) != null ? _d : []);
+    prefetch([[MC, { headers: { "User-Agent": UA, Accept: "text/html" } }], [TL, { headers: { "User-Agent": UA, Accept: "text/html" } }], [GROWW, { headers: { "User-Agent": UA, Accept: "application/json" } }]]);
+    const [fiiRaw, ipoRaw, caRaw, holRaw] = [(_c = mcFii()) != null ? _c : tlFii(), growwIpo(), nse("corporates-corporateActions?index=equities"), nse("holiday-master?type=trading")];
+    const fiidii = (fiiRaw == null ? void 0 : fiiRaw.length) ? fiiRaw : (errors.push("fii/dii"), (_d = prev.fiidii) != null ? _d : []);
+    const ipos = Array.isArray(ipoRaw) ? ipoRaw : (errors.push("ipo"), (_e = prev.ipos) != null ? _e : []);
     const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const istNow = new Date(Date.now() + 5.5 * 36e5);
     const dayStart = (d) => Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
@@ -913,8 +930,8 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
     const corpActions = Array.isArray(caRaw) ? caRaw.filter((c) => {
       const t = parseNse(c.exDate);
       return t >= today0 && t <= today0 + 7 * 864e5;
-    }).slice(0, 12).map((c) => ({ symbol: c.symbol, subject: c.subject, exDate: c.exDate })) : (errors.push("nse corp actions"), ((_e = prev.corpActions) != null ? _e : []).filter((c) => parseNse(c.exDate) >= today0));
-    const holidays = new Set(((_f = holRaw == null ? void 0 : holRaw.CM) != null ? _f : []).map((h) => h.tradingDate));
+    }).slice(0, 12).map((c) => ({ symbol: c.symbol, subject: c.subject, exDate: c.exDate })) : (errors.push("nse corp actions"), ((_f = prev.corpActions) != null ? _f : []).filter((c) => parseNse(c.exDate) >= today0));
+    const holidays = new Set(((_g = holRaw == null ? void 0 : holRaw.CM) != null ? _g : []).map((h) => h.tradingDate));
     function nextSession() {
       var _a2;
       const open2 = ((_a2 = D.market) == null ? void 0 : _a2.status) === "open";
@@ -933,18 +950,18 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
       return ((_a2 = D.assets) != null ? _a2 : []).find((a) => a.name === n);
     };
     const n50 = idx("NIFTY 50"), sx = idx("SENSEX"), bn = idx("NIFTY BANK"), vix = idx("INDIA VIX");
-    const secs = [...(_g = D.sectors) != null ? _g : []].sort((a, b) => b.pct - a.pct);
-    const open = ((_h = D.market) == null ? void 0 : _h.status) === "open";
-    const sd = ((_i = D.market) == null ? void 0 : _i.sessionDate) ? /* @__PURE__ */ new Date(D.market.sessionDate + "T00:00:00Z") : istNow;
+    const secs = [...(_h = D.sectors) != null ? _h : []].sort((a, b) => b.pct - a.pct);
+    const open = ((_i = D.market) == null ? void 0 : _i.status) === "open";
+    const sd = ((_j = D.market) == null ? void 0 : _j.sessionDate) ? /* @__PURE__ */ new Date(D.market.sessionDate + "T00:00:00Z") : istNow;
     const sdLabel = `${sd.getUTCDate()} ${MON[sd.getUTCMonth()]} ${sd.getUTCFullYear()}`;
     const hhmm = `${String(istNow.getUTCHours()).padStart(2, "0")}:${String(istNow.getUTCMinutes()).padStart(2, "0")}`;
-    const tracked = (_j = D.stocks) != null ? _j : [];
+    const tracked = (_k = D.stocks) != null ? _k : [];
     const adv = tracked.filter((s) => s.pct > 0).length, dec = tracked.filter((s) => s.pct < 0).length;
     const p = n50.pct;
     const mood = p >= 0.75 ? "Bullish" : p >= 0.2 ? "Mildly bullish" : p <= -0.75 ? "Bearish" : p <= -0.2 ? "Mildly bearish" : "Neutral";
     const verb = open ? p >= 0 ? "is up" : "is down" : p >= 0 ? "closed up" : "closed down";
     const top = secs[0], bot = secs[secs.length - 1];
-    const g1 = (_k = D.gainers) == null ? void 0 : _k[0], l1 = (_l = D.losers) == null ? void 0 : _l[0];
+    const g1 = (_l = D.gainers) == null ? void 0 : _l[0], l1 = (_m = D.losers) == null ? void 0 : _m[0];
     const fii = fiidii.find((f) => /FII|FPI/i.test(f.cat)), dii = fiidii.find((f) => /DII/i.test(f.cat));
     const cr = (x) => "Rs " + nf(Math.abs(x), 0) + " Cr";
     const parts = [
@@ -970,7 +987,7 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
     if (brent && (brent.last > 85 || Math.abs(brent.pct) > 2)) risks.push(`Brent crude at $${nf(brent.last)} (${pc(brent.pct)}) weighs on inflation and OMCs`);
     const inr = asset("USD/INR");
     if (inr && inr.pct > 0.1) risks.push(`Rupee weaker at ${nf(inr.last)} per dollar (${pc(inr.pct)})`);
-    const us = ((_m = D.global) != null ? _m : []).find((g) => g.name === "S&P 500");
+    const us = ((_n = D.global) != null ? _n : []).find((g) => g.name === "S&P 500");
     if (us && us.pct < -0.5) risks.push(`Weak US cue: S&P 500 ${pc(us.pct)}`);
     if (dec > adv * 1.5) risks.push(`Weak breadth: ${dec} of ${tracked.length} tracked stocks are down`);
     if (n50.hi52 && n50.last < n50.hi52 * 0.9) risks.push(`Nifty ${nf((1 - n50.last / n50.hi52) * 100, 1)}% below its 52-week high of ${nf(n50.hi52)}`);
@@ -999,9 +1016,9 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
         trending.push({ symbol: s.symbol, reason: why + (h ? ". In news: " + short(h, 70) : "") });
       }
     };
-    ((_n = D.gainers) != null ? _n : []).slice(0, 3).forEach((s, i) => addT(s, `Up ${nf(s.pct)}%${i === 0 ? ", top gainer" : ""}`));
-    ((_o = D.losers) != null ? _o : []).slice(0, 3).forEach((s, i) => addT(s, `Down ${nf(Math.abs(s.pct))}%${i === 0 ? ", top loser" : ""}`));
-    ((_p = D.mostActive) != null ? _p : []).slice(0, 4).forEach((s) => addT(s, `Most traded: Rs ${nf(s.valueCr, 0)} Cr (${pc(s.pct)})`));
+    ((_o = D.gainers) != null ? _o : []).slice(0, 3).forEach((s, i) => addT(s, `Up ${nf(s.pct)}%${i === 0 ? ", top gainer" : ""}`));
+    ((_p = D.losers) != null ? _p : []).slice(0, 3).forEach((s, i) => addT(s, `Down ${nf(Math.abs(s.pct))}%${i === 0 ? ", top loser" : ""}`));
+    ((_q = D.mostActive) != null ? _q : []).slice(0, 4).forEach((s) => addT(s, `Most traded: Rs ${nf(s.valueCr, 0)} Cr (${pc(s.pct)})`));
     const SECTOR_KEYS = {
       IT: /\b(IT stocks|IT shares|tech stocks|Infosys|TCS|Wipro|HCL ?Tech)\b/i,
       AUTO: /\b(auto|car|two-wheeler|Maruti|Tata Motors|M&M)\b/i,
@@ -1023,11 +1040,11 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
       const h = re && [...all].sort((a, b) => b.ts - a.ts).find((it) => (!it.ts || Date.now() - it.ts < 864e5) && re.test(it.title));
       return [s.name, h ? "In news: " + short(h.title, 80) : ""];
     }).filter(([, v]) => v));
-    const ipoNote = ipoNews.length ? ipoNews.map((x) => x.title).slice(0, 2).join(". ") : (_q = prev.ipoNote) != null ? _q : "";
+    const ipoNote = ipoNews.length ? ipoNews.map((x) => x.title).slice(0, 2).join(". ") : (_r = prev.ipoNote) != null ? _r : "";
     const out = {
-      asOf: (_s = (_r = D.market) == null ? void 0 : _r.sessionDate) != null ? _s : null,
+      asOf: (_t = (_s = D.market) == null ? void 0 : _s.sessionDate) != null ? _t : null,
       asOfLabel: open ? `${sdLabel}, ${hhmm} IST` : `${sdLabel}, 3:30 PM IST`,
-      session: open ? `Live \xB7 ${hhmm} IST` : ((_t = D.market) == null ? void 0 : _t.sessionDate) === istNow.toISOString().slice(0, 10) ? "Closing Report \xB7 3:30 PM" : "Last session report",
+      session: open ? `Live \xB7 ${hhmm} IST` : ((_u = D.market) == null ? void 0 : _u.sessionDate) === istNow.toISOString().slice(0, 10) ? "Closing Report \xB7 3:30 PM" : "Last session report",
       mood,
       summary,
       conclusion,
@@ -1052,7 +1069,7 @@ TARIL MONEYVIEW`.split(/\s+/).filter(Boolean);
       nextSession: nextSession(),
       generated: "Automatic: headlines from ET, Mint, Business Standard and Google News RSS; summary, mood and levels computed from prices."
     };
-    for (const k of ["stockNews", "econNews", "mfNews", "finNews", "earnings"]) if (!out[k].length && ((_u = prev[k]) == null ? void 0 : _u.length)) out[k] = prev[k];
+    for (const k of ["stockNews", "econNews", "mfNews", "finNews", "earnings"]) if (!out[k].length && ((_v = prev[k]) == null ? void 0 : _v.length)) out[k] = prev[k];
     const strip = (o) => {
       const _a2 = o != null ? o : {}, { asOfLabel, session, updated, errors: _e2 } = _a2, rest = __objRest(_a2, ["asOfLabel", "session", "updated", "errors"]);
       return JSON.stringify(rest);
