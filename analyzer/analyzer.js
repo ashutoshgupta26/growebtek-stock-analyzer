@@ -395,19 +395,51 @@
   }
   function closeDD() { dd.hidden = true; q.setAttribute('aria-expanded', 'false'); sAct = -1; }
   function showDD(html) { dd.innerHTML = html; dd.hidden = false; q.setAttribute('aria-expanded', 'true'); }
-  function doSearch() {
+  // instant suggestions from a bundled list of popular stocks; live search results are merged in after
+  var SYMS = null, sCache = {};
+  fetch('symbols.json').then(function (r) { return r.json(); }).then(function (a) {
+    SYMS = a.map(function (x) { return { symbol: x[0], name: x[1], exchange: x[2], k: x[0].replace(/\.NS$/, '').toLowerCase(), n: ' ' + x[1].toLowerCase().replace(/[^a-z0-9&]+/g, ' ') }; });
+    if (q.value.trim() && !dd.hidden) doSearch(true);
+  }).catch(function () {});
+  function localMatch(v) {
+    if (!SYMS) return [];
+    v = v.toLowerCase().trim(); var w = ' ' + v.replace(/[^a-z0-9&]+/g, ' ').trim(), hits = [];
+    SYMS.forEach(function (x) {
+      var sc = x.k === v ? 0 : x.k.indexOf(v) === 0 ? 1 : x.n.indexOf(w) === 0 ? 2 : x.n.indexOf(w) > 0 ? 3 : -1;
+      if (sc >= 0) hits.push([sc, x]);
+    });
+    return hits.sort(function (p, r) { return p[0] - r[0] || p[1].name.length - r[1].name.length; }).slice(0, 8).map(function (h) { return h[1]; });
+  }
+  function drawDD(v, items, busy) {
+    sItems = items; sAct = -1;
+    if (!items.length) { if (!busy) showDD('<div class="empty">No matches for “' + esc(v) + '”. Try the company name or its ticker (e.g. RELIANCE.NS, AAPL, 7203.T). Press Enter to try “' + esc(v.toUpperCase()) + '” as a symbol.</div>'); return; }
+    showDD(items.map(function (x, i) {
+      return '<button type="button" role="option" data-i="' + i + '"><span class="nm"><b>' + esc(x.name || x.symbol) + '</b><small>' + esc(x.symbol) + '</small></span>' +
+        (x.exchange ? '<span class="gw-chip indigo">' + esc(x.exchange) + '</span>' : '') + (x.quoteType && x.quoteType !== 'EQUITY' ? '<span class="gw-chip pink">' + esc(x.type || x.quoteType) + '</span>' : '') + '</button>';
+    }).join(''));
+  }
+  function merge(loc, rem) {
+    var seen = {}, out = [];
+    loc.concat(rem).forEach(function (x) { if (!seen[x.symbol] && out.length < 12) { seen[x.symbol] = 1; out.push(x); } });
+    return out;
+  }
+  function doSearch(localOnly) {
     var v = q.value.trim(); if (!v) { closeDD(); return; }
-    var my = ++sSeq; spin.hidden = false;
-    GW.api('search', { q: v, kind: 'stock' }).then(function (j) {
+    var my = ++sSeq, loc = localMatch(v), key = v.toLowerCase();
+    if (sCache[key]) { spin.hidden = true; drawDD(v, merge(loc, sCache[key]), false); return; }
+    if (loc.length) drawDD(v, loc, true); else { sItems = []; showDD('<div class="empty">Searching “' + esc(v) + '”…</div>'); }
+    if (localOnly === true) return;
+    spin.hidden = false;
+    clearTimeout(sTimer);
+    sTimer = setTimeout(function () {
       if (my !== sSeq) return;
-      sItems = (j.results || []).filter(function (x) { return x && x.symbol; }); sAct = -1;
-      if (!sItems.length) showDD('<div class="empty">No matches for “' + esc(v) + '”. Try the company name or its ticker (e.g. RELIANCE.NS, AAPL, 7203.T). Press Enter to try “' + esc(v.toUpperCase()) + '” as a symbol.</div>');
-      else showDD(sItems.map(function (x, i) {
-        return '<button type="button" role="option" data-i="' + i + '"><span class="nm"><b>' + esc(x.name || x.symbol) + '</b><small>' + esc(x.symbol) + '</small></span>' +
-          (x.exchange ? '<span class="gw-chip indigo">' + esc(x.exchange) + '</span>' : '') + (x.quoteType && x.quoteType !== 'EQUITY' ? '<span class="gw-chip pink">' + esc(x.type || x.quoteType) + '</span>' : '') + '</button>';
-      }).join(''));
-    }).catch(function (e) { if (my === sSeq) showDD('<div class="empty">' + esc(e.message) + '</div>'); })
-      .then(function () { if (my === sSeq) spin.hidden = true; });
+      GW.api('search', { q: v, kind: 'stock' }).then(function (j) {
+        var rem = (j.results || []).filter(function (x) { return x && x.symbol; });
+        sCache[key] = rem;
+        if (my === sSeq) drawDD(v, merge(loc, rem), false);
+      }).catch(function (e) { if (my === sSeq && !loc.length) showDD('<div class="empty">' + esc(e.message) + '</div>'); })
+        .then(function () { if (my === sSeq) spin.hidden = true; });
+    }, loc.length ? 450 : 200);
   }
   function choose(sym, name) {
     sym = String(sym || '').trim().toUpperCase(); if (!sym) return;
@@ -415,7 +447,7 @@
     addRecent(sym, name);
     if (S.tab === 'compare') addCompare(sym); else go('s', [sym]);
   }
-  q.addEventListener('input', function () { clearTimeout(sTimer); if (!q.value.trim()) { sSeq++; spin.hidden = true; closeDD(); return; } sTimer = setTimeout(doSearch, 320); });
+  q.addEventListener('input', function () { clearTimeout(sTimer); if (!q.value.trim()) { sSeq++; spin.hidden = true; closeDD(); return; } doSearch(); });
   q.addEventListener('keydown', function (e) {
     var btns = $$('button', dd);
     if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
