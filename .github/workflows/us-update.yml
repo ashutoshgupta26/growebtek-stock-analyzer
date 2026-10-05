@@ -1,12 +1,6 @@
 name: Update US data and publish site
 
 on:
-  schedule:
-    # US market hours incl. pre-market and after hours (13:00-21:59 UTC, Mon-Fri): every 5 minutes.
-    # GitHub may delay scheduled runs by a few minutes.
-    - cron: "*/5 13-21 * * 1-5"
-    # Otherwise: every hour
-    - cron: "0 0-12,22-23 * * 1-5"
     - cron: "0 * * * 0,6"
   push:
     branches: [main]
