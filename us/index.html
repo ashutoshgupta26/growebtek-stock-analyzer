@@ -139,6 +139,7 @@ main{padding:18px 0 28px}
 .row{display:grid;grid-template-columns:minmax(0,1fr) auto 72px;align-items:center;gap:10px;padding:7px 6px;border-radius:8px}
 .row:hover{background:var(--card-2)}
 .row .nm b{font-weight:650;font-size:14px}
+.row .nm .fn,td.sym .fn{display:block;font-size:12px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px}
 .row .nm .why{display:block;font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .row .px{font-size:13px;color:var(--ink-2)}
 .row .pc{font-size:13px;font-weight:650;text-align:right;padding:3px 6px;border-radius:6px}
@@ -384,7 +385,7 @@ function renderStatus(){
 function stat(i,label){if(!i)return '';return '<div class="hs"'+tipAttr([i.name,'Prev close '+nf(i.prev),'Day range '+nf(i.low)+' – '+nf(i.high)])+'><div class="l">'+esc(label)+'</div><div class="v">'+K('hs-'+i.name,i.last,nf(i.last))+'</div><div class="d num '+cls(i.name==='CBOE VIX'?-i.pct:i.pct)+'">'+chg(i.chg)+' ('+pct(i.pct)+')</div></div>'}
 function moverRows(list,n){
   return '<ul class="rows">'+list.slice(0,n).map(function(s){var r=reasonFor(s.symbol),c=cls(s.pct);
-    return '<li class="row"'+tipAttr([s.symbol+(s.name?' · '+s.name:''),'Price '+usd(s.ltp)+' ('+chg(s.chg)+')','Day range '+usd(s.low)+' – '+usd(s.high),s.valueM?'Traded value '+bigM(s.valueM):'',r?'Why: '+r:''])+'><div class="nm"><b>'+esc(s.symbol)+'</b>'+(r?'<span class="why">'+t(r)+'</span>':'<span class="why">'+esc(s.name||'')+'</span>')+'</div><span class="px num">'+K('px-'+s.symbol,s.ltp,usd(s.ltp))+'</span><span class="pc num '+c+'">'+pct(s.pct)+'</span></li>'}).join('')+'</ul>';
+    return '<li class="row"'+tipAttr([s.symbol+(s.name?' · '+s.name:''),'Price '+usd(s.ltp)+' ('+chg(s.chg)+')','Day range '+usd(s.low)+' – '+usd(s.high),s.valueM?'Traded value '+bigM(s.valueM):'',r?'Why: '+r:''])+'><div class="nm"><b>'+esc(s.symbol)+'</b>'+(s.name?'<span class="fn">'+esc(s.name)+'</span>':'')+(r?'<span class="why">'+t(r)+'</span>':'')+'</div><span class="px num">'+K('px-'+s.symbol,s.ltp,usd(s.ltp))+'</span><span class="pc num '+c+'">'+pct(s.pct)+'</span></li>'}).join('')+'</ul>';
 }
 function renderOverview(){
   var spx=idx('S&P 500'),dj=idx('Dow Jones'),nq=idx('Nasdaq Composite'),vix=idx('CBOE VIX');
@@ -486,7 +487,7 @@ function stockTable(id,title,sub,list,defKey,defDir,opts){
   if(opts.limit)rows=rows.slice(0,opts.limit);
   var head='<tr>'+th(id,'symbol','Stock',false,defKey,defDir)+th(id,'ltp','Price $',true,defKey,defDir)+th(id,'pct','Change',true,defKey,defDir)+(opts.value?th(id,'valueM','Value $M',true,defKey,defDir):'')+(opts.why?'<th>Why it moved</th>':'')+'</tr>';
   var body=rows.map(function(s){var r=opts.why?(opts.reason?opts.reason(s):reasonFor(s.symbol)):null;
-    return '<tr'+tipAttr([s.symbol+(s.name?' · '+s.name:''),'Prev close '+usd(s.prev),'Day range '+usd(s.low)+' – '+usd(s.high),s.hi52?'52-week range '+usd(s.lo52)+' – '+usd(s.hi52):'',s.vol?'Volume '+nf(s.vol,0)+' shares':'',s.valueM?'Traded value '+bigM(s.valueM):''])+'><td class="sym"><b>'+esc(s.symbol)+'</b>'+(s.name&&opts.names?'<div style="font-size:12px;color:var(--ink-3)">'+esc(s.name)+'</div>':'')+'</td><td class="r">'+K(id+'-'+s.symbol,s.ltp,nf(s.ltp))+'</td><td class="r"><span class="badge num '+cls(s.pct)+'">'+pct(s.pct)+'</span></td>'+(opts.value?'<td class="r num">'+nf(s.valueM,0)+'</td>':'')+(opts.why?'<td class="why">'+(r?t(r):'–')+'</td>':'')+'</tr>'}).join('');
+    return '<tr'+tipAttr([s.symbol+(s.name?' · '+s.name:''),'Prev close '+usd(s.prev),'Day range '+usd(s.low)+' – '+usd(s.high),s.hi52?'52-week range '+usd(s.lo52)+' – '+usd(s.hi52):'',s.vol?'Volume '+nf(s.vol,0)+' shares':'',s.valueM?'Traded value '+bigM(s.valueM):''])+'><td class="sym"><b>'+esc(s.symbol)+'</b>'+(s.name?'<div class="fn">'+esc(s.name)+'</div>':'')+'</td><td class="r">'+K(id+'-'+s.symbol,s.ltp,nf(s.ltp))+'</td><td class="r"><span class="badge num '+cls(s.pct)+'">'+pct(s.pct)+'</span></td>'+(opts.value?'<td class="r num">'+nf(s.valueM,0)+'</td>':'')+(opts.why?'<td class="why">'+(r?t(r):'–')+'</td>':'')+'</tr>'}).join('');
   return '<div class="card'+(opts.cls?' '+opts.cls:'')+'"><h2>'+esc(title)+(sub?' <span class="sub">'+esc(sub)+'</span>':'')+'</h2><div class="tbl-wrap"><table><thead>'+head+'</thead><tbody>'+(body||'<tr><td colspan="5" class="empty">No stocks match this filter.</td></tr>')+'</tbody></table></div></div>';
 }
 function renderStocks(){
