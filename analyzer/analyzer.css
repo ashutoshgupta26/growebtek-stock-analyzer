@@ -198,3 +198,7 @@
 .an-col{display:flex;flex-direction:column;gap:16px;min-width:0}
 @media (max-width:600px){.an-kv b,.an-stat b{white-space:normal;overflow-wrap:anywhere}.an-kv b small{display:inline-block}}
 .an-list li i svg{display:block}
+.an-chd{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.an-chd i{display:inline-block;width:10px;height:10px;border-radius:50%}
+.an-ccol{min-width:0}
+.an-ctbl td small{font-size:11px}

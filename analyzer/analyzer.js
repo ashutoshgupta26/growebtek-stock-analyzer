@@ -790,35 +790,94 @@
     var multi = Object.keys(curs).length > 1;
     var h = '<div class="gw-card"><div class="an-ctop"><h2>📈 Performance <span class="sub">rebased to 100</span></h2>' + seg('cmp', S.cmpRange) + '</div><div class="an-chart" id="cc"></div><div class="an-legend" id="cc-leg"></div>' +
       (multi ? '<p class="an-note">These stocks trade in different currencies (' + Object.keys(curs).join(', ') + '). Prices and returns are shown in each stock’s local currency, without currency conversion.</p>' : '') + '</div>';
-    // table rows: [label, fn(m) -> value, fmt(v, m), better: 'hi'|'lo'|'loPos'|null]
+    // table rows: [label, fn(m) -> value, fmt(v, m), better: 'hi'|'lo'|'loPos'|null] — same parameters as the single-stock analysis
+    function sc(k) { return function (m) { var s = (m.scores || []).filter(function (x) { return x.k === k; })[0]; return s ? s.v : null; }; }
+    function scFmt(v) { return ok(v) ? '<b style="color:' + scoreColor(v) + '">' + num(v, 1) + '</b>/10' : '–'; }
+    function scen(k) { return function (m) { var s = (m.scen || []).filter(function (x) { return x.k === k; })[0]; return s && ok(s.p) ? s : null; }; }
+    function scenFmt(s, m) { return money(s.p, m.cur) + ' <small class="' + (s.chg >= 0 ? 'up' : 'dn') + '">' + pct(s.chg, 1, true) + '</small>'; }
+    function vsMa(k) { return function (m) { var ma = m.tech[k]; return ok(ma) ? m.price / ma - 1 : null; }; }
+    function vsMaFmt(k) { return function (v, m) { return money(m.tech[k], m.cur) + ' <small class="' + (v >= 0 ? 'up' : 'dn') + '">' + (v >= 0 ? '▲ ' : '▼ ') + pct(Math.abs(v), 1) + '</small>'; }; }
+    function lvl(arr) { return function (m) { var x = m.tech[arr] && m.tech[arr][0]; return ok(x) ? x : null; }; }
+    function lvlFmt(v, m) { return money(v, m.cur) + ' <small class="muted">' + pct(v / m.price - 1, 1, true) + '</small>'; }
+    function anLbl(m) { var A = m.an; return A.key ? A.key.replace(/_/g, ' ').replace(/\b\w/g, function (x) { return x.toUpperCase(); }) : null; }
+    function txt(v) { return esc(v); }
     var rows = [
-      ['grp', 'Price & returns'],
+      ['grp', 'Company'],
+      ['Sector', function (m) { return m.sector || null; }, txt, null],
+      ['Industry', function (m) { return m.industry || null; }, txt, null],
+      ['Country', function (m) { return m.country || null; }, txt, null],
+      ['Exchange', function (m) { return m.exch || null; }, txt, null],
+      ['Employees', function (m) { return m.employees; }, function (v, m) { return nf(locOf(m.cur), {}).format(v); }, null],
+      ['Next earnings', function (m) { return m.earnDate || null; }, function (v, m) { return esc(dateFmt(v, m.tz)) + (m.earnEst ? ' <small class="muted">(est.)</small>' : ''); }, null],
+      ['Ex-dividend', function (m) { return m.exDiv || null; }, function (v, m) { return esc(dateFmt(v, m.tz)); }, null],
+      ['grp', 'Price'],
       ['Price', function (m) { return m.price; }, function (v, m) { return money(v, m.cur); }, null],
       ['Day change', function (m) { return m.chgPct; }, pctHtmlPlain, 'hi'],
-      ['Return 1M', function (m) { return m.ret.m1; }, pctHtmlPlain, 'hi'],
-      ['Return 6M', function (m) { return m.ret.m6; }, pctHtmlPlain, 'hi'],
-      ['Return 1Y', function (m) { return m.ret.y1; }, pctHtmlPlain, 'hi'],
+      ['Prev close', function (m) { return m.prev; }, function (v, m) { return money(v, m.cur); }, null],
+      ['Day range', function (m) { return ok(m.dayLo) ? m.dayLo : null; }, function (v, m) { return money(m.dayLo, m.cur) + ' – ' + money(m.dayHi, m.cur); }, null],
+      ['52W low', function (m) { return m.lo52; }, function (v, m) { return money(v, m.cur); }, null],
+      ['52W high', function (m) { return m.hi52; }, function (v, m) { return money(v, m.cur); }, null],
+      ['52W position', function (m) { return m.tech.pos52; }, function (v) { return Math.round(v * 100) + '%'; }, null],
+      ['Volume', function (m) { return m.vol; }, function (v, m) { return nf(locOf(m.cur), { notation: m.cur === 'INR' ? 'standard' : 'compact', maximumFractionDigits: 1 }).format(v); }, null],
+      ['grp', 'Returns'],
+      ['1 week', function (m) { return m.ret.w1; }, pctHtmlPlain, 'hi'],
+      ['1 month', function (m) { return m.ret.m1; }, pctHtmlPlain, 'hi'],
+      ['3 months', function (m) { return m.ret.m3; }, pctHtmlPlain, 'hi'],
+      ['6 months', function (m) { return m.ret.m6; }, pctHtmlPlain, 'hi'],
+      ['YTD', function (m) { return m.ret.ytd; }, pctHtmlPlain, 'hi'],
+      ['1 year', function (m) { return m.ret.y1; }, pctHtmlPlain, 'hi'],
       ['3Y CAGR', function (m) { return m.ret.y3; }, pctHtmlPlain, 'hi'],
       ['5Y CAGR', function (m) { return m.ret.y5; }, pctHtmlPlain, 'hi'],
-      ['grp', 'Risk & technicals'],
-      ['Volatility (1Y)', function (m) { return m.tech.vol; }, function (v) { return pct(v, 0); }, 'lo'],
-      ['Max drawdown 1Y', function (m) { return m.tech.dd1; }, function (v) { return pct(v, 1); }, 'hi'],
-      ['RSI (14)', function (m) { return m.tech.rsi; }, function (v) { return num(v, 0); }, null],
+      ['grp', 'Technicals'],
       ['Trend', function (m) { return m.tech.trend; }, function (v, m) { return '<span class="gw-chip ' + m.tech.tone + '">' + esc(v) + '</span>'; }, null],
-      ['grp', 'Valuation & quality'],
+      ['SMA 20', vsMa('sma20'), vsMaFmt('sma20'), null],
+      ['SMA 50', vsMa('sma50'), vsMaFmt('sma50'), null],
+      ['SMA 200', vsMa('sma200'), vsMaFmt('sma200'), null],
+      ['RSI (14)', function (m) { return m.tech.rsi; }, function (v) { return num(v, 0) + ' <small class="' + (v > 70 || v < 30 ? 'dn' : 'muted') + '">' + (v > 70 ? 'overbought' : v < 30 ? 'oversold' : v >= 50 ? 'positive' : 'neutral') + '</small>'; }, null],
+      ['MACD (12,26,9)', function (m) { return m.tech.macdHist; }, function (v, m) { return '<span class="' + (v > 0 ? 'up' : 'dn') + '">' + (v > 0 ? 'Bullish' : 'Bearish') + '</span>' + (m.tech.macdCross ? ' <small class="muted">' + esc(m.tech.macdCross) + '</small>' : ''); }, null],
+      ['Nearest support', lvl('sup'), lvlFmt, null],
+      ['Nearest resistance', lvl('res'), lvlFmt, null],
+      ['grp', 'Risk'],
+      ['Volatility (1Y)', function (m) { return m.tech.vol; }, function (v) { return pct(v, 0); }, 'lo'],
+      ['Beta', function (m) { return m.fund.beta; }, function (v) { return ratio(v, 2); }, 'lo'],
+      ['Max drawdown 1Y', function (m) { return m.tech.dd1; }, function (v) { return '<span class="dn">' + pct(v, 1) + '</span>'; }, 'hi'],
+      ['Max drawdown 5Y', function (m) { return m.tech.dd5; }, function (v) { return '<span class="dn">' + pct(v, 1) + '</span>'; }, 'hi'],
+      ['grp', 'Fundamentals'],
       ['Market cap', function (m) { return m.mcap; }, function (v, m) { return big(v, m.cur); }, null],
       ['P/E (TTM)', function (m) { return m.fund.pe; }, function (v) { return ratio(v, 1, 'x'); }, 'loPos'],
+      ['Forward P/E', function (m) { return m.fund.fpe; }, function (v) { return ratio(v, 1, 'x'); }, 'loPos'],
       ['Price / Book', function (m) { return m.fund.pb; }, function (v) { return ratio(v, 2, 'x'); }, 'loPos'],
+      ['PEG', function (m) { return m.fund.peg; }, function (v) { return ratio(v, 2); }, 'loPos'],
+      ['EV / EBITDA', function (m) { return m.fund.ev; }, function (v) { return ratio(v, 1, 'x'); }, 'loPos'],
+      ['Dividend yield', function (m) { return m.fund.dy; }, function (v) { return pct(v, 2); }, 'hi'],
       ['ROE', function (m) { return m.fund.roe; }, function (v) { return pct(v, 1); }, 'hi'],
       ['Profit margin', function (m) { return m.fund.margin; }, function (v) { return pct(v, 1); }, 'hi'],
       ['Revenue growth', function (m) { return m.fund.revG; }, pctHtmlPlain, 'hi'],
+      ['Earnings growth', function (m) { return m.fund.earnG; }, pctHtmlPlain, 'hi'],
       ['Debt / Equity', function (m) { return m.fund.de; }, function (v) { return ratio(v, 2, 'x'); }, 'lo'],
-      ['Dividend yield', function (m) { return m.fund.dy; }, function (v) { return pct(v, 2); }, 'hi'],
-      ['Analyst upside', function (m) { return m.an.upside; }, pctHtmlPlain, 'hi'],
-      ['grp', 'AI view'],
-      ['Overall score', function (m) { return m.overall; }, function (v) { return ok(v) ? '<b>' + num(v, 1) + '</b>/10' : '–'; }, 'hi'],
-      ['Verdict', function (m) { return m.verdict; }, function (v, m) { return '<span class="gw-chip ' + verdictTone(v) + '">' + esc(v) + '</span>'; }, null],
-      ['Risk level', function (m) { return m.risk; }, function (v) { return '<span class="gw-chip ' + riskTone(v) + '">' + esc(v) + '</span>'; }, null]
+      ['Current ratio', function (m) { return m.fund.cr; }, function (v) { return ratio(v, 2); }, 'hi'],
+      ['Free cash flow', function (m) { return m.fund.fcf; }, function (v, m) { return big(v, m.fund.finCur); }, null],
+      ['grp', 'Analyst view'],
+      ['Rating', anLbl, txt, null],
+      ['Analysts', function (m) { return m.an.n; }, function (v) { return num(v, 0); }, null],
+      ['Rating score', function (m) { return m.an.score; }, function (v) { return num(v, 2) + ' <small class="muted">(1 = strong buy)</small>'; }, 'lo'],
+      ['Target low', function (m) { return m.an.lo; }, function (v, m) { return money(v, m.cur); }, null],
+      ['Target mean', function (m) { return m.an.mean; }, function (v, m) { return money(v, m.cur); }, null],
+      ['Target high', function (m) { return m.an.hi; }, function (v, m) { return money(v, m.cur); }, null],
+      ['Upside to mean', function (m) { return m.an.upside; }, pctHtmlPlain, 'hi'],
+      ['grp', 'AI scorecard'],
+      ['Fundamentals', sc('f'), scFmt, 'hi'],
+      ['Valuation', sc('v'), scFmt, 'hi'],
+      ['Technicals', sc('t'), scFmt, 'hi'],
+      ['Growth', sc('g'), scFmt, 'hi'],
+      ['Risk (higher = safer)', sc('r'), scFmt, 'hi'],
+      ['Overall score', function (m) { return m.overall; }, function (v) { return '<b>' + num(v, 1) + '</b>/10'; }, 'hi'],
+      ['Verdict', function (m) { return m.verdict; }, function (v) { return '<span class="gw-chip ' + verdictTone(v) + '">' + esc(v) + '</span>'; }, null],
+      ['Risk level', function (m) { return m.risk; }, function (v) { return '<span class="gw-chip ' + riskTone(v) + '">' + esc(v) + '</span>'; }, null],
+      ['grp', '12-month scenarios'],
+      ['Bull case', scen('bull'), scenFmt, null],
+      ['Base case', scen('base'), scenFmt, null],
+      ['Bear case', scen('bear'), scenFmt, null]
     ];
     h += '<div class="gw-card"><h2>📋 Side by side <span class="sub">best in each row in green</span></h2><div class="gw-tbl-wrap"><table class="gw-tbl an-ctbl"><thead><tr><th>Metric</th>' +
       ms.map(function (m) { return '<th class="sym"><i style="background:' + colorOf(m.sym) + '"></i>' + esc(m.short) + '<br><span class="muted num" style="font-size:11px">' + esc(m.sym) + ' · ' + esc(mainCur(m.cur)) + '</span></th>'; }).join('') + '</tr></thead><tbody>';
@@ -826,12 +885,27 @@
       if (r[0] === 'grp') { h += '<tr class="grp"><td colspan="' + (ms.length + 1) + '">' + r[1] + '</td></tr>'; return; }
       var vals = ms.map(r[1]), best = null;
       if (r[3]) {
-        var cand = vals.map(function (v, i) { return [v, i]; }).filter(function (x) { return ok(x[0]) && (r[3] !== 'loPos' || x[0] > 0); });
+        var cand = vals.map(function (v, i) { return [v, i]; }).filter(function (x) { return typeof x[0] === 'number' && ok(x[0]) && (r[3] !== 'loPos' || x[0] > 0); });
         if (cand.length >= 2) { cand.sort(function (a, b) { return r[3] === 'hi' ? b[0] - a[0] : a[0] - b[0]; }); if (cand[0][0] !== cand[1][0]) best = cand[0][1]; }
       }
       h += '<tr><td>' + r[0] + '</td>' + vals.map(function (v, i) { return '<td class="r num' + (i === best ? ' best' : '') + '">' + (v == null || (typeof v === 'number' && !ok(v)) ? '<span class="muted">–</span>' : r[2](v, ms[i])) + '</td>'; }).join('') + '</tr>';
     });
     h += '</tbody></table></div><div class="an-picks" style="margin-top:12px"><span class="lb">Full analysis</span>' + ms.map(function (m) { return '<button type="button" class="an-pick" data-goan="' + esc(m.sym) + '">' + esc(m.short) + ' →</button>'; }).join('') + '</div></div>';
+
+    // strengths, risks and news for each stock, side by side
+    var g = 'gw-grid ' + (ms.length >= 4 ? 'gw-g4' : ms.length === 3 ? 'gw-g3' : 'gw-g2');
+    function colHead(m) { return '<h2 class="an-chd"><i style="background:' + colorOf(m.sym) + '"></i>' + esc(m.short) + '</h2>'; }
+    h += '<div class="gw-card"><h2>💪 Strengths &amp; ⚠️ risks</h2><div class="' + g + '">' + ms.map(function (m) {
+      return '<div class="an-ccol">' + colHead(m) +
+        '<ul class="an-list pro">' + (m.pros || []).map(function (x) { return '<li><i><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 6.3l2.3 2.3 4.7-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></i><span>' + esc(x) + '</span></li>'; }).join('') + '</ul>' +
+        '<ul class="an-list con" style="margin-top:10px">' + (m.cons || []).map(function (x) { return '<li><i>!</i><span>' + esc(x) + '</span></li>'; }).join('') + '</ul></div>';
+    }).join('') + '</div></div>';
+    h += '<div class="gw-card"><h2>📰 Latest news</h2><div class="' + g + '">' + ms.map(function (m) {
+      var n = (m.news || []).slice(0, 4);
+      return '<div class="an-ccol">' + colHead(m) + (n.length ? '<ul class="an-news">' + n.map(function (x) {
+        return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener noreferrer">' + esc(x.title) + '</a><small>' + esc(x.src || '') + (x.ts ? ' · ' + esc(ago(x.ts)) : '') + '</small></li>';
+      }).join('') + '</ul>' : '<p class="muted">No recent news.</p>') + '</div>';
+    }).join('') + '</div></div>';
 
     // summary
     function top(fn, dir, filt) {
