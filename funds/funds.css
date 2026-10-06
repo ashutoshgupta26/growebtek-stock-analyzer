@@ -168,3 +168,32 @@
 @media (max-width:620px){.fx-picks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px}.fx-picks::-webkit-scrollbar{display:none}.fx-pick{flex:none}}
 .fx [hidden]{display:none!important}
 @media (max-width:620px){.fx-cmp-tbl th,.fx-cmp-tbl td{padding:8px 10px;font-size:13px}.fx-cmp-tbl tbody td:first-child{min-width:96px;max-width:118px;white-space:normal}.fx-cmp-tbl thead th{min-width:108px;white-space:normal}}
+
+/* fund report sections */
+.fx-exec{border-top:4px solid var(--gw-indigo)}
+.fx .gw-card h3{font-size:14px;font-weight:900;margin:12px 0 6px}
+.fx .gw-card h3:first-child{margin-top:0}
+.fx-kv2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0 18px}
+.fx-kv2 div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--gw-line);font-size:14px;min-width:0}
+.fx-kv2 span{color:var(--gw-ink-2);font-weight:600;flex:none;max-width:48%}
+.fx-kv2 b{font-weight:800;text-align:right;min-width:0;overflow-wrap:anywhere}
+.fx-mgr{padding:8px 0;border-bottom:1px solid var(--gw-line);font-size:14px}
+.fx-mgr:last-child{border-bottom:0}
+.fx-mgr p{font-size:13px;margin-top:2px}
+.fx-pc{margin:0 0 8px;padding:0;list-style:none;display:grid;gap:6px}
+.fx-pc li{font-size:14px;padding-left:22px;position:relative;color:var(--gw-ink-2)}
+.fx-pc li::before{position:absolute;left:2px;top:0;font-weight:900}
+.fx-pc.up li::before{content:"+";color:var(--gw-up)}
+.fx-pc.dn li::before{content:"−";color:var(--gw-dn)}
+.fx-news{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.fx-news li{font-size:14px;line-height:1.4}
+.fx-news a{font-weight:700;color:var(--gw-ink);text-decoration:none}
+.fx-news a:hover{color:var(--gw-indigo);text-decoration:underline}
+.fx-news .gw-chip{font-size:10.5px;padding:1px 7px}
+.fx-verdict{border-top:4px solid var(--gw-indigo)}
+.fx-verdict.green{border-top-color:var(--gw-up)}.fx-verdict.amber{border-top-color:var(--gw-orange)}.fx-verdict.red{border-top-color:var(--gw-dn)}
+.fx-v{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-size:22px;font-weight:900}
+.fx-v .num{font-size:18px;color:var(--gw-ink-2)}
+.fx-box{background:var(--gw-soft);border-radius:14px;padding:12px 14px;min-width:0}
+.fx-box h3{display:flex;align-items:center}
+.gw-tbl tr.me td{background:#ecebff}

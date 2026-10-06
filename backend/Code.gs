@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v9' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v10' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
@@ -46,6 +46,7 @@ function route_(q) {
     case 'search': anyone_(q); return search_(q);
     case 'stock': anyone_(q); return security_(q, false);
     case 'fund': anyone_(q); return security_(q, true);
+    case 'mfinfo': anyone_(q); return mfInfo_(q);
   }
   throw fail_('bad_request', 'Unknown action.');
 }
@@ -336,6 +337,124 @@ function fundTs_(sym) {
 }
 
 // Company-specific news, for any listing worldwide: Google News (local edition) by name and by ticker + Yahoo, keeping only headlines about the company.
+// Indian mutual fund details the NAV source lacks: AUM, expense ratio, exit load, benchmark, managers, holdings,
+// category rank and average, peer funds and news. Sources: Groww's public scheme pages, Kuvera (via ISIN), Google News.
+function mfInfo_(q) {
+  var code = String(q.code || '').replace(/\D/g, '').slice(0, 7);
+  if (!code) throw fail_('invalid', 'Unknown scheme.');
+  var key = 'mi10:' + code;
+  var hit = cacheGet_(key); if (hit) return hit;
+  var name = String(q.name || '').slice(0, 140), isin = String(q.isin || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 12);
+  var house = String(q.house || '').slice(0, 60), cat = String(q.category || '').slice(0, 60);
+  var out = { code: code, fetched: Date.now() };
+  try { out.g = growwInfo_(code, name); } catch (e) {}
+  try { if (isin) out.k = kuveraInfo_(isin); } catch (e) {}
+  // Regular/IDCW plans are missing from both sources; fall back to the same scheme's Direct Growth plan
+  try { if (!out.k && out.g && out.g.isin && out.g.isin !== isin) { out.k = kuveraInfo_(out.g.isin); if (out.k) out.k.approx = true; } } catch (e) {}
+  try { out.news = mfNews_(name, house, cat); } catch (e) { out.news = []; }
+  cachePut_(key, out, out.g || out.k ? 6 * 3600 : 900);
+  return out;
+}
+function growGet_(path) {
+  var r = UrlFetchApp.fetch('https://groww.in' + path, { muteHttpExceptions: true, headers: { 'User-Agent': UA, Accept: 'application/json' } });
+  if (r.getResponseCode() !== 200) return null;
+  try { return JSON.parse(r.getContentText()); } catch (e) { return null; }
+}
+function growwInfo_(code, name) {
+  var base = String(name).split(/\s+-\s+/)[0].replace(/\s*\((formerly|erstwhile)[^)]*\)/ig, '').trim();
+  var words = base.split(/\s+/);
+  var tries = [base, words.slice(0, 4).join(' '), words.slice(0, 3).join(' ')].filter(function (s, i, a) { return s && a.indexOf(s) === i; });
+  var cands = [];
+  for (var i = 0; i < tries.length && !cands.length; i++) {
+    var s = growGet_('/v1/api/search/v1/entity?app=false&entity_type=scheme&page=0&size=10&q=' + encodeURIComponent(tries[i]));
+    cands = (s && s.content || []).filter(function (c) { return c.search_id; });
+  }
+  if (!cands.length) return null;
+  var exact = cands.filter(function (c) { return String(c.scheme_code) === code; })[0];
+  var order = exact ? [exact] : cands.slice(0, 3), first = null;
+  for (var k = 0; k < order.length; k++) {
+    var j = growGet_('/v1/api/data/mf/web/v4/scheme/search/' + encodeURIComponent(order[k].search_id));
+    if (!j || !j.scheme_name) continue;
+    if (!first) first = j;
+    if (String(j.scheme_code) === code) return growwCompact_(j, false);
+    if (j.regular_search_id && String(j.direct_scheme_code) !== code) {
+      var r = growGet_('/v1/api/data/mf/web/v4/scheme/search/' + encodeURIComponent(j.regular_search_id));
+      if (r && String(r.scheme_code) === code) return growwCompact_(r, false);
+    }
+  }
+  // same scheme, other plan/option (e.g. IDCW): portfolio, managers and exit load are shared
+  return first ? growwCompact_(first, true) : null;
+}
+function growwCompact_(j, approx) {
+  var rs = (j.return_stats || [])[0] || {}, st = {};
+  (j.stats || []).forEach(function (s) { st[s.type] = s; });
+  var hold = (j.holdings || []).filter(function (h) { return h && isFinite(+h.corpus_per); }).sort(function (a, b) { return b.corpus_per - a.corpus_per; });
+  var sec = {}, nat = {};
+  hold.forEach(function (h) { var p = +h.corpus_per; var sn = h.sector_name || 'Others'; sec[sn] = (sec[sn] || 0) + p; var nn = h.nature_name || 'Other'; nat[nn] = (nat[nn] || 0) + p; });
+  var toArr = function (o) { return Object.keys(o).map(function (k) { return [k, Math.round(o[k] * 100) / 100]; }).sort(function (a, b) { return b[1] - a[1]; }); };
+  var cut = function (s, n) { s = String(s || '').replace(/\s+/g, ' ').trim(); return s.length > n ? s.slice(0, n - 1) + '…' : s; };
+  var pickRs = {};
+  ['return1m', 'return3m', 'return6m', 'return1y', 'return3y', 'return5y', 'return10y', 'cat_return1y', 'cat_return3y', 'cat_return5y', 'cat_return10y', 'rank1yr', 'rank3yr', 'rank5yr', 'rank10yr',
+    'rank_count1yr', 'rank_count3yr', 'rank_count5yr', 'rank_count10yr', 'sharpe_ratio', 'sortino_ratio', 'beta', 'alpha', 'standard_deviation', 'information_ratio', 'risk', 'mean_return']
+    .forEach(function (k) { if (rs[k] != null) pickRs[k] = rs[k]; });
+  return {
+    approx: approx, sid: j.search_id, isin: j.isin || '', code: String(j.scheme_code || ''), name: j.scheme_name, plan: j.plan_type, opt: j.scheme_type,
+    exitLoad: cut(j.exit_load, 400), lockIn: j.lock_in, benchmark: j.benchmark_name || j.benchmark, aum: j.aum, exp: parseFloat(j.expense_ratio), baseExp: parseFloat(j.base_expense_ratio),
+    turnover: j.portfolio_turnover, launch: j.launch_date || j.allotment_date, minSip: j.min_sip_investment, minLump: j.min_investment_amount,
+    desc: cut(j.description, 700), catDesc: cut((j.category_info || {}).description, 500), tax: cut((j.category_info || {}).tax_impact, 300),
+    risk: rs.risk || j.nfo_risk || '', rating: j.groww_rating, cat: j.category, sub: j.sub_category, stamp: j.stamp_duty, rta: (j.rta_details || {}).rta_name,
+    rs: pickRs, catAvg: st.CATEGORY_AVG_RETURN || null,
+    analysis: (j.analysis || []).map(function (a) { return { t: a.analysis_type, d: cut(a.analysis_desc, 260) }; }),
+    managers: (j.fund_manager_details || []).slice(0, 6).map(function (m) { return { n: m.person_name, from: m.date_from, edu: cut(m.education, 200), exp: cut(m.experience, 280), funds: (m.funds_managed || []).length }; }),
+    hold: hold.slice(0, 15).map(function (h) { return { n: h.company_name, s: h.sector_name, k: h.nature_name, i: h.instrument_name, p: Math.round(h.corpus_per * 100) / 100, r: h.rating || '' }; }),
+    holdN: hold.length, holdDate: (hold[0] || {}).portfolio_date || null, sectors: toArr(sec).slice(0, 12), nature: toArr(nat),
+    amcAum: (j.amc_info || {}).aum, amcRank: (j.amc_info || {}).rank
+  };
+}
+function kuveraInfo_(isin) {
+  var r = UrlFetchApp.fetch('https://mf.captnemo.in/kuvera/' + encodeURIComponent(isin), { muteHttpExceptions: true, followRedirects: true, headers: { 'User-Agent': UA, Accept: 'application/json' } });
+  if (r.getResponseCode() !== 200) return null;
+  var a = JSON.parse(r.getContentText()), j = Array.isArray(a) ? a[0] : a;
+  if (!j || !j.name) return null;
+  var cr = function (x) { return isFinite(+x) ? Math.round(+x / 10) : null; }; // Kuvera reports AUM in units of ₹10 lakh
+  return {
+    rating: j.fund_rating, ratingDate: j.fund_rating_date, riskLabel: j.crisil_rating, objective: String(j.investment_objective || '').slice(0, 700), aum: cr(j.aum),
+    exp: parseFloat(j.expense_ratio), expDate: j.expense_ratio_date, managers: j.fund_manager, vol: j.volatility, ret: j.returns, start: j.start_date, cat: j.fund_category, type: j.fund_type,
+    lockIn: j.lock_in_period, turnover: j.portfolio_turnover,
+    peers: (j.comparison || []).slice(0, 8).map(function (p) { return { n: p.short_name || p.name, code: p.code, y1: p['1y'], y3: p['3y'], y5: p['5y'], si: p.inception, vol: p.volatility, exp: p.expense_ratio, aum: cr(p.aum), ir: p.info_ratio }; })
+  };
+}
+function mfNews_(name, house, cat) {
+  var base = String(name).split(/\s+-\s+/)[0].trim();
+  var brand = String(house).replace(/\s*mutual\s*fund\s*$/i, '').trim();
+  var catW = String(cat).replace(/^(equity|debt|hybrid|other|solution oriented)\s+scheme\s*-\s*/i, '').replace(/\s*fund\s*$/i, '').trim();
+  var g = function (q) { return 'https://news.google.com/rss/search?q=' + encodeURIComponent(q) + '&hl=en-IN&gl=IN&ceid=IN:en'; };
+  var reqs = [[g('"' + base + '" when:120d'), 'fund'], [g('"' + brand + '" ("mutual fund" OR AMC OR NFO OR SIP) when:45d'), 'amc']];
+  if (catW && catW.length > 3) reqs.push([g('"' + catW + '" (funds OR "mutual funds" OR "mutual fund") when:30d'), 'category']);
+  var dec = function (t) { return String(t || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim(); };
+  var tag = function (b, n) { var m = b.match(new RegExp('<' + n + '[^>]*>([\\s\\S]*?)</' + n + '>')); return m ? dec(m[1]) : ''; };
+  var rs = []; try { rs = UrlFetchApp.fetchAll(reqs.map(function (x) { return { url: x[0], muteHttpExceptions: true, headers: { 'User-Agent': UA } }; })); } catch (e) {}
+  var lc = function (s) { return s.toLowerCase(); }, keyB = lc(base.split(/\s+/).slice(0, 2).join(' ')), keyH = lc(brand.split(/\s+/)[0] || ''), keyC = lc(catW);
+  var seen = {}, out = [];
+  rs.forEach(function (r, ix) {
+    if (!r || r.getResponseCode() !== 200) return;
+    (r.getContentText().match(/<item[\s>][\s\S]*?<\/item>/g) || []).slice(0, 25).forEach(function (b) {
+      var t = tag(b, 'title'), src = tag(b, 'source');
+      if (src) t = t.replace(new RegExp('\\s+-\\s+' + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$'), '');
+      var tl = lc(t), kind = reqs[ix][1];
+      var rel = kind === 'fund' ? tl.indexOf(keyB) >= 0 : kind === 'amc' ? (keyH && tl.indexOf(keyH) >= 0) : (keyC && tl.indexOf(keyC) >= 0);
+      if (!rel || t.length < 20) return;
+      var k = tl.replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 60); if (seen[k]) return; seen[k] = 1;
+      out.push({ title: t, url: tag(b, 'link'), src: src || 'Google News', ts: Date.parse(tag(b, 'pubDate')) || 0, kind: kind });
+    });
+  });
+  var rank = { fund: 0, amc: 1, category: 2 };
+  out.sort(function (a, b) { return rank[a.kind] - rank[b.kind] || b.ts - a.ts; });
+  var res = [], cnt = { fund: 0, amc: 0, category: 0 };
+  out.forEach(function (n) { if (cnt[n.kind] < 5 && res.length < 12) { cnt[n.kind]++; res.push(n); } });
+  return res.sort(function (a, b) { return b.ts - a.ts; });
+}
+
 function stockNews_(sym, name) {
   var nm = String(name || sym).replace(/\s*\(.*?\)\s*/g, ' ').replace(/&amp;/g, '&').trim();
   for (var i = 0; i < 3; i++) nm = nm.replace(/[.,]?\s*\b(limited|ltd|inc|incorporated|corporation|corp|plc|co|company|holdings?|group|class [a-z]|aktiengesellschaft|ag|se|sa|s\.a|nv|n\.v|spa|s\.p\.a|ab|asa|oyj|kgaa|bhd|berhad|tbk|pcl|nl)\.?\s*$/i, '').trim();

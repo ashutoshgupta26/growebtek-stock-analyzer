@@ -197,6 +197,7 @@
       f.since = f.x.inception && f.x.inception < c.t[0] ? f.x.inception : c.t[0];
       f.cls = assetClass(f);
       f.lev = /ultra|leverag|inverse|short|bear|2x|3x|-1x|daily/i.test(name);
+      f.perf = perf; f.fp = fp;
       return f;
     });
   }
@@ -651,6 +652,7 @@
       '<span class="gw-chip ' + (f.chg > 0 ? 'green' : f.chg < 0 ? 'red' : '') + ' num">' + (ok(f.chg) ? (f.chg > 0 ? '▲ ' : f.chg < 0 ? '▼ ' : '') + fmtNav(f, Math.abs(f.chg)) + ' (' + pct(f.chgPct, 2) + ')' : '–') + ' 1D</span>' +
       '<div class="acts"><button class="gw-btn sm" type="button" data-add-cmp="' + esc(f.key) + '">' + (inCmp ? 'In compare ✓' : '+ Add to compare') + '</button></div></div>' +
       '<div class="fx-kv">' + kv.map(function (k) { return '<div><span>' + k[0] + '</span><b class="' + (/ISIN|code/.test(k[0]) ? 'num' : '') + '" title="' + esc(k[1]) + '">' + esc(k[1]) + '</b></div>'; }).join('') + '</div></section>';
+    h += '<div id="rptTop">' + cardLoading('Executive summary') + '</div>';
 
     // chart
     h += '<section class="gw-card"><div class="fx-hrow"><h2>' + (f.kind === 'mf' ? 'NAV history' : 'Price history') + ' <span class="sub" id="chRet"></span></h2><div class="fx-seg sm" id="rng">' +
@@ -669,10 +671,11 @@
 
     // returns
     var r = m.r;
-    h += '<section class="gw-card"><h2>Returns <span class="sub">absolute up to 1Y, CAGR beyond · as of ' + dfmt(f.latestT) + '</span></h2><div class="fx-rets">' +
+    h += '<section class="gw-card"><h2>Performance analysis <span class="sub">absolute up to 1Y, CAGR beyond · as of ' + dfmt(f.latestT) + '</span></h2><div class="fx-rets">' +
       retTile('1M', r.m1) + retTile('3M', r.m3) + retTile('6M', r.m6) + retTile('1Y', r.y1) + retTile('3Y', r.y3, 'CAGR') + retTile('5Y', r.y5, 'CAGR') + retTile('7Y', r.y7, 'CAGR') + retTile('10Y', r.y10, 'CAGR') +
       retTile(f.kind === 'gl' && f.since < f.t[0] ? 'Max' : 'Since launch', r.si, m.siAbs ? 'absolute' : 'CAGR') + '</div>' +
       (f.kind === 'gl' && f.since < f.t[0] ? '<p class="fx-note">"Max" covers the available data since ' + mfmt(f.t[0]) + '; the fund itself started in ' + mfmt(f.since) + '.</p>' : '') + '</section>';
+    h += '<div id="rptMid">' + cardLoading('Performance vs category &amp; ranking') + '</div>';
 
     // SIP + risk
     var cur = f.cur === 'INR' ? '₹' : (nf(f.cur, {}).formatToParts(0).filter(function (p) { return p.type === 'currency'; })[0] || {}).value || f.cur;
@@ -680,7 +683,7 @@
     h += '<div class="gw-grid gw-g2"><section class="gw-card"><h2>SIP calculator <span class="sub">from real NAV history</span></h2><div class="fx-sip-in"><div class="gw-field"><label for="sipAmt">Monthly amount (' + esc(cur) + ')</label><input class="gw-input num" id="sipAmt" type="number" inputmode="numeric" min="100" step="500" value="' + amt + '"></div>' +
       '<div class="gw-field"><label>Period</label><div class="fx-seg sm" id="sipYrs">' + [1, 3, 5, 10].map(function (y) { return '<button type="button" data-y="' + y + '" aria-selected="' + (y === S.sipYrs) + '">' + y + 'Y</button>'; }).join('') + '</div></div></div><div id="sipOut"></div><div id="sipChart"></div></section>';
     var rk = m.risk, dd = m.dd;
-    h += '<section class="gw-card"><h2>Risk <span class="sub">' + (rk ? 'volatility & ratios: ' + m.riskLbl : '') + '</span></h2><div class="fx-stats">' +
+    h += '<section class="gw-card"><h2>Risk analysis <span class="sub">' + (rk ? 'volatility & ratios: ' + m.riskLbl : '') + '</span></h2><div class="fx-stats">' +
       stat('Volatility (annualised)', rk ? pct(rk.vol, 1, 1) : '–', rk ? (rk.vol < T.vol[0] + (T.vol[1] - T.vol[0]) * 0.35 ? 'low for its class' : rk.vol > T.vol[0] + (T.vol[1] - T.vol[0]) * 0.65 ? 'high for its class' : 'moderate for its class') : '') +
       stat('Sharpe ratio', rk ? num(rk.sharpe) : '–', 'risk-free ' + pct(f.rf, 1, 1) + ' (assumed)') +
       stat('Sortino ratio', rk ? num(rk.sortino) : '–', 'penalises only downside moves') +
@@ -711,9 +714,8 @@
     // calendar
     h += '<section class="gw-card"><h2>Calendar-year returns <span class="sub">' + (m.cal.some(function (c) { return c.ytd; }) ? 'latest year is year-to-date' : '') + '</span></h2><div id="calChart"></div></section>';
 
-    // portfolio / costs
-    if (f.kind === 'gl') h += portfolioHtml(f);
-    else h += '<section class="gw-card"><h2>Costs &amp; portfolio</h2><p class="fx-about">Expense ratio, AUM, holdings and sector data are <b>not available</b> from the NAV data source used for Indian funds, so they are not shown or scored. Check the latest factsheet on the ' + esc(f.house || 'AMC') + ' website' + (f.p.plan === 'Regular' ? '. Regular plans include distributor commission, so their expense ratio is higher than the Direct plan of the same scheme' : '') + '.</p></section>';
+    // detailed report (filled in once fund details arrive)
+    h += '<div id="rptBot">' + cardLoading('Portfolio, costs &amp; verdict') + '</div>';
 
     h += '<p class="fx-note" style="text-align:center">All numbers are computed from historical ' + (f.kind === 'mf' ? 'NAVs' : 'adjusted prices') + ' and can differ slightly from the fund house\'s published figures.</p>';
     $('view').innerHTML = h;
@@ -730,6 +732,7 @@
     $('rng').addEventListener('click', function (e) { var b = e.target.closest('button[data-r]'); if (!b || b.disabled) return; S.range = b.dataset.r; this.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); }); drawNav(f); });
     $('sipYrs').addEventListener('click', function (e) { var b = e.target.closest('button[data-y]'); if (!b) return; S.sipYrs = +b.dataset.y; this.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); }); drawSip(f); });
     var sT; $('sipAmt').addEventListener('input', function () { clearTimeout(sT); var v = +this.value; sT = setTimeout(function () { if (v >= 1) { S.sipAmt[f.cur] = v; drawSip(f); } }, 250); });
+    fillReport(f, m, S.token);
   }
 
   function drawNav(f) {
@@ -800,6 +803,380 @@
     return h;
   }
 
+  // ------------------------------------------------------------------ fund report (details beyond NAV history)
+  // Indian funds: the backend gathers AMC/portfolio data (mfinfo). Global funds: Yahoo's fund modules already loaded.
+  var infoCache = {};
+  function loadInfo(f) {
+    if (f.info) return Promise.resolve(f.info);
+    if (f.kind === 'gl') { f.info = glInfo(f); return Promise.resolve(f.info); }
+    if (!infoCache[f.key]) {
+      infoCache[f.key] = GW.api('mfinfo', { code: f.id, isin: f.isin, name: f.name, house: f.house, category: f.catFull }, { timeout: 40000, noRedirect: true })
+        .then(function (j) { return mfInfo(f, j); }, function (e) { delete infoCache[f.key]; return { none: true, why: /unknown action/i.test(e.message || '') ? 'Detailed fund data is not switched on yet.' : 'Detailed fund data could not be loaded right now.' }; });
+    }
+    return infoCache[f.key].then(function (I) { f.info = I.none ? null : I; return I; });
+  }
+  function P(x) { return x != null && x !== '' && isFinite(+x) ? +x / 100 : null; } // percent -> fraction
+  function pDate(s) { if (!s) return null; var t = Date.parse(s); if (!isFinite(t)) { var m = /^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/.exec(s); if (m) t = Date.parse(m[2] + ' ' + m[1] + ', ' + m[3] + ' UTC'); } return isFinite(t) ? t : null; }
+  function cap1(s) { s = String(s || '').trim(); return s ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase() : ''; }
+  function mfInfo(f, j) {
+    var g = j && j.g, k = j && j.k;
+    if (!g && !k) return { none: !(j && j.news && j.news.length), why: 'No detailed data found for this scheme.', news: (j && j.news) || [], src: [] };
+    var I = { src: [], news: j.news || [], approx: !!((g && g.approx) || (k && k.approx)) };
+    if (g) {
+      I.src.push('Groww');
+      var rs = g.rs || {}, ca = g.catAvg || {};
+      I.aumCr = ok(+g.aum) ? +g.aum : null; I.exp = P(g.exp); I.baseExp = P(g.baseExp); I.exitLoad = g.exitLoad || ''; I.benchmark = g.benchmark || '';
+      I.launch = pDate(g.launch); I.minSip = +g.minSip || null; I.minLump = +g.minLump || null; I.riskLbl = g.risk || ''; I.turnover = P(g.turnover);
+      var ly = g.lockIn || {}; I.lockIn = ly.years ? ly.years + ' years' : ly.months ? ly.months + ' months' : ly.days ? ly.days + ' days' : '';
+      I.tax = g.tax || ''; I.desc = g.desc || '';
+      var subW = String(g.sub || f.category).toLowerCase().split(/\s+/)[0];
+      if (g.catDesc && subW && g.catDesc.toLowerCase().indexOf(subW) >= 0) I.catDesc = g.catDesc;
+      I.sub = g.sub || ''; I.amcAumCr = +g.amcAum || null; I.amcRank = g.amcRank || null; I.stamp = g.stamp || '';
+      I.ratings = []; if (ok(g.rating) && g.rating > 0) I.ratings.push({ src: 'Groww', v: g.rating });
+      I.managers = (g.managers || []).map(function (m) { return { n: m.n, since: pDate(m.from), edu: m.edu, exp: m.exp, funds: m.funds }; });
+      I.hold = (g.hold || []).map(function (h) { return { n: h.n, s: h.s || h.k || '', p: h.p / 100, k: h.k, r: h.r }; });
+      I.holdN = g.holdN || I.hold.length; I.holdDate = pDate(g.holdDate);
+      I.sectors = (g.sectors || []).map(function (s) { return [s[0], s[1] / 100]; });
+      var MIX = { EQUITY: 'Equity', DEBT: 'Debt', CASH: 'Cash & equivalents', MF: 'Mutual fund units', REALEST: 'REITs / InvITs', GOLD: 'Gold', COMMODITY: 'Commodities', OTHERS: 'Others' };
+      I.mix = (g.nature || []).map(function (s) { return [MIX[s[0]] || cap1(s[0]), s[1] / 100]; });
+      I.top10 = I.hold.slice(0, 10).reduce(function (a, b) { return a + b.p; }, 0) || null;
+      I.cat = {};
+      [['y1', '1y', '1yr', 'stat_1y'], ['y3', '3y', '3yr', 'stat_3y'], ['y5', '5y', '5yr', 'stat_5y'], ['y10', '10y', '10yr', null]].forEach(function (q) {
+        var c = { f: P(rs['return' + q[1]]), c: P(rs['cat_return' + q[1]]), rank: rs['rank' + q[2]], n: rs['rank_count' + q[2]] };
+        if (!ok(c.c) && q[3] && ok(ca[q[3]])) c.c = ca[q[3]] / 100;
+        if (ok(c.f) || ok(c.c) || ok(c.rank)) I.cat[q[0]] = c;
+      });
+      I.ratios = { sd: P(rs.standard_deviation), beta: ok(rs.beta) ? rs.beta : null, alpha: P(rs.alpha), sharpe: ok(rs.sharpe_ratio) ? rs.sharpe_ratio : null, sortino: ok(rs.sortino_ratio) ? rs.sortino_ratio : null, ir: ok(rs.information_ratio) ? rs.information_ratio : null };
+      I.pros = (g.analysis || []).filter(function (a) { return a.t === 'PROS'; }).map(function (a) { return a.d; });
+      I.cons = (g.analysis || []).filter(function (a) { return a.t === 'CONS'; }).map(function (a) { return a.d; });
+    }
+    if (k) {
+      I.src.push('Kuvera');
+      I.ratings = I.ratings || [];
+      if (ok(k.rating) && k.rating > 0) I.ratings.push({ src: 'Kuvera', v: k.rating, d: k.ratingDate });
+      I.objective = k.objective || '';
+      if (!ok(I.aumCr) && ok(k.aum)) I.aumCr = k.aum;
+      if (!ok(I.exp) && ok(k.exp)) I.exp = k.exp / 100;
+      if (!I.riskLbl && k.riskLabel) I.riskLbl = k.riskLabel.replace(/\s*risk$/i, '');
+      if (!I.launch && k.start) I.launch = pDate(k.start);
+      if (!(I.managers && I.managers.length) && k.managers) I.managers = String(k.managers).split(/;\s*/).filter(Boolean).map(function (n) { return { n: n }; });
+      I.vol = P(k.vol);
+      I.peers = (k.peers || []).map(function (p) { return { n: p.n, y1: P(p.y1), y3: P(p.y3) || null, y5: P(p.y5) || null, exp: P(p.exp), aumCr: p.aum, vol: P(p.vol) }; });
+    }
+    I.riskLbl = (I.riskLbl || '').replace(/\s*risk$/i, '');
+    return I;
+  }
+  function glInfo(f) {
+    var perf = f.perf || {}, fp = f.fp || {}, x = f.x || {}, tr = perf.trailingReturns || {}, tc = perf.trailingReturnsCat || {}, rk = perf.rankInCategory || {};
+    var I = { src: ['Yahoo Finance / Morningstar'], news: [], gl: true };
+    I.aum = x.aum; I.exp = x.expense; I.expCat = x.expenseCat; I.turnover = x.turnover; I.launch = x.inception; I.desc = x.about || '';
+    var fe = fp.feesExpensesInvestment || {}, ld = [];
+    if (ok(fe.frontEndSalesLoad) && fe.frontEndSalesLoad > 0) ld.push('Front-end sales load ' + pct(fe.frontEndSalesLoad, 2, 1));
+    if (ok(fe.deferredSalesLoad) && fe.deferredSalesLoad > 0) ld.push('deferred sales load ' + pct(fe.deferredSalesLoad, 2, 1));
+    I.exitLoad = ld.length ? ld.join('; ') + '.' : (f.group === 'ETF' ? 'None. ETFs trade on the exchange; you pay only brokerage and the bid-ask spread.' : 'No sales load reported.');
+    I.minLump = fp.initInvestment || null;
+    var mi = fp.managementInfo || {};
+    I.managers = mi.managerName || mi.managerBio ? [{ n: mi.managerName || '', since: ok(mi.startdate) ? mi.startdate * 1000 : null, exp: mi.managerBio || '' }] : [];
+    I.ratings = []; if (ok(x.msRating) && x.msRating > 0) I.ratings.push({ src: 'Morningstar', v: x.msRating });
+    I.riskLbl = ['', 'Low', 'Below average', 'Average', 'Above average', 'High'][x.msRisk] || '';
+    I.cat = {};
+    [['y1', 'oneYear'], ['y3', 'threeYear'], ['y5', 'fiveYear'], ['y10', 'tenYear']].forEach(function (q) {
+      var c = { f: ok(tr[q[1]]) ? tr[q[1]] : null, c: ok(tc[q[1]]) ? tc[q[1]] : null, pctl: ok(rk[q[1]]) ? rk[q[1]] : null };
+      if (ok(c.f) || ok(c.c) || ok(c.pctl)) I.cat[q[0]] = c;
+    });
+    var rs = ((perf.riskOverviewStatistics || {}).riskStatistics || []).filter(function (r) { return r.year === '3y'; })[0];
+    if (rs) I.ratios = { sd: P(rs.stdDev), beta: rs.beta, alpha: P(rs.alpha), sharpe: rs.sharpeRatio, r2: rs.rSquared };
+    var po = perf.performanceOverview || {};
+    I.yearsUp = po.numYearsUp; I.yearsDown = po.numYearsDown; I.bull = tr.lastBullMkt; I.bear = tr.lastBearMkt; I.bullCat = tc.lastBullMkt; I.bearCat = tc.lastBearMkt;
+    I.hold = (x.holdings || []).map(function (h) { return { n: h.name || h.symbol, s: h.symbol || '', p: h.pct }; });
+    I.top10 = I.hold.reduce(function (a, b) { return a + b.p; }, 0) || null;
+    I.sectors = (x.sectors || []).slice().sort(function (a, b) { return b.pct - a.pct; }).map(function (s) { return [sectorName(s.sector), s.pct]; });
+    I.mix = [['Stocks', x.stock], ['Bonds', x.bond], ['Cash', x.cash]].filter(function (p) { return ok(p[1]) && p[1] > 0.0005; });
+    I.pros = []; I.cons = [];
+    return I;
+  }
+
+  // --- derived judgements shared by the analyzer and the comparison
+  function fmtCr(x) { return ok(x) ? '₹' + Math.round(x).toLocaleString('en-IN') + ' Cr' : '–'; }
+  function aumTxt(f, I) { return I && f.kind === 'mf' ? fmtCr(I.aumCr) : I && ok(I.aum) ? fmtBig(f, I.aum) : '–'; }
+  function horizon(f) {
+    var c = (f.catFull + ' ' + f.name).toLowerCase();
+    if (/overnight|liquid|money market/.test(c)) return [0, 'a few days to 1 year'];
+    if (/ultra short|low duration|arbitrage/.test(c)) return [1, '6 months to 2 years'];
+    if (/short duration|banking and psu|banking & psu|corporate bond|floater|medium duration|credit risk/.test(c)) return [2, '2 to 4 years'];
+    if (/gilt|dynamic bond|long duration|medium to long/.test(c)) return [3, '3 to 5 years'];
+    if (f.cls === 'debt') return [2, '2 to 4 years'];
+    if (/conservative hybrid|equity savings/.test(c)) return [3, '3 years or more'];
+    if (f.cls === 'hybrid') return [4, '4 to 5 years or more'];
+    if (/small cap|sectoral|thematic|sector|international|fof overseas|technology|pharma|infra/.test(c)) return [7, '7 years or more'];
+    if (/mid cap/.test(c)) return [6, '6 to 7 years or more'];
+    return [5, '5 years or more'];
+  }
+  function riskLevel(f, m, I) {
+    if (I && I.riskLbl) return I.riskLbl;
+    var T = TH(f), v = m.risk ? m.risk.vol : null;
+    if (!ok(v)) return f.cls === 'debt' ? 'Low to moderate' : f.cls === 'hybrid' ? 'Moderately high' : 'High';
+    var r = (v - T.vol[0]) / (T.vol[1] - T.vol[0]);
+    return f.cls === 'debt' ? (r < 0.4 ? 'Low' : r < 0.7 ? 'Moderate' : 'Moderately high') : r < 0.35 ? 'Moderate' : r < 0.65 ? 'High' : 'Very high';
+  }
+  function verdict(f, m, I) {
+    var sc = m.score, o = sc ? sc.overall : null, adj = 0, why = [];
+    var c3 = I && I.cat && (I.cat.y5 || I.cat.y3);
+    if (c3 && ok(c3.f) && ok(c3.c)) { var d = c3.f - c3.c; if (d > 0.015) { adj += 0.3; why.push('beats its category average'); } else if (d < -0.015) { adj -= 0.3; why.push('trails its category average'); } }
+    if (I && f.kind === 'mf' && ok(I.exp)) { if (I.exp > 0.018) { adj -= 0.2; why.push('costs are high'); } else if (I.exp < 0.008) { adj += 0.1; why.push('costs are low'); } }
+    if (f.lev) return { k: 'Avoid for long-term', c: 'red', s: o, why: 'Leveraged / inverse products are built for short-term trading.' };
+    if (o == null) return { k: 'Too new to judge', c: 'amber', s: null, why: 'Less than a year of history.' };
+    var s = Math.max(0, Math.min(10, o + adj));
+    var k = s >= 7.5 ? ['Strong pick', 'green'] : s >= 6 ? ['Good, worth considering', 'green'] : s >= 4.5 ? ['Average, compare first', 'amber'] : ['Weak, look at alternatives', 'red'];
+    return { k: k[0], c: k[1], s: Math.round(s * 10) / 10, why: why.join(', ') };
+  }
+  function quantile(arr, q) { var a = arr.slice().sort(function (x, y) { return x - y; }), i = (a.length - 1) * q, lo = Math.floor(i); return a.length ? a[lo] + (a[Math.min(lo + 1, a.length - 1)] - a[lo]) * (i - lo) : null; }
+  function scenarios(f, m, I) {
+    var out = [], r1 = m.roll1, r3 = m.roll3;
+    if (r1 && r1.v.length > 30) out.push({ h: '1 year', bear: quantile(r1.v, 0.1), base: quantile(r1.v, 0.5), bull: quantile(r1.v, 0.9), yrs: 1, n: r1.v.length });
+    if (r3 && r3.v.length > 30) out.push({ h: '3 years (a year)', bear: quantile(r3.v, 0.1), base: quantile(r3.v, 0.5), bull: quantile(r3.v, 0.9), yrs: 3, n: r3.v.length });
+    var beta = I && I.ratios && ok(I.ratios.beta) && I.ratios.beta > 0 ? I.ratios.beta : null;
+    var crash = f.cls === 'debt' ? null : { mkt: f.cls === 'hybrid' ? -0.2 : -0.2, fund: beta ? -0.2 * beta : f.cls === 'hybrid' ? -0.2 * 0.6 : -0.2, beta: beta };
+    return { rows: out, crash: crash, worst: m.dd.mdd };
+  }
+  function suitability(f, m, I) {
+    var hz = horizon(f), rl = riskLevel(f, m, I), fits = [], not = [];
+    var elss = /elss|tax sav/i.test(f.catFull + ' ' + f.name);
+    if (f.cls === 'equity') { fits.push('Investors building long-term wealth who can hold for ' + hz[1] + '.'); fits.push('SIP investors: monthly investing smooths out the swings.'); not.push('Money needed within ' + Math.max(2, hz[0] - 2) + ' years, or an emergency fund.'); not.push('Anyone who would panic-sell in a ' + Math.round(Math.abs(Math.min(m.dd.mdd || -0.3, -0.2)) * 100) + '% fall.'); }
+    else if (f.cls === 'hybrid') { fits.push('Moderate-risk investors wanting equity growth with a debt cushion, for ' + hz[1] + '.'); fits.push('First-time investors stepping up from FDs.'); not.push('Very short goals (under 2 years).'); }
+    else { fits.push('Parking money or near-term goals over ' + hz[1] + '.'); fits.push('Conservative investors who want steadier returns than equity.'); not.push('Long-term wealth creation: equity usually beats debt over 7+ years.'); }
+    if (elss) fits.push('Tax saving under Section 80C (old tax regime) with a 3-year lock-in.');
+    if (f.p.plan === 'Regular') not.push('Do-it-yourself investors: the Direct plan of this scheme is cheaper.');
+    if (f.p.opt === 'IDCW') not.push('Compounding: the Growth option reinvests gains; IDCW pays them out.');
+    if (/international|overseas|global|us /i.test(f.catFull + ' ' + f.name) || f.cur !== 'INR') fits.push('Diversifying outside Indian markets (returns also depend on currency moves).');
+    return { hz: hz[1], risk: rl, fits: fits, not: not, mode: f.cls === 'debt' ? 'Lump sum or STP is fine' : 'SIP preferred; lump sum on big dips', lock: (I && I.lockIn) || (elss ? '3 years' : 'None') };
+  }
+  function prosCons(f, m, I) {
+    var pros = [], cons = [], r = m.r, T = TH(f), c = I && I.cat;
+    var c5 = c && (c.y5 || c.y3), lbl = c && c.y5 ? '5Y' : '3Y';
+    if (c5 && ok(c5.f) && ok(c5.c)) (c5.f >= c5.c ? pros : cons).push((c5.f >= c5.c ? 'Beat' : 'Trailed') + ' its category average over ' + lbl + ' (' + pct(c5.f) + ' vs ' + pct(c5.c) + ' a year).');
+    var rk = c && (c.y3 || c.y5);
+    if (rk && ok(rk.rank) && rk.n) (rk.rank <= rk.n / 3 ? pros : rk.rank > rk.n * 2 / 3 ? cons : []).push('Ranked ' + rk.rank + ' of ' + rk.n + ' in its category over ' + (c.y3 ? '3' : '5') + ' years.');
+    if (rk && ok(rk.pctl)) (rk.pctl <= 33 ? pros : rk.pctl > 66 ? cons : []).push('In the ' + (rk.pctl <= 50 ? 'top ' + rk.pctl + '%' : 'bottom ' + (100 - rk.pctl) + '%') + ' of its Morningstar category over 3 years.');
+    if (m.roll3 && m.roll3.pos > 0.95) pros.push('Positive in ' + pct(m.roll3.pos, 0, 1) + ' of rolling 3-year periods.');
+    if (m.roll3 && m.roll3.above(T.hurdle) < 0.5) cons.push('Beat ' + pct(T.hurdle, 0, 1) + ' a year in only ' + pct(m.roll3.above(T.hurdle), 0, 1) + ' of rolling 3-year periods.');
+    if (m.risk && ok(m.risk.sharpe)) (m.risk.sharpe >= 0.8 ? pros : m.risk.sharpe < 0.3 ? cons : []).push('Sharpe ratio ' + num(m.risk.sharpe) + ': ' + (m.risk.sharpe >= 0.8 ? 'good' : 'weak') + ' return for the risk taken.');
+    if (I && ok(I.exp)) { var hiE = f.kind === 'mf' ? (f.cls === 'equity' ? 0.012 : 0.008) : 0.0075, loE = f.kind === 'mf' ? (f.cls === 'equity' ? 0.007 : 0.004) : 0.002; if (I.exp <= loE) pros.push('Low expense ratio of ' + pct(I.exp, 2, 1) + '.'); else if (I.exp >= hiE) cons.push('Expense ratio of ' + pct(I.exp, 2, 1) + ' is on the higher side.'); }
+    if (I && f.kind === 'mf' && ok(I.aumCr)) { if (I.aumCr > 50000 && /small|mid/i.test(f.catFull)) cons.push('Very large fund (' + fmtCr(I.aumCr) + ') for a ' + (/small/i.test(f.catFull) ? 'small' : 'mid') + '-cap mandate; harder to stay nimble.'); else if (I.aumCr < 500) cons.push('Small fund (' + fmtCr(I.aumCr) + '); size and costs can be less stable.'); else if (I.aumCr > 10000) pros.push('Large, established fund (' + fmtCr(I.aumCr) + ' AUM).'); }
+    if (I && ok(I.top10) && I.top10 > 0.55) cons.push('Concentrated: top 10 holdings are ' + pct(I.top10, 0, 1) + ' of the portfolio.');
+    else if (I && ok(I.top10) && I.top10 < 0.35 && f.cls !== 'debt') pros.push('Well diversified: top 10 holdings are ' + pct(I.top10, 0, 1) + ' of the portfolio.');
+    if (m.dd.mdd < T.mdd[1] * 0.8) cons.push('Deep worst fall of ' + pct(m.dd.mdd) + '.');
+    if (m.yrs < 3) cons.push('Short track record (' + age(f.latestT - f.t[0]) + ').');
+    if (f.p.plan === 'Regular') cons.push('Regular plan: higher cost than the Direct plan.');
+    if (f.lev) cons.push('Leveraged / inverse: not for long-term holding.');
+    return { pros: pros.concat((I && I.pros) || []).slice(0, 7), cons: cons.concat((I && I.cons) || []).slice(0, 7) };
+  }
+
+  // --- analyzer sections
+  function cardLoading(t) { return '<section class="gw-card"><h2>' + t + '</h2><p class="muted"><span class="gw-spin dark" style="width:14px;height:14px;vertical-align:-2px;margin-right:8px"></span>Loading fund details…</p></section>'; }
+  function naCard(t, msg) { return '<section class="gw-card"><h2>' + t + '</h2><p class="muted">' + msg + '</p></section>'; }
+  function kvList(rows) { return '<div class="fx-kv2">' + rows.filter(function (r) { return r && r[1] != null && r[1] !== '' && r[1] !== '–'; }).map(function (r) { return '<div><span>' + r[0] + '</span><b>' + r[1] + '</b></div>'; }).join('') + '</div>'; }
+  function src(I, extra) { return I && I.src && I.src.length ? '<p class="fx-note">Source: ' + esc(I.src.join(', ')) + (extra || '') + (I.approx ? '. Portfolio, ratios and costs are for the Direct Growth plan of this scheme; this plan\'s expense ratio is higher' : '') + '.</p>' : ''; }
+
+  function execSummary(f, m, I) {
+    var v = verdict(f, m, I), r = m.r, b = [];
+    var lp = ok(r.y5) ? ['5', r.y5] : ok(r.y3) ? ['3', r.y3] : ok(r.y1) ? ['1', r.y1] : null;
+    b.push('<b>' + esc(f.short) + '</b> is ' + (/^[aeiou]/i.test(f.category) ? 'an ' : 'a ') + esc(f.category !== '–' ? f.category : f.cls) + (/\bfunds?$/i.test(f.category) ? '' : ' fund') + (f.house ? ' from ' + esc(f.house.replace(/ Mutual Fund$/i, '')) : '') + (I && (ok(I.aumCr) || ok(I.aum)) ? ' managing <b>' + aumTxt(f, I) + '</b>' : '') + ', running for ' + age(f.latestT - f.since) + '.');
+    if (lp) b.push('It returned <b>' + pct(lp[1]) + (lp[0] === '1' ? '' : ' a year') + '</b> over ' + lp[0] + ' year' + (lp[0] === '1' ? '' : 's') + (I && I.cat && I.cat['y' + lp[0]] && ok(I.cat['y' + lp[0]].c) ? ' vs a category average of ' + pct(I.cat['y' + lp[0]].c) : '') + '.');
+    var rk = I && I.cat && (I.cat.y3 || I.cat.y1);
+    if (rk && ok(rk.rank) && rk.n) b.push('Category rank: <b>' + rk.rank + ' of ' + rk.n + '</b> over ' + (I.cat.y3 ? '3 years' : '1 year') + '.');
+    else if (rk && ok(rk.pctl)) b.push('Morningstar category percentile: <b>' + rk.pctl + '</b> over ' + (I.cat.y3 ? '3 years' : '1 year') + ' (lower is better).');
+    b.push('Risk: <b>' + esc(riskLevel(f, m, I)) + '</b>' + (m.risk ? ', volatility ' + pct(m.risk.vol, 1, 1) : '') + ', worst fall ' + pct(m.dd.mdd) + '.');
+    if (I && ok(I.exp)) b.push('Expense ratio <b>' + pct(I.exp, 2, 1) + '</b>; exit load: ' + esc(shortLoad(I.exitLoad)) + '.');
+    return '<section class="gw-card fx-exec"><div class="fx-hrow"><h2>Executive summary</h2><span class="gw-chip ' + v.c + '">' + esc(v.k) + (v.s != null ? ' · ' + v.s.toFixed(1) + '/10' : '') + '</span></div><ul class="fx-sum">' + b.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ul>' +
+      '<p class="fx-note">Suits: ' + esc(suitability(f, m, I).hz) + ' horizon, ' + esc(riskLevel(f, m, I).toLowerCase()) + ' risk appetite.' + (I ? '' : ' Fund details are loading or unavailable, so this summary uses NAV history only.') + '</p></section>';
+  }
+  function shortLoad(s) { s = String(s || '').trim().replace(/\.+$/, ''); if (!s) return 'not available'; if (/^nil|^none|^0(\.0+)?%?$/i.test(s)) return 'Nil'; var m = /(\d+(?:\.\d+)?)\s*%[^.]*?(\d+)\s*(day|days|month|months|year|years)/i.exec(s); return m ? m[1] + '% if redeemed within ' + m[2] + ' ' + m[3].toLowerCase().replace(/s$/, '') + (m[2] === '1' ? '' : 's') : s.length > 70 ? s.slice(0, 68) + '…' : s; }
+
+  function snapshotHtml(f, m, I) {
+    var x = f.x || {}, iv = f.t.length > 260 ? f.v.slice(-260) : f.v, hi = Math.max.apply(null, iv), lo = Math.min.apply(null, iv);
+    var snap = kvList([
+      ['Fund house', esc(f.house || '–')], ['Category', esc(f.catFull || f.category)], ['Plan / option', esc([f.p.plan, f.p.opt].filter(Boolean).join(' · ') || f.group || '–')],
+      ['Benchmark', I && I.benchmark ? esc(I.benchmark) : '–'], ['Launched', I && I.launch ? dfmt(I.launch) : dfmt(f.since)], ['Riskometer / risk', esc(riskLevel(f, m, I))],
+      ['Min SIP', I && I.minSip ? fmtAmt(f, I.minSip) : '–'], ['Min lump sum', I && I.minLump ? fmtAmt(f, I.minLump) : '–'], ['Lock-in', I ? esc(I.lockIn || (/elss|tax sav/i.test(f.catFull) ? '3 years' : 'None')) : '–'],
+      ['Investment horizon', esc(horizon(f)[1])]
+    ]);
+    var nav = kvList([
+      [f.kind === 'mf' ? 'Latest NAV' : 'Last price', '<span class="num">' + fmtNav(f, f.latest) + '</span> <small class="muted">' + dfmt(f.latestT) + '</small>'],
+      ['1-day change', '<span class="num ' + cls(f.chg) + '">' + pct(f.chgPct, 2) + '</span>'],
+      ['52-week high / low', '<span class="num">' + fmtNav(f, hi) + ' / ' + fmtNav(f, lo) + '</span>'],
+      ['From all-time high', '<span class="num ' + cls(m.dd.cur) + '">' + pct(m.dd.cur) + '</span>'],
+      ['AUM (fund size)', I ? '<span class="num">' + aumTxt(f, I) + '</span>' : (f.kind === 'gl' ? fmtBig(f, x.aum) : '–')],
+      ['AMC total AUM', I && ok(I.amcAumCr) ? '<span class="num">' + fmtCr(I.amcAumCr) + '</span>' + (I.amcRank ? ' <small class="muted">#' + I.amcRank + ' AMC</small>' : '') : '–'],
+      ['YTD return', '<span class="num ' + cls(ytd(f)) + '">' + pct(ytd(f)) + '</span>']
+    ]);
+    return '<div class="gw-grid gw-g2"><section class="gw-card"><h2>Fund snapshot</h2>' + snap + '</section><section class="gw-card"><h2>Latest NAV &amp; AUM</h2>' + nav + (I && I.aumCr ? '<p class="fx-note">AUM as last reported by the fund house; NAV from AMFI.</p>' : '') + '</section></div>';
+  }
+  function ytd(f) { var y0 = Date.UTC(new Date(f.latestT).getUTCFullYear(), 0, 1), i = atOrBefore(f.t, y0 - 1); return i >= 0 ? f.latest / f.v[i] - 1 : null; }
+  function strategyHtml(f, I) {
+    var h = '';
+    if (I && I.objective) h += '<h3>Objective</h3><p class="fx-about">' + esc(I.objective) + '</p>';
+    if (I && I.desc && I.desc !== I.objective) h += '<h3>' + (I.objective ? 'Strategy' : 'Objective &amp; strategy') + '</h3><p class="fx-about">' + esc(I.desc.length > 900 ? I.desc.slice(0, 880) + '…' : I.desc) + '</p>';
+    if (I && I.catDesc) h += '<h3>About the ' + esc(I.sub || f.category) + ' category</h3><p class="fx-about">' + esc(I.catDesc) + '</p>';
+    if (I && I.benchmark) h += '<p class="fx-about">Benchmark: <b>' + esc(I.benchmark) + '</b>' + (ok(I.turnover) ? ' · Portfolio turnover: <b>' + pct(I.turnover, 0, 1) + '</b> a year (' + (I.turnover > 0.8 ? 'active trading' : I.turnover > 0.3 ? 'moderate trading' : 'mostly buy-and-hold') + ')' : '') + '.</p>';
+    if (!h) h = '<p class="muted">' + (I ? 'The fund\'s objective is not available from the data sources.' : 'Not available right now.') + '</p>';
+    return '<section class="gw-card"><h2>Fund strategy &amp; objective</h2>' + h + '</section>';
+  }
+  function rankHtml(f, m, I) {
+    var c = I && I.cat || {}, keys = ['y1', 'y3', 'y5', 'y10'].filter(function (k) { return c[k]; }), L = { y1: '1 year', y3: '3 years', y5: '5 years', y10: '10 years' };
+    var h = '<section class="gw-card"><h2>Performance vs category &amp; ranking <span class="sub">' + (f.kind === 'mf' ? 'CAGR beyond 1Y, as reported' : 'trailing returns, as reported') + '</span></h2>';
+    if (!keys.length) return h + '<p class="muted">Category comparison is not available for this fund.</p></section>';
+    h += '<div class="gw-tbl-wrap"><table class="gw-tbl"><thead><tr><th>Period</th><th>Fund</th><th>Category avg</th><th>Difference</th><th>' + (f.kind === 'mf' ? 'Rank in category' : 'Category percentile') + '</th></tr></thead><tbody>' +
+      keys.map(function (k) { var q = c[k], d = ok(q.f) && ok(q.c) ? q.f - q.c : null; var rk = ok(q.rank) && q.n ? '<b>' + q.rank + '</b> / ' + q.n + ' <small class="muted">' + (q.rank <= q.n / 4 ? 'top quartile' : q.rank <= q.n / 2 ? '2nd quartile' : q.rank <= q.n * 3 / 4 ? '3rd quartile' : 'bottom quartile') + '</small>' : ok(q.pctl) ? '<b>' + q.pctl + '</b> <small class="muted">' + (q.pctl <= 25 ? 'top quartile' : q.pctl <= 50 ? '2nd quartile' : q.pctl <= 75 ? '3rd quartile' : 'bottom quartile') + '</small>' : '–';
+        return '<tr><td>' + L[k] + '</td><td class="num ' + cls(q.f) + '">' + pct(q.f) + '</td><td class="num">' + pct(q.c) + '</td><td class="num ' + cls(d) + '">' + (ok(d) ? pct(d) : '–') + '</td><td class="num">' + rk + '</td></tr>'; }).join('') +
+      '</tbody></table></div>';
+    if (I.gl && ok(I.bull)) h += '<p class="fx-about">Last bull market: <b class="' + cls(I.bull) + '">' + pct(I.bull) + '</b> (category ' + pct(I.bullCat) + ') · last bear market: <b class="' + cls(I.bear) + '">' + pct(I.bear) + '</b> (category ' + pct(I.bearCat) + ')' + (ok(I.yearsUp) ? ' · ' + I.yearsUp + ' up years, ' + (I.yearsDown || 0) + ' down years' : '') + '.</p>';
+    return h + (f.kind === 'mf' ? '<p class="fx-note">Rank 1 is the best performer among funds in the same category with that much history.</p>' : '<p class="fx-note">Percentile 1 is the best; 100 the worst.</p>') + '</section>';
+  }
+  function peersHtml(f, m, I) {
+    var p = I && I.peers || [];
+    var h = '<section class="gw-card"><h2>Competitor funds in the same category</h2>';
+    if (!p.length) return h + '<p class="muted">' + (f.kind === 'gl' ? 'A peer list is not available for global funds here. Use Compare to line this fund up against others.' : 'A peer list is not available for this scheme.') + '</p></section>';
+    var me = { n: f.short + ' (this fund)', y1: m.r.y1, y3: m.r.y3, y5: m.r.y5, exp: I.exp, aumCr: I.aumCr, vol: m.risk && m.risk.vol, me: true };
+    var all = p.concat([me]).sort(function (a, b) { return (ok(b.y3) ? b.y3 : -9) - (ok(a.y3) ? a.y3 : -9); });
+    h += '<div class="gw-tbl-wrap"><table class="gw-tbl"><thead><tr><th>Fund</th><th>1Y</th><th>3Y CAGR</th><th>5Y CAGR</th><th>Expense</th><th>AUM</th><th>Volatility</th></tr></thead><tbody>' +
+      all.map(function (q) { return '<tr' + (q.me ? ' class="me"' : '') + '><td>' + (q.me ? '<b>' + esc(q.n) + '</b>' : esc(q.n)) + '</td><td class="num ' + cls(q.y1) + '">' + pct(q.y1) + '</td><td class="num ' + cls(q.y3) + '">' + pct(q.y3) + '</td><td class="num ' + cls(q.y5) + '">' + pct(q.y5) + '</td><td class="num">' + (ok(q.exp) ? pct(q.exp, 2, 1) : '–') + '</td><td class="num">' + fmtCr(q.aumCr) + '</td><td class="num">' + (ok(q.vol) ? pct(q.vol, 1, 1) : '–') + '</td></tr>'; }).join('') +
+      '</tbody></table></div><p class="fx-note">Leading funds in the category by recent performance (Direct plans), plus this fund for reference. Sorted by 3Y CAGR.</p></section>';
+    return h;
+  }
+  function riskRatiosHtml(f, m, I) {
+    var r = I && I.ratios; if (!r) return '';
+    var it = [
+      ['Standard deviation', ok(r.sd) ? pct(r.sd, 2, 1) : null, 'how much returns swing; lower is steadier'],
+      ['Beta', ok(r.beta) ? num(r.beta) : null, ok(r.beta) ? (r.beta < 0.9 ? 'moves less than its benchmark' : r.beta > 1.1 ? 'moves more than its benchmark' : 'moves in line with its benchmark') : ''],
+      ['Alpha', ok(r.alpha) ? pct(r.alpha, 2) : null, ok(r.alpha) ? (r.alpha > 0 ? 'beat its benchmark after adjusting for risk' : 'lagged its benchmark after adjusting for risk') : ''],
+      ['Sharpe ratio', ok(r.sharpe) ? num(r.sharpe) : null, 'return per unit of risk'],
+      ['Sortino ratio', ok(r.sortino) ? num(r.sortino) : null, 'return per unit of downside risk'],
+      ['Information ratio', ok(r.ir) ? num(r.ir) : null, 'consistency of beating the benchmark'],
+      ['R-squared', ok(r.r2) ? num(r.r2, 0) : null, 'how closely it tracks its benchmark (100 = exactly)']
+    ].filter(function (x) { return x[1] != null; });
+    if (!it.length) return '';
+    return '<section class="gw-card"><h2>Risk analysis <span class="sub">reported ratios, 3 years</span></h2><div class="fx-stats">' + it.map(function (x) { return stat(x[0], x[1], x[2]); }).join('') + stat('Riskometer', esc(riskLevel(f, m, I)), f.kind === 'mf' ? 'SEBI risk label' : 'Morningstar risk') + '</div></section>';
+  }
+  var BCOL = ['#5b5bf6', '#8b5cf6', '#ec4899', '#f97316', '#f59e0b', '#14b8a6', '#0ea5e9', '#16a34a', '#a855f7', '#ef4444', '#64748b', '#0f766e'];
+  function portfolioMF(f, I) {
+    var h = '<div class="gw-grid gw-g2"><section class="gw-card"><h2>Portfolio composition</h2>';
+    if (I.mix && I.mix.length) {
+      h += '<div class="fx-alloc">' + I.mix.map(function (p, i) { return '<i style="width:' + (p[1] * 100) + '%;background:' + BCOL[i % 12] + '" title="' + esc(p[0]) + ' ' + pct(p[1], 1, 1) + '"></i>'; }).join('') + '</div><div class="fx-legend" style="margin:0 0 12px">' +
+        I.mix.map(function (p, i) { return '<span><i style="background:' + BCOL[i % 12] + ';height:10px;width:10px;border-radius:3px"></i>' + esc(p[0]) + ' ' + pct(p[1], 1, 1) + '</span>'; }).join('') + '</div>';
+    }
+    if (I.sectors && I.sectors.length) {
+      var mx = I.sectors[0][1];
+      h += '<h2 style="font-size:15px">Sector weights</h2>' + I.sectors.slice(0, 10).map(function (s, i) { return '<div class="fx-hbar"><span class="n">' + esc(s[0]) + '</span><span class="v num">' + pct(s[1], 1, 1) + '</span><span class="tr"><i style="width:' + (s[1] / mx * 100) + '%;background:' + BCOL[i % 12] + '"></i></span></div>'; }).join('');
+    }
+    if (!(I.mix && I.mix.length) && !(I.sectors && I.sectors.length)) h += '<p class="muted">Portfolio data not available.</p>';
+    h += '<p class="fx-note">' + (I.holdN ? I.holdN + ' holdings' : '') + (I.holdDate ? ' · portfolio as of ' + dfmt(I.holdDate) : '') + (ok(I.top10) ? ' · top 10 = ' + pct(I.top10, 1, 1) + ' of the fund' : '') + '</p></section>';
+    h += '<section class="gw-card"><h2>Top holdings</h2>';
+    if (I.hold && I.hold.length) {
+      var hm = I.hold[0].p;
+      h += I.hold.slice(0, 15).map(function (q, i) { return '<div class="fx-hbar"><span class="n">' + (i + 1) + '. ' + esc(q.n) + ' <span class="muted" style="font-weight:600">' + esc(q.r || q.s) + '</span></span><span class="v num">' + pct(q.p, 2, 1) + '</span><span class="tr"><i style="width:' + (q.p / hm * 100) + '%;background:' + BCOL[i % 12] + '"></i></span></div>'; }).join('');
+    } else h += '<p class="muted">Holdings not available.</p>';
+    return h + '</section></div>';
+  }
+  function mgmtHtml(f, I) {
+    var h = '<section class="gw-card"><h2>Fund management &amp; expenses</h2><div class="gw-grid gw-g2" style="align-items:start"><div>';
+    var ms = (I && I.managers) || [];
+    if (ms.length) h += '<h3>Fund manager' + (ms.length > 1 ? 's' : '') + '</h3>' + ms.slice(0, 6).map(function (q) { return '<div class="fx-mgr"><b>' + esc(q.n || 'Fund manager') + '</b>' + (q.since ? ' <small class="muted">since ' + mfmt(q.since) + ' (' + age(Date.now() - q.since) + ')</small>' : '') + (q.edu ? '<p>' + esc(q.edu) + '</p>' : '') + (q.exp ? '<p class="muted">' + esc(q.exp.length > 300 ? q.exp.slice(0, 298) + '…' : q.exp) + '</p>' : '') + '</div>'; }).join('');
+    else h += '<p class="muted">Manager details not available.</p>';
+    h += '</div><div><h3>Costs</h3>' + kvList([
+      ['Expense ratio (TER)', I && ok(I.exp) ? '<span class="num">' + pct(I.exp, 2, 1) + '</span>' + (ok(I.expCat) ? ' <small class="muted">category ' + pct(I.expCat, 2, 1) + '</small>' : '') : '–'],
+      ['Base expense (before GST etc.)', I && ok(I.baseExp) ? '<span class="num">' + pct(I.baseExp, 2, 1) + '</span>' : null],
+      ['Cost of ' + (f.cur === 'INR' ? '₹1 lakh' : fmtAmt(f, 10000)) + ' a year', I && ok(I.exp) ? '<span class="num">' + fmtAmt(f, (f.cur === 'INR' ? 100000 : 10000) * I.exp) + '</span>' : null],
+      ['Portfolio turnover', I && ok(I.turnover) ? '<span class="num">' + pct(I.turnover, 0, 1) + '</span>' : null],
+      ['Stamp duty on purchase', I && I.stamp ? esc(I.stamp) : null]
+    ]) + (f.p.plan === 'Regular' ? '<p class="fx-note">Regular plans pay a distributor commission inside the expense ratio, typically 0.5–1% a year more than Direct.</p>' : '') + '</div></div></section>';
+    return h;
+  }
+  function exitHtml(f, I) {
+    var h = '<section class="gw-card"><h2>Exit load, lock-in &amp; tax</h2>';
+    h += kvList([['Exit load', I && I.exitLoad ? esc(I.exitLoad) : 'Not available; check the scheme document.'], ['Lock-in', I ? esc(I.lockIn || (/elss|tax sav/i.test(f.catFull) ? '3 years' : 'None')) : '–'], ['Tax on gains', I && I.tax ? esc(I.tax) : f.kind === 'gl' ? 'Depends on your country of residence; for Indian residents, overseas funds are taxed as non-equity.' : null]]);
+    return h + '</section>';
+  }
+  function newsHtml(f, I) {
+    var n = (I && I.news) || [], tag = { fund: ['This fund', 'indigo'], amc: ['Fund house', 'pink'], category: ['Category', 'amber'] };
+    var h = '<section class="gw-card"><h2>Latest news <span class="sub">fund, fund house &amp; category</span></h2>';
+    if (!n.length) return h + '<p class="muted">' + (f.kind === 'gl' ? 'News for global funds is not available here.' : 'No recent news found for this fund or its category.') + '</p></section>';
+    return h + '<ul class="fx-news">' + n.slice(0, 10).map(function (x) { var t = tag[x.kind] || ['News', '']; return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.title) + '</a><div><span class="gw-chip ' + t[1] + '">' + t[0] + '</span> <small class="muted">' + esc(x.src) + (x.ts ? ' · ' + dfmt(x.ts) : '') + '</small></div></li>'; }).join('') + '</ul></section>';
+  }
+  function prosConsHtml(f, m, I) {
+    var pc = prosCons(f, m, I);
+    return '<section class="gw-card"><h2>Pros &amp; cons</h2><div class="gw-grid gw-g2" style="align-items:start"><div><h3>👍 Pros</h3><ul class="fx-pc up">' + (pc.pros.length ? pc.pros.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') : '<li class="muted">No clear strengths stand out.</li>') + '</ul></div>' +
+      '<div><h3>👎 Cons</h3><ul class="fx-pc dn">' + (pc.cons.length ? pc.cons.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') : '<li class="muted">No major weaknesses found.</li>') + '</ul></div></div></section>';
+  }
+  function scoringHtml(f, m) {
+    var sc = m.score, T = TH(f);
+    var h = '<section class="gw-card"><h2>Scoring system <span class="sub">how the AI Fund Score works</span></h2><p class="fx-about">Each factor gets 0–10 against yardsticks for <b>' + f.cls + '</b> funds; the score is their simple average. 7.5+ is Excellent, 6+ Good, 4.5+ Average, below that Weak.</p>';
+    h += '<div class="gw-tbl-wrap"><table class="gw-tbl"><thead><tr><th>Factor</th><th>What it measures</th><th>Scale</th><th>This fund</th></tr></thead><tbody>';
+    var D = {
+      'Returns': ['Long-term CAGR (5Y, else 3Y)', pct(T.r[0], 0, 1) + ' → 0, ' + pct(T.r[1], 0, 1) + ' → 10'],
+      'Consistency': ['Share of rolling 1Y periods positive (40%) and rolling 3Y periods above ' + pct(T.hurdle, 0, 1) + ' (60%)', '0% → 0, 100% → 10'],
+      'Risk control': ['Sharpe ratio (60%) and volatility (40%)', 'Sharpe −0.2 → 0, 1.2 → 10; volatility ' + pct(T.vol[1], 0, 1) + ' → 0, ' + pct(T.vol[0], 0, 1) + ' → 10'],
+      'Downside protection': ['Worst fall (70%) and worst 1Y return (30%)', 'fall ' + pct(T.mdd[1], 0) + ' → 0, ' + pct(T.mdd[0], 0) + ' → 10'],
+      'Cost': ['Expense ratio', '1.5% → 0, 0.05% → 10']
+    };
+    (sc ? sc.parts : []).forEach(function (p) { var d = D[p.k] || ['', '']; h += '<tr><td><b>' + p.k + '</b></td><td>' + d[0] + '</td><td>' + d[1] + '</td><td class="num"><b>' + p.s.toFixed(1) + '</b></td></tr>'; });
+    h += '</tbody></table></div>' + (sc ? '<p class="fx-about">Overall: <b>' + sc.overall.toFixed(1) + '/10 (' + sc.label + ')</b>.' + (f.lev ? ' Capped at 4.4 for leveraged / inverse products.' : '') + ' The final verdict also nudges this by category-relative performance and cost.</p>' : '<p class="muted">Not enough history to score.</p>') + '</section>';
+    return h;
+  }
+  function scenarioHtml(f, m, I) {
+    var s = scenarios(f, m, I), amt = f.cur === 'INR' ? 100000 : 10000;
+    var h = '<section class="gw-card"><h2>Scenario analysis <span class="sub">what ' + fmtAmt(f, amt) + ' could become, based on this fund\'s own history</span></h2>';
+    if (!s.rows.length) return h + '<p class="muted">Needs more than a year of history.</p></section>';
+    h += '<div class="gw-tbl-wrap"><table class="gw-tbl"><thead><tr><th>Holding period</th><th>🐻 Bear (bad 10%)</th><th>Base (median)</th><th>🐂 Bull (good 10%)</th></tr></thead><tbody>' +
+      s.rows.map(function (r) { var v = function (x) { return '<span class="num ' + cls(x) + '">' + pct(x) + '</span><br><small class="muted num">' + fmtAmt(f, amt * Math.pow(1 + x, r.yrs)) + '</small>'; }; return '<tr><td>' + r.h + '</td><td>' + v(r.bear) + '</td><td>' + v(r.base) + '</td><td>' + v(r.bull) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+    var stress = [];
+    if (s.crash) stress.push('If the broad market falls 20%, this fund could fall about <b>' + pct(s.crash.fund, 0) + '</b>' + (s.crash.beta ? ' (beta ' + num(s.crash.beta) + ')' : ' (estimate for its asset class)') + ': ' + fmtAmt(f, amt) + ' → ' + fmtAmt(f, amt * (1 + s.crash.fund)) + '.');
+    if (s.worst < -0.01) stress.push('Worst case seen so far: a <b>' + pct(s.worst) + '</b> fall from peak (' + fmtAmt(f, amt) + ' → ' + fmtAmt(f, amt * (1 + s.worst)) + ')' + (m.dd.recT ? ', recovered in ' + dur(m.dd.recDays) + '.' : '.'));
+    if (stress.length) h += '<h3>Stress test</h3><ul class="fx-sum">' + stress.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>';
+    return h + '<p class="fx-note">Bear / base / bull are the 10th, 50th and 90th percentile of every rolling period in the fund\'s history. The past does not guarantee future returns.</p></section>';
+  }
+  function suitHtml(f, m, I) {
+    var s = suitability(f, m, I);
+    return '<section class="gw-card"><h2>Investment suitability</h2>' + kvList([['Risk level', esc(s.risk)], ['Ideal horizon', esc(s.hz)], ['How to invest', esc(s.mode)], ['Lock-in', esc(s.lock)]]) +
+      '<div class="gw-grid gw-g2" style="align-items:start;margin-top:10px"><div><h3>✅ Suitable for</h3><ul class="fx-pc up">' + s.fits.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div><div><h3>⛔ Not suitable for</h3><ul class="fx-pc dn">' + s.not.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div></div></section>';
+  }
+  function expertHtml(f, m, I) {
+    var rt = (I && I.ratings) || [], h = '<section class="gw-card"><h2>Analyst &amp; expert views</h2>';
+    var rows = rt.map(function (r) { return [esc(r.src) + ' rating', stars(r.v) + ' <small class="muted">' + r.v + ' of 5' + (r.d ? ', ' + dfmt(pDate(r.d)) : '') + '</small>']; });
+    rows.push([f.kind === 'mf' ? 'Riskometer (SEBI)' : 'Morningstar risk', esc(riskLevel(f, m, I))]);
+    if (I && I.cat) { var c = I.cat.y3 || I.cat.y5; if (c && ok(c.rank) && c.n) rows.push(['Category rank (3Y)', c.rank + ' of ' + c.n]); }
+    h += kvList(rows);
+    var views = ((I && I.pros) || []).concat((I && I.cons) || []);
+    if (views.length) h += '<h3>Research notes</h3><ul class="fx-sum">' + views.slice(0, 6).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+    var fn = ((I && I.news) || []).filter(function (n) { return n.kind === 'fund'; }).slice(0, 3);
+    if (fn.length) h += '<h3>In the press</h3><ul class="fx-news">' + fn.map(function (x) { return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.title) + '</a> <small class="muted">' + esc(x.src) + '</small></li>'; }).join('') + '</ul>';
+    if (!rt.length && !views.length) h += '<p class="muted">No third-party ratings available for this fund.</p>';
+    return h + '<p class="fx-note">Ratings and notes come from third-party platforms and are shown as-is.</p></section>';
+  }
+  function verdictHtml(f, m, I) {
+    var v = verdict(f, m, I), s = suitability(f, m, I), pc = prosCons(f, m, I), r = m.r;
+    var lp = ok(r.y5) ? ['5-year', r.y5] : ok(r.y3) ? ['3-year', r.y3] : null;
+    var concl = esc(f.short) + ' is ' + (v.c === 'green' ? 'a solid' : v.c === 'amber' ? 'a middling' : 'a weak') + ' choice in its category' + (lp ? ', with a ' + lp[0] + ' return of ' + pct(lp[1]) + ' a year' : '') + '. ' +
+      (pc.pros[0] ? 'Its biggest strength: ' + pc.pros[0].replace(/\.$/, '').replace(/^./, function (c) { return c.toLowerCase(); }) + '. ' : '') + (pc.cons[0] ? 'Main thing to watch: ' + pc.cons[0].replace(/\.$/, '').replace(/^./, function (c) { return c.toLowerCase(); }) + '. ' : '') +
+      'It fits investors with a ' + s.hz + ' horizon and ' + s.risk.toLowerCase() + ' risk appetite' + (f.p.plan === 'Regular' ? '; prefer the Direct plan if you invest on your own' : '') + '.';
+    return '<section class="gw-card fx-verdict ' + v.c + '"><h2>Final verdict</h2><div class="fx-v"><b>' + esc(v.k) + '</b>' + (v.s != null ? '<span class="num">' + v.s.toFixed(1) + '/10</span>' : '') + '</div>' + (v.why ? '<p class="fx-about">Adjusted from the AI Fund Score because it ' + esc(v.why) + '.</p>' : '') +
+      '<h2 style="margin-top:14px">Conclusion</h2><p class="fx-about">' + concl + '</p><p class="fx-note"><b>Not investment advice.</b> For information only; mutual fund investments are subject to market risks. Read the scheme documents before investing.</p></section>';
+  }
+  function reportTop(f, m, I) { return execSummary(f, m, I) + snapshotHtml(f, m, I) + strategyHtml(f, I); }
+  function reportMid(f, m, I) { return rankHtml(f, m, I) + peersHtml(f, m, I); }
+  function reportBot(f, m, I) {
+    return riskRatiosHtml(f, m, I) + (f.kind === 'gl' ? portfolioHtml(f) : I ? portfolioMF(f, I) : '') + mgmtHtml(f, I) + exitHtml(f, I) + newsHtml(f, I) + prosConsHtml(f, m, I) +
+      scoringHtml(f, m) + scenarioHtml(f, m, I) + suitHtml(f, m, I) + expertHtml(f, m, I) + verdictHtml(f, m, I);
+  }
+  function fillReport(f, m, tok) {
+    var put = function (I, why) {
+      if (tok !== S.token || !$('rptTop')) return;
+      $('rptTop').innerHTML = reportTop(f, m, I); $('rptMid').innerHTML = reportMid(f, m, I);
+      $('rptBot').innerHTML = (why ? '<div class="gw-card fx-errc" style="padding:12px 16px"><p style="margin:0">' + esc(why) + ' Sections below use NAV history only.</p></div>' : '') + reportBot(f, m, I);
+    };
+    loadInfo(f).then(function (I) { put(I && !I.none ? I : null, I && I.none ? I.why : ''); }, function () { put(null, 'Detailed fund data could not be loaded right now.'); });
+  }
+
   function takeaways(f, m) {
     var good = [], watch = [], r = m.r, T = TH(f), rk = m.risk, dd = m.dd, x = f.x || {};
     var big = f.cur === 'INR' ? 100000 : 10000, bigL = f.cur === 'INR' ? '₹1 lakh' : fmtAmt(f, 10000);
@@ -849,7 +1226,8 @@
       good.forEach(function (f) { names[f.key] = f.kind === 'gl' ? f.id + ' · ' + f.short : f.short + (f.p.plan ? ' (' + f.p.plan + ')' : ''); });
       renderTray();
       if (good.length < 2) { errorCard(bad.length ? 'Could not load: ' + bad.map(function (b) { return b.key.replace(/^(mf|etf):/, '') + ' (' + b.err + ')'; }).join(', ') : 'Add at least two funds to compare.'); return; }
-      renderCompare(good, bad);
+      loading('Loading fund details…');
+      Promise.all(good.map(function (f) { return Promise.race([loadInfo(f).then(null, function () { return null; }), new Promise(function (r) { setTimeout(r, 25000); })]); })).then(function () { if (tok === S.token) renderCompare(good, bad); });
     });
   }
 
@@ -860,6 +1238,7 @@
     var mixed = fs.some(function (f) { return f.cur !== fs[0].cur; });
     var h = bad.length ? '<div class="gw-card fx-errc" style="padding:12px 16px"><p style="margin:0">Could not load: ' + bad.map(function (b) { return esc(b.key.replace(/^(mf|etf):/, '')) + ' (' + esc(b.err) + ')'; }).join(', ') + '</p></div>' : '';
     if (!S.cmpRange || RANGES.every(function (r) { return r[0] !== S.cmpRange; })) S.cmpRange = 'Max';
+    h += cmpExec(fs);
     h += '<section class="gw-card"><div class="fx-hrow"><h2>Growth of 100 <span class="sub">rebased over the common period' + (mixed ? ' · each in its own currency' : '') + '</span></h2><div class="fx-seg sm" id="crng">' +
       RANGES.map(function (r) { var dis = r[1] && r[1] > 12 && cyrs < r[1] / 12 - 0.05; return '<button type="button" data-r="' + r[0] + '" ' + (dis ? 'disabled' : '') + ' aria-selected="' + (r[0] === S.cmpRange) + '">' + r[0] + '</button>'; }).join('') +
       '</div></div><div id="cmpChart"></div><div class="fx-legend" id="cmpLeg"></div><p class="fx-note">Common history starts ' + dfmt(common) + ' (' + age(Date.now() - common) + ').</p></section>';
@@ -872,29 +1251,48 @@
       ['Category', null, function (f) { return esc(f.category); }],
       ['Plan', null, function (f) { return f.kind === 'mf' ? [f.p.plan, f.p.opt].filter(Boolean).join(' · ') || '–' : esc(f.group); }],
       ['Fund age', function (f) { return f.latestT - f.since; }, function (f) { return age(f.latestT - f.since); }, null],
+      ['Fund size (AUM)', function (f) { var I = f.info; return I ? (f.kind === 'mf' ? I.aumCr : I.aum) : null; }, function (f) { return f.info ? aumTxt(f, f.info) : '–'; }, null],
+      ['Benchmark', null, function (f) { return f.info && f.info.benchmark ? '<span title="' + esc(f.info.benchmark) + '">' + esc(f.info.benchmark.length > 28 ? f.info.benchmark.slice(0, 26) + '…' : f.info.benchmark) + '</span>' : '–'; }],
+      ['Fund manager', null, function (f) { var ms = f.info && f.info.managers || []; return ms.length ? esc(ms[0].n) + (ms.length > 1 ? ' <span class="muted">+' + (ms.length - 1) + '</span>' : '') : '–'; }],
+      ['Riskometer / risk', null, function (f) { return esc(riskLevel(f, g(f), f.info)); }],
+      ['Rating', function (f) { var r = f.info && f.info.ratings || []; return r.length ? r[0].v : null; }, function (f) { var r = f.info && f.info.ratings || []; return r.length ? stars(r[0].v) + ' <span class="muted">' + esc(r[0].src) + '</span>' : '–'; }, 'hi'],
       ['sec', 'Returns'],
       ['1Y return', function (f) { return g(f).r.y1; }, null, 'hi'],
       ['3Y CAGR', function (f) { return g(f).r.y3; }, null, 'hi'],
       ['5Y CAGR', function (f) { return g(f).r.y5; }, null, 'hi'],
       ['10Y CAGR', function (f) { return g(f).r.y10; }, null, 'hi'],
       ['SIP 5Y XIRR', function (f) { return g(f).sip5 ? g(f).sip5.xirr : null; }, null, 'hi'],
+      ['Category avg 3Y', function (f) { return null; }, function (f) { var c = f.info && f.info.cat && f.info.cat.y3; return c && ok(c.c) ? pct(c.c) : '–'; }],
+      ['3Y vs category', function (f) { var c = f.info && f.info.cat && f.info.cat.y3; return c && ok(c.f) && ok(c.c) ? c.f - c.c : null; }, null, 'hi'],
+      ['Category rank 3Y', function (f) { var c = f.info && f.info.cat && f.info.cat.y3; return c && ok(c.rank) && c.n ? c.rank / c.n : c && ok(c.pctl) ? c.pctl / 100 : null; }, function (f) { var c = f.info && f.info.cat && f.info.cat.y3; return c && ok(c.rank) && c.n ? c.rank + ' / ' + c.n : c && ok(c.pctl) ? 'percentile ' + c.pctl : '–'; }, 'lo'],
       ['sec', 'Risk'],
       ['Volatility (3Y)', function (f) { return g(f).risk ? g(f).risk.vol : null; }, function (f) { return g(f).risk ? pct(g(f).risk.vol, 1, 1) : '–'; }, 'lo'],
       ['Sharpe ratio', function (f) { return g(f).risk ? g(f).risk.sharpe : null; }, function (f) { return g(f).risk ? num(g(f).risk.sharpe) : '–'; }, 'hi'],
       ['Sortino ratio', function (f) { return g(f).risk ? g(f).risk.sortino : null; }, function (f) { return g(f).risk ? num(g(f).risk.sortino) : '–'; }, 'hi'],
       ['Max drawdown', function (f) { return g(f).dd.mdd; }, null, 'hi'],
+      ['Std deviation (reported)', function (f) { var r = f.info && f.info.ratios; return r && ok(r.sd) ? r.sd : null; }, function (f) { var r = f.info && f.info.ratios; return r && ok(r.sd) ? pct(r.sd, 2, 1) : '–'; }, 'lo'],
+      ['Beta', function (f) { var r = f.info && f.info.ratios; return r && ok(r.beta) ? r.beta : null; }, function (f) { var r = f.info && f.info.ratios; return r && ok(r.beta) ? num(r.beta) : '–'; }, 'lo'],
+      ['Alpha', function (f) { var r = f.info && f.info.ratios; return r && ok(r.alpha) ? r.alpha : null; }, function (f) { var r = f.info && f.info.ratios; return r && ok(r.alpha) ? '<span class="' + cls(r.alpha) + '">' + pct(r.alpha, 2) + '</span>' : '–'; }, 'hi'],
       ['sec', 'Consistency'],
       ['Rolling 3Y avg', function (f) { return g(f).roll3 ? g(f).roll3.avg : null; }, null, 'hi'],
       ['Rolling 3Y % positive', function (f) { return g(f).roll3 ? g(f).roll3.pos : null; }, function (f) { return g(f).roll3 ? pct(g(f).roll3.pos, 0, 1) : '–'; }, 'hi'],
       ['Worst 1Y period', function (f) { return g(f).roll1 ? g(f).roll1.min : null; }, null, 'hi']
     ];
-    if (fs.some(function (f) { return f.kind === 'gl'; })) {
-      rows.push(['sec', 'Costs']);
-      rows.push(['Expense ratio', function (f) { return f.x && ok(f.x.expense) ? f.x.expense : null; }, function (f) { return f.x && ok(f.x.expense) ? pct(f.x.expense, 2, 1) : (f.kind === 'mf' ? 'n/a' : '–'); }, 'lo']);
-      rows.push(['Total assets', function (f) { return null; }, function (f) { return f.x ? fmtBig(f, f.x.aum) : 'n/a'; }]);
-    }
+    var expOf = function (f) { return f.info && ok(f.info.exp) ? f.info.exp : f.x && ok(f.x.expense) ? f.x.expense : null; };
+    rows.push(['sec', 'Costs']);
+    rows.push(['Expense ratio', expOf, function (f) { return ok(expOf(f)) ? pct(expOf(f), 2, 1) : '–'; }, 'lo']);
+    rows.push(['Exit load', null, function (f) { var l = f.info && f.info.exitLoad; return l ? '<span title="' + esc(l) + '">' + esc(shortLoad(l)) + '</span>' : '–'; }]);
+    rows.push(['Lock-in', null, function (f) { return f.info ? esc(f.info.lockIn || (/elss|tax sav/i.test(f.catFull) ? '3 years' : 'None')) : '–'; }]);
+    rows.push(['sec', 'Portfolio']);
+    rows.push(['Holdings', function (f) { return null; }, function (f) { var I = f.info; return I && (I.holdN || (I.hold && I.hold.length)) ? String(I.holdN || I.hold.length) + (I.gl ? ' <span class="muted">top shown</span>' : '') : '–'; }]);
+    rows.push(['Top 10 weight', function (f) { return f.info && ok(f.info.top10) ? f.info.top10 : null; }, function (f) { return f.info && ok(f.info.top10) ? pct(f.info.top10, 1, 1) : '–'; }, 'lo']);
+    rows.push(['Top holding', null, function (f) { var h = f.info && f.info.hold && f.info.hold[0]; return h ? '<span title="' + esc(h.n) + '">' + esc(h.n.length > 22 ? h.n.slice(0, 20) + '…' : h.n) + '</span> <span class="muted">' + pct(h.p, 1, 1) + '</span>' : '–'; }]);
+    rows.push(['Top sector', null, function (f) { var x = f.info && f.info.sectors && f.info.sectors[0]; return x ? esc(x[0]) + ' <span class="muted">' + pct(x[1], 1, 1) + '</span>' : '–'; }]);
+    rows.push(['Asset mix', null, function (f) { var mx = f.info && f.info.mix || []; return mx.length ? mx.slice(0, 3).map(function (p) { return esc(p[0].split(/[ &]/)[0]) + ' ' + pct(p[1], 0, 1); }).join(' · ') : '–'; }]);
     rows.push(['sec', 'Verdict']);
     rows.push(['AI Fund Score', function (f) { return g(f).score ? g(f).score.overall : null; }, function (f) { return g(f).score ? '<b>' + g(f).score.overall.toFixed(1) + '</b> <span class="muted">' + g(f).score.label + '</span>' : '–'; }, 'hi']);
+    rows.push(['Final verdict (score)', function (f) { return verdict(f, g(f), f.info).s; }, function (f) { var v = verdict(f, g(f), f.info); return '<span class="gw-chip ' + v.c + '">' + esc(v.k) + (v.s != null ? ' · ' + v.s.toFixed(1) + '/10' : '') + '</span>'; }, 'hi']);
+    rows.push(['Suitable horizon', null, function (f) { return esc(horizon(f)[1]); }]);
 
     h += '<section class="gw-card"><h2>Side by side <span class="sub">best value in each row is green</span></h2><div class="gw-tbl-wrap"><table class="gw-tbl fx-cmp-tbl"><thead><tr><th></th>' +
       fs.map(function (f) { return '<th><span class="d" style="background:' + colorOf(f) + '"></span><a href="#' + keyHash(f.key) + '">' + esc(f.kind === 'gl' ? f.id : f.short) + '</a>' + (f.kind === 'mf' && f.p.plan ? ' <span class="muted" style="font-weight:600">' + f.p.plan + '</span>' : '') + '</th>'; }).join('') + '</tr></thead><tbody>';
@@ -908,6 +1306,7 @@
     });
     h += '</tbody></table></div><p class="fx-note">Sharpe and Sortino use a risk-free rate of 6.5% for INR funds and 4% for USD funds (assumption). "–" means the fund is too young for that period.</p></section>';
     h += '<section class="gw-card"><h2>✨ Summary</h2><ul class="fx-sum">' + cmpSummary(fs).map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ul></section>';
+    h += cmpReport(fs, colorOf);
         $('view').innerHTML = h;
 
     function draw() {
@@ -927,6 +1326,59 @@
     $('crng').addEventListener('click', function (e) { var b = e.target.closest('button[data-r]'); if (!b || b.disabled) return; S.cmpRange = b.dataset.r; this.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-selected', String(x === b)); }); draw(); });
   }
 
+  function cmpName(f) { return f.kind === 'gl' ? f.id : f.short + (f.p.plan ? ' (' + f.p.plan + ')' : ''); }
+  function cmpRank(fs) { return fs.map(function (f) { return { f: f, v: verdict(f, f._m, f.info) }; }).sort(function (a, b) { return (b.v.s == null ? -1 : b.v.s) - (a.v.s == null ? -1 : a.v.s); }); }
+  function cmpExec(fs) {
+    var rk = cmpRank(fs), top = rk[0], b = [];
+    rk.forEach(function (x) {
+      var f = x.f, m = f._m, I = f.info, c = I && I.cat && I.cat.y3, e = I && ok(I.exp) ? I.exp : f.x && f.x.expense;
+      b.push('<b>' + esc(cmpName(f)) + '</b>: <span class="gw-chip ' + x.v.c + '">' + esc(x.v.k) + (x.v.s != null ? ' · final score ' + x.v.s.toFixed(1) + '/10' : '') + '</span> ' +
+        [ok(m.r.y3) ? '3Y ' + pct(m.r.y3) + ' a year' + (c && ok(c.c) ? ' (category ' + pct(c.c) + ')' : '') : ok(m.r.y1) ? '1Y ' + pct(m.r.y1) : '', esc(riskLevel(f, m, I).toLowerCase()) + ' risk', ok(e) ? 'expense ' + pct(e, 2, 1) : '', I ? 'AUM ' + aumTxt(f, I) : ''].filter(Boolean).join(' · '));
+    });
+    var lead = top.v.s != null && rk.length > 1 && rk[1].v.s != null ? '<p class="fx-about">On balance, <b>' + esc(cmpName(top.f)) + '</b> comes out ahead' + (top.v.s - rk[1].v.s < 0.3 ? ', but it is close; pick on cost, risk and your horizon' : '') + '.</p>' : '';
+    return '<section class="gw-card fx-exec"><h2>Executive summary</h2>' + lead + '<ul class="fx-sum">' + b.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ul></section>';
+  }
+  function cmpReport(fs, colorOf) {
+    var h = '', amt = function (f) { return f.cur === 'INR' ? 100000 : 10000; };
+    var dot = function (f) { return '<span class="d" style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:' + colorOf(f) + '"></span>'; };
+    // scenarios
+    h += '<section class="gw-card"><h2>Scenario analysis <span class="sub">10th / 50th / 90th percentile of each fund\'s rolling returns</span></h2><div class="gw-tbl-wrap"><table class="gw-tbl fx-cmp-tbl"><thead><tr><th>Fund</th><th>1Y bear</th><th>1Y base</th><th>1Y bull</th><th>3Y bear</th><th>3Y base</th><th>3Y bull</th><th>If market −20%</th></tr></thead><tbody>' +
+      fs.map(function (f) {
+        var s = scenarios(f, f._m, f.info), r1 = s.rows.filter(function (r) { return r.yrs === 1; })[0], r3 = s.rows.filter(function (r) { return r.yrs === 3; })[0];
+        var c = function (r, k) { return r ? '<td class="num ' + cls(r[k]) + '">' + pct(r[k]) + '</td>' : '<td class="num">–</td>'; };
+        return '<tr><td>' + dot(f) + esc(cmpName(f)) + '</td>' + c(r1, 'bear') + c(r1, 'base') + c(r1, 'bull') + c(r3, 'bear') + c(r3, 'base') + c(r3, 'bull') + '<td class="num ' + (s.crash ? 'dn' : '') + '">' + (s.crash ? pct(s.crash.fund, 0) : '–') + '</td></tr>';
+      }).join('') + '</tbody></table></div><p class="fx-note">3Y values are a year (CAGR). Market −20% uses each fund\'s reported beta where available. Past patterns, not forecasts.</p></section>';
+    // suitability
+    h += '<section class="gw-card"><h2>Investment suitability</h2><div class="gw-grid gw-g2">' + fs.map(function (f) {
+      var s = suitability(f, f._m, f.info);
+      return '<div class="fx-box"><h3>' + dot(f) + esc(cmpName(f)) + '</h3><p class="fx-about">' + esc(s.risk) + ' risk · ' + esc(s.hz) + ' · lock-in ' + esc(s.lock) + '</p><ul class="fx-pc up">' + s.fits.slice(0, 2).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul><ul class="fx-pc dn">' + s.not.slice(0, 2).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
+    }).join('') + '</div></section>';
+    // pros & cons
+    h += '<section class="gw-card"><h2>Pros &amp; cons</h2><div class="gw-grid gw-g2">' + fs.map(function (f) {
+      var pc = prosCons(f, f._m, f.info);
+      return '<div class="fx-box"><h3>' + dot(f) + esc(cmpName(f)) + '</h3><ul class="fx-pc up">' + (pc.pros.slice(0, 4).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') || '<li class="muted">No clear strengths.</li>') + '</ul><ul class="fx-pc dn">' + (pc.cons.slice(0, 4).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') || '<li class="muted">No major weaknesses.</li>') + '</ul></div>';
+    }).join('') + '</div></section>';
+    // analyst views + news
+    var nw = fs.map(function (f) { return { f: f, n: ((f.info && f.info.news) || []).slice(0, 3) }; }).filter(function (x) { return x.n.length; });
+    h += '<section class="gw-card"><h2>Analyst views &amp; latest news</h2><div class="gw-grid gw-g2">' + fs.map(function (f) {
+      var I = f.info, rt = (I && I.ratings) || [], n = ((I && I.news) || []).slice(0, 3);
+      return '<div class="fx-box"><h3>' + dot(f) + esc(cmpName(f)) + '</h3>' + (rt.length ? rt.map(function (r) { return '<div>' + stars(r.v) + ' <small class="muted">' + esc(r.src) + '</small></div>'; }).join('') : '<p class="muted">No third-party rating.</p>') +
+        (n.length ? '<ul class="fx-news">' + n.map(function (x) { return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.title) + '</a> <small class="muted">' + esc(x.src) + (x.ts ? ' · ' + dfmt(x.ts) : '') + '</small></li>'; }).join('') + '</ul>' : '<p class="muted">No recent news.</p>') + '</div>';
+    }).join('') + '</div></section>';
+    // verdict + conclusion
+    var rk = cmpRank(fs), top = rk[0];
+    var by = function (fn, dir) { var b = null; fs.forEach(function (f) { var v = fn(f); if (ok(v) && (b == null || (dir > 0 ? v > b.v : v < b.v))) b = { f: f, v: v }; }); return b; };
+    var lr = by(function (f) { return f._m.r.y5 != null ? f._m.r.y5 : f._m.r.y3; }, 1), lv = by(function (f) { return f._m.risk && f._m.risk.vol; }, -1), lc = by(function (f) { return f.info && ok(f.info.exp) ? f.info.exp : f.x && f.x.expense; }, -1);
+    var pts = [];
+    if (lr) pts.push('Highest long-term return: <b>' + esc(cmpName(lr.f)) + '</b> (' + pct(lr.v) + ' a year).');
+    if (lv) pts.push('Steadiest ride: <b>' + esc(cmpName(lv.f)) + '</b> (volatility ' + pct(lv.v, 1, 1) + ').');
+    if (lc) pts.push('Cheapest: <b>' + esc(cmpName(lc.f)) + '</b> (expense ' + pct(lc.v, 2, 1) + ').');
+    h += '<section class="gw-card fx-verdict ' + top.v.c + '"><h2>Final verdict</h2><div class="gw-tbl-wrap"><table class="gw-tbl fx-cmp-tbl"><tbody>' + rk.map(function (x, i) { return '<tr><td>' + (i + 1) + '. ' + dot(x.f) + esc(cmpName(x.f)) + '</td><td><span class="gw-chip ' + x.v.c + '">' + esc(x.v.k) + '</span></td><td class="num"><b>' + (x.v.s != null ? x.v.s.toFixed(1) + '/10' : '–') + '</b></td></tr>'; }).join('') + '</tbody></table></div>' +
+      '<ul class="fx-sum" style="margin-top:10px">' + pts.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ul>' +
+      '<h2 style="margin-top:14px">Conclusion</h2><p class="fx-about">' + (top.v.s != null ? '<b>' + esc(cmpName(top.f)) + '</b> is the strongest all-rounder here. ' : '') + 'Funds in different categories serve different goals, so match the choice to your horizon and risk comfort rather than past returns alone' + (fs.some(function (f) { return f.p.plan === 'Regular'; }) ? '; prefer Direct plans if you invest on your own' : '') + '.</p>' +
+      '<p class="fx-note"><b>Not investment advice.</b> For information only; mutual fund investments are subject to market risks.</p></section>';
+    return h;
+  }
   function cmpSummary(fs) {
     var out = [], nm = function (f) { return '<b>' + esc(f.kind === 'gl' ? f.id : f.short) + '</b>'; };
     function top(fn, dir) { var b = null, bv = null; fs.forEach(function (f) { var v = fn(f); if (ok(v) && (bv == null || (dir === 'lo' ? v < bv : v > bv))) { bv = v; b = f; } }); return b ? [b, bv] : null; }
