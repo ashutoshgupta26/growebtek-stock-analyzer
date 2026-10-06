@@ -1,0 +1,193 @@
+{
+  "id": "schemes",
+  "title": "Government & Post Office Schemes",
+  "asOf": "Oct 2026",
+  "intro": "Government-backed savings, post office deposits and retirement schemes; compare the rate, how long your money is locked in, tax treatment and whether the government guarantees it.",
+  "newsQuery": "small savings schemes interest rate India",
+  "sources": [
+    "Ministry of Finance (DEA) Office Memorandum F. No.1/4/2019-NS dated 30 Sep 2026: small savings rates for 1 Oct-31 Dec 2026 (unchanged)",
+    "Department of Posts SB Order No. 12/2026; indiapost.gov.in / nsiindia.gov.in scheme rules",
+    "EPFO 239th CBT meeting, 2 Mar 2026 (PIB): EPF rate 8.25% for FY 2025-26",
+    "NPS Tier I scheme returns as of 18 Sep 2026 (SBI Pension Funds, via hdfcsec.com NPS returns page)",
+    "PFRDA / NPS Trust scheme rules for NPS and Atal Pension Yojana"
+  ],
+  "groups": [
+    {"id": "returns", "label": "Returns"},
+    {"id": "tax", "label": "Tax"},
+    {"id": "access", "label": "Access & safety"}
+  ],
+  "params": [
+    {"k": "rate", "label": "Interest rate / return", "fmt": "pct", "better": "high", "w": 3, "g": "returns", "tip": "Rate for Oct-Dec 2026 quarter (MoF notification, 30 Sep 2026). NPS: 5-year Tier I return of SBI Pension Funds as of 18 Sep 2026, market-linked, not a fixed rate. EPF: FY 2025-26 declared rate."},
+    {"k": "compounding", "label": "Compounding / payout", "fmt": "text", "better": null, "g": "returns", "tip": "How interest is compounded or paid out, per scheme rules."},
+    {"k": "lockin", "label": "Lock-in / tenure", "fmt": "years", "better": "low", "w": 2, "g": "access", "tip": "Maturity period in years per scheme rules (Oct 2026). Blank where money is locked until age 60 or retirement."},
+    {"k": "minInv", "label": "Minimum investment", "fmt": "inr", "better": "low", "w": 1, "g": "access", "tip": "Minimum deposit per scheme rules (Oct 2026); RD is per month, PPF/SSY/NPS per year."},
+    {"k": "maxInv", "label": "Maximum investment", "fmt": "inr", "better": "high", "w": 1, "g": "access", "tip": "Deposit cap per scheme rules (Oct 2026); blank means no upper limit or not a fixed rupee cap."},
+    {"k": "tax80c", "label": "Tax deduction (80C/80CCD)", "fmt": "yes", "better": "high", "w": 2, "g": "tax", "tip": "Deposit qualifies for deduction under 80C (or 80CCD for NPS/APY). Only available under the old tax regime. Rules as of Oct 2026."},
+    {"k": "taxable", "label": "Interest taxable", "fmt": "yes", "better": "low", "w": 2, "g": "tax", "tip": "Whether interest/returns are taxed at your slab rate (Oct 2026 rules)."},
+    {"k": "sovereign", "label": "Government guarantee", "fmt": "yes", "better": "high", "w": 3, "g": "access", "tip": "Backed by the Government of India (Oct 2026)."},
+    {"k": "eligibility", "label": "Who can invest", "fmt": "text", "better": null, "g": "access", "tip": "Eligibility per scheme rules (Oct 2026)."},
+    {"k": "liquidity", "label": "Early withdrawal", "fmt": "text", "better": null, "g": "access", "tip": "Premature withdrawal / loan rules, summarised (Oct 2026)."}
+  ],
+  "items": [
+    {
+      "id": "ppf", "name": "Public Provident Fund (PPF)", "provider": "Government of India (Post Office / banks)", "kind": "Post office savings",
+      "tags": ["tax-free", "long term", "EEE"],
+      "v": {"rate": 7.1, "compounding": "Compounded yearly", "lockin": 15, "minInv": 500, "maxInv": 150000, "tax80c": true, "taxable": false, "sovereign": true, "eligibility": "Resident Indian individuals; one account per person (minors via guardian)", "liquidity": "Partial withdrawal from year 7; loan in years 3-6; extendable in 5-year blocks"},
+      "pros": ["Interest and maturity fully tax-free", "Deposits qualify for 80C", "Sovereign-backed, rate reset quarterly"],
+      "cons": ["15-year lock-in", "Annual cap of Rs 1.5 lakh", "Rate unchanged at 7.1% for many quarters, can be cut"],
+      "best": "Long-term tax-free saving for anyone in the old tax regime",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "PPF interest rate"
+    },
+    {
+      "id": "ssy", "name": "Sukanya Samriddhi Yojana", "provider": "Government of India (Post Office / banks)", "kind": "Post office savings",
+      "tags": ["girl child", "tax-free", "long term"],
+      "v": {"rate": 8.2, "compounding": "Compounded yearly", "lockin": 21, "minInv": 250, "maxInv": 150000, "tax80c": true, "taxable": false, "sovereign": true, "eligibility": "Parent/guardian of a girl child below 10 years; max two girls per family", "liquidity": "50% withdrawal after girl turns 18 for education; closure for marriage after 18"},
+      "pros": ["Highest small-savings rate (8.2%)", "Tax-free interest and maturity", "Deposits qualify for 80C"],
+      "cons": ["Only for a girl child under 10", "Matures 21 years from opening", "Deposits needed for 15 years"],
+      "best": "Parents saving for a daughter's education or marriage",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Sukanya Samriddhi Yojana interest rate"
+    },
+    {
+      "id": "nsc", "name": "National Savings Certificate (NSC VIII)", "provider": "Government of India (Post Office)", "kind": "Post office savings",
+      "tags": ["80C", "5 years", "fixed rate"],
+      "v": {"rate": 7.7, "compounding": "Compounded yearly, paid at maturity", "lockin": 5, "minInv": 1000, "maxInv": null, "tax80c": true, "taxable": true, "sovereign": true, "eligibility": "Resident Indian individuals, including joint and minor accounts", "liquidity": "No premature exit except death or court order; can be pledged as loan security"},
+      "pros": ["Rate locked for 5 years at purchase", "Deposit qualifies for 80C", "No upper investment limit"],
+      "cons": ["Interest is taxable", "Practically no early exit", "Available only at post offices"],
+      "best": "Old-regime taxpayers wanting a fixed 5-year rate with 80C benefit",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "National Savings Certificate interest rate"
+    },
+    {
+      "id": "kvp", "name": "Kisan Vikas Patra (KVP)", "provider": "Government of India (Post Office)", "kind": "Post office savings",
+      "tags": ["doubles money", "115 months"],
+      "v": {"rate": 7.5, "compounding": "Compounded yearly; amount doubles in 115 months", "lockin": 9.58, "minInv": 1000, "maxInv": null, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint holders, guardians for minors", "liquidity": "Premature encashment after 2 years 6 months"},
+      "pros": ["Money doubles in 115 months (9 yr 7 mo)", "No upper limit", "Exit allowed after 2.5 years"],
+      "cons": ["No 80C benefit", "Interest is taxable", "Long tenure"],
+      "best": "Conservative savers who want a known doubling period",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Kisan Vikas Patra"
+    },
+    {
+      "id": "scss", "name": "Senior Citizens Savings Scheme (SCSS)", "provider": "Government of India (Post Office / banks)", "kind": "Retirement",
+      "tags": ["senior citizens", "quarterly income", "80C"],
+      "v": {"rate": 8.2, "compounding": "Simple interest paid quarterly", "lockin": 5, "minInv": 1000, "maxInv": 3000000, "tax80c": true, "taxable": true, "sovereign": true, "eligibility": "Age 60+; 55-60 for retired civilians and 50+ for retired defence (within rules)", "liquidity": "Premature closure allowed with penalty (1.5% before 2 yrs, 1% after); extendable by 3 years"},
+      "pros": ["8.2% paid every quarter", "Deposit qualifies for 80C", "High cap of Rs 30 lakh"],
+      "cons": ["Interest fully taxable, TDS applies", "Only for seniors / eligible retirees", "Penalty on early exit"],
+      "best": "Retirees needing regular, safe quarterly income",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Senior Citizens Savings Scheme interest rate"
+    },
+    {
+      "id": "pomis", "name": "Post Office Monthly Income Scheme (POMIS)", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["monthly income", "5 years"],
+      "v": {"rate": 7.4, "compounding": "Simple interest paid monthly", "lockin": 5, "minInv": 1000, "maxInv": 900000, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults; joint up to 3; Rs 15 lakh cap for joint accounts", "liquidity": "Closure after 1 year: 2% deduction before 3 yrs, 1% after"},
+      "pros": ["Steady monthly payout", "Sovereign-backed", "Rs 15 lakh cap in joint account"],
+      "cons": ["No 80C benefit", "Interest taxable", "Payout is not compounded"],
+      "best": "Anyone wanting a fixed monthly income from a lump sum",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office Monthly Income Scheme"
+    },
+    {
+      "id": "potd-1y", "name": "Post Office Time Deposit - 1 year", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["fixed deposit", "short term"],
+      "v": {"rate": 6.9, "compounding": "Compounded quarterly, paid yearly", "lockin": 1, "minInv": 1000, "maxInv": null, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint, minors via guardian", "liquidity": "No withdrawal for 6 months; before 1 year earns savings rate"},
+      "pros": ["Sovereign-backed FD alternative", "No upper limit", "Short one-year tenure"],
+      "cons": ["Interest taxable", "No 80C benefit", "Early exit earns only savings rate"],
+      "best": "Parking money safely for about a year",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office time deposit interest rate"
+    },
+    {
+      "id": "potd-2y", "name": "Post Office Time Deposit - 2 years", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["fixed deposit"],
+      "v": {"rate": 7.0, "compounding": "Compounded quarterly, paid yearly", "lockin": 2, "minInv": 1000, "maxInv": null, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint, minors via guardian", "liquidity": "Exit after 6 months; after 1 year, rate is 2% less than the deposit rate"},
+      "pros": ["Sovereign-backed", "No upper limit", "Rate locked for the tenure"],
+      "cons": ["Interest taxable", "No 80C benefit", "Penalty on early exit"],
+      "best": "Two-year goals needing a guaranteed return",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office time deposit interest rate"
+    },
+    {
+      "id": "potd-3y", "name": "Post Office Time Deposit - 3 years", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["fixed deposit"],
+      "v": {"rate": 7.1, "compounding": "Compounded quarterly, paid yearly", "lockin": 3, "minInv": 1000, "maxInv": null, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint, minors via guardian", "liquidity": "Exit after 6 months; after 1 year, rate is 2% less than the deposit rate"},
+      "pros": ["Sovereign-backed", "No upper limit", "Rate locked for 3 years"],
+      "cons": ["Interest taxable", "No 80C benefit", "Penalty on early exit"],
+      "best": "Medium-term savers comparing against bank FDs",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office time deposit interest rate"
+    },
+    {
+      "id": "potd-5y", "name": "Post Office Time Deposit - 5 years", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["fixed deposit", "80C", "tax-saver"],
+      "v": {"rate": 7.5, "compounding": "Compounded quarterly, paid yearly", "lockin": 5, "minInv": 1000, "maxInv": null, "tax80c": true, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint, minors via guardian", "liquidity": "Exit after 6 months; after 1 year, rate is 2% less than the deposit rate"},
+      "pros": ["Deposit qualifies for 80C", "7.5% locked for 5 years", "Sovereign-backed"],
+      "cons": ["Interest taxable", "5-year commitment", "80C only in the old regime"],
+      "best": "Tax-saving FD alternative for conservative investors",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office 5 year time deposit"
+    },
+    {
+      "id": "pord", "name": "Post Office Recurring Deposit (5-year)", "provider": "Department of Posts", "kind": "Post office savings",
+      "tags": ["monthly saving", "small amounts"],
+      "v": {"rate": 6.7, "compounding": "Compounded quarterly", "lockin": 5, "minInv": 100, "maxInv": null, "tax80c": false, "taxable": true, "sovereign": true, "eligibility": "Resident Indian adults, joint, minors via guardian", "liquidity": "Loan up to 50% after 12 instalments; premature closure after 3 years at savings rate"},
+      "pros": ["Start with Rs 100 a month", "Builds a saving habit", "Sovereign-backed"],
+      "cons": ["Lowest rate among term schemes (6.7%)", "Interest taxable", "Default fees on missed instalments"],
+      "best": "Small monthly savers wanting a disciplined, safe plan",
+      "url": "https://www.indiapost.gov.in/Financial/Pages/Content/Post-Office-Saving-Schemes.aspx",
+      "news": "Post Office recurring deposit interest rate"
+    },
+    {
+      "id": "apy", "name": "Atal Pension Yojana (APY)", "provider": "PFRDA (Government of India)", "kind": "Pension",
+      "tags": ["guaranteed pension", "unorganised sector"],
+      "v": {"rate": null, "compounding": "Guaranteed monthly pension of Rs 1,000-5,000 from age 60", "lockin": null, "minInv": null, "maxInv": null, "tax80c": true, "taxable": true, "sovereign": true, "eligibility": "Indian citizens aged 18-40 with a bank/post office account; not income-tax payers (from Oct 2022)", "liquidity": "Locked till 60; voluntary exit returns only own contributions plus actual earnings"},
+      "pros": ["Government-guaranteed minimum pension", "Tiny monthly contributions possible", "Pension passes to spouse, then corpus to nominee"],
+      "cons": ["Not open to income-tax payers", "Pension fixed in rupees, eroded by inflation", "Contribution depends on age at joining"],
+      "best": "Low-income workers without another pension",
+      "url": "https://www.pfrda.org.in",
+      "news": "Atal Pension Yojana"
+    },
+    {
+      "id": "nps-e", "name": "NPS Tier I - Equity (Scheme E)", "provider": "PFRDA / pension fund managers", "kind": "Retirement",
+      "tags": ["market-linked", "equity", "80CCD(1B)"],
+      "v": {"rate": 7.47, "compounding": "Market-linked NAV", "lockin": null, "minInv": 1000, "maxInv": null, "tax80c": true, "taxable": null, "sovereign": false, "eligibility": "Indian citizens aged 18-70 (incl. NRIs)", "liquidity": "Locked till 60; partial withdrawals for specific needs after 3 years"},
+      "pros": ["Equity growth with very low fund costs", "Extra Rs 50,000 deduction under 80CCD(1B) in the old regime", "Choice of pension fund manager"],
+      "cons": ["Returns not guaranteed; 1-year return was negative (-4.13%) as of Sep 2026", "Equity share capped at 75%", "Part of corpus must buy an annuity at exit"],
+      "best": "Long-horizon retirement savers comfortable with market risk",
+      "url": "https://npstrust.org.in",
+      "news": "NPS returns equity"
+    },
+    {
+      "id": "nps-c", "name": "NPS Tier I - Corporate Bonds (Scheme C)", "provider": "PFRDA / pension fund managers", "kind": "Retirement",
+      "tags": ["market-linked", "debt"],
+      "v": {"rate": 6.47, "compounding": "Market-linked NAV", "lockin": null, "minInv": 1000, "maxInv": null, "tax80c": true, "taxable": null, "sovereign": false, "eligibility": "Indian citizens aged 18-70 (incl. NRIs)", "liquidity": "Locked till 60; partial withdrawals for specific needs after 3 years"},
+      "pros": ["Steadier than equity", "Same NPS tax benefits", "Low costs"],
+      "cons": ["Not guaranteed; credit and rate risk", "5-year return (6.47%) below PPF", "Locked till 60"],
+      "best": "Debt part of an NPS allocation",
+      "url": "https://npstrust.org.in",
+      "news": "NPS corporate bond scheme returns"
+    },
+    {
+      "id": "nps-g", "name": "NPS Tier I - Government Securities (Scheme G)", "provider": "PFRDA / pension fund managers", "kind": "Retirement",
+      "tags": ["market-linked", "gilt"],
+      "v": {"rate": 5.78, "compounding": "Market-linked NAV", "lockin": null, "minInv": 1000, "maxInv": null, "tax80c": true, "taxable": null, "sovereign": false, "eligibility": "Indian citizens aged 18-70 (incl. NRIs)", "liquidity": "Locked till 60; partial withdrawals for specific needs after 3 years"},
+      "pros": ["No credit risk on underlying bonds", "Same NPS tax benefits", "Gains when interest rates fall"],
+      "cons": ["NAV swings with interest rates", "5-year return (5.78%) lowest here", "Locked till 60"],
+      "best": "Low-credit-risk debt part of an NPS allocation",
+      "url": "https://npstrust.org.in",
+      "news": "NPS government securities scheme returns"
+    },
+    {
+      "id": "epf-vpf", "name": "EPF / Voluntary Provident Fund (VPF)", "provider": "EPFO", "kind": "Retirement",
+      "tags": ["salaried", "80C", "employer contribution"],
+      "v": {"rate": 8.25, "compounding": "Interest on monthly running balance, credited yearly", "lockin": null, "minInv": null, "maxInv": null, "tax80c": true, "taxable": false, "sovereign": false, "eligibility": "Salaried employees of EPF-covered establishments; VPF is extra voluntary contribution", "liquidity": "Partial withdrawals for housing, education, medical etc.; full on retirement or after 2 months unemployed"},
+      "pros": ["8.25% for FY 2025-26, above most small savings", "Employer matches 12% (EPF)", "Interest tax-free within limits"],
+      "cons": ["Only for salaried employees", "Interest on employee contribution above Rs 2.5 lakh/yr is taxable", "Rate declared yearly by EPFO, not a sovereign guarantee"],
+      "best": "Salaried people wanting high safe debt returns via VPF",
+      "url": "https://www.epfindia.gov.in",
+      "news": "EPF interest rate"
+    }
+  ]
+}

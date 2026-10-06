@@ -1,0 +1,668 @@
+{
+  "id": "life",
+  "title": "Life Insurance",
+  "asOf": "Oct 2026",
+  "intro": "Indian life insurers compared on IRDAI data for FY2024-25: death-claim settlement, solvency, size, persistency and complaints. Check the specific plan premium before buying.",
+  "newsQuery": "life insurance India",
+  "sources": [
+    "IRDAI Handbook on Indian Insurance Statistics 2024-25 (Part I, Tables 10, 15, 21, 23, 28, 37)",
+    "IRDAI Annual Report 2024-25",
+    "Insurer websites (Oct 2026)"
+  ],
+  "groups": [
+    {
+      "id": "claims",
+      "label": "Claims"
+    },
+    {
+      "id": "strength",
+      "label": "Financial strength"
+    },
+    {
+      "id": "service",
+      "label": "Service"
+    },
+    {
+      "id": "products",
+      "label": "Products"
+    }
+  ],
+  "params": [
+    {
+      "k": "csrCount",
+      "label": "Claim settlement (by count)",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "claims",
+      "tip": "Individual death claims paid as % of claims decided, FY2024-25 (IRDAI). Industry: 97.82%."
+    },
+    {
+      "k": "csrAmount",
+      "label": "Claim settlement (by amount)",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "claims",
+      "tip": "Value of individual death claims paid as % of value decided, FY2024-25 (IRDAI). Industry: 96.29%."
+    },
+    {
+      "k": "solvency",
+      "label": "Solvency ratio",
+      "fmt": "x",
+      "better": "high",
+      "w": 1,
+      "g": "strength",
+      "tip": "Available vs required capital as at 31 Mar 2025 (IRDAI). Legal minimum is 1.5x."
+    },
+    {
+      "k": "aum",
+      "label": "AUM (Rs crore)",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "strength",
+      "tip": "Assets under management as at 31 Mar 2025 (IRDAI). Shows size, not quality."
+    },
+    {
+      "k": "persistency13",
+      "label": "13th-month persistency",
+      "fmt": "pct",
+      "better": "high",
+      "w": 2,
+      "g": "service",
+      "tip": "Share of policies (by premium) still paid in month 13, FY2024-25 (IRDAI). Higher suggests fewer mis-sold policies."
+    },
+    {
+      "k": "complaints",
+      "label": "Complaints per 10,000 policies",
+      "fmt": "num",
+      "better": "low",
+      "w": 2,
+      "g": "service",
+      "tip": "Grievances reported in FY2024-25 per 10,000 individual policies in force at 31 Mar 2025; computed from IRDAI Tables 37 and 10."
+    },
+    {
+      "k": "plans",
+      "label": "Popular plans",
+      "fmt": "text",
+      "better": null,
+      "w": 1,
+      "g": "products",
+      "tip": "Well-known plans from the insurer website, Oct 2026. Not a recommendation."
+    }
+  ],
+  "items": [
+    {
+      "id": "lic",
+      "name": "LIC",
+      "provider": "Life Insurance Corporation of India",
+      "kind": "Public sector life insurer",
+      "tags": [
+        "public",
+        "largest",
+        "traditional plans"
+      ],
+      "v": {
+        "csrCount": 97.59,
+        "csrAmount": 96.08,
+        "solvency": 2.11,
+        "aum": 4799949.35,
+        "persistency13": 64.12,
+        "complaints": 2.76,
+        "plans": "New Jeevan Anand, Jeevan Umang, Tech Term"
+      },
+      "pros": [
+        "Very large: AUM of Rs 48.00 lakh crore (Mar 2025)",
+        "Few complaints: 2.76 per 10,000 policies in force (FY25)",
+        "Government-owned, with the widest agent and branch network"
+      ],
+      "cons": [
+        "Claim settlement by count 97.59% in FY25, below the 97.82% industry figure",
+        "Settled only 96.08% of death-claim value in FY25 (industry 96.29%)",
+        "Low 13th-month persistency of 64.12% (FY25): many policies lapse in year one",
+        "Online term and claim servicing is less smooth than the top private insurers"
+      ],
+      "best": "Traditional endowment and guaranteed plans with state backing",
+      "url": "https://licindia.in",
+      "news": "LIC life insurance"
+    },
+    {
+      "id": "hdfc-life",
+      "name": "HDFC Life",
+      "provider": "HDFC Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "term",
+        "ulip"
+      ],
+      "v": {
+        "csrCount": 99.68,
+        "csrAmount": 97.96,
+        "solvency": 1.94,
+        "aum": 331407.67,
+        "persistency13": 81.25,
+        "complaints": 5.73,
+        "plans": "Click 2 Protect Supreme, Sanchay Plus"
+      },
+      "pros": [
+        "Top-tier claim settlement by count: 99.68% in FY25",
+        "Very large: AUM of Rs 3.31 lakh crore (Mar 2025)",
+        "High 13th-month persistency of 81.25% (FY25): most buyers keep their policy"
+      ],
+      "cons": [
+        "Solvency of 1.94x (Mar 2025) is below the 2x many large peers hold",
+        "Claim settlement by amount (97.96%, FY25) trails its count ratio"
+      ],
+      "best": "Term cover where claim reliability matters most",
+      "url": "https://www.hdfclife.com",
+      "news": "HDFC Life insurance"
+    },
+    {
+      "id": "icici-pru-life",
+      "name": "ICICI Prudential Life",
+      "provider": "ICICI Prudential Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "term",
+        "ulip"
+      ],
+      "v": {
+        "csrCount": 99.31,
+        "csrAmount": 98.06,
+        "solvency": 2.12,
+        "aum": 303175.97,
+        "persistency13": 80.4,
+        "complaints": 6.65,
+        "plans": "iProtect Smart Plus, GIFT Pro"
+      },
+      "pros": [
+        "Claim settlement by count 99.31% in FY25, above the 97.82% industry figure",
+        "Very large: AUM of Rs 3.03 lakh crore (Mar 2025)",
+        "High 13th-month persistency of 80.4% (FY25): most buyers keep their policy"
+      ],
+      "cons": [
+        "Complaints of 6.65 per 10,000 policies (FY25) are above the best performers",
+        "Insurer-level ratios do not show plan price; compare premiums"
+      ],
+      "best": "Buyers who want a large, established insurer",
+      "url": "https://www.iciciprulife.com",
+      "news": "ICICI Prudential Life insurance"
+    },
+    {
+      "id": "sbi-life",
+      "name": "SBI Life",
+      "provider": "SBI Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 98.34,
+        "csrAmount": 95.26,
+        "solvency": 1.96,
+        "aum": 444870.5,
+        "persistency13": 79.72,
+        "complaints": 2.41,
+        "plans": "eShield Next, Smart Platina Assure"
+      },
+      "pros": [
+        "Claim settlement by count 98.34% in FY25, above the 97.82% industry figure",
+        "Very large: AUM of Rs 4.45 lakh crore (Mar 2025)",
+        "Few complaints: 2.41 per 10,000 policies in force (FY25)"
+      ],
+      "cons": [
+        "Settled only 95.26% of death-claim value in FY25 (industry 96.29%)",
+        "Solvency of 1.96x (Mar 2025) is below the 2x many large peers hold"
+      ],
+      "best": "Buyers who want a large, established insurer",
+      "url": "https://www.sbilife.co.in",
+      "news": "SBI Life insurance"
+    },
+    {
+      "id": "axis-max-life",
+      "name": "Axis Max Life",
+      "provider": "Axis Max Life Insurance Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "term"
+      ],
+      "v": {
+        "csrCount": 99.7,
+        "csrAmount": 97.39,
+        "solvency": 2.01,
+        "aum": 171663.94,
+        "persistency13": 83,
+        "complaints": 9.25,
+        "plans": "Smart Term Plan Plus, Smart Wealth Advantage Guarantee"
+      },
+      "pros": [
+        "Top-tier claim settlement by count: 99.7% in FY25",
+        "High 13th-month persistency of 83% (FY25): most buyers keep their policy"
+      ],
+      "cons": [
+        "Complaints of 9.25 per 10,000 policies (FY25) are above the best performers",
+        "Claim settlement by amount (97.39%, FY25) trails its count ratio"
+      ],
+      "best": "Term cover where claim reliability matters most",
+      "url": "https://www.axismaxlife.com",
+      "news": "Axis Max Life insurance"
+    },
+    {
+      "id": "tata-aia",
+      "name": "Tata AIA Life",
+      "provider": "Tata AIA Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "term",
+        "ulip"
+      ],
+      "v": {
+        "csrCount": 99.41,
+        "csrAmount": 98.38,
+        "solvency": 1.8,
+        "aum": 121300.1,
+        "persistency13": 83.22,
+        "complaints": 7.88,
+        "plans": "Sampoorna Raksha Promise, Fortune Guarantee Plus"
+      },
+      "pros": [
+        "Claim settlement by count 99.41% in FY25, above the 97.82% industry figure",
+        "High 13th-month persistency of 83.22% (FY25): most buyers keep their policy"
+      ],
+      "cons": [
+        "Solvency of 1.8x (Mar 2025) is on the thinner side, though above the 1.5x minimum",
+        "Complaints of 7.88 per 10,000 policies (FY25) are above the best performers"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://www.tataaia.com",
+      "news": "Tata AIA Life insurance"
+    },
+    {
+      "id": "bajaj-life",
+      "name": "Bajaj Life",
+      "provider": "Bajaj Life Insurance Ltd. (formerly Bajaj Allianz Life)",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "large",
+        "high solvency"
+      ],
+      "v": {
+        "csrCount": 99.29,
+        "csrAmount": 93.04,
+        "solvency": 3.59,
+        "aum": 123590.01,
+        "persistency13": 77.6,
+        "complaints": 8.71,
+        "plans": "eTouch II, ACE"
+      },
+      "pros": [
+        "Claim settlement by count 99.29% in FY25, above the 97.82% industry figure",
+        "Strong solvency of 3.59x (Mar 2025), well above the 1.5x minimum"
+      ],
+      "cons": [
+        "Settled only 93.04% of death-claim value in FY25 (industry 96.29%)",
+        "Complaints of 8.71 per 10,000 policies (FY25) are above the best performers"
+      ],
+      "best": "Buyers who prioritise balance-sheet strength",
+      "url": "https://www.bajajlifeinsurance.com",
+      "news": "Bajaj Life insurance"
+    },
+    {
+      "id": "kotak-life",
+      "name": "Kotak Life",
+      "provider": "Kotak Mahindra Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 98.61,
+        "csrAmount": 95.88,
+        "solvency": 2.45,
+        "aum": 90997.79,
+        "persistency13": 79.08,
+        "complaints": 7.61,
+        "plans": "Kotak e-Term, Assured Savings Plan"
+      },
+      "pros": [
+        "Claim settlement by count 98.61% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Settled only 95.88% of death-claim value in FY25 (industry 96.29%)",
+        "Complaints of 7.61 per 10,000 policies (FY25) are above the best performers"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://www.kotaklife.com",
+      "news": "Kotak Life insurance"
+    },
+    {
+      "id": "pnb-metlife",
+      "name": "PNB MetLife",
+      "provider": "PNB MetLife India Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 99.57,
+        "csrAmount": 99.3,
+        "solvency": 1.72,
+        "aum": 54000.69,
+        "persistency13": 77.44,
+        "complaints": 11.75,
+        "plans": "Mera Term Plan Plus, Guaranteed Future Plan"
+      },
+      "pros": [
+        "Top-tier claim settlement by count: 99.57% in FY25",
+        "Settles 99.3% of death-claim value (FY25), so big claims are rarely rejected"
+      ],
+      "cons": [
+        "Solvency of 1.72x (Mar 2025) is on the thinner side, though above the 1.5x minimum",
+        "Complaints of 11.75 per 10,000 policies (FY25) are above the best performers"
+      ],
+      "best": "Term cover where claim reliability matters most",
+      "url": "https://www.pnbmetlife.com",
+      "news": "PNB MetLife insurance"
+    },
+    {
+      "id": "absli",
+      "name": "Aditya Birla Sun Life",
+      "provider": "Aditya Birla Sun Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size"
+      ],
+      "v": {
+        "csrCount": 98.65,
+        "csrAmount": 96.22,
+        "solvency": 1.88,
+        "aum": 99431.52,
+        "persistency13": 77,
+        "complaints": 6.42,
+        "plans": "DigiShield Plan, Nishchit Aayush"
+      },
+      "pros": [
+        "Claim settlement by count 98.65% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Settled only 96.22% of death-claim value in FY25 (industry 96.29%)",
+        "Solvency of 1.88x (Mar 2025) is below the 2x many large peers hold"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://lifeinsurance.adityabirlacapital.com",
+      "news": "Aditya Birla Sun Life Insurance"
+    },
+    {
+      "id": "canara-hsbc-life",
+      "name": "Canara HSBC Life",
+      "provider": "Canara HSBC Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 99.43,
+        "csrAmount": 99.08,
+        "solvency": 2.06,
+        "aum": 41125.17,
+        "persistency13": 81.67,
+        "complaints": 10.84,
+        "plans": "iSelect Smart360 Term, Guaranteed Fortune Plan"
+      },
+      "pros": [
+        "Claim settlement by count 99.43% in FY25, above the 97.82% industry figure",
+        "Settles 99.08% of death-claim value (FY25), so big claims are rarely rejected",
+        "High 13th-month persistency of 81.67% (FY25): most buyers keep their policy"
+      ],
+      "cons": [
+        "Complaints of 10.84 per 10,000 policies (FY25) are above the best performers",
+        "Insurer-level ratios do not show plan price; compare premiums"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://www.canarahsbclife.com",
+      "news": "Canara HSBC Life insurance"
+    },
+    {
+      "id": "bandhan-life",
+      "name": "Bandhan Life",
+      "provider": "Bandhan Life Insurance Ltd. (formerly Aegon Life)",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "small",
+        "online term"
+      ],
+      "v": {
+        "csrCount": 99.73,
+        "csrAmount": 99.8,
+        "solvency": 2.69,
+        "aum": 4760.79,
+        "persistency13": 68.75,
+        "complaints": 10.94,
+        "plans": "iTerm Prime, iGuarantee"
+      },
+      "pros": [
+        "Top-tier claim settlement by count: 99.73% in FY25",
+        "Settles 99.8% of death-claim value (FY25), so big claims are rarely rejected",
+        "Strong solvency of 2.69x (Mar 2025), well above the 1.5x minimum"
+      ],
+      "cons": [
+        "Small insurer: AUM of Rs 4,761 crore (Mar 2025)",
+        "Low 13th-month persistency of 68.75% (FY25): many policies lapse in year one"
+      ],
+      "best": "Term cover where claim reliability matters most",
+      "url": "https://www.bandhanlife.com",
+      "news": "Bandhan Life insurance"
+    },
+    {
+      "id": "edelweiss-life",
+      "name": "Edelweiss Life",
+      "provider": "Edelweiss Life Insurance Company Ltd. (formerly Edelweiss Tokio)",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "small"
+      ],
+      "v": {
+        "csrCount": 99.29,
+        "csrAmount": 98.34,
+        "solvency": 1.81,
+        "aum": 9378.95,
+        "persistency13": 64.6,
+        "complaints": 24.21,
+        "plans": "Zindagi Plus, Guaranteed Income STAR"
+      },
+      "pros": [
+        "Claim settlement by count 99.29% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Solvency of 1.81x (Mar 2025) is on the thinner side, though above the 1.5x minimum",
+        "Small insurer: AUM of Rs 9,379 crore (Mar 2025)",
+        "Low 13th-month persistency of 64.6% (FY25): many policies lapse in year one",
+        "More complaints: 24.21 per 10,000 policies in force (FY25)"
+      ],
+      "best": "Price-led online term buyers who accept a smaller insurer",
+      "url": "https://www.edelweisslife.in",
+      "news": "Edelweiss Life insurance"
+    },
+    {
+      "id": "sud-life",
+      "name": "Star Union Dai-ichi Life",
+      "provider": "Star Union Dai-ichi Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 98.84,
+        "csrAmount": 96.93,
+        "solvency": 2.3,
+        "aum": 29941.03,
+        "persistency13": 69.34,
+        "complaints": 14.38,
+        "plans": "SUD Life Saral Jeevan Bima, SUD Life Guaranteed Income"
+      },
+      "pros": [
+        "Claim settlement by count 98.84% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Low 13th-month persistency of 69.34% (FY25): many policies lapse in year one",
+        "More complaints: 14.38 per 10,000 policies in force (FY25)"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://www.sudlife.in",
+      "news": "Star Union Dai-ichi Life insurance"
+    },
+    {
+      "id": "indiafirst-life",
+      "name": "IndiaFirst Life",
+      "provider": "IndiaFirst Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "mid-size",
+        "bank-backed"
+      ],
+      "v": {
+        "csrCount": 98.22,
+        "csrAmount": 95.98,
+        "solvency": 2,
+        "aum": 30501.78,
+        "persistency13": 68.07,
+        "complaints": 12.88,
+        "plans": "Guarantee of Life Dreams, e-Term Plus"
+      },
+      "pros": [
+        "Claim settlement by count 98.22% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Settled only 95.98% of death-claim value in FY25 (industry 96.29%)",
+        "Low 13th-month persistency of 68.07% (FY25): many policies lapse in year one",
+        "More complaints: 12.88 per 10,000 policies in force (FY25)"
+      ],
+      "best": "Buyers comparing mid-size insurers on plan price and features",
+      "url": "https://www.indiafirstlife.com",
+      "news": "IndiaFirst Life insurance"
+    },
+    {
+      "id": "ageas-federal",
+      "name": "Ageas Federal Life",
+      "provider": "Ageas Federal Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "small",
+        "high solvency"
+      ],
+      "v": {
+        "csrCount": 98.52,
+        "csrAmount": 95.83,
+        "solvency": 2.7,
+        "aum": 18539.82,
+        "persistency13": 77.46,
+        "complaints": 7.25,
+        "plans": "iSecure, Assured Income Plan"
+      },
+      "pros": [
+        "Claim settlement by count 98.52% in FY25, above the 97.82% industry figure",
+        "Strong solvency of 2.7x (Mar 2025), well above the 1.5x minimum"
+      ],
+      "cons": [
+        "Settled only 95.83% of death-claim value in FY25 (industry 96.29%)",
+        "Complaints of 7.25 per 10,000 policies (FY25) are above the best performers"
+      ],
+      "best": "Buyers who prioritise balance-sheet strength",
+      "url": "https://www.ageasfederal.com",
+      "news": "Ageas Federal Life insurance"
+    },
+    {
+      "id": "pramerica-life",
+      "name": "Pramerica Life",
+      "provider": "Pramerica Life Insurance Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "small"
+      ],
+      "v": {
+        "csrCount": 99.18,
+        "csrAmount": 97.87,
+        "solvency": 2.33,
+        "aum": 9607.15,
+        "persistency13": 75.91,
+        "complaints": 15.39,
+        "plans": "Smart Wealth+, Rakshak"
+      },
+      "pros": [
+        "Claim settlement by count 99.18% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Small insurer: AUM of Rs 9,607 crore (Mar 2025)",
+        "More complaints: 15.39 per 10,000 policies in force (FY25)"
+      ],
+      "best": "Price-led online term buyers who accept a smaller insurer",
+      "url": "https://pramericalife.in",
+      "news": "Pramerica Life insurance"
+    },
+    {
+      "id": "shriram-life",
+      "name": "Shriram Life",
+      "provider": "Shriram Life Insurance Company Ltd.",
+      "kind": "Private life insurer",
+      "tags": [
+        "private",
+        "small",
+        "mass market"
+      ],
+      "v": {
+        "csrCount": 98.31,
+        "csrAmount": 81.71,
+        "solvency": 1.79,
+        "aum": 13124.05,
+        "persistency13": 59.68,
+        "complaints": 16.43,
+        "plans": "Shri Life Plan, Assured Income Plus"
+      },
+      "pros": [
+        "Claim settlement by count 98.31% in FY25, above the 97.82% industry figure",
+        "Mid-pack numbers across claims, solvency and service"
+      ],
+      "cons": [
+        "Settled only 81.71% of death-claim value in FY25 (industry 96.29%)",
+        "Solvency of 1.79x (Mar 2025) is on the thinner side, though above the 1.5x minimum",
+        "Small insurer: AUM of Rs 13,124 crore (Mar 2025)",
+        "Low 13th-month persistency of 59.68% (FY25): many policies lapse in year one"
+      ],
+      "best": "Price-led online term buyers who accept a smaller insurer",
+      "url": "https://www.shriramlife.com",
+      "news": "Shriram Life insurance"
+    }
+  ]
+}

@@ -1,0 +1,1001 @@
+{
+ "id": "fd",
+ "title": "Fixed Deposits",
+ "asOf": "Oct 2026",
+ "intro": "Fixed deposits from banks, small finance banks and NBFCs, compared on rates, safety and terms. The rate for your tenure and DICGC cover (₹5 lakh per bank) matter most.",
+ "newsQuery": "fixed deposit rates India",
+ "sources": [
+  "Paisabazaar FD rate tables (as of 1 Oct 2026) and per-bank pages (rates w.e.f. Dec 2025 to Sep 2026)",
+  "SBI official rate page (w.e.f. 15 Dec 2025)",
+  "ICICI Bank official FD page (minimum deposit)",
+  "Bajaj Finance official FD page (rates w.e.f. 7 Oct 2026)",
+  "Paisabazaar corporate FD page (credit ratings)",
+  "DICGC: deposit insurance up to ₹5 lakh per bank (banks only)"
+ ],
+ "groups": [
+  {
+   "id": "returns",
+   "label": "Returns"
+  },
+  {
+   "id": "safety",
+   "label": "Safety"
+  },
+  {
+   "id": "terms",
+   "label": "Terms"
+  }
+ ],
+ "params": [
+  {
+   "k": "r1y",
+   "label": "1-year rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 2,
+   "g": "returns",
+   "tip": "General public rate, deposits under ₹3 crore, Oct 2026."
+  },
+  {
+   "k": "r2y",
+   "label": "2-year rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 1,
+   "g": "returns",
+   "tip": "General public rate, deposits under ₹3 crore, Oct 2026."
+  },
+  {
+   "k": "r3y",
+   "label": "3-year rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 2,
+   "g": "returns",
+   "tip": "General public rate, deposits under ₹3 crore, Oct 2026."
+  },
+  {
+   "k": "r5y",
+   "label": "5-year rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 1,
+   "g": "returns",
+   "tip": "General public rate, deposits under ₹3 crore, Oct 2026."
+  },
+  {
+   "k": "rmax",
+   "label": "Highest rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 3,
+   "g": "returns",
+   "tip": "Best general public rate for any tenure, deposits under ₹3 crore, Oct 2026."
+  },
+  {
+   "k": "rmaxTenure",
+   "label": "Best-rate tenure",
+   "fmt": "text",
+   "better": null,
+   "g": "returns",
+   "tip": "Tenure that earns the highest rate, Oct 2026."
+  },
+  {
+   "k": "srExtra",
+   "label": "Senior citizen extra",
+   "fmt": "pct",
+   "better": "high",
+   "w": 1,
+   "g": "returns",
+   "tip": "Standard extra rate for 60+ depositors; some tenures pay more, Oct 2026."
+  },
+  {
+   "k": "dicgc",
+   "label": "DICGC insured",
+   "fmt": "yes",
+   "better": "high",
+   "w": 3,
+   "g": "safety",
+   "tip": "Bank deposits are insured up to ₹5 lakh per bank; NBFC FDs are not."
+  },
+  {
+   "k": "rating",
+   "label": "Credit rating",
+   "fmt": "text",
+   "better": null,
+   "g": "safety",
+   "tip": "FD rating for NBFCs, Oct 2026. Banks rely on DICGC instead."
+  },
+  {
+   "k": "minDep",
+   "label": "Minimum deposit",
+   "fmt": "inr",
+   "better": "low",
+   "w": 1,
+   "g": "terms",
+   "tip": "Smallest FD you can open, where verified, Oct 2026."
+  },
+  {
+   "k": "penalty",
+   "label": "Early withdrawal",
+   "fmt": "text",
+   "better": null,
+   "g": "terms",
+   "tip": "Premature withdrawal rule, where verified, Oct 2026."
+  },
+  {
+   "k": "taxSaver",
+   "label": "Tax-saver FD rate",
+   "fmt": "pct",
+   "better": "high",
+   "w": 1,
+   "g": "terms",
+   "tip": "5-year lock-in FD under Section 80C (banks only), Oct 2026."
+  }
+ ],
+ "items": [
+  {
+   "id": "sbi",
+   "name": "SBI Fixed Deposit",
+   "provider": "State Bank of India",
+   "kind": "Public sector bank",
+   "tags": [
+    "PSU",
+    "largest bank",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.4,
+    "r3y": 6.3,
+    "r5y": 6.05,
+    "rmax": 6.45,
+    "rmaxTenure": "444 days (Amrit Vrishti)",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.05
+   },
+   "pros": [
+    "India's largest bank, government-owned",
+    "Extra 0.50% for seniors on 5-10 year deposits under SBI WeCare (7.05% total)",
+    "Huge branch and YONO app reach"
+   ],
+   "cons": [
+    "5-year rate (6.05%) is among the lowest here",
+    "Best rate needs a 444-day special scheme"
+   ],
+   "best": "Savers who want maximum comfort and a large PSU bank",
+   "url": "https://sbi.bank.in/web/interest-rates/deposit-rates/retail-domestic-term-deposits",
+   "news": "SBI FD interest rates"
+  },
+  {
+   "id": "hdfc-bank",
+   "name": "HDFC Bank Fixed Deposit",
+   "provider": "HDFC Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "large bank"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.45,
+    "r3y": 6.45,
+    "r5y": 6.4,
+    "rmax": 6.5,
+    "rmaxTenure": "3 years 1 day to under 4 years 7 months",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.4
+   },
+   "pros": [
+    "India's largest private bank",
+    "Even rates across 2-5 years",
+    "Tax-saver at 6.40%"
+   ],
+   "cons": [
+    "Top rate only 6.50%",
+    "1-year rate (6.25%) trails small finance banks"
+   ],
+   "best": "Long-term savers who want a large private bank",
+   "url": "https://www.hdfc.bank.in/fixed-deposit/fd-interest-rate",
+   "news": "HDFC Bank FD rates"
+  },
+  {
+   "id": "icici-bank",
+   "name": "ICICI Bank Fixed Deposit",
+   "provider": "ICICI Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "large bank"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.3,
+    "r3y": 6.45,
+    "r5y": 6.5,
+    "rmax": 6.5,
+    "rmaxTenure": "3 years 1 day to 10 years",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 10000,
+    "penalty": null,
+    "taxSaver": 6.5
+   },
+   "pros": [
+    "6.50% locked in for long tenures up to 10 years",
+    "Seniors get 0.60% extra on 3 years 1 day to 5 years",
+    "Tax-saver at 6.50%"
+   ],
+   "cons": [
+    "₹10,000 minimum deposit",
+    "Short-term rates are modest"
+   ],
+   "best": "Seniors and long-term savers at a large private bank",
+   "url": "https://www.icici.bank.in/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+   "news": "ICICI Bank FD rates"
+  },
+  {
+   "id": "axis-bank",
+   "name": "Axis Bank Fixed Deposit",
+   "provider": "Axis Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "large bank"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.5,
+    "r3y": 6.5,
+    "r5y": 6.5,
+    "rmax": 6.5,
+    "rmaxTenure": "18 months to 10 years",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.5
+   },
+   "pros": [
+    "Flat 6.50% from 18 months to 10 years",
+    "Simple rate structure",
+    "Large private bank"
+   ],
+   "cons": [
+    "No special high-rate tenure",
+    "Tax-saver rate differs between aggregator tables (6.45-6.50%)"
+   ],
+   "best": "Savers who want one steady rate across mid to long tenures",
+   "url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates",
+   "news": "Axis Bank FD rates"
+  },
+  {
+   "id": "kotak",
+   "name": "Kotak Mahindra Bank Fixed Deposit",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "large bank"
+   ],
+   "v": {
+    "r1y": 6.35,
+    "r2y": 6.65,
+    "r3y": 6.4,
+    "r5y": 6.25,
+    "rmax": 6.65,
+    "rmaxTenure": "2 years to under 3 years",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.25
+   },
+   "pros": [
+    "Best rate among the big private banks for 2-3 years (6.65%)",
+    "Rates revised recently (23 Sep 2026)"
+   ],
+   "cons": [
+    "Rates fall for 3 and 5 years",
+    "Tax-saver only 6.25%"
+   ],
+   "best": "Savers parking money for about 2 years at a big bank",
+   "url": "https://www.kotak.bank.in/en/rates/interest-rates.html",
+   "news": "Kotak Mahindra Bank FD rates"
+  },
+  {
+   "id": "pnb",
+   "name": "PNB Fixed Deposit",
+   "provider": "Punjab National Bank",
+   "kind": "Public sector bank",
+   "tags": [
+    "PSU",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.3,
+    "r3y": 6.3,
+    "r5y": 6.1,
+    "rmax": 6.6,
+    "rmaxTenure": "444 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "Government-owned bank",
+    "Super senior citizens (80+) get a further 0.30%",
+    "444-day special at 6.60%"
+   ],
+   "cons": [
+    "Plain tenure rates around 6.1-6.3%",
+    "Tax-saver shown only as a range (6.00-6.10%)"
+   ],
+   "best": "Very senior citizens who want a PSU bank",
+   "url": "https://www.pnb.bank.in/Interest-Rates-Deposit.html",
+   "news": "PNB FD interest rates"
+  },
+  {
+   "id": "bank-of-baroda",
+   "name": "Bank of Baroda Fixed Deposit",
+   "provider": "Bank of Baroda",
+   "kind": "Public sector bank",
+   "tags": [
+    "PSU",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.25,
+    "r3y": 6.25,
+    "r5y": 6.3,
+    "rmax": 6.75,
+    "rmaxTenure": "555 days (bob Golden Goal)",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "Best PSU special rate here: 6.75% for 555 days",
+    "Seniors get up to 1.00% extra on 5-10 years"
+   ],
+   "cons": [
+    "Regular tenures flat at about 6.25%",
+    "Tax-saver shown only as a range (6.00-6.30%)"
+   ],
+   "best": "Seniors locking in for 5+ years with a PSU bank",
+   "url": "https://www.bankofbaroda.in/interest-rate-and-service-charges/deposits-interest-rates",
+   "news": "Bank of Baroda FD rates"
+  },
+  {
+   "id": "canara",
+   "name": "Canara Bank Fixed Deposit",
+   "provider": "Canara Bank",
+   "kind": "Public sector bank",
+   "tags": [
+    "PSU",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.25,
+    "r3y": 6.25,
+    "r5y": 6.25,
+    "rmax": 6.6,
+    "rmaxTenure": "555 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.25
+   },
+   "pros": [
+    "Government-owned bank",
+    "555-day special at 6.60%",
+    "Same 6.25% across 1-5 years"
+   ],
+   "cons": [
+    "No reward for longer tenures",
+    "Rates last revised 1 May 2026"
+   ],
+   "best": "PSU-bank savers who like the 555-day special",
+   "url": "https://canarabank.bank.in/pages/deposit-interest-rates",
+   "news": "Canara Bank FD rates"
+  },
+  {
+   "id": "union-bank",
+   "name": "Union Bank of India Fixed Deposit",
+   "provider": "Union Bank of India",
+   "kind": "Public sector bank",
+   "tags": [
+    "PSU",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6.2,
+    "r2y": 6.15,
+    "r3y": 6.1,
+    "r5y": 6,
+    "rmax": 6.55,
+    "rmaxTenure": "555 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6
+   },
+   "pros": [
+    "Government-owned bank",
+    "555-day special at 6.55%"
+   ],
+   "cons": [
+    "Rates fall as tenure rises (6.00% at 5 years)",
+    "Tax-saver figure differs between aggregator tables (5.90-6.00%)"
+   ],
+   "best": "Existing Union Bank customers wanting a PSU FD",
+   "url": "https://www.unionbankofindia.bank.in/en/details/rate-of-interest",
+   "news": "Union Bank of India FD rates"
+  },
+  {
+   "id": "idfc-first",
+   "name": "IDFC FIRST Bank Fixed Deposit",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 6.5,
+    "r2y": 7.1,
+    "r3y": 7.1,
+    "r5y": 6.75,
+    "rmax": 7.1,
+    "rmaxTenure": "500 days to 3 years",
+    "srExtra": 0.25,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.75
+   },
+   "pros": [
+    "7.10% for 500 days to 3 years, top among large private banks",
+    "Tax-saver at 6.75%"
+   ],
+   "cons": [
+    "Senior extra only 0.25%",
+    "Mid-sized bank compared with the big three"
+   ],
+   "best": "Savers wanting higher mid-term rates from a full-service bank",
+   "url": "https://www.idfcfirst.bank.in/personal-banking/deposits/fixed-deposit/fd-interest-rates",
+   "news": "IDFC FIRST Bank FD rates"
+  },
+  {
+   "id": "indusind",
+   "name": "IndusInd Bank Fixed Deposit",
+   "provider": "IndusInd Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 6.75,
+    "r2y": 7,
+    "r3y": 7,
+    "r5y": 6.65,
+    "rmax": 7,
+    "rmaxTenure": "2 to 3 years",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.65
+   },
+   "pros": [
+    "Highest 1-year rate among the big banks here (6.75%)",
+    "Seniors get 0.75% extra on 2-3 years"
+   ],
+   "cons": [
+    "Bank had accounting issues in 2025; check the latest news",
+    "5-year rate drops to 6.65%"
+   ],
+   "best": "Savers wanting a strong 1-3 year rate with DICGC cover",
+   "url": "https://www.indusind.bank.in/in/en/personal/rates.html",
+   "news": "IndusInd Bank FD rates"
+  },
+  {
+   "id": "yes-bank",
+   "name": "Yes Bank Fixed Deposit",
+   "provider": "Yes Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 6.65,
+    "r2y": 7,
+    "r3y": 7,
+    "r5y": 6.75,
+    "rmax": 7.25,
+    "rmaxTenure": "18 months 1 day to under 24 months",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.75
+   },
+   "pros": [
+    "7.25% for 18-24 months, best among the private banks here",
+    "Seniors get up to 0.75% extra on some tenures"
+   ],
+   "cons": [
+    "Was rescued under an RBI plan in 2020",
+    "Keep deposits within the ₹5 lakh DICGC limit"
+   ],
+   "best": "Rate-seekers comfortable staying within the DICGC cover",
+   "url": "https://www.yes.bank.in/",
+   "news": "Yes Bank FD rates"
+  },
+  {
+   "id": "federal-bank",
+   "name": "Federal Bank Fixed Deposit",
+   "provider": "Federal Bank",
+   "kind": "Private bank",
+   "tags": [
+    "private",
+    "NRI"
+   ],
+   "v": {
+    "r1y": 6.25,
+    "r2y": 6.4,
+    "r3y": 6.4,
+    "r5y": 6.4,
+    "rmax": 6.7,
+    "rmaxTenure": "48 months",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.4
+   },
+   "pros": [
+    "48-month deposit at 6.70%",
+    "Steady 6.40% from 2 to 5 years",
+    "Strong NRI franchise"
+   ],
+   "cons": [
+    "1-year rate only 6.25%",
+    "Smaller branch network outside the south"
+   ],
+   "best": "Savers happy to lock in for 4 years, including NRIs",
+   "url": "https://www.federal.bank.in/deposit-rates",
+   "news": "Federal Bank FD rates"
+  },
+  {
+   "id": "au-sfb",
+   "name": "AU Small Finance Bank Fixed Deposit",
+   "provider": "AU Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 6.35,
+    "r2y": 7,
+    "r3y": 7.4,
+    "r5y": 6.75,
+    "rmax": 7.4,
+    "rmaxTenure": "30 months 1 day to 36 months",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": 6.75
+   },
+   "pros": [
+    "Largest small finance bank, on track to become a universal bank",
+    "7.40% around the 3-year mark",
+    "DICGC cover up to ₹5 lakh"
+   ],
+   "cons": [
+    "1-year rate only 6.35%",
+    "Higher risk than large banks above ₹5 lakh"
+   ],
+   "best": "3-year savers wanting an SFB rate with a well-known name",
+   "url": "https://www.au.bank.in/interest-rates/fixed-deposit-interest-rates",
+   "news": "AU Small Finance Bank FD rates"
+  },
+  {
+   "id": "unity-sfb",
+   "name": "Unity Small Finance Bank Fixed Deposit",
+   "provider": "Unity Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 7.5,
+    "r2y": 6.75,
+    "r3y": 6.75,
+    "r5y": 6.75,
+    "rmax": 7.8,
+    "rmaxTenure": "501 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 1000,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "7.80% for 501 days",
+    "Best 1-year rate here (7.50%)",
+    "Starts at ₹1,000"
+   ],
+   "cons": [
+    "Young bank (began in 2021)",
+    "Longer tenures drop to 6.75%"
+   ],
+   "best": "Short-term savers chasing the top rate within ₹5 lakh",
+   "url": "https://theunitybank.com/interest-rates",
+   "news": "Unity Small Finance Bank FD"
+  },
+  {
+   "id": "suryoday-sfb",
+   "name": "Suryoday Small Finance Bank Fixed Deposit",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate",
+    "tax saver"
+   ],
+   "v": {
+    "r1y": 7.25,
+    "r2y": 7.25,
+    "r3y": 7.25,
+    "r5y": 8.25,
+    "rmax": 8.25,
+    "rmaxTenure": "5 years",
+    "srExtra": 0.15,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 1000,
+    "penalty": null,
+    "taxSaver": 8.25
+   },
+   "pros": [
+    "8.25% for 5 years, the best long-term rate here",
+    "Tax-saver at 8.25%",
+    "Starts at ₹1,000"
+   ],
+   "cons": [
+    "Small senior extra (0.15%, or 0.25% at 5 years)",
+    "Small bank; keep within ₹5 lakh DICGC cover"
+   ],
+   "best": "Tax-saving and 5-year savers within the DICGC limit",
+   "url": "https://suryoday.bank.in/interest-rates",
+   "news": "Suryoday Small Finance Bank FD"
+  },
+  {
+   "id": "utkarsh-sfb",
+   "name": "Utkarsh Small Finance Bank Fixed Deposit",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 6,
+    "r2y": 7.5,
+    "r3y": 7.5,
+    "r5y": 7,
+    "rmax": 8.1,
+    "rmaxTenure": "666 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 1000,
+    "penalty": "No interest if withdrawn within 7 days",
+    "taxSaver": 6.75
+   },
+   "pros": [
+    "8.10% for 666 days",
+    "7.50% for 2-3 years",
+    "Starts at ₹1,000"
+   ],
+   "cons": [
+    "1-year rate only 6.00%",
+    "Senior extra only 0.15% on the 666-day special",
+    "Tax-saver figure differs between aggregator tables (6.75-7.00%)"
+   ],
+   "best": "Savers who can lock in for about 22 months",
+   "url": "https://www.utkarsh.bank/interest-rates",
+   "news": "Utkarsh Small Finance Bank FD"
+  },
+  {
+   "id": "equitas-sfb",
+   "name": "Equitas Small Finance Bank Fixed Deposit",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate"
+   ],
+   "v": {
+    "r1y": 7.1,
+    "r2y": 7,
+    "r3y": 7.1,
+    "r5y": 7,
+    "rmax": 8,
+    "rmaxTenure": "3 years 1 day (Maxima FD)",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "8.00% on the 3 years 1 day Maxima FD",
+    "About 7% across 1-5 years",
+    "Listed bank"
+   ],
+   "cons": [
+    "Top rate is tied to one exact tenure",
+    "Small bank; keep within ₹5 lakh DICGC cover"
+   ],
+   "best": "Savers wanting steady 7%+ rates across tenures",
+   "url": "https://www.equitasbank.com/fixed-deposit",
+   "news": "Equitas Small Finance Bank FD"
+  },
+  {
+   "id": "jana-sfb",
+   "name": "Jana Small Finance Bank Fixed Deposit",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "high rate",
+    "tax saver"
+   ],
+   "v": {
+    "r1y": 7,
+    "r2y": 7.3,
+    "r3y": 8,
+    "r5y": 7.77,
+    "rmax": 8,
+    "rmaxTenure": "above 2 years to 3 years",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 1000,
+    "penalty": null,
+    "taxSaver": 7.77
+   },
+   "pros": [
+    "8.00% for 2-3 years",
+    "Tax-saver at 7.77%",
+    "Starts at ₹1,000"
+   ],
+   "cons": [
+    "Senior extra only 0.30% on 2-3 years",
+    "Quoted rates are for deposits under ₹10 lakh"
+   ],
+   "best": "Savers wanting a high 3-year or tax-saver rate",
+   "url": "https://www.janabank.com/interest-rates/",
+   "news": "Jana Small Finance Bank FD"
+  },
+  {
+   "id": "esaf-sfb",
+   "name": "ESAF Small Finance Bank Fixed Deposit",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Small finance bank",
+   "tags": [
+    "SFB",
+    "special FD"
+   ],
+   "v": {
+    "r1y": 6,
+    "r2y": 7.75,
+    "r3y": 6,
+    "r5y": 5.75,
+    "rmax": 8,
+    "rmaxTenure": "800 days",
+    "srExtra": 0.5,
+    "dicgc": true,
+    "rating": null,
+    "minDep": 1000,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "8.00% for 800 days",
+    "7.75% for 2 years",
+    "Starts at ₹1,000"
+   ],
+   "cons": [
+    "Rates outside the specials are low (5.75% at 5 years)",
+    "Small bank; keep within ₹5 lakh DICGC cover"
+   ],
+   "best": "Savers who can match the 800-day special exactly",
+   "url": "https://www.esafbank.com/interest-rates/",
+   "news": "ESAF Small Finance Bank FD"
+  },
+  {
+   "id": "bajaj-finance",
+   "name": "Bajaj Finance Fixed Deposit",
+   "provider": "Bajaj Finance",
+   "kind": "NBFC (corporate FD)",
+   "tags": [
+    "corporate FD",
+    "AAA"
+   ],
+   "v": {
+    "r1y": 6.8,
+    "r2y": 7,
+    "r3y": 7.75,
+    "r5y": 7.75,
+    "rmax": 7.75,
+    "rmaxTenure": "31 to 60 months (cumulative)",
+    "srExtra": 0.4,
+    "dicgc": false,
+    "rating": "CRISIL AAA/Stable, ICRA AAA/Stable",
+    "minDep": 15000,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "7.75% for 31-60 months (cumulative)",
+    "Top AAA rating from CRISIL and ICRA",
+    "Loan against FD up to 75%"
+   ],
+   "cons": [
+    "No DICGC insurance",
+    "₹15,000 minimum deposit",
+    "Annual payout on 31-60 months is lower (7.40%)"
+   ],
+   "best": "Savers wanting a top-rated corporate FD for 3-5 years",
+   "url": "https://www.bajajfinserv.in/investments/fixed-deposit-application-form",
+   "news": "Bajaj Finance FD rates"
+  },
+  {
+   "id": "shriram-finance",
+   "name": "Shriram Finance Fixed Deposit",
+   "provider": "Shriram Finance",
+   "kind": "NBFC (corporate FD)",
+   "tags": [
+    "corporate FD",
+    "AAA"
+   ],
+   "v": {
+    "r1y": 6.85,
+    "r2y": null,
+    "r3y": 7.5,
+    "r5y": 7.5,
+    "rmax": 7.5,
+    "rmaxTenure": "3 to 5 years",
+    "srExtra": 0.5,
+    "dicgc": false,
+    "rating": "AAA/Stable (ICRA, CARE, CRISIL)",
+    "minDep": null,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "7.50% for 3-5 years",
+    "Rated AAA by ICRA, CARE and CRISIL",
+    "Extra for renewals and women depositors"
+   ],
+   "cons": [
+    "No DICGC insurance",
+    "Aggregator tables disagree on current rates"
+   ],
+   "best": "Senior citizens wanting a higher rate from a AAA NBFC",
+   "url": "https://www.shriramfinance.in/fixed-deposit",
+   "news": "Shriram Finance FD rates"
+  },
+  {
+   "id": "mahindra-finance",
+   "name": "Mahindra Finance Fixed Deposit",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "NBFC (corporate FD)",
+   "tags": [
+    "corporate FD",
+    "AAA"
+   ],
+   "v": {
+    "r1y": 6.6,
+    "r2y": 6.85,
+    "r3y": 7.4,
+    "r5y": 7.45,
+    "rmax": 7.45,
+    "rmaxTenure": "48 to 60 months",
+    "srExtra": 0.25,
+    "dicgc": false,
+    "rating": "CRISIL AAA/Stable, IND AAA/Stable",
+    "minDep": 5000,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "7.45% for 4-5 years",
+    "Rated AAA by CRISIL and India Ratings",
+    "Loan against FD available"
+   ],
+   "cons": [
+    "No DICGC insurance",
+    "Small senior extra (0.25-0.35%)"
+   ],
+   "best": "Long-term savers wanting a AAA corporate FD",
+   "url": "https://www.mahindrafinance.com/fixed-deposit",
+   "news": "Mahindra Finance FD rates"
+  },
+  {
+   "id": "pnb-housing",
+   "name": "PNB Housing Finance Fixed Deposit",
+   "provider": "PNB Housing Finance",
+   "kind": "NBFC (corporate FD)",
+   "tags": [
+    "corporate FD",
+    "housing finance"
+   ],
+   "v": {
+    "r1y": 6.7,
+    "r2y": 6.85,
+    "r3y": 7.1,
+    "r5y": 7.25,
+    "rmax": 7.25,
+    "rmaxTenure": "60 months",
+    "srExtra": 0.25,
+    "dicgc": false,
+    "rating": null,
+    "minDep": 10000,
+    "penalty": null,
+    "taxSaver": null
+   },
+   "pros": [
+    "7.25% for 5 years",
+    "Housing finance company regulated by RBI and NHB"
+   ],
+   "cons": [
+    "No DICGC insurance",
+    "₹10,000 minimum deposit",
+    "Senior extra only 0.25%"
+   ],
+   "best": "5-year savers comfortable with a housing finance company",
+   "url": "https://www.pnbhousing.com/fixed-deposit",
+   "news": "PNB Housing Finance FD rates"
+  }
+ ]
+}

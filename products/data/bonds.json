@@ -1,0 +1,759 @@
+{
+ "id": "bonds",
+ "title": "Bonds & Government Securities",
+ "asOf": "Oct 2026",
+ "intro": "Government securities, tax-saving capital gains bonds, tax-free PSU bonds and corporate NCDs; compare post-tax yield, who backs the bond, how long your money is locked in and whether you can sell before maturity.",
+ "newsQuery": "India bond yields G-Sec T-bill NCD",
+ "sources": [
+  "RBI press release: 91/182/364-day T-bill auction cut-off, 30 Sep 2026 (prid=63694)",
+  "RBI press release: State Government Securities full auction result, 6 Oct 2026 (prid=63738)",
+  "Trading Economics: India 10-year G-Sec yield, 6 Oct 2026",
+  "FRSB 2020 (T) rate for Jul-Dec 2026 (Stable Investor / news, Jul 2026; RBI formula NSC + 0.35%)",
+  "GoldenPi: Section 54EC (now Section 85) bonds, Aug 2026",
+  "IndiaBonds PSU bond listings (checked 6 Oct 2026)",
+  "GoldenPi NCD issue notes: Muthoot Fincorp Tranche V (Sep 2026), SMC Global Securities (Oct 2026)"
+ ],
+ "groups": [
+  {
+   "id": "returns",
+   "label": "Returns"
+  },
+  {
+   "id": "safety",
+   "label": "Safety"
+  },
+  {
+   "id": "access",
+   "label": "Access & liquidity"
+  }
+ ],
+ "params": [
+  {
+   "k": "yield",
+   "label": "Yield / coupon",
+   "fmt": "pct",
+   "better": "high",
+   "w": 3,
+   "g": "returns",
+   "tip": "Latest auction cut-off yield, platform YTM or coupon (Sep-Oct 2026). Tax-free bond yields are post-tax, so compare with a taxable yield grossed up for your slab."
+  },
+  {
+   "k": "freq",
+   "label": "Interest payout",
+   "fmt": "text",
+   "better": null,
+   "g": "returns",
+   "tip": "How often interest is paid."
+  },
+  {
+   "k": "tax",
+   "label": "Tax treatment",
+   "fmt": "text",
+   "better": null,
+   "g": "returns",
+   "tip": "Income Tax Act 2025 applies from 1 Apr 2026; old section numbers shown where commonly used."
+  },
+  {
+   "k": "safety",
+   "label": "Safety",
+   "fmt": "text",
+   "better": null,
+   "g": "safety",
+   "tip": "Who stands behind repayment."
+  },
+  {
+   "k": "rating",
+   "label": "Credit rating",
+   "fmt": "text",
+   "better": null,
+   "g": "safety",
+   "tip": "Rating by CRISIL/ICRA/CARE/India Ratings as shown on the issue or listing (Oct 2026)."
+  },
+  {
+   "k": "tenure",
+   "label": "Tenure / residual maturity",
+   "fmt": "years",
+   "better": null,
+   "g": "access",
+   "tip": "Original tenure for new issues; approximate residual maturity for secondary-market bonds as of Oct 2026."
+  },
+  {
+   "k": "listed",
+   "label": "Listed / tradable",
+   "fmt": "yes",
+   "better": "high",
+   "w": 1,
+   "g": "access",
+   "tip": "Can be sold on an exchange or trading platform before maturity (liquidity varies)."
+  },
+  {
+   "k": "minInv",
+   "label": "Minimum investment",
+   "fmt": "inr",
+   "better": "low",
+   "w": 1,
+   "g": "access",
+   "tip": "Minimum ticket on issue or one bond at the listed price (Oct 2026)."
+  }
+ ],
+ "items": [
+  {
+   "id": "frsb-2020",
+   "name": "RBI Floating Rate Savings Bonds 2020 (Taxable)",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "tags": [
+    "floating rate",
+    "government",
+    "retail"
+   ],
+   "v": {
+    "yield": 8.05,
+    "freq": "Half-yearly (1 Jan, 1 Jul)",
+    "tax": "Fully taxable at slab; TDS applies",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": 7,
+    "listed": false,
+    "minInv": 1000
+   },
+   "pros": [
+    "Government of India guarantee",
+    "Rate reset every six months at NSC rate + 0.35%; 8.05% for Jul-Dec 2026",
+    "No upper investment limit",
+    "Low ₹1,000 minimum"
+   ],
+   "cons": [
+    "Interest fully taxable",
+    "7-year lock-in; early exit only for senior citizens (60+) after set periods",
+    "Not tradable or transferable",
+    "Rate falls if NSC rate is cut"
+   ],
+   "best": "Conservative savers in low tax slabs wanting a sovereign rate above FDs for 7 years.",
+   "url": "https://www.rbiretaildirect.org.in",
+   "news": "RBI Floating Rate Savings Bonds interest rate"
+  },
+  {
+   "id": "gsec-10y",
+   "name": "10-year G-Sec (6.94% GS 2036) via RBI Retail Direct",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "tags": [
+    "G-Sec",
+    "long term",
+    "tradable"
+   ],
+   "v": {
+    "yield": 7.2,
+    "freq": "Half-yearly",
+    "tax": "Interest taxable at slab; gains on sale taxed as capital gains",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": 10,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Zero credit risk",
+    "Benchmark 10-year yield about 7.20% on 6 Oct 2026",
+    "Buy direct at auctions or on NDS-OM via RBI Retail Direct with no fees",
+    "Can be sold before maturity"
+   ],
+   "cons": [
+    "Price falls if interest rates rise",
+    "Interest fully taxable",
+    "Retail secondary liquidity can be thin"
+   ],
+   "best": "Investors wanting a long-term sovereign yield and willing to hold through price swings.",
+   "url": "https://www.rbiretaildirect.org.in",
+   "news": "India 10-year bond yield"
+  },
+  {
+   "id": "tbill-91",
+   "name": "91-day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "tags": [
+    "short term",
+    "parking money"
+   ],
+   "v": {
+    "yield": 5.52,
+    "freq": "None (issued at discount, repaid at face value)",
+    "tax": "Discount taxable at slab",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": 0.25,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Sovereign safety for 3 months",
+    "Cut-off yield 5.52% at 30 Sep 2026 auction",
+    "Weekly auctions via RBI Retail Direct"
+   ],
+   "cons": [
+    "Lower yield than longer bonds",
+    "Must reinvest every quarter",
+    "Gain taxed at slab"
+   ],
+   "best": "Parking emergency or near-term money with zero credit risk.",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "news": "91-day treasury bill yield India"
+  },
+  {
+   "id": "tbill-182",
+   "name": "182-day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "tags": [
+    "short term"
+   ],
+   "v": {
+    "yield": 5.96,
+    "freq": "None (issued at discount, repaid at face value)",
+    "tax": "Discount taxable at slab",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": 0.5,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Sovereign safety for 6 months",
+    "Cut-off yield 5.96% at 30 Sep 2026 auction",
+    "Buy via RBI Retail Direct with no fees"
+   ],
+   "cons": [
+    "Return is all taxable at slab",
+    "No periodic interest",
+    "Reinvestment risk at maturity"
+   ],
+   "best": "Money needed in about six months.",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "news": "182-day treasury bill yield India"
+  },
+  {
+   "id": "tbill-364",
+   "name": "364-day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "tags": [
+    "short term",
+    "1 year"
+   ],
+   "v": {
+    "yield": 6.18,
+    "freq": "None (issued at discount, repaid at face value)",
+    "tax": "Discount taxable at slab",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": 1,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Highest of the T-bill yields: 6.18% at 30 Sep 2026 auction",
+    "Sovereign safety",
+    "Simple FD-like alternative for one year"
+   ],
+   "cons": [
+    "Taxed at slab like an FD",
+    "No interest until maturity",
+    "Secondary market selling is less convenient than breaking an FD"
+   ],
+   "best": "A one-year, zero-credit-risk alternative to a bank FD.",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "news": "364-day treasury bill yield India"
+  },
+  {
+   "id": "sdl-mp-2036",
+   "name": "Madhya Pradesh SDL 2036 (10-year)",
+   "provider": "Government of Madhya Pradesh (via RBI)",
+   "kind": "State Development Loan",
+   "tags": [
+    "SDL",
+    "state government",
+    "10 year"
+   ],
+   "v": {
+    "yield": 7.8958,
+    "freq": "Half-yearly",
+    "tax": "Interest taxable at slab",
+    "safety": "State government",
+    "rating": "State government (unrated)",
+    "tenure": 10,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "About 0.7% more than the 10-year G-Sec",
+    "Weighted average yield 7.90% at 6 Oct 2026 auction",
+    "Available via RBI Retail Direct"
+   ],
+   "cons": [
+    "Interest taxable",
+    "Long tenure means price risk",
+    "Thinner secondary trading than central G-Secs"
+   ],
+   "best": "Long-term investors wanting near-sovereign safety with a higher yield than G-Secs.",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63738",
+   "news": "state development loan auction yield"
+  },
+  {
+   "id": "sdl-maha-2043",
+   "name": "Maharashtra SDL 2043 (17-year)",
+   "provider": "Government of Maharashtra (via RBI)",
+   "kind": "State Development Loan",
+   "tags": [
+    "SDL",
+    "state government",
+    "long term"
+   ],
+   "v": {
+    "yield": 7.9901,
+    "freq": "Half-yearly",
+    "tax": "Interest taxable at slab",
+    "safety": "State government",
+    "rating": "State government (unrated)",
+    "tenure": 17,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Locks in about 7.99% for 17 years (6 Oct 2026 auction weighted average)",
+    "Large, regular state borrower",
+    "Buy via RBI Retail Direct"
+   ],
+   "cons": [
+    "Very long tenure; prices swing with rates",
+    "Interest taxable",
+    "Limited retail liquidity"
+   ],
+   "best": "Retirement-style investors locking in a long-term state-backed yield.",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63738",
+   "news": "Maharashtra SDL auction"
+  },
+  {
+   "id": "rec-54ec",
+   "name": "REC 54EC Capital Gain Bonds",
+   "provider": "REC Ltd",
+   "kind": "Capital gains bond",
+   "tags": [
+    "54EC",
+    "Section 85",
+    "property sale",
+    "tax saving"
+   ],
+   "v": {
+    "yield": 5.25,
+    "freq": "Annual",
+    "tax": "Saves LTCG tax on land/building sale (Sec 54EC, now Sec 85) up to ₹50 lakh; interest taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "AAA",
+    "tenure": 5,
+    "listed": false,
+    "minInv": 20000
+   },
+   "pros": [
+    "Exempts long-term capital gains on property sale if invested within 6 months",
+    "AAA PSU issuer",
+    "No TDS on interest"
+   ],
+   "cons": [
+    "Low 5.25% coupon, taxable",
+    "5-year lock-in, not transferable",
+    "₹50 lakh cap on exemption"
+   ],
+   "best": "Property sellers wanting to save long-term capital gains tax.",
+   "url": "https://recindia.nic.in",
+   "news": "REC 54EC bonds"
+  },
+  {
+   "id": "pfc-54ec",
+   "name": "PFC 54EC Capital Gain Bonds",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Capital gains bond",
+   "tags": [
+    "54EC",
+    "Section 85",
+    "property sale",
+    "tax saving"
+   ],
+   "v": {
+    "yield": 5.25,
+    "freq": "Annual",
+    "tax": "Saves LTCG tax on land/building sale (Sec 54EC, now Sec 85) up to ₹50 lakh; interest taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "AAA",
+    "tenure": 5,
+    "listed": false,
+    "minInv": 20000
+   },
+   "pros": [
+    "Same capital gains exemption as REC",
+    "AAA PSU issuer",
+    "Open through the financial year"
+   ],
+   "cons": [
+    "Low taxable coupon",
+    "5-year lock-in, no exit",
+    "₹50 lakh combined cap across all 54EC bonds"
+   ],
+   "best": "Property sellers splitting 54EC investments across issuers.",
+   "url": "https://www.pfcindia.com",
+   "news": "PFC 54EC bonds"
+  },
+  {
+   "id": "irfc-54ec",
+   "name": "IRFC 54EC Capital Gain Bonds",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Capital gains bond",
+   "tags": [
+    "54EC",
+    "Section 85",
+    "property sale",
+    "tax saving"
+   ],
+   "v": {
+    "yield": 5.25,
+    "freq": "Annual",
+    "tax": "Saves LTCG tax on land/building sale (Sec 54EC, now Sec 85) up to ₹50 lakh; interest taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "AAA",
+    "tenure": 5,
+    "listed": false,
+    "minInv": 20000
+   },
+   "pros": [
+    "Railways-linked PSU issuer",
+    "Same exemption and coupon as REC/PFC",
+    "Annual interest payout"
+   ],
+   "cons": [
+    "Low taxable coupon",
+    "5-year lock-in, not tradable",
+    "₹50 lakh cap"
+   ],
+   "best": "Property sellers preferring a railway PSU for 54EC.",
+   "url": "https://irfc.co.in",
+   "news": "IRFC 54EC bonds"
+  },
+  {
+   "id": "hudco-54ec",
+   "name": "HUDCO 54EC Capital Gain Bonds",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Capital gains bond",
+   "tags": [
+    "54EC",
+    "Section 85",
+    "property sale",
+    "tax saving"
+   ],
+   "v": {
+    "yield": 5.25,
+    "freq": "Annual",
+    "tax": "Saves LTCG tax on land/building sale (Sec 54EC, now Sec 85) up to ₹50 lakh; interest taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "AAA",
+    "tenure": 5,
+    "listed": false,
+    "minInv": 20000
+   },
+   "pros": [
+    "Newer fourth issuer of 54EC bonds",
+    "Same coupon and exemption as others",
+    "AAA PSU"
+   ],
+   "cons": [
+    "Low taxable coupon",
+    "5-year lock-in",
+    "₹50 lakh cap"
+   ],
+   "best": "Property sellers wanting another 54EC option.",
+   "url": "https://hudco.org.in",
+   "news": "HUDCO 54EC bonds"
+  },
+  {
+   "id": "nhai-taxfree-2031",
+   "name": "NHAI 7.35% Tax-Free Bond 2031",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "tags": [
+    "tax-free",
+    "secondary market",
+    "PSU"
+   ],
+   "v": {
+    "yield": null,
+    "freq": "Annual (1 Apr)",
+    "tax": "Interest tax-free (old Sec 10(15)(iv)(h)); capital gains on sale taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "CRISIL AAA",
+    "tenure": 4.3,
+    "listed": true,
+    "minInv": null
+   },
+   "pros": [
+    "Tax-free interest suits top-slab investors",
+    "Government-owned highways authority",
+    "Listed on NSE and BSE",
+    "Matures 11 Jan 2031"
+   ],
+   "cons": [
+    "Trades at a premium, so yield is well below the coupon",
+    "Thin trading; may be hard to buy or sell",
+    "No new tax-free bonds since FY2015-16"
+   ],
+   "best": "Investors in the 30% slab wanting tax-free income until 2031.",
+   "url": "https://www.indiabonds.com/bond-directory/INE906B07EI0-national-highways-authority-of-india/",
+   "news": "NHAI tax free bonds"
+  },
+  {
+   "id": "irfc-taxfree-2028",
+   "name": "IRFC 7.34% Tax-Free Bond 2028",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "tags": [
+    "tax-free",
+    "secondary market",
+    "PSU"
+   ],
+   "v": {
+    "yield": 5.23,
+    "freq": "Annual",
+    "tax": "Interest tax-free; capital gains on sale taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "CARE AAA",
+    "tenure": 1.4,
+    "listed": true,
+    "minInv": 1026.04
+   },
+   "pros": [
+    "5.23% tax-free YTM (IndiaBonds, Oct 2026)",
+    "Short residual maturity (Feb 2028)",
+    "Low ticket of about ₹1,026"
+   ],
+   "cons": [
+    "Bought at a premium to face value",
+    "Liquidity varies by series",
+    "Short tenure limits how long you lock the rate"
+   ],
+   "best": "High-slab investors needing tax-free income until early 2028.",
+   "url": "https://irfc.co.in",
+   "news": "IRFC tax free bonds"
+  },
+  {
+   "id": "ireda-taxfree-2031",
+   "name": "IREDA 7.49% Tax-Free Bond 2031",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "tags": [
+    "tax-free",
+    "secondary market",
+    "PSU",
+    "green"
+   ],
+   "v": {
+    "yield": 5.22,
+    "freq": "Annual",
+    "tax": "Interest tax-free; capital gains on sale taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "ICRA AAA",
+    "tenure": 4.3,
+    "listed": true,
+    "minInv": 1137.9
+   },
+   "pros": [
+    "5.22% tax-free YTM (IndiaBonds, Oct 2026)",
+    "Locks in tax-free income until Jan 2031",
+    "Small ticket size"
+   ],
+   "cons": [
+    "Premium price; yield below coupon",
+    "Thinly traded",
+    "Price risk if rates rise"
+   ],
+   "best": "30%-slab investors wanting tax-free income for about four years.",
+   "url": "https://www.ireda.in",
+   "news": "IREDA tax free bonds"
+  },
+  {
+   "id": "hudco-taxfree-2028",
+   "name": "HUDCO 7.51% Tax-Free Bond 2028",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "tags": [
+    "tax-free",
+    "secondary market",
+    "PSU"
+   ],
+   "v": {
+    "yield": 5.24,
+    "freq": "Annual",
+    "tax": "Interest tax-free; capital gains on sale taxable",
+    "safety": "PSU (Government-owned)",
+    "rating": "CARE AAA",
+    "tenure": 1.4,
+    "listed": true,
+    "minInv": 1076.6
+   },
+   "pros": [
+    "5.24% tax-free YTM (IndiaBonds, Oct 2026)",
+    "Matures Feb 2028",
+    "Low ticket of about ₹1,077"
+   ],
+   "cons": [
+    "Premium price",
+    "Short remaining tenure",
+    "Liquidity varies"
+   ],
+   "best": "High-slab investors with a short horizon.",
+   "url": "https://hudco.org.in",
+   "news": "HUDCO tax free bonds"
+  },
+  {
+   "id": "pfc-2028",
+   "name": "PFC 8.94% Bond Mar 2028",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "PSU bond",
+   "tags": [
+    "PSU",
+    "AAA",
+    "secondary market",
+    "taxable"
+   ],
+   "v": {
+    "yield": 7.63,
+    "freq": "Annual",
+    "tax": "Interest taxable at slab",
+    "safety": "PSU (Government-owned)",
+    "rating": "CRISIL AAA",
+    "tenure": 1.5,
+    "listed": true,
+    "minInv": 1064502.58
+   },
+   "pros": [
+    "7.63% YTM (IndiaBonds, Oct 2026), above short-term T-bills",
+    "AAA Navratna PSU",
+    "Short residual maturity"
+   ],
+   "cons": [
+    "High ticket of about ₹10.6 lakh per bond",
+    "Interest taxable",
+    "Some credit risk versus sovereign bonds"
+   ],
+   "best": "Larger investors wanting a higher-yielding AAA PSU bond until 2028.",
+   "url": "https://www.pfcindia.com",
+   "news": "PFC bonds yield"
+  },
+  {
+   "id": "muthoot-fincorp-ncd",
+   "name": "Muthoot Fincorp NCD (Tranche V, Sep 2026)",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "tags": [
+    "NCD",
+    "AA",
+    "NBFC",
+    "gold loan"
+   ],
+   "v": {
+    "yield": 9.25,
+    "freq": "Monthly, annual or cumulative (by series)",
+    "tax": "Interest taxable at slab; TDS may apply",
+    "safety": "Private NBFC (secured)",
+    "rating": "CRISIL AA/Stable; Brickwork AA+/Stable",
+    "tenure": 6,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Coupons 8.56%-9.25% across 2-6 year series; 9.25% for 72 months",
+    "Secured on loan receivables and gold assets",
+    "Listed on BSE after issue"
+   ],
+   "cons": [
+    "Public issue closed 22 Sep 2026; now only in secondary market",
+    "Credit risk of a private NBFC",
+    "Interest taxable; resale liquidity limited"
+   ],
+   "best": "Investors accepting AA credit risk for about 9% over several years.",
+   "url": "https://www.muthootfincorp.com",
+   "news": "Muthoot Fincorp NCD"
+  },
+  {
+   "id": "smc-global-ncd",
+   "name": "SMC Global Securities NCD (Oct 2026)",
+   "provider": "SMC Global Securities Ltd",
+   "kind": "Corporate NCD",
+   "tags": [
+    "NCD",
+    "A rated",
+    "open issue",
+    "broker"
+   ],
+   "v": {
+    "yield": 10,
+    "freq": "By series (annual payout on 60-month series)",
+    "tax": "Interest taxable at slab; TDS may apply",
+    "safety": "Private company (secured)",
+    "rating": "ICRA A (Stable)",
+    "tenure": 5,
+    "listed": true,
+    "minInv": 10000
+   },
+   "pros": [
+    "Yields 9.50%-10.00% across 24-60 month series",
+    "Open 5-16 Oct 2026",
+    "Secured, to be listed on BSE"
+   ],
+   "cons": [
+    "Single-A rating means moderate credit risk",
+    "Company disclosed involvement in a 2026 CBI supplementary chargesheet (NSE co-location matter)",
+    "Interest taxable; resale liquidity limited"
+   ],
+   "best": "Investors seeking a higher yield who can accept meaningful credit risk.",
+   "url": "https://www.smcindiaonline.com",
+   "news": "SMC Global Securities NCD"
+  },
+  {
+   "id": "sgb-secondary",
+   "name": "Sovereign Gold Bonds (secondary market)",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "tags": [
+    "gold",
+    "secondary market",
+    "no new issues"
+   ],
+   "v": {
+    "yield": 2.5,
+    "freq": "Half-yearly",
+    "tax": "2.5% interest taxable; capital gains tax-free if held to maturity",
+    "safety": "Sovereign",
+    "rating": "Sovereign (unrated)",
+    "tenure": null,
+    "listed": true,
+    "minInv": null
+   },
+   "pros": [
+    "Gold price return plus 2.5% a year on the original issue price",
+    "No capital gains tax at redemption on maturity",
+    "Can be bought on NSE/BSE"
+   ],
+   "cons": [
+    "No new issues; only older series in the secondary market",
+    "Prices and liquidity vary by series",
+    "Returns depend on gold prices"
+   ],
+   "best": "Gold investors who can hold to maturity; see the gold section for detail.",
+   "url": "https://www.rbi.org.in/Scripts/FAQView.aspx?Id=109",
+   "news": "Sovereign Gold Bond",
+   "noScore": [
+    "yield"
+   ]
+  }
+ ],
+ "peer": "kind"
+}

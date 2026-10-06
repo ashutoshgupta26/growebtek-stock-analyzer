@@ -1,0 +1,668 @@
+{
+  "id": "health",
+  "title": "Health Insurance",
+  "asOf": "Oct 2026",
+  "intro": "Health insurance pays your hospital bills; what matters most is how reliably the insurer pays claims, how many hospitals offer cashless care, and limits like room rent caps and waiting periods.",
+  "newsQuery": "health insurance India IRDAI",
+  "sources": [
+    "IRDAI Annual Report 2024-25 (Statement 12, solvency ratios as at 31 Mar 2025)",
+    "Ditto Health Insurance Data Lab (Sep 2026), compiled from IRDAI annual reports and insurer public disclosures (NL forms)",
+    "Ditto plan reviews and comparisons (Oct 2026)",
+    "New India Mediclaim Policy customer information sheet (UIN NIAHLIP25040V102425)",
+    "Insurer websites (Oct 2026)"
+  ],
+  "groups": [
+    {
+      "id": "claims",
+      "label": "Claims record"
+    },
+    {
+      "id": "strength",
+      "label": "Size and strength"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "cover",
+      "label": "Cover features"
+    }
+  ],
+  "params": [
+    {
+      "k": "csr",
+      "label": "Claim settlement ratio",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "claims",
+      "tip": "Health claims settled within 3 months, FY2025-26 (insurer public disclosures via Ditto). Above 100% means older pending claims were cleared."
+    },
+    {
+      "k": "icr",
+      "label": "Incurred claim ratio",
+      "fmt": "pct",
+      "better": null,
+      "w": 1,
+      "g": "claims",
+      "tip": "Claims paid as % of premium earned, FY2024-25 health (IRDAI/disclosures via Ditto). Not scored: very low can mean stingy payouts, above 100% can mean losses and future price hikes."
+    },
+    {
+      "k": "complaints",
+      "label": "Complaints per 10,000 claims",
+      "fmt": "num",
+      "better": "low",
+      "w": 2,
+      "g": "claims",
+      "tip": "Health complaints per 10,000 claims, FY2025-26 (insurer public disclosures via Ditto). Lower is better."
+    },
+    {
+      "k": "network",
+      "label": "Network hospitals",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "strength",
+      "tip": "Cashless hospitals as stated by insurer (Ditto, Sep 2026). Figures are 'X+'."
+    },
+    {
+      "k": "solvency",
+      "label": "Solvency ratio",
+      "fmt": "x",
+      "better": "high",
+      "w": 1,
+      "g": "strength",
+      "tip": "As at 31 Mar 2025, IRDAI Annual Report 2024-25. Regulatory minimum is 1.5x."
+    },
+    {
+      "k": "premium_5l_30",
+      "label": "Indicative premium (Rs 5L, age 30)",
+      "fmt": "inr",
+      "better": "low",
+      "w": 2,
+      "g": "cost",
+      "tip": "Annual premium for a 30-year-old, Rs 5 lakh individual cover. Left blank: premiums vary by city, variant and add-ons and no comparable cited source was found. Get a quote."
+    },
+    {
+      "k": "ped_wait",
+      "label": "Pre-existing disease wait",
+      "fmt": "years",
+      "better": "low",
+      "w": 2,
+      "g": "cost",
+      "tip": "Standard waiting period before pre-existing illnesses are covered (plan documents / Ditto, Oct 2026). Some plans let you buy it down."
+    },
+    {
+      "k": "restoration",
+      "label": "Restoration of cover",
+      "fmt": "yes",
+      "better": "high",
+      "w": 1,
+      "g": "cover",
+      "tip": "Built-in refill of sum insured after it is used up in a year (plan documents / Ditto, Oct 2026)."
+    },
+    {
+      "k": "room_rent",
+      "label": "Room rent limit",
+      "fmt": "text",
+      "better": null,
+      "g": "cover",
+      "tip": "Room category allowed without proportionate deductions (Oct 2026)."
+    },
+    {
+      "k": "ncb",
+      "label": "No-claim bonus",
+      "fmt": "text",
+      "better": null,
+      "g": "cover",
+      "tip": "How the sum insured grows for claim-free years (Oct 2026)."
+    },
+    {
+      "k": "copay",
+      "label": "Co-pay",
+      "fmt": "text",
+      "better": null,
+      "g": "cover",
+      "tip": "Share of each claim you pay yourself in the base plan (Oct 2026)."
+    }
+  ],
+  "items": [
+    {
+      "id": "star-super-star",
+      "name": "Star Super Star",
+      "provider": "Star Health and Allied Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 91.05,
+        "icr": 70.3,
+        "network": 14000,
+        "complaints": 54.02,
+        "solvency": 2.21,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "50% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Large network of 14,000+ hospitals",
+        "Any room, no co-pay",
+        "Unlimited restoration for any illness"
+      ],
+      "cons": [
+        "Highest complaints per 10,000 claims in this list (54)",
+        "Claim settlement ratio below most private peers"
+      ],
+      "best": "Buyers who want India's largest health-only insurer and a wide hospital network",
+      "url": "https://www.starhealth.in/health-insurance/super-star/",
+      "news": "Star Health insurance"
+    },
+    {
+      "id": "care-supreme",
+      "name": "Care Supreme",
+      "provider": "Care Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 96.99,
+        "icr": 64.53,
+        "network": 11400,
+        "complaints": 42,
+        "solvency": 1.68,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "50% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Claim settlement ratio near 97% (FY2025-26)",
+        "Unlimited restoration for any illness",
+        "Option to cut PED wait via add-on"
+      ],
+      "cons": [
+        "High complaints (42 per 10,000 claims)",
+        "Lowest solvency among large players (1.68x, Mar 2025)"
+      ],
+      "best": "Value-focused buyers wanting a modular plan with unlimited restoration",
+      "url": "https://www.careinsurance.com/product/care-supreme",
+      "news": "Care Health Insurance"
+    },
+    {
+      "id": "niva-bupa-reassure-2",
+      "name": "ReAssure 2.0 (Platinum+)",
+      "provider": "Niva Bupa Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 94.44,
+        "icr": 61.22,
+        "network": 10000,
+        "complaints": 29.19,
+        "solvency": 3.03,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "Up to 500% (Platinum+)",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Strong solvency (3.03x, Mar 2025)",
+        "Very high no-claim bonus ceiling",
+        "Unlimited restoration"
+      ],
+      "cons": [
+        "Complaints still above industry average (29 per 10,000)",
+        "Smaller network than HDFC ERGO or Aditya Birla"
+      ],
+      "best": "Healthy buyers who want cover to grow fast through bonuses",
+      "url": "https://www.nivabupa.com/family-health-insurance-plans/reassurev2-insurance.html",
+      "news": "Niva Bupa health insurance"
+    },
+    {
+      "id": "hdfc-ergo-optima-secure",
+      "name": "Optima Secure",
+      "provider": "HDFC ERGO General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 98.19,
+        "icr": 84.85,
+        "network": 16000,
+        "complaints": 4.99,
+        "solvency": 2,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "50% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Top-tier claim settlement (98.2%)",
+        "Very low complaints (about 5 per 10,000)",
+        "16,000+ network hospitals"
+      ],
+      "cons": [
+        "Restoration only once a year",
+        "Incurred claim ratio on the high side (85%)"
+      ],
+      "best": "Most buyers wanting a reliable all-rounder from a large insurer",
+      "url": "https://www.hdfcergo.com/health-insurance/optima-secure",
+      "news": "HDFC ERGO health insurance"
+    },
+    {
+      "id": "icici-lombard-elevate",
+      "name": "Elevate",
+      "provider": "ICICI Lombard General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 91.96,
+        "icr": 82.24,
+        "network": 11000,
+        "complaints": 20.64,
+        "solvency": 2.69,
+        "room_rent": "Single private room",
+        "ped_wait": 3,
+        "ncb": "20% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "High solvency (2.69x, Mar 2025)",
+        "Unlimited restoration for any illness",
+        "Big, well-capitalised general insurer"
+      ],
+      "cons": [
+        "Room capped at a single private room",
+        "Slower no-claim bonus growth (20% a year)",
+        "Claim settlement ratio below top peers"
+      ],
+      "best": "Buyers who prefer a large listed insurer and are fine with a single private room",
+      "url": "https://www.icicilombard.com/health-insurance/elevate",
+      "news": "ICICI Lombard health insurance"
+    },
+    {
+      "id": "aditya-birla-activ-one-max",
+      "name": "Activ One MAX",
+      "provider": "Aditya Birla Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater",
+        "wellness"
+      ],
+      "v": {
+        "csr": 97.27,
+        "icr": 71.5,
+        "network": 16500,
+        "complaints": 18,
+        "solvency": 1.84,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "100% a year, up to 500%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Claim settlement 97.3% (FY2025-26)",
+        "16,500+ network hospitals",
+        "Fast-growing bonus (100% a year)"
+      ],
+      "cons": [
+        "Solvency 1.84x is moderate",
+        "Wellness-linked features add complexity"
+      ],
+      "best": "Buyers who want high bonuses and a large network",
+      "url": "https://www.adityabirlacapital.com/healthinsurance/activ-one",
+      "news": "Aditya Birla Health Insurance"
+    },
+    {
+      "id": "bajaj-health-guard",
+      "name": "Health Guard (Gold)",
+      "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 93.4,
+        "icr": 87.31,
+        "network": 12600,
+        "complaints": 5.25,
+        "solvency": 3.25,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "10% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Very low complaints (about 5 per 10,000)",
+        "Strongest solvency among private general insurers here (3.25x)",
+        "No co-pay, any room"
+      ],
+      "cons": [
+        "Restoration only once, for a different illness, after full use",
+        "Slow no-claim bonus (10% a year)"
+      ],
+      "best": "Buyers who value smooth service and a financially strong insurer",
+      "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/health-guard-insurance-policy.html",
+      "news": "Bajaj General Insurance health"
+    },
+    {
+      "id": "tata-aig-medicare-premier",
+      "name": "Medicare Premier",
+      "provider": "Tata AIG General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 89.3,
+        "icr": 76.24,
+        "network": 12000,
+        "complaints": 12.56,
+        "solvency": 1.81,
+        "room_rent": "Any room",
+        "ped_wait": 2,
+        "ncb": "50% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Shorter PED waiting period (2 years)",
+        "Low complaints (about 13 per 10,000)",
+        "Any room, no co-pay"
+      ],
+      "cons": [
+        "Claim settlement below 90% (FY2025-26)",
+        "Restoration once a year"
+      ],
+      "best": "People with existing conditions who want a shorter wait",
+      "url": "https://www.tataaig.com/health-insurance/medicare",
+      "news": "Tata AIG health insurance"
+    },
+    {
+      "id": "manipalcigna-sarvah",
+      "name": "Sarvah",
+      "provider": "ManipalCigna Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 95.84,
+        "icr": 74.81,
+        "network": 14000,
+        "complaints": 45.4,
+        "solvency": 1.76,
+        "room_rent": "Single private AC room",
+        "ped_wait": null,
+        "ncb": "Gullak bonus up to 1500% (built in on Param)",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": null
+      },
+      "pros": [
+        "Param variant offers day-1 cover for pre-existing conditions",
+        "Unlimited restoration",
+        "14,000+ network hospitals"
+      ],
+      "cons": [
+        "High complaints (45 per 10,000 claims)",
+        "Room capped at a single private AC room",
+        "PED wait varies by variant"
+      ],
+      "best": "People with existing conditions willing to pay for the top variant",
+      "url": "https://www.manipalcigna.com/hospitalization-cover/manipalcigna-sarvah",
+      "news": "ManipalCigna health insurance"
+    },
+    {
+      "id": "sbi-general-super-health",
+      "name": "Super Health (Prime)",
+      "provider": "SBI General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater"
+      ],
+      "v": {
+        "csr": 93.62,
+        "icr": 82.19,
+        "network": 18000,
+        "complaints": 4.17,
+        "solvency": 2.03,
+        "room_rent": "Any room",
+        "ped_wait": 2,
+        "ncb": "50% a year, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Largest network in this list (18,000+)",
+        "Very low complaints (about 4 per 10,000)",
+        "2-year PED wait, unlimited restoration"
+      ],
+      "cons": [
+        "Claim settlement below HDFC ERGO and Aditya Birla",
+        "Variants and add-ons can be confusing"
+      ],
+      "best": "Buyers who want a wide network and short PED wait",
+      "url": "https://www.sbigeneral.in/health-insurance/super-health-insurance",
+      "news": "SBI General health insurance"
+    },
+    {
+      "id": "new-india-mediclaim",
+      "name": "New India Mediclaim Policy",
+      "provider": "The New India Assurance Co.",
+      "kind": "General insurer (public sector)",
+      "tags": [
+        "individual",
+        "family floater",
+        "public sector"
+      ],
+      "v": {
+        "csr": 97.18,
+        "icr": 100.98,
+        "network": 2000,
+        "complaints": 6.62,
+        "solvency": 1.91,
+        "room_rent": "Up to 1% of sum insured per day",
+        "ped_wait": 4,
+        "ncb": "25% a year, up to 50%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None (20% voluntary option)"
+      },
+      "pros": [
+        "High claim settlement (97.2%)",
+        "Low complaints (about 7 per 10,000)",
+        "Government-owned insurer"
+      ],
+      "cons": [
+        "Room rent capped at 1% of sum insured a day",
+        "4-year PED waiting period",
+        "Small cashless network (2,000+)"
+      ],
+      "best": "Budget buyers who trust a public-sector insurer and can live with room caps",
+      "url": "https://www.newindia.co.in/health-insurance/new-india-mediclaim-policy",
+      "news": "New India Assurance health"
+    },
+    {
+      "id": "galaxy-promise",
+      "name": "Galaxy Promise (Signature)",
+      "provider": "Galaxy Health and Allied Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater",
+        "new insurer"
+      ],
+      "v": {
+        "csr": 90.18,
+        "icr": null,
+        "network": 9400,
+        "complaints": 25.9,
+        "solvency": 4.7,
+        "room_rent": "Any room",
+        "ped_wait": 3,
+        "ncb": "Cumulative bonus up to 500%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "Very high solvency (4.70x, Mar 2025)",
+        "Unlimited restoration, even for the same illness",
+        "PED wait can be bought down"
+      ],
+      "cons": [
+        "New insurer with a short claims record",
+        "Smaller network (9,400+)"
+      ],
+      "best": "Early adopters comfortable with a new insurer backed by strong capital",
+      "url": "https://www.galaxyhealth.com/health-insurance/galaxy-promise-insurance-policy",
+      "news": "Galaxy Health Insurance"
+    },
+    {
+      "id": "narayana-aditi",
+      "name": "Aditi",
+      "provider": "Narayana Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "individual",
+        "family floater",
+        "network-linked",
+        "new insurer"
+      ],
+      "v": {
+        "csr": 103.24,
+        "icr": null,
+        "network": 20,
+        "complaints": 9,
+        "solvency": 1.61,
+        "room_rent": "General ward (Plans 1-2); private room on Plus via add-on",
+        "ped_wait": 3,
+        "ncb": null,
+        "restoration": false,
+        "premium_5l_30": null,
+        "copay": "10% at non-network hospitals without timely pre-intimation"
+      },
+      "pros": [
+        "High surgery cover (up to Rs 1 crore)",
+        "Low complaints (9 per 10,000)"
+      ],
+      "cons": [
+        "Mostly limited to Narayana Health hospitals (20+)",
+        "Settlement ratio above 100% reflects a tiny, young book",
+        "Restoration only as an add-on"
+      ],
+      "best": "People living near Narayana Health hospitals who want big surgery cover cheaply",
+      "url": "https://www.narayanahealth.insurance/",
+      "news": "Narayana Health Insurance"
+    },
+    {
+      "id": "acko-platinum",
+      "name": "Platinum Health",
+      "provider": "Acko General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater",
+        "digital"
+      ],
+      "v": {
+        "csr": 94.86,
+        "icr": 57.82,
+        "network": 11500,
+        "complaints": 13.32,
+        "solvency": 2.3,
+        "room_rent": "Any room",
+        "ped_wait": null,
+        "ncb": "10% a year even after claims, up to 100%",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "None"
+      },
+      "pros": [
+        "No room rent cap, no co-pay",
+        "Bonus grows even in years you claim",
+        "Low complaints (about 13 per 10,000)"
+      ],
+      "cons": [
+        "PED wait 0-3 years, set after health check",
+        "Small retail health book, so ratios may shift"
+      ],
+      "best": "Digital-first buyers wanting a simple, no-cap plan",
+      "url": "https://www.acko.com/health-insurance/",
+      "news": "Acko health insurance"
+    },
+    {
+      "id": "digit-health-care-plus",
+      "name": "Health Care Plus",
+      "provider": "Go Digit General Insurance",
+      "kind": "General insurer (private)",
+      "tags": [
+        "individual",
+        "family floater",
+        "modular"
+      ],
+      "v": {
+        "csr": 99.21,
+        "icr": 83.78,
+        "network": 9000,
+        "complaints": 21.69,
+        "solvency": 2.24,
+        "room_rent": "Choose 1%, 1.5%, 2% of sum insured or no limit",
+        "ped_wait": null,
+        "ncb": "Choose bonus or renewal discount",
+        "restoration": true,
+        "premium_5l_30": null,
+        "copay": "Optional"
+      },
+      "pros": [
+        "Claim settlement 99.2% (FY2025-26)",
+        "Restoration for same and different illness",
+        "Highly customisable"
+      ],
+      "cons": [
+        "Many choices make it easy to buy weak cover",
+        "Smaller network (9,000+)",
+        "Complaints above 20 per 10,000"
+      ],
+      "best": "Buyers who want to build their own cover and will read the fine print",
+      "url": "https://www.godigit.com/health-insurance",
+      "news": "Digit health insurance"
+    }
+  ]
+}

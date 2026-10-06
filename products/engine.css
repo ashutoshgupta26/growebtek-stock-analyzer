@@ -1,0 +1,14 @@
+/* Product analyzers (insurance, investments, loans & cards) — extends funds/funds.css + kit/kit.css */
+.px-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:12px}
+.px-cats button{border:1px solid var(--gw-line);background:#fff;border-radius:14px;padding:12px 10px;font:800 14px var(--gw-sans);color:var(--gw-ink-2);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:.15s}
+.px-cats button span{font-size:20px}
+.px-cats button:hover{border-color:var(--gw-indigo);color:var(--gw-indigo)}
+.px-cats button[aria-selected="true"]{background:var(--gw-grad);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(91,91,246,.28)}
+@media(max-width:520px){.px-cats{grid-template-columns:repeat(2,1fr)}.px-cats button{font-size:13px;padding:10px 8px}}
+.px-kinds{margin-top:0}
+.px-kinds .fx-pick.on{background:var(--gw-indigo);border-color:var(--gw-indigo);color:#fff}
+.fx-sip-out.px3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.px-ptbl td:first-child{white-space:normal;min-width:150px}
+.kx-kpi b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fx-nav .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.fx-nav .acts a.gw-btn{display:inline-flex;align-items:center;text-decoration:none}

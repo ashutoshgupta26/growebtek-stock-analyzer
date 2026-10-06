@@ -1,0 +1,1308 @@
+{
+  "id": "cards",
+  "title": "Credit Cards",
+  "asOf": "Oct 2026",
+  "intro": "Compare popular Indian credit cards on fees, real value-back, forex markup and lounge access: pick the card whose rewards match where you actually spend, and whose fee you can get waived.",
+  "newsQuery": "credit card India devaluation rewards",
+  "sources": [
+    "Card issuer product pages and MITC / fees & charges (checked Oct 2026)",
+    "CardExpert / CardInsider reviews (2026)"
+  ],
+  "groups": [
+    {
+      "id": "fees",
+      "label": "Fees"
+    },
+    {
+      "id": "rewards",
+      "label": "Rewards"
+    },
+    {
+      "id": "travel",
+      "label": "Travel"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "params": [
+    {
+      "k": "joinFee",
+      "label": "Joining fee",
+      "fmt": "inr",
+      "better": "low",
+      "w": 1,
+      "g": "fees",
+      "tip": "Excl. GST, as of Oct 2026."
+    },
+    {
+      "k": "annualFee",
+      "label": "Annual fee",
+      "fmt": "inr",
+      "better": "low",
+      "w": 2,
+      "g": "fees",
+      "tip": "Renewal fee excl. GST, as of Oct 2026."
+    },
+    {
+      "k": "waiver",
+      "label": "Fee waiver spend",
+      "fmt": "text",
+      "better": null,
+      "g": "fees",
+      "tip": "Annual spend that waives the renewal fee (Oct 2026)."
+    },
+    {
+      "k": "baseRate",
+      "label": "Base reward rate",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "rewards",
+      "tip": "Value back on everyday spends at the stated redemption value (Oct 2026)."
+    },
+    {
+      "k": "bestRate",
+      "label": "Best category reward",
+      "fmt": "pct",
+      "better": "high",
+      "w": 2,
+      "g": "rewards",
+      "tip": "Highest value back on bonus categories or partners, usually capped (Oct 2026)."
+    },
+    {
+      "k": "forex",
+      "label": "Forex markup",
+      "fmt": "pct",
+      "better": "low",
+      "w": 2,
+      "g": "travel",
+      "tip": "Charged on foreign-currency spends, plus GST (Oct 2026)."
+    },
+    {
+      "k": "domLounge",
+      "label": "Domestic lounge visits / yr",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "travel",
+      "tip": "Complimentary visits a year; often need a spend milestone (Oct 2026)."
+    },
+    {
+      "k": "intlLounge",
+      "label": "International lounge visits / yr",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "travel",
+      "tip": "Complimentary visits a year (Oct 2026)."
+    },
+    {
+      "k": "fuel",
+      "label": "Fuel surcharge waiver",
+      "fmt": "yes",
+      "better": "high",
+      "w": 1,
+      "g": "other",
+      "tip": "1% waiver on eligible fuel spends, capped (Oct 2026)."
+    },
+    {
+      "k": "apr",
+      "label": "Interest per month",
+      "fmt": "pct",
+      "better": "low",
+      "w": 1,
+      "g": "other",
+      "tip": "Finance charge on unpaid balance, per month (Oct 2026)."
+    },
+    {
+      "k": "network",
+      "label": "Network",
+      "fmt": "text",
+      "better": null,
+      "g": "other",
+      "tip": "Card network(s) offered."
+    },
+    {
+      "k": "bestFor",
+      "label": "Best for",
+      "fmt": "text",
+      "better": null,
+      "g": "other",
+      "tip": "Spend type the card rewards most."
+    }
+  ],
+  "items": [
+    {
+      "id": "hdfc-infinia",
+      "name": "HDFC Bank Infinia Metal",
+      "provider": "HDFC Bank",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "travel",
+        "metal",
+        "invite only",
+        "unlimited lounge"
+      ],
+      "v": {
+        "joinFee": 12500,
+        "annualFee": 12500,
+        "waiver": "Renewal fee waived on Rs 10 lakh spend in the preceding 12 months",
+        "baseRate": 3.33,
+        "bestRate": 33.33,
+        "forex": 2,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 1.99,
+        "network": null,
+        "bestFor": "high spenders, travel via SmartBuy"
+      },
+      "pros": [
+        "5 RP per Rs 150 (3.33% at Re 1/RP on flights/hotels via SmartBuy)",
+        "Up to 10X on SmartBuy (capped 15,000 RP/month) - 33.33% at Re 1/RP",
+        "Unlimited lounge (domestic and international, primary and add-on)",
+        "Low 2% forex markup; 1.99%/month interest"
+      ],
+      "cons": [
+        "By invitation only",
+        "SmartBuy voucher earning capped at 3,000 RP/month from July 2026",
+        "Points worth only up to Rs 0.50 on vouchers/products and Rs 0.30 as cashback"
+      ],
+      "best": "High-income spenders who book travel through SmartBuy",
+      "url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
+      "news": "HDFC Infinia credit card"
+    },
+    {
+      "id": "hdfc-regalia-gold",
+      "name": "HDFC Bank Regalia Gold",
+      "provider": "HDFC Bank",
+      "kind": "Travel",
+      "tags": [
+        "travel",
+        "lounge",
+        "milestone vouchers"
+      ],
+      "v": {
+        "joinFee": 2500,
+        "annualFee": 2500,
+        "waiver": "Renewal fee waived on Rs 4 lakh spend in a year",
+        "baseRate": 1.63,
+        "bestRate": 8.13,
+        "forex": 2,
+        "domLounge": 12,
+        "intlLounge": 6,
+        "fuel": true,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "travel and lifestyle spends"
+      },
+      "pros": [
+        "5 RP per Rs 200 (1.63% at Rs 0.65/RP on Gold catalogue)",
+        "5X on Myntra, Nykaa, Reliance Digital and more (8.13% at Rs 0.65/RP)",
+        "6 Priority Pass international lounge visits a year; 2% forex",
+        "Rs 5,000 flight vouchers at Rs 5 lakh and Rs 7.5 lakh annual spend"
+      ],
+      "cons": [
+        "Domestic lounge (3 per quarter) needs Rs 60,000 spend in the previous quarter",
+        "Points worth only Rs 0.50 on flights/hotels and Rs 0.35 on vouchers",
+        "Reward earn capped at 50,000 RP per statement cycle"
+      ],
+      "best": "Mid-to-high spenders wanting lounge access and travel vouchers",
+      "url": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card",
+      "news": "HDFC Regalia Gold credit card"
+    },
+    {
+      "id": "hdfc-millennia",
+      "name": "HDFC Bank Millennia",
+      "provider": "HDFC Bank",
+      "kind": "Cashback",
+      "tags": [
+        "cashback",
+        "online shopping"
+      ],
+      "v": {
+        "joinFee": 1000,
+        "annualFee": 1000,
+        "waiver": "Annual fee waived on Rs 1 lakh spend in a year",
+        "baseRate": 1,
+        "bestRate": 5,
+        "forex": 3.5,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / Mastercard",
+        "bestFor": "online shopping on popular apps"
+      },
+      "pros": [
+        "5% CashPoints on Amazon, Flipkart, Myntra, Swiggy, Zomato, Uber, BookMyShow and more",
+        "1% on other spends; 1 CashPoint = Re 1 against statement",
+        "Low Rs 1 lakh spend for fee waiver"
+      ],
+      "cons": [
+        "5% and 1% tiers each capped at 1,000 CashPoints/month",
+        "Statement redemption min 500, max 3,000 points/month; Rs 0.30 on other options",
+        "Lounge only as a choice (1 visit or Rs 1,000 voucher) on Rs 1 lakh quarterly spend; 3.5% forex"
+      ],
+      "best": "Online shoppers who use the partner apps",
+      "url": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card",
+      "news": "HDFC Millennia credit card"
+    },
+    {
+      "id": "swiggy-hdfc",
+      "name": "Swiggy HDFC Bank Credit Card",
+      "provider": "HDFC Bank",
+      "kind": "Co-branded",
+      "tags": [
+        "co-branded",
+        "cashback",
+        "food delivery"
+      ],
+      "v": {
+        "joinFee": 500,
+        "annualFee": 500,
+        "waiver": "Renewal fee waived on Rs 2 lakh spend in a year",
+        "baseRate": 1,
+        "bestRate": 10,
+        "forex": 3.5,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": null,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "Swiggy food and Instamart orders"
+      },
+      "pros": [
+        "10% cashback on Swiggy (food, Instamart, Dineout, Genie), up to Rs 1,500/month",
+        "5% on online spends (up to Rs 1,500) and 1% elsewhere (up to Rs 500)",
+        "Cashback credited to statement; 3 months Swiggy One on joining"
+      ],
+      "cons": [
+        "No airport lounge access",
+        "No cashback on fuel, rent, EMI, wallet, jewellery, government",
+        "3.5% forex markup"
+      ],
+      "best": "Heavy Swiggy users",
+      "url": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
+      "news": "Swiggy HDFC Bank credit card"
+    },
+    {
+      "id": "tata-neu-infinity-hdfc",
+      "name": "Tata Neu Infinity HDFC Bank Credit Card",
+      "provider": "HDFC Bank",
+      "kind": "Co-branded",
+      "tags": [
+        "co-branded",
+        "rewards",
+        "Tata brands",
+        "UPI RuPay"
+      ],
+      "v": {
+        "joinFee": 1499,
+        "annualFee": 1499,
+        "waiver": "Annual fee waived on Rs 3 lakh spend in a year",
+        "baseRate": 1.5,
+        "bestRate": 10,
+        "forex": 2,
+        "domLounge": 8,
+        "intlLounge": 4,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / RuPay",
+        "bestFor": "Tata Neu, BigBasket, Croma and other Tata brands"
+      },
+      "pros": [
+        "5% NeuCoins on Tata Neu and partner brands, up to 10% with NeuPass offers",
+        "1.5% on non-Tata spends; 1 NeuCoin = Re 1",
+        "Low 2% forex; 4 international lounge visits a year"
+      ],
+      "cons": [
+        "Domestic lounge vouchers need Rs 50,000 quarterly spend",
+        "No NeuCoins on fuel, wallet, rent, government, gaming; caps on grocery, utility, telecom, insurance",
+        "NeuCoins only usable within Tata ecosystem"
+      ],
+      "best": "Regular Tata ecosystem shoppers",
+      "url": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+      "news": "Tata Neu Infinity HDFC credit card"
+    },
+    {
+      "id": "sbi-cashback",
+      "name": "SBI Card CASHBACK",
+      "provider": "SBI Card",
+      "kind": "Cashback",
+      "tags": [
+        "cashback",
+        "online shopping"
+      ],
+      "v": {
+        "joinFee": 999,
+        "annualFee": 999,
+        "waiver": "Annual fee waived on Rs 2 lakh spend in a year",
+        "baseRate": 1,
+        "bestRate": 5,
+        "forex": 3.5,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa",
+        "bestFor": "online shopping across merchants"
+      },
+      "pros": [
+        "5% cashback on online spends without merchant restriction",
+        "1% on offline spends; auto-credited to statement",
+        "1% fuel surcharge waiver"
+      ],
+      "cons": [
+        "From 1 Apr 2026: online cashback capped at Rs 2,000 and offline at Rs 2,000 per cycle",
+        "Excludes utilities, insurance, fuel, rent, wallet, education, jewellery, railways, gaming, tolls, government",
+        "No lounge access; 3.5% forex"
+      ],
+      "best": "Online shoppers spending up to about Rs 40,000/month online",
+      "url": "https://www.sbicard.com/en/personal/credit-cards/cashback-sbi-card.html",
+      "news": "SBI Cashback credit card"
+    },
+    {
+      "id": "sbi-simplyclick",
+      "name": "SimplyCLICK SBI Card",
+      "provider": "SBI Card",
+      "kind": "Rewards",
+      "tags": [
+        "rewards",
+        "online shopping",
+        "entry level"
+      ],
+      "v": {
+        "joinFee": 499,
+        "annualFee": 499,
+        "waiver": "Annual fee waived on Rs 1 lakh spend in a year",
+        "baseRate": 0.25,
+        "bestRate": 2.5,
+        "forex": 3.5,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / Mastercard / RuPay",
+        "bestFor": "online shopping at partner sites"
+      },
+      "pros": [
+        "10X points at Apollo 24x7, BookMyShow, Cleartrip, Myntra, Swiggy, Yatra and more (2.5% at Rs 0.25/RP)",
+        "5X on other online spends (1.25%)",
+        "Rs 2,000 Cleartrip/Yatra vouchers at Rs 1 lakh and Rs 2 lakh online spend"
+      ],
+      "cons": [
+        "Offline earn only 1 RP per Rs 100 (0.25%)",
+        "Bonus points capped at 10,000/month",
+        "No lounge access; 3.5% forex"
+      ],
+      "best": "Beginners who shop online at partner brands",
+      "url": "https://www.sbicard.com/en/personal/credit-cards/simplyclick-sbi-card.html",
+      "news": "SBI SimplyCLICK credit card"
+    },
+    {
+      "id": "sbi-elite",
+      "name": "SBI Card ELITE",
+      "provider": "SBI Card",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "lounge",
+        "movies"
+      ],
+      "v": {
+        "joinFee": 4999,
+        "annualFee": 4999,
+        "waiver": "Annual fee waived on Rs 10 lakh spend in a year",
+        "baseRate": 0.5,
+        "bestRate": 2.5,
+        "forex": 1.99,
+        "domLounge": 8,
+        "intlLounge": 6,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / Mastercard",
+        "bestFor": "dining, grocery and department stores"
+      },
+      "pros": [
+        "Rs 5,000 welcome vouchers",
+        "10 RP per Rs 100 on dining, departmental stores and grocery (2.5% at Rs 0.25/RP)",
+        "Low 1.99% forex; 6 Priority Pass and 8 domestic lounge visits a year",
+        "Free movie tickets worth up to Rs 6,000 a year"
+      ],
+      "cons": [
+        "Base earn only 0.5% (2 RP per Rs 100)",
+        "Accelerated points capped at 10,000/month",
+        "High Rs 10 lakh spend for fee waiver"
+      ],
+      "best": "Upper-middle spenders who value lounges and low forex",
+      "url": "https://www.sbicard.com/en/personal/credit-cards/sbi-card-elite.html",
+      "news": "SBI Card ELITE"
+    },
+    {
+      "id": "amazon-pay-icici",
+      "name": "Amazon Pay ICICI Bank Credit Card",
+      "provider": "ICICI Bank",
+      "kind": "Co-branded",
+      "tags": [
+        "co-branded",
+        "lifetime free",
+        "cashback",
+        "Amazon"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free - no joining or annual fee",
+        "baseRate": 1,
+        "bestRate": 5,
+        "forex": 1.99,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "Amazon shopping (Prime members)"
+      },
+      "pros": [
+        "Lifetime free",
+        "5% on Amazon for Prime members (3% non-Prime), 2% at 100+ Amazon Pay partners, 1% elsewhere",
+        "Unlimited, non-expiring rewards credited as Amazon Pay balance",
+        "Low 1.99% forex markup"
+      ],
+      "cons": [
+        "Invite-only programme per bank page",
+        "Rewards usable only as Amazon Pay balance",
+        "No lounge access"
+      ],
+      "best": "Amazon Prime shoppers wanting a no-fee card",
+      "url": "https://www.icici.bank.in/personal-banking/cards/credit-card/amazon-pay-credit-card",
+      "news": "Amazon Pay ICICI credit card"
+    },
+    {
+      "id": "icici-sapphiro",
+      "name": "ICICI Bank Sapphiro",
+      "provider": "ICICI Bank",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "lounge",
+        "golf",
+        "welcome vouchers"
+      ],
+      "v": {
+        "joinFee": 6500,
+        "annualFee": 3500,
+        "waiver": "Annual fee waived on Rs 6 lakh spend in the previous year",
+        "baseRate": 0.5,
+        "bestRate": 1,
+        "forex": 3.5,
+        "domLounge": 16,
+        "intlLounge": 2,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / Mastercard / Amex / RuPay",
+        "bestFor": "lifestyle perks, golf, movies"
+      },
+      "pros": [
+        "Welcome vouchers worth over Rs 13,000",
+        "4 domestic lounge visits per quarter and 2 international visits a year",
+        "Up to 4 golf rounds/month; BOGO on BookMyShow",
+        "Milestone 4,000 RP at Rs 4 lakh plus 2,000 per extra Rs 1 lakh (max 20,000/yr)"
+      ],
+      "cons": [
+        "Low earn: 2 RP per Rs 100 domestic (0.5% at Rs 0.25/RP), 4 RP international (1%)",
+        "Domestic lounge needs Rs 75,000 spend in the previous quarter",
+        "3.5% forex markup"
+      ],
+      "best": "Lifestyle users who value vouchers, golf and lounges over rewards",
+      "url": "https://www.icici.bank.in/personal-banking/cards/credit-card/sapphiro-card",
+      "news": "ICICI Sapphiro credit card"
+    },
+    {
+      "id": "icici-coral",
+      "name": "ICICI Bank Coral",
+      "provider": "ICICI Bank",
+      "kind": "Rewards",
+      "tags": [
+        "rewards",
+        "entry level",
+        "movies"
+      ],
+      "v": {
+        "joinFee": 500,
+        "annualFee": 500,
+        "waiver": "Annual fee waived on Rs 1.5 lakh spend in a year",
+        "baseRate": 0.5,
+        "bestRate": 0.5,
+        "forex": 3.5,
+        "domLounge": 4,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "RuPay / Amex / others",
+        "bestFor": "everyday spends and movies"
+      },
+      "pros": [
+        "2 RP per Rs 100 on retail spends (0.5% at Rs 0.25/RP)",
+        "25% off up to Rs 100 on BookMyShow and INOX twice a month",
+        "Milestone 2,000 RP at Rs 2 lakh plus 1,000 per extra Rs 1 lakh (max 10,000/yr)",
+        "4 railway lounge visits a year"
+      ],
+      "cons": [
+        "Low reward rate; 1 RP per Rs 100 on utility and insurance",
+        "Domestic airport lounge (1/quarter) needs Rs 75,000 spend in the previous quarter",
+        "Fuel waiver only at HPCL; 3.5% forex"
+      ],
+      "best": "First-time card users wanting small perks",
+      "url": "https://www.icici.bank.in/personal-banking/cards/credit-card/coral-credit-card",
+      "news": "ICICI Coral credit card"
+    },
+    {
+      "id": "flipkart-axis",
+      "name": "Flipkart Axis Bank Credit Card",
+      "provider": "Axis Bank",
+      "kind": "Co-branded",
+      "tags": [
+        "co-branded",
+        "cashback",
+        "Flipkart",
+        "Myntra"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 500,
+        "waiver": "Annual fee (from year 2) waived on Rs 3.5 lakh spend in a year; joining fee nil for a limited period",
+        "baseRate": 1,
+        "bestRate": 7.5,
+        "forex": 3.5,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "Flipkart, Myntra and Cleartrip shopping"
+      },
+      "pros": [
+        "7.5% cashback on Myntra (cap Rs 4,000 per quarter)",
+        "5% on Flipkart and Cleartrip (cap Rs 4,000 per quarter per merchant); unlimited 4% on preferred merchants",
+        "Unlimited 1% elsewhere, credited to statement"
+      ],
+      "cons": [
+        "No airport lounge access",
+        "Fee waiver needs Rs 3.5 lakh spend",
+        "3.5% forex markup"
+      ],
+      "best": "Regular Flipkart and Myntra shoppers",
+      "url": "https://www.axis.bank.in/cards/credit-card/flipkart-axisbank-credit-card",
+      "news": "Flipkart Axis Bank credit card"
+    },
+    {
+      "id": "axis-atlas",
+      "name": "Axis Bank Atlas",
+      "provider": "Axis Bank",
+      "kind": "Travel",
+      "tags": [
+        "travel",
+        "miles",
+        "lounge"
+      ],
+      "v": {
+        "joinFee": 5000,
+        "annualFee": 5000,
+        "waiver": null,
+        "baseRate": 2,
+        "bestRate": 5,
+        "forex": 3.5,
+        "domLounge": 8,
+        "intlLounge": 4,
+        "fuel": true,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "flights and hotels, miles transfers"
+      },
+      "pros": [
+        "2 EDGE Miles per Rs 100 (2% at Re 1 per mile)",
+        "5 EDGE Miles per Rs 100 on Travel EDGE, direct airline and hotel spends (5%)",
+        "Milestones up to 10,000 miles; tiers raise lounge visits (base tier 8 domestic, 4 international)",
+        "Miles transfer to airline and hotel partners"
+      ],
+      "cons": [
+        "No spend-based fee waiver; renewal gives up to 5,000 miles instead",
+        "Rs 99-199 redemption fee per transaction",
+        "3.5% forex markup"
+      ],
+      "best": "Frequent travellers who transfer miles",
+      "url": "https://www.axis.bank.in/cards/credit-card/axis-bank-atlas-credit-card",
+      "news": "Axis Atlas credit card"
+    },
+    {
+      "id": "axis-magnus",
+      "name": "Axis Bank Magnus",
+      "provider": "Axis Bank",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "travel",
+        "unlimited lounge"
+      ],
+      "v": {
+        "joinFee": 12500,
+        "annualFee": 12500,
+        "waiver": "Annual fee waived on Rs 25 lakh spend in the preceding year",
+        "baseRate": 1.2,
+        "bestRate": 6,
+        "forex": 2,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3,
+        "network": "Mastercard",
+        "bestFor": "very high spenders, travel"
+      },
+      "pros": [
+        "Welcome voucher worth Rs 12,500",
+        "12 RP per Rs 200 (1.2% at Rs 0.20/RP); 35 RP per Rs 200 above Rs 1.5 lakh/month (3.5%); 5X via Travel EDGE (6%)",
+        "Unlimited lounge (international via Priority Pass; domestic)",
+        "2% forex; 3%/month interest"
+      ],
+      "cons": [
+        "Domestic lounge needs Rs 50,000 spend in previous 3 months",
+        "Point transfers to partners capped yearly; poor 5:2 transfer ratio",
+        "No points on insurance, gold/jewellery, fuel"
+      ],
+      "best": "Spenders above Rs 1.5 lakh/month",
+      "url": "https://www.axis.bank.in/cards/credit-card/axis-bank-magnus-credit-card",
+      "news": "Axis Magnus credit card"
+    },
+    {
+      "id": "axis-ace",
+      "name": "Axis Bank ACE",
+      "provider": "Axis Bank",
+      "kind": "Cashback",
+      "tags": [
+        "cashback",
+        "bill payments",
+        "food delivery"
+      ],
+      "v": {
+        "joinFee": 499,
+        "annualFee": 499,
+        "waiver": "Annual fee waived on Rs 2 lakh spend in a year",
+        "baseRate": 1.5,
+        "bestRate": 5,
+        "forex": 3.5,
+        "domLounge": 4,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": null,
+        "bestFor": "utility bills via Google Pay, food delivery"
+      },
+      "pros": [
+        "5% cashback on bills and recharges via Google Pay",
+        "4% on Swiggy, Zomato and Ola",
+        "Unlimited 1.5% on other spends",
+        "4 domestic lounge visits a year"
+      ],
+      "cons": [
+        "5% and 4% cashback combined capped at Rs 500 per statement",
+        "Many exclusions: rent, wallet, education, insurance, fuel, jewellery, government",
+        "T&Cs revised from 28 Aug 2026; 3.5% forex"
+      ],
+      "best": "Users who pay bills and order food often",
+      "url": "https://www.axis.bank.in/cards/credit-card/axis-bank-ace-credit-card",
+      "news": "Axis ACE credit card"
+    },
+    {
+      "id": "idfc-first-wealth",
+      "name": "IDFC FIRST Wealth",
+      "provider": "IDFC FIRST Bank",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "premium",
+        "travel",
+        "zero forex"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 0.38,
+        "bestRate": 1.25,
+        "forex": 0,
+        "domLounge": 4,
+        "intlLounge": 4,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "fee-free international spends and dining/travel"
+      },
+      "pros": [
+        "Lifetime free with zero forex markup on all IDFC FIRST cards from 9 Sep 2026",
+        "10X points (10 RP per Rs 200, about 1.25% at Rs 0.25/RP) on dining, travel, international and birthday spends from the first rupee since June 2026",
+        "1 domestic + 1 international airport lounge visit per quarter",
+        "1% fuel surcharge waiver"
+      ],
+      "cons": [
+        "Base 3 RP per Rs 200 = about 0.38% (Rs 0.25/RP)",
+        "Lounge and movie benefits need Rs 20,000 spend in the previous month",
+        "Points now expire after 24 months; Rs 99 + GST redemption fee",
+        "Earn base moved from Rs 150 to Rs 200 per point in Jan 2026"
+      ],
+      "best": "High earners who want a no-fee card with zero forex and gated lounge access",
+      "url": "https://www.idfcfirst.bank.in/credit-card/wealth",
+      "news": "IDFC FIRST Wealth credit card"
+    },
+    {
+      "id": "idfc-first-select",
+      "name": "IDFC FIRST Select",
+      "provider": "IDFC FIRST Bank",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "zero forex",
+        "dining",
+        "travel"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 0.38,
+        "bestRate": 1.25,
+        "forex": 0,
+        "domLounge": 4,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "no-fee everyday card with zero forex"
+      },
+      "pros": [
+        "Lifetime free; zero forex markup from 9 Sep 2026",
+        "10 RP per Rs 200 (about 1.25% at Rs 0.25/RP) on dining, travel and international with no spend threshold since June 2026",
+        "1% fuel surcharge waiver (up to Rs 300 per cycle)",
+        "Railway lounge access and roadside assistance"
+      ],
+      "cons": [
+        "Base 3 RP per Rs 200 = about 0.38%",
+        "Only 1 domestic airport lounge visit per quarter, needs Rs 20,000 monthly spend; no international lounge",
+        "Points expire after 24 months",
+        "No points on fuel, EMI or cash"
+      ],
+      "best": "Mid-income users wanting a free card with zero forex and modest rewards",
+      "url": "https://www.idfcfirst.bank.in/credit-card/select",
+      "news": "IDFC FIRST Select credit card"
+    },
+    {
+      "id": "idfc-first-millennia",
+      "name": "IDFC FIRST Millennia",
+      "provider": "IDFC FIRST Bank",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "beginner",
+        "zero forex"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 0.38,
+        "bestRate": 1.25,
+        "forex": 0,
+        "domLounge": 0,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "first credit card, dining and travel"
+      },
+      "pros": [
+        "Lifetime free; zero forex markup from 9 Sep 2026",
+        "10 RP per Rs 200 (about 1.25% at Rs 0.25/RP) on dining, travel and international from the first transaction since June 2026",
+        "Railway lounge access (4 per quarter, spend-gated)",
+        "Fuel surcharge waiver and movie discount"
+      ],
+      "cons": [
+        "Base 3 RP per Rs 200 = about 0.38%",
+        "No airport lounge access",
+        "Points expire after 24 months; Rs 99 redemption fee"
+      ],
+      "best": "Young earners with Rs 3 lakh+ income wanting a free starter card",
+      "url": "https://www.idfcfirst.bank.in/credit-card/millennia",
+      "news": "IDFC FIRST Millennia credit card"
+    },
+    {
+      "id": "au-lit",
+      "name": "AU Bank LIT",
+      "provider": "AU Small Finance Bank",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "customisable",
+        "cashback"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free; optional feature packs Rs 49-499 per 90 days",
+        "baseRate": 0.25,
+        "bestRate": 5,
+        "forex": 3.49,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa",
+        "bestFor": "pay-for-what-you-use customisable benefits"
+      },
+      "pros": [
+        "Lifetime free base card",
+        "Paid 90-day packs: 5% category cashback, 5X/10X points, lounge, OTT memberships",
+        "Fuel surcharge waiver via Rs 49 pack"
+      ],
+      "cons": [
+        "Base 1 RP per Rs 100 = 0.25% (Rs 0.25/RP on travel)",
+        "Benefits cost extra and packs auto-renew; 5% cashback pack capped",
+        "High 3.49% forex markup",
+        "Lounge only via paid pack"
+      ],
+      "best": "Users who want a free card and add specific benefits only when needed",
+      "url": "https://www.au.bank.in/personal-banking/credit-cards/lit-credit-card",
+      "news": "AU Bank LIT credit card"
+    },
+    {
+      "id": "au-zenith-plus",
+      "name": "AU Bank Zenith+",
+      "provider": "AU Small Finance Bank",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "travel",
+        "lounge",
+        "low forex"
+      ],
+      "v": {
+        "joinFee": 4999,
+        "annualFee": 4999,
+        "waiver": "Annual fee waived on Rs 8 lakh eligible annual spend",
+        "baseRate": 1,
+        "bestRate": 2,
+        "forex": 0.99,
+        "domLounge": 16,
+        "intlLounge": 16,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa Infinite",
+        "bestFor": "travel and international spends"
+      },
+      "pros": [
+        "1 RP per Rs 100 base, 2 RP per Rs 100 on dining, travel and international (1 RP = Re 1)",
+        "16 domestic + 16 international lounge visits a year (4 per quarter each)",
+        "Low 0.99% forex markup",
+        "Fuel waiver up to Rs 1,000 per cycle; golf"
+      ],
+      "cons": [
+        "Rs 4,999 + GST fee unless Rs 8 lakh spent",
+        "No points on fuel, rent, education, government, EMI",
+        "High income bar (about Rs 2.5 lakh per month)"
+      ],
+      "best": "High earners who travel abroad and want low forex plus lounges",
+      "url": "https://www.au.bank.in/personal-banking/credit-cards/zenith-plus-credit-card",
+      "news": "AU Zenith+ credit card"
+    },
+    {
+      "id": "amex-platinum-travel",
+      "name": "American Express Platinum Travel",
+      "provider": "American Express",
+      "kind": "Travel",
+      "tags": [
+        "travel",
+        "milestone",
+        "hotels"
+      ],
+      "v": {
+        "joinFee": 5000,
+        "annualFee": 5000,
+        "waiver": null,
+        "baseRate": null,
+        "bestRate": null,
+        "forex": 3.5,
+        "domLounge": 8,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": 3.5,
+        "network": "American Express",
+        "bestFor": "milestone-driven travel rewards"
+      },
+      "pros": [
+        "1 MR point per Rs 50; 10,000 MR on Rs 4 lakh annual spend",
+        "Rs 20,000 Taj e-gift card on Rs 7 lakh annual spend",
+        "2 domestic lounge visits per quarter (from 1 Oct 2026, spend-gated)",
+        "Complimentary Priority Pass membership; HPCL fuel fee waiver"
+      ],
+      "cons": [
+        "Amex has paused new card applications in India",
+        "Milestones restructured in March 2026; top tier now needs Rs 7 lakh",
+        "Priority Pass visits are paid; 3.5% forex",
+        "No points on fuel, insurance, utilities; value depends on redemption"
+      ],
+      "best": "Existing Amex users who can hit Rs 4-7 lakh yearly for travel vouchers",
+      "url": "https://www.americanexpress.com/in/credit-cards/platinum-travel-credit-card/",
+      "news": "Amex Platinum Travel credit card India"
+    },
+    {
+      "id": "amex-mrcc",
+      "name": "American Express Membership Rewards Credit Card",
+      "provider": "American Express",
+      "kind": "Rewards",
+      "tags": [
+        "rewards",
+        "monthly bonus",
+        "points"
+      ],
+      "v": {
+        "joinFee": 1000,
+        "annualFee": 4500,
+        "waiver": "Renewal fee fully waived on Rs 1.5 lakh annual spend (50% waiver at Rs 90,000 removed from 11 Oct 2026)",
+        "baseRate": null,
+        "bestRate": null,
+        "forex": 3.5,
+        "domLounge": 0,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": 3.5,
+        "network": "American Express",
+        "bestFor": "rewards via monthly bonus points"
+      },
+      "pros": [
+        "1 MR point per Rs 50",
+        "1,000 bonus points for 4 transactions of Rs 1,500+ a month, plus 1,000 more on Rs 20,000 monthly spend",
+        "Welcome 4,000 points on Rs 15,000 in 90 days",
+        "HPCL fuel convenience fee waiver"
+      ],
+      "cons": [
+        "Amex has paused new card applications in India",
+        "From 11 Oct 2026, 50% fee waiver removed and points no longer pooled across Amex cards",
+        "3.5% forex; no lounge access",
+        "Value depends on redemption choice"
+      ],
+      "best": "Disciplined spenders who hit the monthly Rs 20,000 bonus",
+      "url": "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
+      "news": "Amex Membership Rewards credit card India"
+    },
+    {
+      "id": "onecard",
+      "name": "OneCard",
+      "provider": "OneCard (with Federal, BOBCARD, CSB, Indian Bank, SBM, South Indian Bank)",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "metal",
+        "low forex",
+        "beginner"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 0.2,
+        "bestRate": 1,
+        "forex": 1,
+        "domLounge": 0,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa",
+        "bestFor": "free metal card with low forex"
+      },
+      "pros": [
+        "Lifetime free metal card",
+        "5X points on top 2 monthly spend categories",
+        "Low 1% forex markup",
+        "Available secured against FD"
+      ],
+      "cons": [
+        "Base 1 RP per Rs 50 at Rs 0.10 = 0.2%",
+        "No lounge access",
+        "Fuel waiver capped at Rs 400 a month"
+      ],
+      "best": "Beginners wanting a no-fee card for occasional foreign spends",
+      "url": "https://www.getonecard.app/",
+      "news": "OneCard credit card"
+    },
+    {
+      "id": "kotak-league-platinum",
+      "name": "Kotak League Platinum",
+      "provider": "Kotak Mahindra Bank",
+      "kind": "Rewards",
+      "tags": [
+        "entry level",
+        "rewards",
+        "movies"
+      ],
+      "v": {
+        "joinFee": 499,
+        "annualFee": 499,
+        "waiver": "Annual fee waived on Rs 50,000 retail spend in a year (some variants Nil)",
+        "baseRate": 0.27,
+        "bestRate": 0.53,
+        "forex": null,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "PVR milestone and low-fee rewards"
+      },
+      "pros": [
+        "Low Rs 499 fee, waived on Rs 50,000 spend",
+        "4 PVR tickets or 10,000 points on Rs 1.25 lakh spend every 6 months",
+        "1% fuel surcharge waiver up to Rs 3,500 a year"
+      ],
+      "cons": [
+        "Base 4 RP per Rs 150 at Rs 0.10 = about 0.27%",
+        "Cash redemption cut to Rs 0.07 per point from June 2025",
+        "No lounge benefits listed"
+      ],
+      "best": "Budget users who can hit the half-yearly movie milestone",
+      "url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/league-platinum-card.html",
+      "news": "Kotak League Platinum credit card"
+    },
+    {
+      "id": "indusind-legend",
+      "name": "IndusInd Legend",
+      "provider": "IndusInd Bank",
+      "kind": "Premium",
+      "tags": [
+        "lifetime free",
+        "weekend rewards",
+        "low forex"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 0.5,
+        "bestRate": 1,
+        "forex": 1.8,
+        "domLounge": 0,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": 3.95,
+        "network": "Visa Signature",
+        "bestFor": "weekend spends"
+      },
+      "pros": [
+        "No joining or annual fee",
+        "2 RP per Rs 100 on weekends, 1 RP on weekdays (1 RP = Rs 0.50 cash credit)",
+        "1.8% forex markup; air miles conversion"
+      ],
+      "cons": [
+        "Complimentary lounge access discontinued from 7 March 2025",
+        "Rs 149 + GST cash redemption fee",
+        "High 3.95% monthly interest"
+      ],
+      "best": "Weekend shoppers wanting a free card with decent point value",
+      "url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/legend-credit-card.html",
+      "news": "IndusInd Legend credit card"
+    },
+    {
+      "id": "yes-marquee",
+      "name": "YES Bank Marquee",
+      "provider": "YES Bank",
+      "kind": "Premium",
+      "tags": [
+        "premium",
+        "online shopping",
+        "lounge",
+        "low forex"
+      ],
+      "v": {
+        "joinFee": 9999,
+        "annualFee": 4999,
+        "waiver": "Annual fee waived on Rs 10 lakh annual spend",
+        "baseRate": 2.25,
+        "bestRate": 4.5,
+        "forex": 1,
+        "domLounge": 24,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": null,
+        "network": null,
+        "bestFor": "online shopping"
+      },
+      "pros": [
+        "36 RP per Rs 200 online (4.5% at Rs 0.25/RP on flights/hotels), 18 RP offline (2.25%)",
+        "Unlimited international lounge access",
+        "1% forex markup",
+        "40,000 welcome points; 20,000 on renewal fee"
+      ],
+      "cons": [
+        "Rs 9,999 joining fee",
+        "Domestic lounges (6/quarter) need Rs 1 lakh spend in previous quarter",
+        "Points worth only Rs 0.10-0.15 on vouchers; Rs 100 + GST redemption fee"
+      ],
+      "best": "Heavy online spenders who redeem points for flights and hotels",
+      "url": "https://www.yes.bank.in/personal-banking/yes-individual/cards/credit-cards/yes-bank-marquee-credit-card",
+      "news": "YES Bank Marquee credit card"
+    },
+    {
+      "id": "rbl-world-safari",
+      "name": "RBL Bank World Safari",
+      "provider": "RBL Bank",
+      "kind": "Travel",
+      "tags": [
+        "travel",
+        "zero forex"
+      ],
+      "v": {
+        "joinFee": 3000,
+        "annualFee": 3000,
+        "waiver": null,
+        "baseRate": null,
+        "bestRate": null,
+        "forex": 0,
+        "domLounge": 8,
+        "intlLounge": 2,
+        "fuel": true,
+        "apr": null,
+        "network": "Mastercard / Visa",
+        "bestFor": "international spends"
+      },
+      "pros": [
+        "0% forex markup",
+        "5 RP per Rs 100 on travel, 2 RP on domestic retail",
+        "Rs 3,000 MakeMyTrip welcome voucher; milestones at Rs 2.5L/5L/7.5L",
+        "Travel insurance"
+      ],
+      "cons": [
+        "No reward points on international spends",
+        "Domestic lounges (2/quarter) need Rs 35,000 quarterly spend",
+        "Rs 99 + GST redemption fee"
+      ],
+      "best": "Frequent foreign spenders who value zero markup",
+      "url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/world-safari-credit-card",
+      "news": "RBL World Safari credit card"
+    },
+    {
+      "id": "hsbc-live-plus",
+      "name": "HSBC Live+",
+      "provider": "HSBC India",
+      "kind": "Cashback",
+      "tags": [
+        "cashback",
+        "dining",
+        "grocery"
+      ],
+      "v": {
+        "joinFee": 999,
+        "annualFee": 999,
+        "waiver": "Annual fee waived on Rs 2 lakh annual spend",
+        "baseRate": 1.5,
+        "bestRate": 10,
+        "forex": 1.99,
+        "domLounge": 2,
+        "intlLounge": 1,
+        "fuel": null,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "dining, food delivery and grocery"
+      },
+      "pros": [
+        "10% cashback on dining, food delivery, grocery, shopping and utilities (up to Rs 1,200/month)",
+        "1.5% unlimited cashback on most other spends",
+        "2 domestic + 1 international lounge visit a year"
+      ],
+      "cons": [
+        "10% cashback capped at Rs 1,200 a month",
+        "Needs Rs 6 lakh income and select cities",
+        "1.99% forex markup"
+      ],
+      "best": "Urban users with big dining and grocery bills",
+      "url": "https://www.hsbc.bank.in/credit-cards/products/live-plus/",
+      "news": "HSBC Live+ credit card"
+    },
+    {
+      "id": "scapia-federal",
+      "name": "Scapia Federal Bank",
+      "provider": "Federal Bank (Scapia)",
+      "kind": "Travel",
+      "tags": [
+        "travel",
+        "lifetime free",
+        "zero forex"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": 2,
+        "bestRate": 4,
+        "forex": 0,
+        "domLounge": null,
+        "intlLounge": 0,
+        "fuel": true,
+        "apr": 3.75,
+        "network": "Visa / RuPay",
+        "bestFor": "travel bookings and foreign spends"
+      },
+      "pros": [
+        "Lifetime free with zero forex markup",
+        "10% Scapia coins (about 2% at Rs 0.20/coin); 20% on travel booked in the app (about 4%)",
+        "Unlimited domestic lounge access with Rs 20,000 monthly spend"
+      ],
+      "cons": [
+        "Coins redeemable only for travel bookings via Scapia",
+        "No coins on forex spends",
+        "No international lounge access"
+      ],
+      "best": "Travellers who book through the Scapia app",
+      "url": "https://www.scapia.cards/",
+      "news": "Scapia credit card"
+    },
+    {
+      "id": "hsbc-visa-platinum",
+      "name": "HSBC Visa Platinum",
+      "provider": "HSBC India",
+      "kind": "Lifetime free",
+      "tags": [
+        "lifetime free",
+        "travel points"
+      ],
+      "v": {
+        "joinFee": 0,
+        "annualFee": 0,
+        "waiver": "Lifetime free",
+        "baseRate": null,
+        "bestRate": null,
+        "forex": null,
+        "domLounge": null,
+        "intlLounge": null,
+        "fuel": true,
+        "apr": null,
+        "network": "Visa",
+        "bestFor": "no-fee basic card"
+      },
+      "pros": [
+        "No joining or annual fee",
+        "2 RP per Rs 150; up to 6X on travel via Travel with Points",
+        "Fuel surcharge waiver up to Rs 250 a month"
+      ],
+      "cons": [
+        "Point value not published",
+        "No lounge access listed",
+        "Available only in select cities"
+      ],
+      "best": "First-time HSBC customers wanting a free card",
+      "url": "https://www.hsbc.bank.in/credit-cards/products/visa-platinum/",
+      "news": "HSBC Visa Platinum credit card"
+    }
+  ]
+}

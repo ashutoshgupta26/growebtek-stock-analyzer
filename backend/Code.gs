@@ -1,5 +1,5 @@
 /**
- * Growebtek AI Stock & Fund Analyzer — backend (Google Apps Script web app).
+ * Growebtek AI MoneyTrade — backend (Google Apps Script web app).
  * Handles admin/user login, the user access list and live market data.
  * Deploy: Deploy > New deployment > Web app > Execute as: Me, Who has access: Anyone.
  * Passwords are never stored: only a salted one-way hash.
@@ -15,11 +15,13 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v10' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v11' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
+  var tp = e && e.parameter && e.parameter.topic;
+  if (tp) { try { var tq = String(tp).slice(0, 160), tm = String(e.parameter.must || '').slice(0, 160), tk = 't11:' + tq + '|' + tm; var th = cacheGet_(tk); if (th) return json_(th); var tr = { topic: tq, news: topicNews_(tq, tm) }; cachePut_(tk, tr, 900); return json_(tr); } catch (err) { return json_({ ok: false }); } }
   if (feed) { try { return json_(marketFeed_(String(feed), !!e.parameter.debug)); } catch (err) { return json_({ ok: false, error: 'feed unavailable' }); } }
-  return json_({ ok: true, app: 'Growebtek AI Stock & Fund Analyzer', time: new Date().toISOString() });
+  return json_({ ok: true, app: 'Growebtek AI MoneyTrade', time: new Date().toISOString() });
 }
 
 function doPost(e) {
@@ -453,6 +455,41 @@ function mfNews_(name, house, cat) {
   var res = [], cnt = { fund: 0, amc: 0, category: 0 };
   out.forEach(function (n) { if (cnt[n.kind] < 5 && res.length < 12) { cnt[n.kind]++; res.push(n); } });
   return res.sort(function (a, b) { return b.ts - a.ts; });
+}
+
+// News on any topic (crypto, insurance, deposits, loans, cards ...): Google News India edition, newest first.
+// must = optional "word|word" list; a headline is kept only if it names one of them.
+function topicNews_(q, must) {
+  var g = function (x) { return 'https://news.google.com/rss/search?q=' + encodeURIComponent(x) + '&hl=en-IN&gl=IN&ceid=IN:en'; };
+  var dec = function (t) { return String(t || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim(); };
+  var tag = function (b, n) { var m = b.match(new RegExp('<' + n + '[^>]*>([\\s\\S]*?)</' + n + '>')); return m ? dec(m[1]) : ''; };
+  var esc = function (x) { return x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
+  var words = String(must || '').split('|').map(function (w) { return w.trim().toLowerCase(); }).filter(function (w) { return w.length > 1; });
+  var rx = words.length ? new RegExp('(^|[^a-z0-9])(' + words.map(esc).join('|') + ')', 'i') : null;
+  var junk = /price (today|live|prediction)|live price|price chart|market (report|size|share)|forecast to 20\d\d|cagr of/i;
+  var all = [];
+  var run = function (urls) {
+    var rs = []; try { rs = UrlFetchApp.fetchAll(urls.map(function (u) { return { url: u, muteHttpExceptions: true, headers: { 'User-Agent': UA } }; })); } catch (e) {}
+    rs.forEach(function (r) {
+      if (!r || r.getResponseCode() !== 200) return;
+      (r.getContentText().match(/<item[\s>][\s\S]*?<\/item>/g) || []).slice(0, 40).forEach(function (b) {
+        var t = tag(b, 'title'), src = tag(b, 'source');
+        if (src) t = t.replace(new RegExp('\\s+-\\s+' + esc(src) + '$'), '');
+        all.push({ title: t, url: tag(b, 'link'), src: src || 'Google News', ts: Date.parse(tag(b, 'pubDate')) || 0 });
+      });
+    });
+  };
+  var pick = function () {
+    var seen = {}, out = [];
+    all.filter(function (x) { return x.title && x.title.length > 20 && x.url && !junk.test(x.title) && (!rx || rx.test(x.title)); })
+      .sort(function (a, b) { return b.ts - a.ts; })
+      .forEach(function (x) { var k = x.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 60); if (!seen[k] && out.length < 12) { seen[k] = 1; out.push(x); } });
+    return out;
+  };
+  run([g(q + ' when:14d')]);
+  var out = pick();
+  if (out.length < 5) { run([g(q + ' when:90d'), g(q)]); out = pick(); }
+  return out;
 }
 
 function stockNews_(sym, name) {

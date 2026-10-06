@@ -1,0 +1,1885 @@
+{
+ "id": "loans",
+ "title": "Loans",
+ "asOf": "Oct 2026",
+ "intro": "Compare home, personal, car, education, gold, property, two-wheeler and business loans from major Indian lenders: the rate you actually get depends on your credit score, income and the rate type, so look beyond the lowest advertised rate.",
+ "newsQuery": "loan interest rates India RBI repo",
+ "rbiRepo": {
+  "rate": 5.25,
+  "since": "2025-12-05",
+  "lastReviewed": "2026-08-05",
+  "note": "RBI policy repo rate; unchanged at the 5 Aug 2026 MPC meeting. Next decision due 7 Oct 2026.",
+  "source": "https://www.rbi.org.in"
+ },
+ "sources": [
+  "RBI Monetary Policy Statement, 5 Aug 2026",
+  "Lender interest-rate and charges pages (checked Oct 2026)",
+  "BankBazaar / Paisabazaar rate tables citing lenders (Oct 2026)"
+ ],
+ "groups": [
+  {
+   "id": "cost",
+   "label": "Cost"
+  },
+  {
+   "id": "terms",
+   "label": "Terms"
+  },
+  {
+   "id": "access",
+   "label": "Eligibility & speed"
+  }
+ ],
+ "params": [
+  {
+   "k": "rateMin",
+   "label": "Lowest interest rate",
+   "fmt": "pct",
+   "better": "low",
+   "w": 3,
+   "g": "cost",
+   "tip": "Lowest advertised rate p.a., for the best credit profiles (Oct 2026)."
+  },
+  {
+   "k": "rateMax",
+   "label": "Highest interest rate",
+   "fmt": "pct",
+   "better": "low",
+   "w": 2,
+   "g": "cost",
+   "tip": "Top of the advertised range p.a. (Oct 2026)."
+  },
+  {
+   "k": "feeText",
+   "label": "Processing fee",
+   "fmt": "text",
+   "better": null,
+   "g": "cost",
+   "tip": "As published by the lender, Oct 2026. GST extra."
+  },
+  {
+   "k": "feePctMax",
+   "label": "Max processing fee",
+   "fmt": "pct",
+   "better": "low",
+   "w": 1,
+   "g": "cost",
+   "tip": "Highest % fee charged; blank if flat or not disclosed (Oct 2026)."
+  },
+  {
+   "k": "tenureMax",
+   "label": "Max tenure",
+   "fmt": "years",
+   "better": "high",
+   "w": 1,
+   "g": "terms",
+   "tip": "Longest repayment period offered (Oct 2026)."
+  },
+  {
+   "k": "amountMax",
+   "label": "Max loan amount",
+   "fmt": "text",
+   "better": null,
+   "g": "terms",
+   "tip": "Ceiling stated by the lender (Oct 2026)."
+  },
+  {
+   "k": "prepay",
+   "label": "Prepayment / foreclosure",
+   "fmt": "text",
+   "better": null,
+   "g": "terms",
+   "tip": "RBI bars these charges on floating-rate loans to individuals for non-business use."
+  },
+  {
+   "k": "rateType",
+   "label": "Rate type",
+   "fmt": "text",
+   "better": null,
+   "g": "terms",
+   "tip": "Repo-linked rates move soon after RBI changes; MCLR lags; fixed stays put."
+  },
+  {
+   "k": "disbursal",
+   "label": "Disbursal speed",
+   "fmt": "text",
+   "better": null,
+   "g": "access",
+   "tip": "Lender's stated turnaround (Oct 2026)."
+  },
+  {
+   "k": "cibilMin",
+   "label": "Min credit score",
+   "fmt": "num",
+   "better": "low",
+   "w": 1,
+   "g": "access",
+   "tip": "Score commonly needed for approval; best rates usually need 750+ (Oct 2026)."
+  }
+ ],
+ "items": [
+  {
+   "id": "sbi-home-loan",
+   "name": "SBI Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.25,
+    "rateMax": 8.45,
+    "feeText": "0.35% of loan amount + GST, subject to min/max caps",
+    "feePctMax": 0.35,
+    "tenureMax": 30,
+    "amountMax": "Up to Rs 40 crore (based on eligibility)",
+    "prepay": "Nil on floating rate loans",
+    "rateType": "Floating, repo-linked (EBLR)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 7.25% p.a. (effective 1 Apr 2026)",
+    "Low processing fee of 0.35%",
+    "Tenure up to 30 years",
+    "0.05% concession for women borrowers"
+   ],
+   "cons": [
+    "Best rates need a high CIBIL score",
+    "Rate resets with the repo rate"
+   ],
+   "best": "Salaried buyers with good credit who want a low-cost public-sector loan",
+   "url": "https://homeloans.sbi.bank.in/",
+   "news": "SBI home loan rate"
+  },
+  {
+   "id": "hdfc-home-loan",
+   "name": "HDFC Bank Home Loan",
+   "provider": "HDFC Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 7.75,
+    "rateMax": 13.2,
+    "feeText": "Up to 0.50% or Rs 4,000 (whichever higher) + taxes for salaried; up to 1.50% for self-employed non-professionals",
+    "feePctMax": 1.5,
+    "tenureMax": 30,
+    "amountMax": "Up to Rs 10 crore",
+    "prepay": "Nil on floating rate for individuals (RBI rule)",
+    "rateType": "Floating, repo-linked (repo + 2.50% to 7.95%); fixed option available",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating rates from 7.75% (repo + 2.50%)",
+    "Tenure up to 30 years",
+    "Fixed and floating options"
+   ],
+   "cons": [
+    "Wide rate band up to 13.20%",
+    "Higher processing fee for self-employed non-professionals (up to 1.50%)"
+   ],
+   "best": "Borrowers who want a large private-bank network and choice of fixed or floating",
+   "url": "https://homeloans.hdfc.bank.in/housing-loans/home-loans",
+   "news": "HDFC Bank home loan rate"
+  },
+  {
+   "id": "icici-home-loan",
+   "name": "ICICI Bank Home Loan",
+   "provider": "ICICI Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 7.55,
+    "rateMax": 11.2,
+    "feeText": "0.50% of loan amount + taxes",
+    "feePctMax": 0.5,
+    "tenureMax": 30,
+    "amountMax": "Up to Rs 10 crore",
+    "prepay": "Nil on floating rate for individuals (RBI rule)",
+    "rateType": "Floating, repo-linked; fixed options (2 to full term)",
+    "disbursal": "Pre-approved digital loans available",
+    "cibilMin": null
+   },
+   "pros": [
+    "Pre-approved digital loans from 7.55%",
+    "Fixed-rate tenors from 24 months to full term",
+    "Tenure up to 30 years"
+   ],
+   "cons": [
+    "Standard floating slabs start at 8.50%",
+    "Full-term fixed rates up to 11.20%"
+   ],
+   "best": "Existing ICICI customers with a pre-approved offer",
+   "url": "https://www.icici.bank.in/personal-banking/loans/home-loan",
+   "news": "ICICI Bank home loan rate"
+  },
+  {
+   "id": "axis-home-loan",
+   "name": "Axis Bank Home Loan",
+   "provider": "Axis Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8,
+    "rateMax": 14,
+    "feeText": "Up to 1% or Rs 10,000 (whichever higher) + GST; Rs 5,000 upfront",
+    "feePctMax": 1,
+    "tenureMax": 30,
+    "amountMax": "Rs 3 lakh to Rs 5 crore",
+    "prepay": "Nil on floating rate; 2% on fixed rate",
+    "rateType": "Floating, repo-linked (repo + 2.75% to 3.60% for CIBIL 751+); fixed 14%",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating 8.00-8.85% for CIBIL 751+",
+    "Tenure up to 30 years",
+    "No prepayment charge on floating"
+   ],
+   "cons": [
+    "Fixed rate is 14%",
+    "Fee up to 1%, higher than most banks",
+    "2% prepayment charge on fixed loans"
+   ],
+   "best": "Salaried borrowers with CIBIL above 750 wanting a floating loan",
+   "url": "https://www.axis.bank.in/loans/home-loan",
+   "news": "Axis Bank home loan rate"
+  },
+  {
+   "id": "kotak-home-loan",
+   "name": "Kotak Mahindra Bank Home Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 7.6,
+    "rateMax": null,
+    "feeText": "Up to 2% + taxes; Rs 5,000 upfront",
+    "feePctMax": 2,
+    "tenureMax": 25,
+    "amountMax": "Up to Rs 40 crore (up to 90% LTV)",
+    "prepay": "Nil on floating rate (individuals); bank advertises flexible prepayment and foreclosure",
+    "rateType": "Floating, repo-linked; hybrid with 39/52/65-month fixed period",
+    "disbursal": "Bank advertises quick disbursal",
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 7.60%",
+    "Hybrid fixed periods of 39, 52 or 65 months",
+    "Loans up to Rs 40 crore"
+   ],
+   "cons": [
+    "Processing fee up to 2%",
+    "Max tenure 25 years",
+    "Upper rate not published"
+   ],
+   "best": "Borrowers wanting an initial fixed period before switching to floating",
+   "url": "https://www.kotak.bank.in/en/personal-banking/loans/home-loan.html",
+   "news": "Kotak home loan rate"
+  },
+  {
+   "id": "bob-home-loan",
+   "name": "Bank of Baroda Home Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.2,
+    "rateMax": 8.95,
+    "feeText": "Up to Rs 50 lakh: 0.50% (Rs 8,500-15,000); above Rs 50 lakh: 0.25% (max Rs 25,000)",
+    "feePctMax": 0.5,
+    "tenureMax": 30,
+    "amountMax": "Up to Rs 20 crore (Mumbai); lower caps in other cities",
+    "prepay": "Nil pre-closure charges",
+    "rateType": "Floating, BRLLR-linked (BRLLR -0.70% to +1.05%), monthly reset",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating rates from 7.20%",
+    "Capped processing fee",
+    "No pre-closure charges",
+    "Tenure up to 30 years"
+   ],
+   "cons": [
+    "Rate depends on CIBIL and loan amount",
+    "Fixed rates higher (8.90-9.95% per BankBazaar)"
+   ],
+   "best": "Borrowers with good credit seeking a low public-sector floating rate",
+   "url": "https://bankofbaroda.bank.in/loans/home-loan/baroda-home-loan",
+   "news": "Bank of Baroda home loan rate"
+  },
+  {
+   "id": "pnb-home-loan",
+   "name": "PNB Home Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.2,
+    "rateMax": 10.6,
+    "feeText": "0.35%, min Rs 2,500, max Rs 15,000",
+    "feePctMax": 0.35,
+    "tenureMax": 30,
+    "amountMax": "Need-based",
+    "prepay": "Nil on floating rate for individuals (RBI rule)",
+    "rateType": "Floating, RLLR-linked; fixed 8.20-10.60%",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating from 7.20% under UTSAV offer (1 Oct-31 Dec 2026)",
+    "Rate grid covers CIBIL 600+",
+    "Low fee capped at Rs 15,000"
+   ],
+   "cons": [
+    "Lowest rate needs CIBIL 800+, loan above Rs 30 lakh and LTV up to 80%",
+    "Fixed rates up to 10.60%"
+   ],
+   "best": "High-score borrowers taking a larger loan during the festive offer",
+   "url": "https://pnb.bank.in/housingloanforpublic.html",
+   "news": "PNB home loan rate"
+  },
+  {
+   "id": "canara-home-loan",
+   "name": "Canara Bank Housing Loan",
+   "provider": "Canara Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.15,
+    "rateMax": 10,
+    "feeText": "0.50% (min Rs 1,500, max Rs 10,000) + GST; 100% waived 1 Oct-31 Dec 2026",
+    "feePctMax": 0.5,
+    "tenureMax": 30,
+    "amountMax": "No upper limit; based on income",
+    "prepay": "No prepayment penalty",
+    "rateType": "Floating, RLLR-linked (RLLR 8.00%)",
+    "disbursal": "Up to Rs 25 lakh: 21 days; above: 30 days (bank time norms)",
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 7.15%",
+    "Processing fee waived till 31 Dec 2026",
+    "No upper loan limit",
+    "Tenure up to 30 years or age 75"
+   ],
+   "cons": [
+    "Bank time norms of 21-30 days",
+    "Top of grid is 10.00%"
+   ],
+   "best": "Borrowers wanting the lowest PSU rate and zero fee this quarter",
+   "url": "https://www.canarabank.bank.in/pages/housing-loan",
+   "news": "Canara Bank home loan rate"
+  },
+  {
+   "id": "union-home-loan",
+   "name": "Union Bank Home Loan",
+   "provider": "Union Bank of India",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.15,
+    "rateMax": 9.35,
+    "feeText": "0.50% up to Rs 15,000 + GST",
+    "feePctMax": 0.5,
+    "tenureMax": null,
+    "amountMax": null,
+    "prepay": "No prepayment penalty",
+    "rateType": "Floating, repo-linked (EBLR)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 7.15%",
+    "Fee capped at Rs 15,000",
+    "0.05% concession for women"
+   ],
+   "cons": [
+    "Rates vary by credit score",
+    "Tenure and loan cap not confirmed from the bank's site"
+   ],
+   "best": "Borrowers comparing low PSU floating rates",
+   "url": "https://www.unionbankofindia.bank.in/en/details/home-loan-interest-rate",
+   "news": "Union Bank of India home loan rate"
+  },
+  {
+   "id": "lichfl-home-loan",
+   "name": "LIC HFL Home Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "HFC"
+   ],
+   "v": {
+    "rateMin": 7.15,
+    "rateMax": 10.3,
+    "feeText": "0.25% up to Rs 1 crore, max Rs 15,000 + GST",
+    "feePctMax": 0.25,
+    "tenureMax": 30,
+    "amountMax": "Up to Rs 15 crore",
+    "prepay": "Nil on floating rate for individuals (RBI rule)",
+    "rateType": "Floating, CIBIL-slab based",
+    "disbursal": "Online sanction available",
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 7.15% for CIBIL 825+",
+    "Low processing fee",
+    "Tenure up to 30 years (salaried)",
+    "Grid includes borrowers with thin credit history"
+   ],
+   "cons": [
+    "Self-employed tenure capped at 25 years",
+    "Self-employed rates slightly higher (7.30-10.30%)"
+   ],
+   "best": "Salaried borrowers with excellent credit wanting a low HFC rate",
+   "url": "https://www.lichousing.com/housing-loan/home-loan",
+   "news": "LIC Housing Finance home loan rate"
+  },
+  {
+   "id": "bajaj-home-loan",
+   "name": "Bajaj Housing Finance Home Loan",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "HFC"
+   ],
+   "v": {
+    "rateMin": 7.25,
+    "rateMax": 10.65,
+    "feeText": "Not disclosed (nominal fee at application)",
+    "feePctMax": null,
+    "tenureMax": null,
+    "amountMax": null,
+    "prepay": "Nil on floating rate for individuals; up to 4% on fixed-rate term loans",
+    "rateType": "Floating; repo-linked option for salaried and professionals",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Salaried rates from 7.25%",
+    "Repo-linked option available",
+    "No prepayment charge on floating"
+   ],
+   "cons": [
+    "Self-employed rates start higher at 7.70%",
+    "Processing fee not published",
+    "Up to 4% charge on fixed-rate prepayment"
+   ],
+   "best": "Salaried borrowers wanting an HFC alternative to banks",
+   "url": "https://www.bajajhousingfinance.in/home-loan-interest-rates",
+   "news": "Bajaj Housing Finance home loan rate"
+  },
+  {
+   "id": "idfc-home-loan",
+   "name": "IDFC FIRST Bank Home Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Home loan",
+   "tags": [
+    "Home loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 7.75,
+    "rateMax": null,
+    "feeText": "Up to 3% of loan amount + GST",
+    "feePctMax": 3,
+    "tenureMax": 32,
+    "amountMax": "Rs 5 lakh to Rs 10 crore",
+    "prepay": "Nil on floating rate; up to 2% on fixed rate",
+    "rateType": "Floating, fixed or hybrid",
+    "disbursal": "Digital process; quick processing for loans below Rs 2 crore",
+    "cibilMin": null
+   },
+   "pros": [
+    "Tenure up to 32 years (salaried)",
+    "Up to 100% top-up at balance-transfer rate",
+    "No prepayment charge on floating"
+   ],
+   "cons": [
+    "Processing fee up to 3%",
+    "Self-employed tenure capped at 25 years",
+    "Upper rate not published"
+   ],
+   "best": "Salaried borrowers wanting the longest tenure to lower EMI",
+   "url": "https://www.idfcfirst.bank.in/personal-banking/loans/home-loan",
+   "news": "IDFC FIRST Bank home loan rate"
+  },
+  {
+   "id": "sbi-lap",
+   "name": "SBI Loan Against Property",
+   "provider": "State Bank of India",
+   "kind": "Loan against property",
+   "tags": [
+    "Loan against property",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 9.2,
+    "rateMax": 10.75,
+    "feeText": "1% of loan amount, max Rs 50,000 + taxes",
+    "feePctMax": 1,
+    "tenureMax": null,
+    "amountMax": "Up to Rs 7.5 crore",
+    "prepay": "Nil",
+    "rateType": "Floating, CIBIL-based",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 9.20%",
+    "No prepayment charge",
+    "Fee capped at Rs 50,000"
+   ],
+   "cons": [
+    "Rates vary by CIBIL score",
+    "Tenure not confirmed from the bank's site"
+   ],
+   "best": "Property owners wanting a PSU loan at a moderate rate",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/loans-against-property",
+   "news": "SBI loan against property rate"
+  },
+  {
+   "id": "hdfc-lap",
+   "name": "HDFC Bank Loan Against Property",
+   "provider": "HDFC Bank",
+   "kind": "Loan against property",
+   "tags": [
+    "Loan against property",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.3,
+    "rateMax": 12.75,
+    "feeText": "Up to 1% of loan amount (min Rs 7,500)",
+    "feePctMax": 1,
+    "tenureMax": null,
+    "amountMax": "Up to 65% of property market value",
+    "prepay": "Nil on floating-rate term loans to individuals (sanctioned from 1 Jan 2026); fixed rate: 2.5% + GST above 25% part-payment per year",
+    "rateType": "Floating, repo-linked (repo + 3.05% to 7.50%); fixed 11.80-13.30%",
+    "disbursal": "Bank advertises quick disbursal",
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating rates from 8.30%",
+    "Residential, commercial and special properties accepted",
+    "Dropline overdraft option"
+   ],
+   "cons": [
+    "Loan limited to 65% of market value",
+    "Fixed rates 11.80-13.30%"
+   ],
+   "best": "Business owners needing a large loan against residential or commercial property",
+   "url": "https://www.hdfc.bank.in/loan-against-property",
+   "news": "HDFC Bank loan against property rate"
+  },
+  {
+   "id": "icici-lap",
+   "name": "ICICI Bank Loan Against Property",
+   "provider": "ICICI Bank",
+   "kind": "Loan against property",
+   "tags": [
+    "Loan against property",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 10.6,
+    "rateMax": 12.25,
+    "feeText": null,
+    "feePctMax": null,
+    "tenureMax": null,
+    "amountMax": "Up to Rs 5 crore",
+    "prepay": "Nil on floating rate for individuals (RBI rule)",
+    "rateType": "Floating, repo-linked",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Lower rates for larger loans (from 10.60% above Rs 1 crore)",
+    "Priority-sector loans priced lower than non-PSL"
+   ],
+   "cons": [
+    "Rates start at 10.60%, higher than many banks",
+    "Small loans priced up to 12.25%"
+   ],
+   "best": "Borrowers taking a larger LAP above Rs 1 crore",
+   "url": "https://www.icici.bank.in/personal-banking/loans/loan-against-property",
+   "news": "ICICI Bank loan against property rate"
+  },
+  {
+   "id": "bajaj-lap",
+   "name": "Bajaj Housing Finance Loan Against Property",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Loan against property",
+   "tags": [
+    "Loan against property",
+    "HFC"
+   ],
+   "v": {
+    "rateMin": 8.5,
+    "rateMax": 12,
+    "feeText": "Not disclosed (nominal fee at application)",
+    "feePctMax": null,
+    "tenureMax": 15,
+    "amountMax": "Rs 5 crore or higher, based on eligibility",
+    "prepay": "Nil on floating rate for individuals; 4% on fixed-rate loans",
+    "rateType": "3-year fixed rate guarantee, then floating",
+    "disbursal": "Approval in 48 hours; disbursal in 72 hours of documents",
+    "cibilMin": null
+   },
+   "pros": [
+    "Disbursal within 72 hours of documents",
+    "3-year rate guarantee",
+    "No prepayment charge on floating"
+   ],
+   "cons": [
+    "Tenure capped at 15 years",
+    "4% charge on fixed-rate prepayment",
+    "Official page quotes 9.30% start for self-employed"
+   ],
+   "best": "Self-employed borrowers who need funds fast",
+   "url": "https://www.bajajhousingfinance.in/loan-against-property",
+   "news": "Bajaj Housing Finance loan against property rate"
+  },
+  {
+   "id": "tata-capital-lap",
+   "name": "Tata Capital Loan Against Property",
+   "provider": "Tata Capital",
+   "kind": "Loan against property",
+   "tags": [
+    "Loan against property",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 9,
+    "rateMax": 17,
+    "feeText": "Up to 1% + GST",
+    "feePctMax": 1,
+    "tenureMax": 20,
+    "amountMax": "Up to Rs 10 crore",
+    "prepay": "Zero on floating-rate loans to individuals",
+    "rateType": "Floating; fixed option (13-17% per BankBazaar)",
+    "disbursal": "Quick disbursal (not quantified)",
+    "cibilMin": null
+   },
+   "pros": [
+    "Loans up to Rs 10 crore",
+    "Tenure up to 20 years",
+    "No restriction on end use"
+   ],
+   "cons": [
+    "Rate band goes up to 17%",
+    "Legal and valuation fees Rs 5,000-15,000 extra"
+   ],
+   "best": "Borrowers needing a large, flexible-use loan from an NBFC",
+   "url": "https://www.tatacapital.com/loan-against-property.html",
+   "news": "Tata Capital loan against property rate"
+  },
+  {
+   "id": "sbi-personal-loan",
+   "name": "SBI Xpress Credit Personal Loan",
+   "provider": "State Bank of India",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 10,
+    "rateMax": 15,
+    "feeText": "Up to 1.5% (min Rs 1,000, max Rs 15,000) + GST",
+    "feePctMax": 1.5,
+    "tenureMax": 7,
+    "amountMax": "Rs 50 lakh (min Rs 1 lakh; capped at 30x net monthly income)",
+    "prepay": "3% of prepaid amount (per BankBazaar)",
+    "rateType": "MCLR-linked (2-year MCLR + 1.25-6.25% spread)",
+    "disbursal": "Real-time sanction on YONO for salary-account customers",
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates 10.00-15.00% (w.e.f. 15 Dec 2025), among the lowest",
+    "Processing fee capped at Rs 15,000 + GST",
+    "Loans up to Rs 50 lakh, tenure up to 84 months",
+    "Fully digital via YONO"
+   ],
+   "cons": [
+    "Needs an SBI salary package account",
+    "Minimum net income Rs 20,000 (govt) / Rs 25,000 (corporate) a month",
+    "Prepayment charge about 3% of prepaid amount"
+   ],
+   "best": "Salaried SBI salary-account holders wanting a low rate and long tenure",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/personal-loans/real-time-xpress-credit",
+   "news": "SBI Xpress Credit personal loan rate"
+  },
+  {
+   "id": "hdfc-personal-loan",
+   "name": "HDFC Bank Personal Loan",
+   "provider": "HDFC Bank",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9.99,
+    "rateMax": 24,
+    "feeText": "Up to Rs 6,500 + GST",
+    "feePctMax": null,
+    "tenureMax": 6,
+    "amountMax": "Rs 50 lakh",
+    "prepay": "Foreclosure 4% (<=24 EMIs), 3% (25-36), 2% (>36) + GST; part-prepay up to 25% of principal outstanding",
+    "rateType": "Fixed",
+    "disbursal": "10 seconds for pre-approved customers; others within 4 working days",
+    "cibilMin": null
+   },
+   "pros": [
+    "Flat processing fee capped at Rs 6,500 + GST",
+    "Instant disbursal for pre-approved customers",
+    "Loans up to Rs 50 lakh"
+   ],
+   "cons": [
+    "Rack rate goes up to 24%",
+    "Foreclosure charges 2-4% + GST",
+    "72-month tenure is a festive offer (till 30 Nov 2026)"
+   ],
+   "best": "Existing HDFC customers with a pre-approved offer who need money fast",
+   "url": "https://www.hdfc.bank.in/personal-loan",
+   "news": "HDFC Bank personal loan interest rate"
+  },
+  {
+   "id": "icici-personal-loan",
+   "name": "ICICI Bank Personal Loan",
+   "provider": "ICICI Bank",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9.99,
+    "rateMax": 16.5,
+    "feeText": "Up to 2% + taxes",
+    "feePctMax": 2,
+    "tenureMax": 6,
+    "amountMax": "Rs 50 lakh",
+    "prepay": "3% of principal outstanding; nil after 24 EMIs",
+    "rateType": "Fixed (1-year MCLR 8.40% + 1.59-8.10% spread)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Narrow rate band 9.99-16.50%",
+    "No foreclosure charge after 24 EMIs",
+    "Loans up to Rs 50 lakh"
+   ],
+   "cons": [
+    "Processing fee up to 2% + taxes",
+    "3% foreclosure charge in first 24 EMIs"
+   ],
+   "best": "Salaried borrowers with good credit who may prepay after two years",
+   "url": "https://www.icici.bank.in/personal-banking/loans/personal-loan",
+   "news": "ICICI Bank personal loan interest rate"
+  },
+  {
+   "id": "axis-personal-loan",
+   "name": "Axis Bank Personal Loan",
+   "provider": "Axis Bank",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9.99,
+    "rateMax": 22,
+    "feeText": "Up to 2% + GST",
+    "feePctMax": 2,
+    "tenureMax": 7,
+    "amountMax": "Rs 50 lakh",
+    "prepay": "Under Rs 10 lakh: 3% up to 36 EMIs, 2% after; Rs 10 lakh+: nil after 12 EMIs from own funds; part-prepay up to 25%/yr free after 12 EMIs",
+    "rateType": "Fixed (3-year MCLR + spread)",
+    "disbursal": "Approval in 30 seconds (digital); disbursal time not stated",
+    "cibilMin": null
+   },
+   "pros": [
+    "Tenure up to 7 years",
+    "Free part-prepayment up to 25% a year after 12 EMIs",
+    "Apr-Jun 2026 mean rate charged 13.07%"
+   ],
+   "cons": [
+    "Rates up to 22%",
+    "Foreclosure 2-3% on loans under Rs 10 lakh"
+   ],
+   "best": "Borrowers who want a long tenure and plan to part-prepay",
+   "url": "https://www.axis.bank.in/loans/personal-loan",
+   "news": "Axis Bank personal loan interest rate"
+  },
+  {
+   "id": "kotak-personal-loan",
+   "name": "Kotak Mahindra Bank Personal Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 10.99,
+    "rateMax": null,
+    "feeText": "Up to 5% + taxes",
+    "feePctMax": 5,
+    "tenureMax": 6,
+    "amountMax": "Rs 1 crore",
+    "prepay": "4% + taxes up to 3 years, 2% + taxes after",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "High loan amount up to Rs 1 crore",
+    "No lock-in for foreclosure after first EMI",
+    "Best rates for CIBIL above 750"
+   ],
+   "cons": [
+    "Processing fee up to 5% + taxes",
+    "Foreclosure 2-4% + taxes",
+    "Maximum rate not disclosed"
+   ],
+   "best": "High earners needing a large unsecured loan",
+   "url": "https://www.kotak.bank.in/en/personal-banking/loans/personal-loan.html",
+   "news": "Kotak Mahindra Bank personal loan rate"
+  },
+  {
+   "id": "bob-personal-loan",
+   "name": "Baroda Personal Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 10.15,
+    "rateMax": 18,
+    "feeText": "Nil for govt employees with BoB salary account; else 1-2% + GST (min Rs 1,000, max Rs 10,000)",
+    "feePctMax": 2,
+    "tenureMax": 7,
+    "amountMax": "Rs 20 lakh",
+    "prepay": "Not stated; Nil foreclosure charge on floating-rate loans to individuals (non-business) per RBI",
+    "rateType": "Floating (repo-linked BRLLR) 10.15-17.50% or Fixed (1-year MCLR) 10.95-18.00%",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Floating repo-linked option, so no foreclosure charge for individuals",
+    "Fee capped at Rs 10,000 + GST; nil for some govt employees",
+    "Up to 84 months for govt salary-account holders"
+   ],
+   "cons": [
+    "Maximum loan only Rs 20 lakh",
+    "Non-salary-account borrowers get 48-60 months",
+    "Rate depends heavily on CIBIL score"
+   ],
+   "best": "Government employees with a BoB salary account wanting a floating rate",
+   "url": "https://bankofbaroda.bank.in/loans/personal-loan/baroda-personal-loan",
+   "news": "Bank of Baroda personal loan rate"
+  },
+  {
+   "id": "idfc-personal-loan",
+   "name": "IDFC FIRST Bank Personal Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9.99,
+    "rateMax": null,
+    "feeText": "0-3.5% incl. GST",
+    "feePctMax": 3.5,
+    "tenureMax": 5,
+    "amountMax": "Rs 15 lakh",
+    "prepay": "Zero foreclosure charges",
+    "rateType": null,
+    "disbursal": "As fast as 10 minutes via FIRSTmoney; typically about 7 days (per BankBazaar)",
+    "cibilMin": 710
+   },
+   "pros": [
+    "Zero foreclosure charges",
+    "Rates from 9.99%",
+    "Fast digital disbursal for eligible customers"
+   ],
+   "cons": [
+    "Maximum loan Rs 15 lakh",
+    "Tenure capped at 60 months",
+    "Maximum rate not disclosed"
+   ],
+   "best": "Borrowers who expect to repay early and need up to Rs 15 lakh",
+   "url": "https://www.idfcfirst.bank.in/personal-banking/loans/personal-loan",
+   "news": "IDFC FIRST Bank personal loan rate"
+  },
+  {
+   "id": "bajaj-personal-loan",
+   "name": "Bajaj Finance Personal Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 10,
+    "rateMax": 30.5,
+    "feeText": "Up to 4.13% incl. taxes",
+    "feePctMax": 4.13,
+    "tenureMax": 9,
+    "amountMax": "Rs 55 lakh",
+    "prepay": "Term loan: up to 4.72% incl. taxes (full and part); Flexi loans: no part-prepayment charges",
+    "rateType": "Fixed or floating",
+    "disbursal": "Within 24 hours",
+    "cibilMin": 650
+   },
+   "pros": [
+    "Disbursal within 24 hours",
+    "Tenure up to 108 months",
+    "Flexi variants with no part-prepayment charges",
+    "Accepts CIBIL from 650"
+   ],
+   "cons": [
+    "Rates up to 30.5%",
+    "Processing fee up to 4.13%",
+    "Term-loan prepayment up to 4.72%"
+   ],
+   "best": "Borrowers who need money within a day or a flexible credit line",
+   "url": "https://www.bajajfinserv.in/personal-loan",
+   "news": "Bajaj Finance personal loan rate"
+  },
+  {
+   "id": "tata-personal-loan",
+   "name": "Tata Capital Personal Loan",
+   "provider": "Tata Capital",
+   "kind": "Personal loan",
+   "tags": [
+    "Personal loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 10.99,
+    "rateMax": 33,
+    "feeText": "Up to 5% + GST; documentation up to Rs 1,999",
+    "feePctMax": 5,
+    "tenureMax": 6,
+    "amountMax": "Rs 35 lakh",
+    "prepay": "Foreclosure 6.5% within 12 months, 4.5% after; part-prepay free up to 25% of disbursed amount",
+    "rateType": null,
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Free part-prepayment up to 25% of disbursed amount",
+    "3-day cooling-off period",
+    "Loans from Rs 40,000"
+   ],
+   "cons": [
+    "Rates up to 33%",
+    "Foreclosure 4.5-6.5%",
+    "Processing fee up to 5% + GST"
+   ],
+   "best": "Borrowers who don't qualify at banks and plan small part-prepayments",
+   "url": "https://www.tatacapital.com/personal-loan.html",
+   "news": "Tata Capital personal loan rate"
+  },
+  {
+   "id": "hdfc-business-loan",
+   "name": "HDFC Bank Business Loan",
+   "provider": "HDFC Bank",
+   "kind": "Business loan",
+   "tags": [
+    "Business loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 10.75,
+    "rateMax": 22.5,
+    "feeText": "Up to 2% of loan amount; nil up to Rs 5 lakh for micro & small enterprises (with Udyam certificate)",
+    "feePctMax": 2,
+    "tenureMax": 4,
+    "amountMax": "Rs 75 lakh (Rs 1 crore in select locations)",
+    "prepay": "4% (<=24 EMIs), 3% (25-36), 2% (>36) of principal outstanding + taxes; nil for fixed-rate MSE loans up to Rs 50 lakh",
+    "rateType": null,
+    "disbursal": "Eligibility and approval in 60 seconds (online); disbursal time not stated",
+    "cibilMin": null
+   },
+   "pros": [
+    "No collateral or guarantor",
+    "Nil processing fee and nil foreclosure for eligible micro & small enterprises",
+    "Dropline overdraft option"
+   ],
+   "cons": [
+    "Needs turnover of at least Rs 40 lakh and 3 years in business",
+    "Tenure only 12-48 months",
+    "Foreclosure charges 2-4% for others"
+   ],
+   "best": "Established small businesses (Udyam-registered) wanting an unsecured loan",
+   "url": "https://www.hdfc.bank.in/business-loan",
+   "news": "HDFC Bank business loan rate"
+  },
+  {
+   "id": "icici-business-loan",
+   "name": "ICICI Bank Business Loans",
+   "provider": "ICICI Bank",
+   "kind": "Business loan",
+   "tags": [
+    "Business loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": null,
+    "rateMax": 11.75,
+    "feeText": "Up to 2% + taxes",
+    "feePctMax": 2,
+    "tenureMax": null,
+    "amountMax": "Rs 75 crore (secured/working capital); Insta OD unsecured up to Rs 50 lakh",
+    "prepay": "As per sanction letter; nil for micro & small enterprises; Insta OD has no foreclosure charges",
+    "rateType": "Repo-linked: up to repo + 6.0% (secured), repo + 6.5% (CGTMSE)",
+    "disbursal": "Instant sanction and disbursal for Insta OD",
+    "cibilMin": 725
+   },
+   "pros": [
+    "Repo-linked pricing capped at repo + 6.5% on secured/CGTMSE loans",
+    "Nil foreclosure for micro & small enterprises",
+    "Unsecured Insta OD up to Rs 50 lakh, fully digital"
+   ],
+   "cons": [
+    "Main term loans need collateral",
+    "Unsecured Insta OD is 12 months (renewal fee 2% + taxes)",
+    "Insta OD needs credit score above 725"
+   ],
+   "best": "Businesses with collateral or an ICICI current account wanting low repo-linked rates",
+   "url": "https://www.icici.bank.in/business-banking/business-loans",
+   "news": "ICICI Bank business loan rate"
+  },
+  {
+   "id": "bajaj-business-loan",
+   "name": "Bajaj Finance Business Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Business loan",
+   "tags": [
+    "Business loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 14,
+    "rateMax": 23,
+    "feeText": "Up to 4.72% incl. taxes",
+    "feePctMax": 4.72,
+    "tenureMax": 8,
+    "amountMax": "Rs 80 lakh",
+    "prepay": "Term loan: up to 4.72% incl. taxes; Flexi loans: no part-prepayment charges",
+    "rateType": null,
+    "disbursal": "Within 48 hours",
+    "cibilMin": 650
+   },
+   "pros": [
+    "Unsecured up to Rs 80 lakh",
+    "Tenure up to 96 months",
+    "Flexi variants with interest-only EMIs and free part-prepayment"
+   ],
+   "cons": [
+    "Rates 14-23%",
+    "Processing fee up to 4.72%",
+    "Needs 3 years of business vintage"
+   ],
+   "best": "Businesses wanting quick unsecured funds with a flexible credit line",
+   "url": "https://www.bajajfinserv.in/business-loan",
+   "news": "Bajaj Finance business loan rate"
+  },
+  {
+   "id": "tata-business-loan",
+   "name": "Tata Capital Business Loan",
+   "provider": "Tata Capital",
+   "kind": "Business loan",
+   "tags": [
+    "Business loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 12,
+    "rateMax": 30,
+    "feeText": "Up to 3% + GST; documentation Rs 1,999",
+    "feePctMax": 3,
+    "tenureMax": 5,
+    "amountMax": "Rs 1 crore",
+    "prepay": "4.5% of principal outstanding (foreclosure) / of prepaid amount (part-prepay)",
+    "rateType": null,
+    "disbursal": "48-72 hours after approval",
+    "cibilMin": 675
+   },
+   "pros": [
+    "Collateral-free up to Rs 1 crore",
+    "Step-up and structured EMI options",
+    "Processing fee up to 3%"
+   ],
+   "cons": [
+    "Rates up to 30%",
+    "4.5% foreclosure and part-prepay charge",
+    "Tenure capped at 60 months"
+   ],
+   "best": "Self-employed businesses needing an unsecured loan up to Rs 1 crore",
+   "url": "https://www.tatacapital.com/business-loan.html",
+   "news": "Tata Capital business loan rate"
+  },
+  {
+   "id": "idfc-business-loan",
+   "name": "IDFC FIRST Bank Business Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Business loan",
+   "tags": [
+    "Business loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 13,
+    "rateMax": null,
+    "feeText": "Up to 3.5% of loan amount (term loan)",
+    "feePctMax": 3.5,
+    "tenureMax": 4,
+    "amountMax": "Rs 1 crore",
+    "prepay": null,
+    "rateType": null,
+    "disbursal": "Representative contacts within 24 hours; instant approvals for eligible applicants",
+    "cibilMin": null
+   },
+   "pros": [
+    "Collateral-free from Rs 7 lakh to Rs 1 crore",
+    "Choice of term loan or dropline overdraft",
+    "Top-up after 12 clean EMIs"
+   ],
+   "cons": [
+    "Needs turnover of Rs 1 crore and 3 years' vintage",
+    "Tenure only 12-48 months",
+    "Processing fee up to 3.5%"
+   ],
+   "best": "Larger MSMEs (Rs 1 crore+ turnover) needing a big unsecured loan",
+   "url": "https://www.idfcfirst.bank.in/business-banking/loans/business-loan",
+   "news": "IDFC FIRST Bank business loan rate"
+  },
+  {
+   "id": "sbi-car-loan",
+   "name": "SBI Car Loan",
+   "provider": "State Bank of India",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 8.4,
+    "rateMax": 9.35,
+    "feeText": "Salaried Rs 1,000-3,000 + GST; non-salaried Rs 1,500-4,000 + GST (slab by loan size)",
+    "feePctMax": null,
+    "tenureMax": 7,
+    "amountMax": "Up to 100% of on-road price (up to 48x net monthly income for salaried)",
+    "prepay": "No prepayment charges; no foreclosure charge after 2 years (3% + GST if foreclosed within 24 months)",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Low flat processing fee in rupees, not a percentage",
+    "Funds up to 100% of on-road price",
+    "Green car variant from 8.30%",
+    "Rate range is narrow (8.40-9.35%)"
+   ],
+   "cons": [
+    "Foreclosure charge if closed within 2 years",
+    "Disbursal time not published"
+   ],
+   "best": "Salaried buyers wanting a low, predictable fixed rate from a PSU bank",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/auto-loans/sbi-new-car-loan-scheme",
+   "news": "SBI car loan interest rate"
+  },
+  {
+   "id": "hdfc-car-loan",
+   "name": "HDFC Bank Car Loan",
+   "provider": "HDFC Bank",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 7.6,
+    "rateMax": 14,
+    "feeText": "0.5% of loan, min Rs 3,500, max Rs 8,000",
+    "feePctMax": 0.5,
+    "tenureMax": 7,
+    "amountMax": "Rs 25 lakh (XPRESS); up to 100% funding",
+    "prepay": "6% within 1 year, 5% in 13-24 months, 3% after 24 months (XPRESS offer: zero foreclosure, T&C)",
+    "rateType": "Fixed",
+    "disbursal": "Within 30 minutes for XPRESS Car Loan",
+    "cibilMin": null
+   },
+   "pros": [
+    "Very fast XPRESS disbursal",
+    "Up to 100% funding",
+    "Actual rates from 7.60% (Apr-Jun 2026)"
+   ],
+   "cons": [
+    "High foreclosure charges (up to 6%)",
+    "Wide actual rate spread up to 14%"
+   ],
+   "best": "Existing HDFC customers who want a car loan disbursed the same day",
+   "url": "https://www.hdfc.bank.in/car-loan",
+   "news": "HDFC Bank car loan rate"
+  },
+  {
+   "id": "icici-car-loan",
+   "name": "ICICI Bank Car Loan",
+   "provider": "ICICI Bank",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.4,
+    "rateMax": null,
+    "feeText": "Up to Rs 8,500 + GST",
+    "feePctMax": null,
+    "tenureMax": null,
+    "amountMax": "Up to 100% of on-road price",
+    "prepay": "3% up to 12 months, 2% in 13-24 months, nil after 24 months",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "8.40% onwards for tenures of 36 months or more",
+    "Up to 100% on-road funding",
+    "No foreclosure charge after 2 years"
+   ],
+   "cons": [
+    "10.25% onwards for tenures under 36 months",
+    "Processing fee up to Rs 8,500 + GST"
+   ],
+   "best": "Buyers taking a 3+ year loan who may prepay after 2 years",
+   "url": "https://www.icici.bank.in/personal-banking/loans/car-loan",
+   "news": "ICICI Bank car loan rate"
+  },
+  {
+   "id": "axis-car-loan",
+   "name": "Axis Bank Car Loan",
+   "provider": "Axis Bank",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.9,
+    "rateMax": 11.7,
+    "feeText": "Up to 2% + GST; documentation Rs 700 + GST",
+    "feePctMax": 2,
+    "tenureMax": 8,
+    "amountMax": "Up to 85% of on-road price (new car)",
+    "prepay": "5% of principal outstanding",
+    "rateType": "Fixed (MCLR-based, no reset)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Fixed rate with no reset",
+    "Tenure up to 8 years"
+   ],
+   "cons": [
+    "5% foreclosure/part-payment charge",
+    "Processing fee up to 2%",
+    "Funds up to 85% of on-road price"
+   ],
+   "best": "Borrowers who want a long fixed-rate tenure and won't prepay",
+   "url": "https://www.axis.bank.in/loans/car-loan",
+   "news": "Axis Bank car loan rate"
+  },
+  {
+   "id": "bob-car-loan",
+   "name": "Bank of Baroda Car Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.6,
+    "rateMax": 11.3,
+    "feeText": "From Rs 500 + GST",
+    "feePctMax": null,
+    "tenureMax": 7,
+    "amountMax": "Rs 5 crore; up to 93% of on-road price (digital)",
+    "prepay": "Nil; Nil foreclosure on floating-rate loans to individuals (RBI rule)",
+    "rateType": "Floating (BRLLR-linked); fixed (MCLR) 8.50-11.20%",
+    "disbursal": null,
+    "cibilMin": 701
+   },
+   "pros": [
+    "Floating rate from 7.60%, linked to repo",
+    "Nil prepayment charges",
+    "Loans up to Rs 5 crore"
+   ],
+   "cons": [
+    "Rate depends heavily on credit score",
+    "Funding capped at about 93% of on-road price"
+   ],
+   "best": "Borrowers with good credit who want a low repo-linked rate and freedom to prepay",
+   "url": "https://bankofbaroda.bank.in/loans/vehicle-loan",
+   "news": "Bank of Baroda car loan rate"
+  },
+  {
+   "id": "canara-car-loan",
+   "name": "Canara Bank Car Loan",
+   "provider": "Canara Bank",
+   "kind": "Car loan",
+   "tags": [
+    "Car loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 7.45,
+    "rateMax": null,
+    "feeText": "0.25%, min Rs 1,000, max Rs 5,000",
+    "feePctMax": 0.25,
+    "tenureMax": 7,
+    "amountMax": "80-90% of on-road price",
+    "prepay": "No prepayment charges",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Starting rate 7.45%, among the lowest",
+    "Low processing fee capped at Rs 5,000",
+    "No prepayment charges"
+   ],
+   "cons": [
+    "Funds only 80-90% of on-road price",
+    "Rate range ceiling not published"
+   ],
+   "best": "Cost-conscious buyers who can pay a 10-20% down payment",
+   "url": "https://www.canarabank.bank.in",
+   "news": "Canara Bank car loan rate"
+  },
+  {
+   "id": "hdfc-two-wheeler-loan",
+   "name": "HDFC Bank Two-Wheeler Loan",
+   "provider": "HDFC Bank",
+   "kind": "Two-wheeler loan",
+   "tags": [
+    "Two-wheeler loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9.99,
+    "rateMax": 25.02,
+    "feeText": "Up to 2.5%; documentation up to 2.25%",
+    "feePctMax": 2.5,
+    "tenureMax": 4,
+    "amountMax": "Up to 100% funding on select models",
+    "prepay": "5% up to 24 months, 3% after",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Up to 100% funding on select models",
+    "Superbike loans at 9.55-17.10%"
+   ],
+   "cons": [
+    "Average actual rate 18.22% (Apr-Jun 2026)",
+    "Prepayment charges 3-5%",
+    "Processing plus documentation fees can be high"
+   ],
+   "best": "HDFC customers buying a premium bike or wanting full funding",
+   "url": "https://www.hdfc.bank.in/two-wheeler-loan",
+   "news": "HDFC Bank two wheeler loan rate"
+  },
+  {
+   "id": "idfc-first-two-wheeler-loan",
+   "name": "IDFC FIRST Bank Two-Wheeler Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Two-wheeler loan",
+   "tags": [
+    "Two-wheeler loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.5,
+    "rateMax": null,
+    "feeText": "Up to 5%",
+    "feePctMax": 5,
+    "tenureMax": 5,
+    "amountMax": "Rs 20 lakh; up to 100% of on-road price",
+    "prepay": "5% of principal outstanding",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Premium bikes from 8.5%",
+    "Up to 100% on-road funding",
+    "Tenure up to 60 months"
+   ],
+   "cons": [
+    "Commuter bikes from 18.99%",
+    "Processing fee up to 5%",
+    "5% foreclosure charge"
+   ],
+   "best": "Buyers of premium bikes who want high funding",
+   "url": "https://www.idfcfirst.bank.in/personal-banking/loans/two-wheeler-loan",
+   "news": "IDFC FIRST two wheeler loan"
+  },
+  {
+   "id": "bajaj-auto-credit-two-wheeler-loan",
+   "name": "Bajaj Auto Credit Two-Wheeler Loan",
+   "provider": "Bajaj Auto Credit",
+   "kind": "Two-wheeler loan",
+   "tags": [
+    "Two-wheeler loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 11.2,
+    "rateMax": 30,
+    "feeText": "Up to 5%; documentation up to Rs 1,000",
+    "feePctMax": 5,
+    "tenureMax": 5,
+    "amountMax": "Up to 100% of ex-showroom price",
+    "prepay": "3% of principal outstanding",
+    "rateType": "Fixed",
+    "disbursal": "Approval within 24 hours",
+    "cibilMin": null
+   },
+   "pros": [
+    "Approval within 24 hours",
+    "Up to 100% of ex-showroom price",
+    "Available at Bajaj dealerships"
+   ],
+   "cons": [
+    "Rates up to 30% p.a.",
+    "Processing fee up to 5%",
+    "3% prepayment charge"
+   ],
+   "best": "Bajaj bike buyers who want quick dealer-point financing",
+   "url": "https://www.bajajautocredit.com/two-wheeler-loan",
+   "news": "Bajaj Auto Credit two wheeler loan"
+  },
+  {
+   "id": "sbi-two-wheeler-loan",
+   "name": "SBI Two-Wheeler Loan",
+   "provider": "State Bank of India",
+   "kind": "Two-wheeler loan",
+   "tags": [
+    "Two-wheeler loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 11.7,
+    "rateMax": 15.7,
+    "feeText": "3% + GST (50% waiver for salary package customers)",
+    "feePctMax": 3,
+    "tenureMax": 5,
+    "amountMax": "Rs 50,000 to Rs 3 lakh; 85% LTV",
+    "prepay": "2% + GST within 2 years; nil after",
+    "rateType": "Fixed",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "0.50% rate concession for EVs",
+    "Narrow rate range from a PSU bank",
+    "No foreclosure charge after 2 years"
+   ],
+   "cons": [
+    "Maximum loan only Rs 3 lakh",
+    "3% processing fee",
+    "Funds only 85% of the price"
+   ],
+   "best": "SBI salary account holders buying a commuter bike or EV",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/auto-loans/sbi-two-wheeler-loan-scheme",
+   "news": "SBI two wheeler loan rate"
+  },
+  {
+   "id": "sbi-education-loan",
+   "name": "SBI Education Loan (Scholar / Global Ed-Vantage)",
+   "provider": "State Bank of India",
+   "kind": "Education loan",
+   "tags": [
+    "Education loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 6.9,
+    "rateMax": 9.4,
+    "feeText": "Scholar: nil; Global Ed-Vantage: Rs 10,000 + GST",
+    "feePctMax": null,
+    "tenureMax": 15,
+    "amountMax": "Rs 3 crore (Global Ed-Vantage); Rs 50 lakh without collateral",
+    "prepay": "Nil; Nil foreclosure on floating-rate loans to individuals (RBI rule)",
+    "rateType": "Floating (EBR-linked)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Scholar loans from 6.90% for premier institutes",
+    "Nil processing fee on Scholar",
+    "0.50% concession for girl students (not on GEV)",
+    "Up to Rs 3 crore for study abroad"
+   ],
+   "cons": [
+    "Collateral needed above Rs 50 lakh",
+    "Best rates limited to listed premier institutes"
+   ],
+   "best": "Students admitted to premier Indian institutes or studying abroad",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/education-loans",
+   "news": "SBI education loan rate"
+  },
+  {
+   "id": "bob-education-loan",
+   "name": "Bank of Baroda Education Loan (Baroda Scholar / Vidya)",
+   "provider": "Bank of Baroda",
+   "kind": "Education loan",
+   "tags": [
+    "Education loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 8.45,
+    "rateMax": 11.25,
+    "feeText": "Nil up to Rs 7.5 lakh; 1% (max Rs 10,000) above; refunded for premier institutes",
+    "feePctMax": 1,
+    "tenureMax": 15,
+    "amountMax": "Rs 150 lakh (premier institutes); Rs 60 lakh (others)",
+    "prepay": "Nil from own funds; 0.50% if taken over by another lender",
+    "rateType": "Floating (BRLLR-linked)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Scholar loans from 8.45% for premier institutes",
+    "No fee up to Rs 7.5 lakh",
+    "0.20% concession for girl students"
+   ],
+   "cons": [
+    "Collateral required above Rs 7.5 lakh",
+    "Baroda Vidya (school) loans at 11.25%"
+   ],
+   "best": "Students at premier institutes wanting a PSU bank loan with low fees",
+   "url": "https://bankofbaroda.bank.in/loans/education-loan/baroda-scholar",
+   "news": "Bank of Baroda education loan"
+  },
+  {
+   "id": "avanse-education-loan",
+   "name": "Avanse Education Loan",
+   "provider": "Avanse Financial Services",
+   "kind": "Education loan",
+   "tags": [
+    "Education loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 10,
+    "rateMax": 16.5,
+    "feeText": "1-2%",
+    "feePctMax": 2,
+    "tenureMax": 15,
+    "amountMax": "Rs 2 crore",
+    "prepay": null,
+    "rateType": "Floating (base rate + spread)",
+    "disbursal": "Sanction in about 3 days",
+    "cibilMin": null
+   },
+   "pros": [
+    "Fast sanction (about 3 days)",
+    "Loans up to Rs 2 crore",
+    "Covers courses and institutes banks may not fund"
+   ],
+   "cons": [
+    "Higher rates than banks (10-16.5%)",
+    "Processing fee up to 2%"
+   ],
+   "best": "Students who need quick sanction or whose course banks won't fund",
+   "url": "https://www.avanse.com/education-loan",
+   "news": "Avanse education loan"
+  },
+  {
+   "id": "credila-education-loan",
+   "name": "HDFC Credila Education Loan",
+   "provider": "Credila Financial Services",
+   "kind": "Education loan",
+   "tags": [
+    "Education loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 9.95,
+    "rateMax": null,
+    "feeText": "1.25% + GST origination fee",
+    "feePctMax": 1.25,
+    "tenureMax": 15,
+    "amountMax": "Rs 1.5 crore secured; Rs 75 lakh unsecured",
+    "prepay": "No prepayment penalty",
+    "rateType": "Floating (CBLR-linked)",
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "No prepayment penalty",
+    "Unsecured loans up to Rs 75 lakh",
+    "0% TCS on loan remittances"
+   ],
+   "cons": [
+    "Co-applicant usually required",
+    "1.25% + GST origination fee"
+   ],
+   "best": "Students going abroad who need a large loan without collateral",
+   "url": "https://www.credila.com/usa-study-loans",
+   "news": "HDFC Credila education loan"
+  },
+  {
+   "id": "axis-education-loan",
+   "name": "Axis Bank Education Loan",
+   "provider": "Axis Bank",
+   "kind": "Education loan",
+   "tags": [
+    "Education loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.75,
+    "rateMax": 13.95,
+    "feeText": "Up to 2% + GST; nil on takeover",
+    "feePctMax": 2,
+    "tenureMax": 15,
+    "amountMax": "Rs 1.5 crore (unsecured)",
+    "prepay": "Nil; Nil foreclosure on floating-rate loans to individuals (RBI rule)",
+    "rateType": "Repo-linked (repo + 3.5% onwards)",
+    "disbursal": "Pre-admission sanction available",
+    "cibilMin": null
+   },
+   "pros": [
+    "Unsecured loans up to Rs 1.5 crore",
+    "No collateral up to Rs 7.5 lakh",
+    "Sanction available before admission"
+   ],
+   "cons": [
+    "Processing fee up to 2%",
+    "Small loans (up to Rs 4 lakh) carry the highest spread"
+   ],
+   "best": "Students needing large unsecured loans or pre-admission sanction",
+   "url": "https://www.axis.bank.in/loans/education-loan",
+   "news": "Axis Bank education loan"
+  },
+  {
+   "id": "muthoot-gold-loan",
+   "name": "Muthoot Finance Gold Loan",
+   "provider": "Muthoot Finance",
+   "kind": "Gold loan",
+   "tags": [
+    "Gold loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 10.9,
+    "rateMax": null,
+    "feeText": null,
+    "feePctMax": null,
+    "tenureMax": 1,
+    "amountMax": "Rs 1,500 to Rs 5 crore",
+    "prepay": "Part payment and pre-closure allowed; charges not stated",
+    "rateType": "Fixed (scheme-based)",
+    "disbursal": "30-minute doorstep service",
+    "cibilMin": null
+   },
+   "pros": [
+    "Loans from Rs 1,500 up to Rs 5 crore",
+    "30-minute doorstep service",
+    "Flexible repayment: monthly interest, bullet or part payment"
+   ],
+   "cons": [
+    "Some schemes start at 22% p.a.",
+    "Up to 75% loan-to-value",
+    "Rate data on aggregator is dated (2025)"
+   ],
+   "best": "Borrowers who need small or large gold loans quickly, including at home",
+   "url": "https://www.muthootfinance.com/gold-loan",
+   "news": "Muthoot Finance gold loan"
+  },
+  {
+   "id": "manappuram-gold-loan",
+   "name": "Manappuram Gold Loan",
+   "provider": "Manappuram Finance",
+   "kind": "Gold loan",
+   "tags": [
+    "Gold loan",
+    "NBFC"
+   ],
+   "v": {
+    "rateMin": 9.9,
+    "rateMax": 26.82,
+    "feeText": null,
+    "feePctMax": null,
+    "tenureMax": 1,
+    "amountMax": "Rs 10,000 to Rs 5 crore",
+    "prepay": null,
+    "rateType": "Fixed (scheme-based)",
+    "disbursal": "Within minutes",
+    "cibilMin": null
+   },
+   "pros": [
+    "No credit score typically needed",
+    "Loan disbursed within minutes",
+    "Up to Rs 5 crore"
+   ],
+   "cons": [
+    "Annualised rates up to 26.82%",
+    "Short tenures (3-12 months)"
+   ],
+   "best": "Borrowers who need quick cash against gold, without a credit check",
+   "url": "https://www.manappuram.com/gold-loan",
+   "news": "Manappuram gold loan"
+  },
+  {
+   "id": "sbi-gold-loan",
+   "name": "SBI Gold Loan",
+   "provider": "State Bank of India",
+   "kind": "Gold loan",
+   "tags": [
+    "Gold loan",
+    "public sector bank"
+   ],
+   "v": {
+    "rateMin": 9.15,
+    "rateMax": null,
+    "feeText": "Rs 200-300 + GST (3/6-month bullet); 0.50% (min Rs 500, max Rs 10,000) + GST for 12-month bullet/EMI",
+    "feePctMax": 0.5,
+    "tenureMax": 3,
+    "amountMax": "Rs 50 lakh",
+    "prepay": null,
+    "rateType": null,
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Low starting rate (9.15%)",
+    "Very low fee for short bullet loans",
+    "Tenure up to 36 months"
+   ],
+   "cons": [
+    "Maximum loan Rs 50 lakh",
+    "Rate ceiling not published"
+   ],
+   "best": "Borrowers wanting a low-cost gold loan from a PSU bank",
+   "url": "https://sbi.bank.in/web/personal-banking/loans/gold-loan",
+   "news": "SBI gold loan rate"
+  },
+  {
+   "id": "hdfc-gold-loan",
+   "name": "HDFC Bank Gold Loan",
+   "provider": "HDFC Bank",
+   "kind": "Gold loan",
+   "tags": [
+    "Gold loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 9,
+    "rateMax": 19,
+    "feeText": "Up to 1% of disbursal + taxes; valuation Rs 350-1,500",
+    "feePctMax": 1,
+    "tenureMax": 4,
+    "amountMax": "Rs 1 crore",
+    "prepay": "2% within 30 days, 1% in 30-180 days, nil after 180 days",
+    "rateType": null,
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Tenure up to 4 years",
+    "No pre-closure charge after 180 days",
+    "Processing fee capped at 1%"
+   ],
+   "cons": [
+    "Actual rates up to 19% (Jan-Mar 2026)",
+    "Separate valuation charge"
+   ],
+   "best": "Borrowers wanting a longer-tenure bank gold loan",
+   "url": "https://www.hdfc.bank.in/gold-loan",
+   "news": "HDFC Bank gold loan rate"
+  },
+  {
+   "id": "icici-gold-loan",
+   "name": "ICICI Bank Gold Loan",
+   "provider": "ICICI Bank",
+   "kind": "Gold loan",
+   "tags": [
+    "Gold loan",
+    "private bank"
+   ],
+   "v": {
+    "rateMin": 8.55,
+    "rateMax": 16.5,
+    "feeText": "Up to 2% + taxes",
+    "feePctMax": 2,
+    "tenureMax": 1,
+    "amountMax": "Rs 3 crore",
+    "prepay": null,
+    "rateType": null,
+    "disbursal": null,
+    "cibilMin": null
+   },
+   "pros": [
+    "Rates from 8.55%",
+    "No income proof needed",
+    "Loans up to Rs 3 crore"
+   ],
+   "cons": [
+    "Processing fee up to 2%",
+    "Tenure 6-12 months"
+   ],
+   "best": "Borrowers needing a large short-term loan against gold from a bank",
+   "url": "https://www.icici.bank.in/personal-banking/loans/gold-loan",
+   "news": "ICICI Bank gold loan rate"
+  }
+ ],
+ "peer": "kind"
+}

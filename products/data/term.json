@@ -1,0 +1,677 @@
+{
+  "id": "term",
+  "title": "Term Life Insurance",
+  "asOf": "Oct 2026",
+  "intro": "Indian term plans compared on the insurer's FY2024-25 death-claim record and the plan's price, cover age and built-in benefits; get a quote for your own age and cover before buying.",
+  "newsQuery": "term insurance India",
+  "sources": [
+    "IRDAI Handbook on Indian Insurance Statistics 2024-25 (Part I, Tables 10, 15, 21, 37)",
+    "IRDAI Annual Report 2024-25",
+    "Insurer product pages, brochures and prospectuses (Oct 2026)",
+    "joinditto.in term plan reviews and Rs 1 crore premium comparisons (2026)"
+  ],
+  "groups": [
+    {
+      "id": "claims",
+      "label": "Claims"
+    },
+    {
+      "id": "strength",
+      "label": "Financial strength"
+    },
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "cover",
+      "label": "Cover & features"
+    },
+    {
+      "id": "service",
+      "label": "Service"
+    }
+  ],
+  "params": [
+    {
+      "k": "csrCount",
+      "label": "Claim settlement (by count)",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "claims",
+      "tip": "Insurer's individual death claims paid as % of claims decided, FY2024-25 (IRDAI). Industry: 97.82%. Insurer-wide, not plan-specific."
+    },
+    {
+      "k": "csrAmount",
+      "label": "Claim settlement (by amount)",
+      "fmt": "pct",
+      "better": "high",
+      "w": 3,
+      "g": "claims",
+      "tip": "Value of the insurer's individual death claims paid as % of value decided, FY2024-25 (IRDAI). Industry: 96.29%."
+    },
+    {
+      "k": "solvency",
+      "label": "Solvency ratio",
+      "fmt": "x",
+      "better": "high",
+      "w": 1,
+      "g": "strength",
+      "tip": "Insurer's available vs required capital as at 31 Mar 2025 (IRDAI). Legal minimum is 1.5x."
+    },
+    {
+      "k": "premium70",
+      "label": "Premium, Rs 1 Cr to age 70",
+      "fmt": "inr",
+      "better": "low",
+      "w": 3,
+      "g": "cost",
+      "tip": "Annual premium for a 30-year-old male non-smoker, Rs 1 crore cover to age 70, base cover without riders (Ditto comparisons or insurer brochure, 2026). Indicative only; individual life policies are GST-exempt since 22 Sep 2025."
+    },
+    {
+      "k": "premiumNote",
+      "label": "Other premium quotes",
+      "fmt": "text",
+      "better": null,
+      "w": 1,
+      "g": "cost",
+      "tip": "Other sourced premium examples on a different basis (age, cover-to age or sum assured stated). Not comparable across plans."
+    },
+    {
+      "k": "maxCoverAge",
+      "label": "Max cover age",
+      "fmt": "years",
+      "better": "high",
+      "w": 2,
+      "g": "cover",
+      "tip": "Highest age to which the plan can cover you, in its longest option (insurer documents or aggregators, Oct 2026)."
+    },
+    {
+      "k": "terminalIllness",
+      "label": "Terminal illness benefit",
+      "fmt": "yes",
+      "better": "high",
+      "w": 1,
+      "g": "cover",
+      "tip": "Whether the base plan pays (some or all of) the cover early on diagnosis of a terminal illness, at no extra cost."
+    },
+    {
+      "k": "rop",
+      "label": "Return of premium option",
+      "fmt": "yes",
+      "better": null,
+      "w": 1,
+      "g": "cover",
+      "tip": "Whether the plan offers a return-of-premium variant. ROP costs much more and returns premiums without interest."
+    },
+    {
+      "k": "riders",
+      "label": "Riders & add-ons",
+      "fmt": "text",
+      "better": null,
+      "w": 1,
+      "g": "cover",
+      "tip": "Optional riders or add-on covers named in insurer documents or aggregator reviews, Oct 2026."
+    },
+    {
+      "k": "complaints",
+      "label": "Complaints per 10,000 policies",
+      "fmt": "num",
+      "better": "low",
+      "w": 2,
+      "g": "service",
+      "tip": "Insurer's grievances in FY2024-25 per 10,000 individual policies in force at 31 Mar 2025; computed from IRDAI Tables 37 and 10."
+    }
+  ],
+  "items": [
+    {
+      "id": "hdfc-c2p-supreme-plus",
+      "name": "HDFC Life Click 2 Protect Supreme Plus",
+      "provider": "HDFC Life Insurance Company Ltd.",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "rop option",
+        "life stage increase"
+      ],
+      "v": {
+        "csrCount": 99.68,
+        "csrAmount": 97.96,
+        "solvency": 1.94,
+        "complaints": 5.73,
+        "premium70": 15240,
+        "premiumNote": "Older Click 2 Protect Supreme (being phased out): Rs 14,241/yr, age 30, Rs 1 Cr to 65 (Ditto)",
+        "maxCoverAge": 85,
+        "terminalIllness": null,
+        "rop": true,
+        "riders": "Health Plus (critical illness/cancer), LiveWell, Income Benefit on Accidental Disability"
+      },
+      "pros": [
+        "Insurer settled 99.68% of death claims by count in FY25",
+        "Return-of-premium add-on available",
+        "Premium break, Smart Exit and life-stage cover increase options"
+      ],
+      "cons": [
+        "Highest Rs 1 Cr to-70 premium in the comparison: Rs 15,240/yr (Ditto)",
+        "Cover only to age 85, no whole-life option",
+        "Insurer solvency of 1.94x (Mar 2025) is below the 2x many peers hold"
+      ],
+      "best": "Buyers who put claim record ahead of price",
+      "url": "https://www.hdfclife.com/term-insurance-plans/click-2-protect-supreme-plus",
+      "news": "HDFC Life Click 2 Protect Supreme"
+    },
+    {
+      "id": "icici-iprotect-smart-plus",
+      "name": "ICICI Pru iProtect Smart Plus",
+      "provider": "ICICI Prudential Life Insurance Company Ltd.",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "terminal illness",
+        "life stage increase"
+      ],
+      "v": {
+        "csrCount": 99.31,
+        "csrAmount": 98.06,
+        "solvency": 2.12,
+        "complaints": 6.65,
+        "premium70": 12968,
+        "premiumNote": null,
+        "maxCoverAge": 85,
+        "terminalIllness": true,
+        "rop": false,
+        "riders": "Accidental death & disability, critical illness (60 conditions), waiver of premium"
+      },
+      "pros": [
+        "Cheapest Rs 1 Cr to-70 quote in the comparison: Rs 12,968/yr (Ditto)",
+        "Full cover paid early on terminal illness (per Ditto)",
+        "Insurer settled 98.06% of death-claim value in FY25, above the 96.29% industry figure"
+      ],
+      "cons": [
+        "Cover only to age 85",
+        "No return-of-premium variant (sold as a separate iProtect Smart ROP plan)",
+        "Waiver of premium rider does not cover illness-related disability (per Ditto)"
+      ],
+      "best": "Value buyers who want a large insurer and built-in terminal illness cover",
+      "url": "https://www.iciciprulife.com/term-insurance-plans/iprotect-smart-plus-term-plan.html",
+      "news": "ICICI Prudential iProtect Smart"
+    },
+    {
+      "id": "axis-max-smart-term-plus",
+      "name": "Axis Max Life Smart Term Plan Plus",
+      "provider": "Axis Max Life Insurance Ltd.",
+      "kind": "Term plan",
+      "tags": [
+        "private",
+        "whole life",
+        "rop option",
+        "terminal illness"
+      ],
+      "v": {
+        "csrCount": 99.7,
+        "csrAmount": 97.39,
+        "solvency": 2.01,
+        "complaints": 9.25,
+        "premium70": 13581,
+        "premiumNote": "Another Ditto page lists Rs 12,296/yr for Rs 1 Cr, cover-to age not stated",
+        "maxCoverAge": 100,
+        "terminalIllness": true,
+        "rop": true,
+        "riders": "Waiver of Premium Plus, Critical Illness and Disability, Accidental Death and Dismemberment; Maternity Cover add-on for women"
+      },
+      "pros": [
+        "Insurer settled 99.7% of death claims by count in FY25",
+        "Whole-life variant covers to age 100",
+        "Seven variants including return of premium and Early ROP Plus"
+      ],
+      "cons": [
+        "Terminal illness early payout capped at Rs 1 Cr",
+        "Insurer complaints of 9.25 per 10,000 policies (FY25) are on the high side",
+        "Many variants can be confusing; no life-stage increase (per Ditto)"
+      ],
+      "best": "Buyers who want whole-life or ROP cover from a top claim payer",
+      "url": "https://www.axismaxlife.com/term-insurance-plans/smart-term-plan-plus",
+      "news": "Axis Max Life Smart Term Plan"
+    },
+    {
+      "id": "tata-sampoorna-raksha-promise",
+      "name": "Tata AIA Sampoorna Raksha Promise",
+      "provider": "Tata AIA Life Insurance Company Ltd.",
+      "kind": "Term plan",
+      "tags": [
+        "private",
+        "whole life",
+        "rop option",
+        "joint life"
+      ],
+      "v": {
+        "csrCount": 99.41,
+        "csrAmount": 98.38,
+        "solvency": 1.8,
+        "complaints": 7.88,
+        "premium70": 13750,
+        "premiumNote": null,
+        "maxCoverAge": 100,
+        "terminalIllness": true,
+        "rop": true,
+        "riders": "Comprehensive Protection, Comprehensive Health, Vitality Protect, Vitality Health"
+      },
+      "pros": [
+        "Cover to age 100, with return-of-premium and joint-life options",
+        "Insurer settled 98.38% of death-claim value in FY25",
+        "Rs 3 lakh fast payout on claim notification; 12-month premium deferral"
+      ],
+      "cons": [
+        "Terminal illness pays only 50% of cover early",
+        "Insurer solvency of 1.8x (Mar 2025) is among the lowest here",
+        "Ditto calls premiums on the higher side and mentions service delays"
+      ],
+      "best": "Long or joint cover with flexible premium options",
+      "url": "https://www.tataaia.com/life-insurance-plans/term-insurance/sampoorna-raksha-promise.html",
+      "news": "Tata AIA Sampoorna Raksha"
+    },
+    {
+      "id": "bajaj-etouch-ii",
+      "name": "Bajaj Life eTouch II",
+      "provider": "Bajaj Life Insurance Ltd. (formerly Bajaj Allianz Life)",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "whole life",
+        "rop option",
+        "terminal illness"
+      ],
+      "v": {
+        "csrCount": 99.29,
+        "csrAmount": 93.04,
+        "solvency": 3.59,
+        "complaints": 8.71,
+        "premium70": null,
+        "premiumNote": "Rs 12,299/yr, age 30, Rs 1 Cr to 65 (Ditto)",
+        "maxCoverAge": 99,
+        "terminalIllness": true,
+        "rop": true,
+        "riders": "New Critical Illness Benefit, Accidental Death Benefit II, Accidental Permanent Total/Partial Disability II, Family Protect, Care Plus"
+      },
+      "pros": [
+        "Highest insurer solvency here: 3.59x (Mar 2025)",
+        "Cover to age 99; full sum assured paid on terminal illness",
+        "Wide rider choice including critical illness"
+      ],
+      "cons": [
+        "Insurer settled only 93.04% of death-claim value in FY25 (industry 96.29%)",
+        "ROP variant costs roughly 80-100% more and stops at age 85"
+      ],
+      "best": "Long cover with many riders from a well-capitalised insurer",
+      "url": "https://www.bajajlifeinsurance.com/term-insurance-plans/etouch-term-insurance-plan.html",
+      "news": "Bajaj Life eTouch"
+    },
+    {
+      "id": "lic-new-tech-term",
+      "name": "LIC New Tech-Term (Plan 954)",
+      "provider": "Life Insurance Corporation of India",
+      "kind": "Online term plan",
+      "tags": [
+        "public",
+        "online",
+        "level or increasing cover"
+      ],
+      "v": {
+        "csrCount": 97.59,
+        "csrAmount": 96.08,
+        "solvency": 2.11,
+        "complaints": 2.76,
+        "premium70": null,
+        "premiumNote": "No Rs 1 Cr quote found; Ditto: Rs 28,860/yr at age 30 for Rs 2 Cr (older V01 version)",
+        "maxCoverAge": 80,
+        "terminalIllness": false,
+        "rop": false,
+        "riders": "LIC Accident Benefit Rider"
+      },
+      "pros": [
+        "Government-owned insurer with the fewest complaints among large peers: 2.76 per 10,000 (FY25)",
+        "Level or increasing cover; claim can be paid in instalments",
+        "Entry up to age 65"
+      ],
+      "cons": [
+        "Insurer claim settlement by count 97.59% in FY25, below the 97.82% industry figure",
+        "Only one rider and no terminal illness benefit",
+        "Premiums higher than private insurers; minimum cover Rs 50 lakh"
+      ],
+      "best": "Buyers who want a state-backed insurer for their term cover",
+      "url": "https://licindia.in",
+      "news": "LIC Tech Term"
+    },
+    {
+      "id": "lic-digi-term",
+      "name": "LIC Digi Term (Plan 876)",
+      "provider": "Life Insurance Corporation of India",
+      "kind": "Online term plan",
+      "tags": [
+        "public",
+        "online only"
+      ],
+      "v": {
+        "csrCount": 97.59,
+        "csrAmount": 96.08,
+        "solvency": 2.11,
+        "complaints": 2.76,
+        "premium70": null,
+        "premiumNote": "No Rs 1 Cr quote found; Ditto: Rs 23,660/yr at age 30 for Rs 2 Cr",
+        "maxCoverAge": 75,
+        "terminalIllness": false,
+        "rop": false,
+        "riders": "None (per Ditto)"
+      },
+      "pros": [
+        "Government-owned insurer with low complaints: 2.76 per 10,000 policies (FY25)",
+        "Level or increasing cover; claim can be paid in instalments"
+      ],
+      "cons": [
+        "Cover ends at age 75 and entry stops at 45",
+        "No riders and no terminal illness benefit",
+        "Insurer settled 96.08% of death-claim value in FY25, below the 96.29% industry figure"
+      ],
+      "best": "Younger buyers who want LIC cover bought fully online",
+      "url": "https://licindia.in",
+      "news": "LIC Digi Term"
+    },
+    {
+      "id": "sbi-eshield-next",
+      "name": "SBI Life eShield Next",
+      "provider": "SBI Life Insurance Company Ltd.",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "whole life",
+        "terminal illness",
+        "spouse cover"
+      ],
+      "v": {
+        "csrCount": 98.34,
+        "csrAmount": 95.26,
+        "solvency": 1.96,
+        "complaints": 2.41,
+        "premium70": null,
+        "premiumNote": "Rs 11,595/yr, age 30, 30-year term to age 60 (Ditto; sum assured not stated)",
+        "maxCoverAge": 100,
+        "terminalIllness": true,
+        "rop": false,
+        "riders": "Accidental Death, Accidental Total & Permanent Disability, Accidental Partial Permanent Disability; Better Half (spouse) benefit"
+      },
+      "pros": [
+        "Low insurer complaints: 2.41 per 10,000 policies (FY25)",
+        "Whole-life option to age 100; terminal illness benefit built in",
+        "Increasing cover and future-proofing options"
+      ],
+      "cons": [
+        "No critical illness or waiver-of-premium rider",
+        "Terminal illness payout capped at Rs 2 Cr",
+        "Insurer settled 95.26% of death-claim value in FY25 (industry 96.29%)"
+      ],
+      "best": "Simple whole-life term from a large bank-backed insurer",
+      "url": "https://www.sbilife.co.in",
+      "news": "SBI Life eShield Next"
+    },
+    {
+      "id": "kotak-e-term",
+      "name": "Kotak e-Term",
+      "provider": "Kotak Mahindra Life Insurance Company Ltd.",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "life stage increase"
+      ],
+      "v": {
+        "csrCount": 98.61,
+        "csrAmount": 95.88,
+        "solvency": 2.45,
+        "complaints": 7.61,
+        "premium70": null,
+        "premiumNote": "Rs 11,100/yr, age 30, Rs 1 Cr, cover-to age not stated (Ditto, Apr 2026)",
+        "maxCoverAge": 85,
+        "terminalIllness": false,
+        "rop": false,
+        "riders": "Critical Illness Plus (37 illnesses), Permanent Disability Benefit"
+      },
+      "pros": [
+        "Insurer solvency of 2.45x (Mar 2025)",
+        "Several payout options plus a life-stage cover increase",
+        "Special Exit Value returns premiums on exit at 60 (long terms)"
+      ],
+      "cons": [
+        "No terminal illness benefit",
+        "Waiver of premium only for disability, in the Life Secure option",
+        "Payout and plan options cannot be changed after purchase"
+      ],
+      "best": "Buyers who want flexible payout options",
+      "url": "https://www.kotaklife.com/term-insurance/kotak-e-term",
+      "news": "Kotak e-Term"
+    },
+    {
+      "id": "pnb-mera-term-plus",
+      "name": "PNB MetLife Mera Term Plan Plus",
+      "provider": "PNB MetLife India Insurance Company Ltd.",
+      "kind": "Term plan",
+      "tags": [
+        "private",
+        "whole life",
+        "rop option",
+        "spouse cover"
+      ],
+      "v": {
+        "csrCount": 99.57,
+        "csrAmount": 99.3,
+        "solvency": 1.72,
+        "complaints": 11.75,
+        "premium70": null,
+        "premiumNote": "Rs 10,400/yr excl. GST, age 30, Rs 1 Cr to age 60, Life option; Rs 23,200 with ROP (brochure)",
+        "maxCoverAge": 99,
+        "terminalIllness": false,
+        "rop": true,
+        "riders": "Accidental Death Benefit Rider Plus, Serious Illness, Accidental Disability Benefit, Critical Illness"
+      },
+      "pros": [
+        "Insurer settled 99.3% of death-claim value in FY25, among the best",
+        "Lowest official Rs 1 Cr to-60 quote found: Rs 10,400/yr (brochure)",
+        "Cover to 99; spouse cover, child education benefit and limited pay"
+      ],
+      "cons": [
+        "Terminal illness only in the Life Plus options, not the base Life option",
+        "High insurer complaints: 11.75 per 10,000 policies (FY25)",
+        "ROP and Life Plus Health options stop at age 75"
+      ],
+      "best": "Price-conscious buyers who want a strong claim-value record",
+      "url": "https://www.pnbmetlife.com/insurance-plans/family-protection/pnb-metlife-mera-term-plan-plus.html",
+      "news": "PNB MetLife term plan"
+    },
+    {
+      "id": "absli-salaried-term",
+      "name": "ABSLI Salaried Term Plan",
+      "provider": "Aditya Birla Sun Life Insurance Company Ltd.",
+      "kind": "Term plan for salaried",
+      "tags": [
+        "private",
+        "salaried only",
+        "rop option",
+        "terminal illness"
+      ],
+      "v": {
+        "csrCount": 98.65,
+        "csrAmount": 96.22,
+        "solvency": 1.88,
+        "complaints": 6.42,
+        "premium70": null,
+        "premiumNote": "Brochure: Rs 15,400/yr excl. GST, age 35, Rs 1 Cr to 65; Rs 27,100 with ROP",
+        "maxCoverAge": 75,
+        "terminalIllness": true,
+        "rop": true,
+        "riders": "Accidental Death and Disability, ADB Rider Plus, Critical Illness, Surgical Care, Hospital Care, Waiver of Premium; Accelerated CI (42 illnesses)"
+      },
+      "pros": [
+        "Terminal illness built into all options (50% paid early, waives premiums)",
+        "Four payout choices including ROP and rising income",
+        "First-year discount of up to 9%; wide rider list"
+      ],
+      "cons": [
+        "Salaried people only",
+        "Cover ends at 75, no whole-life option",
+        "Insurer solvency of 1.88x (Mar 2025) is below most peers"
+      ],
+      "best": "Salaried buyers who want riders and income payouts",
+      "url": "https://lifeinsurance.adityabirlacapital.com/term-insurance/absli-salaried-term-plan/",
+      "news": "Aditya Birla Sun Life term plan"
+    },
+    {
+      "id": "canara-hsbc-smart360",
+      "name": "Canara HSBC iSelect Smart360 Term Plan",
+      "provider": "Canara HSBC Life Insurance Company Ltd.",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "whole life",
+        "rop option",
+        "life stage increase"
+      ],
+      "v": {
+        "csrCount": 99.43,
+        "csrAmount": 99.08,
+        "solvency": 2.06,
+        "complaints": 10.84,
+        "premium70": 13296,
+        "premiumNote": "Brochure figure excl. GST, physical medical; ROP option Rs 29,347/yr on same basis",
+        "maxCoverAge": 99,
+        "terminalIllness": false,
+        "rop": true,
+        "riders": "Built-in optional covers: accidental death, terminal illness, accidental disability, critical illness, child care, Block Your Premium"
+      },
+      "pros": [
+        "Insurer settled 99.08% of death-claim value in FY25",
+        "Cover to 99; increase cover at marriage, childbirth or home purchase",
+        "Brochure publishes premium tables"
+      ],
+      "cons": [
+        "Terminal illness cover costs extra",
+        "High insurer complaints: 10.84 per 10,000 policies (FY25)",
+        "Replaces the withdrawn iSelect Star plan"
+      ],
+      "best": "Buyers who want to raise cover at life events",
+      "url": "https://www.canarahsbclife.com/term-insurance/iselect-smart360-term-plan",
+      "news": "Canara HSBC Life term plan"
+    },
+    {
+      "id": "bandhan-iterm-prime",
+      "name": "Bandhan Life iTerm Prime",
+      "provider": "Bandhan Life Insurance Ltd. (formerly Aegon Life)",
+      "kind": "Online term plan",
+      "tags": [
+        "private",
+        "online",
+        "low cost"
+      ],
+      "v": {
+        "csrCount": 99.73,
+        "csrAmount": 99.8,
+        "solvency": 2.69,
+        "complaints": 10.94,
+        "premium70": null,
+        "premiumNote": "Rs 11,558/yr, age 30, Rs 1 Cr to 65 (Ditto)",
+        "maxCoverAge": 85,
+        "terminalIllness": false,
+        "rop": false,
+        "riders": "Accidental Death rider only"
+      },
+      "pros": [
+        "Best insurer claim record here: 99.73% by count and 99.8% by value (FY25)",
+        "Low price per Ditto",
+        "Special Exit Value returns base premiums after age 55"
+      ],
+      "cons": [
+        "Only one rider; no terminal illness, critical illness or waiver of premium",
+        "Small insurer: AUM of Rs 4,761 crore (Mar 2025)",
+        "High insurer complaints: 10.94 per 10,000 policies (FY25)"
+      ],
+      "best": "Plain, low-cost cover where claim record matters most",
+      "url": "https://www.bandhanlife.com/term-insurance-plans/iterm-prime",
+      "news": "Bandhan Life term insurance"
+    },
+    {
+      "id": "edelweiss-zindagi-protect-plus",
+      "name": "Edelweiss Life Zindagi Protect Plus",
+      "provider": "Edelweiss Life Insurance Company Ltd. (formerly Edelweiss Tokio)",
+      "kind": "Term plan",
+      "tags": [
+        "private",
+        "whole life",
+        "rop option",
+        "spouse cover"
+      ],
+      "v": {
+        "csrCount": 99.29,
+        "csrAmount": 98.34,
+        "solvency": 1.81,
+        "complaints": 24.21,
+        "premium70": null,
+        "premiumNote": "Brochure: Rs 20,702/yr excl. GST, age 35, cover to 80, before 6% medical discount; Rs 44,860 with ROP",
+        "maxCoverAge": 100,
+        "terminalIllness": false,
+        "rop": true,
+        "riders": "Accidental Death Benefit, Accidental Total and Permanent Disability, Critical Illness, Waiver of Premium"
+      },
+      "pros": [
+        "Cover to age 100 with an ROP option",
+        "Spouse and child cover; skip up to 8 premiums",
+        "Insurer settled 98.34% of death-claim value in FY25"
+      ],
+      "cons": [
+        "No terminal illness benefit",
+        "Highest insurer complaints here: 24.21 per 10,000 policies (FY25)",
+        "Replaces the discontinued Zindagi Plus; no age-30 premium published"
+      ],
+      "best": "Family cover with premium-break flexibility",
+      "url": "https://www.edelweisslife.in/zindagi-protect-plus",
+      "news": "Edelweiss Life term insurance"
+    },
+    {
+      "id": "aviva-signature-3d",
+      "name": "Aviva Signature 3D Term Plan",
+      "provider": "Aviva Life Insurance Company India Ltd.",
+      "kind": "Term plan",
+      "tags": [
+        "private",
+        "whole life",
+        "rop option"
+      ],
+      "v": {
+        "csrCount": null,
+        "csrAmount": null,
+        "solvency": null,
+        "complaints": null,
+        "premium70": null,
+        "premiumNote": null,
+        "maxCoverAge": 99,
+        "terminalIllness": false,
+        "rop": true,
+        "riders": "Critical Illness, Cancer Cardio, Accidental Casualty"
+      },
+      "pros": [
+        "Limited-pay whole-life option to age 99",
+        "Return-of-premium option (3D-TROP)"
+      ],
+      "cons": [
+        "Terminal illness only in the 3D-Accelerated option, 50% capped at Rs 1 Cr",
+        "No sourced premium or insurer claim figures in this dataset"
+      ],
+      "best": "Buyers comparing a whole-life ROP option from a smaller insurer",
+      "url": "https://www.avivaindia.com/term-insurance-plans/aviva-signature-3d-term-plan",
+      "news": "Aviva Life Insurance India"
+    }
+  ]
+}

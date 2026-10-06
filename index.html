@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Growebtek AI Stock &amp; Fund Analyzer</title>
-<meta name="description" content="Growebtek AI Stock & Fund Analyzer: live Indian and US market reports, stock analysis and comparison, mutual fund analysis and comparison.">
+<title>Growebtek AI MoneyTrade</title>
+<meta name="description" content="Growebtek AI MoneyTrade: live Indian and US market reports, stock analysis and comparison, mutual fund analysis and comparison.">
 <meta name="theme-color" content="#6d5efc">
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="assets/icon.png">
@@ -54,6 +54,10 @@
 .t2{background:linear-gradient(135deg,#3b82f6,#6366f1);--sh:rgba(99,102,241,.3)}
 .t3{background:linear-gradient(135deg,#8b5cf6,#ec4899);--sh:rgba(168,85,247,.3)}
 .t4{background:linear-gradient(135deg,#10b981,#0ea5e9);--sh:rgba(16,185,129,.3)}
+.t5{background:linear-gradient(135deg,#f59e0b,#ea580c);--sh:rgba(245,158,11,.3)}
+.t6{background:linear-gradient(135deg,#06b6d4,#2563eb);--sh:rgba(6,182,212,.3)}
+.t7{background:linear-gradient(135deg,#22c55e,#0d9488);--sh:rgba(34,197,94,.3)}
+.t8{background:linear-gradient(135deg,#e11d48,#7c3aed);--sh:rgba(225,29,72,.3)}
 /* admin */
 .admin{margin-top:30px}
 .admin-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
@@ -84,7 +88,7 @@
 </head>
 <body class="gw">
 <div id="app"></div>
-<footer class="gw-foot">© <span id="yr"></span> Growebtek AI Stock &amp; Fund Analyzer · For information and education only · Not investment advice</footer>
+<footer class="gw-foot">© <span id="yr"></span> Growebtek AI MoneyTrade · For information and education only · Not investment advice</footer>
 <script src="config.js"></script>
 <script src="app.js"></script>
 <script>
@@ -108,9 +112,9 @@
       '<div class="gw-bar"><div class="gw-bar-in">' + GW.logoHtml('Smart market insights') + '</div></div>' +
       '<div class="gw-wrap">' +
       (msg ? '<div class="banner" role="status">' + esc(msg) + '</div>' : '') +
-      '<section class="hero"><img class="hero-logo" src="assets/logo.png" alt="Growebtek IT Solutions"><h1>Growebtek <span>AI Stock &amp; Fund Analyzer</span></h1>' +
-      '<p>Live Indian and US market reports, deep stock analysis and mutual fund insights. Clear, colourful and always up to date.</p>' +
-      '<div class="feat"><span class="gw-chip pink">🇮🇳 India report</span><span class="gw-chip indigo">🇺🇸 US report</span><span class="gw-chip amber">📊 Stock analyzer</span><span class="gw-chip green">💰 Fund analyzer</span></div></section>' +
+      '<section class="hero"><img class="hero-logo" src="assets/logo.png" alt="Growebtek IT Solutions"><h1>Growebtek <span>AI MoneyTrade</span></h1>' +
+      '<p>Live Indian and US market reports, stock, fund and crypto analysis, plus insurance, investment, loan and credit card comparisons. Clear, colourful and always up to date.</p>' +
+      '<div class="feat"><span class="gw-chip pink">🇮🇳 India report</span><span class="gw-chip indigo">🇺🇸 US report</span><span class="gw-chip amber">📊 Stock analyzer</span><span class="gw-chip green">💰 Fund analyzer</span><span class="gw-chip amber">🪙 Crypto</span><span class="gw-chip indigo">🛡️ Insurance</span><span class="gw-chip green">🏦 Investment</span><span class="gw-chip pink">💳 Loans &amp; cards</span></div></section>' +
       '<div class="auth">' +
       '<section class="gw-card devcard" aria-labelledby="devh"><h2 id="devh">Your Device ID</h2>' +
       '<p>This ID is unique to this device and browser.</p>' +
@@ -160,7 +164,11 @@
     ['india/', 't1', '🇮🇳', 'India Stock Market Report', 'Nifty, Sensex, sectors, movers, news and outlook — live.'],
     ['us/', 't2', '🇺🇸', 'US Stock Market Report', 'S&P 500, Dow, Nasdaq, sectors, movers, news and outlook.'],
     ['analyzer/', 't3', '📊', 'Stock Analyzer', 'Full analysis of any stock worldwide, plus side-by-side comparison.'],
-    ['funds/', 't4', '💰', 'Mutual Fund Analyzer', 'Returns, risk, consistency and comparison of mutual funds.']
+    ['funds/', 't4', '💰', 'Mutual Fund Analyzer', 'Returns, risk, consistency and comparison of mutual funds.'],
+    ['crypto/', 't5', '🪙', 'Crypto Analysis', 'Live crypto market report, coin analyzer and comparison with news.'],
+    ['insurance/', 't6', '🛡️', 'Insurance Analyzer', 'Health, vehicle, life, term and travel plans compared on claims and cost.'],
+    ['invest/', 't7', '🏦', 'Investment', 'ULIPs, fixed deposits, schemes, bonds and gold compared on returns and safety.'],
+    ['loans/', 't8', '💳', 'Loan & Credit Card', 'Loans and credit cards compared on rates, fees and rewards.']
   ];
   function renderDash(s) {
     var isAdmin = s.role === 'admin';

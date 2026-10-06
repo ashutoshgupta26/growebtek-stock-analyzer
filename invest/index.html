@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Investment Options · Growebtek AI MoneyTrade</title>
+<meta name="description" content="Analyze ULIPs, fixed deposits, government schemes, bonds and gold on returns, safety, cost and tax, with the latest news.">
+<meta name="theme-color" content="#6d5efc">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../funds/funds.css">
+<link rel="stylesheet" href="../kit/kit.css">
+<link rel="stylesheet" href="../products/engine.css">
+</head>
+<body class="gw">
+<main class="gw-wrap fx">
+  <section class="fx-hero">
+    <div>
+      <h1>Investment <span>Options</span></h1>
+      <p>Analyze ULIPs, fixed deposits, government schemes, bonds and gold on returns, safety, cost and tax, with the latest news.</p>
+    </div>
+  </section>
+
+  <section class="gw-card fx-ctl" aria-label="Investment Options">
+    <div class="px-cats" id="cats" role="tablist" aria-label="Category"></div>
+    <div class="fx-top">
+      <div class="fx-seg" id="tabs" role="tablist" aria-label="Section">
+        <button type="button" role="tab" data-tab="report" aria-selected="true">Report</button>
+        <button type="button" role="tab" data-tab="analyze" aria-selected="false">Analyze</button>
+        <button type="button" role="tab" data-tab="compare" aria-selected="false">Compare<span class="cnt" id="cmpCnt" hidden>0</span></button>
+      </div>
+    </div>
+    <div id="searchBox" hidden>
+      <div class="fx-search" style="margin-top:12px">
+        <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input class="gw-input" id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" aria-autocomplete="list" aria-controls="dd" role="combobox" aria-expanded="false">
+        <ul class="fx-dd" id="dd" role="listbox" hidden></ul>
+      </div>
+      <div class="fx-picks" id="picks"></div>
+      <div class="fx-tray" id="tray" hidden></div>
+    </div>
+  </section>
+
+  <div id="view" aria-live="polite"></div>
+
+  <p class="gw-foot"><b>Not investment advice.</b> Rates and returns come from official and provider websites and are for education only. They change often and past returns do not guarantee future returns. Confirm the current rate with the provider before you invest.</p>
+</main>
+<script>window.PX = { sub: 'Investment', key: 'inv', v: 1, cats: [{id:'ulip',label:'ULIP',icon:'📈'},{id:'fd',label:'Fixed Deposit',icon:'🏦'},{id:'schemes',label:'Schemes',icon:'🏛️'},{id:'bonds',label:'Bonds',icon:'📜'},{id:'gold',label:'Gold',icon:'🪙'}], calc: {fd:{type:'dep',rate:'r1y'},schemes:{type:'dep',rate:'rate'},bonds:{type:'dep',rate:'yield'}} };</script>
+<script src="../config.js"></script>
+<script src="../app.js"></script>
+<script src="../kit/kit.js"></script>
+<script src="../products/engine.js"></script>
+</body>
+</html>

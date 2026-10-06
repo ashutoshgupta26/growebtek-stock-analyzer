@@ -1,0 +1,522 @@
+{
+  "id": "ulip",
+  "title": "ULIPs (Unit Linked Insurance Plans)",
+  "asOf": "Oct 2026",
+  "intro": "ULIPs combine life cover with market-linked investing; what matters most is total charges (allocation, admin, mortality, fund management), fund choice and track record, and how freely you can switch, all within a 5-year lock-in.",
+  "newsQuery": "ULIP India",
+  "sources": [
+    "Insurer product pages: HDFC Life, Axis Max Life, Bajaj Life, SBI Life, Tata AIA (Oct 2026)",
+    "Policybazaar ULIP plan pages and insurer fund listings (5 Oct 2026)",
+    "Ditto Insurance ULIP plan reviews (Oct 2026)",
+    "IRDAI ULIP regulations (FMC cap 1.35% p.a.)"
+  ],
+  "groups": [
+    {
+      "id": "cost",
+      "label": "Cost"
+    },
+    {
+      "id": "returns",
+      "label": "Returns"
+    },
+    {
+      "id": "flexibility",
+      "label": "Flexibility"
+    },
+    {
+      "id": "benefits",
+      "label": "Extra benefits"
+    }
+  ],
+  "params": [
+    {
+      "k": "pac",
+      "label": "Premium allocation charge",
+      "fmt": "text",
+      "better": null,
+      "g": "cost",
+      "tip": "Share of each premium deducted before investing (Oct 2026)."
+    },
+    {
+      "k": "fmc",
+      "label": "Fund management charge (max)",
+      "fmt": "pct",
+      "better": "low",
+      "w": 3,
+      "g": "cost",
+      "tip": "Highest yearly FMC on equity funds; IRDAI cap is 1.35% p.a. (Oct 2026)."
+    },
+    {
+      "k": "mortality",
+      "label": "Mortality charge",
+      "fmt": "text",
+      "better": null,
+      "g": "cost",
+      "tip": "Cost of life cover, deducted monthly from units; some plans return it at maturity (Oct 2026)."
+    },
+    {
+      "k": "adminCharge",
+      "label": "Policy admin charge",
+      "fmt": "text",
+      "better": null,
+      "g": "cost",
+      "tip": "Monthly policy administration charge as published (Oct 2026)."
+    },
+    {
+      "k": "funds",
+      "label": "Fund options",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "flexibility",
+      "tip": "Number of funds you can pick in the self-managed option (Oct 2026)."
+    },
+    {
+      "k": "bestFund5y",
+      "label": "Best equity fund, 5-yr return",
+      "fmt": "pct",
+      "better": "high",
+      "w": 2,
+      "g": "returns",
+      "tip": "Best 5-yr annualised return among the insurer's equity ULIP funds on Policybazaar, 5 Oct 2026; check the fund is offered in this plan."
+    },
+    {
+      "k": "freeSwitches",
+      "label": "Free switches a year",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "flexibility",
+      "tip": "Free fund switches per policy year (Oct 2026); blank where switches are unlimited and free, see pros."
+    },
+    {
+      "k": "lockin",
+      "label": "Lock-in",
+      "fmt": "years",
+      "better": null,
+      "g": "flexibility",
+      "tip": "Mandatory 5-year lock-in for all ULIPs (IRDAI)."
+    },
+    {
+      "k": "loyalty",
+      "label": "Loyalty / bonus additions",
+      "fmt": "text",
+      "better": null,
+      "g": "benefits",
+      "tip": "Extra units added for staying invested, as published (Oct 2026)."
+    }
+  ],
+  "items": [
+    {
+      "id": "hdfc-click2invest-plus",
+      "name": "HDFC Life Click 2 Invest Plus",
+      "provider": "HDFC Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "low cost",
+        "zero allocation charge"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly, based on age and sum at risk",
+        "adminCharge": "Nil in Growth option; 0.20-0.25% of annual premium per month in Loyalty options, capped at Rs500/month",
+        "funds": 12,
+        "bestFund5y": 12.94,
+        "freeSwitches": 4,
+        "lockin": 5,
+        "loyalty": "Loyalty option adds a Fund Value Enhancer and returns admin charges after year 25"
+      },
+      "pros": [
+        "No premium allocation charge and no admin charge in the Growth option",
+        "Discovery Fund: 5y return 12.94% a year (as of 5 Oct 2026)",
+        "12 funds plus 4 free partial withdrawals a year after year 5"
+      ],
+      "cons": [
+        "Only 4 free switches a year (then Rs250, or Rs25 online)",
+        "FMC at the 1.35% cap on all funds except the discontinued policy fund"
+      ],
+      "best": "Low-cost online buyers who want a simple, self-managed ULIP",
+      "url": "https://www.hdfclife.com/ulip-plans/click-2-invest-plus",
+      "news": "HDFC Life Click 2 Invest"
+    },
+    {
+      "id": "icici-signature-online",
+      "name": "ICICI Pru Signature Online",
+      "provider": "ICICI Prudential Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "return of charges",
+        "wealth boosters"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly; returned at maturity (not in Whole Life option)",
+        "adminCharge": "Monthly; returned at maturity (rate not confirmed)",
+        "funds": null,
+        "bestFund5y": 10.9,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Wealth Boosters every 5th year from year 10 (Policybazaar: 3.25% of average fund value)"
+      },
+      "pros": [
+        "Mortality and admin charges returned at maturity",
+        "Opportunities Fund: 5y return 10.9% a year (as of 5 Oct 2026)",
+        "Unlimited free switches under the Fixed Portfolio strategy"
+      ],
+      "cons": [
+        "Wealth Booster rates differ between sources",
+        "Return of charges not available in the Whole Life option"
+      ],
+      "best": "Long-term investors who will hold to maturity to get charges back",
+      "url": "https://www.iciciprulife.com/ulip-plans/unit-linked-insurance-plans/icici-pru-ulip-signature.html",
+      "news": "ICICI Prudential Signature ULIP"
+    },
+    {
+      "id": "bajaj-goal-assure-iv",
+      "name": "Bajaj Life Goal Assure IV",
+      "provider": "Bajaj Life Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "return of mortality",
+        "loyalty additions",
+        "many funds"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly; returned at maturity",
+        "adminCharge": "1.80% of annual premium in year 1, 3% in years 2-10, nil after; capped at Rs500/month (Ditto)",
+        "funds": 19,
+        "bestFund5y": 9.65,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Loyalty Additions at years 10, 15, 20 (1%, 1.5%, 2% of average fund value, Ditto) plus 2% Fund Booster at maturity"
+      },
+      "pros": [
+        "19 funds and 4 portfolio strategies",
+        "Unlimited free switches",
+        "Accelerator Mid-Cap Fund II: 5y return 9.65% a year (as of 5 Oct 2026)",
+        "Mortality charges returned at maturity"
+      ],
+      "cons": [
+        "Admin charge is high in years 1-10",
+        "Minimum premium Rs3,000 a month"
+      ],
+      "best": "Investors who want many fund choices and loyalty additions over 15-20 years",
+      "url": "https://www.bajajlifeinsurance.com/ulip-plans/financial-life-goals-assure.html",
+      "news": "Bajaj Life Goal Assure"
+    },
+    {
+      "id": "axis-max-osp-plus",
+      "name": "Axis Max Life Online Savings Plan Plus",
+      "provider": "Axis Max Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "many funds",
+        "return of admin charges"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly, on sum at risk, by attained age",
+        "adminCharge": "0.30% of annual premium per month (0.25% if premium is Rs10 lakh or more), capped at Rs500/month",
+        "funds": 28,
+        "bestFund5y": 18.21,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "125%-150% of admin charges returned at maturity"
+      },
+      "pros": [
+        "28 funds, the widest choice here",
+        "Unlimited free switches and premium redirection",
+        "High Growth Fund: 5y return 18.21% a year (as of 5 Oct 2026)",
+        "Admin charges returned at maturity (150% for 15-year term)"
+      ],
+      "cons": [
+        "Monthly admin charge through the policy term",
+        "Plan offers High Growth Fund II; the 5-year figure is for the older High Growth Fund"
+      ],
+      "best": "Online buyers who want the most fund choice and free switching",
+      "url": "https://www.axismaxlife.com/investment-plans/online-savings-plan-plus",
+      "news": "Axis Max Life Online Savings Plan"
+    },
+    {
+      "id": "sbi-ewealth-plus",
+      "name": "SBI Life eWealth Plus",
+      "provider": "SBI Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "auto asset allocation",
+        "low entry"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly",
+        "adminCharge": null,
+        "funds": 12,
+        "bestFund5y": 13.07,
+        "freeSwitches": 2,
+        "lockin": 5,
+        "loyalty": "None"
+      },
+      "pros": [
+        "No premium allocation charge",
+        "Midcap Fund: 5y return 13.07% a year (as of 5 Oct 2026)",
+        "Growth Strategy offers automatic asset allocation",
+        "Starts at Rs3,000 a month"
+      ],
+      "cons": [
+        "Only 2 free switches a year (Rs100 per extra switch)",
+        "No loyalty additions",
+        "Admin charge amount differs between sources"
+      ],
+      "best": "First-time ULIP buyers who want a low-cost online plan from a large insurer",
+      "url": "https://www.sbilife.co.in/ulip/ewealth-plus",
+      "news": "SBI Life eWealth Plus"
+    },
+    {
+      "id": "kotak-e-invest",
+      "name": "Kotak e-Invest",
+      "provider": "Kotak Mahindra Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "loyalty additions",
+        "many switches"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": 1.35,
+        "mortality": "Monthly",
+        "adminCharge": "Rs400 a year",
+        "funds": null,
+        "bestFund5y": 11.69,
+        "freeSwitches": 12,
+        "lockin": 5,
+        "loyalty": "3% of annual premium each year from year 6"
+      },
+      "pros": [
+        "12 free switches a year",
+        "Low flat admin charge of Rs400 a year",
+        "Frontline Equity Fund: 5y return 11.69% a year (as of 5 Oct 2026)"
+      ],
+      "cons": [
+        "Fund count differs between sources",
+        "Switches beyond 12 cost Rs250 each"
+      ],
+      "best": "Active investors who switch funds often and want a low flat admin fee",
+      "url": "https://www.policybazaar.com/insurance-companies/kotak-life-ulip-plans/e-invest-plan/",
+      "news": "Kotak Life e-Invest"
+    },
+    {
+      "id": "absl-wealth-max",
+      "name": "ABSL Wealth Max",
+      "provider": "Aditya Birla Sun Life Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "guaranteed additions"
+      ],
+      "v": {
+        "pac": null,
+        "fmc": null,
+        "mortality": "Monthly",
+        "adminCharge": null,
+        "funds": null,
+        "bestFund5y": 15.77,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Guaranteed Additions of 0.25% of average fund value in years 6-10 and 0.60% from year 11"
+      },
+      "pros": [
+        "Guaranteed Additions every year from year 6",
+        "Multiplier Fund: 5y return 15.77% a year (as of 5 Oct 2026)"
+      ],
+      "cons": [
+        "Charges not published on the pages checked",
+        "Multiplier Fund availability in this plan not confirmed"
+      ],
+      "best": "Long-horizon investors who value yearly guaranteed additions",
+      "url": "https://www.policybazaar.com/insurance-companies/birla-sun-life-ulip-plans/wealth-max-plan/",
+      "news": "Aditya Birla Sun Life Wealth Max"
+    },
+    {
+      "id": "edelweiss-wealth-ultima",
+      "name": "Edelweiss Life Wealth Ultima",
+      "provider": "Edelweiss Life Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "guaranteed additions",
+        "booster additions",
+        "unlimited switches"
+      ],
+      "v": {
+        "pac": "6% in year 1, 4% in years 2-5, nil from year 6",
+        "fmc": 1.35,
+        "mortality": "Monthly",
+        "adminCharge": "1.65% a year of annual premium in years 1-5, nil from year 6",
+        "funds": 7,
+        "bestFund5y": 12.13,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Guaranteed additions 0.25% and loyalty additions 0.15% of average fund value yearly from year 6; boosters 2.75% (years 10, 15) and 3.5% (year 20 onward)"
+      },
+      "pros": [
+        "Three layers of additions: guaranteed, loyalty and booster",
+        "Unlimited free switches (minimum Rs5,000 per switch)",
+        "Equity Mid Cap Fund: 5y return 12.13% a year (as of 5 Oct 2026)"
+      ],
+      "cons": [
+        "Allocation charge of 4-6% in the first five years",
+        "Admin charge of 1.65% a year in years 1-5",
+        "Only 7 funds"
+      ],
+      "best": "Buyers who will stay 15-20 years to collect booster additions",
+      "url": "https://www.policybazaar.com/insurance-companies/edelweiss-life-ulip-plans/wealth-ultima-plan/",
+      "news": "Edelweiss Life Wealth Ultima"
+    },
+    {
+      "id": "canara-hsbc-invest-4g",
+      "name": "Canara HSBC Invest 4G",
+      "provider": "Canara HSBC Life Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "return of mortality",
+        "loyalty additions",
+        "portfolio strategies"
+      ],
+      "v": {
+        "pac": null,
+        "fmc": null,
+        "mortality": "Monthly; returned at maturity under the Life Option",
+        "adminCharge": null,
+        "funds": 7,
+        "bestFund5y": 14.49,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Loyalty Additions every 5th year (0.5% of average fund value) plus Wealth Boosters"
+      },
+      "pros": [
+        "Mortality charges returned at maturity (Life Option)",
+        "Emerging Leaders Equity Fund: 5y return 14.49% a year (as of 5 Oct 2026)",
+        "4 portfolio management options including Return Protector"
+      ],
+      "cons": [
+        "Only 7 funds",
+        "Charges not published on the pages checked",
+        "Minimum premium Rs5,000 a month"
+      ],
+      "best": "Investors who want ready-made portfolio strategies and charge refunds",
+      "url": "https://www.policybazaar.com/insurance-companies/canara-hsbc-ulip-plans/obc-invest-4g-plan/",
+      "news": "Canara HSBC Life Invest 4G"
+    },
+    {
+      "id": "bandhan-iinvest",
+      "name": "Bandhan Life iInvest",
+      "provider": "Bandhan Life Insurance",
+      "kind": "Online ULIP",
+      "tags": [
+        "online",
+        "zero allocation charge",
+        "loyalty units"
+      ],
+      "v": {
+        "pac": "Nil",
+        "fmc": null,
+        "mortality": "Monthly",
+        "adminCharge": null,
+        "funds": null,
+        "bestFund5y": 13.8,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Loyalty units in the last 5 years: 1.70% (5/7-year pay) or 1.80% (10-year/regular pay) of average fund value"
+      },
+      "pros": [
+        "No premium allocation charge",
+        "Opportunity Fund: 5y return 13.8% a year (as of 5 Oct 2026)",
+        "Choice of Lifestyle or Self-Managed portfolio"
+      ],
+      "cons": [
+        "Switching from Self-Managed back to Lifestyle allowed once a year",
+        "FMC and admin charges not published on the pages checked"
+      ],
+      "best": "Online buyers who want a no-allocation-charge plan from a smaller insurer",
+      "url": "https://www.policybazaar.com/insurance-companies/bandhan-life-ulip-plans/bandhan-life-invest-plan/",
+      "news": "Bandhan Life iInvest"
+    },
+    {
+      "id": "pnb-metlife-smart-platinum",
+      "name": "PNB MetLife Met Smart Platinum",
+      "provider": "PNB MetLife India Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "whole life",
+        "wealth boosters"
+      ],
+      "v": {
+        "pac": null,
+        "fmc": null,
+        "mortality": "Monthly",
+        "adminCharge": "Deducted monthly (rate not confirmed)",
+        "funds": 6,
+        "bestFund5y": 17.96,
+        "freeSwitches": 4,
+        "lockin": 5,
+        "loyalty": "Wealth Booster and Loyalty Bonus (rates not confirmed)"
+      },
+      "pros": [
+        "Whole-life cover up to age 99",
+        "Mid Cap Fund: 5y return 17.96% a year (as of 5 Oct 2026)",
+        "Auto rebalancing option"
+      ],
+      "cons": [
+        "Only 6 funds",
+        "4 free switches a year, then Rs250 each",
+        "Premium allocation charge applies (rate not confirmed)"
+      ],
+      "best": "Investors wanting lifelong cover with a market-linked fund",
+      "url": "https://www.policybazaar.com/insurance-companies/pnb-metlife-ulip-plans/met-smart-platinum-plan/",
+      "news": "PNB MetLife Smart Platinum"
+    },
+    {
+      "id": "tata-aia-param-raksha-pro-plus",
+      "name": "Tata AIA Param Raksha Life Pro Plus",
+      "provider": "Tata AIA Life Insurance",
+      "kind": "Regular ULIP",
+      "tags": [
+        "refund of charges",
+        "loyalty additions",
+        "unlimited switches"
+      ],
+      "v": {
+        "pac": null,
+        "fmc": null,
+        "mortality": "Monthly; refunded under the plan's refund feature",
+        "adminCharge": null,
+        "funds": null,
+        "bestFund5y": 15.16,
+        "freeSwitches": null,
+        "lockin": 5,
+        "loyalty": "Loyalty additions and Twin Loyalty Booster (rates not confirmed)"
+      },
+      "pros": [
+        "Unlimited free fund switches",
+        "Whole Life Mid Cap Equity Fund: 5y return 15.16% a year (as of 5 Oct 2026)",
+        "Refund of mortality charges and loyalty boosters"
+      ],
+      "cons": [
+        "Has a premium allocation charge (refunded in some variants)",
+        "Detailed charges not published on the page checked"
+      ],
+      "best": "Buyers who want strong fund performance and charge refunds over a long term",
+      "url": "https://www.tataaia.com/life-insurance-plans/wealth-solutions/param-raksha-life-pro-plus.html",
+      "news": "Tata AIA Param Raksha"
+    }
+  ]
+}

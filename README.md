@@ -1,4 +1,4 @@
-# Growebtek AI Stock & Fund Analyzer
+# Growebtek AI MoneyTrade
 
 Login-protected web app: India and US market reports, a stock analyzer (any country, local currency, comparison) and a mutual fund analyzer (Indian and global funds, comparison).
 

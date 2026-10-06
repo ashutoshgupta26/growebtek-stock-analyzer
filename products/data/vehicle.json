@@ -1,0 +1,532 @@
+{
+  "id": "vehicle",
+  "title": "Car Insurance",
+  "asOf": "Oct 2026",
+  "intro": "Car insurance pays for damage to your own car and is legally required to cover harm you cause to others; what matters most is how reliably the insurer pays own-damage claims, how many garages offer cashless repair, and add-ons like zero depreciation.",
+  "newsQuery": "car insurance India",
+  "sources": [
+    "Insurer public disclosures NL-37 (claims data), FY2024-25",
+    "IRDAI Annual Report 2024-25 (Statement 12, solvency ratios as at 31 Mar 2025)",
+    "Insurer car insurance web pages (Oct 2026)"
+  ],
+  "groups": [
+    {
+      "id": "claims",
+      "label": "Claims record"
+    },
+    {
+      "id": "service",
+      "label": "Service"
+    },
+    {
+      "id": "strength",
+      "label": "Strength"
+    },
+    {
+      "id": "cover",
+      "label": "Cover features"
+    }
+  ],
+  "params": [
+    {
+      "k": "csrOD",
+      "label": "Own-damage claim settlement",
+      "fmt": "pct",
+      "better": "high",
+      "g": "claims",
+      "tip": "Motor own-damage claims settled by count, FY2024-25: settled / (settled + repudiated + closed without payment). Insurer public disclosures NL-37.",
+      "w": 3
+    },
+    {
+      "k": "csrTP",
+      "label": "Third-party claim settlement",
+      "fmt": "pct",
+      "better": "high",
+      "g": "claims",
+      "tip": "Motor third-party claims settled by count, FY2024-25 (insurer public disclosures NL-37). Third-party claims go through courts and tribunals, so ratios are lower and slower for most insurers.",
+      "w": 1
+    },
+    {
+      "k": "garages",
+      "label": "Cashless garages",
+      "fmt": "num",
+      "better": "high",
+      "g": "service",
+      "tip": "Cashless network garages as stated on the insurer's car insurance page (Oct 2026). Figures are 'X+'.",
+      "w": 2
+    },
+    {
+      "k": "zeroDep",
+      "label": "Zero depreciation add-on",
+      "fmt": "yes",
+      "better": "high",
+      "g": "cover",
+      "tip": "Offers a zero (nil) depreciation add-on for private cars, per insurer page (Oct 2026).",
+      "w": 1
+    },
+    {
+      "k": "solvency",
+      "label": "Solvency ratio",
+      "fmt": "x",
+      "better": "high",
+      "g": "strength",
+      "tip": "As at 31 Mar 2025, IRDAI Annual Report 2024-25. Regulatory minimum is 1.5x.",
+      "w": 1
+    },
+    {
+      "k": "addOns",
+      "label": "Key add-ons",
+      "fmt": "text",
+      "better": null,
+      "g": "cover",
+      "tip": "Main add-ons listed on the insurer's car insurance page (Oct 2026)."
+    },
+    {
+      "k": "claimProcess",
+      "label": "Claim process",
+      "fmt": "text",
+      "better": null,
+      "g": "service",
+      "tip": "How claims are filed and inspected, per insurer page (Oct 2026)."
+    }
+  ],
+  "items": [
+    {
+      "id": "icici-lombard",
+      "name": "ICICI Lombard Car Insurance",
+      "provider": "ICICI Lombard General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": null,
+        "zeroDep": true,
+        "solvency": 2.69,
+        "addOns": "Zero depreciation, engine protect, roadside assistance, consumables, key protect, return to invoice",
+        "claimProcess": "App-based claims with InstaSpect video self-inspection"
+      },
+      "pros": [
+        "Strong solvency (2.69x)",
+        "Video self-inspection through its app",
+        "Full add-on set including zero depreciation and engine protect"
+      ],
+      "cons": [
+        "Claim settlement and garage figures not available here",
+        "Website did not show a garage count when checked"
+      ],
+      "best": "Buyers who want a large private insurer with app-based claims",
+      "url": "https://www.icicilombard.com/motor-insurance/car-insurance",
+      "news": "ICICI Lombard motor insurance"
+    },
+    {
+      "id": "bajaj-general",
+      "name": "Bajaj General Car Insurance",
+      "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 96.79,
+        "csrTP": 73.68,
+        "garages": 10000,
+        "zeroDep": true,
+        "solvency": 3.25,
+        "addOns": "Zero depreciation, engine protector, 24x7 roadside assistance, consumables, NCB protector, tyre safeguard, return to invoice",
+        "claimProcess": "Register and settle from the accident spot in the Bajaj General app with photo upload"
+      },
+      "pros": [
+        "Own-damage settlement of 96.8%",
+        "Highest solvency in this list (3.25x)",
+        "10,000+ cashless garages"
+      ],
+      "cons": [
+        "Third-party settlement (73.7%) below many peers",
+        "Zero depreciation and engine cover cost extra as add-ons"
+      ],
+      "best": "Owners who want a high own-damage settlement record and a financially strong insurer",
+      "url": "https://www.bajajgeneralinsurance.com/motor-insurance/car-insurance-online.html",
+      "news": "Bajaj General Insurance motor"
+    },
+    {
+      "id": "hdfc-ergo",
+      "name": "HDFC ERGO Car Insurance",
+      "provider": "HDFC ERGO General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 92.7,
+        "csrTP": 82.09,
+        "garages": 12200,
+        "zeroDep": true,
+        "solvency": 2,
+        "addOns": "Zero depreciation, engine protection, roadside assistance, consumables, NCB protection, tyre secure, return to invoice, EMI protector, pay-as-you-drive",
+        "claimProcess": "Raise and track claims online; overnight repairs for minor damage"
+      },
+      "pros": [
+        "12,200+ cashless garages",
+        "Wide add-on menu including pay-as-you-drive",
+        "Balanced own-damage (92.7%) and third-party (82.1%) settlement"
+      ],
+      "cons": [
+        "Own-damage settlement below Bajaj, Acko and Go Digit",
+        "Claims page does not mention video inspection"
+      ],
+      "best": "Buyers who want a large garage network and many add-on choices",
+      "url": "https://www.hdfcergo.com/car-insurance",
+      "news": "HDFC ERGO car insurance"
+    },
+    {
+      "id": "tata-aig",
+      "name": "Tata AIG Car Insurance",
+      "provider": "Tata AIG General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 87.93,
+        "csrTP": 68.52,
+        "garages": 5700,
+        "zeroDep": true,
+        "solvency": 1.81,
+        "addOns": "Depreciation reimbursement, engine secure, tyre secure, roadside assistance, NCB protection, consumables, return to invoice, key replacement",
+        "claimProcess": "Register via app, website, WhatsApp or phone; video inspection instead of surveyor visit"
+      },
+      "pros": [
+        "Video inspection and WhatsApp claim registration",
+        "Broad add-on set"
+      ],
+      "cons": [
+        "Lowest own-damage (87.9%) and third-party (68.5%) settlement among insurers with data here",
+        "Solvency (1.81x) on the lower side"
+      ],
+      "best": "Buyers who value digital claim channels like WhatsApp and video inspection",
+      "url": "https://www.tataaig.com/motor-insurance/car-insurance",
+      "news": "Tata AIG motor insurance"
+    },
+    {
+      "id": "go-digit",
+      "name": "Digit Car Insurance",
+      "provider": "Go Digit General Insurance",
+      "kind": "Digital insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 94.5,
+        "csrTP": 98.08,
+        "garages": 10000,
+        "zeroDep": true,
+        "solvency": 2.24,
+        "addOns": "Zero depreciation, engine and gearbox protection, return to invoice, pay-as-you-drive, breakdown assistance, tyre protect, consumables, EV shield",
+        "claimProcess": "File in the Digit app with smartphone self-inspection photos and live tracking"
+      },
+      "pros": [
+        "Third-party settlement of 98.1%, among the highest here",
+        "Smartphone self-inspection",
+        "10,000+ cashless garages"
+      ],
+      "cons": [
+        "Own-damage settlement (94.5%) below Bajaj and Acko",
+        "Fewer physical branches than older insurers"
+      ],
+      "best": "Buyers who want a fully digital policy and claims experience",
+      "url": "https://www.godigit.com/motor-insurance/car-insurance",
+      "news": "Go Digit insurance"
+    },
+    {
+      "id": "acko",
+      "name": "Acko Car Insurance",
+      "provider": "Acko General Insurance",
+      "kind": "Digital insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 96.48,
+        "csrTP": 87.05,
+        "garages": 4000,
+        "zeroDep": true,
+        "solvency": 2.3,
+        "addOns": "Zero depreciation, engine protection, roadside assistance, NCB protection, consumables, return to invoice, key replacement",
+        "claimProcess": "Register in the Acko app or website with document upload; instant settlement for some minor claims"
+      },
+      "pros": [
+        "Own-damage settlement of 96.5%",
+        "Online-only pricing, no agent"
+      ],
+      "cons": [
+        "Smaller cashless network (4,000+)",
+        "Few physical branches if you prefer in-person help"
+      ],
+      "best": "Buyers comfortable with an online-only insurer who want strong own-damage settlement",
+      "url": "https://www.acko.com/car-insurance/",
+      "news": "Acko insurance"
+    },
+    {
+      "id": "new-india",
+      "name": "New India Private Car Package Policy",
+      "provider": "The New India Assurance Co.",
+      "kind": "Public sector insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 99.09,
+        "csrTP": 99.52,
+        "garages": null,
+        "zeroDep": null,
+        "solvency": 1.91,
+        "addOns": "Optional covers listed on policy page; details vary by office",
+        "claimProcess": "Online claim intimation, then surveyor inspection; cashless at listed garages"
+      },
+      "pros": [
+        "Highest own-damage (99.1%) and third-party (99.5%) settlement here",
+        "India's largest general insurer, government-owned"
+      ],
+      "cons": [
+        "Its NL-37 has no 'closed without payment' row, so its ratio is not fully comparable",
+        "Garage count and add-on details not stated clearly online"
+      ],
+      "best": "Buyers who prefer a government-owned insurer with a long claims record",
+      "url": "https://www.newindia.co.in/motor-insurance/private-car-package-policy",
+      "news": "New India Assurance motor"
+    },
+    {
+      "id": "indusind-general",
+      "name": "IndusInd General Car Insurance",
+      "provider": "IndusInd General Insurance (formerly Reliance General)",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 90.5,
+        "csrTP": 73.07,
+        "garages": 11000,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Nil depreciation, engine protection, 24/7 roadside assistance, return to invoice, tyre protection, key replacement, consumables, EV add-ons",
+        "claimProcess": "App claims with video claim and self-inspection; surveyor within 24 hours"
+      },
+      "pros": [
+        "11,000+ cashless garages",
+        "Video claims and self-inspection in app"
+      ],
+      "cons": [
+        "Own-damage (90.5%) and third-party (73.1%) settlement below most peers",
+        "Solvency ratio not available here"
+      ],
+      "best": "Buyers who want a large garage network and video claims",
+      "url": "https://www.indusindinsurance.com/car-insurance",
+      "news": "IndusInd General Insurance"
+    },
+    {
+      "id": "sbi-general",
+      "name": "SBI General Car Insurance",
+      "provider": "SBI General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": 92.76,
+        "csrTP": 82.2,
+        "garages": 8700,
+        "zeroDep": true,
+        "solvency": 2.03,
+        "addOns": "Depreciation reimbursement, engine guard, consumables, roadside assistance, NCB protection (13+ add-ons)",
+        "claimProcess": "Phone or email intimation; inspection within 24 hours on working days"
+      },
+      "pros": [
+        "Balanced own-damage (92.8%) and third-party (82.2%) settlement",
+        "8,700+ cashless garages"
+      ],
+      "cons": [
+        "Claims page does not mention app or video inspection",
+        "Own-damage settlement below Bajaj, Acko and Go Digit"
+      ],
+      "best": "SBI customers and buyers who want a bank-backed insurer",
+      "url": "https://www.sbigeneral.in/car-insurance",
+      "news": "SBI General Insurance"
+    },
+    {
+      "id": "iffco-tokio",
+      "name": "IFFCO Tokio Car Insurance",
+      "provider": "IFFCO Tokio General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": 8500,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Zero depreciation, engine and gearbox protection, roadside assistance, consumables, key replacement, tyre replacement",
+        "claimProcess": "Intimate by toll-free number or website, upload photos and documents"
+      },
+      "pros": [
+        "8,500+ cashless garages",
+        "Standard add-on set including zero depreciation"
+      ],
+      "cons": [
+        "Claim settlement and solvency figures not available here",
+        "Claims page does not mention app or video inspection"
+      ],
+      "best": "Buyers who want a mid-size private insurer with a wide garage network",
+      "url": "https://www.iffcotokio.co.in/motor-insurance/car-insurance",
+      "news": "IFFCO Tokio insurance"
+    },
+    {
+      "id": "chola-ms",
+      "name": "Chola MS Car Insurance",
+      "provider": "Cholamandalam MS General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": 17800,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Zero depreciation, hydrostatic (engine) cover, consumables, key replacement, personal belongings, roadside assistance",
+        "claimProcess": "Call motor claims line; live video streaming inspection instead of physical survey"
+      },
+      "pros": [
+        "Largest stated garage network here (17,800+)",
+        "Live video inspection"
+      ],
+      "cons": [
+        "Claim settlement and solvency figures not available here",
+        "Claims start with a phone call rather than an app"
+      ],
+      "best": "Buyers who want the widest cashless garage choice",
+      "url": "https://www.cholainsurance.com/car-insurance",
+      "news": "Chola MS insurance"
+    },
+    {
+      "id": "zuno",
+      "name": "Zuno Car Insurance",
+      "provider": "Zuno General Insurance (formerly Edelweiss)",
+      "kind": "Digital insurer",
+      "tags": [
+        "car",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": 3300,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Depreciation protection, engine protection, NCB protection, fuel guard, roadside assistance (10 add-ons)",
+        "claimProcess": "Toll-free intimation; settlement within 7 working days of documents"
+      },
+      "pros": [
+        "Unusual add-ons like fuel guard for blended-fuel damage",
+        "Zero depreciation and engine protection available"
+      ],
+      "cons": [
+        "Smallest stated garage network here (3,300+)",
+        "Claim settlement and solvency figures not available here"
+      ],
+      "best": "Low-mileage, digital-first buyers who want niche add-ons",
+      "url": "https://www.hizuno.com/car-insurance",
+      "news": "Zuno General Insurance"
+    },
+    {
+      "id": "zurich-kotak",
+      "name": "Zurich Kotak Car Insurance",
+      "provider": "Zurich Kotak General Insurance",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": 6500,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Zero depreciation, engine protect, roadside assistance, consumables, tyre protect, clutch protect, return to invoice, personal belongings",
+        "claimProcess": "Call 1800-2120; inspection within 24 hours; settlement within 7 days of documents"
+      },
+      "pros": [
+        "6,500+ cashless garages",
+        "Clutch protect among add-ons"
+      ],
+      "cons": [
+        "Claim settlement and solvency figures not available here",
+        "No app or video inspection mentioned on claims page"
+      ],
+      "best": "Kotak customers wanting a mainstream comprehensive policy",
+      "url": "https://www.zurichkotak.com/car-insurance",
+      "news": "Zurich Kotak General Insurance"
+    },
+    {
+      "id": "generali-central",
+      "name": "Generali Central Car Insurance",
+      "provider": "Generali Central Insurance (formerly Future Generali)",
+      "kind": "Private insurer",
+      "tags": [
+        "car",
+        "two-wheeler",
+        "comprehensive"
+      ],
+      "v": {
+        "csrOD": null,
+        "csrTP": null,
+        "garages": 6500,
+        "zeroDep": true,
+        "solvency": null,
+        "addOns": "Zero depreciation, engine protector, return to invoice, NCB protection, tyre damage, key loss, personal belongings, inconvenience allowance",
+        "claimProcess": "Online or toll-free intimation, surveyor inspection; GCI Xpress for faster repairs"
+      },
+      "pros": [
+        "6,500+ partner workshops",
+        "Inconvenience allowance add-on"
+      ],
+      "cons": [
+        "Claim settlement and solvency figures not available here",
+        "Claims page does not mention app or video inspection"
+      ],
+      "best": "Buyers wanting an inconvenience allowance while the car is in the garage",
+      "url": "https://www.generalicentralinsurance.com/motor-insurance/car-insurance",
+      "news": "Generali Central Insurance"
+    }
+  ]
+}

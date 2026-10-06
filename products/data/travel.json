@@ -1,0 +1,496 @@
+{
+  "id": "travel",
+  "title": "Travel Insurance",
+  "asOf": "Oct 2026",
+  "intro": "International travel insurance pays for medical emergencies, lost baggage and delays abroad; what matters most is the medical cover limit, whether pre-existing conditions are covered in an emergency, and the deductibles you pay per claim.",
+  "newsQuery": "travel insurance India",
+  "sources": [
+    "Insurer product pages, brochures, prospectuses and customer information sheets (Oct 2026)",
+    "HDFC ERGO Explorer prospectus and filed rate chart; SBI General travel prospectus; IFFCO Tokio Overseas Travel Protector prospectus and CIS; Zurich Kotak Smart Travel prospectus; Generali Central Jet Set Secure brochure; Niva Bupa TravelAssure brochure and policy wording",
+    "nriol.com, PolicyBazaar and eindiainsurance.com plan pages (where insurer sites were unavailable)",
+    "Ditto Health Insurance Data Lab (Sep 2026), compiled from insurer public disclosures (health claim settlement ratio)",
+    "IRDAI Annual Report 2024-25 (Statement 12, solvency ratios as at 31 Mar 2025)"
+  ],
+  "groups": [
+    {
+      "id": "cover",
+      "label": "Medical cover"
+    },
+    {
+      "id": "travel",
+      "label": "Travel benefits"
+    },
+    {
+      "id": "insurer",
+      "label": "Insurer strength"
+    },
+    {
+      "id": "eligibility",
+      "label": "Eligibility"
+    }
+  ],
+  "params": [
+    {
+      "k": "max_medical_usd",
+      "label": "Max medical cover (USD)",
+      "fmt": "num",
+      "better": "high",
+      "w": 3,
+      "g": "cover",
+      "tip": "Highest medical sum insured offered on the plan's top variant (insurer documents, Oct 2026). Some plans cap cover per illness below this."
+    },
+    {
+      "k": "ped",
+      "label": "Pre-existing disease emergency cover",
+      "fmt": "yes",
+      "better": "high",
+      "w": 2,
+      "g": "cover",
+      "tip": "Life-threatening emergencies from a declared pre-existing condition are covered in the plan or a top variant without a paid add-on. Limits are usually low."
+    },
+    {
+      "k": "covid",
+      "label": "Covid-19 covered",
+      "fmt": "yes",
+      "better": "high",
+      "w": 1,
+      "g": "cover",
+      "tip": "Insurer states Covid-19 medical costs are covered (product page or wording, Oct 2026)."
+    },
+    {
+      "k": "deductible",
+      "label": "Medical deductible",
+      "fmt": "text",
+      "better": null,
+      "g": "cover",
+      "tip": "Amount you pay yourself on each medical claim (Oct 2026)."
+    },
+    {
+      "k": "trip_delay",
+      "label": "Trip / flight delay benefit",
+      "fmt": "text",
+      "better": null,
+      "g": "travel",
+      "tip": "Delay payout on the top variant (insurer documents, Oct 2026)."
+    },
+    {
+      "k": "baggage_usd",
+      "label": "Checked baggage loss (USD)",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "travel",
+      "tip": "Maximum payout for total loss of checked-in baggage on the top variant (Oct 2026)."
+    },
+    {
+      "k": "csr",
+      "label": "Insurer claim settlement ratio",
+      "fmt": "pct",
+      "better": "high",
+      "w": 2,
+      "g": "insurer",
+      "tip": "Insurer's health claims settled within 3 months, FY2025-26 (public disclosures via Ditto). Reflects the insurer overall, not travel claims specifically."
+    },
+    {
+      "k": "solvency",
+      "label": "Insurer solvency ratio",
+      "fmt": "x",
+      "better": "high",
+      "w": 1,
+      "g": "insurer",
+      "tip": "As at 31 Mar 2025, IRDAI Annual Report 2024-25. Regulatory minimum is 1.5x."
+    },
+    {
+      "k": "max_age",
+      "label": "Max entry age",
+      "fmt": "num",
+      "better": "high",
+      "w": 1,
+      "g": "eligibility",
+      "tip": "Oldest age at which the plan can be bought (Oct 2026). Older travellers may need a medical check-up or a senior variant."
+    }
+  ],
+  "items": [
+    {
+      "id": "hdfc-ergo-explorer",
+      "name": "HDFC ERGO Explorer",
+      "provider": "HDFC ERGO General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "annual multi-trip"
+      ],
+      "v": {
+        "max_medical_usd": 1000000,
+        "ped": false,
+        "covid": null,
+        "deductible": null,
+        "trip_delay": "Flight delay over 6 hrs: meals and hotel up to USD 100-300 by cover; trip delay up to USD 500",
+        "baggage_usd": 750,
+        "csr": 98.19,
+        "solvency": 2,
+        "max_age": null
+      },
+      "pros": [
+        "Medical cover up to USD 1 million",
+        "Public rate chart: Silver USD 40K for 7 days in Europe from Rs 332 before tax (age up to 40)",
+        "Online discount and no-claim discount on Gold/Platinum"
+      ],
+      "cons": [
+        "Pre-existing disease cover is a paid add-on with a low cap",
+        "Small baggage and delay caps on lower covers",
+        "Medical check-up may be needed above age 70"
+      ],
+      "best": "Travellers wanting a high medical ceiling from an insurer with a strong claims record",
+      "url": "https://www.hdfcergo.com/travel-insurance/travel-explorer",
+      "news": "HDFC ERGO travel insurance"
+    },
+    {
+      "id": "indusind-travel",
+      "name": "IndusInd Travel Insurance (formerly Reliance Travel Care)",
+      "provider": "IndusInd General Insurance (formerly Reliance General)",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "individual"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": true,
+        "covid": true,
+        "deductible": "USD 50",
+        "trip_delay": "Trip delay USD 60 per day, max 6 days (Platinum)",
+        "baggage_usd": 1500,
+        "csr": null,
+        "solvency": null,
+        "max_age": 90
+      },
+      "pros": [
+        "Pre-existing disease covered in life-threatening emergencies without an add-on",
+        "Covid covered in the base plan, including trip cancellation",
+        "Ages 3 months to 90 with no medical check-up"
+      ],
+      "cons": [
+        "USD 50 deductible on medical claims",
+        "Trip delay paid per day, not per hour",
+        "Separate Schengen plan goes only to EUR 30K/50K"
+      ],
+      "best": "Older travellers and those with declared conditions",
+      "url": "https://www.indusindinsurance.com/travel-insurance",
+      "news": "IndusInd General Insurance travel"
+    },
+    {
+      "id": "digit-international-travel",
+      "name": "Digit International Travel Insurance",
+      "provider": "Go Digit General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "multi-trip"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": true,
+        "covid": true,
+        "deductible": null,
+        "trip_delay": "USD 25 per 4 hrs, max USD 100; plus Rs 500-1,000 instant payout for delays over 6 hrs",
+        "baggage_usd": 1000,
+        "csr": 99.21,
+        "solvency": 2.24,
+        "max_age": null
+      },
+      "pros": [
+        "Automatic payout for flight delays",
+        "Claims from a smartphone",
+        "Single-day adventure activities covered"
+      ],
+      "cons": [
+        "Pre-existing disease cover only on Smart 360 or as an add-on, USD 5K-10K",
+        "Room rent capped at USD 1K-2K",
+        "Flight delay capped at USD 100"
+      ],
+      "best": "Tech-savvy travellers who want quick, paperless claims",
+      "url": "https://www.godigit.com/international-travel-insurance",
+      "news": "Digit travel insurance"
+    },
+    {
+      "id": "sbi-general-travel",
+      "name": "SBI General Travel Insurance (Business and Holiday)",
+      "provider": "SBI General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "business",
+        "holiday"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": false,
+        "covid": null,
+        "deductible": "USD 100",
+        "trip_delay": "USD 200 per 12 hrs after the first 12 hrs",
+        "baggage_usd": 2000,
+        "csr": 93.62,
+        "solvency": 2.03,
+        "max_age": 70
+      },
+      "pros": [
+        "Generous delay payout of USD 200 per 12 hours",
+        "Free 7-day automatic extension if transport is delayed",
+        "Large shared pool for travel benefits"
+      ],
+      "cons": [
+        "No pre-existing disease cover at all",
+        "Baggage limit is shared with other travel benefits, 5% deductible",
+        "Older 2013-era product; ages 6 months to 70 only"
+      ],
+      "best": "Business and holiday travellers without pre-existing conditions",
+      "url": "https://www.sbigeneral.in/travel-insurance",
+      "news": "SBI General travel insurance"
+    },
+    {
+      "id": "icici-lombard-international-travel",
+      "name": "ICICI Lombard International Travel Insurance",
+      "provider": "ICICI Lombard General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "individual"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": false,
+        "covid": null,
+        "deductible": "USD 100 per illness",
+        "trip_delay": "Up to USD 500 (Platinum/Gold)",
+        "baggage_usd": null,
+        "csr": 91.96,
+        "solvency": 2.69,
+        "max_age": 70
+      },
+      "pros": [
+        "Medical cover up to USD 500K",
+        "Platinum adds compassionate visit and hotel extension",
+        "Trip delay up to USD 500"
+      ],
+      "cons": [
+        "Pre-existing diseases excluded even in emergencies",
+        "Small sub-limits (dental USD 100, passport USD 50)",
+        "Baggage limit unclear: sources give USD 500 or USD 2,000"
+      ],
+      "best": "Healthy travellers who want a large insurer's brand",
+      "url": "https://www.icicilombard.com/travel-insurance/international-travel-insurance",
+      "news": "ICICI Lombard travel insurance"
+    },
+    {
+      "id": "care-explore",
+      "name": "Care Explore",
+      "provider": "Care Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "single trip",
+        "Europe",
+        "multi-region"
+      ],
+      "v": {
+        "max_medical_usd": null,
+        "ped": false,
+        "covid": true,
+        "deductible": "USD 100 (EUR 75 on Europe plans)",
+        "trip_delay": "USD 25 per 4 hrs, max USD 150 (EUR 20 per 4 hrs, max EUR 120 on Europe)",
+        "baggage_usd": null,
+        "csr": 96.99,
+        "solvency": 1.68,
+        "max_age": null
+      },
+      "pros": [
+        "No maximum entry age",
+        "Region-specific plans including Europe",
+        "Pre-existing disease available as an optional benefit up to 10% of sum insured"
+      ],
+      "cons": [
+        "Deductible on medical claims",
+        "Inpatient sub-limits on lower variants and for ages 61+",
+        "Top medical cover unconfirmed: sources give USD 500K or USD 1M"
+      ],
+      "best": "Senior travellers who struggle to get cover elsewhere",
+      "url": "https://www.careinsurance.com/product/explore",
+      "news": "Care Health travel insurance"
+    },
+    {
+      "id": "niva-bupa-travelassure",
+      "name": "Niva Bupa TravelAssure",
+      "provider": "Niva Bupa Health Insurance",
+      "kind": "Standalone health insurer",
+      "tags": [
+        "single trip",
+        "multi-trip",
+        "adventure"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": true,
+        "covid": null,
+        "deductible": "USD 100",
+        "trip_delay": "USD 25-50 per 4 hrs, for delays up to 24 hrs",
+        "baggage_usd": 500,
+        "csr": 94.44,
+        "solvency": 3.03,
+        "max_age": 70
+      },
+      "pros": [
+        "No inpatient sub-limits on Comprehensive",
+        "Pre-existing disease emergencies covered up to USD 10K",
+        "Build-your-own plan, including adventure sports variant"
+      ],
+      "cons": [
+        "USD 100 medical deductible",
+        "Adult entry age 18-70",
+        "Lite variant has thin non-medical cover (USD 100 baggage)"
+      ],
+      "best": "Travellers who want flexible, customisable cover from a health specialist",
+      "url": "https://www.nivabupa.com/travel-insurance/international-travel-insurance.html",
+      "news": "Niva Bupa travel insurance"
+    },
+    {
+      "id": "bajaj-travel",
+      "name": "Bajaj Travel Insurance (Prime / Elite / ACE / Companion)",
+      "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "senior"
+      ],
+      "v": {
+        "max_medical_usd": 1000000,
+        "ped": true,
+        "covid": null,
+        "deductible": null,
+        "trip_delay": "USD 30 per 12 hrs, max USD 180",
+        "baggage_usd": 500,
+        "csr": 93.4,
+        "solvency": 3.25,
+        "max_age": 99
+      },
+      "pros": [
+        "Medical cover up to USD 1 million on Prime",
+        "Companion plan covers ages up to 99",
+        "Cashless network and premium refund on early return"
+      ],
+      "cons": [
+        "Pre-existing disease cover low (USD 3K-5K)",
+        "Trip delay capped at USD 180",
+        "Figures from a third-party site, may lag the insurer"
+      ],
+      "best": "Elderly travellers and those wanting a high medical limit",
+      "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online.html",
+      "news": "Bajaj General travel insurance"
+    },
+    {
+      "id": "generali-jet-set-secure",
+      "name": "Generali Central Jet Set Secure",
+      "provider": "Generali Central Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "family",
+        "senior"
+      ],
+      "v": {
+        "max_medical_usd": 500000,
+        "ped": null,
+        "covid": true,
+        "deductible": null,
+        "trip_delay": "USD 40 per 4 hrs, max USD 240 (Platinum)",
+        "baggage_usd": 1000,
+        "csr": null,
+        "solvency": null,
+        "max_age": 70
+      },
+      "pros": [
+        "Cashless claims and auto trip extension up to 7 days",
+        "Many add-ons: gadgets, adventure sports, cruise",
+        "15% online and 5% family discounts"
+      ],
+      "cons": [
+        "Pre-existing disease cover costs extra (USD 5K-15K)",
+        "Trip delay capped at USD 240",
+        "Single trip not renewable; separate senior plan for 71-90"
+      ],
+      "best": "Families wanting add-ons and discounts",
+      "url": "https://www.generalicentralinsurance.com/travel-insurance/international-travel-insurance",
+      "news": "Generali Central insurance travel"
+    },
+    {
+      "id": "iffco-tokio-overseas-travel-protector",
+      "name": "IFFCO Tokio Overseas Travel Protector",
+      "provider": "IFFCO Tokio General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "Schengen",
+        "senior"
+      ],
+      "v": {
+        "max_medical_usd": 1000000,
+        "ped": true,
+        "covid": true,
+        "deductible": "USD 100",
+        "trip_delay": "USD 50 per 4 hrs, max USD 500 (Gold)",
+        "baggage_usd": 1500,
+        "csr": null,
+        "solvency": null,
+        "max_age": null
+      },
+      "pros": [
+        "Up to USD 1 million per incident",
+        "Built-in pre-existing disease emergency cover up to USD 20K",
+        "Schengen pricing published: 7 days from Rs 398 (Bronze) to Rs 1,703 (Platinum 1000), age up to 40"
+      ],
+      "cons": [
+        "Sub-limit variants cap room rent, ICU and surgery",
+        "Platinum 1000/750 only up to age 60",
+        "USD 100 medical deductible"
+      ],
+      "best": "Schengen travellers wanting high cover with built-in pre-existing disease protection",
+      "url": "https://www.iffcotokio.co.in/travel-insurance",
+      "news": "IFFCO Tokio travel insurance"
+    },
+    {
+      "id": "zurich-kotak-smart-travel",
+      "name": "Zurich Kotak Smart Travel",
+      "provider": "Zurich Kotak General Insurance",
+      "kind": "General insurer",
+      "tags": [
+        "single trip",
+        "Schengen",
+        "family floater",
+        "senior"
+      ],
+      "v": {
+        "max_medical_usd": 1000000,
+        "ped": true,
+        "covid": true,
+        "deductible": "Applies (amount varies by plan)",
+        "trip_delay": "USD 50 per 4 hrs, max USD 200 (Platinum)",
+        "baggage_usd": 1000,
+        "csr": null,
+        "solvency": null,
+        "max_age": null
+      },
+      "pros": [
+        "Schengen plans with no sub-limits",
+        "Family floater plans",
+        "Senior plans for ages 71+"
+      ],
+      "cons": [
+        "USD 100K per-illness cap except on Platinum Plus and Schengen plans",
+        "Pre-existing disease cover limited to acute pain relief unless add-on",
+        "Trip delay capped at USD 200; USD 50 baggage deductible"
+      ],
+      "best": "Families and Schengen visa applicants",
+      "url": "https://www.zurichkotak.com/travel-insurance",
+      "news": "Zurich Kotak travel insurance"
+    }
+  ]
+}

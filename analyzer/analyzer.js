@@ -1,4 +1,4 @@
-/* Growebtek AI Stock & Fund Analyzer — Stock Analyzer (analyze + compare). No external libraries. */
+/* Growebtek AI MoneyTrade — Stock Analyzer (analyze + compare). No external libraries. */
 (function () {
   'use strict';
   if (!window.GW || !GW.guard({ sub: 'Stock Analyzer' })) return;
