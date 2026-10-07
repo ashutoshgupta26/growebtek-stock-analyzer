@@ -1,0 +1,1674 @@
+{
+ "cat": "bonds",
+ "asOf": "Oct 2026",
+ "sources": [
+  "rbi.org.in press releases (G-sec, T-bill, SGS auctions; FRB 2028 rate)",
+  "angelone.in / stableinvestor.com (FRSB 8.05% Jul–Dec 2026)",
+  "phillipcapital.in & knowyourbrokerage.in (54EC bonds)",
+  "sgbanalyzer.com (listed SGB symbols/ISINs)",
+  "upstox.com (SGB premature redemption calendar Oct 2026–Mar 2027)",
+  "nsearchives.nseindia.com DEBT.csv (listed tax-free bond series and 2025-26 public NCD listings)",
+  "chittorgarh.com public NCD issue pages (Apr 2025–Oct 2026)"
+ ],
+ "companies": [
+  {
+   "provider": "Government of India (via RBI)",
+   "kind": "Government",
+   "url": "https://rbiretaildirect.org.in/"
+  },
+  {
+   "provider": "State Governments (via RBI)",
+   "kind": "Government",
+   "url": "https://rbiretaildirect.org.in/"
+  },
+  {
+   "provider": "REC Ltd",
+   "kind": "PSU",
+   "url": "https://recindia.nic.in/"
+  },
+  {
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "PSU",
+   "url": "https://www.pfcindia.com/"
+  },
+  {
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "PSU",
+   "url": "https://irfc.co.in/"
+  },
+  {
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "PSU",
+   "url": "https://hudco.org.in/"
+  },
+  {
+   "provider": "National Highways Authority of India",
+   "kind": "Government",
+   "url": "https://nhai.gov.in/"
+  },
+  {
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "PSU",
+   "url": "https://www.ireda.in/"
+  },
+  {
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "NBFC",
+   "url": "https://www.muthootfincorp.com/"
+  },
+  {
+   "provider": "SMC Global Securities Ltd",
+   "kind": "Broker/NBFC",
+   "url": "https://www.smctradeonline.com/"
+  },
+  {
+   "provider": "National Housing Bank",
+   "kind": "Government (development finance institution)",
+   "url": "https://nhb.org.in/"
+  },
+  {
+   "provider": "NTPC Ltd",
+   "kind": "PSU",
+   "url": "https://ntpc.co.in/"
+  },
+  {
+   "provider": "NHPC Ltd",
+   "kind": "PSU",
+   "url": "https://www.nhpcindia.com/"
+  },
+  {
+   "provider": "India Infrastructure Finance Company Ltd",
+   "kind": "PSU",
+   "url": "https://www.iifcl.in/"
+  },
+  {
+   "provider": "IIFL Finance Ltd",
+   "kind": "NBFC",
+   "url": "https://www.iifl.com/"
+  },
+  {
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Financial services",
+   "url": "https://www.edelweissfin.com/"
+  },
+  {
+   "provider": "Muthoottu Mini Financiers Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://www.muthoottumini.com/"
+  },
+  {
+   "provider": "ICL Fincorp Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://www.iclfincorp.com/"
+  },
+  {
+   "provider": "Chemmanur Credits and Investments Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://www.chemmanurcredits.com/"
+  },
+  {
+   "provider": "Nido Home Finance Ltd",
+   "kind": "Housing finance company",
+   "url": "https://www.nidohomefin.com/"
+  },
+  {
+   "provider": "Adani Enterprises Ltd",
+   "kind": "Corporate",
+   "url": "https://www.adanienterprises.com/"
+  },
+  {
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://www.kosamattam.com/"
+  },
+  {
+   "provider": "Sammaan Capital Ltd",
+   "kind": "Housing finance company",
+   "url": "https://www.sammaancapital.com/"
+  },
+  {
+   "provider": "KLM Axiva Finvest Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://klmaxiva.com/"
+  },
+  {
+   "provider": "Muthoot Mercantile Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://muthootenterprises.com/"
+  },
+  {
+   "provider": "Sakthi Finance Ltd",
+   "kind": "NBFC",
+   "url": "https://sakthifinance.com/"
+  },
+  {
+   "provider": "Capri Global Capital Ltd",
+   "kind": "NBFC",
+   "url": "https://www.capriloans.in/"
+  },
+  {
+   "provider": "Indel Money Ltd",
+   "kind": "NBFC (gold loan)",
+   "url": "https://indelmoney.com/"
+  },
+  {
+   "provider": "Prachay Capital Ltd",
+   "kind": "NBFC",
+   "url": "https://prachay.com/"
+  },
+  {
+   "provider": "Paisalo Digital Ltd",
+   "kind": "NBFC",
+   "url": "https://www.paisalo.in/"
+  }
+ ],
+ "entries": [
+  {
+   "name": "RBI Floating Rate Savings Bonds 2020 (Taxable)",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://www.rbi.org.in/",
+   "note": "8.05% p.a. for Jul–Dec 2026 (NSC rate + 0.35%), reset half-yearly; 7-yr tenure; via banks/RBI Retail Direct"
+  },
+  {
+   "name": "6.20% GS 2029",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "3-year benchmark; auctioned Sep 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.03% GS 2029",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Dated G-sec; auctioned Apr–Jul 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.53% GS 2031",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "5-year benchmark; first issued Sep 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.36% GS 2031",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Dated G-sec; auctioned Apr–Aug 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.57% GS 2033",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "7-year benchmark; auctioned Aug–Oct 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.68% GS 2033",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Dated G-sec; auctioned Apr–Jul 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.48% GS 2035",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Former 10-year benchmark; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.33% GS 2035",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Former 10-year benchmark; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.94% GS 2036",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "10-year benchmark; first issued May 2026, matures May 2036; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.68% GS 2040",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Dated G-sec; auctioned Mar–Jun 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.06% GS 2041",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "15-year benchmark; first issued Jul 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.24% GS 2055",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Long-dated G-sec; auctioned Apr–Aug 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.63% GS 2056",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "30-year benchmark; first issued Sep 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "6.90% GS 2065",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Long-dated G-sec; auctioned 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.71% GS 2066",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "40-year benchmark; first issued May 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.43% GS 2076",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "50-year benchmark; auctioned 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "7.50% GOI SGrB 2056",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Sovereign Green Bond; auctioned Oct 2026; buy via RBI Retail Direct"
+  },
+  {
+   "name": "GOI FRB 2028",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Floating rate bond; 6.45% for Oct 2026–Apr 2027 (182-day T-bill avg + 0.64%); buy via RBI Retail Direct"
+  },
+  {
+   "name": "91-Day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Weekly auction; cut-off yield 5.52% (30 Sep 2026); via RBI Retail Direct"
+  },
+  {
+   "name": "182-Day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Weekly auction; cut-off yield 5.96% (30 Sep 2026); via RBI Retail Direct"
+  },
+  {
+   "name": "364-Day Treasury Bill",
+   "provider": "Government of India (via RBI)",
+   "kind": "Treasury bill",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "Weekly auction; cut-off yield 6.18% (30 Sep 2026); via RBI Retail Direct"
+  },
+  {
+   "name": "Andhra Pradesh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Arunachal Pradesh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Assam SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Bihar SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Chhattisgarh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Goa SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Gujarat SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Haryana SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Himachal Pradesh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Jharkhand SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Karnataka SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Kerala SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Madhya Pradesh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Maharashtra SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Manipur SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Meghalaya SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Mizoram SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Nagaland SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Odisha SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Punjab SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Rajasthan SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Sikkim SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Tamil Nadu SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Telangana SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Tripura SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Uttar Pradesh SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Uttarakhand SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "West Bengal SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Delhi SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Jammu and Kashmir SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "Puducherry SDL",
+   "provider": "State Governments (via RBI)",
+   "kind": "State Development Loan",
+   "url": "https://rbiretaildirect.org.in/",
+   "note": "State Government Security auctioned via RBI; available on RBI Retail Direct; ~7.3–7.9% yields in 2026"
+  },
+  {
+   "name": "SGB 2018-19 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBOCT26; issue price ₹3146/g; 2.5% p.a.; final maturity Oct 2026; secondary market only"
+  },
+  {
+   "name": "SGB 2018-19 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBNOV26; issue price ₹3183/g; 2.5% p.a.; final maturity Nov 2026; secondary market only"
+  },
+  {
+   "name": "SGB 2018-19 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBDEC26; issue price ₹3119/g; 2.5% p.a.; final maturity Jan 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2018-19 Series V",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJAN27; issue price ₹3214/g; 2.5% p.a.; final maturity Jan 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2018-19 Series VI",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBFEB27; issue price ₹3326/g; 2.5% p.a.; final maturity Feb 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series I",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUN27; issue price ₹3196/g; 2.5% p.a.; final maturity Jun 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUL27; issue price ₹3443/g; 2.5% p.a.; final maturity Jul 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBAUG27; issue price ₹3499/g; 2.5% p.a.; final maturity Aug 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBSEP27; issue price ₹3890/g; 2.5% p.a.; final maturity Sep 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series V",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBOCT27; issue price ₹3788/g; 2.5% p.a.; final maturity Oct 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series VI",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBOCT27VI; issue price ₹3835/g; 2.5% p.a.; final maturity Oct 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series VII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBDC27VII; issue price ₹3795/g; 2.5% p.a.; final maturity Dec 2027; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series VIII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJ28VIII; issue price ₹4016/g; 2.5% p.a.; final maturity Jan 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series IX",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBFEB28IX; issue price ₹4070/g; 2.5% p.a.; final maturity Feb 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2019-20 Series X",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMAR28X; issue price ₹4260/g; 2.5% p.a.; final maturity Mar 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series I",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBAPR28I; issue price ₹4639/g; 2.5% p.a.; final maturity Apr 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMAY28; issue price ₹4590/g; 2.5% p.a.; final maturity May 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUN28; issue price ₹4677/g; 2.5% p.a.; final maturity Jun 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUL28IV; issue price ₹4852/g; 2.5% p.a.; final maturity Jul 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series V",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBAUG28V; issue price ₹5334/g; 2.5% p.a.; final maturity Aug 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series VI",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBSEP28VI; issue price ₹5117/g; 2.5% p.a.; final maturity Sep 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series VII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBOC28VII; issue price ₹5051/g; 2.5% p.a.; final maturity Oct 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series VIII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBN28VIII; issue price ₹5177/g; 2.5% p.a.; final maturity Nov 2028; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series IX",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJAN29IX; issue price ₹5000/g; 2.5% p.a.; final maturity Jan 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series X",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJAN29X; issue price ₹5104/g; 2.5% p.a.; final maturity Jan 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series XI",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBFEB29XI; issue price ₹4912/g; 2.5% p.a.; final maturity Feb 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2020-21 Series XII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMR29XII; issue price ₹4662/g; 2.5% p.a.; final maturity Mar 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series I",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMAY29I; issue price ₹4777/g; 2.5% p.a.; final maturity May 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUN29II; issue price ₹4842/g; 2.5% p.a.; final maturity Jun 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJU29III; issue price ₹4889/g; 2.5% p.a.; final maturity Jun 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUL29IV; issue price ₹4807/g; 2.5% p.a.; final maturity Jul 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series V",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBAUG29V; issue price ₹4790/g; 2.5% p.a.; final maturity Aug 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series VI",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBSEP29VI; issue price ₹4732/g; 2.5% p.a.; final maturity Sep 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series VII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBNV29VII; issue price ₹4761/g; 2.5% p.a.; final maturity Nov 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series VIII",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBD29VIII; issue price ₹4791/g; 2.5% p.a.; final maturity Dec 2029; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series IX",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJAN30IX; issue price ₹4786/g; 2.5% p.a.; final maturity Jan 2030; secondary market only"
+  },
+  {
+   "name": "SGB 2021-22 Series X",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMAR30X; issue price ₹5109/g; 2.5% p.a.; final maturity Mar 2030; secondary market only"
+  },
+  {
+   "name": "SGB 2022-23 Series I",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUN30; issue price ₹5091/g; 2.5% p.a.; final maturity Jun 2030; secondary market only"
+  },
+  {
+   "name": "SGB 2022-23 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBAUG30; issue price ₹5197/g; 2.5% p.a.; final maturity Aug 2030; secondary market only"
+  },
+  {
+   "name": "SGB 2022-23 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBDE30III; issue price ₹5409/g; 2.5% p.a.; final maturity Dec 2030; secondary market only"
+  },
+  {
+   "name": "SGB 2022-23 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBMAR31IV; issue price ₹5611/g; 2.5% p.a.; final maturity Mar 2031; secondary market only"
+  },
+  {
+   "name": "SGB 2023-24 Series I",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBJUN31I; issue price ₹5926/g; 2.5% p.a.; final maturity Jun 2031; secondary market only"
+  },
+  {
+   "name": "SGB 2023-24 Series II",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBSEP31II; issue price ₹5923/g; 2.5% p.a.; final maturity Sep 2031; secondary market only"
+  },
+  {
+   "name": "SGB 2023-24 Series III",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBDE31III; issue price ₹6199/g; 2.5% p.a.; final maturity Dec 2031; secondary market only"
+  },
+  {
+   "name": "SGB 2023-24 Series IV",
+   "provider": "Government of India (via RBI)",
+   "kind": "Sovereign Gold Bond",
+   "note": "NSE: SGBFEB32IV; issue price ₹6263/g; 2.5% p.a.; final maturity Feb 2032; secondary market only"
+  },
+  {
+   "name": "REC 54EC Capital Gain Bonds Series XIX",
+   "provider": "REC Ltd",
+   "kind": "Capital gains bond",
+   "note": "5.25% p.a., 5-yr lock-in, ₹10,000/bond, max ₹50 lakh/FY under Sec 54EC; Interest paid annually on 30 Jun"
+  },
+  {
+   "name": "PFC 54EC Capital Gain Bonds Series VII",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Capital gains bond",
+   "note": "5.25% p.a., 5-yr lock-in, ₹10,000/bond, max ₹50 lakh/FY under Sec 54EC"
+  },
+  {
+   "name": "IRFC 54EC Capital Gain Bonds Series VI",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Capital gains bond",
+   "note": "5.25% p.a., 5-yr lock-in, ₹10,000/bond, max ₹50 lakh/FY under Sec 54EC; Interest paid annually on 15 Oct"
+  },
+  {
+   "name": "HUDCO 54EC Capital Gain Bonds Series I",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Capital gains bond",
+   "note": "5.25% p.a., 5-yr lock-in, ₹10,000/bond, max ₹50 lakh/FY under Sec 54EC; Issued from Apr 2025"
+  },
+  {
+   "name": "HUDCO 8.20% 2027 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 82HUDCO27 (N2); 8.20% tax-free coupon; matures 05 MAR 2027; secondary market only"
+  },
+  {
+   "name": "HUDCO 7.19% 2028 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 719HUDCO28 (N7); 7.19% tax-free coupon; matures 28 MAR 2028; secondary market only"
+  },
+  {
+   "name": "HUDCO 7.51% 2028 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 751HUDCO28 (N5); 7.51% tax-free coupon; matures 16 FEB 2028; secondary market only"
+  },
+  {
+   "name": "HUDCO 8.51% 2028 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 851HUDCO28 (NB); 8.51% tax-free coupon; matures 25 OCT 2028; secondary market only"
+  },
+  {
+   "name": "HUDCO 8.76% 2028 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 876HUDCO28 (ND); 8.76% tax-free coupon; matures 25 OCT 2028; secondary market only"
+  },
+  {
+   "name": "HUDCO 8.58% 2029 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 858HUDCO29 (NC); 8.58% tax-free coupon; matures 13 JAN 2029; secondary market only"
+  },
+  {
+   "name": "HUDCO 7.64% 2031 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 764HUDCO31 (N8); 7.64% tax-free coupon; matures 08 FEB 2031; secondary market only"
+  },
+  {
+   "name": "HUDCO 7.69% 2031 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 769HUDCO31 (N9); 7.69% tax-free coupon; matures 15 MAR 2031; secondary market only"
+  },
+  {
+   "name": "HUDCO 9.01% 2034 tax-free",
+   "provider": "Housing & Urban Development Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 901HUDCO34 (NE); 9.01% tax-free coupon; matures 13 JAN 2034; secondary market only"
+  },
+  {
+   "name": "IIFCL 7.40% 2033 tax-free",
+   "provider": "India Infrastructure Finance Company Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 740IIFCL33 (N1); 7.40% tax-free coupon; matures 22 JAN 2033; secondary market only"
+  },
+  {
+   "name": "IIFCL 8.66% 2034 tax-free",
+   "provider": "India Infrastructure Finance Company Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 866IIFC34B (N3); 8.66% tax-free coupon; matures 22 JAN 2034; secondary market only"
+  },
+  {
+   "name": "IIFCL 8.91% 2034 tax-free",
+   "provider": "India Infrastructure Finance Company Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 891IIFCL34 (N4); 8.91% tax-free coupon; matures 22 JAN 2034; secondary market only"
+  },
+  {
+   "name": "IREDA 8.55% 2029 tax-free",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 855IREDA29 (N2); 8.55% tax-free coupon; matures 13 MAR 2029; secondary market only"
+  },
+  {
+   "name": "IREDA 8.80% 2029 tax-free",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 880IREDA29 (N5); 8.80% tax-free coupon; matures 13 MAR 2029; secondary market only"
+  },
+  {
+   "name": "IREDA 7.74% 2031 tax-free",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 774IREDA31 (N7); 7.74% tax-free coupon; matures 21 JAN 2031; secondary market only"
+  },
+  {
+   "name": "IREDA 8.55% 2034 tax-free",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 855IREDA34 (N3); 8.55% tax-free coupon; matures 13 MAR 2034; secondary market only"
+  },
+  {
+   "name": "IREDA 8.80% 2034 tax-free",
+   "provider": "Indian Renewable Energy Development Agency Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 880IREDA34 (N6); 8.80% tax-free coupon; matures 13 MAR 2034; secondary market only"
+  },
+  {
+   "name": "IRFC 8.10% 2027 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 810IRFC27 (N2); 8.10% tax-free coupon; matures 23 FEB 2027; secondary market only"
+  },
+  {
+   "name": "IRFC 7.04% 2028 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 704IRFC28 (N6); 7.04% tax-free coupon; matures 23 MAR 2028; secondary market only"
+  },
+  {
+   "name": "IRFC 7.34% 2028 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 734IRFC28 (N4); 7.34% tax-free coupon; matures 19 FEB 2028; secondary market only"
+  },
+  {
+   "name": "IRFC 8.40% 2029 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 840IRFC29 (N8); 8.40% tax-free coupon; matures 18 FEB 2029; secondary market only"
+  },
+  {
+   "name": "IRFC 8.63% 2029 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 863IRFC29 (NC); 8.63% tax-free coupon; matures 26 MAR 2029; secondary market only"
+  },
+  {
+   "name": "IRFC 8.65% 2029 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 865IRFC29 (NA); 8.65% tax-free coupon; matures 18 FEB 2029; secondary market only"
+  },
+  {
+   "name": "IRFC 8.88% 2029 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 888IRFC29 (NE); 8.88% tax-free coupon; matures 26 MAR 2029; secondary market only"
+  },
+  {
+   "name": "IRFC 7.28% 2030 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 728IRFC30 (NG); 7.28% tax-free coupon; matures 21 DEC 2030; secondary market only"
+  },
+  {
+   "name": "IRFC 7.53% 2030 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 753IRFC30 (NJ); 7.53% tax-free coupon; matures 21 DEC 2030; secondary market only"
+  },
+  {
+   "name": "IRFC 7.35% 2031 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 735IRFC31 (NM); 7.35% tax-free coupon; matures 22 MAR 2031; secondary market only"
+  },
+  {
+   "name": "IRFC 7.64% 2031 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 764IRFC31 (NO); 7.64% tax-free coupon; matures 22 MAR 2031; secondary market only"
+  },
+  {
+   "name": "IRFC 7.25% 2035 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 725IRFC35 (NH); 7.25% tax-free coupon; matures 21 DEC 2035; secondary market only"
+  },
+  {
+   "name": "IRFC 7.50% 2035 tax-free",
+   "provider": "Indian Railway Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 750IRFC35 (NK); 7.50% tax-free coupon; matures 21 DEC 2035; secondary market only"
+  },
+  {
+   "name": "NHAI 8.30% 2027 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 830NHAI27 (N2); 8.30% tax-free coupon; matures 25 JAN 2027; secondary market only"
+  },
+  {
+   "name": "NHAI 8.50% 2029 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 850NHAI29 (N5); 8.50% tax-free coupon; matures 05 FEB 2029; secondary market only"
+  },
+  {
+   "name": "NHAI 8.75% 2029 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 875NHAI29 (N6); 8.75% tax-free coupon; matures 05 FEB 2029; secondary market only"
+  },
+  {
+   "name": "NHAI 7.35% 2031 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 735NHAI31 (N9); 7.35% tax-free coupon; matures 11 JAN 2031; secondary market only"
+  },
+  {
+   "name": "NHAI 7.39% 2031 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 739NHAI31A (ND); 7.39% tax-free coupon; matures 09 MAR 2031; secondary market only"
+  },
+  {
+   "name": "NHAI 7.60% 2031 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 76NHAI31 (NA); 7.60% tax-free coupon; matures 11 JAN 2031; secondary market only"
+  },
+  {
+   "name": "NHAI 7.69% 2031 tax-free",
+   "provider": "National Highways Authority of India",
+   "kind": "Tax-free bond",
+   "note": "NSE: 769NHAI31 (NE); 7.69% tax-free coupon; matures 09 MAR 2031; secondary market only"
+  },
+  {
+   "name": "NHB 8.63% 2029 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 863NHB29 (N2); 8.63% tax-free coupon; matures 13 JAN 2029; secondary market only"
+  },
+  {
+   "name": "NHB 8.68% 2029 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 868NHB29 (N3); 8.68% tax-free coupon; matures 24 MAR 2029; secondary market only"
+  },
+  {
+   "name": "NHB 8.88% 2029 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 888NHB29 (N5); 8.88% tax-free coupon; matures 13 JAN 2029; secondary market only"
+  },
+  {
+   "name": "NHB 8.93% 2029 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 893NHB29 (N6); 8.93% tax-free coupon; matures 24 MAR 2029; secondary market only"
+  },
+  {
+   "name": "NHB 8.65% 2034 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 865NHB34 (N4); 8.65% tax-free coupon; matures 24 MAR 2034; secondary market only"
+  },
+  {
+   "name": "NHB 8.76% 2034 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 863NHB34 (N3); 8.76% tax-free coupon; matures 13 JAN 2034; secondary market only"
+  },
+  {
+   "name": "NHB 8.90% 2034 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 890NHB34 (N7); 8.90% tax-free coupon; matures 24 MAR 2034; secondary market only"
+  },
+  {
+   "name": "NHB 9.01% 2034 tax-free",
+   "provider": "National Housing Bank",
+   "kind": "Tax-free bond",
+   "note": "NSE: 901NHB34 (N6); 9.01% tax-free coupon; matures 13 JAN 2034; secondary market only"
+  },
+  {
+   "name": "NHPC 8.54% 2028 tax-free",
+   "provider": "NHPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 854NHPC28 (N2); 8.54% tax-free coupon; matures 02 NOV 2028; secondary market only"
+  },
+  {
+   "name": "NHPC 8.79% 2028 tax-free",
+   "provider": "NHPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 879NHPC28 (N5); 8.79% tax-free coupon; matures 02 NOV 2028; secondary market only"
+  },
+  {
+   "name": "NHPC 8.67% 2033 tax-free",
+   "provider": "NHPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 867NHPC33 (N3); 8.67% tax-free coupon; matures 02 NOV 2033; secondary market only"
+  },
+  {
+   "name": "NHPC 8.92% 2033 tax-free",
+   "provider": "NHPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 892NHPC33 (N6); 8.92% tax-free coupon; matures 02 NOV 2033; secondary market only"
+  },
+  {
+   "name": "NTPC 8.48% 2028 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 848NTPC28 (N2); 8.48% tax-free coupon; matures 16 DEC 2028; secondary market only"
+  },
+  {
+   "name": "NTPC 8.73% 2028 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 873NTPC28 (N5); 8.73% tax-free coupon; matures 16 DEC 2028; secondary market only"
+  },
+  {
+   "name": "NTPC 7.28% 2030 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 728NTPC30B (N9); 7.28% tax-free coupon; matures 05 OCT 2030; secondary market only"
+  },
+  {
+   "name": "NTPC 7.53% 2030 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 753NTPC30E (NC); 7.53% tax-free coupon; matures 05 OCT 2030; secondary market only"
+  },
+  {
+   "name": "NTPC 8.66% 2033 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 866NTPC33 (N3); 8.66% tax-free coupon; matures 16 DEC 2033; secondary market only"
+  },
+  {
+   "name": "NTPC 8.91% 2033 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 891NTPC33 (N6); 8.91% tax-free coupon; matures 16 DEC 2033; secondary market only"
+  },
+  {
+   "name": "NTPC 7.37% 2035 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 737NTPC35C (NA); 7.37% tax-free coupon; matures 05 OCT 2035; secondary market only"
+  },
+  {
+   "name": "NTPC 7.62% 2035 tax-free",
+   "provider": "NTPC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 762NTPC35F (ND); 7.62% tax-free coupon; matures 05 OCT 2035; secondary market only"
+  },
+  {
+   "name": "PFC 8.30% 2027 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 830PFCL27 (N5); 8.30% tax-free coupon; matures 01 FEB 2027; secondary market only"
+  },
+  {
+   "name": "PFC 7.36% 2028 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 736PFCL28 (N2); 7.36% tax-free coupon; matures 04 JAN 2028; secondary market only"
+  },
+  {
+   "name": "PFC 8.67% 2033 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 867PFCL33 (N7); 8.67% tax-free coupon; matures 16 NOV 2033; secondary market only"
+  },
+  {
+   "name": "PFC 8.92% 2033 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 892PFCL33 (N8); 8.92% tax-free coupon; matures 16 NOV 2033; secondary market only"
+  },
+  {
+   "name": "PFC 7.35% 2035 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 735PFCL35 (N1); 7.35% tax-free coupon; matures 17 OCT 2035; secondary market only"
+  },
+  {
+   "name": "PFC 7.60% 2035 tax-free",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 760PFCL35 (N3); 7.60% tax-free coupon; matures 17 OCT 2035; secondary market only"
+  },
+  {
+   "name": "REC 7.38% 2027 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 738REC27TF (N2); 7.38% tax-free coupon; matures 19 DEC 2027; secondary market only"
+  },
+  {
+   "name": "REC 8.12% 2027 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 812REC27 (NI); 8.12% tax-free coupon; matures 27 MAR 2027; secondary market only"
+  },
+  {
+   "name": "REC 7.04% 2028 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 704REC28 (N4); 7.04% tax-free coupon; matures 25 MAR 2028; secondary market only"
+  },
+  {
+   "name": "REC 8.46% 2028 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 846REC28 (N6); 8.46% tax-free coupon; matures 24 SEP 2028; secondary market only"
+  },
+  {
+   "name": "REC 8.71% 2028 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 871REC28 (N9); 8.71% tax-free coupon; matures 24 SEP 2028; secondary market only"
+  },
+  {
+   "name": "REC 8.63% 2029 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 863REC29 (NC); 8.63% tax-free coupon; matures 24 MAR 2029; secondary market only"
+  },
+  {
+   "name": "REC 8.88% 2029 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 888REC29 (NF); 8.88% tax-free coupon; matures 24 MAR 2029; secondary market only"
+  },
+  {
+   "name": "REC 8.37% 2033 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 837REC33 (N7); 8.37% tax-free coupon; matures 24 SEP 2033; secondary market only"
+  },
+  {
+   "name": "REC 8.62% 2033 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 862REC33 (NA); 8.62% tax-free coupon; matures 24 SEP 2033; secondary market only"
+  },
+  {
+   "name": "REC 8.61% 2034 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 861REC34 (ND); 8.61% tax-free coupon; matures 24 MAR 2034; secondary market only"
+  },
+  {
+   "name": "REC 8.86% 2034 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 886REC34 (NG); 8.86% tax-free coupon; matures 24 MAR 2034; secondary market only"
+  },
+  {
+   "name": "REC 7.43% 2035 tax-free",
+   "provider": "REC Ltd",
+   "kind": "Tax-free bond",
+   "note": "NSE: 743REC35 (NH); 7.43% tax-free coupon; matures 05 NOV 2035; secondary market only"
+  },
+  {
+   "name": "IIFL Finance NCD Tranche I April 2025",
+   "provider": "IIFL Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/iifl-finance-ncd-april-tranche-i-2025/335/",
+   "note": "Public issue Apr 7 to Apr 11, 2025; coupon 9.00-10.25% p.a.; listed NSE and BSE"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD April 2025",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-april-2025/336/",
+   "note": "Public issue Apr 8 to Apr 24, 2025; coupon 9.50-11.00% p.a.; up to Rs 200 cr"
+  },
+  {
+   "name": "Muthoottu Mini Financiers NCD April 2025",
+   "provider": "Muthoottu Mini Financiers Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoottu-mini-financiers-ncd-april-2025/337/",
+   "note": "Public issue Apr 23 to May 7, 2025; coupon 9.50-10.75% p.a.; up to Rs 200 cr"
+  },
+  {
+   "name": "ICL Fincorp NCD April 2025",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-april-2025/338/",
+   "note": "Public issue Apr 25 to May 9, 2025; coupon 11.00-12.50% p.a.; up to Rs 100 cr"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche V April 2025",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-v-april-2025/339/",
+   "note": "Public issue Apr 29 to May 13, 2025; coupon 9.00-10.00% p.a."
+  },
+  {
+   "name": "Chemmanur Credits NCD June 2025",
+   "provider": "Chemmanur Credits and Investments Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/chemmanur-credits-ncd-june-2025/340/",
+   "note": "Public issue Jun 3 to Jun 16, 2025; coupon 10.50-12.00% p.a.; rated BBB- Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "Nido Home Finance NCD June 2025",
+   "provider": "Nido Home Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/nido-home-finance-ncd-june-2025/341/",
+   "note": "Public issue Jun 17 to Jun 26, 2025; coupon 9.25-10.75% p.a.; rated A+ Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD July 2025",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-july-2025/343/",
+   "note": "Public issue Jul 8 to Jul 18, 2025; coupon 9.00-10.50% p.a.; rated A+ Stable; up to Rs 300 cr"
+  },
+  {
+   "name": "Adani Enterprises NCD July 2025",
+   "provider": "Adani Enterprises Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/adani-enterprises-ncd-july-2025/344/",
+   "note": "Public issue Jul 9 to Jul 11, 2025; coupon 8.85-9.30% p.a.; rated AA- Stable; up to Rs 1,000 cr; listed NSE and BSE"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche VI July 2025",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-vi-july-2025/345/",
+   "note": "Public issue Jul 4 to Jul 10, 2025; coupon 8.85-9.80% p.a.; rated AA- Positive"
+  },
+  {
+   "name": "Kosamattam Finance NCD July 2025",
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/kosamattam-finance-ncd-july-2025/346/",
+   "note": "Public issue Jul 7 to Jul 18, 2025; coupon 10.00% p.a.; rated A- Stable; up to Rs 200 cr"
+  },
+  {
+   "name": "Sammaan Capital NCD Tranche IV July 2025",
+   "provider": "Sammaan Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/sammaan-capital-ncd-tranche-iv-july-2025/347/",
+   "note": "Public issue Jul 15 to Jul 28, 2025; coupon 8.65-9.95% p.a.; rated AA Stable; listed NSE and BSE"
+  },
+  {
+   "name": "KLM Axiva Finvest NCD July 2025",
+   "provider": "KLM Axiva Finvest Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/klm-axiva-finvest-ncd-july-2025/349/",
+   "note": "Public issue Jul 9 to Jul 22, 2025; coupon 9.50-11.00% p.a.; rated BBB Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Muthoot Mercantile NCD July 2025",
+   "provider": "Muthoot Mercantile Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-mercantile-ncd-july-2025/350/",
+   "note": "Public issue Jul 16 to Jul 29, 2025; coupon 9.50-10.25% p.a.; rated BBB Stable; up to Rs 125 cr"
+  },
+  {
+   "name": "ICL Fincorp NCD July 2025",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-july-2025/351/",
+   "note": "Public issue Jul 31 to Aug 13, 2025; coupon 10.50-12.00% p.a.; rated BBB- Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "Sakthi Finance NCD August 2025",
+   "provider": "Sakthi Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/sakthi-finance-ncd-august-2025/352/",
+   "note": "Public issue Aug 8 to Aug 22, 2025; coupon 9.00-10.25% p.a.; rated BBB Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Muthoottu Mini Financiers NCD August 2025",
+   "provider": "Muthoottu Mini Financiers Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoottu-mini-financiers-ncd-august-2025/353/",
+   "note": "Public issue Aug 18 to Aug 22, 2025; coupon 9.00-10.50% p.a.; rated A Stable; up to Rs 300 cr"
+  },
+  {
+   "name": "Nido Home Finance NCD August 2025",
+   "provider": "Nido Home Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/nido-home-finance-ncd-august-2025/354/",
+   "note": "Public issue Aug 21 to Sep 4, 2025; coupon 9.00-10.50% p.a.; rated A+ Stable; up to Rs 200 cr"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD September 2025",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-september-2025/355/",
+   "note": "Public issue Sep 24 to Sep 30, 2025; coupon 9.00-10.25% p.a.; rated A+ Stable; up to Rs 300 cr"
+  },
+  {
+   "name": "Capri Global Capital NCD September 2025",
+   "provider": "Capri Global Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/capri-global-capital-ncd-september-2025/356/",
+   "note": "Public issue Sep 30 to Oct 7, 2025; coupon 8.55-9.70% p.a.; rated AA Positive; up to Rs 400 cr"
+  },
+  {
+   "name": "Chemmanur Credits NCD October 2025",
+   "provider": "Chemmanur Credits and Investments Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/chemmanur-credits-and-investments-ncd-oct-2025/358/",
+   "note": "Public issue Oct 17 to Nov 3, 2025; coupon 10.50-12.00% p.a.; rated BBB- Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "Indel Money NCD October 2025",
+   "provider": "Indel Money Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/indel-money-ncd-october-2025/359/",
+   "note": "Public issue Oct 13 to Oct 24, 2025; coupon 9.00-11.25% p.a.; rated A- Stable; up to Rs 300 cr"
+  },
+  {
+   "name": "SMC Global Securities NCD October 2025",
+   "provider": "SMC Global Securities Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/smc-global-securities-ncd-october-2025/360/",
+   "note": "Public issue Oct 16 to Oct 24, 2025; coupon 9.75-10.25% p.a.; rated A Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Kosamattam Finance NCD October 2025",
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/kosamattam-finance-ncd-october-2025/363/",
+   "note": "Public issue Oct 30 to Nov 6, 2025; coupon 9.50-10.00% p.a.; rated A Stable; up to Rs 200 cr"
+  },
+  {
+   "name": "ICL Fincorp NCD November 2025",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-november-2025/364/",
+   "note": "Public issue Nov 17 to Nov 28, 2025; coupon 10.50-12.00% p.a.; rated BBB- Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "KLM Axiva Finvest NCD November 2025",
+   "provider": "KLM Axiva Finvest Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/klm-axiva-finvest-ncd-november-2025/365/",
+   "note": "Public issue Dec 1 to Dec 12, 2025; coupon 9.50-11.00% p.a.; rated BBB Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "Muthoot Mercantile NCD December 2025",
+   "provider": "Muthoot Mercantile Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-mercantile-ncd-december-2025/366/",
+   "note": "Public issue Dec 4 to Dec 17, 2025; coupon 9.50-10.75% p.a.; rated BBB Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD December 2025",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-december-2025/367/",
+   "note": "Public issue Dec 5 to Dec 11, 2025; coupon 8.85-10.10% p.a.; rated A+ Stable; up to Rs 250 cr"
+  },
+  {
+   "name": "Prachay Capital NCD December 2025",
+   "provider": "Prachay Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/prachay-capital-december-2025-ncd/368/",
+   "note": "Public issue Dec 11 to Dec 24, 2025; coupon 12.50-13.00% p.a.; rated BBB- Stable; up to Rs 150 cr"
+  },
+  {
+   "name": "Adani Enterprises NCD January 2026",
+   "provider": "Adani Enterprises Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/adani-enterprises-ncd-january-2026/369/",
+   "note": "Public issue Jan 6 to Jan 19, 2026; coupon 8.48-8.90% p.a.; rated AA- Stable; up to Rs 1,000 cr; listed NSE and BSE"
+  },
+  {
+   "name": "PFC Public NCD Tranche I January 2026",
+   "provider": "Power Finance Corporation Ltd",
+   "kind": "PSU bond",
+   "url": "https://www.chittorgarh.com/bond/power-finance-ncd-tranche-i-january-2026/370/",
+   "note": "Public issue Jan 16 to Jan 30, 2026; coupon 6.85-7.30% p.a.; rated AAA Stable; listed NSE and BSE; 5/10/15-year series"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche I February 2026",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-1-february-2026/371/",
+   "note": "Public issue Feb 3 to Feb 10, 2026; coupon 8.37-9.10% p.a.; rated AA- Positive"
+  },
+  {
+   "name": "Kosamattam Finance NCD February 2026",
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/kosamattam-finance-ncd-february-2026/372/",
+   "note": "Public issue Feb 9 to Feb 17, 2026; coupon 8.50-10.00% p.a.; rated A Stable; up to Rs 200 cr"
+  },
+  {
+   "name": "ICL Fincorp NCD February 2026",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-february-2026/373/",
+   "note": "Public issue Feb 5 to Feb 18, 2026; coupon 10.00-11.50% p.a.; rated BBB- Stable; up to Rs 100 cr"
+  },
+  {
+   "name": "IIFL Finance NCD Tranche I February 2026",
+   "provider": "IIFL Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/iifl-finance-ncd-tranche-i-february-2026-ncd/374/",
+   "note": "Public issue Feb 17 to Mar 4, 2026; coupon 8.37-9.00% p.a.; rated AA Stable; listed NSE and BSE"
+  },
+  {
+   "name": "Chemmanur Credits NCD February 2026",
+   "provider": "Chemmanur Credits and Investments Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/chemmanur-credits-ncd-february-2026/375/",
+   "note": "Public issue Mar 2 to Mar 16, 2026; coupon 10.25-12.00% p.a.; rated BBB- Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Prachay Capital NCD February 2026",
+   "provider": "Prachay Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/prachay-capital-ncd-february-2026/376/",
+   "note": "Public issue Feb 26 to Mar 12, 2026; coupon 12.50-13.00% p.a.; rated BBB- Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD February 2026",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-february-2026/378/",
+   "note": "Public issue Mar 2 to Mar 16, 2026; coupon 8.65-10.00% p.a.; rated A+ Stable; up to Rs 350 cr"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche II March 2026",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-ii-march-2026/379/",
+   "note": "Public issue Mar 13 to Mar 23, 2026; coupon 8.37-9.10% p.a.; rated AA- Positive; listed BSE"
+  },
+  {
+   "name": "Capri Global Capital NCD Tranche I April 2026",
+   "provider": "Capri Global Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/capri-global-capital-tranch-i-march-2026-ncd/380/",
+   "note": "Public issue Apr 15 to Apr 28, 2026; coupon 8.80-9.50% p.a.; rated ACUITE AA Stable; listed BSE"
+  },
+  {
+   "name": "ICL Fincorp NCD April 2026",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-april-2026/381/",
+   "note": "Public issue Apr 10 to Apr 24, 2026; coupon 10.50-11.50% p.a.; rated BBB- Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche III April 2026",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-iii-april-2026/382/",
+   "note": "Public issue Apr 24 to May 8, 2026; coupon 8.51-9.25% p.a.; rated AA- Positive; listed BSE"
+  },
+  {
+   "name": "Kosamattam Finance NCD May 2026",
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/kosamattam-finance-ncd-may-2026/383/",
+   "note": "Public issue May 18 to May 25, 2026; coupon 8.50-10.00% p.a.; rated A Stable; up to Rs 300 cr; listed BSE"
+  },
+  {
+   "name": "Muthoot Mercantile NCD May 2026",
+   "provider": "Muthoot Mercantile Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-mercantile-ncd-may-2026/384/",
+   "note": "Public issue May 29 to Jun 11, 2026; coupon 10.50-11.00% p.a.; rated CRISIL BBB+ Stable; up to Rs 150 cr; listed BSE"
+  },
+  {
+   "name": "Prachay Capital NCD June 2026",
+   "provider": "Prachay Capital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/prachay-capital-ncd-june-2026/385/",
+   "note": "Public issue Jun 5 to Jun 18, 2026; coupon 12.25-12.75% p.a.; rated BBB Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD June 2026",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-june-2026/386/",
+   "note": "Public issue Jun 8 to Jun 12, 2026; coupon 8.65-10.00% p.a.; rated A+ Stable; up to Rs 300 cr; listed BSE"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche IV June 2026",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-iv-june-2026/387/",
+   "note": "Public issue Jun 19 to Jul 3, 2026; coupon 8.51-9.25% p.a.; rated AA Stable; listed BSE"
+  },
+  {
+   "name": "Chemmanur Credits NCD August 2026",
+   "provider": "Chemmanur Credits and Investments Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/chemmanur-credits-and-investments-ncd-aug-2026/388/",
+   "note": "Public issue Aug 4 to Aug 17, 2026; coupon 10.25-12.00% p.a.; rated BBB Stable; up to Rs 150 cr; listed BSE"
+  },
+  {
+   "name": "Paisalo Digital NCD August 2026",
+   "provider": "Paisalo Digital Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/paisalo-digital-ncd-aug-2026/389/",
+   "note": "Public issue Aug 7 to Aug 17, 2026; coupon 9.00-10.47% p.a.; rated AA Stable; listed BSE"
+  },
+  {
+   "name": "ICL Fincorp NCD August 2026",
+   "provider": "ICL Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/icl-fincorp-limited-ncd-august-2026/390/",
+   "note": "Public issue Aug 10 to Aug 21, 2026; coupon 10.00-11.50% p.a.; rated BBB- Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Indel Money NCD August 2026",
+   "provider": "Indel Money Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/indel-money-ncd-august-2026/391/",
+   "note": "Public issue Aug 18 to Aug 20, 2026; coupon 9.00-11.50% p.a.; rated A- Stable; up to Rs 500 cr; listed BSE"
+  },
+  {
+   "name": "KLM Axiva Finvest NCD August 2026",
+   "provider": "KLM Axiva Finvest Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/klm-axiva-finvest-ncd-august-2026/393/",
+   "note": "Public issue Aug 18 to Sep 1, 2026; coupon 9.50-11.00% p.a.; rated BBB- Stable; up to Rs 100 cr; listed BSE"
+  },
+  {
+   "name": "Kosamattam Finance NCD August 2026",
+   "provider": "Kosamattam Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/kosamattam-finance-ncd-august-2026/394/",
+   "note": "Public issue Aug 18 to Sep 1, 2026; coupon 8.50-10.00% p.a.; rated A Stable; up to Rs 200 cr; listed BSE"
+  },
+  {
+   "name": "Muthoot Fincorp NCD Tranche V September 2026",
+   "provider": "Muthoot Fincorp Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/muthoot-fincorp-ncd-tranche-v-ncd-september-2026/395/",
+   "note": "Public issue Sep 8 to Sep 22, 2026; coupon 8.56-9.25% p.a.; rated AA Stable; listed BSE"
+  },
+  {
+   "name": "Edelweiss Financial Services NCD September 2026",
+   "provider": "Edelweiss Financial Services Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/edelweiss-financial-services-ncd-september-2026/396/",
+   "note": "Public issue Sep 21 to Sep 29, 2026; coupon 8.65-10.00% p.a.; rated A+ Stable; up to Rs 300 cr; listed BSE"
+  },
+  {
+   "name": "SMC Global Securities NCD October 2026",
+   "provider": "SMC Global Securities Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/bond/smc-global-securities-ncd-october-2026/397/",
+   "note": "Open now: public issue Oct 5 to Oct 16, 2026; coupon 9.50-10.00% p.a.; rated A Stable; up to Rs 150 cr"
+  }
+ ]
+}

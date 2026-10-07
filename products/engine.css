@@ -12,3 +12,10 @@
 .kx-kpi b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .fx-nav .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 .fx-nav .acts a.gw-btn{display:inline-flex;align-items:center;text-decoration:none}
+
+.px-full{columns:2 320px;column-gap:16px}
+.px-full details{break-inside:avoid;border-bottom:1px solid var(--line,#e5e7eb);padding:6px 0}
+.px-full summary{cursor:pointer;font-size:14px}
+.px-full ul{margin:6px 0 4px;padding-left:18px;font-size:13px}
+.px-full li{cursor:pointer;padding:2px 0}
+.px-full li:hover{color:var(--brand,#5b5bf6)}

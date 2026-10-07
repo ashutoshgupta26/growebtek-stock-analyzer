@@ -18,8 +18,55 @@
   var mem = {};
   function load(cat) {
     if (mem[cat]) return mem[cat];
-    return (mem[cat] = fetch('../products/data/' + cat + '.json?v=' + (PX.v || 1)).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(prep).catch(function (e) { delete mem[cat]; throw e; }));
+    var get = function (u) { return fetch('../products/data/' + u + '.json?v=' + (PX.v || 1)).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); };
+    return (mem[cat] = Promise.all([get(cat), get('dir/' + cat).catch(function () { return null; })])
+      .then(function (r) { return attachDir(prep(r[0]), r[1]); }).catch(function (e) { delete mem[cat]; throw e; }));
+  }
+  // company-level figures a listed plan inherits from its provider
+  var CO = { health: ['csr', 'icr', 'complaints', 'network', 'solvency'], life: ['csrCount', 'csrAmount', 'solvency', 'aum', 'persistency13', 'complaints'], term: ['csrCount', 'csrAmount', 'solvency', 'complaints'],
+    vehicle: ['csrOD', 'csrTP', 'garages', 'solvency'], travel: ['csr'], fd: ['r1y', 'r2y', 'r3y', 'r5y', 'rmax', 'rmaxTenure', 'srExtra', 'dicgc', 'rating', 'minDep', 'penalty', 'taxSaver'] };
+  function norm(x) { return String(x || '').toLowerCase().replace(/\(.*?\)/g, ' ').replace(/\b(ltd|limited|co|company|the)\b/g, ' ').replace(/[^a-z0-9]+/g, ''); }
+  function slug(x) { return String(x || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40); }
+  function scoreOf(it, ps) {
+    var W = 0, Wh = 0, s = 0;
+    ps.forEach(function (p) { W += p.w; if (it.pr[p.k] != null) { Wh += p.w; s += p.w * it.pr[p.k]; } });
+    if (!Wh) return null;
+    var avg = s / Wh, c = Wh / W, k = Math.min(1, c / 0.6);
+    return Math.round((1 + 9 * (0.5 + (avg - 0.5) * k)) * 10) / 10;
+  }
+  // full India list: every plan we know of, rated on its company's published figures
+  function attachDir(D, X) {
+    D.listed = []; D.cos = [];
+    var keys = CO[D.id] || [], pv = {}, pn = {};
+    var addCo = function (prov) { var n = norm(prov); if (n && !pn[n]) { pn[n] = prov; D.cos.push(prov); } return n; };
+    D.items.forEach(function (it) { addCo(it.provider); });
+    ((X && X.companies) || []).forEach(function (c) { var n = addCo(c.provider), o = pv[n] = pv[n] || {}; keys.forEach(function (k) { var v = (c.v || {})[k]; if (v != null && v !== '') o[k] = v; }); });
+    D.items.forEach(function (it) { var o = pv[norm(it.provider)] = pv[norm(it.provider)] || {}; keys.forEach(function (k) { if (it.v[k] != null && it.v[k] !== '') o[k] = it.v[k]; }); });
+    if (!X) return D;
+    var seen = {}, cur = {}, sk = function (pr, nm) { return norm(pr) + '|' + norm(nm); }; D.items.forEach(function (it) { cur[norm(it.name)] = 1; });
+    var ps = D.params.filter(function (p) { return keys.indexOf(p.k) >= 0 && scored(p) && p.fmt !== 'text' && (p.w || 0) > 0; });
+    (X.entries || []).forEach(function (e) {
+      if (!e || !e.name || cur[norm(e.name)] || seen[sk(e.provider, e.name)]) return; seen[sk(e.provider, e.name)] = 1;
+      var n = addCo(e.provider), id = 'd-' + slug(e.provider).slice(0, 18) + '-' + slug(e.name);
+      while (D.byId[id]) id += 'x';
+      var it = { id: id, name: e.name, provider: pn[n] || e.provider || '', kind: e.kind || '', url: e.url, uin: e.uin, note: e.note, listed: true, v: {}, pr: {}, rk: {}, pros: [], cons: [] };
+      keys.forEach(function (k) { if ((pv[n] || {})[k] != null) it.v[k] = pv[n][k]; });
+      ps.forEach(function (p) {
+        var x = num(p, it.v[p.k]); if (x == null) return;
+        var vals = D.items.map(function (o) { return num(p, o.v[p.k]); }).filter(function (y) { return y != null; }), m = vals.length;
+        if (m < 3) return;
+        var lo = vals.filter(function (y) { return y < x; }).length, hi = vals.filter(function (y) { return y > x; }).length, so = vals.slice().sort(function (a, b) { return a - b; });
+        var f = (lo + (m - lo - hi) / 2) / m;
+        it.pr[p.k] = p.better === 'low' ? 1 - f : f;
+        it.rk[p.k] = { r: (p.better === 'low' ? lo : hi) + 1, n: m + 1, med: m % 2 ? so[(m - 1) / 2] : (so[m / 2 - 1] + so[m / 2]) / 2, peer: 'rated list' };
+      });
+      it.score = Object.keys(it.pr).length ? scoreOf(it, ps) : null;
+      it.cov = 1;
+      it.gs = (D.groups || []).map(function (g) { var q = ps.filter(function (p) { return p.g === g.id; }); var s = q.length ? scoreOf(it, q) : null; return s == null ? null : { id: g.id, label: g.label, s: s, ps: q }; }).filter(Boolean);
+      D.byId[id] = it; D.listed.push(it);
+    });
+    D.dirSources = X.sources || [];
+    return D;
   }
   function scored(p) { return p.better === 'high' || p.better === 'low'; }
   function num(p, v) { if (v == null) return null; if (p.fmt === 'yes') return v === true ? 1 : v === false ? 0 : null; return typeof v === 'number' && isFinite(v) ? v : null; }
@@ -116,7 +163,7 @@
   }
   function sources(D) {
     return '<section class="gw-card"><h2>ℹ️ About this data</h2><p class="fx-about">' + esc(D.intro || '') + '</p>' +
-      '<p class="fx-note" style="margin-top:8px"><b>Checked:</b> ' + esc(D.asOf || '') + ' · <b>Sources:</b> ' + esc((D.sources || []).join('; ')) + '</p>' +
+      '<p class="fx-note" style="margin-top:8px"><b>Checked:</b> ' + esc(D.asOf || '') + ' · <b>Sources:</b> ' + esc((D.sources || []).concat(D.dirSources || []).join('; ')) + '</p>' +
       '<p class="fx-note">The score ranks each product against its peers on the parameters above (higher weight for what matters most). Blank values are not counted. Always confirm the latest terms with the provider before you decide.</p></section>';
   }
 
@@ -126,7 +173,7 @@
     var use = D.params.filter(function (p) { return p.use; }).sort(function (a, b) { return b.w - a.w; });
     h += kindChips(D) ? '<section class="gw-card">' + kindChips(D) + '</section>' : '';
     var kp = use.slice(0, 2).map(function (p) { var b = bestOf(D, list, p); return b ? '<div class="kx-kpi"><span>Best ' + esc(p.label) + '</span><b>' + esc(fv(p, b.v[p.k])) + '</b><small>' + esc(b.name) + '</small></div>' : ''; }).join('');
-    h += '<div class="kx-kpis"><div class="kx-kpi"><span>' + esc(c.label) + ' options</span><b>' + list.length + '</b><small>' + esc(D.kinds.length > 1 && !S.kind ? D.kinds.length + ' types' : (S.kind || D.title)) + '</small></div>' +
+    h += '<div class="kx-kpis">' + (D.listed.length ? '<div class="kx-kpi"><span>Full India list</span><b>' + (D.items.length + D.listed.length) + '</b><small>' + D.cos.length + ' companies · search any</small></div>' : '') + '<div class="kx-kpi"><span>Fully rated</span><b>' + list.length + '</b><small>' + esc(D.kinds.length > 1 && !S.kind ? D.kinds.length + ' types' : (S.kind || D.title)) + '</small></div>' +
       (top ? '<div class="kx-kpi"><span>Top rated</span><b>' + esc(top.name) + '</b><small>' + sc1(top.score) + ' / 10 · ' + label(top.score) + '</small></div>' : '') + kp + '</div>';
     // summary
     var bl = use.map(function (p) { var b = bestOf(D, list, p); return b ? '<li><b>' + esc(p.label) + ':</b> ' + esc(b.name) + ' (' + esc(fv(p, b.v[p.k])) + ')</li>' : ''; }).join('');
@@ -141,10 +188,25 @@
     h += '<section class="gw-card"><div class="fx-hrow"><h2>📋 Full ranking</h2><input class="gw-input kx-filter" id="tf" type="search" placeholder="Filter by name" aria-label="Filter"></div>' +
       '<div class="gw-tbl-wrap"><table class="gw-tbl kx-tbl"><thead><tr><th>Name</th><th class="kx-sort" data-sort="_score">Score</th>' + cols.map(function (p) { return '<th class="kx-sort" data-sort="' + esc(p.k) + '" title="' + esc(p.tip || '') + '">' + esc(p.label) + '</th>'; }).join('') + '</tr></thead><tbody id="tb"></tbody></table></div>' +
       '<p class="fx-note">Tap a column to sort, tap a row to analyze. "–" means not published or not found.</p></section>';
+    h += fullList(D);
     h += newsCard(D.title + ' news', D.newsQuery || D.title, '', 'rnews');
     h += sources(D);
     $('view').innerHTML = h;
     S.rows = list; S.cols = cols; drawTable(D);
+  }
+  // every company and plan we know of, grouped by company
+  function fullList(D) {
+    var L = D.items.concat(D.listed).filter(function (it) { return !S.kind || it.kind === S.kind; });
+    if (!D.listed.length || !L.length) return '';
+    var by = {}, order = [];
+    L.forEach(function (it) { var k = it.provider || 'Other'; if (!by[k]) { by[k] = []; order.push(k); } by[k].push(it); });
+    order.sort(function (a, b) { return a.localeCompare(b); });
+    return '<section class="gw-card"><h2>📚 Full India list <span class="sub">' + L.length + ' options · ' + order.length + ' companies</span></h2>' +
+      '<p class="fx-note" style="margin:0 0 8px">Every ' + esc(catDef().label.toLowerCase()) + ' option we track. ⭐ = fully rated. Open a company to see its plans; tap a plan to analyze it.</p><div class="px-full">' +
+      order.map(function (k) {
+        var a = by[k].slice().sort(function (x, y) { return (x.listed ? 1 : 0) - (y.listed ? 1 : 0) || x.name.localeCompare(y.name); });
+        return '<details><summary><b>' + esc(k) + '</b> <span class="muted">' + a.length + '</span></summary><ul>' + a.map(function (it) { return '<li data-open="' + esc(it.id) + '">' + (it.listed ? '' : '⭐ ') + esc(it.name) + (it.kind ? ' <small class="muted">' + esc(it.kind) + '</small>' : '') + '</li>'; }).join('') + '</ul></details>';
+      }).join('') + '</div></section>';
   }
   function drawTable(D) {
     var tb = $('tb'); if (!tb) return;
@@ -171,7 +233,9 @@
   }
   function renderAnalyze(D, id) {
     var it = D.byId[id];
+    if (!it && /^q:./.test(id)) { S.id = id; return renderWeb(D, id.slice(2)); }
     if (!it) { S.id = null; return renderEmpty(D); }
+    if (it.listed) { S.id = id; return renderListed(D, it); }
     S.id = id; setHash();
     var h = '', inCmp = S.cmp[S.cat].indexOf(id) >= 0;
     var shown = D.params.filter(function (p) { return p.show; });
@@ -208,6 +272,54 @@
     h += sources(D);
     $('view').innerHTML = h;
     calcRun();
+  }
+  function coRows(D, it) {
+    var ps = D.params.filter(function (p) { return (CO[D.id] || []).indexOf(p.k) >= 0 && it.v[p.k] != null && it.v[p.k] !== ''; });
+    if (!ps.length) return '';
+    return '<section class="gw-card"><h2>🏢 Company check <span class="sub">' + esc(it.provider) + '</span></h2><div class="gw-tbl-wrap"><table class="gw-tbl kx-tbl px-ptbl"><thead><tr><th>Parameter</th><th>Value</th><th>Rank</th><th>Rated-list median</th></tr></thead><tbody>' +
+      ps.map(function (p) {
+        var r = it.rk[p.k], b = it.pr[p.k];
+        return '<tr><td title="' + esc(p.tip || '') + '">' + esc(p.label) + (p.tip ? ' <span class="muted" aria-hidden="true">ⓘ</span>' : '') + '</td><td class="num' + (b != null && b >= 0.8 ? ' up' : b != null && b <= 0.2 ? ' dn' : '') + '" style="white-space:normal">' + esc(fv(p, it.v[p.k])) + '</td>' +
+          '<td class="num">' + (r ? '#' + r.r + ' of ' + r.n : '–') + '</td><td class="num">' + (r && r.med != null && p.fmt !== 'yes' ? esc(fv(p, Math.round(r.med * 100) / 100)) : '–') + '</td></tr>';
+      }).join('') + '</tbody></table></div><p class="fx-note">These are company-wide figures, the same for every plan from this provider. Green = better than most rated options, red = worse.</p></section>';
+  }
+  function alts(D, it) {
+    var same = sorted(D, D.items.filter(function (o) { return norm(o.provider) === norm(it.provider); }));
+    var kin = sorted(D, D.items.filter(function (o) { return same.indexOf(o) < 0 && (!it.kind || o.kind === it.kind); }));
+    var list = same.slice(0, 3).concat(kin).slice(0, 5);
+    return list.length ? '<section class="gw-card"><h2>⭐ Fully rated options to weigh it against</h2>' + hbars(list, 5) + '<p class="fx-note">These have plan-level figures (costs, features) and a full AI score. Add them to Compare to see them side by side with this plan.</p></section>' : '';
+  }
+  function webLink(q) { return 'https://www.google.com/search?q=' + encodeURIComponent(q); }
+  function renderListed(D, it) {
+    setHash();
+    var h = '', id = it.id, inCmp = S.cmp[S.cat].indexOf(id) >= 0;
+    h += '<section class="gw-card fx-head"><div><h1>' + esc(it.name) + '</h1><div class="meta">' + esc(it.provider) + (it.kind ? ' · ' + esc(it.kind) : '') + '</div>' +
+      '<div class="chips"><span class="gw-chip indigo">Full India list</span>' + (it.uin ? '<span class="gw-chip">UIN ' + esc(it.uin) + '</span>' : '') + '</div>' +
+      (it.note ? '<p style="margin:10px 0 0;font-size:14px">' + esc(it.note) + '</p>' : '') + '</div>' +
+      '<div class="fx-nav"><div class="lab">' + (it.score != null ? 'Company score' : 'AI score') + '</div><div class="big num">' + sc1(it.score) + '<small style="font-size:.5em"> / 10</small></div><div style="font-weight:800">' + label(it.score) + '</div>' +
+      '<div class="acts"><button class="gw-btn ghost" type="button" data-addcmp="' + esc(id) + '" style="height:38px;font-size:13px">' + (inCmp ? '✓ In compare' : '+ Compare') + '</button>' +
+      '<a class="gw-btn ghost" href="' + esc(it.url || webLink(it.name + ' ' + it.provider)) + '" target="_blank" rel="noopener" style="height:38px;font-size:13px">' + (it.url ? 'Official page ↗' : 'Search the web ↗') + '</a></div></div></section>';
+    h += '<section class="gw-card fx-verdict ' + vcls(it.score) + '"><h2>🧾 What we can say</h2><p style="margin-top:6px">' +
+      (it.score != null ? esc(label(it.score) + ' on company record: ' + (it.gs.length ? 'the provider scores ' + it.gs.map(function (g) { return g.label.toLowerCase() + ' ' + g.s.toFixed(1); }).join(', ') + ' against the fully rated list. ' : '')) : '') +
+      'This plan is in our full list of ' + (D.items.length + D.listed.length) + ' ' + esc(catDef().label.toLowerCase()) + ' options from ' + D.cos.length + ' companies. Plan-level figures (exact costs and features) are checked for the ' + D.items.length + ' rated options; for this one, confirm them in the official brochure before you decide.</p></section>';
+    h += coRows(D, it);
+    h += calcCard(D, it);
+    h += alts(D, it);
+    h += newsCard(it.name + ' news', it.name + ' ' + it.provider.replace(/\(.*?\)/g, ''), words(it.provider).concat(words(it.name)).slice(0, 6).join('|'), 'inews');
+    h += sources(D);
+    $('view').innerHTML = h;
+    calcRun();
+  }
+  function renderWeb(D, q) {
+    setHash();
+    var ts = q.toLowerCase().split(/\s+/), all = D.items.concat(D.listed);
+    var near = all.filter(function (it) { var s = (it.name + ' ' + it.provider).toLowerCase(); return ts.some(function (t) { return t.length > 2 && s.indexOf(t) >= 0; }); }).slice(0, 8);
+    var h = '<section class="gw-card fx-head"><div><h1>' + esc(q) + '</h1><div class="meta">Not found in our ' + esc(catDef().label.toLowerCase()) + ' list of ' + all.length + ' options</div>' +
+      '<p style="margin:10px 0 0;font-size:14px">It may be a new, renamed or closed product, or a different spelling. Below are the closest matches we have and the latest news for your search.</p></div>' +
+      '<div class="fx-nav"><div class="acts"><a class="gw-btn ghost" href="' + esc(webLink(q + ' ' + catDef().label + ' India')) + '" target="_blank" rel="noopener" style="height:38px;font-size:13px">Search the web ↗</a></div></div></section>';
+    if (near.length) h += '<section class="gw-card"><h2>🔎 Closest matches</h2><ul class="fx-sum">' + near.map(function (it) { return '<li data-open="' + esc(it.id) + '" style="cursor:pointer"><b>' + esc(it.name) + '</b> · ' + esc(it.provider) + (it.listed ? '' : ' · ' + sc1(it.score) + '/10') + '</li>'; }).join('') + '</ul></section>';
+    h += newsCard('News for “' + q + '”', q + ' ' + catDef().label + ' India', words(q).join('|') || q.toLowerCase(), 'inews');
+    $('view').innerHTML = h;
   }
   // calculators: deposit maturity (quarterly compounding) or loan EMI
   function calcCard(D, it) {
@@ -295,14 +407,20 @@
   function search(q) {
     q = q.trim().toLowerCase(); if (!q || !S.D) return closeDD();
     var ts = q.split(/\s+/);
-    var a = S.D.items.filter(function (it) { var s = (it.name + ' ' + it.provider + ' ' + (it.kind || '') + ' ' + (it.tags || []).join(' ')).toLowerCase(); return ts.every(function (t) { return s.indexOf(t) >= 0; }); });
-    a = sorted(S.D, a).slice(0, 10); ddItems = a; ddOn = a.length ? 0 : -1;
-    $('dd').innerHTML = a.length ? a.map(function (it, i) { return '<li role="option" data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '><span class="nm">' + esc(it.name) + ' <small class="muted">' + esc(it.provider) + '</small></span><span class="gw-chip">' + sc1(it.score) + '</span></li>'; }).join('') : '<li class="empty">Nothing found. Try a provider name.</li>';
+    var hit = function (it) { var s = (it.name + ' ' + it.provider + ' ' + (it.kind || '') + ' ' + (it.tags || []).join(' ') + ' ' + (it.uin || '')).toLowerCase(); return ts.every(function (t) { return s.indexOf(t) >= 0; }); };
+    var nm = function (it) { return it.name.toLowerCase().indexOf(q) >= 0 ? 0 : 1; };
+    var a = sorted(S.D, S.D.items.filter(hit)).concat(S.D.listed.filter(hit).sort(function (x, y) { return nm(x) - nm(y) || x.name.localeCompare(y.name); })).slice(0, 14);
+    if (q.length >= 3) a.push({ id: 'q:' + q, web: true, name: q });
+    ddItems = a; ddOn = a.length ? 0 : -1;
+    $('dd').innerHTML = a.map(function (it, i) {
+      return '<li role="option" data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '>' + (it.web ? '<span class="nm">🔎 Look up “' + esc(it.name) + '” <small class="muted">not in the list? See news and web results</small></span>'
+        : '<span class="nm">' + esc(it.name) + ' <small class="muted">' + esc(it.provider) + '</small></span><span class="gw-chip' + (it.listed ? ' indigo' : '') + '">' + (it.listed ? (it.score != null ? sc1(it.score) + ' · ' : '') + 'Listed' : sc1(it.score)) + '</span>') + '</li>';
+    }).join('') || '<li class="empty">Nothing found. Try a provider name.</li>';
     $('dd').hidden = false; $('q').setAttribute('aria-expanded', 'true');
   }
   function choose(it) {
     if (!it) return; $('q').value = ''; closeDD();
-    if (S.tab === 'compare') { if (S.cmp[S.cat].indexOf(it.id) < 0 && toggleCmp(it.id)) renderCompare(S.D); }
+    if (S.tab === 'compare' && !it.web) { if (S.cmp[S.cat].indexOf(it.id) < 0 && toggleCmp(it.id)) renderCompare(S.D); }
     else { S.tab = 'analyze'; syncTabs(); renderAnalyze(S.D, it.id); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   }
   function renderPicks() {
@@ -330,7 +448,7 @@
       S.D = D; renderPicks(); drawTray();
       if (S.tab === 'report') { setHash(); renderReport(D); }
       else if (S.tab === 'compare') renderCompare(D);
-      else if (S.id && D.byId[S.id]) renderAnalyze(D, S.id);
+      else if (S.id && (D.byId[S.id] || /^q:./.test(S.id))) renderAnalyze(D, S.id);
       else renderEmpty(D);
     }).catch(function () {
       if (my !== tok) return;

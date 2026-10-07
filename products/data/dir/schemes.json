@@ -1,0 +1,237 @@
+{
+ "cat": "schemes",
+ "asOf": "Oct 2026",
+ "sources": [
+  "Ministry of Finance small savings rates Oct-Dec 2026 (news: Outlook Money, stableinvestor)",
+  "indiapost.gov.in / nsiindia.gov.in",
+  "EPFO 8.25% FY26 notification (newsonair)",
+  "PFRDA NPS Vatsalya 2026 guidelines (BusinessToday)",
+  "MSSC closure (not extended after Mar 2025)",
+  "pmkisan.gov.in / maandhan.in"
+ ],
+ "companies": [
+  {
+   "provider": "Government of India (Post Office / banks)",
+   "kind": "Government (small savings via post offices and authorised banks)",
+   "url": "https://www.nsiindia.gov.in"
+  },
+  {
+   "provider": "Government of India (Post Office)",
+   "kind": "Government (small savings via post offices)",
+   "url": "https://www.indiapost.gov.in"
+  },
+  {
+   "provider": "Department of Posts",
+   "kind": "Government (India Post)",
+   "url": "https://www.indiapost.gov.in"
+  },
+  {
+   "provider": "PFRDA (Government of India)",
+   "kind": "Pension regulator / Government scheme",
+   "url": "https://www.pfrda.org.in"
+  },
+  {
+   "provider": "PFRDA / pension fund managers",
+   "kind": "Pension regulator and pension fund managers",
+   "url": "https://www.npstrust.org.in"
+  },
+  {
+   "provider": "EPFO",
+   "kind": "Statutory social security organisation",
+   "url": "https://www.epfindia.gov.in"
+  },
+  {
+   "provider": "Government of India (Ministry of Labour & Employment)",
+   "kind": "Government",
+   "url": "https://maandhan.in"
+  },
+  {
+   "provider": "Government of India (Ministry of Agriculture & Farmers Welfare)",
+   "kind": "Government",
+   "url": "https://maandhan.in"
+  },
+  {
+   "provider": "Government of India (Department of Expenditure)",
+   "kind": "Government",
+   "url": "https://doe.gov.in"
+  },
+  {
+   "provider": "Government of Madhya Pradesh",
+   "kind": "State government",
+   "url": "https://ladlilaxmi.mp.gov.in"
+  },
+  {
+   "provider": "Government of Karnataka",
+   "kind": "State government",
+   "url": "https://dwcd.karnataka.gov.in"
+  },
+  {
+   "provider": "Government of Tamil Nadu",
+   "kind": "State government",
+   "url": "https://www.tnsocialwelfare.tn.gov.in"
+  },
+  {
+   "provider": "Government of NCT of Delhi",
+   "kind": "State government",
+   "url": "https://wcd.delhi.gov.in"
+  },
+  {
+   "provider": "Government of Maharashtra",
+   "kind": "State government",
+   "url": "https://womenchild.maharashtra.gov.in"
+  }
+ ],
+ "entries": [
+  {
+   "name": "Public Provident Fund (PPF)",
+   "provider": "Government of India (Post Office / banks)",
+   "kind": "Post office savings",
+   "url": "https://www.indiapost.gov.in",
+   "note": "7.1% p.a. (Oct-Dec 2026), EEE tax status; 15-yr lock-in, extendable in 5-yr blocks; Rs 500-1.5 lakh/yr"
+  },
+  {
+   "name": "Sukanya Samriddhi Yojana (SSY)",
+   "provider": "Government of India (Post Office / banks)",
+   "kind": "Girl child",
+   "note": "8.2% p.a. (Oct-Dec 2026); for girl child under 10; deposits for 15 yrs, matures at 21 yrs; Rs 250-1.5 lakh/yr, 80C"
+  },
+  {
+   "name": "Senior Citizens Savings Scheme (SCSS)",
+   "provider": "Government of India (Post Office / banks)",
+   "kind": "Retirement",
+   "note": "8.2% p.a. paid quarterly (Oct-Dec 2026); age 60+ (55+ for VRS); 5-yr tenure, extendable 3 yrs; max Rs 30 lakh"
+  },
+  {
+   "name": "National Savings Certificate (NSC VIII Issue)",
+   "provider": "Government of India (Post Office)",
+   "kind": "Post office savings",
+   "note": "7.7% p.a. compounded annually (Oct-Dec 2026); 5-yr lock-in; 80C eligible"
+  },
+  {
+   "name": "Kisan Vikas Patra (KVP)",
+   "provider": "Government of India (Post Office / banks)",
+   "kind": "Post office savings",
+   "note": "7.5% p.a. (Oct-Dec 2026); doubles money in 115 months; lock-in 2.5 yrs"
+  },
+  {
+   "name": "Post Office Monthly Income Scheme (MIS)",
+   "provider": "Government of India (Post Office)",
+   "kind": "Post office savings",
+   "note": "7.4% p.a. paid monthly (Oct-Dec 2026); 5-yr tenure; max Rs 9 lakh single / Rs 15 lakh joint"
+  },
+  {
+   "name": "Post Office Recurring Deposit (RD)",
+   "provider": "Government of India (Post Office)",
+   "kind": "Post office savings",
+   "note": "6.7% p.a. compounded quarterly (Oct-Dec 2026); 5-yr tenure; min Rs 100/month"
+  },
+  {
+   "name": "Post Office Time Deposit (1/2/3/5 year)",
+   "provider": "Government of India (Post Office)",
+   "kind": "Post office savings",
+   "note": "6.9% (1y), 7.0% (2y), 7.1% (3y), 7.5% (5y) p.a. (Oct-Dec 2026); 5-yr TD qualifies for 80C"
+  },
+  {
+   "name": "Post Office Savings Account",
+   "provider": "Department of Posts",
+   "kind": "Post office savings",
+   "note": "4.0% p.a.; min balance Rs 500; no lock-in"
+  },
+  {
+   "name": "National Pension System (NPS) Tier I",
+   "provider": "PFRDA / pension fund managers",
+   "kind": "Retirement",
+   "note": "Market-linked (equity/corporate debt/G-sec/alternate); locked till 60; up to 80% lump sum at exit for non-govt subscribers (corpus > Rs 12 lakh); extra Rs 50,000 deduction u/s 80CCD(1B)"
+  },
+  {
+   "name": "National Pension System (NPS) Tier II",
+   "provider": "PFRDA / pension fund managers",
+   "kind": "Retirement",
+   "note": "Voluntary market-linked account with no lock-in; requires Tier I account"
+  },
+  {
+   "name": "NPS Vatsalya",
+   "provider": "PFRDA / pension fund managers",
+   "kind": "Retirement",
+   "note": "NPS for minors opened by parent/guardian; min Rs 250/yr (2026 rules); partial withdrawals after 3 yrs for education/illness; converts to NPS Tier I at 18"
+  },
+  {
+   "name": "Unified Pension Scheme (UPS)",
+   "provider": "PFRDA (Government of India)",
+   "kind": "Pension",
+   "note": "For central govt employees under NPS who opt in; assured pension of 50% of last 12-month avg basic pay after 25 yrs service; min Rs 10,000/month after 10 yrs"
+  },
+  {
+   "name": "Atal Pension Yojana (APY)",
+   "provider": "PFRDA (Government of India)",
+   "kind": "Pension",
+   "note": "Guaranteed pension of Rs 1,000-5,000/month from 60; age 18-40, non-income-taxpayers; contributions till 60"
+  },
+  {
+   "name": "Employees' Provident Fund (EPF)",
+   "provider": "EPFO",
+   "kind": "Retirement",
+   "note": "8.25% p.a. for FY 2025-26; 12% employee + employer contribution; for salaried employees in covered establishments"
+  },
+  {
+   "name": "Voluntary Provident Fund (VPF)",
+   "provider": "EPFO",
+   "kind": "Retirement",
+   "note": "Extra voluntary contribution over 12% into EPF; earns EPF rate (8.25% FY 2025-26); interest taxable on employee contributions above Rs 2.5 lakh/yr"
+  },
+  {
+   "name": "Employees' Pension Scheme (EPS-95)",
+   "provider": "EPFO",
+   "kind": "Pension",
+   "note": "8.33% of employer EPF share (wage ceiling Rs 15,000) funds a monthly pension after 10 yrs service; min pension Rs 1,000/month"
+  },
+  {
+   "name": "General Provident Fund (GPF)",
+   "provider": "Government of India (Department of Expenditure)",
+   "kind": "Retirement",
+   "note": "For govt employees under the old pension scheme; rate notified quarterly, usually in line with PPF (7.1%)"
+  },
+  {
+   "name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+   "provider": "Government of India (Ministry of Labour & Employment)",
+   "kind": "Pension",
+   "note": "Rs 3,000/month pension from 60 for unorganised workers aged 18-40 earning up to Rs 15,000/month; Rs 55-200/month contribution matched by govt"
+  },
+  {
+   "name": "Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)",
+   "provider": "Government of India (Ministry of Agriculture & Farmers Welfare)",
+   "kind": "Pension",
+   "note": "Rs 3,000/month pension from 60 for small and marginal farmers aged 18-40; Rs 55-200/month contribution matched by govt"
+  },
+  {
+   "name": "Ladli Laxmi Yojana",
+   "provider": "Government of Madhya Pradesh",
+   "kind": "Girl child",
+   "note": "MP state scheme: staged payments to registered girls through schooling plus a lump sum (about Rs 1 lakh) on completing conditions at 21"
+  },
+  {
+   "name": "Bhagyalakshmi Scheme",
+   "provider": "Government of Karnataka",
+   "kind": "Girl child",
+   "note": "Karnataka state scheme for girls in BPL families; govt deposit matures to a lump sum at 18 subject to conditions"
+  },
+  {
+   "name": "Chief Minister's Girl Child Protection Scheme",
+   "provider": "Government of Tamil Nadu",
+   "kind": "Girl child",
+   "note": "TN state scheme: govt fixed deposit (via TN Power Finance) in girl child's name, paid out at 18"
+  },
+  {
+   "name": "Delhi Ladli Scheme",
+   "provider": "Government of NCT of Delhi",
+   "kind": "Girl child",
+   "note": "Delhi govt deposits at birth and school milestones; maturity amount paid at 18 after Class 10"
+  },
+  {
+   "name": "Lek Ladki Yojana",
+   "provider": "Government of Maharashtra",
+   "kind": "Girl child",
+   "note": "Maharashtra scheme for girls in yellow/orange ration card families: staged payments totalling Rs 1,01,000 up to age 18"
+  }
+ ]
+}

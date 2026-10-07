@@ -1,0 +1,824 @@
+{
+ "cat": "gold",
+ "asOf": "Oct 2026",
+ "sources": [
+  "AMFI NAVAll.txt (portal.amfiindia.com)",
+  "NSE ETF list (nsearchives.nseindia.com eq_etfseclist.csv)",
+  "RBI / SBI GMS pages",
+  "SEBI digital gold advisory Nov 2025 (news)",
+  "Business Standard (NSE EGR launch)"
+ ],
+ "companies": [
+  {
+   "provider": "360 ONE Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.360.one/asset-management/mutualfund"
+  },
+  {
+   "provider": "Aditya Birla Sun Life AMC",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://mutualfund.adityabirlacapital.com"
+  },
+  {
+   "provider": "Angel One Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.angelonemf.com"
+  },
+  {
+   "provider": "Axis Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.axismf.com"
+  },
+  {
+   "provider": "Bandhan Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://bandhanmutual.com"
+  },
+  {
+   "provider": "Baroda BNP Paribas Asset Management India",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.barodabnpparibasmf.in"
+  },
+  {
+   "provider": "Choice Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.choicemf.com"
+  },
+  {
+   "provider": "DSP Asset Managers",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.dspim.com"
+  },
+  {
+   "provider": "Edelweiss Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.edelweissmf.com"
+  },
+  {
+   "provider": "Groww Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.growwmf.in"
+  },
+  {
+   "provider": "HDFC Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.hdfcfund.com"
+  },
+  {
+   "provider": "HSBC Asset Management (India)",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.assetmanagement.hsbc.co.in"
+  },
+  {
+   "provider": "ICICI Prudential Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.icicipruamc.com"
+  },
+  {
+   "provider": "Invesco Asset Management (India)",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.invescomutualfund.com"
+  },
+  {
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.kotakmf.com"
+  },
+  {
+   "provider": "LIC Mutual Fund Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.licmf.com"
+  },
+  {
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.miraeassetmf.co.in"
+  },
+  {
+   "provider": "Motilal Oswal Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.motilaloswalmf.com"
+  },
+  {
+   "provider": "Nippon Life India Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://mf.nipponindiaim.com"
+  },
+  {
+   "provider": "quant Money Managers",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://quantmutual.com"
+  },
+  {
+   "provider": "Quantum Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.quantumamc.com"
+  },
+  {
+   "provider": "SBI Funds Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.sbimf.com"
+  },
+  {
+   "provider": "Shriram Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.shriramamc.in"
+  },
+  {
+   "provider": "Tata Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.tatamutualfund.com"
+  },
+  {
+   "provider": "The Wealth Company Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.thewealthcompany.in"
+  },
+  {
+   "provider": "Union Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.unionmf.com"
+  },
+  {
+   "provider": "UTI Asset Management Company",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.utimf.com"
+  },
+  {
+   "provider": "Zerodha Asset Management",
+   "kind": "Asset management company (mutual fund)",
+   "url": "https://www.zerodhafundhouse.com"
+  },
+  {
+   "provider": "Government of India (issued by RBI)",
+   "kind": "Government",
+   "url": "https://www.rbi.org.in"
+  },
+  {
+   "provider": "State Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://sbi.co.in"
+  },
+  {
+   "provider": "Digital Gold India (SafeGold)",
+   "kind": "Digital gold provider",
+   "url": "https://www.safegold.com"
+  },
+  {
+   "provider": "MMTC-PAMP India",
+   "kind": "Digital gold provider / refiner",
+   "url": "https://www.mmtcpamp.com"
+  },
+  {
+   "provider": "Augmont Enterprises",
+   "kind": "Digital gold provider / refiner",
+   "url": "https://www.augmont.com"
+  },
+  {
+   "provider": "Titan Company (Tanishq)",
+   "kind": "Jeweller (digital gold)",
+   "url": "https://www.tanishq.co.in"
+  },
+  {
+   "provider": "National Stock Exchange of India",
+   "kind": "Stock exchange",
+   "url": "https://www.nseindia.com"
+  },
+  {
+   "provider": "BSE Ltd",
+   "kind": "Stock exchange",
+   "url": "https://www.bseindia.com"
+  }
+ ],
+ "entries": [
+  {
+   "name": "360 ONE Gold ETF",
+   "provider": "360 ONE Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLD360; tracks domestic price of physical gold"
+  },
+  {
+   "name": "360 ONE Silver ETF",
+   "provider": "360 ONE Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVER360; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Aditya Birla Sun Life Gold ETF",
+   "provider": "Aditya Birla Sun Life AMC",
+   "kind": "Gold ETF",
+   "note": "NSE: BSLGOLDETF; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Aditya Birla Sun Life Gold Fund",
+   "provider": "Aditya Birla Sun Life AMC",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Aditya Birla Sun Life Silver ETF",
+   "provider": "Aditya Birla Sun Life AMC",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Aditya Birla Sun Life Silver ETF FoF",
+   "provider": "Aditya Birla Sun Life AMC",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Angel One Gold ETF",
+   "provider": "Angel One Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: AONEGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Angel One Gold ETF FoF",
+   "provider": "Angel One Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Angel One Silver ETF",
+   "provider": "Angel One Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: AONESILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Angel One Silver ETF FoF",
+   "provider": "Angel One Asset Management Company",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Axis Gold and Silver Passive FOF",
+   "provider": "Axis Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "Axis Gold ETF",
+   "provider": "Axis Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDAXIS; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Axis Gold Fund",
+   "provider": "Axis Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Axis Silver ETF",
+   "provider": "Axis Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERAXIS; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Axis Silver Fund of Fund",
+   "provider": "Axis Asset Management Company",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Bandhan Gold ETF",
+   "provider": "Bandhan Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDBND; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Bandhan Gold ETF FoF",
+   "provider": "Bandhan Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Bandhan Silver ETF",
+   "provider": "Bandhan Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERBND; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Bandhan Silver ETF FoF",
+   "provider": "Bandhan Asset Management Company",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Baroda BNP Paribas Gold ETF",
+   "provider": "Baroda BNP Paribas Asset Management India",
+   "kind": "Gold ETF",
+   "note": "NSE: BBNPPGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Baroda BNP Paribas Gold ETF Fund of Fund",
+   "provider": "Baroda BNP Paribas Asset Management India",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Choice Gold ETF",
+   "provider": "Choice Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: CHOICEGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "DSP Gold ETF",
+   "provider": "DSP Asset Managers",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDADD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "DSP Gold ETF Fund of Fund",
+   "provider": "DSP Asset Managers",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "DSP Silver ETF",
+   "provider": "DSP Asset Managers",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERADD; tracks domestic price of physical silver"
+  },
+  {
+   "name": "DSP Silver ETF Fund of Fund",
+   "provider": "DSP Asset Managers",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "DSP World Gold Mining Overseas Equity Omni FoF",
+   "provider": "DSP Asset Managers",
+   "kind": "Gold fund of fund",
+   "note": "Overseas FoF investing in global gold-mining equities (not physical gold)"
+  },
+  {
+   "name": "Edelweiss Gold and Silver ETF FoF",
+   "provider": "Edelweiss Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "Edelweiss Gold ETF",
+   "provider": "Edelweiss Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: EGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Edelweiss Gold ETF Fund of Fund",
+   "provider": "Edelweiss Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Edelweiss Silver ETF",
+   "provider": "Edelweiss Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: ESILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Edelweiss Silver ETF Fund of Fund",
+   "provider": "Edelweiss Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Groww Gold ETF",
+   "provider": "Groww Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: GROWWGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Groww Gold ETF FoF",
+   "provider": "Groww Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Groww Silver ETF",
+   "provider": "Groww Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: GROWWSLVR; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Groww Silver ETF FoF",
+   "provider": "Groww Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "HDFC Gold ETF",
+   "provider": "HDFC Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: HDFCGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "HDFC Gold ETF Fund of Fund",
+   "provider": "HDFC Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "HDFC Gold Silver Passive FoF",
+   "provider": "HDFC Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "HDFC Silver ETF",
+   "provider": "HDFC Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: HDFCSILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "HDFC Silver ETF Fund of Fund",
+   "provider": "HDFC Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "HSBC Gold ETF",
+   "provider": "HSBC Asset Management (India)",
+   "kind": "Gold ETF",
+   "note": "NSE: HSBCGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "HSBC Gold ETF Fund of Fund",
+   "provider": "HSBC Asset Management (India)",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "ICICI Prudential Gold ETF",
+   "provider": "ICICI Prudential Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDIETF; tracks domestic price of physical gold"
+  },
+  {
+   "name": "ICICI Prudential Gold ETF FoF",
+   "provider": "ICICI Prudential Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "ICICI Prudential Silver ETF",
+   "provider": "ICICI Prudential Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERIETF; tracks domestic price of physical silver"
+  },
+  {
+   "name": "ICICI Prudential Silver ETF FoF",
+   "provider": "ICICI Prudential Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Invesco India Gold ETF Fund of Fund",
+   "provider": "Invesco Asset Management (India)",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Invesco India Gold Exchange Traded Fund",
+   "provider": "Invesco Asset Management (India)",
+   "kind": "Gold ETF",
+   "note": "NSE: IVZINGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Kotak Gold ETF",
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLD1; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Kotak Gold Fund",
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Kotak Gold Silver Passive FOF",
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "Kotak Silver ETF",
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVER1; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Kotak Silver ETF Fund of Fund",
+   "provider": "Kotak Mahindra Asset Management Company",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "LIC MF Gold ETF Fund of Fund",
+   "provider": "LIC Mutual Fund Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "LIC MF Gold Exchange Traded Fund",
+   "provider": "LIC Mutual Fund Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: LICMFGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Mirae Asset Gold ETF",
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDETF; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Mirae Asset Gold ETF Fund of Fund",
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Mirae Asset Gold Silver Passive FoF",
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "Mirae Asset Silver ETF",
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERAG; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Mirae Asset Silver ETF FoF",
+   "provider": "Mirae Asset Investment Managers (India)",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Motilal Oswal Gold and Silver Passive Fund of Funds",
+   "provider": "Motilal Oswal Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Passive FoF investing in both gold and silver ETFs"
+  },
+  {
+   "name": "Motilal Oswal Gold ETF",
+   "provider": "Motilal Oswal Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: MOGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Motilal Oswal Silver ETF",
+   "provider": "Motilal Oswal Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: MOSILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Nippon India ETF Gold BeES",
+   "provider": "Nippon Life India Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDBEES; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Nippon India Gold Savings Fund",
+   "provider": "Nippon Life India Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Nippon India Silver ETF",
+   "provider": "Nippon Life India Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERBEES; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Nippon India Silver ETF FoF",
+   "provider": "Nippon Life India Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "quant Silver ETF",
+   "provider": "quant Money Managers",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVER001; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Quantum Gold ETF",
+   "provider": "Quantum Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: QGOLDHALF; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Quantum Gold ETF FoF",
+   "provider": "Quantum Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "SBI Gold ETF",
+   "provider": "SBI Funds Management",
+   "kind": "Gold ETF",
+   "note": "NSE: SETFGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "SBI Gold Fund",
+   "provider": "SBI Funds Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "SBI Silver ETF",
+   "provider": "SBI Funds Management",
+   "kind": "Silver ETF",
+   "note": "NSE: SBISILVER; tracks domestic price of physical silver"
+  },
+  {
+   "name": "SBI Silver ETF Fund of Fund",
+   "provider": "SBI Funds Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Shriram Gold ETF Passive FOF",
+   "provider": "Shriram Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Tata Gold ETF Fund of Fund",
+   "provider": "Tata Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Tata Gold Exchange Traded Fund",
+   "provider": "Tata Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: TATAGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Tata Silver ETF Fund of Fund",
+   "provider": "Tata Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Tata Silver Exchange Traded Fund",
+   "provider": "Tata Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: TATSILV; tracks domestic price of physical silver"
+  },
+  {
+   "name": "The Wealth Company Gold ETF",
+   "provider": "The Wealth Company Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: TWCGOLDETF; tracks domestic price of physical gold"
+  },
+  {
+   "name": "The Wealth Company Gold ETF FoF",
+   "provider": "The Wealth Company Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Union Gold ETF",
+   "provider": "Union Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: UNIONGOLD; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Union Gold ETF Fund of Fund",
+   "provider": "Union Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "UTI Gold Exchange Traded Fund",
+   "provider": "UTI Asset Management Company",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDBETA; tracks domestic price of physical gold"
+  },
+  {
+   "name": "UTI Gold ETF Fund of Fund",
+   "provider": "UTI Asset Management Company",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "UTI Silver ETF Fund of Fund",
+   "provider": "UTI Asset Management Company",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "UTI Silver Exchange Traded Fund",
+   "provider": "UTI Asset Management Company",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERBETA; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Zerodha Gold ETF",
+   "provider": "Zerodha Asset Management",
+   "kind": "Gold ETF",
+   "note": "NSE: GOLDCASE; tracks domestic price of physical gold"
+  },
+  {
+   "name": "Zerodha Gold ETF FoF",
+   "provider": "Zerodha Asset Management",
+   "kind": "Gold fund of fund",
+   "note": "Invests in gold ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Zerodha Silver ETF",
+   "provider": "Zerodha Asset Management",
+   "kind": "Silver ETF",
+   "note": "NSE: SILVERCASE; tracks domestic price of physical silver"
+  },
+  {
+   "name": "Zerodha Silver ETF FoF",
+   "provider": "Zerodha Asset Management",
+   "kind": "Silver fund of fund",
+   "note": "Invests in silver ETF units; SIP from small amounts, no demat needed"
+  },
+  {
+   "name": "Sovereign Gold Bonds (secondary market)",
+   "provider": "Government of India (issued by RBI)",
+   "kind": "Sovereign Gold Bond",
+   "url": "https://www.rbi.org.in",
+   "note": "No fresh tranches since Feb 2024; existing series trade on NSE/BSE; 2.5% p.a. interest on issue price, 8-yr tenure, tax-free redemption at maturity"
+  },
+  {
+   "name": "SBI Revamped Gold Deposit Scheme (Short Term Bank Deposit)",
+   "provider": "State Bank of India",
+   "kind": "Gold deposit (GMS)",
+   "url": "https://sbi.co.in/web/personal-banking/investments-deposits/gold-monetisation-scheme",
+   "note": "Only short-term (1-3 yr) bank deposits continue under GMS; ~0.50-0.60% p.a.; medium/long-term govt deposits discontinued from 26 Mar 2025"
+  },
+  {
+   "name": "SafeGold Digital Gold",
+   "provider": "Digital Gold India (SafeGold)",
+   "kind": "Digital gold",
+   "url": "https://www.safegold.com",
+   "note": "24K gold from Re 1, vaulted with trustee oversight; not SEBI/RBI regulated (SEBI caution Nov 2025)"
+  },
+  {
+   "name": "SafeGold Digital Silver",
+   "provider": "Digital Gold India (SafeGold)",
+   "kind": "Digital silver",
+   "url": "https://www.safegold.com",
+   "note": "99.9% silver bought online in small amounts; unregulated product"
+  },
+  {
+   "name": "MMTC-PAMP Digital Gold",
+   "provider": "MMTC-PAMP India",
+   "kind": "Digital gold",
+   "url": "https://www.mmtcpamp.com",
+   "note": "24K 999.9 gold, LBMA-accredited refiner; sold via Paytm, PhonePe, Google Pay etc.; unregulated product"
+  },
+  {
+   "name": "MMTC-PAMP Digital Silver",
+   "provider": "MMTC-PAMP India",
+   "kind": "Digital silver",
+   "url": "https://www.mmtcpamp.com",
+   "note": "999.9 silver bought online in small amounts; unregulated product"
+  },
+  {
+   "name": "Augmont Digital Gold",
+   "provider": "Augmont Enterprises",
+   "kind": "Digital gold",
+   "url": "https://www.augmont.com",
+   "note": "24K 999 gold from Re 1 via Augmont app and partner apps; unregulated product"
+  },
+  {
+   "name": "Augmont Digital Silver",
+   "provider": "Augmont Enterprises",
+   "kind": "Digital silver",
+   "url": "https://www.augmont.com",
+   "note": "999 silver bought online; unregulated product"
+  },
+  {
+   "name": "Tanishq Digital Gold",
+   "provider": "Titan Company (Tanishq)",
+   "kind": "Digital gold",
+   "url": "https://www.tanishq.co.in/digital-gold",
+   "note": "Buy 24K gold online from Re 1, redeem as Tanishq jewellery/coins; unregulated product"
+  },
+  {
+   "name": "Electronic Gold Receipts (NSE)",
+   "provider": "National Stock Exchange of India",
+   "kind": "Electronic gold receipt",
+   "url": "https://www.nseindia.com",
+   "note": "SEBI-regulated demat gold receipts backed by vaulted gold; NSE live trading since 18 May 2026"
+  },
+  {
+   "name": "Electronic Gold Receipts (BSE)",
+   "provider": "BSE Ltd",
+   "kind": "Electronic gold receipt",
+   "url": "https://www.bseindia.com",
+   "note": "SEBI-regulated demat gold receipts backed by vaulted gold; on BSE since Oct 2022"
+  }
+ ]
+}

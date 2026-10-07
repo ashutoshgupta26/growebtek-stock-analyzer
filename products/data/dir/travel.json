@@ -1,0 +1,443 @@
+{
+ "cat": "travel",
+ "asOf": "Oct 2026",
+ "sources": [
+  "IRDAI Health Insurance Products list (travel UINs) - https://irdai.gov.in/en/web/guest/health-insurance-products",
+  "Insurer official websites, product pages and policy-wording downloads"
+ ],
+ "companies": [
+  {
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.starhealth.in",
+   "v": {}
+  },
+  {
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.galaxyhealth.com",
+   "v": {}
+  },
+  {
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.hdfcergo.com",
+   "v": {}
+  },
+  {
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.icicilombard.com",
+   "v": {}
+  },
+  {
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Private general insurer",
+   "url": "https://www.bajajgeneralinsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Tata AIG General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.tataaig.com",
+   "v": {}
+  },
+  {
+   "provider": "SBI General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.sbigeneral.in",
+   "v": {}
+  },
+  {
+   "provider": "Go Digit General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.godigit.com",
+   "v": {}
+  },
+  {
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.cholainsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.zurichkotak.com",
+   "v": {}
+  },
+  {
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Private general insurer",
+   "url": "https://www.generalicentralinsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Liberty General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.libertyinsurance.in",
+   "v": {}
+  },
+  {
+   "provider": "The New India Assurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://www.newindia.co.in",
+   "v": {}
+  },
+  {
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://orientalinsurance.org.in",
+   "v": {}
+  }
+ ],
+ "entries": [
+  {
+   "name": "Star Travel Protect Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "International",
+   "uin": "IRDA/NL-HLT/SHAI/P-T/V.I/140/13-14",
+   "url": "https://www.starhealth.in/travel-insurance/international-individual/",
+   "note": "Overseas travel cover for individuals/families"
+  },
+  {
+   "name": "Star Student Travel Protect Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Student",
+   "uin": "IRDA/NL-HLT/SHAI/P-T/V.I/142/13-14",
+   "url": "https://www.starhealth.in/travel-insurance/international-student/",
+   "note": "For Indian students studying abroad"
+  },
+  {
+   "name": "Star Corporate Travel Protect Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Multi-trip",
+   "uin": "IRDA/NL-HLT/SHAI/P-T/V.I/143/13-14",
+   "url": "https://www.starhealth.in/travel-insurance/international-corporate/",
+   "note": "Annual multi-trip overseas cover for business travellers"
+  },
+  {
+   "name": "Star Domestic Travel Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Domestic",
+   "uin": "SHATIDP23122V012223",
+   "url": "https://www.starhealth.in/travel-insurance/domestic-individual/",
+   "note": "Domestic travel cover within India"
+  },
+  {
+   "name": "HDFC ERGO Explorer",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "International",
+   "uin": "HDFTIOP24042V022425",
+   "url": "https://www.hdfcergo.com/travel-insurance/travel-explorer",
+   "note": "Overseas travel plan for individuals, families and senior citizens; includes annual multi-trip (frequent flyer) option"
+  },
+  {
+   "name": "Student Suraksha - Student Overseas Travel",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Student",
+   "uin": "HDFTIOP22052V022122",
+   "url": "https://www.hdfcergo.com/travel-insurance/student-suraksha-travel-insurance-policy",
+   "note": "Overseas student cover incl. medical, study interruption, sponsor protection"
+  },
+  {
+   "name": "TripSecure+",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "International",
+   "uin": "ICITIOP27060V032627",
+   "url": "https://www.icicilombard.com/travel-insurance/single-trip-travel-insurance",
+   "note": "Overseas single-trip travel plan for individuals and families"
+  },
+  {
+   "name": "Gold Multi Trip Travel Insurance",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Multi-trip",
+   "url": "https://www.icicilombard.com/travel-insurance/gold-multi-trip",
+   "note": "Annual multi-trip cover for frequent flyers; page disclosure references TripSecure+ UIN"
+  },
+  {
+   "name": "Domestic Multi Trip Travel Insurance",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Domestic",
+   "url": "https://www.icicilombard.com/travel-insurance/domestic",
+   "note": "New launch: one policy covering multiple trips within India"
+  },
+  {
+   "name": "Globetrotter - Overseas Individual Student Insurance Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Student",
+   "uin": "ICITIOP22094V022122",
+   "url": "https://www.icicilombard.com/travel-insurance/student-travel-insurance",
+   "note": "Overseas student travel and medical cover"
+  },
+  {
+   "name": "Travel Insurance (Business and Holiday)",
+   "provider": "SBI General Insurance",
+   "kind": "International",
+   "uin": "SBITIOP14004V011314",
+   "note": "Overseas travel medical and trip cover for business/holiday trips"
+  },
+  {
+   "name": "Travel Prime Policy (Individual and Family Floater)",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "International",
+   "uin": "BAJTIOP24007V042324",
+   "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online/travel-prime-international-insurance.html",
+   "note": "Overseas travel medical, trip and baggage cover"
+  },
+  {
+   "name": "Travel Ace (International)",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "International",
+   "uin": "BAJTIOP24008V022324",
+   "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online/travel-ace-plan.html",
+   "note": "Modular international travel plan"
+  },
+  {
+   "name": "Travel Companion",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "International",
+   "uin": "BAJTIOP24006V032324",
+   "note": "International travel policy on active product list"
+  },
+  {
+   "name": "Student Travel Insurance",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Student",
+   "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online/student-travel-insurance.html",
+   "note": "Study-abroad cover: medical, tuition fee refund, sponsor protection (Travel Prime student plan)"
+  },
+  {
+   "name": "Travel Assist Card",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "International",
+   "uin": "BAJTIOP22121V022122",
+   "note": "Overseas travel assistance policy on active product list"
+  },
+  {
+   "name": "Travel Ace Domestic",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Domestic",
+   "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online/travel-ace-domestic-insurance.html",
+   "note": "Domestic trip protection across India"
+  },
+  {
+   "name": "Bajaj Allianz Bharat Bhraman Insurance Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Domestic",
+   "uin": "BAJTIDP22129V022122",
+   "url": "https://www.bajajgeneralinsurance.com/travel-insurance-online/bharat-bhraman-domestic-travel-insurance.html",
+   "note": "Domestic travel: accident, delay, baggage, cashless hospitalisation"
+  },
+  {
+   "name": "E Travel Value Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Domestic",
+   "uin": "BAJTIDP22128V022122",
+   "note": "Domestic travel policy on active product list"
+  },
+  {
+   "name": "TATA AIG Travel Insurance - International",
+   "provider": "Tata AIG General Insurance",
+   "kind": "International",
+   "uin": "TATTIOP25040V042425",
+   "url": "https://www.tataaig.com/travel-insurance/international-travel-insurance",
+   "note": "Overseas travel medical, trip and baggage cover (with/without sublimits)"
+  },
+  {
+   "name": "TATA AIG Travel Insurance - International Plus",
+   "provider": "Tata AIG General Insurance",
+   "kind": "International",
+   "uin": "TATTIOP25045V022425",
+   "note": "Enhanced international travel plan"
+  },
+  {
+   "name": "TATA AIG Travel Insurance - Asia",
+   "provider": "Tata AIG General Insurance",
+   "kind": "International",
+   "uin": "TATTIOP25042V052425",
+   "note": "Travel plan for trips within Asia"
+  },
+  {
+   "name": "TATA AIG Travel Insurance - Student",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Student",
+   "uin": "TATTIOP25044V052425",
+   "url": "https://www.tataaig.com/travel-insurance/student-travel-insurance",
+   "note": "Overseas student medical and study-interruption cover"
+  },
+  {
+   "name": "TATA AIG Travel Insurance - Domestic",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Domestic",
+   "uin": "TATTIDP25043V042425",
+   "url": "https://www.tataaig.com/travel-insurance/domestic-travel-insurance",
+   "note": "Domestic trip cover within India"
+  },
+  {
+   "name": "Bharat Yatra Suraksha, Tata AIG General Insurance",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Domestic",
+   "uin": "TATTIDP22101V012122",
+   "note": "IRDAI standard domestic travel product"
+  },
+  {
+   "name": "Digit Happy Traveller Plan",
+   "provider": "Go Digit General Insurance",
+   "kind": "International",
+   "uin": "GODTIOP24172V012324",
+   "url": "https://www.godigit.com/international-travel-insurance",
+   "note": "Student and multi-trip variants sold on site"
+  },
+  {
+   "name": "Digit On-the-Move Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Multi-trip",
+   "uin": "GODTIBP26046V032526",
+   "note": "Covers international and domestic trips, single or multi-trip"
+  },
+  {
+   "name": "Overseas Travel Ease Policy (Business & Holiday)",
+   "provider": "The New India Assurance Co.",
+   "kind": "International",
+   "uin": "NIATIO22220V012122",
+   "url": "https://www.newindia.co.in/travel-insurance/overseas-travel-ease-policy",
+   "note": "Entry 6 months-80 yrs; 5 plans, SI USD 25k-500k"
+  },
+  {
+   "name": "Overseas Mediclaim Insurance Policy (Business & Holiday)",
+   "provider": "The New India Assurance Co.",
+   "kind": "International",
+   "url": "https://www.newindia.co.in/travel-insurance/travel-insurance-overseas-business-holidays",
+   "note": "Overseas medical cover for business and holiday trips"
+  },
+  {
+   "name": "Overseas Mediclaim Policy (Business and Holiday)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "International",
+   "uin": "OICTIOP21581V022021",
+   "note": "Plan A excl. US/Canada, Plan B incl. US/Canada; sold online"
+  },
+  {
+   "name": "Bharat Darshan Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Domestic",
+   "note": "Domestic travel policy sold online"
+  },
+  {
+   "name": "Chola Comprehensive Travel Insurance Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "International",
+   "uin": "IRDAI/HLT/CHSGI/P-T/V.I/66/2016-17",
+   "url": "https://www.cholainsurance.com/travel-insurance/comprehensive-travel",
+   "note": "Overseas travel cover, SI USD 50,000 upwards, optional domestic covers"
+  },
+  {
+   "name": "Chola Student Travel Protection Plan",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Student",
+   "uin": "IRDA/NL-HLT/CHSGI/P-T/V.I/285/13-14",
+   "url": "https://www.cholainsurance.com/travel-insurance/student-travel",
+   "note": "Overseas student medical and study-interruption cover"
+  },
+  {
+   "name": "Chola Overseas Travel Protection Policy (Leisure Travel)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "International",
+   "uin": "CHOTOIP06001V010506",
+   "url": "https://www.cholainsurance.com/travel-insurance/leisure-travel",
+   "note": "Leisure overseas trip cover marketed as Leisure Travel"
+  },
+  {
+   "name": "Global Travel Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "International",
+   "uin": "CHOTIOP26037V012526",
+   "note": "New overseas travel product filed 2025-26"
+  },
+  {
+   "name": "Zurich Kotak Travel Insurance Policy",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "International",
+   "url": "https://www.zurichkotak.com/travel-insurance",
+   "note": "Overseas travel cover with Excel and Prime plans; single trip, annual multi-trip, family, student and senior citizen options"
+  },
+  {
+   "name": "Jet Set Secure",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "GCITIOP24165V012324",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/jet-set-secure",
+   "note": "Overseas travel insurance"
+  },
+  {
+   "name": "Travel Suraksha",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "IRDA/NL-HLT/GCI/P-T/V.I/76/13-14",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/overseas-travel-insurance-online",
+   "note": "Overseas travel insurance (individual/family; multi-trip option)"
+  },
+  {
+   "name": "Travel Suraksha - Schengen Travel",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "IRDA/NL-HLT/GCI/P-T/V.II/78/13-14",
+   "note": "Travel cover for Schengen visa trips"
+  },
+  {
+   "name": "Travel Suraksha Select",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "IRDAI/HLT/GCI/P-T/V.I/30/16-17",
+   "note": "Overseas travel insurance variant"
+  },
+  {
+   "name": "Easy Travel Schengen",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "IRDAI/HLT/GCI/P-T/V.I/2/16-17",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/schengen-and-worldwide-travel-insurance-online",
+   "note": "Online Schengen travel cover"
+  },
+  {
+   "name": "Easy Travel Worldwide",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "International",
+   "uin": "IRDAI/HLT/GCI/P-T/V.I/1/16-17",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/schengen-and-worldwide-travel-insurance-online",
+   "note": "Online worldwide travel cover"
+  },
+  {
+   "name": "Student Suraksha",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Student",
+   "uin": "GCITIDP21520V022021",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/student-travel-insurance",
+   "note": "Travel insurance for students studying abroad"
+  },
+  {
+   "name": "Shubh Yatra",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Domestic",
+   "uin": "GCITIDP20115V011920",
+   "url": "https://www.generalicentralinsurance.com/travel-insurance/shubh-yatra",
+   "note": "Domestic travel insurance"
+  },
+  {
+   "name": "Liberty Secure Travel",
+   "provider": "Liberty General Insurance",
+   "kind": "International",
+   "uin": "LIBTIOP19017V011819",
+   "note": "Individual overseas travel policy (medical, baggage, trip cover); prospectus revised 30.09.2024"
+  },
+  {
+   "name": "Galaxy Fly Global Travel Insurance",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "International",
+   "uin": "GHITIOP27049V012627",
+   "url": "https://www.galaxyhealth.com/international-travel-insurance/galaxy-fly-global-travel-insurance",
+   "note": "Overseas travel medical, baggage and trip-delay cover; launched Aug 2026"
+  }
+ ]
+}

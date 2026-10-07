@@ -1,0 +1,2236 @@
+{
+ "cat": "health",
+ "asOf": "Oct 2026",
+ "sources": [
+  "IRDAI Health Insurance Products list - https://irdai.gov.in/en/web/guest/health-insurance-products",
+  "IRDAI Annual Report 2024-25 (Statements 10 and 12: health ICR, solvency)",
+  "Insurer official websites, product pages and policy-wording downloads",
+  "PolicyX claim settlement ratio FY2024-25 - https://www.policyx.com",
+  "Nyvo complaint ratio and claim settlement data - https://nyvo.in",
+  "Ditto - https://joinditto.in"
+ ],
+ "companies": [
+  {
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.starhealth.in",
+   "v": {
+    "csr": 88.34,
+    "icr": 70.3,
+    "complaints": 53.9,
+    "network": 14000,
+    "solvency": 2.21
+   }
+  },
+  {
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.galaxyhealth.com",
+   "v": {
+    "complaints": 25.9,
+    "solvency": 4.7,
+    "csr": 79.37,
+    "network": 10600
+   }
+  },
+  {
+   "provider": "Narayana Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.narayanahealth.insurance",
+   "v": {
+    "complaints": 9,
+    "solvency": 1.61,
+    "csr": 100
+   }
+  },
+  {
+   "provider": "Prudential HCL Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.prudentialhealth.in",
+   "v": {
+    "network": 12000
+   }
+  },
+  {
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.hdfcergo.com",
+   "v": {
+    "csr": 97.45,
+    "icr": 84.85,
+    "complaints": 8.3,
+    "network": 13000,
+    "solvency": 2
+   }
+  },
+  {
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.icicilombard.com",
+   "v": {
+    "csr": 83.65,
+    "icr": 82.24,
+    "complaints": 16.6,
+    "network": 10200,
+    "solvency": 2.69
+   }
+  },
+  {
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Private general insurer",
+   "url": "https://www.bajajgeneralinsurance.com",
+   "v": {
+    "csr": 97.32,
+    "icr": 87.31,
+    "complaints": 4.2,
+    "network": 12000,
+    "solvency": 3.25
+   }
+  },
+  {
+   "provider": "Tata AIG General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.tataaig.com",
+   "v": {
+    "csr": 86.63,
+    "icr": 76.24,
+    "complaints": 11.6,
+    "network": 11000,
+    "solvency": 1.81
+   }
+  },
+  {
+   "provider": "SBI General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.sbigeneral.in",
+   "v": {
+    "csr": 96.13,
+    "icr": 82.19,
+    "complaints": 11.2,
+    "network": 16600,
+    "solvency": 2.03
+   }
+  },
+  {
+   "provider": "Go Digit General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.godigit.com",
+   "v": {
+    "csr": 98.98,
+    "icr": 83.78,
+    "complaints": 19.9,
+    "network": 16400,
+    "solvency": 2.24
+   }
+  },
+  {
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.cholainsurance.com",
+   "v": {
+    "csr": 83.28,
+    "icr": 73.04,
+    "complaints": 32.8,
+    "network": 12000,
+    "solvency": 2.18
+   }
+  },
+  {
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Private general insurer",
+   "url": "https://www.hizuno.com",
+   "v": {
+    "csr": 86.43,
+    "icr": 90.12,
+    "complaints": 23.2,
+    "network": 6200,
+    "solvency": 1.58
+   }
+  },
+  {
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.zurichkotak.com",
+   "v": {
+    "csr": 92.05,
+    "icr": 70.69,
+    "complaints": 28.2,
+    "network": 16900,
+    "solvency": 5.73
+   }
+  },
+  {
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Private general insurer",
+   "url": "https://www.generalicentralinsurance.com",
+   "v": {
+    "csr": 94.54,
+    "icr": 95.29,
+    "complaints": 12.1,
+    "network": 8000,
+    "solvency": 1.96
+   }
+  },
+  {
+   "provider": "Magma General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.magmainsurance.com",
+   "v": {
+    "csr": 90.83,
+    "icr": 85.54,
+    "complaints": 19.5,
+    "network": 7300,
+    "solvency": 2.02
+   }
+  },
+  {
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.rahejaqbe.com",
+   "v": {
+    "csr": 89.7,
+    "icr": 105.12,
+    "complaints": 70.1,
+    "network": 5000,
+    "solvency": 1.72
+   }
+  },
+  {
+   "provider": "Navi General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://navi.com/insurance",
+   "v": {
+    "csr": 80.39,
+    "icr": 101.89,
+    "complaints": 173.6,
+    "network": 12000,
+    "solvency": 4.56
+   }
+  },
+  {
+   "provider": "Liberty General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.libertyinsurance.in",
+   "v": {
+    "csr": 90.84,
+    "icr": 92.99,
+    "complaints": 15,
+    "network": 5000,
+    "solvency": 1.75
+   }
+  },
+  {
+   "provider": "The New India Assurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://www.newindia.co.in",
+   "v": {
+    "csr": 98.38,
+    "icr": 100.98,
+    "complaints": 5.9,
+    "network": 3700,
+    "solvency": 1.91
+   }
+  },
+  {
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://orientalinsurance.org.in",
+   "v": {
+    "csr": 93.38,
+    "icr": 102.58,
+    "network": 4000,
+    "solvency": -1.03
+   }
+  }
+ ],
+ "entries": [
+  {
+   "name": "Star Comprehensive Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP26044V092526",
+   "url": "https://www.starhealth.in/health-insurance/comprehensive-health-insurance/",
+   "note": "Comprehensive indemnity plan, individual/floater, includes maternity, OPD and bariatric cover"
+  },
+  {
+   "name": "Medi Classic Insurance Policy (Individual)",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP26047V092526",
+   "url": "https://www.starhealth.in/health-insurance/mediclassic/",
+   "note": "Basic individual indemnity health plan"
+  },
+  {
+   "name": "Family Health Optima Insurance Plan",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP26046V092526",
+   "url": "https://www.starhealth.in/health-insurance/family-health-optima/",
+   "note": "Family floater indemnity plan with automatic SI restoration"
+  },
+  {
+   "name": "Young Star Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP26043V062526",
+   "url": "https://www.starhealth.in/health-insurance/youngstar/",
+   "note": "For entrants aged 18-40; Gold and Silver plans"
+  },
+  {
+   "name": "Star Health Assure Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP26048V032526",
+   "url": "https://www.starhealth.in/health-insurance/star-assure/",
+   "note": "Individual/floater plan covering up to 6 adults and 3 children"
+  },
+  {
+   "name": "Super Star",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP27049V022627",
+   "url": "https://www.starhealth.in/health-insurance/super-star/",
+   "note": "New long-term plan with freeze-your-age option and unlimited cover options"
+  },
+  {
+   "name": "Smart Health Pro",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP23172V012223",
+   "url": "https://www.starhealth.in/health-insurance/smart-health-pro/",
+   "note": "Individual/floater indemnity plan"
+  },
+  {
+   "name": "Star Health Gain Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP21262V032021",
+   "url": "https://www.starhealth.in/health-insurance/health-gain/",
+   "note": "Indemnity plan with in-patient and out-patient cover"
+  },
+  {
+   "name": "Star Women Care Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP23132V022223",
+   "url": "https://www.starhealth.in/health-insurance/women-care/",
+   "note": "Women-focused plan with maternity, pregnancy and newborn cover"
+  },
+  {
+   "name": "Star Out Patient Care Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP22231V012122",
+   "url": "https://www.starhealth.in/health-insurance/opd-health-insurance/",
+   "note": "Standalone OPD cover plan"
+  },
+  {
+   "name": "Star Hospital Cash Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP20046V011920",
+   "url": "https://www.starhealth.in/health-insurance/hospital-cash-insurance/",
+   "note": "Hospital cash: fixed daily benefit during hospitalisation"
+  },
+  {
+   "name": "Senior Citizens Red Carpet Health Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Senior citizen",
+   "uin": "SHAHLIP26041V082526",
+   "url": "https://www.starhealth.in/health-insurance/health-insurance-for-senior-citizens/",
+   "note": "Entry age 60-75, no pre-medical tests, covers pre-existing disease"
+  },
+  {
+   "name": "Star Health Premier Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Senior citizen",
+   "uin": "SHAHLIP22226V012122",
+   "url": "https://www.starhealth.in/health-insurance/health-premier/",
+   "note": "For people aged 50 and above"
+  },
+  {
+   "name": "Super Surplus Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Super top-up",
+   "uin": "SHAHLIP22035V062122",
+   "url": "https://www.starhealth.in/health-insurance/top-up-health-insurance/",
+   "note": "Individual super top-up, Silver and Gold plans"
+  },
+  {
+   "name": "Star Super Surplus (Floater) Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Super top-up",
+   "uin": "SHAHLIP22034V062122",
+   "url": "https://www.starhealth.in/health-insurance/top-up-health-insurance/",
+   "note": "Family floater super top-up"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Star Health and Allied Insurance Co Ltd.",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "SHAHLIP26045V042526",
+   "url": "https://www.starhealth.in/health-insurance/arogya-sanjeevani/",
+   "note": "IRDAI standard health plan"
+  },
+  {
+   "name": "Star Critical Illness Multipay Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Critical illness",
+   "uin": "SHAHLIP22140V012122",
+   "url": "https://www.starhealth.in/health-insurance/critical-illness-insurance/",
+   "note": "Lump-sum CI cover with multiple payouts across illness groups"
+  },
+  {
+   "name": "Star Cardiac Care Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP22032V052122",
+   "url": "https://www.starhealth.in/health-insurance/cardiac-care/",
+   "note": "For people with existing heart conditions"
+  },
+  {
+   "name": "Star Cardiac Care Insurance Policy - Platinum",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP22033V022122",
+   "url": "https://www.starhealth.in/health-insurance/cardiac-care-platinum/",
+   "note": "Cardiac plan for people with heart ailments, Platinum version"
+  },
+  {
+   "name": "Star Cancer Care Platinum Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP22031V022122",
+   "url": "https://www.starhealth.in/health-insurance/cancer-care-platinum/",
+   "note": "For cancer patients and survivors"
+  },
+  {
+   "name": "Diabetes Safe Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP23081V082223",
+   "url": "https://www.starhealth.in/health-insurance/diabetes-health-insurance/",
+   "note": "For people with Type 1/Type 2 diabetes"
+  },
+  {
+   "name": "Star Special Care",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP21243V022021",
+   "url": "https://www.starhealth.in/health-insurance/autism-care/",
+   "note": "For children with autism spectrum disorder"
+  },
+  {
+   "name": "Special Care Gold",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP23182V012223",
+   "url": "https://www.starhealth.in/health-insurance/special-care-gold/",
+   "note": "For persons with disabilities and people with HIV/AIDS"
+  },
+  {
+   "name": "Star Special Care Platinum",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Disease-specific",
+   "uin": "SHAHLIP26042V012526",
+   "note": "Listed in Star's current speciality-product policy wordings"
+  },
+  {
+   "name": "Accident Care Individual Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Personal accident",
+   "url": "https://www.starhealth.in/accident-insurance/individual/",
+   "note": "Individual personal accident plan"
+  },
+  {
+   "name": "Family Accident Care Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Personal accident",
+   "uin": "SHAHLIP21042V012021",
+   "url": "https://www.starhealth.in/accident-insurance/family/",
+   "note": "Family personal accident plan"
+  },
+  {
+   "name": "Saral Suraksha Bima, Star Health and Allied Insurance Co Ltd",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Personal accident",
+   "uin": "SHAPAIP22039V022122",
+   "url": "https://www.starhealth.in/accident-insurance/saral-suraksha-bima/",
+   "note": "IRDAI standard personal accident product"
+  },
+  {
+   "name": "Medi Classic Accident Care (Individual) Insurance Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP23079V062223",
+   "note": "Package product: Medi Classic health cover plus personal accident"
+  },
+  {
+   "name": "Family Health Optima Accident Care Policy",
+   "provider": "Star Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "SHAHLIP23170V062223",
+   "note": "Package product: Family Health Optima floater plus personal accident"
+  },
+  {
+   "name": "my:Optima Secure",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP26058V082526",
+   "url": "https://www.hdfcergo.com/health-insurance/optima-secure",
+   "note": "Flagship indemnity plan with 2X/4X cover; Optima Lite, Optima Super Secure, Optima Secure Plus and Optima Secure Global are variants of this UIN"
+  },
+  {
+   "name": "Optima Restore",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP26055V102526",
+   "url": "https://www.hdfcergo.com/health-insurance/optima-restore-individual-health-insurance-plan",
+   "note": "Indemnity plan with 100% restore benefit and multiplier bonus; individual and floater"
+  },
+  {
+   "name": "Easy Health",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP26054V102526",
+   "note": "Comprehensive indemnity plan (Standard/Exclusive variants); wording revised Mar 2026"
+  },
+  {
+   "name": "my:health Suraksha",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "url": "https://www.hdfcergo.com/health-insurance/my-health-suraksha-silver-smart",
+   "note": "Indemnity plan in Silver Smart/Gold Smart/Platinum Smart variants"
+  },
+  {
+   "name": "my:health Koti Suraksha",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP21131V012021",
+   "url": "https://www.hdfcergo.com/health-insurance/koti-suraksha-1-crore-health-insurance-plan",
+   "note": "High sum insured plan, cover up to Rs 1 crore"
+  },
+  {
+   "name": "HDFC ERGO Secure 4in1",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "note": "Package combining hospitalisation, critical illness, personal accident and hospital cash covers in one policy"
+  },
+  {
+   "name": "Energy",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Disease-specific",
+   "uin": "HDFHLIP26048V052526",
+   "url": "https://www.hdfcergo.com/health-insurance/energy-diabetes-insurance-plan",
+   "note": "For people with diabetes or hypertension; covers from day 1 with wellness programme"
+  },
+  {
+   "name": "iCan Cancer Insurance",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Disease-specific",
+   "uin": "HDHHLIP21321V022021",
+   "url": "https://www.hdfcergo.com/health-insurance/ican-cancer-insurance-plan",
+   "note": "Cancer-specific plan (Essential/Enhance) covering all stages of cancer treatment"
+  },
+  {
+   "name": "Health Wallet",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDHHLIP21337V022021",
+   "url": "https://www.hdfcergo.com/health-insurance/healthwallet-individual-health-insurance-plan",
+   "note": "Hospitalisation cover plus wallet for OPD, diagnostics and other everyday medical expenses"
+  },
+  {
+   "name": "HDFC ERGO EquiCover Health",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP23192V012223",
+   "url": "https://www.hdfcergo.com/health-insurance/equicover-health",
+   "note": "Health plan with coverage including gender reassignment and LGBTQ+ inclusive benefits"
+  },
+  {
+   "name": "my:health Women Suraksha",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Critical illness",
+   "uin": "HDFHLIP22142V032122",
+   "url": "https://www.hdfcergo.com/health-insurance/women-suraksha-health-insurance",
+   "note": "Women-specific critical illness plan covering female cancers and other illnesses"
+  },
+  {
+   "name": "Critical Illness Insurance",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Critical illness",
+   "uin": "HDFHLIP21464V022021",
+   "url": "https://www.hdfcergo.com/health-insurance/critical-illness-insurance",
+   "note": "Lump-sum payout on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "my:health Critical Suraksha Plus",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Critical illness",
+   "uin": "HDFHLIP22145V032122",
+   "note": "Lump-sum critical illness benefit plan"
+  },
+  {
+   "name": "my:health Medisure Super Top Up Insurance",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Super top-up",
+   "uin": "HDFHLIP22021V042122",
+   "url": "https://www.hdfcergo.com/health-insurance/my-health-medisure-super-top-up-insurance",
+   "note": "Super top-up over a chosen deductible"
+  },
+  {
+   "name": "Health Suraksha Top Up",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Super top-up",
+   "uin": "HDFHLIP21467V022021",
+   "url": "https://www.hdfcergo.com/health-insurance/health-suraksha-top-up",
+   "note": "Top-up in Plus and Pro variants; no room rent restriction, lifelong renewal"
+  },
+  {
+   "name": "HDFC ERGO Hospital Cash Insurance",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Individual / family",
+   "uin": "HDFHLIP21494V022021",
+   "note": "Hospital cash: fixed daily benefit during hospitalisation"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, HDFC ERGO",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "HDFHLIP20175V011920",
+   "url": "https://www.hdfcergo.com/health-insurance/arogya-sanjeevani-policy",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "Individual Personal Accident",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Personal accident",
+   "uin": "HDHHLIP21346V042021",
+   "url": "https://www.hdfcergo.com/health-insurance/personal-accident-insurance-policy",
+   "note": "Retail PA with Standard/Essential/Advance/Premium/Elite plans; accidental death and disability benefits"
+  },
+  {
+   "name": "Essential Personal Accident",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Personal accident",
+   "note": "Retail personal accident policy listed among current policy wordings"
+  },
+  {
+   "name": "Saral Suraksha Bima, HDFC ERGO",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Personal accident",
+   "uin": "HDFPAIP21624V012021",
+   "url": "https://www.hdfcergo.com/health-insurance/saral-suraksha-bima-hdfc-ergo",
+   "note": "IRDAI standard personal accident policy"
+  },
+  {
+   "name": "Elevate",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Individual / family",
+   "uin": "ICIHLIP27057V062627",
+   "url": "https://www.icicilombard.com/health-insurance/elevate-health-policy",
+   "note": "Flagship comprehensive plan with infinite care, reset benefit and optional add-ons"
+  },
+  {
+   "name": "Vibe",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Individual / family",
+   "uin": "ICIHLIP27061V012627",
+   "url": "https://www.icicilombard.com/health-insurance/vibe",
+   "note": "New 2026 launch with wellness benefits aimed at young buyers"
+  },
+  {
+   "name": "MaxProtect",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Individual / family",
+   "uin": "ICIHLIP25040V022425",
+   "url": "https://www.icicilombard.com/health-insurance/max-protect-1-crore-health-insurance",
+   "note": "High sum insured comprehensive plan (Rs 1 crore+), Classic/Premium variants"
+  },
+  {
+   "name": "Health AdvantEdge",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Individual / family",
+   "uin": "ICIHLIP27056V062627",
+   "url": "https://www.icicilombard.com/health-insurance/health-advantedge-insurance-for-family",
+   "note": "Comprehensive individual/family floater plan"
+  },
+  {
+   "name": "Family Shield",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Individual / family",
+   "uin": "ICIHLIP22092V032122",
+   "url": "https://www.icicilombard.com/health-insurance/family-shield",
+   "note": "Family floater health plan"
+  },
+  {
+   "name": "Golden Shield",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Senior citizen",
+   "uin": "ICIHLIP25042V022425",
+   "url": "https://www.icicilombard.com/health-insurance/senior-citizen-health-insurance",
+   "note": "Health plan for seniors (60+) with no upper entry age"
+  },
+  {
+   "name": "Activate Booster",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Super top-up",
+   "uin": "ICIHLIP25046V012425",
+   "url": "https://www.icicilombard.com/health-insurance/health-booster",
+   "note": "Super top-up over a deductible; also sold as Activate Booster Combo with a base plan"
+  },
+  {
+   "name": "ICICI Lombard Arogya Sanjeevani",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "ICIHLIP25041V022425",
+   "url": "https://www.icicilombard.com/health-insurance/arogya-sanjeevani-policy",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "Personal Protect Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Personal accident",
+   "uin": "ICIPAIP22076V042122",
+   "url": "https://www.icicilombard.com/health-insurance/personal-accident-insurance",
+   "note": "Retail personal accident cover for accidental death and disability"
+  },
+  {
+   "name": "Saral Suraksha Bima, ICICI Lombard",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Personal accident",
+   "uin": "ICIPAIP21626V012021",
+   "url": "https://www.icicilombard.com/health-insurance/saral-suraksha-bima-icici-lombard",
+   "note": "IRDAI standard personal accident policy"
+  },
+  {
+   "name": "Arogya Supreme",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP27036V022627",
+   "note": "Comprehensive indemnity health plan (Pro/Plus/Premium); on SBI General active product list"
+  },
+  {
+   "name": "Super Health Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP24141V022324",
+   "note": "Comprehensive health plan with high sum insured options; active product list"
+  },
+  {
+   "name": "SBI General Health Alpha",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP26038V012526",
+   "note": "Newer (2025-26) retail indemnity health plan; active product list"
+  },
+  {
+   "name": "Health Edge Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP23173V012223",
+   "note": "Retail health plan; active product list"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, SBI General Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "SBIHLIP20180V011920",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "Arogya Top Up Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Super top-up",
+   "uin": "SBIHLIP22137V032122",
+   "note": "Top-up/super top-up over a deductible"
+  },
+  {
+   "name": "SBIG Health Super Top-Up",
+   "provider": "SBI General Insurance",
+   "kind": "Super top-up",
+   "uin": "SBIHLIP25035V012425",
+   "note": "Super top-up on aggregate deductible; active product list"
+  },
+  {
+   "name": "Critical Illness Insurance Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Critical illness",
+   "uin": "SBIHLIP11004V011011",
+   "note": "Lump-sum benefit on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "Hospital Daily Cash Insurance Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP11003V011011",
+   "note": "Hospital cash: fixed daily allowance during hospitalisation"
+  },
+  {
+   "name": "HospiCash Flexi Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Individual / family",
+   "uin": "SBIHLIP23181V012223",
+   "note": "Hospital cash plan with flexible daily benefit"
+  },
+  {
+   "name": "Divyanga Suraksha, SBI General Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Disease-specific",
+   "uin": "SBIHLIP23191V012223",
+   "note": "Health cover designed for persons with disabilities"
+  },
+  {
+   "name": "Individual Personal Accident",
+   "provider": "SBI General Insurance",
+   "kind": "Personal accident",
+   "uin": "SBIPAIP12002V011112",
+   "note": "Retail PA: accidental death and disablement"
+  },
+  {
+   "name": "Saral Suraksha Bima, SBI General Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Personal accident",
+   "uin": "SBIPAIP21639V012021",
+   "note": "IRDAI standard PA product"
+  },
+  {
+   "name": "Kutumb Swasthya Bima",
+   "provider": "SBI General Insurance",
+   "kind": "Personal accident",
+   "uin": "SBIPAIP20169V012021",
+   "note": "Family PA plus hospital daily cash cover"
+  },
+  {
+   "name": "Health Guard",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP25035V072425",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/health-guard-insurance-policy.html",
+   "note": "Indemnity health plan (Bronze/Silver/Gold) for individuals and family floater"
+  },
+  {
+   "name": "My Health Care Plan",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP23143V012223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/my-health-care-plan.html",
+   "note": "Modular plan letting buyers pick covers; includes MHCP variants"
+  },
+  {
+   "name": "My Health Care Plan EDGE+",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/my-health-care-plan-edge-plus.html",
+   "note": "Sum insured up to Rs 5 crore with global treatment cover, optional OPD and wellness"
+  },
+  {
+   "name": "My Family Complete",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/my-family-complete.html",
+   "note": "Family floater that also covers a pet; policy terms up to 5 years"
+  },
+  {
+   "name": "AapKe Liye (state-specific health plans)",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP26050V012526",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/aapke-liye.html",
+   "note": "State-specific plans (e.g. Ungalukkaga-TN, Ningalkkayi-Kerala) with separate UINs per state, launched Jun 2025; SI Rs 5-20 lakh; UIN shown is AapKe Liye-Uttar Pradesh"
+  },
+  {
+   "name": "Global Health Care",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP23209V022223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/international-health-insurance.html",
+   "note": "Health plan with domestic plus worldwide (international) treatment cover"
+  },
+  {
+   "name": "HERizon Care",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP25040V012425",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/women-health-insurance.html",
+   "note": "Women-focused health plan incl. maternity and women-specific illness covers (launched Dec 2024)"
+  },
+  {
+   "name": "Silver Health",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Senior citizen",
+   "uin": "BAJHLIP23213V052223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/health-insurance-for-senior-citizens.html",
+   "note": "Health plan for senior citizens (entry 46-80 yrs), PED cover after waiting period"
+  },
+  {
+   "name": "Health Care Supreme",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP23210V042223",
+   "note": "Comprehensive health plan on Bajaj active product list"
+  },
+  {
+   "name": "Health Ensure",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP24149V062324",
+   "note": "Basic indemnity health plan on Bajaj active product list"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Bajaj General Insurance",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Arogya Sanjeevani",
+   "uin": "BAJHLIP21606V022021",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/arogya-sanjeevani-standard-health-insurance-policy.html",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "Extra Care Plus",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Super top-up",
+   "uin": "BAJHLIP23069V032223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/extra-care-plus.html",
+   "note": "Super top-up on aggregate deductible; cover up to Rs 50 lakh"
+  },
+  {
+   "name": "Critical Illness Insurance",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Critical illness",
+   "uin": "BAJHLIP23208V032223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/critical-illness-insurance.html",
+   "note": "Lump sum on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "Criti Care",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Critical illness",
+   "uin": "BAJHLIP21273V012021",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/criti-care.html",
+   "note": "Covers 43 critical illnesses across cancer, cardiac, kidney, neuro and other sections"
+  },
+  {
+   "name": "Woman Specific Critical Illness",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Critical illness",
+   "uin": "BAJHLIP21142V022021",
+   "note": "Lump sum on women-specific cancers and conditions; on active product list"
+  },
+  {
+   "name": "Hospital Cash Daily Allowance",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "uin": "BAJHLIP23078V032223",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/hospital-cash-insurance.html",
+   "note": "Hospital cash: fixed daily benefit per day of hospitalisation"
+  },
+  {
+   "name": "My Health Companion",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Individual / family",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/my-health-companion.html",
+   "note": "OPD plan: consultations, diagnostics, dental, teleconsultation and health check-ups"
+  },
+  {
+   "name": "My Swasthya Care",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Disease-specific",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/my-swasthya-care.html",
+   "note": "Chronic-care and digital wellness plan: check-ups, teleconsults, lab tests, diet consults"
+  },
+  {
+   "name": "Personal Accident",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Personal accident",
+   "uin": "BAJHLIP21218V022021",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/personal-accident-insurance-policy.html",
+   "note": "Retail PA: accidental death, disablement and medical expenses"
+  },
+  {
+   "name": "Premium Personal Guard",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Personal accident",
+   "uin": "BAJPAIP08004V010708",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/personal-guard-policy.html",
+   "note": "Personal accident policy (marketed as Personal Guard)"
+  },
+  {
+   "name": "Global Personal Guard Policy (Individual)",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Personal accident",
+   "uin": "BAJPAIP16002V011516",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/global-personal-accident-insurance.html",
+   "note": "Worldwide accidental death/disablement cover"
+  },
+  {
+   "name": "Saral Suraksha Bima, Bajaj General Insurance",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Personal accident",
+   "uin": "BAJPAIP21609V012021",
+   "url": "https://www.bajajgeneralinsurance.com/health-insurance-plans/saral-suraksha-bima-policy.html",
+   "note": "IRDAI standard PA; SI up to Rs 1 crore"
+  },
+  {
+   "name": "TATA AIG MediCare",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP26053V042526",
+   "url": "https://www.tataaig.com/health-insurance/medicare",
+   "note": "Comprehensive indemnity health plan; individual and family floater"
+  },
+  {
+   "name": "TATA AIG MediCare Premier",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP26052V052526",
+   "note": "Top variant of MediCare family with higher SI and global/maternity covers"
+  },
+  {
+   "name": "Tata AIG MediCare Plus",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Super top-up",
+   "uin": "TATHLIP21253V022021",
+   "url": "https://www.tataaig.com/health-insurance/medicare-plus",
+   "note": "Top-up plan adding cover over an existing health policy"
+  },
+  {
+   "name": "TATA AIG MediCare Select",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP27061V022627",
+   "url": "https://www.tataaig.com/health-insurance/medicare-select",
+   "note": "Personalised health plan, SI Rs 5 lakh-3 crore, maternity benefit"
+  },
+  {
+   "name": "TATA AIG MediCare Platinum",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP27060V012627",
+   "note": "New (2026-27) premium health plan in MediCare range"
+  },
+  {
+   "name": "TATA AIG MediCare Reserve",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP27059V012627",
+   "note": "New (2026-27) health plan in MediCare range"
+  },
+  {
+   "name": "Tata AIG MediCare LITE",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP24132V012324",
+   "note": "Entry-level indemnity health plan"
+  },
+  {
+   "name": "Tata AIG Health Supercharge",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Super top-up",
+   "uin": "TATHLIP24113V012324",
+   "note": "Super top-up (Value and Geo plans) over a deductible"
+  },
+  {
+   "name": "Tata AIG Elder Care",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Senior citizen",
+   "uin": "TATHLIP23179V012223",
+   "url": "https://www.tataaig.com/health-insurance/senior-citizen-health-insurance",
+   "note": "Health plan designed for senior citizens"
+  },
+  {
+   "name": "Tata AIG Criti MediCare",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Critical illness",
+   "uin": "TATHLIP22176V012122",
+   "url": "https://www.tataaig.com/health-insurance/critical-illness-insurance",
+   "note": "Lump-sum critical illness cover across many illness categories"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, TATA AIG General Insurance",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "TATHLIP20169V011920",
+   "url": "https://www.tataaig.com/health-insurance/arogya-sanjeevani",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "TATA AIG Hope",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP25001V012425",
+   "note": "Surrogacy and oocyte-retrieval plan covering surrogate mother / oocyte donor"
+  },
+  {
+   "name": "Model Policy for Persons with Disabilities and HIV/AIDS, Tata AIG",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Disease-specific",
+   "uin": "TATHLIP27062V022627",
+   "note": "IRDAI model health policy for persons with disabilities and people living with HIV/AIDS"
+  },
+  {
+   "name": "Home Guard Plus Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Individual / family",
+   "uin": "TATHLIP21293V022021",
+   "note": "Retail health policy on Tata AIG active Health Retail wordings list"
+  },
+  {
+   "name": "Accident Super Guard Plus",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP26058V012526",
+   "url": "https://www.tataaig.com/individual-personal-accident-insurance",
+   "note": "Newer (2025-26) retail personal accident plan"
+  },
+  {
+   "name": "Accident Guard Plus",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23086V032223",
+   "note": "Personal accident cover with optional benefits"
+  },
+  {
+   "name": "Accident Guard Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23087V032223",
+   "note": "Personal accident cover"
+  },
+  {
+   "name": "Accident Shield Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23088V032223",
+   "note": "Personal accident cover"
+  },
+  {
+   "name": "Maharaksha Personal Injury Plan Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23094V032223",
+   "note": "Personal injury / accident plan"
+  },
+  {
+   "name": "Secured Future Plan",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23098V032223",
+   "note": "Personal accident plan"
+  },
+  {
+   "name": "Janata Personal Accident Policy (Individual)",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP23101V022223",
+   "note": "Low-cost individual PA cover"
+  },
+  {
+   "name": "Saral Suraksha Bima, Tata AIG General Insurance",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Personal accident",
+   "uin": "TATPAIP21640V012021",
+   "note": "IRDAI standard PA product"
+  },
+  {
+   "name": "Digit Health Care Plus Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Individual / family",
+   "uin": "GODHLIP27048V052627",
+   "url": "https://www.godigit.com/health-insurance"
+  },
+  {
+   "name": "Digit Health Insurance Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Individual / family",
+   "uin": "GODHLIP25039V022425"
+  },
+  {
+   "name": "Digit Life Healthy Glow Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Individual / family",
+   "uin": "GODHLIP26044V022526",
+   "note": "Indemnity hospitalisation plan with worldwide cover and NRI options"
+  },
+  {
+   "name": "Digit Donor Shield Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Individual / family",
+   "uin": "GODHLIP25038V012425",
+   "note": "Covers surrogate mother / oocyte donor hospitalisation complications"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy - Go Digit",
+   "provider": "Go Digit General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "GODHLIP24179V022324"
+  },
+  {
+   "name": "Digit Top Up Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Super top-up",
+   "uin": "GODHLIP24056V012324",
+   "url": "https://www.godigit.com/health-insurance/super-top-up-health-insurance"
+  },
+  {
+   "name": "Digit Disability and HIV/AIDS Insurance Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Disease-specific",
+   "uin": "GODHLIP23185V012223",
+   "note": "IRDAI model policy for persons with disability and PLHIV"
+  },
+  {
+   "name": "Digit Total Protect Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Personal accident",
+   "uin": "GODPAIP21489V022021",
+   "url": "https://www.godigit.com/personal-accident-insurance"
+  },
+  {
+   "name": "Saral Suraksha Bima - Go Digit",
+   "provider": "Go Digit General Insurance",
+   "kind": "Personal accident",
+   "uin": "GODPAIP21616V012021"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Arogya Sanjeevani",
+   "url": "https://www.newindia.co.in/health-insurance/arogya-sanjeevani-policy",
+   "note": "Standard IRDAI plan; SI Rs 50,000-10 lakh, individual or floater"
+  },
+  {
+   "name": "Arogya Pragati Plus - Top Up Reinvented",
+   "provider": "The New India Assurance Co.",
+   "kind": "Super top-up",
+   "uin": "NIAHLIP25035V022425",
+   "url": "https://www.newindia.co.in/health-insurance/arogya-pragati-plus",
+   "note": "Top-up over a threshold; base policy not mandatory"
+  },
+  {
+   "name": "Atmanirbhar Health Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25036V022425",
+   "url": "https://www.newindia.co.in/health-insurance/atmanirbhar-health-policy",
+   "note": "For persons with disability, mental illness or HIV/AIDS; SI 4L/5L"
+  },
+  {
+   "name": "Bhavishya Arogya Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-bhavishya-arogya-policy",
+   "note": "Deferred health cover bought early with premiums paid before cover starts"
+  },
+  {
+   "name": "Jan Arogya Bima Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25045V032425",
+   "url": "https://www.newindia.co.in/health-insurance/jan-arogya-bima-policy",
+   "note": "Low-cost basic mediclaim for economically weaker sections"
+  },
+  {
+   "name": "Janata Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25046V042425",
+   "url": "https://www.newindia.co.in/health-insurance/janata-mediclaim-policy",
+   "note": "Budget hospitalisation cover with general-ward limits"
+  },
+  {
+   "name": "New India Asha Kiran Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25047V042425",
+   "url": "https://www.newindia.co.in/health-insurance/asha-kiran-insurance",
+   "note": "For parents with only girl children (up to 2 daughters); SI 2-15 lakh"
+  },
+  {
+   "name": "New India Cancer Guard Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Disease-specific",
+   "uin": "NIAHLIP25037V022425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-cancer-guard-policy",
+   "note": "Cancer cover; entry 3 months-65 yrs; SI 5L-50L"
+  },
+  {
+   "name": "New India Criti Protect Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Critical illness",
+   "uin": "NIAHLIP25038V022425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-criti-protect-policy",
+   "note": "Benefit-based CI policy; entry 18-65; SI 5L-50L"
+  },
+  {
+   "name": "New India Floater Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25039V102425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-assurance-floater-mediclaim-policy",
+   "note": "Family floater, Basic and Uplift plans; entry 18-65, lifelong renewal"
+  },
+  {
+   "name": "New India Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25040V102425",
+   "url": "https://www.newindia.co.in/health-insurance/health-insurance-policy",
+   "note": "Individual mediclaim, Basic and Uplift plans; entry 18-65"
+  },
+  {
+   "name": "New India Top-Up Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Super top-up",
+   "uin": "NIAHLIP25050V032425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-top-up-mediclaim-insurance",
+   "note": "Top-up over threshold; individual or floater up to 6 members"
+  },
+  {
+   "name": "New India Premier Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25048V042425",
+   "url": "https://www.newindia.co.in/health-insurance/premier-mediclaim-insurance",
+   "note": "High-SI premium mediclaim, individual or floater"
+  },
+  {
+   "name": "New India Sixty Plus Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Senior citizen",
+   "uin": "NIAHLIP25049V032425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-sixty-plus-mediclaim-policy",
+   "note": "Entry 60+; SI 2/3/5 lakh; 10% mandatory co-pay"
+  },
+  {
+   "name": "Senior Citizen Mediclaim Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Senior citizen",
+   "uin": "NIAHLIP25051V032425",
+   "url": "https://www.newindia.co.in/health-insurance/senior-citizen-mediclaim-policy",
+   "note": "Hospitalisation cover for senior citizens"
+  },
+  {
+   "name": "Tertiary Care Insurance (Individual)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Disease-specific",
+   "uin": "NIAHLIP25041V032425",
+   "url": "https://www.newindia.co.in/health-insurance/tertiary-care-insurance-individual",
+   "note": "Covers hospitalisation for nine major ailments (kidney failure, stroke, heart surgery, cancer etc.)"
+  },
+  {
+   "name": "Universal Health Insurance Scheme (APL)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25052V032425",
+   "url": "https://www.newindia.co.in/health-insurance/universal-health-insurance",
+   "note": "Basic hospitalisation cover with fixed limits"
+  },
+  {
+   "name": "Young India Digi Health Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25060V032425",
+   "url": "https://www.newindia.co.in/health-insurance/young-india-digi-health-policy",
+   "note": "Online plan for adults 18-45; SI 4/8/12 lakh, no medical check-up"
+  },
+  {
+   "name": "Yuva Bharat Health Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25059V032425",
+   "url": "https://www.newindia.co.in/health-insurance/new-india-yuva-bharat-health-policy",
+   "note": "Entry 18-45; SI 5L-1 crore; Base/Gold/Platinum style plans, maternity limit"
+  },
+  {
+   "name": "Vatsalya Health Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "uin": "NIAHLIP25061V012425",
+   "url": "https://www.newindia.co.in/health-insurance/vatsalya-health-policy",
+   "note": "Covers surrogate mothers (3-yr, SI 5L) and oocyte donors against complications"
+  },
+  {
+   "name": "Paripoorna Mediclaim Ayush Bima",
+   "provider": "The New India Assurance Co.",
+   "kind": "Individual / family",
+   "url": "https://www.newindia.co.in/health-insurance/paripoorna-ayush-bima",
+   "note": "Mediclaim with AYUSH cover, sold only to CGHS members"
+  },
+  {
+   "name": "Individual Personal Accident Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Personal accident",
+   "url": "https://www.newindia.co.in/personal-accident-insurance",
+   "note": "Retail accidental death/disability cover"
+  },
+  {
+   "name": "Janata Personal Accident Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Personal accident",
+   "url": "https://www.newindia.co.in/janata-personal-accident",
+   "note": "Low-cost accidental death and disability cover"
+  },
+  {
+   "name": "Personal Accident (Death & PTD) Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Personal accident",
+   "url": "https://www.newindia.co.in/death-and-ptd-accident-policy",
+   "note": "Covers accidental death and permanent total disability only"
+  },
+  {
+   "name": "New India Pension Protect Personal Accident Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Personal accident",
+   "url": "https://www.newindia.co.in/pension-protect-personal-accident-policy",
+   "note": "PA cover aimed at pensioners"
+  },
+  {
+   "name": "Saral Suraksha Bima",
+   "provider": "The New India Assurance Co.",
+   "kind": "Personal accident",
+   "note": "Standard IRDAI personal accident product"
+  },
+  {
+   "name": "Happy Family Floater Policy 2021",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP22010V042223",
+   "note": "Family floater with Silver/Gold/Diamond/Platinum plans; maternity cover in higher plans"
+  },
+  {
+   "name": "Mediclaim Insurance Policy (Individual)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP446V032021",
+   "note": "Individual indemnity mediclaim"
+  },
+  {
+   "name": "Health of Privileged Elders (HOPE) 2026",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Senior citizen",
+   "uin": "OICHLIP27041V052627",
+   "note": "Senior citizen health cover; revised version offered from 29-07-2026"
+  },
+  {
+   "name": "Oriental Super Health Top Up 2026",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Super top-up",
+   "uin": "OICHLIP27042V052627",
+   "note": "Super top-up; revised version offered from 29-07-2026"
+  },
+  {
+   "name": "Oriental Youth Eco Care Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP24034V012324",
+   "note": "Economical health plan aimed at young buyers"
+  },
+  {
+   "name": "Oriental ART & Surrogacy Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP24174V012324",
+   "note": "Covers surrogate mothers / oocyte donors under ART & Surrogacy Acts; launched Nov 2024"
+  },
+  {
+   "name": "Oriental Happy Cash - Nischint Rahein",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP447V022021",
+   "note": "Hospital daily cash benefit policy"
+  },
+  {
+   "name": "Oriental Critical Illness Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Critical illness",
+   "uin": "OICHLIP21578V012021",
+   "note": "Lump-sum benefit on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "Oriental Cancer Protect",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Disease-specific",
+   "uin": "OICHLIP21007V012122",
+   "note": "Cancer-specific cover"
+  },
+  {
+   "name": "Oriental Dengue Kavach",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Disease-specific",
+   "note": "Low-cost dengue hospitalisation cover"
+  },
+  {
+   "name": "Universal Health Insurance Policy - Individual",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "OICHLIP25035V032425",
+   "note": "Basic standard hospitalisation cover; revised Dec 2024"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Arogya Sanjeevani",
+   "uin": "OICHLIP20181V011920",
+   "note": "Standard IRDAI health plan"
+  },
+  {
+   "name": "Saral Suraksha Bima Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Personal accident",
+   "note": "Standard IRDAI personal accident policy, sold online"
+  },
+  {
+   "name": "Nagrik Suraksha Individual Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Personal accident",
+   "note": "Low-cost individual accident policy sold online"
+  },
+  {
+   "name": "Oriental Personal Accident Parivaar Suraksha Policy - Retail",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Personal accident",
+   "uin": "OICPAIP26048V012627",
+   "note": "Family personal accident policy, offered from 12-09-2026"
+  },
+  {
+   "name": "Flexi Health",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP24145V062526",
+   "url": "https://www.cholainsurance.com/health-insurance/flexi-health",
+   "note": "Indemnity individual/floater plan, 1-3 yr tenure, restore and recharge benefits"
+  },
+  {
+   "name": "Chola Flexi Health Supreme",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP27040V032627",
+   "url": "https://www.cholainsurance.com/health-insurance/flexi-supreme",
+   "note": "Premium comprehensive indemnity plan; revised version effective 09-Apr-2026"
+  },
+  {
+   "name": "Chola Healthline",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP24153V062526",
+   "note": "Indemnity health plan sold online (revised 2025-26)"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Chola MS",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "CHOHLIP20035V021920",
+   "url": "https://www.cholainsurance.com/health-insurance/arogya-sanjeevani",
+   "note": "IRDAI standard health policy, individual and floater"
+  },
+  {
+   "name": "Chola Super Topup Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Super top-up",
+   "uin": "CHOHLIP21309V022021",
+   "url": "https://www.cholainsurance.com/health-insurance/super-topup-plan",
+   "note": "Super top-up over a deductible; no pre-policy check-up till 55, lifelong renewal"
+  },
+  {
+   "name": "Chola Flexi Super TopUp Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Super top-up",
+   "uin": "CHOHLIP23049V022223",
+   "note": "Super top-up variant of Flexi range; listed in current downloads"
+  },
+  {
+   "name": "Flexi Max Protect",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP21017V012122",
+   "note": "Health plan listed in current (non-withdrawn) downloads"
+  },
+  {
+   "name": "Chola MS Critical Healthline Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Critical illness",
+   "uin": "CHOHLIP21302V022021",
+   "url": "https://www.cholainsurance.com/health-insurance/critical-healthline",
+   "note": "Lump-sum on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "Chola Hospital Cash Healthline",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP21301V022021",
+   "note": "Hospital daily cash benefit, double for ICU; lifelong renewal"
+  },
+  {
+   "name": "Chola Sarva Shakti Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Personal accident",
+   "uin": "CHOHLIP21571V012021",
+   "url": "https://www.cholainsurance.com/sarva-shakti",
+   "note": "Accident + illness benefit package (AD/PTD, hospital cash, EMI protection)"
+  },
+  {
+   "name": "Divyang Bima Chola MS",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Disease-specific",
+   "uin": "CHOHLIP23216V012223",
+   "note": "Health cover designed for persons with disabilities"
+  },
+  {
+   "name": "Chola Surrogate and Oocyte Donor Protector",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Individual / family",
+   "uin": "CHOHLIP24093V012324",
+   "note": "Health cover for surrogate mothers and oocyte donors (as per ART/Surrogacy Acts)"
+  },
+  {
+   "name": "Chola Accident Protection",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Personal accident",
+   "uin": "CHOPAIP21418V022021",
+   "url": "https://www.cholainsurance.com/health-insurance/accident-protection",
+   "note": "Retail personal accident cover (death, disability, extensions)"
+  },
+  {
+   "name": "Individual Personal Accident Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Personal accident",
+   "uin": "CHOPAIP21419V022021",
+   "note": "Individual PA policy for accidental death and disablement"
+  },
+  {
+   "name": "Saral Suraksha Bima, Chola",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Personal accident",
+   "uin": "CHOPAIP21612V012021",
+   "note": "IRDAI standard personal accident policy"
+  },
+  {
+   "name": "Zuno Health Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Individual / family",
+   "uin": "ZUNHLIP26040V052526",
+   "url": "https://www.hizuno.com/health-insurance-plan",
+   "note": "Indemnity individual/family floater plan (formerly Edelweiss Health Insurance); revised Mar 2026"
+  },
+  {
+   "name": "Zuno HealthPlus Policy",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Individual / family",
+   "uin": "ZUNHLIP26041V032526",
+   "url": "https://www.hizuno.com/health-plus",
+   "note": "Indemnity health plan (formerly Edelweiss HealthPlus); revised Mar 2026"
+  },
+  {
+   "name": "Zuno General Insurance Empower Health",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Individual / family",
+   "uin": "ZUNHLIP26047V022526",
+   "url": "https://www.hizuno.com/empower-health-insurance",
+   "note": "Retail health plan launched 2023, revised Mar 2026"
+  },
+  {
+   "name": "Zuno Health Assure Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Individual / family",
+   "uin": "ZUNHLIP25038V022425",
+   "note": "Retail health product launched Mar 2025, revised Mar 2026"
+  },
+  {
+   "name": "Zuno Health Top Up Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Super top-up",
+   "uin": "ZUNHLIP26044V022526",
+   "url": "https://www.hizuno.com/health-top-up-insurance",
+   "note": "Top-up/super top-up cover over a deductible; revised Mar 2026"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Zuno General Insurance Limited",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Arogya Sanjeevani",
+   "uin": "ZUNHLIP26042V032526",
+   "url": "https://www.hizuno.com/arogya-sanjeevani-insurance",
+   "note": "IRDAI standard health policy, individual and floater"
+  },
+  {
+   "name": "Saral Suraksha Bima, Zuno General Insurance Limited",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Personal accident",
+   "uin": "EDLPAIP21615V012021",
+   "url": "https://www.hizuno.com/saral-suraksha-bima",
+   "note": "IRDAI standard personal accident policy"
+  },
+  {
+   "name": "Health 360",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP25038V012425",
+   "url": "https://www.zurichkotak.com/health-insurance",
+   "note": "Comprehensive indemnity plan with hospitalisation, critical illness, global treatment and wellness options (launched Jan 2025)"
+  },
+  {
+   "name": "Health Premier",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP23109V052223",
+   "url": "https://www.zurichkotak.com/services/health-insurance/health-premier",
+   "note": "Individual/floater indemnity plan, 1-3 yr terms, entry 18-65 (child from 91 days), lifetime renewal"
+  },
+  {
+   "name": "Secure Shield",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Critical illness",
+   "uin": "ZUKHLIP25047V062425",
+   "url": "https://www.zurichkotak.com/services/health-insurance/secure-shield",
+   "note": "Fixed-benefit critical illness lump-sum policy, optional accidental death/child education benefits"
+  },
+  {
+   "name": "Health Super Top-up",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Super top-up",
+   "uin": "ZUKHLIP21162V042021",
+   "url": "https://www.zurichkotak.com/services/health-insurance/health-super-top-up",
+   "note": "Super top-up cover above a chosen deductible"
+  },
+  {
+   "name": "MediShield",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP23195V022223",
+   "url": "https://www.zurichkotak.com/services/health-insurance/medishield",
+   "note": "Retail health indemnity product"
+  },
+  {
+   "name": "Empower",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP25036V012425",
+   "note": "Retail health product launched Oct 2024 (per insurer product list)"
+  },
+  {
+   "name": "LiveWise",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP25037V022425",
+   "note": "Retail health product revised Nov 2024 (per insurer product list)"
+  },
+  {
+   "name": "Surrogacy Care",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Individual / family",
+   "uin": "ZUKHLIP25060V022425",
+   "note": "Health cover for surrogate mothers (per insurer product list)"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "ZUKHLIP25039V022425",
+   "url": "https://www.zurichkotak.com/services/health-insurance/arogya-sanjeevani-policy",
+   "note": "IRDAI standard health policy"
+  },
+  {
+   "name": "Accident Care",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Personal accident",
+   "uin": "ZUKPAIP22072V052122",
+   "url": "https://www.zurichkotak.com/services/health-insurance/accident-care",
+   "note": "Individual/family personal accident policy"
+  },
+  {
+   "name": "Saral Suraksha Bima",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Personal accident",
+   "uin": "ZUKPAIP25046V022425",
+   "url": "https://www.zurichkotak.com/services/health-insurance/saral-suraksha-bima",
+   "note": "IRDAI standard personal accident policy"
+  },
+  {
+   "name": "Health Absolute",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP26043V032526",
+   "url": "https://www.generalicentralinsurance.com/health-insurance/health-absolute",
+   "note": "Comprehensive indemnity individual/family floater plan"
+  },
+  {
+   "name": "Health Xtra",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP26044V012526",
+   "url": "https://www.generalicentralinsurance.com/health-insurance/health-xtra",
+   "note": "Indemnity individual/family floater plan launched 2025-26"
+  },
+  {
+   "name": "Health Unlimited",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP26041V012526",
+   "url": "https://www.generalicentralinsurance.com/buyonline/health-unlimited",
+   "note": "Indemnity individual/family plan launched 2025-26"
+  },
+  {
+   "name": "Health Elite",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP22234V012122",
+   "url": "https://www.generalicentralinsurance.com/buyonline/health-elite",
+   "note": "Indemnity individual/family floater plan"
+  },
+  {
+   "name": "Health Vital",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP25038V022425",
+   "url": "https://www.generalicentralinsurance.com/buyonline/health-vital",
+   "note": "Indemnity individual/family plan"
+  },
+  {
+   "name": "D.I.Y Health",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP24025V012324",
+   "url": "https://www.generalicentralinsurance.com/buyonline/diy-health",
+   "note": "Build-your-own modular indemnity health plan"
+  },
+  {
+   "name": "Health Total",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP25037V062425",
+   "note": "Indemnity individual/family floater plan"
+  },
+  {
+   "name": "Health Suraksha",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP25017V052425",
+   "note": "Indemnity individual/family floater plan"
+  },
+  {
+   "name": "Health PowHER",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP24180V012324",
+   "note": "Health plan designed for women"
+  },
+  {
+   "name": "Aarogya Bima",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP23052V032223",
+   "note": "Basic indemnity individual/family health plan"
+  },
+  {
+   "name": "Varishta Bima",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Senior citizen",
+   "uin": "GCIHLIP24138V042324",
+   "note": "Health plan for senior citizens"
+  },
+  {
+   "name": "Advantage Top-up",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Super top-up",
+   "uin": "GCIHLIP23053V032223",
+   "note": "Top-up / super top-up health cover above a deductible"
+  },
+  {
+   "name": "Criticare",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Critical illness",
+   "uin": "GCIHLIP22104V022122",
+   "note": "Fixed-benefit critical illness cover"
+  },
+  {
+   "name": "Hospicash",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP22105V022122",
+   "note": "Hospital daily cash plan (fixed daily benefit during hospitalisation)"
+  },
+  {
+   "name": "Surrogacy Health Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP24147V012324",
+   "note": "Health cover for surrogate mothers, bought by intending parents"
+  },
+  {
+   "name": "HIV & Disability Suraksha",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Disease-specific",
+   "uin": "GCIHLIP23198V012223",
+   "note": "Cover for people living with HIV and persons with disabilities"
+  },
+  {
+   "name": "Surakshit Loan Bima",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Individual / family",
+   "uin": "GCIHLIP22112V032122",
+   "note": "Loan-linked fixed-benefit cover (death/disability/critical illness/job-loss style benefits) for individual borrowers"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Generali Central Insurance Company Limited",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Arogya Sanjeevani",
+   "uin": "GCIHLIP20160V011920",
+   "note": "IRDAI standard health product"
+  },
+  {
+   "name": "Accident Suraksha",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Personal accident",
+   "uin": "GCIPAIP18040V021718",
+   "note": "Individual personal accident cover"
+  },
+  {
+   "name": "Saral Suraksha Bima, Generali Central Insurance Company Limited",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Personal accident",
+   "uin": "GCIPAIP21623V012021",
+   "note": "IRDAI standard personal accident product"
+  },
+  {
+   "name": "Liberty Health Connect Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP26039V062526",
+   "url": "https://www.libertyinsurance.in/health-insurance/health-connect.html",
+   "note": "Indemnity health plan, individual/floater; SI options roughly 2-15 lakh by variant, restore benefit and loyalty perk"
+  },
+  {
+   "name": "Health Connect Supra",
+   "provider": "Liberty General Insurance",
+   "kind": "Super top-up",
+   "uin": "LIBHLIP25035V042425",
+   "url": "https://www.libertyinsurance.in/health-insurance/health-connect-supra.html",
+   "note": "Top-up (per-claim deductible) and super top-up (aggregate deductible) options; super top-up SI up to 1 crore"
+  },
+  {
+   "name": "Secure Health Connect",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP27042V032627",
+   "url": "https://www.libertyinsurance.in/health-insurance/secure-health-connect.html",
+   "note": "Indemnity health plan with SI reload and 10-25% cumulative bonus; revised version effective 31.08.2026"
+  },
+  {
+   "name": "HealthPrime Connect",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP25037V032425",
+   "note": "Retail health policy; current wording effective 30.09.2024"
+  },
+  {
+   "name": "Liberty Eternia Health Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP27041V022627",
+   "note": "New health policy launched April 2026 (revised 26.08.2026)"
+  },
+  {
+   "name": "Critical Connect",
+   "provider": "Liberty General Insurance",
+   "kind": "Critical illness",
+   "uin": "LIBHLIP21506V022021",
+   "note": "Fixed-benefit lump sum on diagnosis of listed critical illnesses"
+  },
+  {
+   "name": "Liberty Hospi-Cash Connect",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP21501V022021",
+   "note": "Hospital cash: fixed daily allowance per day of hospitalisation"
+  },
+  {
+   "name": "Liberty Secure Future Connect Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Individual / family",
+   "uin": "LIBHLIP21504V022021",
+   "note": "Retail fixed-benefit health policy; revised wording effective 01.10.2024"
+  },
+  {
+   "name": "Sampurna Swashraya",
+   "provider": "Liberty General Insurance",
+   "kind": "Disease-specific",
+   "uin": "LIBHLIP23217V012223",
+   "note": "Health cover for persons with disabilities / HIV-AIDS / mental illness (IRDAI-mandated category)"
+  },
+  {
+   "name": "Liberty Surro Assure",
+   "provider": "Liberty General Insurance",
+   "kind": "Disease-specific",
+   "uin": "LIBHLIP24117V012324",
+   "note": "Surrogacy health cover for the surrogate mother (36 months incl. post-partum)"
+  },
+  {
+   "name": "Liberty Individual Personal Accident Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Personal accident",
+   "uin": "LVGPAIP14004V011314",
+   "url": "https://www.libertyinsurance.in/health-insurance/personal-accident/ipa.html",
+   "note": "Retail PA covering accidental death and disability, two variants; prospectus revised 30.09.2024"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Liberty General Insurance Ltd.",
+   "provider": "Liberty General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "LIBHLIP20167V011920",
+   "note": "IRDAI standard health policy, SI 50,000-10 lakh"
+  },
+  {
+   "name": "OneHealth",
+   "provider": "Magma General Insurance",
+   "kind": "Individual / family",
+   "uin": "MAGHLIP27039V072627",
+   "url": "https://www.magmainsurance.com/products/health-insurance/one-health",
+   "note": "Flagship indemnity health plan, individual/floater; version 7 approved May 2026"
+  },
+  {
+   "name": "OneHealth 10.0",
+   "provider": "Magma General Insurance",
+   "kind": "Individual / family",
+   "uin": "MAGHLIP27040V012627",
+   "url": "https://www.magmainsurance.com/products/health-insurance/onehealth10.0",
+   "note": "New-generation OneHealth launched Aug 2026; individual, floater or multi-individual SI, min entry age 5 (91 days for children in floater)"
+  },
+  {
+   "name": "OneHealth Senior",
+   "provider": "Magma General Insurance",
+   "kind": "Senior citizen",
+   "uin": "MAGHLIP23048V012223",
+   "note": "Indemnity health plan designed for senior citizens"
+  },
+  {
+   "name": "OneHealth - Extra Cover",
+   "provider": "Magma General Insurance",
+   "kind": "Super top-up",
+   "uin": "MAGHLIP23047V012223",
+   "note": "Top-up / super top-up cover over a deductible"
+  },
+  {
+   "name": "OneClick OPD",
+   "provider": "Magma General Insurance",
+   "kind": "Individual / family",
+   "uin": "MAGHLIP27041V012627",
+   "note": "Standalone OPD plan (consultation, diagnostics), individual or floater, no max entry age; launched Sep 2026"
+  },
+  {
+   "name": "Double Suraksha",
+   "provider": "Magma General Insurance",
+   "kind": "Individual / family",
+   "uin": "MAGHLIP25035V012425",
+   "note": "Hospital cash plan: daily cash Rs 1,000-10,000, double for accident/ICU hospitalisation"
+  },
+  {
+   "name": "Saksham Health Insurance",
+   "provider": "Magma General Insurance",
+   "kind": "Disease-specific",
+   "uin": "MAGHLIP23189V012223",
+   "note": "Health cover for persons with disabilities, HIV/AIDS or mental illness"
+  },
+  {
+   "name": "OneProtect",
+   "provider": "Magma General Insurance",
+   "kind": "Personal accident",
+   "uin": "MAGPAIP25036V012425",
+   "note": "Individual personal accident policy launched Oct 2024"
+  },
+  {
+   "name": "Individual Personal Accident Policy",
+   "provider": "Magma General Insurance",
+   "kind": "Personal accident",
+   "uin": "MAGPAIP14001V011314",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/products/health-insurance/personal-accident",
+   "note": "Retail PA: accidental death and disability benefits"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Magma GIL",
+   "provider": "Magma General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "MAGHLIP20172V011920",
+   "note": "IRDAI standard health policy, SI 50,000-10 lakh"
+  },
+  {
+   "name": "Saral Suraksha Bima, Magma GIL",
+   "provider": "Magma General Insurance",
+   "kind": "Personal accident",
+   "uin": "MAGPAIP21642V012021",
+   "note": "IRDAI standard PA policy; wording updated w.e.f. 1 Oct 2025"
+  },
+  {
+   "name": "Health QuBE",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Individual / family",
+   "uin": "RQBHLIP26036V052526",
+   "url": "https://www.rahejaqbe.com/health-insurance/health-qube-plans",
+   "note": "Indemnity health plan in multiple variants, SI 1-50 lakh; adult entry 18-65, children from 90 days"
+  },
+  {
+   "name": "Health QuBE Super Top Up",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Super top-up",
+   "uin": "RQBHLIP26039V032526",
+   "url": "https://www.rahejaqbe.com/health-insurance/health-qube-super-topup",
+   "note": "Super top-up with aggregate annual deductible"
+  },
+  {
+   "name": "Health Bharosa",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Disease-specific",
+   "uin": "RQBHLIP26038V032526",
+   "url": "https://www.rahejaqbe.com/health-insurance/health-bharosa",
+   "note": "Health cover for persons with physical/mental disabilities and HIV/AIDS"
+  },
+  {
+   "name": "RQBE Surrogacy and Oocyte Donor Insurance Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Disease-specific",
+   "uin": "RQBHLIP26035V022526",
+   "url": "https://www.rahejaqbe.com/health-insurance/rqbe-surrogacy-and-oocyte-donor-insurance-policy",
+   "note": "Health cover for surrogate mothers and oocyte donors (launched Sep 2024)"
+  },
+  {
+   "name": "Arogya Sanjeevani, Raheja QBE General Insurance Company Limited",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "RQBHLIP26037V032526",
+   "url": "https://www.rahejaqbe.com/health-insurance/arogya-sanjeevani",
+   "note": "IRDAI standard health policy, SI 50,000-10 lakh"
+  },
+  {
+   "name": "Saral Suraksha Bima, Raheja QBE General Insurance Company Limited",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Personal accident",
+   "uin": "RQBPAIP26040V032526",
+   "url": "https://www.rahejaqbe.com/health-insurance/saral-suraksha-bima",
+   "note": "IRDAI standard individual PA policy"
+  },
+  {
+   "name": "Navi Health",
+   "provider": "Navi General Insurance",
+   "kind": "Individual / family",
+   "uin": "NAVHLIP22133V012122",
+   "note": "Digital indemnity health plan, individual/floater, SI 2 lakh-1 crore (UIN per IRDAI list; may have newer version)"
+  },
+  {
+   "name": "Navi Smart Health",
+   "provider": "Navi General Insurance",
+   "kind": "Individual / family",
+   "uin": "NAVHLIP23003V012223",
+   "note": "Digital indemnity health plan, individual/floater, SI 2 lakh-1 crore"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Navi General Insurance Limited",
+   "provider": "Navi General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "NAVHLIP20162V011920",
+   "note": "IRDAI standard health policy, SI 50,000-10 lakh; listed by InsuranceDekho"
+  },
+  {
+   "name": "Galaxy Promise",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "GHIHLIP25035V012425",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-promise-insurance-policy",
+   "note": "Premier/Elite/Signature variants; unlimited SI restoration, cumulative bonus up to 500%; adults 18-65"
+  },
+  {
+   "name": "Galaxy Marvel",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "GHIHLIP26042V012526",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-marvel-insurance-policy",
+   "note": "Customisable Neo/Prime plans, any room, unlimited restoration; 1-5 year terms"
+  },
+  {
+   "name": "Galaxy Twin 360",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "GHIHLIP26048V012526",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-twin-360-insurance-policy",
+   "note": "Inpatient plus outpatient cover (Core/Max/Ultra); adults 18-45 at entry"
+  },
+  {
+   "name": "Galaxy Empower",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "GHIHLIP25040V012425",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-empower-insurance-policy",
+   "note": "Affordable plan with SI of Rs 4 lakh or 5 lakh; adults 18-65"
+  },
+  {
+   "name": "Galaxy Guardian",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Individual / family",
+   "uin": "GHIHLIP25037V012425",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-guardian-insurance-policy",
+   "note": "Individual policy for all ages (entry from 5 months, no upper limit); SI Rs 3 lakh / 5 lakh"
+  },
+  {
+   "name": "Galaxy Privilege",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Senior citizen",
+   "uin": "GHIHLIP26044V012526",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-privilege-insurance-policy",
+   "note": "Senior citizen plan, entry 60-75 (spouse from 50); SI Rs 5-25 lakh"
+  },
+  {
+   "name": "Galaxy Top-up",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Super top-up",
+   "uin": "GHIHLIP25039V012425",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-top-up-insurance-policy",
+   "note": "Top-up cover (marketed as Health Booster) up to Rs 2 crore over existing policy"
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Galaxy Health Insurance Company Limited",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "GHIHLIP26045V012526",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-arogya-sanjeevani-insurance-policy",
+   "note": "IRDAI standard health policy; individual and floater"
+  },
+  {
+   "name": "Galaxy Personal Accident Shield",
+   "provider": "Galaxy Health and Allied Insurance",
+   "kind": "Personal accident",
+   "uin": "GHIPAIP25041V012425",
+   "url": "https://www.galaxyhealth.com/health-insurance/galaxy-personal-accident-insurance-policy",
+   "note": "Individual/floater AD, PTD, PPD, TTD with EMI/income protection and education benefit"
+  },
+  {
+   "name": "Narayana Aditi",
+   "provider": "Narayana Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NHIHLIP27048V062627",
+   "url": "https://www.narayanahealth.insurance/aditi-lp1",
+   "note": "Up to Rs 1 crore for surgeries, Rs 5-20 lakh medical management; no waiting period; sold only in select cities (Mysuru, Bengaluru, Kolkata, Raipur, Jaipur etc.)"
+  },
+  {
+   "name": "Arya Health Insurance",
+   "provider": "Narayana Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NHIHLIP27047V022627",
+   "url": "https://www.narayanahealth.insurance/arya-health-insurance",
+   "note": "Hospitalisation plus doctor consultation, medicine and test savings, family physician; on sale in Bengaluru only"
+  },
+  {
+   "name": "PRUHealth Protect",
+   "provider": "Prudential HCL Health Insurance",
+   "kind": "Individual / family",
+   "uin": "PRUHLIP27035V012627",
+   "url": "https://prudentialhealth.in/health-insurance/pruhealth-protect-plan",
+   "note": "Entry variant of PRUHealth (shared UIN); SI Rs 2-5 lakh; restoration from 2nd claim"
+  },
+  {
+   "name": "PRUHealth Guardian",
+   "provider": "Prudential HCL Health Insurance",
+   "kind": "Individual / family",
+   "uin": "PRUHLIP27036V012627",
+   "url": "https://prudentialhealth.in/health-insurance/pruhealth-guardian-plan",
+   "note": "Plan for people with pre-existing/chronic conditions; chronic management programme, home care, OPD add-on"
+  }
+ ]
+}

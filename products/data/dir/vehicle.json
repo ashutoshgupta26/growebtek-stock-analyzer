@@ -1,0 +1,1665 @@
+{
+ "cat": "vehicle",
+ "asOf": "Oct 2026",
+ "sources": [
+  "Insurer official websites, product pages and policy-wording downloads",
+  "IRDAI Annual Report 2024-25 (Statement 12: solvency)",
+  "Insurer public disclosures (NL-25 claims data)"
+ ],
+ "companies": [
+  {
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Private general insurer",
+   "url": "https://www.bajajgeneralinsurance.com",
+   "v": {
+    "solvency": 3.25
+   }
+  },
+  {
+   "provider": "Tata AIG General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.tataaig.com",
+   "v": {
+    "solvency": 1.81
+   }
+  },
+  {
+   "provider": "SBI General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.sbigeneral.in",
+   "v": {
+    "solvency": 2.03
+   }
+  },
+  {
+   "provider": "Go Digit General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.godigit.com",
+   "v": {
+    "solvency": 2.24
+   }
+  },
+  {
+   "provider": "Acko General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.acko.com",
+   "v": {
+    "solvency": 2.3
+   }
+  },
+  {
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Private general insurer",
+   "url": "https://www.indusindgeneral.com",
+   "v": {
+    "solvency": 1.59
+   }
+  },
+  {
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.iffcotokio.co.in",
+   "v": {
+    "solvency": 1.85
+   }
+  },
+  {
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Private general insurer",
+   "url": "https://www.hizuno.com",
+   "v": {
+    "solvency": 1.58
+   }
+  },
+  {
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.zurichkotak.com",
+   "v": {
+    "solvency": 5.73
+   }
+  },
+  {
+   "provider": "Magma General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.magmainsurance.com",
+   "v": {
+    "solvency": 2.02
+   }
+  },
+  {
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.rahejaqbe.com",
+   "v": {
+    "solvency": 1.72
+   }
+  },
+  {
+   "provider": "Liberty General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.libertyinsurance.in",
+   "v": {
+    "solvency": 1.75
+   }
+  },
+  {
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.universalsompo.com",
+   "v": {
+    "solvency": 1.97
+   }
+  }
+ ],
+ "entries": [
+  {
+   "name": "Acko Car Package Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN157RPMT0013V01202526",
+   "url": "https://www.acko.com/car-insurance/comprehensive-car-insurance/",
+   "note": "Newer comprehensive private car policy"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN157RPMT0006V04201718",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Standard private car package (OD + TP) policy"
+  },
+  {
+   "name": "Private Car Policy - Bundled",
+   "provider": "Acko General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN157RPMT0007V03201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "New car policy: 1-year OD with 3-year TP"
+  },
+  {
+   "name": "Stand-Alone Own Damage Private Car Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN157RPMT0008V03201920",
+   "url": "https://www.acko.com/car-insurance/own-damage-insurance/",
+   "note": "Own damage only; needs a separate active TP policy"
+  },
+  {
+   "name": "Acko Drivecam Car Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN157RPMT0017V01202627",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Comprehensive private car cover with an Acko-supplied dashcam"
+  },
+  {
+   "name": "Private Car Liability Only Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0001V01201718",
+   "url": "https://www.acko.com/third-party-car-insurance/",
+   "note": "Third party liability only cover for private cars"
+  },
+  {
+   "name": "Private Car Liability Only Policy - 3 Years",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0010V01201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "3-year TP cover for new private cars"
+  },
+  {
+   "name": "Acko Two Wheeler Multiyear Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RPMT0018V01202627",
+   "url": "https://www.acko.com/two-wheeler-insurance/",
+   "note": "Newer multi-year two-wheeler policy"
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RP0002V02201819",
+   "url": "https://www.acko.com/two-wheeler-insurance/comprehensive-bike-insurance/",
+   "note": "Standard two-wheeler package (OD + TP) policy"
+  },
+  {
+   "name": "Two Wheeler Package Policy - Long Term",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RP0003V02201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Long-term two-wheeler package policy"
+  },
+  {
+   "name": "Two-Wheeler Policy - 5 Years",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RP0013V01201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "5-year two-wheeler package policy"
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RP0015V02201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "New two-wheeler policy: 1-year OD with 5-year TP"
+  },
+  {
+   "name": "Stand-alone Own Damage Two-Wheeler Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN157RP0034V02201920",
+   "url": "https://www.acko.com/two-wheeler-insurance/standalone-own-damage-insurance/",
+   "note": "Own damage only; needs a separate active TP policy"
+  },
+  {
+   "name": "Liability Only Policy Two Wheeler",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0002V01201718",
+   "url": "https://www.acko.com/third-party-bike-insurance/",
+   "note": "Third party liability only cover for two-wheelers"
+  },
+  {
+   "name": "Two Wheeler Liability Only Policy - Long Term",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Long-term TP cover for two-wheelers; wording on Acko downloads page"
+  },
+  {
+   "name": "Two Wheeler Liability Only Policy - 5 Years",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0011V01201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "5-year TP cover for new two-wheelers"
+  },
+  {
+   "name": "Goods Carrying Vehicle - Package",
+   "provider": "Acko General Insurance",
+   "kind": "Commercial vehicle",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Package cover for goods carrying vehicles"
+  },
+  {
+   "name": "Passenger Carrying Vehicle - Package",
+   "provider": "Acko General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN157RP0001V01201819",
+   "url": "https://www.acko.com/downloads/",
+   "note": "Package cover for passenger carrying vehicles"
+  },
+  {
+   "name": "Goods Carrying Vehicle - Liability Only Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0003V01201718",
+   "url": "https://www.acko.com/downloads/",
+   "note": "TP liability only cover for goods carrying vehicles"
+  },
+  {
+   "name": "Passenger Carrying Vehicle - Liability Only Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0004V01201718",
+   "url": "https://www.acko.com/downloads/",
+   "note": "TP liability only cover for passenger carrying vehicles"
+  },
+  {
+   "name": "Miscellaneous Vehicle Liability Only Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN157RP0005V01201718",
+   "url": "https://www.acko.com/downloads/",
+   "note": "TP liability only cover for special type/misc vehicles"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Car",
+   "uin": "IRDAN113RP0025V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/comprehensive-car-insurance.html",
+   "note": "Comprehensive car cover; add-ons incl. Pay As You Drive, VPAY, Eco Assure, EV covers"
+  },
+  {
+   "name": "Private Car Package Policy - 3 Years",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Car",
+   "uin": "IRDAN113RPMT0001V01202425",
+   "note": "Long-term 3-year comprehensive package for private cars (approved Jul 2024)"
+  },
+  {
+   "name": "Private Car Policy - Bundled",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Car",
+   "uin": "IRDAN113RP0007V01201819",
+   "note": "New cars: 1-year own damage with 3-year third party"
+  },
+  {
+   "name": "Standalone Own Damage Cover for Private Car",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Car",
+   "uin": "IRDAN113RP0001V01201920",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/standalone-own-damage-car-insurance.html",
+   "note": "OD-only cover for cars with an active TP policy"
+  },
+  {
+   "name": "Liability Only Policy for Private Car",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Third party",
+   "uin": "IRDAN113RP0040V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/third-party-car-insurance-online.html",
+   "note": "Annual third-party liability cover for cars"
+  },
+  {
+   "name": "Liability Only Policy for Private Car - 3 Years",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Third party",
+   "uin": "IRDAN113RP0003V01201819",
+   "note": "3-year long-term TP cover for new cars"
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN113RP0026V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/comprehensive-bike-insurance.html",
+   "note": "Comprehensive bike/scooter cover"
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN113RP0008V01201617",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/two-wheeler-insurance-online.html",
+   "note": "Multi-year comprehensive two-wheeler cover"
+  },
+  {
+   "name": "Two Wheeler Package Policy - Long Term",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN113RPMT0018V01202425",
+   "note": "Newer long-term two-wheeler package product approved Jul 2024"
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN113RP0008V01201819",
+   "note": "New two-wheelers: 1-year OD with 5-year TP"
+  },
+  {
+   "name": "Standalone Own Damage Cover for Two Wheeler",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN113RP0002V01201920",
+   "url": "https://www.bajajgeneralinsurance.com/bike-insurance/standalone-own-damage-bike-insurance.html",
+   "note": "OD-only cover for two-wheelers with existing TP"
+  },
+  {
+   "name": "Liability Only Policy for Two Wheelers",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Third party",
+   "uin": "IRDAN113RP0041V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/two-wheeler-insurance-third-party.html",
+   "note": "Annual TP-only cover for two-wheelers"
+  },
+  {
+   "name": "Liability Only Policy for Two Wheelers - 5 Years",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Third party",
+   "uin": "IRDAN113RP0004V01201819",
+   "note": "Long-term TP cover for new two-wheelers"
+  },
+  {
+   "name": "Commercial Vehicle Package Policy",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN113RP0027V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/commercial-vehicle-insurance.html",
+   "note": "Goods, passenger and misc. commercial vehicles incl. commercial EVs, autos, taxis, trucks"
+  },
+  {
+   "name": "Liability Only Policy for Commercial Vehicles",
+   "provider": "Bajaj General Insurance (formerly Bajaj Allianz)",
+   "kind": "Third party",
+   "uin": "IRDAN113RP0042V01200102",
+   "url": "https://www.bajajgeneralinsurance.com/motor-insurance/commercial-vehicle-third-party-insurance.html",
+   "note": "TP-only cover for commercial vehicles"
+  },
+  {
+   "name": "Digit Car Insurance",
+   "provider": "Go Digit General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN158RPMT0003V01202627",
+   "url": "https://www.godigit.com/motor-insurance/car-insurance",
+   "note": "Newer comprehensive private car product; wording on Digit downloads page"
+  },
+  {
+   "name": "Digit Private Car Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN158RP0005V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Annual private car package (OD + TP) policy"
+  },
+  {
+   "name": "Digit Private Car Package Policy - Multi Year",
+   "provider": "Go Digit General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN158RPMT0035V01202425",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Multi-year private car package policy"
+  },
+  {
+   "name": "Digit Private Car Policy - Bundled",
+   "provider": "Go Digit General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN158RP0008V02201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "New car policy: 1-year OD with 3-year TP"
+  },
+  {
+   "name": "Digit Private Car Stand Alone Own Damage Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN158RP0002V01201920",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Own damage only; needs a separate active TP policy"
+  },
+  {
+   "name": "Digit Private Car Liability Only Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN158RP0002V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Third party liability only cover for private cars"
+  },
+  {
+   "name": "Digit Private Car Liability Only Policy - Long Term (3 Years)",
+   "provider": "Go Digit General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN158RP0004V02201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "3-year TP cover for new private cars"
+  },
+  {
+   "name": "Digit Two-Wheeler Insurance",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RPMT0045V01202425",
+   "url": "https://www.godigit.com/motor-insurance/two-wheeler-insurance",
+   "note": "Newer comprehensive two-wheeler product"
+  },
+  {
+   "name": "Digit Two-Wheeler Package Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RP0006V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Annual two-wheeler package (OD + TP) policy"
+  },
+  {
+   "name": "Digit Two-Wheeler Package Policy - Multi Year",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RPMT0033V01202425",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Multi-year two-wheeler package policy"
+  },
+  {
+   "name": "Digit Two-Wheeler Package Policy - Long Term",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RP0007V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Long-term two-wheeler package policy"
+  },
+  {
+   "name": "Digit Two-Wheeler Policy - Bundled",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RP0009V02201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "New two-wheeler policy: 1-year OD with 5-year TP"
+  },
+  {
+   "name": "Digit Two-Wheeler Stand-alone Own Damage Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN158RP0003V01201920",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Own damage only; needs a separate active TP policy"
+  },
+  {
+   "name": "Digit Two-Wheeler Liability Only Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN158RP0003V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Third party liability only cover for two-wheelers"
+  },
+  {
+   "name": "Digit Two-Wheeler Liability Only Policy - Long Term",
+   "provider": "Go Digit General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN158RP0004V01202021",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Long-term TP cover for two-wheelers"
+  },
+  {
+   "name": "Digit Commercial Vehicle Insurance",
+   "provider": "Go Digit General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN158RPMT0043V01202425",
+   "url": "https://www.godigit.com/commercial-vehicle-insurance",
+   "note": "Newer commercial vehicle package product"
+  },
+  {
+   "name": "Digit Commercial Vehicle Package Policy - Goods Carrying Vehicle",
+   "provider": "Go Digit General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN158RP0001V01201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Package cover for goods carrying vehicles"
+  },
+  {
+   "name": "Digit Commercial Vehicle Package Policy - Passenger Carrying Vehicle",
+   "provider": "Go Digit General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN158RP0002V01201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Package cover for taxis, buses and other passenger vehicles"
+  },
+  {
+   "name": "Digit Commercial Vehicle Package Policy - Miscellaneous & Special Types of Vehicle",
+   "provider": "Go Digit General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN158RP0003V01201819",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Package cover for misc/special vehicles such as tractors and cranes"
+  },
+  {
+   "name": "Digit Commercial Vehicle Liability Only Policy",
+   "provider": "Go Digit General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN158RP0001V01201718",
+   "url": "https://www.godigit.com/downloads",
+   "note": "Third party liability only cover for commercial vehicles"
+  },
+  {
+   "name": "Auto Secure - Private Car Package Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN108RPMT0002V02200001",
+   "url": "https://www.tataaig.com/motor-insurance/car-insurance/comprehensive-car-insurance",
+   "note": "Comprehensive car cover incl. EVs, with add-ons such as depreciation reimbursement"
+  },
+  {
+   "name": "Bundled Auto Secure - Private Car Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN108RP0006V02201819",
+   "note": "New cars: 1-year own damage + 3-year third party"
+  },
+  {
+   "name": "Auto Secure - Standalone Own Damage Private Car Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN108RPMT0001V02201920",
+   "url": "https://www.tataaig.com/motor-insurance/car-insurance/standalone-own-damage-car-insurance",
+   "note": "OD-only cover for cars with active TP policy"
+  },
+  {
+   "name": "Auto Secure - Liability Only Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN108RP0008V01200001",
+   "url": "https://www.tataaig.com/motor-insurance/car-insurance/third-party-car-insurance",
+   "note": "Annual third-party-only cover for cars, two-wheelers and commercial vehicles"
+  },
+  {
+   "name": "3 Years Standalone Third Party Long Term Auto Secure - Private Car Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN108RP0003V02201819",
+   "note": "3-year TP cover for new private cars"
+  },
+  {
+   "name": "Auto Secure - Two Wheeler Package Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN108RPMT0076V03201819",
+   "url": "https://www.tataaig.com/motor-insurance/two-wheeler-insurance/comprehensive-bike-insurance",
+   "note": "Comprehensive bike/scooter cover incl. electric two-wheelers"
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN108RP0007V01201516",
+   "url": "https://www.tataaig.com/motor-insurance/two-wheeler-insurance/long-term-insurance",
+   "note": "Multi-year comprehensive two-wheeler cover"
+  },
+  {
+   "name": "Bundled Auto Secure - Two Wheeler Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN108RP0007V02201819",
+   "note": "New two-wheelers: 1-year OD + 5-year TP"
+  },
+  {
+   "name": "Auto Secure - Standalone Own Damage Two Wheeler Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN108RPMT0002V02201920",
+   "url": "https://www.tataaig.com/motor-insurance/two-wheeler-insurance/own-damage-cover-in-bike-insurance",
+   "note": "OD-only cover for two-wheelers with existing TP"
+  },
+  {
+   "name": "5 Years Standalone Third Party Long Term Two Wheeler Insurance Policy",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN108RP0002V02201819",
+   "url": "https://www.tataaig.com/motor-insurance/two-wheeler-insurance/third-party-bike-insurance",
+   "note": "5-year TP cover for new two-wheelers"
+  },
+  {
+   "name": "Auto Secure - Commercial Vehicle Package Policy - Goods Carrying Vehicle",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN108RPMT0050V03201819",
+   "url": "https://www.tataaig.com/motor-insurance/commercial-vehicle-insurance",
+   "note": "Comprehensive cover for trucks and goods carriers"
+  },
+  {
+   "name": "Auto Secure - Commercial Vehicle Package Policy - Passenger Carrying Vehicle",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN108RPMT0077V03201819",
+   "url": "https://www.tataaig.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance",
+   "note": "Taxis, buses, auto-rickshaws"
+  },
+  {
+   "name": "Auto Secure - Commercial Vehicle Package Policy - Miscellaneous and Special Type of Vehicles",
+   "provider": "Tata AIG General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN108RPMT0078V02201819",
+   "note": "Tractors, cranes, ambulances and other special vehicles"
+  },
+  {
+   "name": "Private Car Act & Comprehensive Policies",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106P0005V01200001",
+   "url": "https://www.iffcotokio.co.in/motor-insurance/car-insurance",
+   "note": "Annual private car package (own damage + third party) or act-only cover"
+  },
+  {
+   "name": "Private Car Package Policy - 3 Years",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106RPMT0034V01202526",
+   "note": "3-year long-term comprehensive cover for private cars (launched Sep 2025)"
+  },
+  {
+   "name": "Bundled Cover with one year Own Damage and three years Motor Third Party Insurance Policy for Private Cars",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106RP0010V01201819",
+   "note": "New cars: 1-year own damage + 3-year third party"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage for Private Car",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106RP0002V01201920",
+   "note": "Own damage only for cars with active third party policy"
+  },
+  {
+   "name": "Extended Warranty Insurance (Vehicle) Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106P0003V01200708",
+   "note": "Extended warranty cover for vehicles after manufacturer warranty"
+  },
+  {
+   "name": "3 year Private Car Act Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN106RP0008V01201819",
+   "url": "https://www.iffcotokio.co.in/motor-insurance/third-party-insurance",
+   "note": "3-year liability-only cover for new private cars"
+  },
+  {
+   "name": "Motor Cycle / Scooter B Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106P0013V01200001",
+   "url": "https://www.iffcotokio.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "Annual two-wheeler package / liability policy"
+  },
+  {
+   "name": "Long term standard Motor Package policy for two wheeler",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106P0004V01201617",
+   "note": "Multi-year comprehensive two-wheeler cover"
+  },
+  {
+   "name": "Bundled Cover with one year Own Damage and five years Motor Third Party Insurance Policy for 2-Wheelers",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106RP0007V01201819",
+   "note": "New two-wheelers: 1-year own damage + 5-year third party"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage for Two Wheeler",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106RP0001V01201920",
+   "note": "Own damage only for two-wheelers with active third party cover"
+  },
+  {
+   "name": "Battery Operated Bike (Two Wheeler) Package Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106RP0006V01202324",
+   "note": "EV-specific package cover for battery-operated two-wheelers"
+  },
+  {
+   "name": "E-Bike Package Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN106P0002V01201112",
+   "note": "Package cover for electric bikes (listed active on IRDAI product list)"
+  },
+  {
+   "name": "Stand Alone Third Party Long term Two Wheeler Insurance Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN106P0001V01201415",
+   "note": "Multi-year liability-only two-wheeler cover"
+  },
+  {
+   "name": "5 year Stand Alone Third Party Long term Two Wheeler Insurance Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN106RP0005V01201819",
+   "note": "5-year liability-only cover for new two-wheelers"
+  },
+  {
+   "name": "Commercial Vehicle - Package Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN106P0005V01200607",
+   "url": "https://www.iffcotokio.co.in/motor-insurance/commercial-vehicle-insurance",
+   "note": "Package cover for goods, passenger (taxi/bus) and misc commercial vehicles"
+  },
+  {
+   "name": "Commercial Vehicle - Stand Alone TP Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN106P0006V01200607",
+   "note": "Liability-only cover for commercial vehicles"
+  },
+  {
+   "name": "Compulsory Personal Accident (Owner-cum-Driver) under Motor Insurance Policies",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN106RP0065V01201819",
+   "note": "Standalone compulsory PA cover for owner-driver"
+  },
+  {
+   "name": "IndusInd Private Car Package Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RP0010V02100001",
+   "url": "https://www.indusindinsurance.com/car-insurance/comprehensive-car-insurance",
+   "note": "Comprehensive own damage + third party car cover; 15+ add-ons incl. EV battery/charger covers"
+  },
+  {
+   "name": "IndusInd Private Car Package Policy - 3 Years",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RPMT0053V02202425",
+   "url": "https://www.indusindinsurance.com/car-insurance/long-term-car-insurance",
+   "note": "3-year long-term comprehensive cover for private cars"
+  },
+  {
+   "name": "IndusInd Private Car Policy - Bundled",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RP0001V03202425",
+   "note": "New cars: 1-year own damage + 3-year third party"
+  },
+  {
+   "name": "IndusInd Private Car Policy - Stand-Alone Own Damage",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RPMT0004V03202425",
+   "url": "https://www.indusindinsurance.com/car-insurance/own-damage-insurance",
+   "note": "Own damage only for cars with active third party policy"
+  },
+  {
+   "name": "IndusInd Pay-As-You-Drive Car Insurance",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "url": "https://www.indusindinsurance.com/car-insurance/pay-as-you-drive-insurance",
+   "note": "Usage-based: pay for declared 2,500-10,500 km/year, with km top-ups"
+  },
+  {
+   "name": "IndusInd Short Term Car Insurance",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "url": "https://www.indusindinsurance.com/car-insurance/short-term-car-insurance",
+   "note": "Monthly/short-period own damage car cover bought online"
+  },
+  {
+   "name": "IndusInd Motor Vehicle Extended Warranty and Protection for Four Wheeler (Private Car, ICE and EV)",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RPMT0055V02202425",
+   "note": "Extended warranty cover for private cars after manufacturer warranty"
+  },
+  {
+   "name": "\"A\" Policy for Act Liability Insurance (Private Car) - 3 years",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Third party",
+   "uin": "IRDAN103RP0003V01201819",
+   "url": "https://www.indusindinsurance.com/car-insurance/third-party-car-insurance",
+   "note": "3-year liability-only cover for new private cars"
+  },
+  {
+   "name": "\"A\" Policy for Act Liability Insurance",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Third party",
+   "uin": "IRDAN103RP0003V01200102",
+   "note": "Annual liability-only (Act) cover for motor vehicles"
+  },
+  {
+   "name": "IndusInd Two Wheeler Package Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RP0011V02100001",
+   "url": "https://www.indusindinsurance.com/two-wheeler-insurance/comprehensive-bike-insurance",
+   "note": "Comprehensive own damage + third party bike/scooter cover"
+  },
+  {
+   "name": "IndusInd Two Wheeler Package Policy - 5 Years",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RPMT0054V02202425",
+   "note": "5-year comprehensive cover for new two-wheelers"
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RP0001V01201718",
+   "note": "Multi-year (2-3 year) comprehensive two-wheeler cover"
+  },
+  {
+   "name": "IndusInd Two Wheeler Policy - Bundled",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RP0003V04202425",
+   "note": "New two-wheelers: 1-year own damage + 5-year third party"
+  },
+  {
+   "name": "IndusInd Two Wheeler Policy - Stand-alone Own Damage",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RPMT0024V02202425",
+   "url": "https://www.indusindinsurance.com/two-wheeler-insurance/own-damage-bike-insurance",
+   "note": "Own damage only for two-wheelers with active third party cover"
+  },
+  {
+   "name": "IndusInd Comprehensive Package Insurance for Low Speed Electric Two Wheelers (unregistered vehicle)",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RP0047V01202223",
+   "url": "https://www.indusindinsurance.com/two-wheeler-insurance/electric-scooter-insurance",
+   "note": "EV-specific package cover for low-speed e-scooters not requiring registration"
+  },
+  {
+   "name": "IndusInd Motor Vehicle Extended Warranty & Protection for Two Wheeler (ICE and EV)",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN103RPMT0052V02202425",
+   "note": "Extended warranty cover for two-wheelers incl. EVs"
+  },
+  {
+   "name": "Third Party Long-term 2 & 3 year Two Wheeler Insurance Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Third party",
+   "uin": "IRDAN103RP0009V01201415",
+   "url": "https://www.indusindinsurance.com/two-wheeler-insurance/third-party-bike-insurance",
+   "note": "Multi-year liability-only two-wheeler cover"
+  },
+  {
+   "name": "\"A\" Policy for Act Liability Insurance (Two Wheeler) - 5 years",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Third party",
+   "uin": "IRDAN103RP0004V01201819",
+   "note": "5-year liability-only cover for new two-wheelers"
+  },
+  {
+   "name": "IndusInd Commercial Vehicles Package Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN103RP0012V02100001",
+   "url": "https://www.indusindinsurance.com/commercial-vehicle-insurance",
+   "note": "Package cover for goods, passenger (taxi, bus) and misc commercial vehicles"
+  },
+  {
+   "name": "IndusInd Motor Vehicle Extended Warranty for Passenger and Goods Carrying Commercial Vehicles (ICE)",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN103RPMT0056V02202425",
+   "note": "Extended warranty cover for commercial vehicles"
+  },
+  {
+   "name": "Compulsory Personal Accident (Owner-Driver) under Motor Insurance Policies",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Car",
+   "uin": "IRDAN103RP0065V02201819",
+   "note": "Standalone compulsory PA cover for vehicle owner-driver"
+  },
+  {
+   "name": "Private Car Insurance Policy - Package",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RP0005V03201112",
+   "url": "https://www.sbigeneral.in/motor-insurance/private-car-insurance",
+   "note": "Comprehensive own damage + third party cover for private cars; add-ons like zero dep, RTI, engine guard"
+  },
+  {
+   "name": "Private Car Long Term Package Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RPMT0022V01202425",
+   "note": "Multi-year package policy for private cars"
+  },
+  {
+   "name": "Bundled Private Car Insurance Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RP0006V02201819",
+   "note": "New cars: 1-year own damage with 3-year third party cover"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Cover for Private Car",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RP0001V01201920",
+   "note": "Own damage only, for cars with a separate active third party policy"
+  },
+  {
+   "name": "Residual Value Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RPMT0021V01202627",
+   "note": "Standalone motor product covering residual/invoice value gap on total loss"
+  },
+  {
+   "name": "Motor Act Only - Private Car",
+   "provider": "SBI General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN144RP0002V02201819",
+   "note": "Liability-only (incl. 3-year long-term) cover for private cars"
+  },
+  {
+   "name": "Two Wheeler Insurance Policy - Package",
+   "provider": "SBI General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN144RP0006V02201112",
+   "url": "https://www.sbigeneral.in/motor-insurance/two-wheeler-insurance",
+   "note": "Comprehensive own damage + third party cover for bikes and scooters"
+  },
+  {
+   "name": "Long Term Two Wheeler Insurance Policy - Package",
+   "provider": "SBI General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN144RP0001V02201516",
+   "note": "Multi-year comprehensive two-wheeler policy"
+  },
+  {
+   "name": "Bundled Two-Wheeler Insurance Policy",
+   "provider": "SBI General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN144RP0007V02201819",
+   "note": "New two-wheelers: 1-year own damage with 5-year third party cover"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Cover for Two Wheeler",
+   "provider": "SBI General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN144RP0002V01201920",
+   "note": "Own damage only, for two-wheelers with active third party cover"
+  },
+  {
+   "name": "Motor Act Only - Two Wheeler",
+   "provider": "SBI General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN144RP0003V02201819",
+   "note": "Liability-only (incl. long-term) cover for two-wheelers"
+  },
+  {
+   "name": "Commercial Vehicle Insurance Policy - Package (Goods Carrying)",
+   "provider": "SBI General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN144RP0002V02201112",
+   "note": "Package cover for goods carrying vehicles"
+  },
+  {
+   "name": "Act Only Insurance Policy (Commercial Vehicle)",
+   "provider": "SBI General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN144RP0001V01200910",
+   "note": "Liability-only cover for commercial vehicles"
+  },
+  {
+   "name": "Motor Trailer Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN144RP0013V01201213",
+   "note": "Cover for trailers attached to motor vehicles"
+  },
+  {
+   "name": "Motor Compulsory Personal Accident (Owner-Driver) Insurance",
+   "provider": "SBI General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN144RP0038V02201819",
+   "note": "Standalone compulsory PA cover for owner-driver (Rs 15 lakh)"
+  },
+  {
+   "name": "Private Car Package Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Car",
+   "url": "https://www.hizuno.com/car-insurance",
+   "note": "Comprehensive own damage + third-party cover for private cars; add-ons available"
+  },
+  {
+   "name": "Private Car Standalone Own Damage Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Car",
+   "url": "https://www.hizuno.com/car-insurance/own-damage-car-insurance",
+   "note": "Own-damage only cover for cars with an active third-party policy"
+  },
+  {
+   "name": "Pay As You Drive (Private Car Add-On PAYDRP)",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Car",
+   "url": "https://www.hizuno.com/car-insurance",
+   "note": "Usage-based (km-driven) own-damage premium option under the private car policy"
+  },
+  {
+   "name": "Electric Car Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Car",
+   "url": "https://www.hizuno.com/car-insurance/electric-car-insurance",
+   "note": "Car package cover marketed for EVs, incl. battery/charger-related add-ons"
+  },
+  {
+   "name": "Two Wheeler Package Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Two-wheeler",
+   "url": "https://www.hizuno.com/bike-insurance",
+   "note": "Comprehensive one-year own damage + third-party cover for bikes/scooters"
+  },
+  {
+   "name": "Two Wheeler Bundled Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Two-wheeler",
+   "url": "https://www.hizuno.com/bike-insurance",
+   "note": "New two-wheelers: 1-year own damage + 5-year third-party"
+  },
+  {
+   "name": "Two Wheeler Standalone Own Damage Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Two-wheeler",
+   "url": "https://www.hizuno.com/bike-insurance",
+   "note": "Own-damage only cover for two-wheelers with separate TP policy"
+  },
+  {
+   "name": "Goods Carrying Vehicle Package Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Commercial vehicle",
+   "url": "https://www.hizuno.com/commercial-vehicle-insurance",
+   "note": "Package cover for trucks/goods carriers"
+  },
+  {
+   "name": "Passenger Carrying Vehicle Package Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Commercial vehicle",
+   "url": "https://www.hizuno.com/commercial-vehicle-insurance",
+   "note": "Package cover for taxis, buses and other passenger vehicles"
+  },
+  {
+   "name": "Miscellaneous Vehicle Package Insurance",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Commercial vehicle",
+   "url": "https://www.hizuno.com/commercial-vehicle-insurance",
+   "note": "Package cover for special/misc vehicles (tractors, cranes etc.)"
+  },
+  {
+   "name": "Extended Warranty Motor",
+   "provider": "Zuno General Insurance (formerly Edelweiss)",
+   "kind": "Car",
+   "note": "Standalone extended warranty product for vehicles beyond manufacturer warranty"
+  },
+  {
+   "name": "Car Secure",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN152RP0006V04201516",
+   "url": "https://www.zurichkotak.com/motor-insurance/car-insurance",
+   "note": "Private car package (comprehensive) policy with add-ons like zero dep, engine protect, RTI (listed in insurer product list)"
+  },
+  {
+   "name": "Car Secure Bundled",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN152RP0010V04201819",
+   "url": "https://www.zurichkotak.com/motor-insurance/car-insurance",
+   "note": "New cars: 1-year own damage + 3-year third-party (listed in insurer product list)"
+  },
+  {
+   "name": "Car Secure - OD Only",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN152RP0012V03201920",
+   "url": "https://www.zurichkotak.com/motor-insurance/car-insurance/own-damage-car-insurance",
+   "note": "Standalone own-damage cover for private cars (listed in insurer product list)"
+  },
+  {
+   "name": "Liability Only (Private Car)",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN152RP0001V02201516",
+   "url": "https://www.zurichkotak.com/motor-insurance/car-insurance",
+   "note": "Statutory third-party liability cover for private cars (listed in insurer product list)"
+  },
+  {
+   "name": "Liability Only (Private Car) 3 years",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN152RP0006V03201819",
+   "url": "https://www.zurichkotak.com/motor-insurance/car-insurance",
+   "note": "Long-term 3-year TP cover for new private cars (listed in insurer product list)"
+  },
+  {
+   "name": "Two Wheeler Secure",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN152RP0010V03201516",
+   "url": "https://www.zurichkotak.com/motor-insurance/two-wheeler-insurance",
+   "note": "Comprehensive annual package policy for bikes and scooters (listed in insurer product list)"
+  },
+  {
+   "name": "Long Term Two Wheeler Secure",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN152RP0008V04201617",
+   "url": "https://www.zurichkotak.com/motor-insurance/two-wheeler-insurance",
+   "note": "Multi-year comprehensive package policy for two-wheelers (listed in insurer product list)"
+  },
+  {
+   "name": "Long Term Two Wheeler Secure Bundled",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN152RP0011V04201819",
+   "url": "https://www.zurichkotak.com/motor-insurance/two-wheeler-insurance",
+   "note": "New two-wheelers: 1-year OD + 5-year TP (listed in insurer product list)"
+  },
+  {
+   "name": "Two Wheeler Protect - OD Only",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN152RP0013V03201920",
+   "url": "https://www.zurichkotak.com/motor-insurance/two-wheeler-insurance/own-damage-bike-insurance",
+   "note": "Standalone own-damage cover for two-wheelers (listed in insurer product list)"
+  },
+  {
+   "name": "Long Term Two Wheeler Secure (Liability Only) 5 years",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN152RP0007V04201819",
+   "url": "https://www.zurichkotak.com/motor-insurance/two-wheeler-insurance/third-party-two-wheeler-insurance",
+   "note": "5-year TP cover for new two-wheelers (listed in insurer product list)"
+  },
+  {
+   "name": "Commercial Vehicle Secure (Goods Carrying Vehicle)",
+   "provider": "Zurich Kotak General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN152RP0008V04201516",
+   "note": "Package cover for goods carrying vehicles (listed in insurer product list)"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN150RP0035V03201213",
+   "url": "https://www.libertyinsurance.in/car-insurance/",
+   "note": "Comprehensive annual car cover (OD + TP) with optional add-ons"
+  },
+  {
+   "name": "Private Car Package Policy - 3 Years",
+   "provider": "Liberty General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN150RPMT0007V02202425",
+   "url": "https://www.libertyinsurance.in/car-insurance/",
+   "note": "Long-term 3-year package for private cars, relaunched 2024-25 version with add-ons"
+  },
+  {
+   "name": "Private Car Policy - Bundled Cover",
+   "provider": "Liberty General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN150RP0004V03201819",
+   "url": "https://www.libertyinsurance.in/car-insurance/",
+   "note": "New cars: 1-year own damage + 3-year third-party"
+  },
+  {
+   "name": "Stand-alone Own Damage Policy for Private Car",
+   "provider": "Liberty General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN150RP0001V03201920",
+   "url": "https://www.libertyinsurance.in/car-insurance/",
+   "note": "Own-damage only cover for cars with an active TP policy"
+  },
+  {
+   "name": "Private Car Liability Policy - 3 Years",
+   "provider": "Liberty General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN150RP0005V01201819",
+   "url": "https://www.libertyinsurance.in/car-insurance/",
+   "note": "Mandatory 3-year TP liability cover for new private cars"
+  },
+  {
+   "name": "Motor Liability Only Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN150RP0034V01201213",
+   "url": "https://www.libertyinsurance.in/motor-insurance.html",
+   "note": "Annual TP liability-only cover for private cars, two-wheelers and commercial vehicles"
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN150RP0001V02201213",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/annual-bike-insurance-policy.html",
+   "note": "Annual comprehensive bike/scooter cover with add-ons"
+  },
+  {
+   "name": "Two Wheeler Package Policy - Multi Year",
+   "provider": "Liberty General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN150RP0002V02201516",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/long-term-bike-insurance.html",
+   "note": "Multi-year (2-3 yr) comprehensive two-wheeler cover"
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled Cover",
+   "provider": "Liberty General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN150RP0007V02201819",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/",
+   "note": "New two-wheelers: 1-year OD + 5-year TP"
+  },
+  {
+   "name": "Stand-alone Own Damage Policy for Two-Wheeler",
+   "provider": "Liberty General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN150RP0002V02201920",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/",
+   "note": "Own-damage only cover for two-wheelers"
+  },
+  {
+   "name": "Two Wheeler Liability Policy - 5 Years",
+   "provider": "Liberty General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN150RP0008V01201819",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/",
+   "note": "Mandatory 5-year TP liability for new two-wheelers"
+  },
+  {
+   "name": "Standalone Motor Third Party Policy for Two Wheelers (Long term)",
+   "provider": "Liberty General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN150RP0005V01201415",
+   "url": "https://www.libertyinsurance.in/two-wheeler-insurance/",
+   "note": "Long-term (multi-year) TP-only cover for existing two-wheelers"
+  },
+  {
+   "name": "Commercial Vehicle Package Policy",
+   "provider": "Liberty General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN150RP0033V02201213",
+   "url": "https://www.libertyinsurance.in/commercial-insurance/commercial-vehicle-insurance.html",
+   "note": "Package cover for goods carrying, passenger carrying and misc commercial vehicles"
+  },
+  {
+   "name": "Motor Private Car",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Car",
+   "url": "https://www.universalsompo.com/motor-insurance-details/",
+   "note": "Comprehensive (OD + TP) private car package policy with add-ons incl. EV battery/charger covers"
+  },
+  {
+   "name": "Motor Private Car - Bundled",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Car",
+   "url": "https://www.universalsompo.com/motor-insurance-details/",
+   "note": "New cars: 1-year own damage + 3-year third-party"
+  },
+  {
+   "name": "Motor Private Car 3 Years",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Car",
+   "url": "https://www.universalsompo.com/motor-insurance-details/",
+   "note": "Long-term 3-year package policy for private cars"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Policy - Private Car",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Car",
+   "url": "https://www.universalsompo.com/motor-insurance-details/",
+   "note": "Own-damage only cover for cars with a valid TP policy"
+  },
+  {
+   "name": "Flexi Stand Alone Motor Own Damage Policy Private Car",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Car",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "Flexible standalone OD variant for private cars, listed among current motor documents"
+  },
+  {
+   "name": "Standalone Motor Third Party Insurance - Private Car",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/motor-insurance-details/",
+   "note": "Annual TP liability-only cover for private cars"
+  },
+  {
+   "name": "Third Party Private Car - 3 years",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "Mandatory 3-year TP for new private cars"
+  },
+  {
+   "name": "Motor Two-Wheeler",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.universalsompo.com/motor-two-wheeler/",
+   "note": "Annual comprehensive bike/scooter package policy"
+  },
+  {
+   "name": "Two Wheeler Long Term Package Policy (TWLTPP)",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.universalsompo.com/two-wheeler-long-term/",
+   "note": "Multi-year comprehensive package for two-wheelers"
+  },
+  {
+   "name": "Motor Two-Wheeler - 5 Years",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "5-year package policy for two-wheelers"
+  },
+  {
+   "name": "Motor Two Wheeler - Bundled",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.universalsompo.com/motor-two-wheeler/",
+   "note": "New two-wheelers: 1-year OD + 5-year TP"
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Policy - Two Wheeler",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.universalsompo.com/motor-two-wheeler/",
+   "note": "Own-damage only cover for two-wheelers"
+  },
+  {
+   "name": "Standalone Motor Third Party Insurance - Two Wheeler",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/motor-two-wheeler/",
+   "note": "Annual TP-only cover for two-wheelers"
+  },
+  {
+   "name": "Third Party Two Wheeler Policy - 5 years",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "Mandatory 5-year TP for new two-wheelers"
+  },
+  {
+   "name": "Standalone Third Party Long Term Two Wheeler Insurance Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "Multi-year TP-only cover for existing two-wheelers"
+  },
+  {
+   "name": "Motor Goods Carrying Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Commercial vehicle",
+   "url": "https://www.universalsompo.com/motor-goods-carrying-vehicles/",
+   "note": "Package cover for trucks and goods carriers"
+  },
+  {
+   "name": "Motor Passenger Carrying Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Commercial vehicle",
+   "url": "https://www.universalsompo.com/motor-passenger-carrying-vehicles/",
+   "note": "Package cover for taxis, buses and passenger vehicles"
+  },
+  {
+   "name": "Motor Miscellaneous Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Commercial vehicle",
+   "url": "https://www.universalsompo.com/motor-miscellaneous-vehicles/",
+   "note": "Package cover for special/misc vehicles (tractors, cranes etc.)"
+  },
+  {
+   "name": "Standalone Motor Third Party Insurance - Goods Carrying Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "TP liability-only cover for goods carrying vehicles"
+  },
+  {
+   "name": "Standalone Motor Third Party Insurance - Passenger Carrying Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "TP liability-only cover for passenger carrying vehicles"
+  },
+  {
+   "name": "Standalone Motor Third Party Insurance - Miscellaneous Vehicle",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Third party",
+   "url": "https://www.universalsompo.com/resources-downloads/motor/",
+   "note": "TP liability-only cover for misc vehicles"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "Magma General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN149RP0001V02201213",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Comprehensive annual OD + TP cover for private cars with add-ons. Insurer now brands itself Magma Insurance (magmainsurance.com), Patanjali-backed"
+  },
+  {
+   "name": "Private Car Package Policy - 3 Year",
+   "provider": "Magma General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN149RPMT0007V01202425",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Long-term 3-year package for private cars (2024-25 filing)"
+  },
+  {
+   "name": "Private Car Policy - Bundled - 3 year Act Only and 1 year Own Damage",
+   "provider": "Magma General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN149RP0003V01201819",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "New cars: 1-year OD + 3-year TP"
+  },
+  {
+   "name": "Stand-Alone Own Damage Policy for Private Car",
+   "provider": "Magma General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN149RP0001V01201920",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Own-damage only cover for cars with separate TP policy"
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "Magma General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN149RP0002V02201213",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Annual comprehensive cover for bikes/scooters"
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled - 5 year Act only and 1 year Own Damage",
+   "provider": "Magma General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN149RP0006V01201819",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "New two-wheelers: 1-year OD + 5-year TP"
+  },
+  {
+   "name": "Stand-Alone Own Damage Policy for Two Wheeler",
+   "provider": "Magma General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN149RP0002V01201920",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Own-damage only cover for two-wheelers"
+  },
+  {
+   "name": "Motor Act Only Policy",
+   "provider": "Magma General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN149RP0003V01201213",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Annual TP liability-only cover for cars, two-wheelers and commercial vehicles"
+  },
+  {
+   "name": "Act only Policy Private Car - 3 year",
+   "provider": "Magma General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN149RP0004V01201819",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Mandatory 3-year TP for new private cars"
+  },
+  {
+   "name": "Act only Policy Two Wheeler - 5 Year",
+   "provider": "Magma General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN149RP0007V01201819",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Mandatory 5-year TP for new two-wheelers"
+  },
+  {
+   "name": "Third Party Long Term Two Wheeler Insurance Policy",
+   "provider": "Magma General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN149RP0002V01201415",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Multi-year TP-only cover for existing two-wheelers"
+  },
+  {
+   "name": "Commercial Vehicle Package Policy (Commercial Comprehensive Package Policy)",
+   "provider": "Magma General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN149RP0006V02201213",
+   "url": "https://www.magmainsurance.com/web/magmainsurance/motor-insurance",
+   "note": "Package cover for goods, passenger and misc commercial vehicles"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN141RP0001V01200809",
+   "url": "https://www.rahejaqbe.com/motor-insurance/car-insurance",
+   "note": "Comprehensive OD + TP cover for private cars with add-ons"
+  },
+  {
+   "name": "Private Car Policy - Bundled",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN141RP0016V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/car-insurance",
+   "note": "New cars: 1-year OD + 3-year TP"
+  },
+  {
+   "name": "Standalone Own Damage Policy - Private Car",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN141RP0001V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/car-insurance",
+   "note": "Own-damage only cover for cars with separate TP policy"
+  },
+  {
+   "name": "Liability only - Private Car",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN141RP0004V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/car-insurance",
+   "note": "TP liability-only cover for private cars"
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN141RP0035V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/two-wheeler-insurance",
+   "note": "Comprehensive cover for bikes and scooters"
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN141RP0037V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/two-wheeler-insurance",
+   "note": "New two-wheelers: 1-year OD + 5-year TP"
+  },
+  {
+   "name": "Standalone Own Damage Policy - Two Wheeler",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN141RP0036V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/two-wheeler-insurance",
+   "note": "Own-damage only cover for two-wheelers"
+  },
+  {
+   "name": "Liability only - Two Wheeler",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN141RP0002V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/two-wheeler-insurance",
+   "note": "TP liability-only cover for two-wheelers"
+  },
+  {
+   "name": "Goods Carrying Vehicle Package Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN141RP0008V02200910",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "Package cover for goods carrying vehicles"
+  },
+  {
+   "name": "Passenger Carrying Vehicle Package Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN141RP0010V01200910",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "Package cover for passenger carrying vehicles"
+  },
+  {
+   "name": "Miscellaneous Vehicle Package Policy",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN141RP0009V01200910",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "Package cover for misc/special vehicles"
+  },
+  {
+   "name": "Liability only - Goods Carrying Vehicles",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN141RP0003V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "TP liability-only cover for goods carriers"
+  },
+  {
+   "name": "Liability only - Passenger Carrying Vehicles",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN141RP0005V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "TP liability-only cover for passenger vehicles"
+  },
+  {
+   "name": "Liability only - Miscellaneous Vehicles",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN141RP0006V01201920",
+   "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
+   "note": "TP liability-only cover for misc vehicles"
+  }
+ ]
+}

@@ -1,0 +1,3438 @@
+{
+ "cat": "loans",
+ "asOf": "Oct 2026",
+ "sources": [
+  "BankBazaar home/personal/car/education/used-car/LAP/two-wheeler/business loan rate pages (Oct 2026)",
+  "Paisabazaar personal/business/gold/LAP/two-wheeler/LAS loan pages (Sep-Oct 2026)",
+  "Lender websites (sbi.co.in, bankofbaroda.in, pnbindia.in)"
+ ],
+ "companies": [
+  {
+   "provider": "State Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://sbi.co.in"
+  },
+  {
+   "provider": "Bank of Baroda",
+   "kind": "Public sector bank",
+   "url": "https://www.bankofbaroda.in"
+  },
+  {
+   "provider": "Punjab National Bank",
+   "kind": "Public sector bank",
+   "url": "https://www.pnbindia.in"
+  },
+  {
+   "provider": "Canara Bank",
+   "kind": "Public sector bank",
+   "url": "https://canarabank.com"
+  },
+  {
+   "provider": "Union Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://www.unionbankofindia.co.in"
+  },
+  {
+   "provider": "Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://bankofindia.co.in"
+  },
+  {
+   "provider": "Indian Bank",
+   "kind": "Public sector bank",
+   "url": "https://indianbank.in"
+  },
+  {
+   "provider": "Central Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://www.centralbankofindia.co.in"
+  },
+  {
+   "provider": "Indian Overseas Bank",
+   "kind": "Public sector bank",
+   "url": "https://www.iob.in"
+  },
+  {
+   "provider": "UCO Bank",
+   "kind": "Public sector bank",
+   "url": "https://www.ucobank.com"
+  },
+  {
+   "provider": "Bank of Maharashtra",
+   "kind": "Public sector bank",
+   "url": "https://bankofmaharashtra.in"
+  },
+  {
+   "provider": "Punjab & Sind Bank",
+   "kind": "Public sector bank",
+   "url": "https://punjabandsindbank.co.in"
+  },
+  {
+   "provider": "HDFC Bank",
+   "kind": "Private bank",
+   "url": "https://www.hdfcbank.com"
+  },
+  {
+   "provider": "ICICI Bank",
+   "kind": "Private bank",
+   "url": "https://www.icicibank.com"
+  },
+  {
+   "provider": "Axis Bank",
+   "kind": "Private bank",
+   "url": "https://www.axisbank.com"
+  },
+  {
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Private bank",
+   "url": "https://www.kotak.com"
+  },
+  {
+   "provider": "IndusInd Bank",
+   "kind": "Private bank",
+   "url": "https://www.indusind.com"
+  },
+  {
+   "provider": "Yes Bank",
+   "kind": "Private bank",
+   "url": "https://www.yesbank.in"
+  },
+  {
+   "provider": "IDFC FIRST Bank",
+   "kind": "Private bank",
+   "url": "https://www.idfcfirstbank.com"
+  },
+  {
+   "provider": "Federal Bank",
+   "kind": "Private bank",
+   "url": "https://www.federalbank.co.in"
+  },
+  {
+   "provider": "South Indian Bank",
+   "kind": "Private bank",
+   "url": "https://www.southindianbank.com"
+  },
+  {
+   "provider": "Karur Vysya Bank",
+   "kind": "Private bank",
+   "url": "https://www.kvb.co.in"
+  },
+  {
+   "provider": "Karnataka Bank",
+   "kind": "Private bank",
+   "url": "https://karnatakabank.com"
+  },
+  {
+   "provider": "City Union Bank",
+   "kind": "Private bank",
+   "url": "https://www.cityunionbank.com"
+  },
+  {
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Private bank",
+   "url": "https://www.tmb.in"
+  },
+  {
+   "provider": "DCB Bank",
+   "kind": "Private bank",
+   "url": "https://www.dcbbank.com"
+  },
+  {
+   "provider": "RBL Bank",
+   "kind": "Private bank",
+   "url": "https://www.rblbank.com"
+  },
+  {
+   "provider": "Bandhan Bank",
+   "kind": "Private bank",
+   "url": "https://bandhan.bank.in"
+  },
+  {
+   "provider": "CSB Bank",
+   "kind": "Private bank",
+   "url": "https://www.csb.co.in"
+  },
+  {
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Private bank",
+   "url": "https://www.dhan.bank.in"
+  },
+  {
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Private bank",
+   "url": "https://www.jkbank.com"
+  },
+  {
+   "provider": "IDBI Bank",
+   "kind": "Private bank",
+   "url": "https://www.idbibank.in"
+  },
+  {
+   "provider": "Nainital Bank",
+   "kind": "Private bank",
+   "url": "https://www.nainitalbank.co.in"
+  },
+  {
+   "provider": "AU Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.au.bank.in"
+  },
+  {
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.equitasbank.com"
+  },
+  {
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.ujjivansfb.in"
+  },
+  {
+   "provider": "Jana Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.janabank.com"
+  },
+  {
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.suryodaybank.com"
+  },
+  {
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.utkarsh.bank"
+  },
+  {
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.esafbank.com"
+  },
+  {
+   "provider": "Capital Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.capitalbank.co.in"
+  },
+  {
+   "provider": "Unity Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://theunitybank.com"
+  },
+  {
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://shivalikbank.com"
+  },
+  {
+   "provider": "HSBC India",
+   "kind": "Foreign bank",
+   "url": "https://www.hsbc.co.in"
+  },
+  {
+   "provider": "Standard Chartered Bank",
+   "kind": "Foreign bank",
+   "url": "https://www.sc.com/in"
+  },
+  {
+   "provider": "DBS Bank India",
+   "kind": "Foreign bank",
+   "url": "https://www.dbs.com/in"
+  },
+  {
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.saraswatbank.com"
+  },
+  {
+   "provider": "LIC Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.lichousing.com"
+  },
+  {
+   "provider": "Bajaj Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.bajajhousingfinance.in"
+  },
+  {
+   "provider": "PNB Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.pnbhousing.com"
+  },
+  {
+   "provider": "Aadhar Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://aadharhousing.com"
+  },
+  {
+   "provider": "Aavas Financiers",
+   "kind": "Housing finance company",
+   "url": "https://www.aavas.in"
+  },
+  {
+   "provider": "Home First Finance Company",
+   "kind": "Housing finance company",
+   "url": "https://homefirstindia.com"
+  },
+  {
+   "provider": "Can Fin Homes",
+   "kind": "Housing finance company",
+   "url": "https://www.canfinhomes.com"
+  },
+  {
+   "provider": "Sammaan Capital",
+   "kind": "Housing finance company",
+   "url": "https://www.sammaancapital.com"
+  },
+  {
+   "provider": "Piramal Finance",
+   "kind": "NBFC",
+   "url": "https://www.piramalfinance.com"
+  },
+  {
+   "provider": "Aditya Birla Capital",
+   "kind": "NBFC",
+   "url": "https://www.adityabirlacapital.com"
+  },
+  {
+   "provider": "ICICI Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.icicihfc.com"
+  },
+  {
+   "provider": "Godrej Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.godrejcapital.com"
+  },
+  {
+   "provider": "GIC Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.gichfindia.com"
+  },
+  {
+   "provider": "Sundaram Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.sundaramhome.in"
+  },
+  {
+   "provider": "Repco Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.repcohome.com"
+  },
+  {
+   "provider": "India Shelter Finance",
+   "kind": "Housing finance company",
+   "url": "https://indiashelter.in"
+  },
+  {
+   "provider": "Truhome Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.truhomefinance.in"
+  },
+  {
+   "provider": "IIFL Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.iifl.com/home-loans"
+  },
+  {
+   "provider": "Muthoot Homefin (India)",
+   "kind": "Housing finance company",
+   "url": "https://www.muthoothomefin.com"
+  },
+  {
+   "provider": "Nido Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.nidohomefin.com"
+  },
+  {
+   "provider": "SMFG India Home Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.grihashakti.com"
+  },
+  {
+   "provider": "Mahindra Rural Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.mahindrahomefinance.com"
+  },
+  {
+   "provider": "Hero Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.herohousingfinance.com"
+  },
+  {
+   "provider": "Shubham Housing Development Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.shubham.co"
+  },
+  {
+   "provider": "Vastu Housing Finance",
+   "kind": "Housing finance company",
+   "url": "https://www.vastuhfc.com"
+  },
+  {
+   "provider": "Axis Finance",
+   "kind": "NBFC",
+   "url": "https://www.axisfinance.in"
+  },
+  {
+   "provider": "Bajaj Finance",
+   "kind": "NBFC",
+   "url": "https://www.bajajfinserv.in"
+  },
+  {
+   "provider": "Tata Capital",
+   "kind": "NBFC",
+   "url": "https://www.tatacapital.com"
+  },
+  {
+   "provider": "L&T Finance",
+   "kind": "NBFC",
+   "url": "https://www.ltfinance.com"
+  },
+  {
+   "provider": "Poonawalla Fincorp",
+   "kind": "NBFC",
+   "url": "https://poonawallafincorp.com"
+  },
+  {
+   "provider": "Hero FinCorp",
+   "kind": "NBFC",
+   "url": "https://www.herofincorp.com"
+  },
+  {
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "NBFC",
+   "url": "https://www.cholamandalam.com"
+  },
+  {
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "NBFC",
+   "url": "https://www.mahindrafinance.com"
+  },
+  {
+   "provider": "Shriram Finance",
+   "kind": "NBFC",
+   "url": "https://www.shriramfinance.in"
+  },
+  {
+   "provider": "Muthoot Finance",
+   "kind": "NBFC",
+   "url": "https://www.muthootfinance.com"
+  },
+  {
+   "provider": "Manappuram Finance",
+   "kind": "NBFC",
+   "url": "https://www.manappuram.com"
+  },
+  {
+   "provider": "IIFL Finance",
+   "kind": "NBFC",
+   "url": "https://www.iifl.com"
+  },
+  {
+   "provider": "SMFG India Credit",
+   "kind": "NBFC",
+   "url": "https://www.smfgindiacredit.com"
+  },
+  {
+   "provider": "HDB Financial Services",
+   "kind": "NBFC",
+   "url": "https://www.hdbfs.com"
+  },
+  {
+   "provider": "Kotak Mahindra Prime",
+   "kind": "NBFC",
+   "url": "https://www.kotak.com/en/personal-banking/loans/car-loan.html"
+  },
+  {
+   "provider": "TVS Credit Services",
+   "kind": "NBFC",
+   "url": "https://www.tvscredit.com"
+  },
+  {
+   "provider": "Bajaj Auto Credit",
+   "kind": "NBFC",
+   "url": "https://www.bajajautocredit.com"
+  },
+  {
+   "provider": "Avanse Financial Services",
+   "kind": "NBFC",
+   "url": "https://www.avanse.com"
+  },
+  {
+   "provider": "Credila Financial Services",
+   "kind": "NBFC",
+   "url": "https://www.credila.com"
+  },
+  {
+   "provider": "InCred Finance",
+   "kind": "NBFC",
+   "url": "https://www.incred.com"
+  },
+  {
+   "provider": "Auxilo Finserve",
+   "kind": "NBFC",
+   "url": "https://www.auxilo.com"
+  },
+  {
+   "provider": "Moneyview",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://moneyview.in"
+  },
+  {
+   "provider": "KreditBee",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://www.kreditbee.in"
+  },
+  {
+   "provider": "Navi Finserv",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://navi.com"
+  },
+  {
+   "provider": "Fibe",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://www.fibe.in"
+  },
+  {
+   "provider": "CASHe",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://www.cashe.co.in"
+  },
+  {
+   "provider": "Prefr",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://prefr.com"
+  },
+  {
+   "provider": "Kissht",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://kissht.com"
+  },
+  {
+   "provider": "Home Credit India",
+   "kind": "NBFC",
+   "url": "https://www.homecredit.co.in"
+  },
+  {
+   "provider": "Lendingkart",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://www.lendingkart.com"
+  },
+  {
+   "provider": "FlexiLoans",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://flexiloans.com"
+  },
+  {
+   "provider": "Indifi Capital",
+   "kind": "Digital lender (NBFC)",
+   "url": "https://www.indifi.com"
+  },
+  {
+   "provider": "Sundaram Finance",
+   "kind": "NBFC",
+   "url": "https://www.sundaramfinance.in"
+  },
+  {
+   "provider": "Toyota Financial Services India",
+   "kind": "NBFC",
+   "url": "https://www.tfsin.com"
+  },
+  {
+   "provider": "Hinduja Leyland Finance",
+   "kind": "NBFC",
+   "url": "https://www.hindujaleylandfinance.com"
+  },
+  {
+   "provider": "IndoStar Capital Finance",
+   "kind": "NBFC",
+   "url": "https://www.indostarcapital.com"
+  },
+  {
+   "provider": "Muthoot Capital Services",
+   "kind": "NBFC",
+   "url": "https://www.muthootcap.com"
+  },
+  {
+   "provider": "Muthoot FinCorp",
+   "kind": "NBFC",
+   "url": "https://www.muthootfincorp.com"
+  },
+  {
+   "provider": "Capri Global Capital",
+   "kind": "NBFC",
+   "url": "https://www.capriloans.in"
+  },
+  {
+   "provider": "Five-Star Business Finance",
+   "kind": "NBFC",
+   "url": "https://fivestargroup.in"
+  },
+  {
+   "provider": "Mirae Asset Financial Services",
+   "kind": "NBFC",
+   "url": "https://www.miraeassetfin.com"
+  }
+ ],
+ "entries": [
+  {
+   "name": "SBI Regular Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan",
+   "url": "https://homeloans.sbi",
+   "note": "Rate from 7.25% p.a., fee 0.35% (max Rs 12,000 + GST)"
+  },
+  {
+   "name": "SBI Privilege Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan"
+  },
+  {
+   "name": "SBI Shaurya Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan"
+  },
+  {
+   "name": "SBI Realty Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan"
+  },
+  {
+   "name": "SBI Maxgain Home Loan",
+   "provider": "State Bank of India",
+   "kind": "Home loan"
+  },
+  {
+   "name": "SBI Top Up Loan",
+   "provider": "State Bank of India",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "SBI Loan Against Property",
+   "provider": "State Bank of India",
+   "kind": "Loan against property",
+   "note": "Fee 1% (max Rs 50,000 + taxes)"
+  },
+  {
+   "name": "SBI Xpress Credit Personal Loan",
+   "provider": "State Bank of India",
+   "kind": "Personal loan",
+   "note": "Rate from 10.00% p.a., fee up to 1.50%"
+  },
+  {
+   "name": "SBI Pension Loan",
+   "provider": "State Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "SBI Pre-Approved Personal Loan",
+   "provider": "State Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "SBI Car Loan",
+   "provider": "State Bank of India",
+   "kind": "Car loan",
+   "note": "Rate from 8.80% p.a."
+  },
+  {
+   "name": "SBI Green Car Loan",
+   "provider": "State Bank of India",
+   "kind": "Car loan"
+  },
+  {
+   "name": "SBI Certified Pre-Owned Car Loan",
+   "provider": "State Bank of India",
+   "kind": "Used car loan",
+   "note": "Rate from 10.45% p.a."
+  },
+  {
+   "name": "SBI Easy Ride Two Wheeler Loan",
+   "provider": "State Bank of India",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 11.70% p.a., fee 2%"
+  },
+  {
+   "name": "SBI Student Loan Scheme",
+   "provider": "State Bank of India",
+   "kind": "Education loan",
+   "note": "Rate from 9.40% p.a."
+  },
+  {
+   "name": "SBI Global Ed-Vantage",
+   "provider": "State Bank of India",
+   "kind": "Education loan"
+  },
+  {
+   "name": "SBI Scholar Loan",
+   "provider": "State Bank of India",
+   "kind": "Education loan"
+  },
+  {
+   "name": "SBI Personal Gold Loan",
+   "provider": "State Bank of India",
+   "kind": "Gold loan",
+   "note": "Rate from 8.75% p.a."
+  },
+  {
+   "name": "SBI Loan Against Securities",
+   "provider": "State Bank of India",
+   "kind": "Loan against securities",
+   "note": "Rate from 10.65% p.a."
+  },
+  {
+   "name": "SBI Simplified Small Business Loan",
+   "provider": "State Bank of India",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Baroda Home Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Home loan",
+   "note": "Rate from 7.20% p.a. (floating), fee Rs 8,500 to Rs 25,000"
+  },
+  {
+   "name": "Baroda Yoddha Home Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Baroda Home Improvement Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Baroda Home Loan Top Up",
+   "provider": "Bank of Baroda",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Baroda Mortgage Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Loan against property",
+   "note": "Rate from 8.90% p.a."
+  },
+  {
+   "name": "Baroda Personal Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Personal loan",
+   "note": "Rate from 10.15% p.a., fee up to 2%"
+  },
+  {
+   "name": "Baroda Car Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Car loan",
+   "note": "Rate from 7.60% p.a. (floating)"
+  },
+  {
+   "name": "Baroda Pre-Owned Car Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Baroda Two Wheeler Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 12.70% p.a."
+  },
+  {
+   "name": "Baroda Scholar Education Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Education loan",
+   "note": "Rate from 8.15% p.a., no processing fee"
+  },
+  {
+   "name": "Baroda Vidya Education Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Baroda Gyan Education Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Baroda Gold Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Baroda Mudra Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Baroda Reverse Mortgage Loan",
+   "provider": "Bank of Baroda",
+   "kind": "Reverse mortgage loan"
+  },
+  {
+   "name": "PNB Housing Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.25% p.a. (floating), fee 0.35% (Rs 2,500 to Rs 15,000)"
+  },
+  {
+   "name": "PNB Property Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "PNB Personal Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 10.25% p.a. (floating), fee 0.35%"
+  },
+  {
+   "name": "PNB Car Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Car loan",
+   "note": "Rate from 7.60% p.a. (floating)"
+  },
+  {
+   "name": "PNB Used Car Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 9.45% p.a."
+  },
+  {
+   "name": "PNB Two Wheeler Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 10.00% p.a."
+  },
+  {
+   "name": "PNB Udaan Education Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Education loan",
+   "note": "Rate from 7.50% p.a., no processing fee"
+  },
+  {
+   "name": "PNB Saraswati Education Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "PNB Gold Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Gold loan",
+   "note": "Rate from 9.25% p.a."
+  },
+  {
+   "name": "PNB Digi Gold Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "PNB Loan Against Securities",
+   "provider": "Punjab National Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 9.25% p.a."
+  },
+  {
+   "name": "PNB Mudra Loan",
+   "provider": "Punjab National Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Canara Housing Loan",
+   "provider": "Canara Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Canara Home Loan Top Up",
+   "provider": "Canara Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Canara Mortgage Loan",
+   "provider": "Canara Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Canara Personal Loan",
+   "provider": "Canara Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Canara Pension Loan",
+   "provider": "Canara Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Canara Vehicle Loan (Car)",
+   "provider": "Canara Bank",
+   "kind": "Car loan",
+   "note": "Rate from 7.45% p.a. (electric cars)"
+  },
+  {
+   "name": "Canara Vehicle Loan (Two Wheeler)",
+   "provider": "Canara Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Canara Vidya Turant Education Loan",
+   "provider": "Canara Bank",
+   "kind": "Education loan",
+   "note": "Rate from 7.25% p.a."
+  },
+  {
+   "name": "IBA Model Education Loan Scheme (Canara Bank)",
+   "provider": "Canara Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Canara Gold Loan",
+   "provider": "Canara Bank",
+   "kind": "Gold loan",
+   "note": "Rate from 9.25% p.a."
+  },
+  {
+   "name": "Canara Loan Against Shares/Securities",
+   "provider": "Canara Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Canara MSME Loan",
+   "provider": "Canara Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Union Home Loan",
+   "provider": "Union Bank of India",
+   "kind": "Home loan",
+   "note": "Rate from 7.15% p.a., fee 0.50% (max Rs 15,000 + GST)"
+  },
+  {
+   "name": "Union Home Top Up Loan",
+   "provider": "Union Bank of India",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Union Mortgage Loan",
+   "provider": "Union Bank of India",
+   "kind": "Loan against property",
+   "note": "Rate from 9.05% p.a."
+  },
+  {
+   "name": "Union Personal Loan",
+   "provider": "Union Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Union Pension Loan",
+   "provider": "Union Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Union Miles Car Loan",
+   "provider": "Union Bank of India",
+   "kind": "Car loan",
+   "note": "Rate from 7.50% p.a."
+  },
+  {
+   "name": "Union Miles Two Wheeler Loan",
+   "provider": "Union Bank of India",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 10.90% p.a."
+  },
+  {
+   "name": "Union Education Loan",
+   "provider": "Union Bank of India",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Union Gold Loan",
+   "provider": "Union Bank of India",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Union Loan Against Securities",
+   "provider": "Union Bank of India",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Union MSME Loan",
+   "provider": "Union Bank of India",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Star Home Loan",
+   "provider": "Bank of India",
+   "kind": "Home loan",
+   "note": "Rate from 7.10% p.a., fee 0.25% (max Rs 20,000)"
+  },
+  {
+   "name": "Star Home Loan Top Up",
+   "provider": "Bank of India",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Star Loan Against Property",
+   "provider": "Bank of India",
+   "kind": "Loan against property",
+   "note": "Rate from 8.85% p.a., fee up to 1%"
+  },
+  {
+   "name": "Star Personal Loan",
+   "provider": "Bank of India",
+   "kind": "Personal loan",
+   "note": "Rate from 10.85% p.a., fee 1% (Rs 2,500 to Rs 15,000)"
+  },
+  {
+   "name": "Star Pensioner Loan",
+   "provider": "Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Star Vehicle Loan (Car)",
+   "provider": "Bank of India",
+   "kind": "Car loan",
+   "note": "Rate from 7.60% p.a."
+  },
+  {
+   "name": "Star Vehicle Loan (Two Wheeler)",
+   "provider": "Bank of India",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Star Education Loan",
+   "provider": "Bank of India",
+   "kind": "Education loan",
+   "note": "Rate from 7.00% p.a., no processing fee"
+  },
+  {
+   "name": "Star Gold Loan",
+   "provider": "Bank of India",
+   "kind": "Gold loan",
+   "note": "Rate from 8.80% p.a."
+  },
+  {
+   "name": "Star Loan Against Securities",
+   "provider": "Bank of India",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "IB Home Loan",
+   "provider": "Indian Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "IB Home Loan Top Up",
+   "provider": "Indian Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "IB Loan Against Property",
+   "provider": "Indian Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.00% p.a., fee 1% (min Rs 10,000)"
+  },
+  {
+   "name": "IB Personal Loan",
+   "provider": "Indian Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "IB Pension Loan",
+   "provider": "Indian Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "IB Vehicle Loan (Car)",
+   "provider": "Indian Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "IB Vehicle Loan (Two Wheeler)",
+   "provider": "Indian Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "IB Education Loan",
+   "provider": "Indian Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "IB Gold Loan",
+   "provider": "Indian Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IB Loan Against Securities",
+   "provider": "Indian Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 9.05% p.a."
+  },
+  {
+   "name": "IB MSME Loan",
+   "provider": "Indian Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Cent Home Loan",
+   "provider": "Central Bank of India",
+   "kind": "Home loan",
+   "note": "Rate from 7.10% p.a., fee 0.50% (max Rs 20,000)"
+  },
+  {
+   "name": "Cent Mortgage Loan",
+   "provider": "Central Bank of India",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Cent Personal Loan",
+   "provider": "Central Bank of India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Cent Vehicle Loan (Car)",
+   "provider": "Central Bank of India",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Cent Vehicle Loan (Two Wheeler)",
+   "provider": "Central Bank of India",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Cent Vidyarthi Education Loan",
+   "provider": "Central Bank of India",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Cent Gold Loan",
+   "provider": "Central Bank of India",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IOB Home Loan",
+   "provider": "Indian Overseas Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "IOB Loan Against Property",
+   "provider": "Indian Overseas Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "IOB Personal Loan",
+   "provider": "Indian Overseas Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "IOB Pension Loan",
+   "provider": "Indian Overseas Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "IOB Vehicle Loan (Car)",
+   "provider": "Indian Overseas Bank",
+   "kind": "Car loan",
+   "note": "Rate from 7.55% p.a."
+  },
+  {
+   "name": "IOB Vehicle Loan (Two Wheeler)",
+   "provider": "Indian Overseas Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "IOB Education Loan",
+   "provider": "Indian Overseas Bank",
+   "kind": "Education loan",
+   "note": "Rate from 7.50% p.a."
+  },
+  {
+   "name": "IOB Gold Loan",
+   "provider": "Indian Overseas Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "UCO Home Loan",
+   "provider": "UCO Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "UCO Mortgage Loan",
+   "provider": "UCO Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.25% p.a., fee 0.5% (max Rs 2 lakh)"
+  },
+  {
+   "name": "UCO Personal Loan",
+   "provider": "UCO Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "UCO Car Loan",
+   "provider": "UCO Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "UCO Two Wheeler Loan",
+   "provider": "UCO Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "UCO Aspire Education Loan",
+   "provider": "UCO Bank",
+   "kind": "Education loan",
+   "note": "Rate from 6.90% p.a., fee 0.50% (max Rs 10,000)"
+  },
+  {
+   "name": "UCO Education Loan",
+   "provider": "UCO Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "UCO Gold Loan",
+   "provider": "UCO Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Maha Super Housing Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Home loan",
+   "note": "Rate from 7.00% p.a., fee up to 0.25% (max Rs 25,000)"
+  },
+  {
+   "name": "Bank of Maharashtra Loan Against Property",
+   "provider": "Bank of Maharashtra",
+   "kind": "Loan against property",
+   "note": "Rate from 9.70% p.a., fee 1%"
+  },
+  {
+   "name": "Bank of Maharashtra Personal Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Personal loan",
+   "note": "Rate from 8.75% p.a., fee up to 1%"
+  },
+  {
+   "name": "Maha Super Car Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Maha Super Two Wheeler Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Bank of Maharashtra Education Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Education loan",
+   "note": "Rate from 6.85% p.a., no processing fee"
+  },
+  {
+   "name": "Bank of Maharashtra Gold Loan",
+   "provider": "Bank of Maharashtra",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "PSB Home Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.35% p.a., fee 0.25% for loans above Rs 75 lakh"
+  },
+  {
+   "name": "PSB Loan Against Property",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "PSB Personal Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "PSB Car Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "PSB Two Wheeler Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "PSB Education Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "PSB Gold Loan",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "HDFC Bank Home Loan",
+   "provider": "HDFC Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.75% p.a., fee up to 0.50% (min Rs 4,000)"
+  },
+  {
+   "name": "HDFC Bank Plot Loan",
+   "provider": "HDFC Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "HDFC Bank Home Improvement Loan",
+   "provider": "HDFC Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "HDFC Bank Top Up Loan",
+   "provider": "HDFC Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "HDFC Bank Loan Against Property",
+   "provider": "HDFC Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 8.30% p.a., fee up to 1% (min Rs 7,500)"
+  },
+  {
+   "name": "HDFC Bank Personal Loan",
+   "provider": "HDFC Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 9.99% p.a., fee Rs 6,500 + GST"
+  },
+  {
+   "name": "HDFC Bank Business Loan",
+   "provider": "HDFC Bank",
+   "kind": "Business loan",
+   "note": "Rate from 10.75% p.a."
+  },
+  {
+   "name": "HDFC Bank New Car Loan",
+   "provider": "HDFC Bank",
+   "kind": "Car loan",
+   "note": "Rate from 8.15% p.a."
+  },
+  {
+   "name": "HDFC Bank Used Car Loan",
+   "provider": "HDFC Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 11.25% p.a."
+  },
+  {
+   "name": "HDFC Bank Two Wheeler Loan",
+   "provider": "HDFC Bank",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 14.50% p.a., fee 2.5%"
+  },
+  {
+   "name": "HDFC Bank Commercial Vehicle Loan",
+   "provider": "HDFC Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "HDFC Bank Education Loan",
+   "provider": "HDFC Bank",
+   "kind": "Education loan",
+   "note": "Rate from 10.50% p.a., fee nil up to Rs 7.5 lakh, else 1%"
+  },
+  {
+   "name": "HDFC Bank Gold Loan",
+   "provider": "HDFC Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "HDFC Bank Loan Against Securities",
+   "provider": "HDFC Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "ICICI Bank Home Loan",
+   "provider": "ICICI Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "ICICI Bank Top Up Home Loan",
+   "provider": "ICICI Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "ICICI Bank Loan Against Property",
+   "provider": "ICICI Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 10.60% p.a., fee up to 2%"
+  },
+  {
+   "name": "ICICI Bank Personal Loan",
+   "provider": "ICICI Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 9.99% p.a., fee up to 2%"
+  },
+  {
+   "name": "ICICI Bank Business Loan",
+   "provider": "ICICI Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "ICICI Bank Car Loan",
+   "provider": "ICICI Bank",
+   "kind": "Car loan",
+   "note": "Rate from 8.35% p.a."
+  },
+  {
+   "name": "ICICI Bank Used Car Loan",
+   "provider": "ICICI Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 10.00% p.a."
+  },
+  {
+   "name": "ICICI Bank Two Wheeler Loan",
+   "provider": "ICICI Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "ICICI Bank Commercial Vehicle Loan",
+   "provider": "ICICI Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "ICICI Bank Education Loan",
+   "provider": "ICICI Bank",
+   "kind": "Education loan",
+   "note": "Rate from 8.50% p.a., fee up to 2% + GST"
+  },
+  {
+   "name": "ICICI Bank Gold Loan",
+   "provider": "ICICI Bank",
+   "kind": "Gold loan",
+   "note": "Rate from 10% p.a."
+  },
+  {
+   "name": "ICICI Bank Loan Against Securities",
+   "provider": "ICICI Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Axis Bank Home Loan",
+   "provider": "Axis Bank",
+   "kind": "Home loan",
+   "note": "Rate from 8.00% p.a. (floating), fee up to 1% (min Rs 10,000)"
+  },
+  {
+   "name": "Axis Bank Shubh Aarambh Home Loan",
+   "provider": "Axis Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Axis Bank Top Up Home Loan",
+   "provider": "Axis Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Axis Bank Loan Against Property",
+   "provider": "Axis Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.15% p.a., fee 1% (min Rs 10,000)"
+  },
+  {
+   "name": "Axis Bank Personal Loan",
+   "provider": "Axis Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 8.75% p.a., fee up to 2%"
+  },
+  {
+   "name": "Axis Bank Business Loan",
+   "provider": "Axis Bank",
+   "kind": "Business loan",
+   "note": "Rate from 10.99% p.a."
+  },
+  {
+   "name": "Axis Bank Car Loan",
+   "provider": "Axis Bank",
+   "kind": "Car loan",
+   "note": "Rate from 8.95% p.a."
+  },
+  {
+   "name": "Axis Bank Used Car Loan",
+   "provider": "Axis Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 12.95% p.a."
+  },
+  {
+   "name": "Axis Bank Two Wheeler Loan",
+   "provider": "Axis Bank",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 11.00% p.a., fee up to 2.5%"
+  },
+  {
+   "name": "Axis Bank Commercial Vehicle Loan",
+   "provider": "Axis Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Axis Bank Education Loan",
+   "provider": "Axis Bank",
+   "kind": "Education loan",
+   "note": "Rate from 8.00% p.a., fee up to 2% + GST"
+  },
+  {
+   "name": "Axis Bank Gold Loan",
+   "provider": "Axis Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Axis Bank Loan Against Securities",
+   "provider": "Axis Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 11.00% p.a."
+  },
+  {
+   "name": "Kotak Mahindra Bank Home Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.60% p.a. (floating), fee up to 2%"
+  },
+  {
+   "name": "Kotak Mahindra Bank Loan Against Property",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.50% p.a., fee up to 1%"
+  },
+  {
+   "name": "Kotak Mahindra Bank Personal Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 10.99% p.a., fee up to 5%"
+  },
+  {
+   "name": "Kotak Mahindra Bank Business Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Kotak Mahindra Bank Education Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Kotak Mahindra Bank Gold Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Kotak Mahindra Bank Loan Against Securities",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 8.00% p.a."
+  },
+  {
+   "name": "Kotak Mahindra Bank Commercial Vehicle Loan",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "IndusInd Bank Home Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "IndusInd Bank Loan Against Property",
+   "provider": "IndusInd Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "IndusInd Bank Personal Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 12% p.a., fee up to 3.5%"
+  },
+  {
+   "name": "IndusInd Bank Business Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "IndusInd Bank Car Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "IndusInd Bank Used Car Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "IndusInd Bank Two Wheeler Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "IndusInd Bank Commercial Vehicle Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "IndusInd Bank Gold Loan",
+   "provider": "IndusInd Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IndusInd Bank Loan Against Securities",
+   "provider": "IndusInd Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "YES Bank Home Loan",
+   "provider": "Yes Bank",
+   "kind": "Home loan",
+   "note": "Rate from 8.65% p.a., fee 1.5% (min Rs 10,000)"
+  },
+  {
+   "name": "YES Bank Loan Against Property",
+   "provider": "Yes Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "YES Bank Personal Loan",
+   "provider": "Yes Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 10.85% p.a., fee up to 2.5%"
+  },
+  {
+   "name": "YES Bank Business Loan",
+   "provider": "Yes Bank",
+   "kind": "Business loan",
+   "note": "Rate from 17.25% p.a."
+  },
+  {
+   "name": "YES Bank Car Loan",
+   "provider": "Yes Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "YES Bank Used Car Loan",
+   "provider": "Yes Bank",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "YES Bank Two Wheeler Loan",
+   "provider": "Yes Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "YES Bank Commercial Vehicle Loan",
+   "provider": "Yes Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "YES Bank Gold Loan",
+   "provider": "Yes Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "YES Bank Loan Against Securities",
+   "provider": "Yes Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "IDFC FIRST Bank Home Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.75% p.a., fee up to 3%"
+  },
+  {
+   "name": "IDFC FIRST Bank Loan Against Property",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.50% p.a., fee up to 3%"
+  },
+  {
+   "name": "IDFC FIRST Bank Personal Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 9.99% p.a., fee up to 3.5%"
+  },
+  {
+   "name": "IDFC FIRST Bank Business Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Business loan",
+   "note": "Rate from 13.00% p.a."
+  },
+  {
+   "name": "IDFC FIRST Bank New Car Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "IDFC FIRST Bank Used Car Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "IDFC FIRST Bank Two Wheeler Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "IDFC FIRST Bank Commercial Vehicle Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "IDFC FIRST Bank Education Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Education loan",
+   "note": "Rate from 9.50% p.a., fee up to 1.5%"
+  },
+  {
+   "name": "IDFC FIRST Bank Gold Loan",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IDFC FIRST Bank Loan Against Securities",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Federal Bank Home Loan",
+   "provider": "Federal Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.35% p.a., fee 0.50% (Rs 10,000 to Rs 2 lakh)"
+  },
+  {
+   "name": "Federal Bank Loan Against Property",
+   "provider": "Federal Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 8.20% p.a., fee 1% (min Rs 3,000)"
+  },
+  {
+   "name": "Federal Bank Personal Loan",
+   "provider": "Federal Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Federal Bank Business Loan",
+   "provider": "Federal Bank",
+   "kind": "Business loan",
+   "note": "Rate from 11.60% p.a."
+  },
+  {
+   "name": "Federal Bank Car Loan",
+   "provider": "Federal Bank",
+   "kind": "Car loan",
+   "note": "Rate from 7.60% p.a."
+  },
+  {
+   "name": "Federal Bank Used Car Loan",
+   "provider": "Federal Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 10.00% p.a."
+  },
+  {
+   "name": "Federal Bank Two Wheeler Loan",
+   "provider": "Federal Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Federal Bank Education Loan",
+   "provider": "Federal Bank",
+   "kind": "Education loan",
+   "note": "Rate from 10.50% p.a."
+  },
+  {
+   "name": "Federal Bank Gold Loan",
+   "provider": "Federal Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Federal Bank Loan Against Securities",
+   "provider": "Federal Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "SIB Home Loan",
+   "provider": "South Indian Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.25% p.a., fee 0.50% (Rs 10,000 to Rs 50,000)"
+  },
+  {
+   "name": "SIB Loan Against Property",
+   "provider": "South Indian Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "SIB Personal Loan",
+   "provider": "South Indian Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "SIB Car Loan",
+   "provider": "South Indian Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "SIB Two Wheeler Loan",
+   "provider": "South Indian Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "SIB Education Loan",
+   "provider": "South Indian Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "SIB Gold Loan",
+   "provider": "South Indian Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "KVB Home Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Home loan",
+   "note": "Rate from 8.50% p.a."
+  },
+  {
+   "name": "KVB Loan Against Property",
+   "provider": "Karur Vysya Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "KVB Personal Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "KVB Car Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "KVB Used Car Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Used car loan",
+   "note": "Rate from 9.70% p.a."
+  },
+  {
+   "name": "KVB Two Wheeler Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "KVB Education Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Education loan",
+   "note": "Rate from 10.75% p.a."
+  },
+  {
+   "name": "KVB Gold Loan",
+   "provider": "Karur Vysya Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "KBL Xpress Home Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.48% p.a., fee 0.25%"
+  },
+  {
+   "name": "KBL Loan Against Property",
+   "provider": "Karnataka Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "KBL Personal Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Karnataka Bank Business Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Business loan",
+   "note": "Rate from 10.23% p.a."
+  },
+  {
+   "name": "KBL Xpress Car Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Car loan",
+   "note": "Rate from 8.01% p.a."
+  },
+  {
+   "name": "KBL Two Wheeler Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "KBL Vidyanidhi Education Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Education loan",
+   "note": "Rate from 9.81% p.a."
+  },
+  {
+   "name": "KBL Gold Loan",
+   "provider": "Karnataka Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Karnataka Bank Loan Against Securities",
+   "provider": "Karnataka Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 10.93% p.a."
+  },
+  {
+   "name": "City Union Bank Home Loan",
+   "provider": "City Union Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "City Union Bank Loan Against Property",
+   "provider": "City Union Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "City Union Bank Personal Loan",
+   "provider": "City Union Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "City Union Bank Car Loan",
+   "provider": "City Union Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "City Union Bank Education Loan",
+   "provider": "City Union Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "City Union Bank Gold Loan",
+   "provider": "City Union Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "TMB Home Loan",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.90% p.a., fee 0.50% + GST"
+  },
+  {
+   "name": "TMB Loan Against Property",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "TMB Personal Loan",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "TMB Car Loan",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "TMB Education Loan",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Education loan",
+   "note": "Rate from 11.30% p.a., no fee for studies in India"
+  },
+  {
+   "name": "TMB Gold Loan",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "DCB Bank Home Loan",
+   "provider": "DCB Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "DCB Bank Loan Against Property",
+   "provider": "DCB Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "DCB Bank Business Loan",
+   "provider": "DCB Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "DCB Bank Commercial Vehicle Loan",
+   "provider": "DCB Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "DCB Bank Gold Loan",
+   "provider": "DCB Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "RBL Bank Home Loan",
+   "provider": "RBL Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "RBL Bank Loan Against Property",
+   "provider": "RBL Bank",
+   "kind": "Loan against property",
+   "note": "Rate from 9.50% p.a., fee 1.25%"
+  },
+  {
+   "name": "RBL Bank Personal Loan",
+   "provider": "RBL Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "RBL Bank Business Loan",
+   "provider": "RBL Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "RBL Bank Gold Loan",
+   "provider": "RBL Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "RBL Bank Two Wheeler Loan",
+   "provider": "RBL Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Bandhan Bank Home Loan",
+   "provider": "Bandhan Bank",
+   "kind": "Home loan",
+   "note": "Rate from 8.55% p.a."
+  },
+  {
+   "name": "Bandhan Bank Loan Against Property",
+   "provider": "Bandhan Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Bandhan Bank Personal Loan",
+   "provider": "Bandhan Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Bandhan Bank Gold Loan",
+   "provider": "Bandhan Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "CSB Bank Home Loan",
+   "provider": "CSB Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "CSB Bank Loan Against Property",
+   "provider": "CSB Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "CSB Bank Personal Loan",
+   "provider": "CSB Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "CSB Bank Gold Loan",
+   "provider": "CSB Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Dhanlaxmi Bank Home Loan",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.65% p.a., fee 1% (min Rs 10,000)"
+  },
+  {
+   "name": "Dhanlaxmi Bank Loan Against Property",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Dhanlaxmi Bank Personal Loan",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Dhanlaxmi Bank Car Loan",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Dhanlaxmi Bank Education Loan",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Dhanlaxmi Bank Gold Loan",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "J&K Bank Home Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.50% p.a., fee 0.25% (Rs 2,000 to Rs 50,000)"
+  },
+  {
+   "name": "J&K Bank Personal Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "J&K Bank Car Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "J&K Bank Two Wheeler Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "J&K Bank Education Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "J&K Bank Gold Loan",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IDBI Bank Home Loan",
+   "provider": "IDBI Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.40% p.a., fee 0.50%"
+  },
+  {
+   "name": "IDBI Bank Top Up Home Loan",
+   "provider": "IDBI Bank",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "IDBI Bank Loan Against Property",
+   "provider": "IDBI Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "IDBI Bank Personal Loan",
+   "provider": "IDBI Bank",
+   "kind": "Personal loan",
+   "note": "Rate from 11.00% p.a., fee 1%"
+  },
+  {
+   "name": "IDBI Bank Car Loan",
+   "provider": "IDBI Bank",
+   "kind": "Car loan",
+   "note": "Rate from 7.75% p.a. (floating)"
+  },
+  {
+   "name": "IDBI Bank Two Wheeler Loan",
+   "provider": "IDBI Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "IDBI Bank Education Loan",
+   "provider": "IDBI Bank",
+   "kind": "Education loan",
+   "note": "Rate from 6.95% p.a., no processing fee"
+  },
+  {
+   "name": "IDBI Bank Gold Loan",
+   "provider": "IDBI Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "IDBI Bank Loan Against Securities",
+   "provider": "IDBI Bank",
+   "kind": "Loan against securities",
+   "note": "Rate from 10.10% p.a."
+  },
+  {
+   "name": "Nainital Bank Home Loan",
+   "provider": "Nainital Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Nainital Bank Personal Loan",
+   "provider": "Nainital Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Nainital Bank Car Loan",
+   "provider": "Nainital Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Nainital Bank Education Loan",
+   "provider": "Nainital Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Nainital Bank Gold Loan",
+   "provider": "Nainital Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "AU Home Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "AU Loan Against Property",
+   "provider": "AU Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "AU Personal Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "AU Business Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "AU Car Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "AU Used Car Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "AU Two Wheeler Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Two-wheeler loan",
+   "note": "Rate up to 28% p.a., fee up to 4%"
+  },
+  {
+   "name": "AU Commercial Vehicle Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "AU Gold Loan",
+   "provider": "AU Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Equitas Home Loan",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Equitas Loan Against Property",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Equitas Used Car Loan",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Equitas Commercial Vehicle Loan",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Equitas Gold Loan",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Equitas Business Loan",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Ujjivan Home Loan",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Ujjivan Loan Against Property",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Ujjivan Personal Loan",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Ujjivan Two Wheeler Loan",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Two-wheeler loan",
+   "note": "Rate from 14.49% p.a., fee 2.5% + GST"
+  },
+  {
+   "name": "Ujjivan Gold Loan",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Ujjivan MSME Loan",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Jana Home Loan",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Jana Loan Against Property",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Jana Gold Loan",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Jana MSME Loan",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Suryoday Home Loan",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Suryoday Loan Against Property",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Suryoday Commercial Vehicle Loan",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Utkarsh Home Loan",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Utkarsh Loan Against Property",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Utkarsh Gold Loan",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "ESAF Home Loan",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "ESAF Loan Against Property",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "ESAF Gold Loan",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "ESAF Personal Loan",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Capital SFB Home Loan",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Capital SFB Loan Against Property",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Capital SFB Car Loan",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Capital SFB Two Wheeler Loan",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Unity Bank Loan Against Property",
+   "provider": "Unity Small Finance Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Unity Bank Business Loan",
+   "provider": "Unity Small Finance Bank",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Shivalik Home Loan",
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Shivalik Gold Loan",
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "HSBC Home Loan",
+   "provider": "HSBC India",
+   "kind": "Home loan",
+   "note": "Rate from 7.45% p.a. (floating)"
+  },
+  {
+   "name": "HSBC Loan Against Property",
+   "provider": "HSBC India",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "HSBC Personal Loan",
+   "provider": "HSBC India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Standard Chartered Home Loan",
+   "provider": "Standard Chartered Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.99% p.a., fee 1%"
+  },
+  {
+   "name": "Standard Chartered Mortgage Loan",
+   "provider": "Standard Chartered Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Standard Chartered Personal Loan",
+   "provider": "Standard Chartered Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Standard Chartered Business Instalment Loan",
+   "provider": "Standard Chartered Bank",
+   "kind": "Business loan",
+   "note": "Rate from 17.25% p.a."
+  },
+  {
+   "name": "Standard Chartered Loan Against Securities",
+   "provider": "Standard Chartered Bank",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "DBS Home Loan",
+   "provider": "DBS Bank India",
+   "kind": "Home loan"
+  },
+  {
+   "name": "DBS Loan Against Property",
+   "provider": "DBS Bank India",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "DBS Personal Loan",
+   "provider": "DBS Bank India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Saraswat Bank Home Loan",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Home loan",
+   "note": "Rate from 7.35% p.a., fee Rs 2,500 to Rs 7,500 + GST"
+  },
+  {
+   "name": "Saraswat Bank Loan Against Property",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Saraswat Bank Personal Loan",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Saraswat Bank Car Loan",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Saraswat Bank Education Loan",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Saraswat Bank Gold Loan",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "LIC HFL Griha Suvidha Home Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "LIC HFL Home Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Home loan",
+   "note": "Rate from 7.15% p.a., fee 0.25% (max Rs 15,000 + GST)"
+  },
+  {
+   "name": "LIC HFL Plot Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "LIC HFL Home Renovation Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "LIC HFL Top Up Loan",
+   "provider": "LIC Housing Finance",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "LIC HFL Loan Against Property",
+   "provider": "LIC Housing Finance",
+   "kind": "Loan against property",
+   "note": "Rate from 9.70% p.a., fee 1%"
+  },
+  {
+   "name": "Bajaj Housing Finance Home Loan",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Bajaj Housing Finance Top-Up Loan",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Bajaj Housing Finance Loan Against Property",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Loan against property",
+   "note": "Rate from 8.50% p.a., fee up to 4%"
+  },
+  {
+   "name": "Bajaj Housing Finance Lease Rental Discounting",
+   "provider": "Bajaj Housing Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "PNB Housing Finance Home Loan",
+   "provider": "PNB Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "PNB Housing Finance Roshni Home Loan",
+   "provider": "PNB Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "PNB Housing Finance Top Up Loan",
+   "provider": "PNB Housing Finance",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "PNB Housing Finance Loan Against Property",
+   "provider": "PNB Housing Finance",
+   "kind": "Loan against property",
+   "note": "Rate from 8.75% p.a., fee 0.75% (max Rs 1 lakh)"
+  },
+  {
+   "name": "Aadhar Home Loan",
+   "provider": "Aadhar Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Aadhar Home Improvement Loan",
+   "provider": "Aadhar Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Aadhar Loan Against Property",
+   "provider": "Aadhar Housing Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Aavas Home Loan",
+   "provider": "Aavas Financiers",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Aavas Loan Against Property",
+   "provider": "Aavas Financiers",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Aavas MSME Business Loan",
+   "provider": "Aavas Financiers",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Home First Home Loan",
+   "provider": "Home First Finance Company",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Home First Loan Against Property",
+   "provider": "Home First Finance Company",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Can Fin Homes Housing Loan",
+   "provider": "Can Fin Homes",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Can Fin Homes Top Up Loan",
+   "provider": "Can Fin Homes",
+   "kind": "Top-up home loan"
+  },
+  {
+   "name": "Can Fin Homes Mortgage Loan",
+   "provider": "Can Fin Homes",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Sammaan Capital Home Loan",
+   "provider": "Sammaan Capital",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Sammaan Capital Loan Against Property",
+   "provider": "Sammaan Capital",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Piramal Finance Home Loan",
+   "provider": "Piramal Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Piramal Finance Loan Against Property",
+   "provider": "Piramal Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Piramal Finance Business Loan",
+   "provider": "Piramal Finance",
+   "kind": "Business loan",
+   "note": "Rate from 16% p.a."
+  },
+  {
+   "name": "Piramal Finance Personal Loan",
+   "provider": "Piramal Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Piramal Finance Used Car Loan",
+   "provider": "Piramal Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Aditya Birla Capital Home Loan",
+   "provider": "Aditya Birla Capital",
+   "kind": "Home loan",
+   "note": "Rate from 7.75% p.a."
+  },
+  {
+   "name": "Aditya Birla Capital Loan Against Property",
+   "provider": "Aditya Birla Capital",
+   "kind": "Loan against property",
+   "note": "Rate from 8.75% p.a."
+  },
+  {
+   "name": "Aditya Birla Capital Personal Loan",
+   "provider": "Aditya Birla Capital",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Aditya Birla Capital Business Loan",
+   "provider": "Aditya Birla Capital",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Aditya Birla Capital Loan Against Securities",
+   "provider": "Aditya Birla Capital",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "ICICI Home Finance Home Loan",
+   "provider": "ICICI Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "ICICI Home Finance Loan Against Property",
+   "provider": "ICICI Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Godrej Housing Finance Home Loan",
+   "provider": "Godrej Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Godrej Housing Finance Loan Against Property",
+   "provider": "Godrej Housing Finance",
+   "kind": "Loan against property",
+   "note": "Rate from 9.75% p.a., fee up to 3%"
+  },
+  {
+   "name": "GIC Housing Finance Home Loan",
+   "provider": "GIC Housing Finance",
+   "kind": "Home loan",
+   "note": "Rate from 8.80% p.a., fee Rs 2,500 + GST"
+  },
+  {
+   "name": "GIC Housing Finance Loan Against Property",
+   "provider": "GIC Housing Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Sundaram Home Finance Home Loan",
+   "provider": "Sundaram Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Sundaram Home Finance Loan Against Property",
+   "provider": "Sundaram Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Repco Home Loan",
+   "provider": "Repco Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Repco Loan Against Property",
+   "provider": "Repco Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "India Shelter Home Loan",
+   "provider": "India Shelter Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "India Shelter Loan Against Property",
+   "provider": "India Shelter Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Truhome Home Loan",
+   "provider": "Truhome Finance",
+   "kind": "Home loan",
+   "note": "Rate from 8.50% p.a."
+  },
+  {
+   "name": "Truhome Loan Against Property",
+   "provider": "Truhome Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "IIFL Home Loan",
+   "provider": "IIFL Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "IIFL Home Finance Loan Against Property",
+   "provider": "IIFL Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Muthoot Homefin Home Loan",
+   "provider": "Muthoot Homefin (India)",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Nido Home Loan",
+   "provider": "Nido Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Nido Loan Against Property",
+   "provider": "Nido Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "SMFG Grihashakti Home Loan",
+   "provider": "SMFG India Home Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "SMFG Grihashakti Loan Against Property",
+   "provider": "SMFG India Home Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Mahindra Home Finance Home Loan",
+   "provider": "Mahindra Rural Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Hero Housing Finance Home Loan",
+   "provider": "Hero Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Hero Housing Finance Loan Against Property",
+   "provider": "Hero Housing Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Shubham Home Loan",
+   "provider": "Shubham Housing Development Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Shubham Loan Against Property",
+   "provider": "Shubham Housing Development Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Vastu Home Loan",
+   "provider": "Vastu Housing Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Vastu Loan Against Property",
+   "provider": "Vastu Housing Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Axis Finance Personal Loan",
+   "provider": "Axis Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Axis Finance Loan Against Property",
+   "provider": "Axis Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Axis Finance Loan Against Securities",
+   "provider": "Axis Finance",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Bajaj Finserv Personal Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Bajaj Finserv Business Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Business loan",
+   "note": "Rate 14.00% to 23.50% p.a."
+  },
+  {
+   "name": "Bajaj Finserv Doctor Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Bajaj Finserv CA Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Bajaj Finserv Gold Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Gold loan",
+   "note": "Rate 9.50% to 28% p.a."
+  },
+  {
+   "name": "Bajaj Finserv Loan Against Securities",
+   "provider": "Bajaj Finance",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Bajaj Finserv Used Car Loan",
+   "provider": "Bajaj Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Tata Capital Home Loan",
+   "provider": "Tata Capital",
+   "kind": "Home loan",
+   "note": "Rate from 7.50% p.a., initial fee Rs 999 + GST"
+  },
+  {
+   "name": "Tata Capital Loan Against Property",
+   "provider": "Tata Capital",
+   "kind": "Loan against property",
+   "note": "Rate from 9.00% p.a., fee up to 3%"
+  },
+  {
+   "name": "Tata Capital Personal Loan",
+   "provider": "Tata Capital",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Tata Capital Business Loan",
+   "provider": "Tata Capital",
+   "kind": "Business loan",
+   "note": "Rate from 12.00% p.a."
+  },
+  {
+   "name": "Tata Capital Used Car Loan",
+   "provider": "Tata Capital",
+   "kind": "Used car loan",
+   "note": "Rate from 10.49% p.a."
+  },
+  {
+   "name": "Tata Capital Car Loan",
+   "provider": "Tata Capital",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Tata Capital Two Wheeler Loan",
+   "provider": "Tata Capital",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Tata Capital Commercial Vehicle Loan",
+   "provider": "Tata Capital",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Tata Capital Education Loan",
+   "provider": "Tata Capital",
+   "kind": "Education loan",
+   "note": "Rate from 11.30% p.a., fee up to 2%"
+  },
+  {
+   "name": "Tata Capital Gold Loan",
+   "provider": "Tata Capital",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Tata Capital Loan Against Securities",
+   "provider": "Tata Capital",
+   "kind": "Loan against securities",
+   "note": "Rate from 8.00% p.a."
+  },
+  {
+   "name": "L&T Finance Home Loan",
+   "provider": "L&T Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "L&T Finance Loan Against Property",
+   "provider": "L&T Finance",
+   "kind": "Loan against property",
+   "note": "Rate from 9.50% p.a., fee up to 2%"
+  },
+  {
+   "name": "L&T Finance Personal Loan",
+   "provider": "L&T Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "L&T Finance Business Loan",
+   "provider": "L&T Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "L&T Finance Two Wheeler Loan",
+   "provider": "L&T Finance",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "L&T Finance Gold Loan",
+   "provider": "L&T Finance",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Poonawalla Fincorp Personal Loan",
+   "provider": "Poonawalla Fincorp",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Poonawalla Fincorp Business Loan",
+   "provider": "Poonawalla Fincorp",
+   "kind": "Business loan",
+   "note": "Rate from 15% p.a."
+  },
+  {
+   "name": "Poonawalla Fincorp Loan Against Property",
+   "provider": "Poonawalla Fincorp",
+   "kind": "Loan against property",
+   "note": "Rate from 9.75% p.a."
+  },
+  {
+   "name": "Poonawalla Fincorp Gold Loan",
+   "provider": "Poonawalla Fincorp",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Hero FinCorp Two Wheeler Loan",
+   "provider": "Hero FinCorp",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Hero FinCorp Personal Loan",
+   "provider": "Hero FinCorp",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Hero FinCorp Used Car Loan",
+   "provider": "Hero FinCorp",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Hero FinCorp Business Loan",
+   "provider": "Hero FinCorp",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Hero FinCorp Loan Against Property",
+   "provider": "Hero FinCorp",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Chola Car Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Chola Used Car Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Chola Commercial Vehicle Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Chola Two Wheeler Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Chola Home Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Chola Loan Against Property",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "Chola Business Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Chola Personal Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Chola Gold Loan",
+   "provider": "Cholamandalam Investment and Finance",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Mahindra Finance Car Loan",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Mahindra Finance Pre-Owned Vehicle Loan",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Mahindra Finance Commercial Vehicle Loan",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Mahindra Finance Two Wheeler Loan",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Shriram Finance Commercial Vehicle Loan",
+   "provider": "Shriram Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Shriram Finance Car Loan",
+   "provider": "Shriram Finance",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Shriram Finance Used Car Loan",
+   "provider": "Shriram Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Shriram Finance Two Wheeler Loan",
+   "provider": "Shriram Finance",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Shriram Finance Gold Loan",
+   "provider": "Shriram Finance",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Shriram Finance Personal Loan",
+   "provider": "Shriram Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Shriram Finance Business Loan",
+   "provider": "Shriram Finance",
+   "kind": "Business loan",
+   "note": "Rate from 10.00% p.a."
+  },
+  {
+   "name": "Muthoot Gold Loan",
+   "provider": "Muthoot Finance",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Muthoot Personal Loan",
+   "provider": "Muthoot Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Manappuram Gold Loan",
+   "provider": "Manappuram Finance",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Manappuram Commercial Vehicle Loan",
+   "provider": "Manappuram Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "IIFL Gold Loan",
+   "provider": "IIFL Finance",
+   "kind": "Gold loan",
+   "note": "Rate 11.88% to 27% p.a."
+  },
+  {
+   "name": "IIFL Business Loan",
+   "provider": "IIFL Finance",
+   "kind": "Business loan",
+   "note": "Rate up to 36% p.a."
+  },
+  {
+   "name": "IIFL Loan Against Property",
+   "provider": "IIFL Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "SMFG India Credit Personal Loan",
+   "provider": "SMFG India Credit",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "SMFG India Credit Business Loan",
+   "provider": "SMFG India Credit",
+   "kind": "Business loan"
+  },
+  {
+   "name": "SMFG India Credit Loan Against Property",
+   "provider": "SMFG India Credit",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "SMFG India Credit Two Wheeler Loan",
+   "provider": "SMFG India Credit",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "SMFG India Credit Used Car Loan",
+   "provider": "SMFG India Credit",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "HDB Personal Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "HDB Business Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Business loan"
+  },
+  {
+   "name": "HDB Gold Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "HDB Loan Against Property",
+   "provider": "HDB Financial Services",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "HDB Auto Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Car loan"
+  },
+  {
+   "name": "HDB Used Car Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "HDB Two Wheeler Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "HDB Commercial Vehicle Loan",
+   "provider": "HDB Financial Services",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Kotak Prime Car Loan",
+   "provider": "Kotak Mahindra Prime",
+   "kind": "Car loan",
+   "note": "Rate from 9.00% p.a."
+  },
+  {
+   "name": "Kotak Prime Used Car Loan",
+   "provider": "Kotak Mahindra Prime",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "TVS Credit Two Wheeler Loan",
+   "provider": "TVS Credit Services",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "TVS Credit Used Car Loan",
+   "provider": "TVS Credit Services",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "TVS Credit Used Commercial Vehicle Loan",
+   "provider": "TVS Credit Services",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "TVS Credit Personal Loan",
+   "provider": "TVS Credit Services",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "TVS Credit Business Loan",
+   "provider": "TVS Credit Services",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Bajaj Auto Credit Two Wheeler Loan",
+   "provider": "Bajaj Auto Credit",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Avanse Education Loan for Study Abroad",
+   "provider": "Avanse Financial Services",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Avanse Education Loan for Study in India",
+   "provider": "Avanse Financial Services",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Credila Education Loan",
+   "provider": "Credila Financial Services",
+   "kind": "Education loan"
+  },
+  {
+   "name": "InCred Personal Loan",
+   "provider": "InCred Finance",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "InCred Education Loan",
+   "provider": "InCred Finance",
+   "kind": "Education loan"
+  },
+  {
+   "name": "InCred Business Loan",
+   "provider": "InCred Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Auxilo Education Loan",
+   "provider": "Auxilo Finserve",
+   "kind": "Education loan"
+  },
+  {
+   "name": "Moneyview Personal Loan",
+   "provider": "Moneyview",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "KreditBee Personal Loan",
+   "provider": "KreditBee",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Navi Personal Loan",
+   "provider": "Navi Finserv",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Navi Home Loan",
+   "provider": "Navi Finserv",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Fibe Personal Loan",
+   "provider": "Fibe",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "CASHe Personal Loan",
+   "provider": "CASHe",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Prefr Personal Loan",
+   "provider": "Prefr",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Kissht Personal Loan",
+   "provider": "Kissht",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Home Credit Personal Loan",
+   "provider": "Home Credit India",
+   "kind": "Personal loan"
+  },
+  {
+   "name": "Lendingkart Business Loan",
+   "provider": "Lendingkart",
+   "kind": "Business loan",
+   "note": "Rate from 13.50% p.a."
+  },
+  {
+   "name": "FlexiLoans Business Loan",
+   "provider": "FlexiLoans",
+   "kind": "Business loan",
+   "note": "Rate from 12.00% p.a."
+  },
+  {
+   "name": "Indifi Business Loan",
+   "provider": "Indifi Capital",
+   "kind": "Business loan",
+   "note": "Rate from 18.00% p.a."
+  },
+  {
+   "name": "Sundaram Finance Car Loan",
+   "provider": "Sundaram Finance",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Sundaram Finance Pre-Owned Car Loan",
+   "provider": "Sundaram Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Sundaram Finance Commercial Vehicle Loan",
+   "provider": "Sundaram Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Toyota Financial Services Car Loan",
+   "provider": "Toyota Financial Services India",
+   "kind": "Car loan"
+  },
+  {
+   "name": "Hinduja Leyland Finance Commercial Vehicle Loan",
+   "provider": "Hinduja Leyland Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "Hinduja Leyland Finance Used Car Loan",
+   "provider": "Hinduja Leyland Finance",
+   "kind": "Used car loan"
+  },
+  {
+   "name": "Hinduja Leyland Finance Two Wheeler Loan",
+   "provider": "Hinduja Leyland Finance",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Hinduja Leyland Finance Loan Against Property",
+   "provider": "Hinduja Leyland Finance",
+   "kind": "Loan against property"
+  },
+  {
+   "name": "IndoStar Used Commercial Vehicle Loan",
+   "provider": "IndoStar Capital Finance",
+   "kind": "Commercial vehicle loan"
+  },
+  {
+   "name": "IndoStar SME Loan",
+   "provider": "IndoStar Capital Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Muthoot Capital Two Wheeler Loan",
+   "provider": "Muthoot Capital Services",
+   "kind": "Two-wheeler loan"
+  },
+  {
+   "name": "Muthoot FinCorp Gold Loan",
+   "provider": "Muthoot FinCorp",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Capri Global Home Loan",
+   "provider": "Capri Global Capital",
+   "kind": "Home loan"
+  },
+  {
+   "name": "Capri Global Gold Loan",
+   "provider": "Capri Global Capital",
+   "kind": "Gold loan"
+  },
+  {
+   "name": "Capri Global MSME Loan",
+   "provider": "Capri Global Capital",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Five Star Small Business Loan",
+   "provider": "Five-Star Business Finance",
+   "kind": "Business loan"
+  },
+  {
+   "name": "Mirae Asset Loan Against Shares",
+   "provider": "Mirae Asset Financial Services",
+   "kind": "Loan against securities"
+  },
+  {
+   "name": "Mirae Asset Loan Against Mutual Funds",
+   "provider": "Mirae Asset Financial Services",
+   "kind": "Loan against securities"
+  }
+ ]
+}

@@ -1,0 +1,1827 @@
+{
+ "cat": "fd",
+ "asOf": "Oct 2026",
+ "sources": [
+  "Paisabazaar FD rates (1 Oct 2026)",
+  "BankBazaar FD rates (Oct 2026)",
+  "BankBazaar NBFC/company FD rates (Sep 2026)",
+  "PolicyBazaar special FD pages",
+  "Wikipedia: List of banks in India",
+  "NHB list of HFCs accepting public deposits",
+  "canfinhomes.com",
+  "indiapost.gov.in"
+ ],
+ "companies": [
+  {
+   "provider": "State Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://sbi.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.3,
+    "r5y": 6.05,
+    "rmax": 6.45,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Punjab National Bank",
+   "kind": "Public sector bank",
+   "url": "https://www.pnb.co.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.35,
+    "r5y": 6.1,
+    "rmax": 6.6,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bank of Baroda",
+   "kind": "Public sector bank",
+   "url": "https://www.bankofbaroda.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.25,
+    "r5y": 6.3,
+    "rmax": 6.75,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Canara Bank",
+   "kind": "Public sector bank",
+   "url": "https://canarabank.com",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.25,
+    "r5y": 6.25,
+    "rmax": 6.6,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Union Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://www.unionbankofindia.co.in",
+   "v": {
+    "r1y": 6.2,
+    "r3y": 6.1,
+    "r5y": 6,
+    "rmax": 6.55,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://bankofindia.co.in",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 6.7,
+    "r5y": 6,
+    "rmax": 6.85,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bank of Maharashtra",
+   "kind": "Public sector bank",
+   "url": "https://bankofmaharashtra.in",
+   "v": {
+    "r1y": 6.2,
+    "r3y": 5.25,
+    "r5y": 5,
+    "rmax": 6.65,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Central Bank of India",
+   "kind": "Public sector bank",
+   "url": "https://www.centralbankofindia.co.in",
+   "v": {
+    "r1y": 6.1,
+    "r3y": 6,
+    "r5y": 6,
+    "rmax": 6.75,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Indian Bank",
+   "kind": "Public sector bank",
+   "url": "https://indianbank.in",
+   "v": {
+    "r1y": 6.1,
+    "r3y": 6.05,
+    "r5y": 6,
+    "rmax": 6.65,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Indian Overseas Bank",
+   "kind": "Public sector bank",
+   "url": "https://www.iob.in",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 6.1,
+    "r5y": 6.1,
+    "rmax": 6.6,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Punjab & Sind Bank",
+   "kind": "Public sector bank",
+   "url": "https://punjabandsindbank.co.in",
+   "v": {
+    "r1y": 5.85,
+    "r3y": 5.85,
+    "r5y": 5.95,
+    "rmax": 6.85,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "UCO Bank",
+   "kind": "Public sector bank",
+   "url": "https://uco.bank.in",
+   "v": {
+    "r1y": 6.1,
+    "r3y": 6,
+    "r5y": 6,
+    "rmax": 6.45,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "HDFC Bank",
+   "kind": "Private bank",
+   "url": "https://hdfc.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.45,
+    "r5y": 6.4,
+    "rmax": 6.5,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "ICICI Bank",
+   "kind": "Private bank",
+   "url": "https://icici.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.45,
+    "r5y": 6.5,
+    "rmax": 6.5,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Axis Bank",
+   "kind": "Private bank",
+   "url": "https://axis.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.5,
+    "r5y": 6.5,
+    "rmax": 6.5,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Private bank",
+   "url": "https://kotak.bank.in",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 6.4,
+    "r5y": 6.25,
+    "rmax": 6.7,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "IDFC FIRST Bank",
+   "kind": "Private bank",
+   "url": "https://idfcfirst.bank.in",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 7.1,
+    "r5y": 6.75,
+    "rmax": 7.4,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "IndusInd Bank",
+   "kind": "Private bank",
+   "url": "https://indusind.bank.in",
+   "v": {
+    "r1y": 6.75,
+    "r3y": 7,
+    "r5y": 6.65,
+    "rmax": 7,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Yes Bank",
+   "kind": "Private bank",
+   "url": "https://yes.bank.in",
+   "v": {
+    "r1y": 6.65,
+    "r3y": 7,
+    "r5y": 6.75,
+    "rmax": 7.25,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Federal Bank",
+   "kind": "Private bank",
+   "url": "https://federal.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.5,
+    "r5y": 6.4,
+    "rmax": 6.7,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bandhan Bank",
+   "kind": "Private bank",
+   "url": "https://bandhan.bank.in",
+   "v": {
+    "r1y": 7,
+    "r3y": 7.25,
+    "r5y": 5.85,
+    "rmax": 7.45,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "RBL Bank",
+   "kind": "Private bank",
+   "url": "https://rbl.bank.in",
+   "v": {
+    "r1y": 7,
+    "r3y": 7.2,
+    "r5y": 6.7,
+    "rmax": 7.2,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "DCB Bank",
+   "kind": "Private bank",
+   "url": "https://dcb.bank.in",
+   "v": {
+    "r1y": 6.9,
+    "r3y": 7,
+    "r5y": 7.5,
+    "rmax": 7.5,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "IDBI Bank",
+   "kind": "Private bank",
+   "url": "https://idbi.bank.in",
+   "v": {
+    "r1y": 6.2,
+    "r3y": 6.35,
+    "r5y": 6.25,
+    "rmax": 6.55,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "City Union Bank",
+   "kind": "Private bank",
+   "url": "https://cityunionbank.bank.in",
+   "v": {
+    "r1y": 6.65,
+    "r3y": 6.5,
+    "r5y": 6.55,
+    "rmax": 7.25,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "CSB Bank",
+   "kind": "Private bank",
+   "url": "https://csb.bank.in",
+   "v": {
+    "r1y": 5,
+    "r3y": 5.75,
+    "r5y": 5.75,
+    "rmax": 7.1,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Private bank",
+   "url": "https://dhan.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.5,
+    "r5y": 6.5,
+    "rmax": 7.25,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Private bank",
+   "url": "https://jkb.bank.in",
+   "v": {
+    "r1y": 6.55,
+    "r3y": 6.7,
+    "r5y": 6.75,
+    "rmax": 7.05,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Karnataka Bank",
+   "kind": "Private bank",
+   "url": "https://karnatakabank.bank.in",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 6.15,
+    "r5y": 6.15,
+    "rmax": 7,
+    "srExtra": 0.4,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Karur Vysya Bank",
+   "kind": "Private bank",
+   "url": "https://kvb.bank.in",
+   "v": {
+    "r1y": 6.25,
+    "r3y": 6.4,
+    "r5y": 6.25,
+    "rmax": 6.7,
+    "srExtra": 0.4,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Nainital Bank",
+   "kind": "Private bank",
+   "url": "https://nainitalbank.bank.in",
+   "v": {
+    "r1y": 6.4,
+    "r3y": 6.25,
+    "r5y": 5.75,
+    "rmax": 6.6,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "South Indian Bank",
+   "kind": "Private bank",
+   "url": "https://southindianbank.bank.in",
+   "v": {
+    "r1y": 6.35,
+    "r3y": 6.2,
+    "r5y": 5.7,
+    "rmax": 6.8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Private bank",
+   "url": "https://tmb.bank.in",
+   "v": {
+    "r1y": 6.8,
+    "r3y": 6.7,
+    "r5y": 6.7,
+    "rmax": 7.25,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "AU Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.au.bank.in",
+   "v": {
+    "r1y": 6.35,
+    "r3y": 7.4,
+    "r5y": 6.75,
+    "rmax": 7.4,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.equitasbank.com",
+   "v": {
+    "r1y": 7.1,
+    "r3y": 7.1,
+    "r5y": 7,
+    "rmax": 8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.ujjivansfb.in",
+   "v": {
+    "r1y": 7.25,
+    "r3y": 7.25,
+    "r5y": 7.2,
+    "rmax": 7.8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Jana Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.janabank.com",
+   "v": {
+    "r1y": 7,
+    "r3y": 8,
+    "r5y": 7.77,
+    "rmax": 8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.suryodaybank.com",
+   "v": {
+    "r1y": 7.25,
+    "r3y": 7.25,
+    "r5y": 8.25,
+    "rmax": 8.25,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.utkarsh.bank",
+   "v": {
+    "r1y": 6,
+    "r3y": 7.5,
+    "r5y": 7,
+    "rmax": 8.1,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.esafbank.com",
+   "v": {
+    "r1y": 6,
+    "r3y": 6,
+    "r5y": 5.75,
+    "rmax": 8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Unity Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://theunitybank.com",
+   "v": {
+    "r1y": 7.5,
+    "r3y": 6.75,
+    "r5y": 6.75,
+    "rmax": 7.5,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Capital Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://www.capitalbank.co.in",
+   "v": {
+    "r1y": 7,
+    "r3y": 7,
+    "r5y": 6.9,
+    "rmax": 7.15,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Small finance bank",
+   "url": "https://shivalikbank.com",
+   "v": {
+    "r1y": 6,
+    "r3y": 7.5,
+    "r5y": 6.25,
+    "rmax": 8,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Slice Small Finance Bank",
+   "kind": "Small finance bank",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Standard Chartered Bank",
+   "kind": "Foreign bank",
+   "url": "https://www.sc.com/in",
+   "v": {
+    "r1y": 6.6,
+    "r3y": 6.5,
+    "r5y": 6.25,
+    "rmax": 6.6,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "HSBC India",
+   "kind": "Foreign bank",
+   "url": "https://www.hsbc.co.in",
+   "v": {
+    "r1y": 4,
+    "r3y": 5.35,
+    "r5y": 5.5,
+    "rmax": 5.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "DBS Bank India",
+   "kind": "Foreign bank",
+   "url": "https://www.dbs.com/in",
+   "v": {
+    "r1y": 6.3,
+    "r3y": 6.4,
+    "r5y": 6.25,
+    "rmax": 6.85,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Deutsche Bank",
+   "kind": "Foreign bank",
+   "url": "https://www.deutschebank.co.in",
+   "v": {
+    "r1y": 5,
+    "r3y": 6.25,
+    "r5y": 6.25,
+    "rmax": 7,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "SBM Bank India",
+   "kind": "Foreign bank",
+   "url": "https://www.sbmbank.co.in",
+   "v": {
+    "r1y": 7.1,
+    "r3y": 7.1,
+    "r5y": 7,
+    "rmax": 7.65,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.saraswatbank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Cosmos Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.cosmosbank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "SVC Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.svcbank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Abhyudaya Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.abhyudayabank.co.in",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "TJSB Sahakari Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.tjsbbank.co.in",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "NKGSB Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.nkgsb-bank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bharat Co-operative Bank (Mumbai)",
+   "kind": "Co-operative bank",
+   "url": "https://www.bharatbank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Kalupur Commercial Co-operative Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.kalupurbank.com",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Kerala State Co-operative Bank",
+   "kind": "Co-operative bank",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Maharashtra State Co-operative Bank",
+   "kind": "Co-operative bank",
+   "v": {
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Repco Bank",
+   "kind": "Co-operative bank",
+   "url": "https://www.repcobank.com",
+   "v": {
+    "rmax": 7.6,
+    "srExtra": 0.5,
+    "dicgc": true
+   }
+  },
+  {
+   "provider": "Bajaj Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.bajajfinserv.in",
+   "v": {
+    "r1y": 6.6,
+    "r3y": 7.4,
+    "r5y": 7.4,
+    "rmax": 7.4,
+    "srExtra": 0.35,
+    "rating": "AAA (CRISIL, ICRA)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Shriram Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.shriramfinance.in",
+   "v": {
+    "r1y": 6.85,
+    "r3y": 7.5,
+    "r5y": 7.5,
+    "rmax": 7.5,
+    "srExtra": 0.5,
+    "rating": "AA+ (ICRA)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.mahindrafinance.com",
+   "v": {
+    "r1y": 6.6,
+    "r3y": 7.4,
+    "r5y": 7.45,
+    "rmax": 7.45,
+    "rating": "AAA (CRISIL, India Ratings)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "PNB Housing Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.pnbhousing.com",
+   "v": {
+    "r1y": 6.7,
+    "r3y": 7.1,
+    "r5y": 7.25,
+    "rmax": 7.25,
+    "srExtra": 0.25,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "LIC Housing Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.lichousing.com",
+   "v": {
+    "r1y": 6.7,
+    "r3y": 7.2,
+    "r5y": 7.35,
+    "rmax": 7.35,
+    "srExtra": 0.25,
+    "rating": "AAA (CRISIL)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "ICICI Home Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.icicihfc.com",
+   "v": {
+    "r1y": 6.85,
+    "r3y": 7.1,
+    "r5y": 7.2,
+    "rmax": 7.35,
+    "srExtra": 0.35,
+    "rating": "AAA (CRISIL, ICRA, CARE)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Sundaram Home Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.sundaramhome.in",
+   "v": {
+    "r1y": 6.7,
+    "r3y": 7.25,
+    "r5y": 7.4,
+    "rmax": 7.4,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Sundaram Finance",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.sundaramfinance.in",
+   "v": {
+    "rmax": 7.25,
+    "srExtra": 0.5,
+    "rating": "AAA (CRISIL, ICRA)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Can Fin Homes",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.canfinhomes.com",
+   "v": {
+    "r1y": 6.5,
+    "r3y": 6.75,
+    "r5y": 6.75,
+    "rmax": 6.75,
+    "srExtra": 0.5,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Manipal Housing Finance Syndicate",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.manipalhousing.com",
+   "v": {
+    "r1y": 8,
+    "r3y": 8,
+    "r5y": 7.5,
+    "rmax": 8,
+    "srExtra": 0.5,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Muthoot Capital Services",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.muthootcap.com",
+   "v": {
+    "r1y": 7.9,
+    "r3y": 8.95,
+    "r5y": 8.5,
+    "rmax": 8.95,
+    "srExtra": 0.25,
+    "rating": "A+ (CRISIL)",
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Cent Bank Home Finance",
+   "kind": "NBFC (corporate FD)",
+   "v": {
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "HUDCO",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://hudco.org.in",
+   "v": {
+    "r1y": 7.5,
+    "r3y": 7.5,
+    "r5y": 7.25,
+    "rmax": 7.5,
+    "srExtra": 0.25,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Kerala Transport Development Finance Corporation",
+   "kind": "NBFC (corporate FD)",
+   "url": "https://www.ktdfc.com",
+   "v": {
+    "r1y": 6.35,
+    "srExtra": 0.5,
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Tamil Nadu Power Finance and Infrastructure Development Corporation",
+   "kind": "NBFC (corporate FD)",
+   "v": {
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Tamil Nadu Transport Development Finance Corporation",
+   "kind": "NBFC (corporate FD)",
+   "v": {
+    "dicgc": false
+   }
+  },
+  {
+   "provider": "Department of Posts",
+   "kind": "Post office",
+   "url": "https://www.indiapost.gov.in",
+   "v": {
+    "r1y": 6.9,
+    "r3y": 7.1,
+    "r5y": 7.5,
+    "rmax": 7.5
+   }
+  }
+ ],
+ "entries": [
+  {
+   "name": "State Bank of India Fixed Deposit",
+   "provider": "State Bank of India",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.45% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "State Bank of India Tax Saver FD",
+   "provider": "State Bank of India",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.05% general / 7.05% senior"
+  },
+  {
+   "name": "Punjab National Bank Fixed Deposit",
+   "provider": "Punjab National Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.6% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Punjab National Bank Tax Saver FD",
+   "provider": "Punjab National Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Bank of Baroda Fixed Deposit",
+   "provider": "Bank of Baroda",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.75% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Bank of Baroda Tax Saver FD",
+   "provider": "Bank of Baroda",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.00-6.30% general"
+  },
+  {
+   "name": "Canara Bank Fixed Deposit",
+   "provider": "Canara Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.6% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Canara Bank Tax Saver FD",
+   "provider": "Canara Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.25% general / 6.75% senior"
+  },
+  {
+   "name": "Union Bank of India Fixed Deposit",
+   "provider": "Union Bank of India",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.55% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Union Bank of India Tax Saver FD",
+   "provider": "Union Bank of India",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 5.90% general / 6.40% senior"
+  },
+  {
+   "name": "Bank of India Fixed Deposit",
+   "provider": "Bank of India",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.85% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Bank of India Tax Saver FD",
+   "provider": "Bank of India",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.00% general"
+  },
+  {
+   "name": "Bank of Maharashtra Fixed Deposit",
+   "provider": "Bank of Maharashtra",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.65% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Bank of Maharashtra Tax Saver FD",
+   "provider": "Bank of Maharashtra",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 5.00% general / 5.50% senior"
+  },
+  {
+   "name": "Central Bank of India Fixed Deposit",
+   "provider": "Central Bank of India",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.75% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Central Bank of India Tax Saver FD",
+   "provider": "Central Bank of India",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.00% general / 6.50% senior"
+  },
+  {
+   "name": "Indian Bank Fixed Deposit",
+   "provider": "Indian Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.65% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Indian Bank Tax Saver FD",
+   "provider": "Indian Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.00% general / 6.50% senior"
+  },
+  {
+   "name": "Indian Overseas Bank Fixed Deposit",
+   "provider": "Indian Overseas Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.6% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Indian Overseas Bank Tax Saver FD",
+   "provider": "Indian Overseas Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.10% general / 6.60% senior"
+  },
+  {
+   "name": "Punjab & Sind Bank Fixed Deposit",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.85% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Punjab & Sind Bank Tax Saver FD",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 5.95% general / 6.45% senior"
+  },
+  {
+   "name": "UCO Bank Fixed Deposit",
+   "provider": "UCO Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.45% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "UCO Bank Tax Saver FD",
+   "provider": "UCO Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.00% general / 6.50% senior"
+  },
+  {
+   "name": "HDFC Bank Fixed Deposit",
+   "provider": "HDFC Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.5% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "HDFC Bank Tax Saver FD",
+   "provider": "HDFC Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.40% general / 6.90% senior"
+  },
+  {
+   "name": "ICICI Bank Fixed Deposit",
+   "provider": "ICICI Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.5% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "ICICI Bank Tax Saver FD",
+   "provider": "ICICI Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.50% general / 7.10% senior"
+  },
+  {
+   "name": "Axis Bank Fixed Deposit",
+   "provider": "Axis Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.5% p.a. general public; senior citizens +0.5%; includes former Citibank India retail customers"
+  },
+  {
+   "name": "Axis Bank Tax Saver FD",
+   "provider": "Axis Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.45% general / 7.20% senior"
+  },
+  {
+   "name": "Kotak Mahindra Bank Fixed Deposit",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.7% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Kotak Mahindra Bank Tax Saver FD",
+   "provider": "Kotak Mahindra Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.25% general / 6.75% senior"
+  },
+  {
+   "name": "IDFC FIRST Bank Fixed Deposit",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.4% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "IDFC FIRST Bank Tax Saver FD",
+   "provider": "IDFC FIRST Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.60% general / 7.10% senior"
+  },
+  {
+   "name": "IndusInd Bank Fixed Deposit",
+   "provider": "IndusInd Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "IndusInd Bank Tax Saver FD",
+   "provider": "IndusInd Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.65% general / 7.15% senior"
+  },
+  {
+   "name": "Yes Bank Fixed Deposit",
+   "provider": "Yes Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.25% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Yes Bank Tax Saver FD",
+   "provider": "Yes Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Federal Bank Fixed Deposit",
+   "provider": "Federal Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.7% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Federal Bank Tax Saver FD",
+   "provider": "Federal Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.40% general / 6.90% senior"
+  },
+  {
+   "name": "Bandhan Bank Fixed Deposit",
+   "provider": "Bandhan Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.45% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Bandhan Bank Tax Saver FD",
+   "provider": "Bandhan Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.25% general / 7.25% senior"
+  },
+  {
+   "name": "RBL Bank Fixed Deposit",
+   "provider": "RBL Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.2% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "RBL Bank Tax Saver FD",
+   "provider": "RBL Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.70% general / 7.20% senior"
+  },
+  {
+   "name": "DCB Bank Fixed Deposit",
+   "provider": "DCB Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.5% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "DCB Bank Tax Saver FD",
+   "provider": "DCB Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 7.50% general / 7.75% senior"
+  },
+  {
+   "name": "IDBI Bank Fixed Deposit",
+   "provider": "IDBI Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.55% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "IDBI Bank Tax Saver FD",
+   "provider": "IDBI Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.25% general / 6.75% senior"
+  },
+  {
+   "name": "City Union Bank Fixed Deposit",
+   "provider": "City Union Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.25% p.a. general public"
+  },
+  {
+   "name": "City Union Bank Tax Saver FD",
+   "provider": "City Union Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "CSB Bank Fixed Deposit",
+   "provider": "CSB Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.1% p.a. general public"
+  },
+  {
+   "name": "CSB Bank Tax Saver FD",
+   "provider": "CSB Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Dhanlaxmi Bank Fixed Deposit",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.25% p.a. general public"
+  },
+  {
+   "name": "Dhanlaxmi Bank Tax Saver FD",
+   "provider": "Dhanlaxmi Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Jammu & Kashmir Bank Fixed Deposit",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.05% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Jammu & Kashmir Bank Tax Saver FD",
+   "provider": "Jammu & Kashmir Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.60% general / 7.10% senior"
+  },
+  {
+   "name": "Karnataka Bank Fixed Deposit",
+   "provider": "Karnataka Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7% p.a. general public; senior citizens +0.4%"
+  },
+  {
+   "name": "Karnataka Bank Tax Saver FD",
+   "provider": "Karnataka Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.50% general / 6.90% senior"
+  },
+  {
+   "name": "Karur Vysya Bank Fixed Deposit",
+   "provider": "Karur Vysya Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.7% p.a. general public; senior citizens +0.4%"
+  },
+  {
+   "name": "Karur Vysya Bank Tax Saver FD",
+   "provider": "Karur Vysya Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.55% general / 6.95% senior"
+  },
+  {
+   "name": "Nainital Bank Fixed Deposit",
+   "provider": "Nainital Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.6% p.a. general public"
+  },
+  {
+   "name": "Nainital Bank Tax Saver FD",
+   "provider": "Nainital Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "South Indian Bank Fixed Deposit",
+   "provider": "South Indian Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "South Indian Bank Tax Saver FD",
+   "provider": "South Indian Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 5.70% general / 6.20% senior"
+  },
+  {
+   "name": "Tamilnad Mercantile Bank Fixed Deposit",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.25% p.a. general public"
+  },
+  {
+   "name": "Tamilnad Mercantile Bank Tax Saver FD",
+   "provider": "Tamilnad Mercantile Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "AU Small Finance Bank Fixed Deposit",
+   "provider": "AU Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.4% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "AU Small Finance Bank Tax Saver FD",
+   "provider": "AU Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.75% general / 7.25% senior"
+  },
+  {
+   "name": "Equitas Small Finance Bank Fixed Deposit",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Equitas Small Finance Bank Tax Saver FD",
+   "provider": "Equitas Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Ujjivan Small Finance Bank Fixed Deposit",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Ujjivan Small Finance Bank Tax Saver FD",
+   "provider": "Ujjivan Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 7.20% general / 7.70% senior"
+  },
+  {
+   "name": "Jana Small Finance Bank Fixed Deposit",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Jana Small Finance Bank Tax Saver FD",
+   "provider": "Jana Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 7.77% general / 8.00% senior"
+  },
+  {
+   "name": "Suryoday Small Finance Bank Fixed Deposit",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8.25% p.a. general public"
+  },
+  {
+   "name": "Suryoday Small Finance Bank Tax Saver FD",
+   "provider": "Suryoday Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 8.25% general / 8.50% senior"
+  },
+  {
+   "name": "Utkarsh Small Finance Bank Fixed Deposit",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8.1% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Utkarsh Small Finance Bank Tax Saver FD",
+   "provider": "Utkarsh Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 7.00% general / 7.50% senior"
+  },
+  {
+   "name": "ESAF Small Finance Bank Fixed Deposit",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "ESAF Small Finance Bank Tax Saver FD",
+   "provider": "ESAF Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Unity Small Finance Bank Fixed Deposit",
+   "provider": "Unity Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.5% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Unity Small Finance Bank Tax Saver FD",
+   "provider": "Unity Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in; Section 80C deduction up to Rs 1.5 lakh"
+  },
+  {
+   "name": "Capital Small Finance Bank Fixed Deposit",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.15% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Capital Small Finance Bank Tax Saver FD",
+   "provider": "Capital Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.80% general / 7.30% senior"
+  },
+  {
+   "name": "Shivalik Small Finance Bank Fixed Deposit",
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 8% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "Shivalik Small Finance Bank Tax Saver FD",
+   "provider": "Shivalik Small Finance Bank",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 6.25% general / 6.50% senior"
+  },
+  {
+   "name": "Slice Small Finance Bank Fixed Deposit",
+   "provider": "Slice Small Finance Bank",
+   "kind": "Fixed deposit",
+   "note": "Regular term deposit; formerly North East Small Finance Bank"
+  },
+  {
+   "name": "Standard Chartered Bank Fixed Deposit",
+   "provider": "Standard Chartered Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.6% p.a. general public"
+  },
+  {
+   "name": "HSBC India Fixed Deposit",
+   "provider": "HSBC India",
+   "kind": "Fixed deposit",
+   "note": "Up to 5.5% p.a. general public"
+  },
+  {
+   "name": "DBS Bank India Fixed Deposit",
+   "provider": "DBS Bank India",
+   "kind": "Fixed deposit",
+   "note": "Up to 6.85% p.a. general public"
+  },
+  {
+   "name": "Deutsche Bank Fixed Deposit",
+   "provider": "Deutsche Bank",
+   "kind": "Fixed deposit",
+   "note": "Up to 7% p.a. general public"
+  },
+  {
+   "name": "SBM Bank India Fixed Deposit",
+   "provider": "SBM Bank India",
+   "kind": "Fixed deposit",
+   "note": "Up to 7.65% p.a. general public; senior citizens +0.5%"
+  },
+  {
+   "name": "SBM Bank India Tax Saver FD",
+   "provider": "SBM Bank India",
+   "kind": "Tax saver FD",
+   "note": "5-year lock-in, 80C deduction; 7.00% general / 7.50% senior"
+  },
+  {
+   "name": "Saraswat Co-operative Bank Fixed Deposit",
+   "provider": "Saraswat Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Cosmos Co-operative Bank Fixed Deposit",
+   "provider": "Cosmos Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "SVC Co-operative Bank Fixed Deposit",
+   "provider": "SVC Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Abhyudaya Co-operative Bank Fixed Deposit",
+   "provider": "Abhyudaya Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Scheduled urban co-operative bank, Mumbai; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "TJSB Sahakari Bank Fixed Deposit",
+   "provider": "TJSB Sahakari Bank",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "NKGSB Co-operative Bank Fixed Deposit",
+   "provider": "NKGSB Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Bharat Co-operative Bank (Mumbai) Fixed Deposit",
+   "provider": "Bharat Co-operative Bank (Mumbai)",
+   "kind": "Fixed deposit",
+   "note": "Multi-state scheduled urban co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Kalupur Commercial Co-operative Bank Fixed Deposit",
+   "provider": "Kalupur Commercial Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "Scheduled urban co-operative bank, Ahmedabad; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Kerala State Co-operative Bank Fixed Deposit",
+   "provider": "Kerala State Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "State co-operative bank (Kerala Bank); DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Maharashtra State Co-operative Bank Fixed Deposit",
+   "provider": "Maharashtra State Co-operative Bank",
+   "kind": "Fixed deposit",
+   "note": "State co-operative bank; DICGC insured up to Rs 5 lakh"
+  },
+  {
+   "name": "Repco Bank Fixed Deposit",
+   "provider": "Repco Bank",
+   "kind": "Fixed deposit",
+   "note": "Government of India-owned multi-state co-op bank; up to 7.60% (12 months), senior +0.50%"
+  },
+  {
+   "name": "Repco Bank Thanga Magal Deposit",
+   "provider": "Repco Bank",
+   "kind": "Special FD",
+   "note": "Deposit scheme for girl children"
+  },
+  {
+   "name": "Repco Bank Anbu Magan Deposit",
+   "provider": "Repco Bank",
+   "kind": "Special FD",
+   "note": "Deposit scheme for boys; about 7.00%"
+  },
+  {
+   "name": "Repco Bank Mahila Income Deposit",
+   "provider": "Repco Bank",
+   "kind": "Special FD",
+   "note": "Women depositors; 18 months about 7.60%"
+  },
+  {
+   "name": "SBI Amrit Vrishti",
+   "provider": "State Bank of India",
+   "kind": "Special FD",
+   "note": "444 days; 6.45% general, 6.95% senior, 7.05% super senior"
+  },
+  {
+   "name": "SBI Green Rupee Term Deposit",
+   "provider": "State Bank of India",
+   "kind": "Special FD",
+   "note": "1111/1777/2222 days; funds green projects"
+  },
+  {
+   "name": "SBI Patrons Deposit",
+   "provider": "State Bank of India",
+   "kind": "Special FD",
+   "note": "For depositors aged 80+; extra rate over senior citizen rate"
+  },
+  {
+   "name": "SBI Annuity Deposit Scheme",
+   "provider": "State Bank of India",
+   "kind": "Annuity deposit",
+   "note": "Lump sum repaid as monthly annuity over 3-10 years"
+  },
+  {
+   "name": "PNB 444 Days FD",
+   "provider": "Punjab National Bank",
+   "kind": "Special FD",
+   "note": "444 days; 6.60% general, 7.10% senior, 7.40% super senior"
+  },
+  {
+   "name": "PNB Palaash Green Deposit",
+   "provider": "Punjab National Bank",
+   "kind": "Special FD",
+   "note": "Green deposit; 1204/1895 days"
+  },
+  {
+   "name": "bob Square Drive Deposit",
+   "provider": "Bank of Baroda",
+   "kind": "Special FD",
+   "note": "444 days; 6.45% general, 6.95% senior"
+  },
+  {
+   "name": "bob Golden Goal Deposit",
+   "provider": "Bank of Baroda",
+   "kind": "Special FD",
+   "note": "555 days; 6.75% general, 7.25% senior"
+  },
+  {
+   "name": "bob Earth Green Term Deposit",
+   "provider": "Bank of Baroda",
+   "kind": "Special FD",
+   "note": "Green deposit; 777/1111/1717/2201 days"
+  },
+  {
+   "name": "Canara Bank 444 Days FD",
+   "provider": "Canara Bank",
+   "kind": "Special FD",
+   "note": "444 days; 6.50% general, 7.00% senior"
+  },
+  {
+   "name": "Canara Bank 555 Days FD",
+   "provider": "Canara Bank",
+   "kind": "Special FD",
+   "note": "555 days; 6.60% general, 7.10% senior"
+  },
+  {
+   "name": "Canara Green Deposit",
+   "provider": "Canara Bank",
+   "kind": "Special FD",
+   "note": "Green deposit; 1111/2222/3333 days"
+  },
+  {
+   "name": "Union Bank 555 Days FD",
+   "provider": "Union Bank of India",
+   "kind": "Special FD",
+   "note": "555 days; 6.55% general, 7.05% senior"
+  },
+  {
+   "name": "IND Secure",
+   "provider": "Indian Bank",
+   "kind": "Special FD",
+   "note": "444 days special deposit"
+  },
+  {
+   "name": "IND Green Deposit",
+   "provider": "Indian Bank",
+   "kind": "Special FD",
+   "note": "555 days green deposit"
+  },
+  {
+   "name": "IDBI Vasundhara Green Deposit",
+   "provider": "IDBI Bank",
+   "kind": "Special FD",
+   "note": "1111 days; 6.35% general, 6.85% senior"
+  },
+  {
+   "name": "BOI Star Utsav Deposit",
+   "provider": "Bank of India",
+   "kind": "Special FD",
+   "note": "777 days special deposit"
+  },
+  {
+   "name": "BOI Green Deposit",
+   "provider": "Bank of India",
+   "kind": "Special FD",
+   "note": "999 days green deposit"
+  },
+  {
+   "name": "Cent Green Deposit",
+   "provider": "Central Bank of India",
+   "kind": "Special FD",
+   "note": "Green deposit; 1111/2222/3333 days"
+  },
+  {
+   "name": "Punjab & Sind Bank 444 Days FD",
+   "provider": "Punjab & Sind Bank",
+   "kind": "Special FD",
+   "note": "444 days; 6.60% general"
+  },
+  {
+   "name": "UCO Green Deposit",
+   "provider": "UCO Bank",
+   "kind": "Special FD",
+   "note": "Green deposit; 1000/2000/3000 days"
+  },
+  {
+   "name": "Mahabank Green Deposit",
+   "provider": "Bank of Maharashtra",
+   "kind": "Special FD",
+   "note": "1777 days green deposit"
+  },
+  {
+   "name": "IOB 444 Days FD",
+   "provider": "Indian Overseas Bank",
+   "kind": "Special FD",
+   "note": "444 days special tenure"
+  },
+  {
+   "name": "Bajaj Finance Fixed Deposit",
+   "provider": "Bajaj Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.40% general; senior +0.35%; not DICGC insured"
+  },
+  {
+   "name": "Shriram Finance Fixed Deposit",
+   "provider": "Shriram Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.50% general; senior +0.50%"
+  },
+  {
+   "name": "Mahindra Finance Fixed Deposit",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Corporate FD",
+   "note": "Up to 7.45% (48-60 months); senior +0.20-0.35%"
+  },
+  {
+   "name": "Mahindra Finance Samruddhi FD",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Corporate FD",
+   "note": "Cumulative and non-cumulative FD scheme"
+  },
+  {
+   "name": "Mahindra Finance Dhanvruddhi FD",
+   "provider": "Mahindra & Mahindra Financial Services",
+   "kind": "Corporate FD",
+   "note": "Special-tenure FD scheme"
+  },
+  {
+   "name": "PNB Housing Finance Fixed Deposit",
+   "provider": "PNB Housing Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.25% (60 months); senior +0.25%"
+  },
+  {
+   "name": "LIC Housing Finance Fixed Deposit",
+   "provider": "LIC Housing Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.35%; senior +0.25%"
+  },
+  {
+   "name": "ICICI Home Finance Fixed Deposit",
+   "provider": "ICICI Home Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.35% (45 months); senior +0.35%"
+  },
+  {
+   "name": "Sundaram Home Finance Fixed Deposit",
+   "provider": "Sundaram Home Finance",
+   "kind": "Corporate FD",
+   "note": "Up to 7.40%; senior +0.35-0.50%"
+  },
+  {
+   "name": "Sundaram Finance Fixed Deposit",
+   "provider": "Sundaram Finance",
+   "kind": "Corporate FD",
+   "note": "12-36 months; up to 7.25% general; senior +0.50%"
+  },
+  {
+   "name": "Can Fin Homes Fixed Deposit",
+   "provider": "Can Fin Homes",
+   "kind": "Corporate FD",
+   "note": "12 months 6.50%, 13-60 months 6.75%; senior +0.50%"
+  },
+  {
+   "name": "Manipal Housing Finance Fixed Deposit",
+   "provider": "Manipal Housing Finance Syndicate",
+   "kind": "Corporate FD",
+   "note": "Up to 8.00%; senior +0.50%"
+  },
+  {
+   "name": "Muthoot Capital Services Fixed Deposit",
+   "provider": "Muthoot Capital Services",
+   "kind": "Corporate FD",
+   "note": "Up to 8.95% (36 months); deposits from Kerala residents only"
+  },
+  {
+   "name": "Cent Bank Home Finance Fixed Deposit",
+   "provider": "Cent Bank Home Finance",
+   "kind": "Corporate FD",
+   "note": "NHB-permitted deposit-taking HFC"
+  },
+  {
+   "name": "HUDCO Public Deposit Scheme",
+   "provider": "HUDCO",
+   "kind": "Corporate FD",
+   "note": "1-3 years 7.50%, 4-5 years 7.25%; senior +0.25%"
+  },
+  {
+   "name": "KTDFC Fixed Deposit",
+   "provider": "Kerala Transport Development Finance Corporation",
+   "kind": "Corporate FD",
+   "note": "Kerala government guaranteed; 1 year 6.35%, 2 years 6.45%"
+  },
+  {
+   "name": "TN Power Finance Fixed Deposit",
+   "provider": "Tamil Nadu Power Finance and Infrastructure Development Corporation",
+   "kind": "Corporate FD",
+   "note": "Tamil Nadu government company; RBI-registered deposit-taking NBFC"
+  },
+  {
+   "name": "TDFC Fixed Deposit",
+   "provider": "Tamil Nadu Transport Development Finance Corporation",
+   "kind": "Corporate FD",
+   "note": "Tamil Nadu government company; RBI-registered deposit-taking NBFC"
+  },
+  {
+   "name": "Post Office Time Deposit",
+   "provider": "Department of Posts",
+   "kind": "Time deposit",
+   "note": "1y 6.90%, 2y 7.00%, 3y 7.10%, 5y 7.50%; sovereign-backed"
+  },
+  {
+   "name": "Post Office 5-Year Time Deposit (Tax Saver)",
+   "provider": "Department of Posts",
+   "kind": "Tax saver FD",
+   "note": "7.50%; Section 80C deduction"
+  }
+ ]
+}
