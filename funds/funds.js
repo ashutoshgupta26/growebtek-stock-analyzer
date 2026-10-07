@@ -133,14 +133,25 @@
     }
     return cache[key];
   }
+  // Latest NAV straight from AMFI via the backend; the NAV-history API can lag a day. Never blocks the report.
+  var MON = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+  function amfiLatest(code) {
+    var p = GW.api('nav', { code: String(code) }).then(function (r) {
+      var m = r && r.nav > 0 && /^(\d{2})-([A-Za-z]{3})-(\d{4})$/.exec(r.date || '');
+      return m && MON[m[2]] != null ? { t: Date.UTC(+m[3], MON[m[2]], +m[1]), v: r.nav } : null;
+    }).catch(function () { return null; });
+    return Promise.race([p, new Promise(function (res) { setTimeout(function () { res(null); }, 8000); })]);
+  }
   function loadMF(code) {
-    return fetchJSON(MFAPI + '/' + encodeURIComponent(code)).then(function (j) {
+    return Promise.all([fetchJSON(MFAPI + '/' + encodeURIComponent(code)), amfiLatest(code)]).then(function (all) {
+      var j = all[0], a = all[1];
       if (!j || !j.meta || !j.data || !j.data.length || !j.meta.scheme_name) throw new Error('No NAV history found for scheme ' + code + '.');
       var n = j.data.length, t = new Array(n), v = new Array(n);
       for (var i = 0; i < n; i++) {
         var d = j.data[n - 1 - i], p = d.date.split('-');
         t[i] = Date.UTC(+p[2], +p[1] - 1, +p[0]); v[i] = parseFloat(d.nav);
       }
+      if (a && n && a.t > t[n - 1]) { t.push(a.t); v.push(a.v); }
       var c = clean(t, v);
       if (c.t.length < 2) throw new Error('This scheme does not have enough NAV history to analyse.');
       var m = j.meta, name = m.scheme_name, catFull = m.scheme_category || '', parts = catFull.split(' - ');

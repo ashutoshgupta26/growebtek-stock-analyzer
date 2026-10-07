@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v12' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v13' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   var tp = e && e.parameter && e.parameter.topic;
@@ -49,8 +49,26 @@ function route_(q) {
     case 'stock': anyone_(q); return security_(q, false);
     case 'fund': anyone_(q); return security_(q, true);
     case 'mfinfo': anyone_(q); return mfInfo_(q);
+    case 'nav': anyone_(q); return amfiNav_(q);
   }
   throw fail_('bad_request', 'Unknown action.');
+}
+
+// Latest NAV straight from AMFI (the free NAV-history API can lag a day behind).
+function amfiNav_(q) {
+  var code = String(q.code || '').replace(/\D/g, '').slice(0, 8);
+  if (!code) throw fail_('invalid', 'Scheme code missing.');
+  var key = 'an1:' + code, hit = cacheGet_(key); if (hit) return hit;
+  var r = UrlFetchApp.fetch('https://portal.amfiindia.com/spages/NAVAll.txt', { muteHttpExceptions: true, headers: { 'User-Agent': UA } });
+  if (r.getResponseCode() !== 200) throw fail_('upstream', 'AMFI NAV file unavailable.');
+  var txt = r.getContentText(), i = txt.indexOf('\n' + code + ';'), out = { code: code, nav: null, date: null };
+  if (i >= 0) {
+    var end = txt.indexOf('\n', i + 1), f = txt.slice(i + 1, end < 0 ? txt.length : end).replace(/\r$/, '').split(';');
+    var nav = parseFloat(f[f.length - 2]), dt = String(f[f.length - 1] || '').trim();
+    if (f.length >= 6 && isFinite(nav) && nav > 0 && /^\d{2}-[A-Za-z]{3}-\d{4}$/.test(dt)) { out.nav = nav; out.date = dt; }
+  }
+  cachePut_(key, out, 900);
+  return out;
 }
 
 // ---------------------------------------------------------------- helpers
