@@ -3,7 +3,20 @@
  "asOf": "Oct 2026",
  "sources": [
   "IRDAI Health Insurance Products list (travel UINs) - https://irdai.gov.in/en/web/guest/health-insurance-products",
-  "Insurer official websites, product pages and policy-wording downloads"
+  "Insurer official websites, product pages and policy-wording downloads",
+  "careinsurance.com",
+  "nivabupa.com",
+  "indusindinsurance.com",
+  "iffcotokio.co.in",
+  "royalsundaram.in",
+  "nationalinsurance.nic.co.in",
+  "uiic.co.in",
+  "universalsompo.com",
+  "acko.com",
+  "shriramgi.com",
+  "rahejaqbe.com",
+  "bankbazaar.com",
+  "policybazaar.com"
  ],
  "companies": [
   {
@@ -88,6 +101,72 @@
    "provider": "The Oriental Insurance Co.",
    "kind": "Public sector general insurer",
    "url": "https://orientalinsurance.org.in",
+   "v": {}
+  },
+  {
+   "provider": "Care Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.careinsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.nivabupa.com",
+   "v": {}
+  },
+  {
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Private general insurer",
+   "url": "https://www.indusindinsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.iffcotokio.co.in",
+   "v": {}
+  },
+  {
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.royalsundaram.in",
+   "v": {}
+  },
+  {
+   "provider": "National Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://nationalinsurance.nic.co.in",
+   "v": {}
+  },
+  {
+   "provider": "United India Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://uiic.co.in",
+   "v": {}
+  },
+  {
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.universalsompo.com",
+   "v": {}
+  },
+  {
+   "provider": "Acko General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.acko.com",
+   "v": {}
+  },
+  {
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.rahejaqbe.com",
+   "v": {}
+  },
+  {
+   "provider": "Shriram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.shriramgi.com",
    "v": {}
   }
  ],
@@ -438,6 +517,358 @@
    "uin": "GHITIOP27049V012627",
    "url": "https://www.galaxyhealth.com/international-travel-insurance/galaxy-fly-global-travel-insurance",
    "note": "Overseas travel medical, baggage and trip-delay cover; launched Aug 2026"
+  },
+  {
+   "name": "Explore",
+   "provider": "Care Health Insurance",
+   "kind": "International",
+   "uin": "RHITIOP20134V031920",
+   "url": "https://www.careinsurance.com/product/explore",
+   "note": "Single-trip overseas cover; regional variants (Asia, Europe/Schengen, Africa, Canada, Worldwide)"
+  },
+  {
+   "name": "Explore - Asia",
+   "provider": "Care Health Insurance",
+   "kind": "Asia",
+   "uin": "RHITIOP20134V031920",
+   "url": "https://www.careinsurance.com/travel-insurance/asia-travel-insurance",
+   "note": "Asia variant of Explore; cover from USD 10,000"
+  },
+  {
+   "name": "Explore - Europe (Schengen)",
+   "provider": "Care Health Insurance",
+   "kind": "Schengen",
+   "uin": "RHITIOP20134V031920",
+   "note": "Europe/Schengen variant of Explore"
+  },
+  {
+   "name": "Student Explore",
+   "provider": "Care Health Insurance",
+   "kind": "Student",
+   "url": "https://www.careinsurance.com/product/student-explore",
+   "note": "For Indian students abroad; study interruption, sponsor protection, university insolvency",
+   "uin": "IRDA/NL-HLT/RHI/P-T/V.I/71/2014-15"
+  },
+  {
+   "name": "TravelAssure",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "International",
+   "uin": "NBHTIOP26043V022526",
+   "url": "https://www.nivabupa.com/travel-insurance.html",
+   "note": "Overseas travel; SI USD 25,000-500,000; individual, family, sports/adventure, honeymoon variants"
+  },
+  {
+   "name": "TravelAssure - Student Travel",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Student",
+   "uin": "NBHTIOP26043V022526",
+   "note": "Student variant of TravelAssure"
+  },
+  {
+   "name": "Travel Care - Individual",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "International",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/individual-travel-insurance",
+   "note": "Single-trip overseas; medical USD 100,000-500,000"
+  },
+  {
+   "name": "Travel Care - Family",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Family",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/family-travel-insurance",
+   "note": "Self, spouse and up to 2 children"
+  },
+  {
+   "name": "Travel Care - Annual Multi-Trip",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Multi-trip",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/annual-multi-trip-insurance",
+   "note": "Multiple trips in 12 months; ages 18-70"
+  },
+  {
+   "name": "Travel Care - Senior Citizen",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Senior",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/senior-citizen-travel-insurance",
+   "note": "Ages 61-90; no medical check-up"
+  },
+  {
+   "name": "Travel Care - Student",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Student",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/student-travel-insurance",
+   "note": "Ages 16-35; up to 2 years; Basic to Platinum variants"
+  },
+  {
+   "name": "Travel Care - Schengen",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Schengen",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/schengen-travel-insurance",
+   "note": "Meets EUR 30,000 Schengen visa minimum"
+  },
+  {
+   "name": "Travel Care - Asia",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Asia",
+   "uin": "RELTIOP08002V010708",
+   "url": "https://www.indusindinsurance.com/travel-insurance/asia-travel-insurance",
+   "note": "Asia regional plan"
+  },
+  {
+   "name": "Overseas Travel Protector Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "International",
+   "uin": "IFFTIOP27045V012627",
+   "url": "https://www.iffcotokio.co.in/travel-insurance/overseas-travel-protector-policy",
+   "note": "Up to USD 1 million medical; home burglary, travel delay, passport cover"
+  },
+  {
+   "name": "Travel Protector Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "International",
+   "uin": "IRDAN106P0015V01200102",
+   "url": "https://www.iffcotokio.co.in/travel-insurance/travel-protector-policy",
+   "note": "Medical, baggage, passport, financial emergency assistance"
+  },
+  {
+   "name": "Pravasi Bharatiya Bima Yojana",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Emigrant workers",
+   "url": "https://www.iffcotokio.co.in/travel-insurance/pravasi-bharatiya-bima-yojana",
+   "note": "Mandatory cover for ECR emigrant workers; Rs 10 lakh PA"
+  },
+  {
+   "name": "Overseas Policy for Pravasi Bharatiya",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Emigrant workers",
+   "url": "https://www.iffcotokio.co.in/travel-insurance/overseas-policy-for-pravasi-bharatiya",
+   "note": "Enhanced PA and medical cover up to Rs 50 lakh for Indian workers abroad"
+  },
+  {
+   "name": "Travel Secure - Single Trip",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "International",
+   "uin": "RSATIOP18116V011718",
+   "url": "https://www.royalsundaram.in/travel-insurance",
+   "note": "Single-trip overseas cover"
+  },
+  {
+   "name": "Travel Secure - Multi Trip",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Multi-trip",
+   "uin": "RSATIOP18116V011718",
+   "note": "Annual plan; max 30/45/90 days per trip"
+  },
+  {
+   "name": "Travel Secure - Student",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Student",
+   "uin": "RSATIOP18116V011718",
+   "note": "1-7 years cover for students abroad"
+  },
+  {
+   "name": "Overseas Mediclaim Business and Holiday",
+   "provider": "National Insurance Co.",
+   "kind": "International",
+   "url": "https://nationalinsurance.nic.co.in/en/health-insurance/overseas-mediclaim-business-and-holiday",
+   "note": "For business or holiday trips abroad"
+  },
+  {
+   "name": "Overseas Mediclaim Employment and Studies",
+   "provider": "National Insurance Co.",
+   "kind": "Student",
+   "note": "For those going abroad for employment or study",
+   "url": "https://nationalinsurance.nic.co.in/en/health-insurance/overseas-mediclaim-employment-and-studies"
+  },
+  {
+   "name": "Overseas Mediclaim Policy - Business and Holiday",
+   "provider": "United India Insurance Co.",
+   "kind": "International",
+   "url": "https://uiic.co.in/en/product/overseas-travel-insurance/OMP-for-Business-and-Holiday",
+   "note": "Worldwide excl./incl. USA-Canada"
+  },
+  {
+   "name": "Overseas Mediclaim Policy - Corporate Frequent Traveller",
+   "provider": "United India Insurance Co.",
+   "kind": "Multi-trip",
+   "url": "https://uiic.co.in/web/product/overseas-travel-insurance/OMP-for-Corporate-Frequent-Traveller",
+   "note": "Annual multi-trip for frequent travellers"
+  },
+  {
+   "name": "Acko International Travel Insurance",
+   "provider": "Acko General Insurance",
+   "kind": "International",
+   "uin": "ACKTIOP25036V022425",
+   "url": "https://www.acko.com/international-travel-insurance/",
+   "note": "Single-trip overseas cover up to 180 days"
+  },
+  {
+   "name": "Acko International Travel Insurance - Schengen",
+   "provider": "Acko General Insurance",
+   "kind": "Schengen",
+   "uin": "ACKTIOP25036V022425",
+   "url": "https://www.acko.com/international-travel-insurance/schengen/",
+   "note": "Schengen visa compliant"
+  },
+  {
+   "name": "Explore - ANZ",
+   "provider": "Care Health Insurance",
+   "kind": "International",
+   "uin": "RHITIOP20134V031920",
+   "note": "Australia & New Zealand variant; USD 25K-100K"
+  },
+  {
+   "name": "Explore - Africa",
+   "provider": "Care Health Insurance",
+   "kind": "International",
+   "uin": "RHITIOP20134V031920",
+   "note": "Africa variant; USD 25K-100K"
+  },
+  {
+   "name": "Explore - Canada+",
+   "provider": "Care Health Insurance",
+   "kind": "International",
+   "uin": "RHITIOP20134V031920",
+   "note": "Worldwide excluding USA; USD 50K-100K"
+  },
+  {
+   "name": "Explore - Silver / Gold / Platinum (Worldwide)",
+   "provider": "Care Health Insurance",
+   "kind": "International",
+   "uin": "RHITIOP20134V031920",
+   "url": "https://www.careinsurance.com/travel-insurance/international-travel-insurance",
+   "note": "Worldwide variants; SI up to USD 1 million (Platinum)"
+  },
+  {
+   "name": "Explore - Multi-trip (Annual)",
+   "provider": "Care Health Insurance",
+   "kind": "Multi-trip",
+   "uin": "RHITIOP20134V031920",
+   "url": "https://www.careinsurance.com/travel-insurance/multi-trip-travel-insurance",
+   "note": "Annual policy; 30/45/60 days per trip"
+  },
+  {
+   "name": "TravelAssure - Multi-trip",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Multi-trip",
+   "uin": "NBHTIOP26043V022526",
+   "note": "Annual; max trip 15-90 days"
+  },
+  {
+   "name": "TravelAssure - Asia",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Asia",
+   "uin": "NBHTIOP26043V022526",
+   "url": "https://www.nivabupa.com/travel-insurance/travel-insurance-asia.html",
+   "note": "Asia destination cover"
+  },
+  {
+   "name": "TravelAssure - Schengen",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Schengen",
+   "uin": "NBHTIOP26043V022526",
+   "url": "https://www.nivabupa.com/travel-insurance/schengen-travel-insurance.html",
+   "note": "Schengen visa compliant cover"
+  },
+  {
+   "name": "Travel Worldwide",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "International",
+   "uin": "UNITIOP21251V032021",
+   "note": "Silver/Gold/Platinum; USD 50K-500K; up to 180 days"
+  },
+  {
+   "name": "Travel Asia",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Asia",
+   "uin": "UNITIOP21251V032021",
+   "note": "Gold/Platinum; up to 47 days"
+  },
+  {
+   "name": "Student Travel",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Student",
+   "uin": "UNITIOP21251V032021",
+   "note": "Primary/Intellectual/Buddy variants; study interruption, sponsor cover"
+  },
+  {
+   "name": "Annual Multi Trip",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Multi-trip",
+   "uin": "UNITIOP21251V032021",
+   "note": "Gold/Platinum; 30 or 45 days per trip"
+  },
+  {
+   "name": "Senior Citizen Travel Insurance",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Senior",
+   "uin": "UNITIOP21251V032021",
+   "note": "Entry age 60-70"
+  },
+  {
+   "name": "Domestic Travel Insurance",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Domestic",
+   "uin": "UNITIDP18002V011718",
+   "note": "Travel within India"
+  },
+  {
+   "name": "Pravasi Bhartiya Bima Yojana",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Emigrant workers",
+   "url": "https://www.universalsompo.com/pravasi-bhartiya-bima/",
+   "note": "Mandatory cover for emigrant workers"
+  },
+  {
+   "name": "Overseas Mediclaim Policy - Employment and Studies",
+   "provider": "United India Insurance Co.",
+   "kind": "Student",
+   "url": "https://uiic.co.in/product/overseas-travel-insurance/OMP-for-Employment-and-Studies",
+   "note": "For travel abroad for work or study"
+  },
+  {
+   "name": "Overseas Mediclaim Policy - Schengen",
+   "provider": "United India Insurance Co.",
+   "kind": "Schengen",
+   "note": "Schengen-compliant overseas mediclaim"
+  },
+  {
+   "name": "Pravasi Bhartiya Bima Yojana",
+   "provider": "Raheja QBE General Insurance",
+   "kind": "Emigrant workers",
+   "uin": "RQBTIOP25008V022425",
+   "url": "https://www.rahejaqbe.com/health-insurance/pravasi-bhartiya-bima-yojana",
+   "note": "Mandatory for ECR emigrants; Rs 10 lakh PA, legal cost cover"
+  },
+  {
+   "name": "Shri Travel",
+   "provider": "Shriram General Insurance",
+   "kind": "International",
+   "uin": "SGLTIOP12001V011112",
+   "url": "https://www.shriramgi.com/travel-insurance",
+   "note": "USD 50,000 cover; single-trip, multi-trip or family"
+  },
+  {
+   "name": "Shri Travel Plus",
+   "provider": "Shriram General Insurance",
+   "kind": "International",
+   "uin": "SGLTIOP12001V011112",
+   "url": "https://www.shriramgi.com/travel-insurance",
+   "note": "USD 100,000 cover"
+  },
+  {
+   "name": "Shri Travel Elite",
+   "provider": "Shriram General Insurance",
+   "kind": "Multi-trip",
+   "uin": "SGLTIOP12001V011112",
+   "url": "https://www.shriramgi.com/travel-insurance",
+   "note": "USD 200,000 cover; annual multi-trip option"
   }
  ]
 }

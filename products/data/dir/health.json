@@ -241,6 +241,159 @@
     "network": 4000,
     "solvency": -1.03
    }
+  },
+  {
+   "provider": "Care Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.careinsurance.com",
+   "v": {
+    "csr": 96.74,
+    "icr": 64.53,
+    "network": 11400,
+    "complaints": 42.9,
+    "solvency": 1.68
+   }
+  },
+  {
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.nivabupa.com",
+   "v": {
+    "csr": 92.39,
+    "icr": 61.22,
+    "network": 10000,
+    "complaints": 35.4,
+    "solvency": 3.03
+   }
+  },
+  {
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.adityabirlacapital.com/healthinsurance/",
+   "v": {
+    "csr": 95.88,
+    "icr": 71.5,
+    "network": 12000,
+    "complaints": 18.2,
+    "solvency": 1.84
+   }
+  },
+  {
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Standalone health insurer",
+   "url": "https://www.manipalcigna.com",
+   "v": {
+    "csr": 93.7,
+    "icr": 74.81,
+    "network": 8500,
+    "complaints": 35.5,
+    "solvency": 1.76
+   }
+  },
+  {
+   "provider": "Acko General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.acko.com",
+   "v": {
+    "csr": 95.75,
+    "icr": 57.82,
+    "network": 10000,
+    "complaints": 16.8,
+    "solvency": 2.3
+   }
+  },
+  {
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.iffcotokio.co.in",
+   "v": {
+    "csr": 85.64,
+    "icr": 83.74,
+    "network": 7900,
+    "complaints": 46.8,
+    "solvency": 1.85
+   }
+  },
+  {
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.royalsundaram.in",
+   "v": {
+    "csr": 89.23,
+    "icr": 95.56,
+    "network": 10000,
+    "complaints": 24.3,
+    "solvency": 2.2
+   }
+  },
+  {
+   "provider": "National Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://nationalinsurance.nic.co.in",
+   "v": {
+    "csr": 93.56,
+    "icr": 96.05,
+    "network": 3200,
+    "complaints": 41.3,
+    "solvency": -0.67
+   }
+  },
+  {
+   "provider": "United India Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://uiic.co.in",
+   "v": {
+    "csr": 95.92,
+    "icr": 97.51,
+    "network": 4000,
+    "complaints": 17.6,
+    "solvency": -0.65
+   }
+  },
+  {
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.universalsompo.com",
+   "v": {
+    "csr": 89.21,
+    "icr": 97.12,
+    "network": 5000,
+    "complaints": 5.1,
+    "solvency": 1.97
+   }
+  },
+  {
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Private general insurer",
+   "url": "https://www.indusindinsurance.com",
+   "v": {
+    "csr": 86.38,
+    "icr": 87.34,
+    "network": 10000,
+    "complaints": 4.4,
+    "solvency": 1.59
+   }
+  },
+  {
+   "provider": "Kshema General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://kshema.co",
+   "v": {
+    "solvency": 1.53,
+    "icr": 40.03
+   }
+  },
+  {
+   "provider": "Shriram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.shriramgi.com",
+   "v": {
+    "csr": 94.26,
+    "icr": 74.55,
+    "complaints": 29.5,
+    "solvency": 3.51,
+    "network": 15000
+   }
   }
  ],
  "entries": [
@@ -2231,6 +2384,1031 @@
    "uin": "PRUHLIP27036V012627",
    "url": "https://prudentialhealth.in/health-insurance/pruhealth-guardian-plan",
    "note": "Plan for people with pre-existing/chronic conditions; chronic management programme, home care, OPD add-on"
+  },
+  {
+   "name": "Care",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP26055V092526",
+   "note": "Care Health's flagship comprehensive indemnity health plan."
+  },
+  {
+   "name": "Care Supreme",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP27061V032627",
+   "url": "https://www.careinsurance.com/product/care-supreme",
+   "note": "Comprehensive indemnity plan for individuals and families."
+  },
+  {
+   "name": "Care Advantage",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP27062V052627",
+   "url": "https://www.careinsurance.com/product/care-advantage",
+   "note": "High sum insured indemnity plan for individuals and families."
+  },
+  {
+   "name": "Care Classic",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP26048V022526",
+   "note": "Indemnity health plan for individuals and families."
+  },
+  {
+   "name": "Ultimate Care",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP26058V022526",
+   "url": "https://www.careinsurance.com/product/ultimate-care",
+   "note": "Premium indemnity plan; an unlimited sum insured variant is offered."
+  },
+  {
+   "name": "Care Plus",
+   "provider": "Care Health Insurance",
+   "kind": "Individual / family",
+   "uin": "CHIHLIP22047V012122",
+   "note": "Retail health plan on Care Health's official product launch list."
+  },
+  {
+   "name": "Senior Health Advantage",
+   "provider": "Care Health Insurance",
+   "kind": "Senior citizen",
+   "uin": "CHIHLIP22223V012122",
+   "url": "https://www.careinsurance.com/product/senior-health-advantage",
+   "note": "Indemnity health plan for senior citizens."
+  },
+  {
+   "name": "Care Supreme Senior",
+   "provider": "Care Health Insurance",
+   "kind": "Senior citizen",
+   "url": "https://www.careinsurance.com/product/care-supreme-senior",
+   "note": "Senior citizen version of Care Supreme."
+  },
+  {
+   "name": "Care Supreme Enhance",
+   "provider": "Care Health Insurance",
+   "kind": "Super top-up",
+   "uin": "CHIHLIP25036V012425",
+   "url": "https://www.careinsurance.com/product/care-supreme-enhance",
+   "note": "Super top-up cover above a chosen deductible."
+  },
+  {
+   "name": "Enhance",
+   "provider": "Care Health Insurance",
+   "kind": "Super top-up",
+   "uin": "RHIHLIP21372V022021",
+   "url": "https://www.careinsurance.com/product/enhance",
+   "note": "Top-up and super top-up cover above a deductible."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "Care Health Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "RHIHLIP20154V011920",
+   "url": "https://www.careinsurance.com/product/arogya-sanjeevani",
+   "note": "IRDAI standard health policy."
+  },
+  {
+   "name": "Care Freedom",
+   "provider": "Care Health Insurance",
+   "kind": "Disease-specific",
+   "uin": "CHIHLIP26052V032526",
+   "url": "https://www.careinsurance.com/product/care-freedom",
+   "note": "For people with diabetes, hypertension and other pre-existing conditions."
+  },
+  {
+   "name": "Care Heart",
+   "provider": "Care Health Insurance",
+   "kind": "Disease-specific",
+   "uin": "CHIHLIP26053V032526",
+   "url": "https://www.careinsurance.com/product/care-heart",
+   "note": "For people with heart conditions or a past cardiac procedure."
+  },
+  {
+   "name": "Super Mediclaim",
+   "provider": "Care Health Insurance",
+   "kind": "Disease-specific",
+   "uin": "RHIHLIP21374V022021",
+   "url": "https://www.careinsurance.com/product/care-critical-mediclaim",
+   "note": "Sold as Critical, Cancer, Heart and Operation Mediclaim variants."
+  },
+  {
+   "name": "Assure",
+   "provider": "Care Health Insurance",
+   "kind": "Critical illness",
+   "uin": "RHIHLIP21375V022021",
+   "note": "Lump-sum benefit on diagnosis of a listed critical illness."
+  },
+  {
+   "name": "Joy",
+   "provider": "Care Health Insurance",
+   "kind": "Maternity",
+   "uin": "RHIHLIP21373V022021",
+   "url": "https://www.careinsurance.com/product/joy",
+   "note": "Health plan with maternity and newborn cover."
+  },
+  {
+   "name": "Care Saksham",
+   "provider": "Care Health Insurance",
+   "kind": "Disability / HIV",
+   "uin": "CHIHLIP23186V012223",
+   "note": "For persons with 40% or more disability or living with HIV."
+  },
+  {
+   "name": "Surrogacy and Oocyte Care",
+   "provider": "Care Health Insurance",
+   "kind": "Surrogacy",
+   "uin": "CHIHLIP24136V012324",
+   "note": "Health cover for surrogate mothers and oocyte donors."
+  },
+  {
+   "name": "Lifeline",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP24146V032324",
+   "url": "https://www.royalsundaram.in/health-insurance/lifeline/",
+   "note": "Comprehensive indemnity plan for individuals and families."
+  },
+  {
+   "name": "Family Plus",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP22200V032122",
+   "url": "https://www.royalsundaram.in/health-insurance/family-plus/",
+   "note": "Family floater indemnity health plan."
+  },
+  {
+   "name": "Multiplier Health Insurance Plan",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP23030V012223",
+   "url": "https://www.royalsundaram.in/health-insurance/multiplier/",
+   "note": "Indemnity plan with a multiplier benefit on the sum insured."
+  },
+  {
+   "name": "NeXT Gen Health Insurance Plan",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP24078V012324",
+   "note": "Indemnity plan with 100% reload and no claim bonus."
+  },
+  {
+   "name": "Health EcoAdvantage",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP25006V012425",
+   "note": "Indemnity health plan listed in Royal Sundaram's active products."
+  },
+  {
+   "name": "Secure All",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Individual / family",
+   "uin": "RSAHLIP21437V022021",
+   "note": "Health plan listed in Royal Sundaram's active products."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "RSAHLIP25013V022425",
+   "url": "https://www.royalsundaram.in/health-insurance/arogya-sanjeevani/",
+   "note": "IRDAI standard health policy."
+  },
+  {
+   "name": "Advanced Top Up Health Insurance Plan",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Super top-up",
+   "uin": "RSAHLIP23029V012223",
+   "url": "https://www.royalsundaram.in/health-insurance/advanced-top-up/",
+   "note": "Top-up cover above a chosen deductible."
+  },
+  {
+   "name": "Top Up Insurance - Health XS and Super Health XS",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Super top-up",
+   "uin": "RSAHLIP21432V022021",
+   "note": "Top-up (Health XS) and super top-up (Super Health XS) cover."
+  },
+  {
+   "name": "PreSecure Advantage",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Disease-specific",
+   "uin": "RSAHLIP25036V012425",
+   "url": "https://www.royalsundaram.in/health-insurance/presecure-advantage",
+   "note": "For people with pre-existing diseases; sum insured 1 to 5 lakh."
+  },
+  {
+   "name": "Divyang Plus",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Disability / HIV",
+   "uin": "RSAHLIP23188V012223",
+   "url": "https://www.royalsundaram.in/divyang",
+   "note": "Individual cover for persons with disabilities or HIV/AIDS; sum insured 4 or 5 lakh."
+  },
+  {
+   "name": "Surrosafe Health Insurance",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Surrogacy",
+   "uin": "RSAHLIP24110V012324",
+   "url": "https://www.royalsundaram.in/health-insurance/surrosafe",
+   "note": "Health cover for surrogate mothers."
+  },
+  {
+   "name": "Smart Cash Plan",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Hospital cash",
+   "uin": "RSAHLIP08006V030708",
+   "note": "Daily cash benefit during hospitalisation."
+  },
+  {
+   "name": "Surgicare",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Surgery cover",
+   "uin": "RSAHLIP09002V020809",
+   "note": "Benefit for listed surgical procedures."
+  },
+  {
+   "name": "Surgical Shield",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Surgery cover",
+   "uin": "RSAHLIP08007V020708",
+   "note": "Benefit for listed surgical procedures."
+  },
+  {
+   "name": "Complete Healthcare Insurance",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP25036V042425",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Indemnity health plan for individuals and families."
+  },
+  {
+   "name": "Supreme Healthcare Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP25030V012425",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Indemnity health plan for individuals and families."
+  },
+  {
+   "name": "Super Healthcare Insurance",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP21413V022021",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Indemnity health plan for individuals and families."
+  },
+  {
+   "name": "A Plus Health Insurance",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP26040V022526",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Retail health plan listed in Universal Sompo's active products."
+  },
+  {
+   "name": "Shakti Care Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP24155V012324",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Retail health plan listed in Universal Sompo's active products."
+  },
+  {
+   "name": "Senior Citizen Health Insurance Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Senior citizen",
+   "uin": "UNIHLIP21412V022021",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Indemnity health plan for senior citizens."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "UNIHLIP20171V011920",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "IRDAI standard health policy."
+  },
+  {
+   "name": "Critical Illness Insurance Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Critical illness",
+   "uin": "UNIHLIP14004V011314",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Lump-sum benefit on diagnosis of a listed critical illness."
+  },
+  {
+   "name": "Hospital Cash Insurance Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Hospital cash",
+   "uin": "IRDA/NL-HLT/USGI/P-H/V.1/25/13-14",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Daily cash benefit during hospitalisation."
+  },
+  {
+   "name": "Saksham Bima",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Disability / HIV",
+   "uin": "UNIHLIP23200V012223",
+   "url": "https://www.universalsompo.com/Products/HealthInsurance",
+   "note": "Health cover for persons with disabilities."
+  },
+  {
+   "name": "Loan Secure Insurance Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Loan protection",
+   "uin": "UNIHLIP22139V032122",
+   "note": "Health-linked cover protecting loan repayments."
+  },
+  {
+   "name": "Indian Bank Health Care Plus",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP25016V042425",
+   "note": "Health plan sold to Indian Bank customers."
+  },
+  {
+   "name": "IOB Health Care Plus Policy",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP25015V042425",
+   "note": "Health plan sold to Indian Overseas Bank customers."
+  },
+  {
+   "name": "K Bank Health Care Plus",
+   "provider": "Universal Sompo General Insurance",
+   "kind": "Individual / family",
+   "uin": "UNIHLIP25035V032425",
+   "note": "Health plan sold to Karnataka Bank customers."
+  },
+  {
+   "name": "ReAssure 3.0",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP26047V012526",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/reassurev3-insurance.html",
+   "note": "Flagship indemnity plan with Classic/Select/Elite/Black variants; launched Aug 2025."
+  },
+  {
+   "name": "ReAssure 2.0",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP27054V032627",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/reassurev2-insurance.html",
+   "note": "Comprehensive indemnity plan with Bronze+, Platinum+ and Titanium+ variants."
+  },
+  {
+   "name": "ReAssure",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP26050V042526",
+   "note": "Original ReAssure indemnity plan, listed among products currently offered."
+  },
+  {
+   "name": "Aspire",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP26049V022526",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/aspire.html",
+   "note": "Indemnity plan aimed at younger buyers, with Gold+ to Titanium+ variants."
+  },
+  {
+   "name": "Rise",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP25041V012425",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/rise.html",
+   "note": "Indemnity plan with a premium-return benefit and loyalty bonus."
+  },
+  {
+   "name": "Health Premia",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MAXHLIP21176V022021",
+   "url": "https://www.nivabupa.com/health-insurance-plan/health-premia",
+   "note": "Premium indemnity plan with Silver, Gold and Platinum variants."
+  },
+  {
+   "name": "Health Companion",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP26051V092526",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/health-companion-family-floater.html",
+   "note": "Individual/family floater indemnity plan; current version from Mar 2026."
+  },
+  {
+   "name": "Heartbeat",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP27058V102627",
+   "url": "https://nivabupa.com/help-centre/helpheartbeat.html",
+   "note": "Individual/family floater indemnity plan; latest version filed Sep 2026."
+  },
+  {
+   "name": "Health+",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP24135V012324",
+   "note": "Indemnity health plan covering hospitalisation, home care and organ donor expenses."
+  },
+  {
+   "name": "Elixir",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP23156V012223",
+   "note": "Indemnity plan with booster benefit, sum insured 5-15 lakh."
+  },
+  {
+   "name": "GoActive",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP26046V032526",
+   "note": "Indemnity health plan for individuals and families."
+  },
+  {
+   "name": "Health Pulse",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP27055V052627",
+   "note": "Indemnity plan for individuals and families."
+  },
+  {
+   "name": "Empower Health Plan",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Individual / family",
+   "uin": "NBHHLIP23193V012223",
+   "note": "Individual indemnity plan for persons with disability, HIV/AIDS or mental illness."
+  },
+  {
+   "name": "Senior First",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Senior citizen",
+   "uin": "NBHHLIP27053V022627",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/senior-citizen-family-floater.html",
+   "note": "Indemnity plan for people aged 61 and above."
+  },
+  {
+   "name": "Health Recharge",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Super top-up",
+   "uin": "NBHHLIP22156V032122",
+   "url": "https://www.nivabupa.com/family-health-insurance-plans/health-recharge-family-floater.html",
+   "note": "Super top-up over a chosen deductible, cover up to 95 lakh."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Niva Bupa Health Insurance Co. Ltd.",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "NBHHLIP27056V042627",
+   "note": "IRDAI standard indemnity plan, sum insured up to 10 lakh."
+  },
+  {
+   "name": "SurroGuard",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Surrogacy cover",
+   "uin": "NBHHLIP24081V012324",
+   "note": "Health cover for a surrogate mother, bought by the intending couple."
+  },
+  {
+   "name": "Oocyte Guard",
+   "provider": "Niva Bupa Health Insurance",
+   "kind": "Surrogacy cover",
+   "uin": "NBHHLIP24086V012324",
+   "note": "Health cover for an oocyte donor."
+  },
+  {
+   "name": "Health Gain",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Individual / family",
+   "uin": "INIHLIP26040V042526",
+   "url": "https://www.indusindinsurance.com/health-insurance/health-gain-insurance",
+   "note": "Flagship customisable indemnity plan, cover up to 5 crore."
+  },
+  {
+   "name": "Health Infinity",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Individual / family",
+   "uin": "RELHLIP23120V042223",
+   "url": "https://www.indusindinsurance.com/health-insurance/health-infinity-insurance",
+   "note": "Indemnity plan with unlimited sum insured restoration, cover up to 5 crore."
+  },
+  {
+   "name": "HealthWise",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Individual / family",
+   "uin": "RELHLIP22185V042122",
+   "note": "Indemnity plan with sum insured 5-20 lakh, covers 10 critical illnesses/surgeries."
+  },
+  {
+   "name": "Specially Abled Health Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Individual / family",
+   "uin": "RELHLIP23197V012223",
+   "note": "Indemnity health policy for persons with disabilities."
+  },
+  {
+   "name": "Health Global",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Individual / family",
+   "uin": "IRDAN103RP0001V01202324",
+   "url": "https://www.indusindinsurance.com/health-insurance/international-health-insurance",
+   "note": "Indemnity plan covering treatment in India and abroad, up to USD 1 million."
+  },
+  {
+   "name": "Health Super Top-Up",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Super top-up",
+   "uin": "RELHLIP21617V012021",
+   "url": "https://www.indusindinsurance.com/health-insurance/super-top-up-health-insurance",
+   "note": "Super top-up over a deductible, formerly Reliance Health Super Top-Up."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Arogya Sanjeevani",
+   "uin": "RELHLIP21001V012021",
+   "url": "https://www.indusindinsurance.com/health-insurance/arogya-sanjeevani-insurance",
+   "note": "IRDAI standard indemnity plan, sum insured 50,000 to 10 lakh."
+  },
+  {
+   "name": "Critical Illness Insurance",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Critical illness",
+   "uin": "RELHLGP08003V010708",
+   "url": "https://www.indusindinsurance.com/health-insurance/critical-illness-insurance",
+   "note": "Individual lump-sum cover for 10 critical illnesses, sum insured up to 10 lakh."
+  },
+  {
+   "name": "Hospi Care",
+   "provider": "IndusInd General Insurance (formerly Reliance General)",
+   "kind": "Hospital cash",
+   "uin": "RELHLIP20027V012021",
+   "url": "https://www.indusindinsurance.com/health-insurance/hospi-care-insurance",
+   "note": "Fixed-benefit plan paying lump sums for surgeries, ICU stays and hospitalisation."
+  },
+  {
+   "name": "Kshema Hospi DinDhan Suraksha (Retail)",
+   "provider": "Kshema General Insurance",
+   "kind": "Hospital cash",
+   "uin": "KSGHLIP26036V012526",
+   "url": "https://kshema.co/kshema-hospi-dindhan-suraksha/",
+   "note": "Daily hospital cash of Rs 100-2,000 per day for individuals or families."
+  },
+  {
+   "name": "Shri Health Suraksha Insurance",
+   "provider": "Shriram General Insurance",
+   "kind": "Individual / family",
+   "url": "https://www.shriramgi.com/shri-health-suraksha-insurance/",
+   "note": "Indemnity plan, sum insured 50,000 to 10 lakh; 2.0 version launched Mar 2026."
+  },
+  {
+   "name": "Shri Criti Care Insurance",
+   "provider": "Shriram General Insurance",
+   "kind": "Critical illness",
+   "url": "https://www.shriramgi.com/shri-criti-care-insurance",
+   "note": "Individual lump-sum critical illness cover, sum insured 50,000 to 3 crore."
+  },
+  {
+   "name": "Shri Hospital Daily Cash Benefit Insurance",
+   "provider": "Shriram General Insurance",
+   "kind": "Hospital cash",
+   "uin": "SGLHLIP23138V022223",
+   "url": "https://www.shriramgi.com/shri-hospital-daily-cash-benefit-insurance",
+   "note": "Daily cash of Rs 500-5,000 per day of hospitalisation."
+  },
+  {
+   "name": "Shri Vector Care Insurance",
+   "provider": "Shriram General Insurance",
+   "kind": "Disease-specific",
+   "url": "https://www.shriramgi.com/shri-vector-care-insurance",
+   "note": "Lump sum for hospitalisation due to dengue, malaria and other vector-borne diseases."
+  },
+  {
+   "name": "Shri Ambulance Service for Hospital Assistance Insurance (ASHA)",
+   "provider": "Shriram General Insurance",
+   "kind": "Ambulance cover",
+   "url": "https://www.shriramgi.com/asha-insurance",
+   "note": "Reimburses emergency ambulance fares, up to two claims a year."
+  },
+  {
+   "name": "Activ One",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Individual / family",
+   "uin": "ADIHLIP24097V012324",
+   "url": "https://www.adityabirlacapital.com/abcd/health-insurance/health-and-wellness-plans/activ-one-max",
+   "note": "Single filing sold in variants such as NXT, MAX, MAX+, VYTL, VIP, VIP+ and SAVR; day-1 cover for listed chronic conditions."
+  },
+  {
+   "name": "Activ Health Platinum",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Individual / family",
+   "uin": "ADIHLIP24102V052324",
+   "url": "https://www.adityabirlahealthinsurance.com/health-insurance/active-health-enhanced-insurance",
+   "note": "Indemnity plan in Essential, Enhanced and Premiere variants with HealthReturns and a chronic management programme."
+  },
+  {
+   "name": "Activ Fit",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Individual / family",
+   "uin": "ADIHLIP22008V012223",
+   "url": "https://www.adityabirlacapital.com/abcd/health-insurance/health-and-wellness-plans/activ-fit-plus",
+   "note": "Plan for young, active adults in Plus and Preferred variants."
+  },
+  {
+   "name": "Activ Assure Diamond",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Individual / family",
+   "uin": "ADIHLIP23130V042223",
+   "note": "Comprehensive individual and family floater indemnity plan."
+  },
+  {
+   "name": "Activ Yuva",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Individual / family",
+   "uin": "ADIHLIP27047V012627",
+   "note": "Wellness-linked plan for adults aged 18-45, launched August 2026."
+  },
+  {
+   "name": "Activ Care",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Senior citizen",
+   "uin": "ADIHLIP21062V022021",
+   "url": "https://www.adityabirlacapital.com/healthinsurance/activ-care-premier",
+   "note": "Plan for people aged 55-80 in Standard, Classic and Premier variants."
+  },
+  {
+   "name": "Super Health Plus Top Up",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Super top-up",
+   "uin": "ADIHLIP21061V022021",
+   "url": "https://www.adityabirlacapital.com/abcd/health-insurance/top-up-plans",
+   "note": "Super top-up plan sold as Plan A and Plan B with different deductibles."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, Aditya Birla Health Insurance",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "ADIHLIP20170V011920",
+   "url": "https://www.adityabirlacapital.com/healthinsurance/arogya-sanjeevni",
+   "note": "IRDAI standard indemnity policy with uniform cover and terms."
+  },
+  {
+   "name": "Activ Secure - Critical Illness",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Critical illness",
+   "uin": "ADIHLIP18076V011718",
+   "url": "https://www.adityabirlacapital.com/healthinsurance/critical-illness-insurance",
+   "note": "Lump-sum cover for 20, 50 or 64 listed illnesses depending on plan."
+  },
+  {
+   "name": "Activ Secure - Cancer Secure",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Disease-specific",
+   "uin": "ADIHLIP18076V011718",
+   "note": "Cancer cover paying 50%, 100% or 150% of sum insured by stage at diagnosis."
+  },
+  {
+   "name": "Activ Secure - Hospital Cash",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "Hospital cash",
+   "uin": "ADIHLIP18076V011718",
+   "note": "Daily cash of Rs 500 to Rs 10,000 per hospitalisation day, doubled in ICU."
+  },
+  {
+   "name": "Global Health Secure",
+   "provider": "Aditya Birla Health Insurance",
+   "kind": "International cover",
+   "uin": "ADIHLIP21069V022021",
+   "url": "https://www.adityabirlacapital.com/healthinsurance/global-health-insurance",
+   "note": "Covers planned treatment abroad for listed major illnesses; requires a domestic indemnity policy."
+  },
+  {
+   "name": "ManipalCigna Sarvah",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MCIHLIP27040V032627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/manipalcigna-sarvah",
+   "note": "Comprehensive indemnity plan in Pratham, Uttam and Param variants; launched May 2026."
+  },
+  {
+   "name": "ManipalCigna Infinix",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MCIHLIP27044V012627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/manipalcigna-infinix",
+   "note": "Indemnity plan marketed with unlimited sum insured cover."
+  },
+  {
+   "name": "ManipalCigna ProHealth Prime",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MCIHLIP27045V032627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/prohealth-insurance",
+   "note": "Flagship indemnity plan with Protect, Advantage and Active variants."
+  },
+  {
+   "name": "ManipalCigna ProHealth Select",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MCIHLIP27046V062627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/prohealth-select",
+   "note": "Value indemnity plan with AYUSH treatment cover."
+  },
+  {
+   "name": "ManipalCigna Lifetime Health",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Individual / family",
+   "uin": "MCIHLIP27041V022627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/lifetime-health",
+   "note": "High sum insured plan with India and global cover options."
+  },
+  {
+   "name": "ManipalCigna Prime Senior",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Senior citizen",
+   "uin": "MCIHLIP27039V022627",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/senior-citizen-health-insurance",
+   "note": "Plan for people aged 55+, in Classic and Elite variants."
+  },
+  {
+   "name": "ManipalCigna Super Top Up",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Super top-up",
+   "uin": "MCIHLIP23022V032223",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/super-topup",
+   "note": "Super top-up cover that pays above a chosen deductible."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, ManipalCigna",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "MCIHLIP20156V011920",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/arogya-sanjeevani-policy",
+   "note": "IRDAI standard indemnity policy with uniform cover and terms."
+  },
+  {
+   "name": "ManipalCigna SecureHealth",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Special needs",
+   "uin": "MCIHLIP23194V012223",
+   "url": "https://www.manipalcigna.com/hospitalization-cover/health-insurance-for-disabled",
+   "note": "Policy for persons with disabilities, HIV/AIDS or mental illness."
+  },
+  {
+   "name": "ManipalCigna Lifestyle Protection - Critical Care",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Critical illness",
+   "uin": "MCIHLIP21125V022021",
+   "url": "https://www.manipalcigna.com/critical-illness-cover/lifestyle-protection-critical-care",
+   "note": "Lump-sum benefit on diagnosis of listed critical illnesses."
+  },
+  {
+   "name": "ManipalCigna ProHealth Cash",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Hospital cash",
+   "uin": "MCIHLIP21556V042021",
+   "url": "https://www.manipalcigna.com/daily-hospital-cash/prohealth-cash",
+   "note": "Fixed daily cash benefit for each day of hospitalisation."
+  },
+  {
+   "name": "ManipalCigna Health 360",
+   "provider": "ManipalCigna Health Insurance",
+   "kind": "Add-on rider",
+   "uin": "MCIHLIA27043V022627",
+   "url": "https://www.manipalcigna.com/riders/health-360",
+   "note": "Rider with OPD, Shield and other options attached to a base policy."
+  },
+  {
+   "name": "Health Protector (Individual Health Protector)",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Individual / family",
+   "uin": "IFFHLIP26041V062526",
+   "url": "https://www.iffcotokio.co.in/health-insurance/individual-health-insurance",
+   "note": "Individual sum insured hospitalisation indemnity policy; current version offered from May 2025."
+  },
+  {
+   "name": "Family Health Protector",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Individual / family",
+   "uin": "IFFHLIP26042V062526",
+   "url": "https://www.iffcotokio.co.in/health-insurance/family-health-insurance",
+   "note": "Family floater hospitalisation indemnity policy; current version offered from May 2025."
+  },
+  {
+   "name": "Essential Health Protector",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Individual / family",
+   "uin": "IFFHLIP25040V022425",
+   "url": "https://www.iffcotokio.co.in/health-insurance/essential-health-insurance",
+   "note": "Indemnity health plan with optional OPD, dental and maternity add-ons; launched Jan 2025."
+  },
+  {
+   "name": "Health Protector for Persons with Special Needs",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Special needs",
+   "uin": "IFFHLIP23205V012223",
+   "note": "Indemnity health cover designed for persons with disabilities/special needs."
+  },
+  {
+   "name": "Health Protector Assure",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Super top-up",
+   "uin": "IFFHLIP24131V012324",
+   "url": "https://www.iffcotokio.co.in/health-insurance/health-protector-assure",
+   "note": "Super top-up cover above an aggregate deductible; marketed incl. as 1 crore cover."
+  },
+  {
+   "name": "Health Protector Plus",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Super top-up",
+   "uin": "IFFHLIP21328V022021",
+   "note": "Top-up indemnity policy paying hospital expenses above a chosen threshold/deductible."
+  },
+  {
+   "name": "Critical Illness Benefit Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Critical illness",
+   "uin": "IFFHLIP19036V011920",
+   "url": "https://www.iffcotokio.co.in/health-insurance/critical-illness-insurance",
+   "note": "Lump-sum benefit on first diagnosis of a listed critical illness."
+  },
+  {
+   "name": "Swasthya Raksha Bima",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Individual / family",
+   "uin": "IFFHLIP21326V022021",
+   "url": "https://www.iffcotokio.co.in/health-insurance/swasthya-raksha-bima",
+   "note": "Affordable hospitalisation cover aimed at people in smaller cities and towns."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, IFFCO-Tokio General Insurance Company Limited",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "IFFHLIP20161V011920",
+   "url": "https://www.iffcotokio.co.in/health-insurance/arogya-sanjeevani-policy",
+   "note": "IRDAI-standardised basic indemnity health policy."
+  },
+  {
+   "name": "IFFCO-Tokio Hospital Daily Cash Policy",
+   "provider": "IFFCO Tokio General Insurance",
+   "kind": "Hospital cash",
+   "uin": "IFFHLIP21583V012021",
+   "note": "Fixed daily cash benefit for each day of hospitalisation."
+  },
+  {
+   "name": "National Mediclaim Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "NICHLIP25036V082425",
+   "note": "Indemnity hospitalisation policy for individuals and families."
+  },
+  {
+   "name": "New National Parivar Mediclaim Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "NICHLIP25037V022425",
+   "note": "Family floater indemnity health policy."
+  },
+  {
+   "name": "National Mediclaim Plus Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "NICHLIP25038V032425",
+   "note": "Indemnity health policy with higher sum insured options."
+  },
+  {
+   "name": "National Parivar Mediclaim Plus Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "NICHLIP21151V022021",
+   "note": "Family floater indemnity policy with higher sum insured options."
+  },
+  {
+   "name": "National Senior Citizen Mediclaim Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Senior citizen",
+   "uin": "NICHLIP25040V042425",
+   "note": "Indemnity health policy for people aged 60 and above."
+  },
+  {
+   "name": "National Super Top Up Mediclaim Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Super top-up",
+   "uin": "NICHLIP24154V042324",
+   "note": "Super top-up cover for aggregate claims above a chosen deductible."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy, National",
+   "provider": "National Insurance Co.",
+   "kind": "Arogya Sanjeevani",
+   "uin": "NICHLIP20174V011920",
+   "url": "https://nationalinsurance.nic.co.in/en/health-insurance/arogya-sanjeevani-policy-national",
+   "note": "IRDAI standard health policy."
+  },
+  {
+   "name": "Divyangjan Sanjeevani Policy, National",
+   "provider": "National Insurance Co.",
+   "kind": "Special needs",
+   "url": "https://nationalinsurance.nic.co.in/en/health-insurance/divyangjan-sanjeevani-policy-national",
+   "note": "Health cover for persons with disabilities."
+  },
+  {
+   "name": "Family Medicare Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "UIIHLIP26046V072526",
+   "url": "https://uiic.co.in/en/product/health/Family-Medicare-Policy",
+   "note": "Family floater indemnity health policy."
+  },
+  {
+   "name": "Individual Health Insurance Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "UIIHLIP26047V072526",
+   "url": "https://uiic.co.in/en/product/health/Individual-Health-Insurance-Policy",
+   "note": "Individual indemnity policy with Platinum, Gold and Senior Citizen plans."
+  },
+  {
+   "name": "Spectra Health Insurance Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "UIIHLIP26044V012526",
+   "note": "Indemnity cover from age 91 days with sum insured of Rs 2 lakh to 25 lakh."
+  },
+  {
+   "name": "Yuvaan Health Insurance Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Individual / family",
+   "uin": "UIIHLIP26050V032526",
+   "note": "Health policy aimed at young adults."
+  },
+  {
+   "name": "Super Top Up Medicare Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Super top-up",
+   "uin": "UIIHLIP26049V042526",
+   "note": "Super top-up cover for aggregate claims above a threshold."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Arogya Sanjeevani",
+   "uin": "UIIHLIP26045V032526",
+   "note": "IRDAI standard health policy."
+  },
+  {
+   "name": "Samaveshi Suraksha Health Insurance Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Special needs",
+   "uin": "UIIHLIP26048V022526",
+   "note": "Health cover for persons with disabilities and people living with HIV/AIDS."
+  },
+  {
+   "name": "UNI Criticare",
+   "provider": "United India Insurance Co.",
+   "kind": "Critical illness",
+   "url": "https://uiic.co.in/en/product/health/UNI-Criticare",
+   "note": "Lump-sum benefit on diagnosis of 11 listed critical illnesses."
+  },
+  {
+   "name": "ACKO Platinum Health Plan (Acko Health III)",
+   "provider": "Acko General Insurance",
+   "kind": "Individual / family",
+   "uin": "ACKHLIP27040V012627",
+   "url": "https://www.acko.com/health-insurance/",
+   "note": "Comprehensive indemnity plan on individual or floater basis."
+  },
+  {
+   "name": "ACKO Platinum Lite Health Plan (Acko Health III)",
+   "provider": "Acko General Insurance",
+   "kind": "Individual / family",
+   "uin": "ACKHLIP27040V012627",
+   "url": "https://www.acko.com/health-insurance/",
+   "note": "Lower-cost variant of the Platinum plan under Acko Health III."
+  },
+  {
+   "name": "ACKO Platinum Super Top-up Health Plan (Acko Health III)",
+   "provider": "Acko General Insurance",
+   "kind": "Super top-up",
+   "uin": "ACKHLIP27040V012627",
+   "url": "https://www.acko.com/health-insurance/super-top-up-health-insurance/",
+   "note": "Pays claims after cumulative expenses cross the chosen deductible."
+  },
+  {
+   "name": "Acko Specially Abled Health Cover",
+   "provider": "Acko General Insurance",
+   "kind": "Special needs",
+   "uin": "ACKHLIP23202V012223",
+   "note": "Health cover for persons with disabilities."
+  },
+  {
+   "name": "Arogya Sanjeevani Policy",
+   "provider": "Acko General Insurance",
+   "kind": "Arogya Sanjeevani",
+   "uin": "ACKHLIP20183V011920",
+   "note": "IRDAI standard health policy."
   }
  ]
 }

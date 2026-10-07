@@ -4,7 +4,65 @@
  "sources": [
   "Insurer official websites, product pages and policy-wording downloads",
   "IRDAI Annual Report 2024-25 (Statement 12: solvency)",
-  "Insurer public disclosures (NL-25 claims data)"
+  "Insurer public disclosures (NL-25 claims data)",
+  "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+  "https://www.icicidirect.com/mailcontent/car_package_policy_wording.pdf",
+  "https://www.hdfcergo.com/download/policy-wordings/motor",
+  "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/EVMotorAddOns-737446523799.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/gcv-package---policy-wording-766167832011.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/passenger-carrying-vehicle-package-policy---annual-824106648470.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/misc-d-package---policy-wording-857115678022.pdf",
+  "https://customer-portal-assets.hdfcergo.com/documents/5.PrivateCarTwoWheelerLiabilityOnlyPolicy-811092194728.pdf",
+  "https://www.newindia.co.in/motor-insurance/car-insurance",
+  "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+  "https://www.newindia.co.in/motor-insurance/commercial-vehicle-insurance",
+  "https://www.newindia.co.in/motor-insurance/standalone-own-damage-car-insurance",
+  "https://www.newindia.co.in/motor-insurance/own-damage-insurance-for-bikes",
+  "https://www.newindia.co.in/motor-insurance/pay-as-you-drive-policy-for-pc",
+  "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+  "https://www.investing.com/news/transcripts/earnings-call-transcript-icici-lombard-q1-2026-profit-falls-as-growth-holds-93CH-4793842",
+  "https://finance.yahoo.com/news/india-assurance-co-ltd-nse-170039254.html",
+  "https://www.cholainsurance.com/downloads",
+  "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+  "https://www.generalicentralinsurance.com/downloads/motor-insurance",
+  "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+  "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-motor-secure-od-private-car-policy-addon/policy-wording/standalone-motor-secure-od-private-car-policy-addon-wording.pdf",
+  "https://www.royalsundaram.in/assets/forms-central/Car-Insurance-Addons_4122024.pdf",
+  "https://www.royalsundaram.in/assets/forms-central/Bundled-Private-Car-Long-Term-Package-Policy-Policy-Wordings.pdf",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN102RP0004V02201617A0001V01202021_GEN4200.pdf",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN102RP0005V02201617A0005V01202021_GEN4203.pdf",
+  "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+  "https://cityunionbank.bank.in/royal-sundaram-two-wheeler-insurance",
+  "https://orientalinsurance.org.in/policies-related-document",
+  "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+  "https://uiic.co.in/en/downloadforms/downloads",
+  "https://web.archive.org/web/20260119025950id_/https://uiic.co.in/web/sites/default/files/Basic%20Documents/LIST-OF-PRODUCTS.pdf",
+  "https://web.archive.org/web/20260119020114id_/https://uiic.co.in/web/sites/default/files/Basic%20Documents/List%20of%20Retail%20Products_0.pdf",
+  "https://nationalinsurance.nic.co.in/en/motor-insurance",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0003V01201920A0004V01202122_GEN4490.pdf/9238090e-97f4-6fee-8817-f614eac6c7ee?version=1.1&t=1668232558422&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0003V01201819_GEN2680.pdf/d5074e0f-b9dd-098e-3440-b80a56bf0ded?version=1.1&t=1668752779924&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0004V01201920A0003V01202021_GEN4050.pdf/cd1e27c4-693a-581c-9af0-855eea161241?version=1.1&t=1668247058560&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0004V01201819_GEN2681.pdf/9d4574be-fa75-005d-4a17-017695bc39a3?version=1.1&t=1668752697763&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0006V01201819_GEN2683.pdf/7e487571-e27b-2827-8b96-6e94eec6d9df?version=1.1&t=1668751760367&download=true",
+  "https://irdai.gov.in/documents/37343/993134/675_Nil_Depreciation_Add_on_to_Private_Car_Package_Policy_GEN1839.pdf/9d3b3769-e4da-5042-5e6a-399aea5a243c?version=1.1&t=1668400387550&download=true",
+  "https://irdai.gov.in/documents/37343/993134/673_Nil_Depreciation_Add_on_to_Two_Wheeler_Package_Policy_GEN1837.pdf/fe05aff6-3a5e-a5ba-1efd-866ec1e40f89?version=1.1&t=1668400286149&download=true",
+  "https://irdai.gov.in/documents/37343/993134/669_Nil_Depreciation_Plus__PC_GEN1833.pdf/f59f72d9-bed9-fe5d-131d-69c7f9799a3d?version=1.1&t=1668400037371&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0004V01201819A0015V01201819_GEN2694.pdf/5eb715f8-cdd7-ffa3-1922-22aa8e796cc4?version=1.1&t=1668496711425&download=true",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN058RP0005V01201819A0020V01201819_GEN2690.pdf/59b9c9ad-cbe3-4610-3b60-90933d3a243d?version=1.1&t=1668750934880&download=true",
+  "https://www.insurancedekho.com/car-insurance/companies/national/add-on",
+  "https://irdai.gov.in/annual-reports",
+  "https://lifeinscouncil.org/component/IRDAI%20Annual%20Report%202024-25.pdf",
+  "https://kshema.co/policy-documents/product-list/2026/06October2026/product-list-05-10-2026.pdf",
+  "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+  "https://cdn.shriramgi.com/webassets/blogs/Withdrawn_Products__1__1738925610.pdf",
+  "https://www.shriramgi.com/download/policy-wordings",
+  "https://www.autocarpro.in/news/navi-expands-insurance-portfolio-with-entry-into-motor-insurance-131681",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN155RP0002V02201819.pdf",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN155RP0002V02201920.pdf",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN155RP0001V02201819.pdf",
+  "https://irdai.gov.in/documents/37343/993134/IRDAN155RP0001V02201718.pdf"
  ],
  "companies": [
   {
@@ -110,6 +168,88 @@
    "v": {
     "solvency": 1.97
    }
+  },
+  {
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.icicilombard.com",
+   "v": {
+    "solvency": 2.71
+   }
+  },
+  {
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.hdfcergo.com",
+   "v": {}
+  },
+  {
+   "provider": "The New India Assurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://www.newindia.co.in",
+   "v": {
+    "solvency": 1.8
+   }
+  },
+  {
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.cholainsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Private general insurer",
+   "url": "https://www.generalicentralinsurance.com",
+   "v": {}
+  },
+  {
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.royalsundaram.in",
+   "v": {}
+  },
+  {
+   "provider": "National Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://nationalinsurance.nic.co.in",
+   "v": {
+    "solvency": -0.67
+   }
+  },
+  {
+   "provider": "United India Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://uiic.co.in",
+   "v": {
+    "solvency": -0.65
+   }
+  },
+  {
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Public sector general insurer",
+   "url": "https://orientalinsurance.org.in",
+   "v": {
+    "solvency": -1.03
+   }
+  },
+  {
+   "provider": "Shriram General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.shriramgi.com/",
+   "v": {}
+  },
+  {
+   "provider": "Kshema General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://kshema.co/",
+   "v": {}
+  },
+  {
+   "provider": "Navi General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://navi.com/insurance",
+   "v": {}
   }
  ],
  "entries": [
@@ -1660,6 +1800,3587 @@
    "uin": "IRDAN141RP0006V01201920",
    "url": "https://www.rahejaqbe.com/motor-insurance/commercial-vehicles-insurance",
    "note": "TP liability-only cover for misc vehicles"
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN125RP0001V02201415",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Private Car Policy - Bundled",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN146RPMT0041V01202425",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "New car bundle: 1-year own damage with 3-year third-party."
+  },
+  {
+   "name": "Standalone Motor Own Damage Cover - Private Cars",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN125RP0001V02201920",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Own damage only, for cars with separate active third-party cover."
+  },
+  {
+   "name": "Two Wheeler Package Policy - Annual",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN125RP0009V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN125RP0009V01201819",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "New two-wheeler bundle: 1-year own damage with 5-year third-party."
+  },
+  {
+   "name": "Standalone Motor Own Damage Cover - Two Wheeler",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN125RP0002V01201920",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Own damage only, for two-wheelers with separate third-party cover."
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy (2/3 years)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN125RP0001V02201516",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Multi-year comprehensive two-wheeler cover for 2 or 3 years."
+  },
+  {
+   "name": "Liability Only Policy - Private Car (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0001V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual statutory third-party liability for private cars."
+  },
+  {
+   "name": "Liability Only Policy - Private Car (3 years)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0004V01201819",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "3-year third-party liability for new private cars."
+  },
+  {
+   "name": "Liability Only Policy - Two Wheeler (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0002V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual statutory third-party liability for two-wheelers."
+  },
+  {
+   "name": "Liability Only Policy - Two Wheeler (5 years)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0005V01201819",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "5-year third-party liability for new two-wheelers."
+  },
+  {
+   "name": "Liability Only Policy - Goods Carrying Vehicle (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0003V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual third-party liability for goods carrying vehicles."
+  },
+  {
+   "name": "Liability Only Policy - Passenger Carrying Vehicle (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0005V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual third-party liability for passenger carrying vehicles."
+  },
+  {
+   "name": "Liability Only Policy - Misc & Special Type of Vehicles (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0006V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual third-party liability for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Liability Only Policy - Trailers (Annual)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN125RP0004V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Annual third-party liability for trailers."
+  },
+  {
+   "name": "Goods Carrying Vehicle Package Policy - Annual",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN125RP0010V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Own damage plus third-party cover for goods carrying vehicles."
+  },
+  {
+   "name": "Passenger Carrying Vehicle Package Policy - Annual",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN125RP0012V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Own damage plus third-party cover for passenger carrying vehicles."
+  },
+  {
+   "name": "Miscellaneous & Special Type of Vehicles Package Policy - Annual",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN125RP0013V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Own damage plus third-party cover for misc and special type vehicles."
+  },
+  {
+   "name": "Motor Trade Road Risk Package Policy",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN125RP0014V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Package cover for motor traders' vehicles on road risk."
+  },
+  {
+   "name": "Motor Trade Road Transit Package Policy",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN125RP0015V01202122",
+   "url": "https://www.hdfcergo.com/download/policy-wordings/motor",
+   "note": "Package cover for motor traders' vehicles in road transit."
+  },
+  {
+   "name": "Loss of Use - Down Time Protection (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0068V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Multi Vehicle Discount (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0059V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Voluntary Deductible (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0062V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Emergency Assistance Cover (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0067V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "No Claim Bonus Protection (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0060V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "EMI Protector (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0066V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Return to Invoice (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0061V02202324",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Cost of Consumable Items (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0063V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Engine & Gear Box Protector (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0064V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Higher Protection and Removal Costs (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0065V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Zero Depreciation Claim (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0021V01201415",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Tyre Secure (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0027V01201920",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Loss of Personal Belongings (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0023V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Pay As You Drive - Kilometer Benefit (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0033V01202223",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "EMI Protector Plus (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0002V01202324",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Enhanced Roadside Assistance Cover (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0076V01202526",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Pay As You Drive - Mileage Based (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0078V01202526",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses (Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0081V01202526",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/private-car-Addons-879219051916.pdf",
+   "note": "Optional add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Battery, Charger and Accessories Cover (EV Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0026V01202324",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/EVMotorAddOns-737446523799.pdf",
+   "note": "Electric vehicle add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Electric Motor Cover (EV Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0027V01202324",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/EVMotorAddOns-737446523799.pdf",
+   "note": "Electric vehicle add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Zero Depreciation Claim for Battery, Charger and Accessories (EV Private Car)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0001V02201415/A0038V01202324",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/EVMotorAddOns-737446523799.pdf",
+   "note": "Electric vehicle add-on to the HDFC ERGO Private Car Package Policy."
+  },
+  {
+   "name": "Multi Vehicle Discount (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0049V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Voluntary Deductible (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0050V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "EMI Protector (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0051V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Emergency Assistance Cover (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0052V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "No Claim Bonus Protection (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0053V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Depreciation Waiver (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0054V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Return to Invoice (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0055V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Cash Allowance (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0056V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Drive Through Protection for Engine (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0057V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0058V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Zero Depreciation Claim (Two Wheeler)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0009V01202122/A0048V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/Twowheeler-Addons-671038810446.pdf",
+   "note": "Optional add-on to the HDFC ERGO Two Wheeler Package Policy."
+  },
+  {
+   "name": "Engine & Gearbox Protector (Passenger Carrying Vehicle)",
+   "provider": "HDFC ERGO General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN125RP0012V01202122/A0041V01202122",
+   "url": "https://customer-portal-assets.hdfcergo.com/documents/passenger-carrying-vehicle-package-policy---annual-824106648470.pdf",
+   "note": "Engine and gearbox damage add-on for the PCV package policy."
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0042V01100001",
+   "url": "https://www.newindia.co.in/motor-insurance/car-insurance",
+   "note": "Annual comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Bundled Motor Policy for Private Cars",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0023V02201819",
+   "url": "https://www.newindia.co.in/motor-insurance/car-insurance",
+   "note": "New car bundle: 1-year own damage with 3-year third-party."
+  },
+  {
+   "name": "Long Term Motor Private Car Package Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RPMT0125V01202425",
+   "url": "https://www.newindia.co.in/motor-insurance/car-insurance",
+   "note": "Multi-year comprehensive cover for private cars."
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Policy for Private Cars",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0001V01201920",
+   "url": "https://www.newindia.co.in/motor-insurance/standalone-own-damage-car-insurance",
+   "note": "Own damage only, for cars with separate active third-party cover."
+  },
+  {
+   "name": "Pay As You Drive - Private Car Annual Package Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0040V01202223",
+   "url": "https://www.newindia.co.in/motor-insurance/pay-as-you-drive-policy-for-pc",
+   "note": "Usage-based private car package with own damage premium linked to distance driven."
+  },
+  {
+   "name": "Pay As You Drive - Private Car Bundled Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0041V01202223",
+   "url": "https://www.newindia.co.in/motor-insurance/pay-as-you-drive-policy-for-pc",
+   "note": "Usage-based bundled policy for new private cars."
+  },
+  {
+   "name": "Pay As You Drive - Private Car Standalone Own Damage Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN190RP0042V01202223",
+   "url": "https://www.newindia.co.in/motor-insurance/pay-as-you-drive-policy-for-pc",
+   "note": "Usage-based standalone own damage cover for private cars."
+  },
+  {
+   "name": "Private Car Liability Only Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0001V01200203",
+   "url": "https://www.newindia.co.in/motor-insurance/car-insurance",
+   "note": "Annual statutory third-party liability for private cars."
+  },
+  {
+   "name": "Three Years Long Term Stand Alone Motor Third Party Policy for Private Cars",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0019V01201819",
+   "url": "https://www.newindia.co.in/motor-insurance/car-insurance",
+   "note": "3-year third-party liability for new private cars."
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN190RP0043V01100001",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "Annual comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy (2 & 3 years)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN190RP0003V01201415",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "Multi-year comprehensive two-wheeler cover for 2 or 3 years."
+  },
+  {
+   "name": "Bundled Motor Policy for Two Wheelers",
+   "provider": "The New India Assurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN190RP0022V02201819",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "New two-wheeler bundle: 1-year own damage with 5-year third-party."
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Policy for Two Wheelers",
+   "provider": "The New India Assurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN190RP0002V01201920",
+   "url": "https://www.newindia.co.in/motor-insurance/own-damage-insurance-for-bikes",
+   "note": "Own damage only, for two-wheelers with separate third-party cover."
+  },
+  {
+   "name": "Two Wheeler Liability Only Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0002V01200203",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "Annual statutory third-party liability for two-wheelers."
+  },
+  {
+   "name": "Long Term Stand Alone Third Party Two Wheeler Policy (up to 3 years)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0001V01201415",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "Multi-year third-party liability for two-wheelers up to 3 years."
+  },
+  {
+   "name": "Five Year Long Term Stand Alone Third Party Two Wheeler Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0018V01201819",
+   "url": "https://www.newindia.co.in/motor-insurance/two-wheeler-insurance",
+   "note": "5-year third-party liability for new two-wheelers."
+  },
+  {
+   "name": "Commercial Vehicle Package Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN190RP0044V01100001",
+   "url": "https://www.newindia.co.in/motor-insurance/commercial-vehicle-insurance",
+   "note": "Own damage plus third-party cover for goods, passenger and misc commercial vehicles."
+  },
+  {
+   "name": "Commercial Vehicle Liability Only Policy",
+   "provider": "The New India Assurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN190RP0004V01200203",
+   "url": "https://www.newindia.co.in/motor-insurance/commercial-vehicle-insurance",
+   "note": "Statutory third-party liability for commercial vehicles."
+  },
+  {
+   "name": "Nil Depreciation (Private Car)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Add-on",
+   "url": "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+   "note": "Named optional add-on listed in the private car package CIS."
+  },
+  {
+   "name": "Return to Invoice (Private Car)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Add-on",
+   "url": "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+   "note": "Named optional add-on listed in the private car package CIS."
+  },
+  {
+   "name": "Engine Protect (Private Car)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Add-on",
+   "url": "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+   "note": "Named optional add-on listed in the private car package CIS."
+  },
+  {
+   "name": "Consumable Items (Private Car)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Add-on",
+   "url": "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+   "note": "Named optional add-on listed in the private car package CIS."
+  },
+  {
+   "name": "Tyre and Alloy Cover (Private Car)",
+   "provider": "The New India Assurance Co.",
+   "kind": "Add-on",
+   "url": "https://www.newindia.co.in/assets/docs/know-more/motor/Private%20Car%20package-%20CIS.pdf",
+   "note": "Named optional add-on listed in the private car package CIS."
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN115RP0017V02200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Annual comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Bundled Private Car Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN115RP0021V03202122",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "New car bundle: 1-year own damage with 3-year third-party."
+  },
+  {
+   "name": "Standalone Own Damage Private Car Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN115RP0001V03201920",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage only, for cars with separate active third-party cover."
+  },
+  {
+   "name": "2 Years Standalone Own Damage Private Car Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN115RPMT0005V02202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "2-year standalone own damage cover for private cars."
+  },
+  {
+   "name": "3 Years Private Car Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN115RPMT0003V02202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "3-year comprehensive cover for private cars."
+  },
+  {
+   "name": "Private Car Liability Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0012V02200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Annual statutory third-party liability for private cars."
+  },
+  {
+   "name": "3 Years Private Car Liability Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0002V02201819",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "3-year third-party liability for new private cars."
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RP0015V06201415",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Annual comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Bundled Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RP0019V02202122",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "New two-wheeler bundle: 1-year own damage with 5-year third-party."
+  },
+  {
+   "name": "5 Years Two Wheeler Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RPMT0004V02202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "5-year comprehensive cover for two-wheelers."
+  },
+  {
+   "name": "Stand-Alone Own Damage Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RP0002V02201920",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage only, for two-wheelers with separate third-party cover."
+  },
+  {
+   "name": "2 Years Standalone Own Damage Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RPMT0006V01202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "2-year standalone own damage cover for two-wheelers."
+  },
+  {
+   "name": "3 Years Standalone Own Damage Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RPMT0007V01202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "3-year standalone own damage cover for two-wheelers."
+  },
+  {
+   "name": "4 Years Standalone Own Damage Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RPMT0008V01202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "4-year standalone own damage cover for two-wheelers."
+  },
+  {
+   "name": "5 Years Standalone Own Damage Two Wheeler Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN115RPMT0018V01202627",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "5-year standalone own damage cover for two-wheelers."
+  },
+  {
+   "name": "Two Wheeler Vehicle Liability Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0016V02200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Annual statutory third-party liability for two-wheelers."
+  },
+  {
+   "name": "Standalone Third Party Long Term Two Wheeler Insurance Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0016V02201415",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Multi-year third-party liability for two-wheelers."
+  },
+  {
+   "name": "5 Years Two Wheeler Liability Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0003V02201819",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "5-year third-party liability for new two-wheelers."
+  },
+  {
+   "name": "Goods Carrying Vehicle Liability Only Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0013V01200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Statutory third-party liability for goods carrying vehicles."
+  },
+  {
+   "name": "Passenger Carrying Vehicle Liability Only Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0015V01200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Statutory third-party liability for passenger carrying vehicles."
+  },
+  {
+   "name": "Miscellaneous Vehicle Liability Only Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0014V01200102",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Statutory third-party liability for miscellaneous vehicles."
+  },
+  {
+   "name": "Trailer Liability Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN115RP0003V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Third-party liability for trailers."
+  },
+  {
+   "name": "Goods Carrying Vehicle Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN115RP0013V01200203",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage plus third-party cover for goods carrying vehicles."
+  },
+  {
+   "name": "Passenger Carrying Vehicle Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN115RP0014V01200203",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage plus third-party cover for passenger carrying vehicles."
+  },
+  {
+   "name": "Miscellaneous Vehicle Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN115RP0015V01200203",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage plus third-party cover for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Trailer Risk Package Policy",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN115RP0006V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Own damage plus liability package for trailers."
+  },
+  {
+   "name": "Zero Depreciation (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V01200102/A0368V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Consumable Items (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0216V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Garage Cash (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0256V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "NCB Protect (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0294V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Return to Invoice (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0329V02200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Engine Protect Plus (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0015V01201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Road Side Assistance (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0027V02201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Key Protect (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0019V01201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Loss of Personal Belongings (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0021V02201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Tyre Protect (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0001V01201819",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "EMI Protect (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0001V01202021",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0002V01202122",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Battery Protect Cover (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0005V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Motor Floater (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0009V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Telematics (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0017V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Smart Saver (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0048V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Smart Saver Plus (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0002V01202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "IL Smart Assist (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0097V03202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "War Risk Cover (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0130V01202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Motor Shayak (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0159V01202627",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Cyber Risk Cover (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0182V01202627",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "IDV Booster (Private Car)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0017V02200102/A0187V01202627",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Private Car Package Policy."
+  },
+  {
+   "name": "Zero Depreciation (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V01200607/A0020V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "NCB Protect (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V01200607/A0019V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Garage Cash (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V01200607/A0018V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Road Side Assistance (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V01200607/A0002V02201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Return to Invoice (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V01200607/A0017V02200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Consumables Cover (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0003V01202324",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Driving Accessories Cover (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0004V01202324",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Engine Protect Plus (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0005V01202324",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Key Protect (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0006V01202324",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Tyre and Wheel Rim Protect (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0007V01202324",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "War Risk Cover (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0123V01202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "IL Smart Assist (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V05201415/A0104V02202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V04201415/A0007V01202122",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Motor Floater (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V04201415/A0010V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Telematics (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V04201415/A0018V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Battery Protect Cover (Two Wheeler)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0015V04201415/A0047V01202223",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Two Wheeler Package Policy."
+  },
+  {
+   "name": "Zero Depreciation (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0365V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Consumable Items (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0213V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Garage Cash (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0253V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "NCB Protect (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0291V01200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Road Side Assistance (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0024V01201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Engine Protect Plus (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0012V01201213",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Return to Invoice (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0326V02200910",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "EMI Protect (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0120V01202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Battery Protect (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0094V01202425",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "IL Smart Assist (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0114V01202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "War Risk Cover (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0137V01202526",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses (Goods Carrying Vehicle)",
+   "provider": "ICICI Lombard General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN115RP0013V01200203/A0001V01202122",
+   "url": "https://www.icicilombard.com/docs/default-source/downloads/website-list-of-products.pdf",
+   "note": "Active add-on to the ICICI Lombard Goods Carrying Vehicle Package Policy."
+  },
+  {
+   "name": "Motor Private Car Package Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN123RP0001V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Annual comprehensive (own damage plus third-party) package cover for private cars."
+  },
+  {
+   "name": "Motor Private Car Policy Bundled",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN123RP0018V01201819",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Bundled new-car policy: 1-year own damage with 3-year third-party cover."
+  },
+  {
+   "name": "Chola Long Term Private Car Package Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN123RPMT0030V02202425",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Multi-year comprehensive package policy for private cars, offered from 2025."
+  },
+  {
+   "name": "Chola Standalone Own Damage Policy for Private Car",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN123RPMT0002V02201920",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Own-damage-only cover for cars that already hold a separate third-party policy."
+  },
+  {
+   "name": "Motor Two-Wheelers Package Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN123RP0002V02200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Annual comprehensive package cover for two-wheelers."
+  },
+  {
+   "name": "Motor Two-Wheelers Policy Bundled",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN123RP0017V01201819",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Bundled new two-wheeler policy: 1-year own damage with 5-year third-party cover."
+  },
+  {
+   "name": "Chola Long Term Two Wheeler Package Policy for Five Years",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN123RPMT0141V01202425",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Five-year comprehensive package policy for two-wheelers."
+  },
+  {
+   "name": "Chola Long Term Motor Two Wheeler Package Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN123RP0003V02202122",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Long-term multi-year comprehensive package cover for two-wheelers."
+  },
+  {
+   "name": "Chola Standalone Own Damage Policy for Two Wheeler",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN123RP0003V01201920",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Own-damage-only cover for two-wheelers with a separate third-party policy."
+  },
+  {
+   "name": "Motor Private Car Liability Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0012V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Annual statutory third-party liability-only policy for private cars."
+  },
+  {
+   "name": "Motor Private Car Liability Policy for Three Years",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0014V01201819",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Three-year third-party liability-only policy for new private cars."
+  },
+  {
+   "name": "Motor Two Wheeler Liability Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0011V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Annual statutory third-party liability-only policy for two-wheelers."
+  },
+  {
+   "name": "Motor Two Wheeler Liability Policy for Five Years",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0013V01201819",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Five-year third-party liability-only policy for new two-wheelers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Liability Policy - For Goods Carrying Vehicles",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0013V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Third-party liability-only policy for goods carrying commercial vehicles."
+  },
+  {
+   "name": "Motor Commercial Vehicle Liability Policy - For Passenger Carrying Vehicles upto 6",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0015V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Third-party liability-only policy for passenger vehicles carrying up to 6 passengers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Liability Policy - For Passenger Carrying Vehicles more than 6",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0016V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Third-party liability-only policy for passenger vehicles carrying more than 6 passengers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Liability Policy - For Miscellaneous and Special Type of Vehicles",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0017V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Third-party liability-only policy for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Motor Commercial Vehicle Liability Policy - For Trailer",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN123RP0014V01200203",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Third-party liability-only policy for trailers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Package Policy - For Goods Carrying Vehicles",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0003V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package (own damage plus liability) cover for goods carrying vehicles."
+  },
+  {
+   "name": "Motor Commercial Vehicle Package Policy - For Passenger Carrying Vehicles upto 6",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0005V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package cover for passenger carrying vehicles (taxis etc.) seating up to 6 passengers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Package Policy - For Passenger Carrying Vehicles more than 6",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0006V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package cover for buses and passenger vehicles carrying more than 6 passengers."
+  },
+  {
+   "name": "Motor Commercial Vehicle Package Policy - Miscellaneous and Special Type of Vehicles",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0007V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package cover for miscellaneous and special type vehicles such as cranes and construction equipment."
+  },
+  {
+   "name": "Motor Commercial Vehicle Package Policy - For Trailer",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0004V03100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package cover for trailers."
+  },
+  {
+   "name": "Chola Tractor Seamless Package Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0020V01201213",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Package policy for tractors."
+  },
+  {
+   "name": "Motor Trade - Road Risks Only Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0009V02100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Motor trade policy for dealers covering vehicles on road risks."
+  },
+  {
+   "name": "Motor Trade - Internal Risk Only Policy",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN123RP0010V02100001",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Motor trade policy for dealers covering vehicles within premises."
+  },
+  {
+   "name": "Chola Compulsory Personal Accident (Owner-Driver) under Motor Insurance Policies",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0086V03202425",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Standalone compulsory personal accident cover for vehicle owner-drivers."
+  },
+  {
+   "name": "Chola Motor Warranty Insurance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01202324",
+   "url": "https://www.cholainsurance.com/downloads",
+   "note": "Extended warranty insurance for mechanical and electrical breakdown of vehicles."
+  },
+  {
+   "name": "Waiver of Depreciation (zero depreciation)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0003V02200910",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Consumables Plus Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0007V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Hydrostatic Lock Plus Cover (engine protect)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0010V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Vehicle Replacement Advantage Cover (return to invoice)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0011V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "No Claim Bonus Protection",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0001V01201213",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Key Replacement Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0025V01201415",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Loss of Key Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0006V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Tyre Protect",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V02100001/A0001V01201920",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Rim Protect",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0030V01202223",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Battery Protect",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0013V01202223",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "EMI Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0008V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Conveyance Allowance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0004V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Daily Cash Allowance",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0001V01200910",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Personal Belongings [Inside the Vehicle]",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0004V01200910",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Loss of Laptop and Mobile Phone",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V02100001/A0008V01202021",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Wrong Fuelling",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0023V01201415",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Pay As You Use",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0007V01202223",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Pay How You Drive",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0050V01202425",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Sports Equipment Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0024V01202223",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Personal Accident Protector",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0027V01202223",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Emergency Medical Expenses",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0155V01202526",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Chola Value Added Services - Private Car (roadside assistance)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V01200203/A0006V02202425",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Chola Advanced Value Added Services",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0001V03100001/A0151V01202526",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Private Car Package Policy."
+  },
+  {
+   "name": "Full Depreciation Waiver Cover (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V01200203/A0013V02201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Return to Invoice Cover (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V01200203/A0014V01201617",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Consumables Plus (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V02200203/A0013V01202021",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Hydrostatic Lock Cover (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V01200203/A0031V01201415",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Helmet Cover",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V02200203/A0007V01202021",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Battery Protect (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V02200203/A0026V01202324",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Cover for Charging Equipment of Electric Vehicle (two-wheeler)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V02200203/A0004V01202324",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Chola Value Added Services - Two Wheeler",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0002V01200203/A0007V01201718",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Two-Wheelers Package Policy."
+  },
+  {
+   "name": "Full Depreciation Waiver Cover (goods carrying vehicles)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0003V03100001/A0005V01201516",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Commercial Vehicle Package Policy - For Goods Carrying Vehicles."
+  },
+  {
+   "name": "Loss of Income Cover (goods carrying vehicles)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0003V03100001/A0004V01201516",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Commercial Vehicle Package Policy - For Goods Carrying Vehicles."
+  },
+  {
+   "name": "New Vehicle Replacement Cover (goods carrying vehicles)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0003V03100001/A0003V01201516",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Commercial Vehicle Package Policy - For Goods Carrying Vehicles."
+  },
+  {
+   "name": "Engine Seizure Plus (passenger carrying vehicles upto 6)",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0005V01200203/A0001V01201718",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Commercial Vehicle Package Policy - For Passenger Carrying Vehicles upto 6."
+  },
+  {
+   "name": "Chola Value Added Services - Commercial Vehicles",
+   "provider": "Cholamandalam MS General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN123RP0003V03100001/A0010V02202425",
+   "url": "https://www.cholainsurance.com/documents/20121/o/List%20of%20Products%20-%20Motor.pdf/998e7a18-baf4-f61d-d13a-239d2075ec82",
+   "note": "Named add-on cover filed under the Motor Commercial Vehicle Package Policy - For Goods Carrying Vehicles."
+  },
+  {
+   "name": "Motor Protect Private Car Package Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Car",
+   "uin": "IRDAN132RPMT0001V06201213",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy/policy-wording/motor-protect-private-car-package-policy-policy-wording.pdf",
+   "note": "Annual comprehensive cover: own damage, third-party liability and owner-driver PA."
+  },
+  {
+   "name": "Motor Protect Private Car Policy - Bundled",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Car",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-policy-bundled/policy-wording/motor-protect-private-car-policy-bundled-policy-wording.pdf",
+   "note": "Bundled new-car cover: 1-year own damage with 3-year third-party liability."
+  },
+  {
+   "name": "Long Term Private Car Package Policy (3 Years)",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Car",
+   "uin": "IRDAN132RPMT0133V01202425",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/long-term-private-car-package-policy-3-years/policy-wording/long-term-private-car-package-policy-3-years-policy-wording.pdf",
+   "note": "Three-year comprehensive package policy for private cars."
+  },
+  {
+   "name": "Private Car Package Smart Garage Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Car",
+   "uin": "IRDAN132RPMT0155V01202526",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/private-car-package-smart-garage-policy/policy-wording/private-car-package-smart-garage-policy-policy-wording.pdf",
+   "note": "Private car package policy variant linked to the insurer's Smart Garage network."
+  },
+  {
+   "name": "Standalone Motor Secure OD Private Car Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Car",
+   "uin": "IRDAN132RPMT0001V02201920",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-motor-secure-od-private-car-policy/policy-wording/standalone-motor-secure-od-private-car-policy-wording.pdf",
+   "note": "Standalone own-damage cover for cars with a separate active third-party policy."
+  },
+  {
+   "name": "Motor Protect Two Wheeler Package Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN132RPMT0016V03200708",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-two-wheeler-package-policy/policy-wording/motor-protect-two-wheeler-package-policy-policy-wording.pdf",
+   "note": "Annual comprehensive cover for two-wheelers."
+  },
+  {
+   "name": "Motor Protect Two Wheeler Policy - Bundled",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN132RPMT0007V03201819",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-two-wheeler-policy-bundled/policy-wording/motor-protect-two-wheeler-policy-bundled-policy-wording.pdf",
+   "note": "Bundled new two-wheeler cover: 1-year own damage with 5-year third-party liability."
+  },
+  {
+   "name": "Long Term Two Wheeler Package Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN132RPMT0002V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/long-term-two-wheeler-package-policy/policy-wording/long-term-two-wheeler-package-policy-policy-wording.pdf",
+   "note": "Multi-year comprehensive package policy for two-wheelers."
+  },
+  {
+   "name": "Standalone Motor Protect OD Two Wheeler Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Two-wheeler",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-motor-protect-od-two-wheeler-policy/policy-wording/standalone-motor-protect-od-two-wheeler-policy-policy-wording.pdf",
+   "note": "Standalone own-damage cover for two-wheelers with a separate active third-party policy."
+  },
+  {
+   "name": "Motor Protect Private Car Liability Only Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "uin": "IRDAN132RPMT0017V01200708",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-liability-only/policy-wording/motor-protect-private-car-liability-only-policy-wording.pdf",
+   "note": "Statutory third-party liability-only cover for private cars."
+  },
+  {
+   "name": "Third Party Long Term Private Car Insurance Policy (3 Years)",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "uin": "IRDAN132RPMT0003V01201819",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/third-party-long-term-private-car-insurance-policy-3-years/policy-wording/third-party-long-term-private-car-insurance-policy-3-years-policy-wording.pdf",
+   "note": "Three-year third-party liability cover for new private cars."
+  },
+  {
+   "name": "Motor Protect Two Wheeler Liability Only Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "uin": "IRDAN132RPMT0019V02200708",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-two-wheeler-liability-only/policy-wording/motor-protect-two-wheeler-liability-only-policy-wording.pdf",
+   "note": "Statutory third-party liability-only cover for two-wheelers."
+  },
+  {
+   "name": "Third Party Long Term Two Wheeler Insurance Policy (5 Years)",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "uin": "IRDAN132RPMT0002V02201819",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/third-party-long-term-two-wheeler-insurance-policy-5-years/policy-wording/third-party-long-term-two-wheeler-insurance-policy-5-years-policy-wording.pdf",
+   "note": "Five-year third-party liability cover for new two-wheelers."
+  },
+  {
+   "name": "Standalone Third Party Long Term Two Wheeler Insurance Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-third-party-long-term-two-wheeler-insurance-policy/policy-wording/standalone-third-party-long-term-two-wheeler-insurance-policy-policy-wording.pdf",
+   "note": "Standalone long-term third-party liability cover for two-wheelers."
+  },
+  {
+   "name": "Motor Protect Commercial Vehicle Liability Only Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Third party",
+   "uin": "IRDAN132RPMT0018V01200708",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-commercial-vehicle-liability-only/policy-wording/motor-protect-commercial-vehicle-liability-only-policy-wording.pdf",
+   "note": "Statutory third-party liability-only cover for commercial vehicles."
+  },
+  {
+   "name": "Motor Protect Commercial Vehicle Package Policy",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN132RPMT0015V03200708",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-commercial-vehicle-package-policy/policy-wording/motor-protect-commercial-vehicle-package-policy-policy-wording.pdf",
+   "note": "Package cover for goods carrying, passenger carrying and miscellaneous/special vehicles."
+  },
+  {
+   "name": "Standalone Compulsory Personal Accident Cover for Owner-Driver",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0060V02201819",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-compulsory-personal-accident-cover-for-owner-driver/policy-wording/standalone-motor-compulsory-personal-accident-cover-for-owner-driver-policy-wording.pdf",
+   "note": "Standalone compulsory PA cover for the owner-driver of a motor vehicle."
+  },
+  {
+   "name": "Additional Towing Charges",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0041V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers towing charges above the base policy limit. (Private Car Package)"
+  },
+  {
+   "name": "Consumable Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0039V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Pays for consumables such as oils, nuts and bolts used in claim repairs. (Private Car Package)"
+  },
+  {
+   "name": "Increased Property Damage Liability Benefit",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0040V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Raises third-party property damage liability limit. (Private Car Package)"
+  },
+  {
+   "name": "Loss of Driving Licence / Registration Certificate",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0042V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers costs of replacing a lost driving licence or RC. (Private Car Package)"
+  },
+  {
+   "name": "Loan Protector",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0043V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Pays loan EMIs on the insured vehicle after a covered event. (Private Car Package)"
+  },
+  {
+   "name": "Hospital Cash Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0044V02201718",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Daily cash for hospitalisation following a motor accident. (Private Car Package)"
+  },
+  {
+   "name": "Return to Invoice",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0001V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Pays the gap between IDV and invoice value on total loss or theft. (Private Car Package)"
+  },
+  {
+   "name": "Protection of NCB",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0002V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Retains no claim bonus after a claim, within stated limits. (Private Car Package)"
+  },
+  {
+   "name": "Tyre Protection",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0003V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers accidental damage to tyres and tubes. (Private Car Package)"
+  },
+  {
+   "name": "Roadside Assistance",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0004V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Emergency roadside help such as towing, fuel and battery jump-start. (Private Car Package)"
+  },
+  {
+   "name": "Daily Cash Benefit / Inconvenience Allowance",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0005V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Daily allowance while the car is under covered repair. (Private Car Package)"
+  },
+  {
+   "name": "Loss of Personal Belongings",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0006V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers personal belongings lost from the car. (Private Car Package)"
+  },
+  {
+   "name": "Zero Depreciation Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0007V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Waives depreciation on parts in own-damage claims. (Private Car Package)"
+  },
+  {
+   "name": "Personal Accident Plan",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0008V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Additional personal accident cover for occupants. (Private Car Package)"
+  },
+  {
+   "name": "Engine & Gear Box Protector",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0009V02202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers engine and gearbox damage, e.g. from water ingress. (Private Car Package)"
+  },
+  {
+   "name": "Wall Charger and Associated Components / Accessories",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0010V01202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers EV wall charger and its components. (Private Car Package)"
+  },
+  {
+   "name": "App Protection Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0011V01202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Add-on for connected-car app related cover. (Private Car Package)"
+  },
+  {
+   "name": "Battery Guard",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0012V01202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers EV/hybrid battery damage. (Private Car Package)"
+  },
+  {
+   "name": "Key & Locks Replacement Cover",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0013V01202324",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers replacement of lost or damaged keys and locks. (Private Car Package)"
+  },
+  {
+   "name": "Pay As You Go",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0153V01202526",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Usage-based own-damage premium option. (Private Car Package)"
+  },
+  {
+   "name": "Emergency Medical Expenses",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0177V01202526",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers emergency medical expenses after a motor accident. (Private Car Package)"
+  },
+  {
+   "name": "Rim Protect",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0182V01202627",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers accidental damage to wheel rims. (Private Car Package)"
+  },
+  {
+   "name": "Tyre & Rim Protect",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V06201213/A0187V01202627",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/motor-protect-private-car-package-policy-addon/policy-wording/motor-protect-private-car-package-policy-add-on-wordings.pdf",
+   "note": "Covers accidental damage to tyres and rims. (Private Car Package)"
+  },
+  {
+   "name": "Pay As You Go (Standalone OD Private Car)",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V02201920/A0154V02202526",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-motor-secure-od-private-car-policy-addon/policy-wording/standalone-motor-secure-od-private-car-policy-addon-wording.pdf",
+   "note": "Usage-based option for the standalone own-damage car policy."
+  },
+  {
+   "name": "Tyre & Rim Protect (Standalone OD Private Car)",
+   "provider": "Generali Central Insurance (formerly Future Generali)",
+   "kind": "Add-on",
+   "uin": "IRDAN132RPMT0001V02201920/A0188V01202627",
+   "url": "https://www.generalicentralinsurance.com/downloads/motor-insurance/standalone-motor-secure-od-private-car-policy-addon/policy-wording/standalone-motor-secure-od-private-car-policy-addon-wording.pdf",
+   "note": "Tyre and rim damage cover for the standalone own-damage car policy."
+  },
+  {
+   "name": "Car Shield Private Car Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN102RP0004V02201617",
+   "url": "https://www.royalsundaram.in/car-insurance",
+   "note": "Annual comprehensive package policy for private cars."
+  },
+  {
+   "name": "3 Years Private Car Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Car",
+   "url": "https://www.royalsundaram.in/assets/forms-central/3-Year-Private-Car-Package-Policy.pdf",
+   "note": "Three-year long-term comprehensive policy for private cars."
+  },
+  {
+   "name": "Bundled Private Car Long Term Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN102RP0005V02201819",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Bundled-Private-Car-Long-Term-Package-Policy-Policy-Wordings.pdf",
+   "note": "New-car bundled cover: own damage with 3-year third-party liability."
+  },
+  {
+   "name": "Stand-Alone Motor Own Damage Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN102RP0001V01201920",
+   "url": "https://www.royalsundaram.in/car-insurance",
+   "note": "Own-damage-only cover for vehicles with a separate third-party policy."
+  },
+  {
+   "name": "Two-Wheeler Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Annual_Two_Wheeler_Package_Policy.pdf",
+   "note": "Annual comprehensive package policy for two-wheelers."
+  },
+  {
+   "name": "Two-Wheeler Long Term Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-two-wheeler-insurance",
+   "note": "Multi-year comprehensive package policy for two-wheelers."
+  },
+  {
+   "name": "3 Year Private Car Liability Only Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Third party",
+   "url": "https://www.royalsundaram.in/assets/3-year-private-car-liability-only-policy-wordings-revjul2021.pdf",
+   "note": "Three-year third-party liability-only cover for new private cars."
+  },
+  {
+   "name": "Goods Carrying Vehicle Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN102RP0005V02201617",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Package cover for goods carrying commercial vehicles."
+  },
+  {
+   "name": "Passenger Carrying Vehicle Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN102RP0007V02201617",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Package cover for passenger carrying commercial vehicles."
+  },
+  {
+   "name": "Miscellaneous Vehicle Package Policy",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN102RP0006V02201617",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Package cover for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Vehicle Replacement Value Plus (Car Shield)",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN102RP0004V02201617/A0001V01202021",
+   "url": "https://irdai.gov.in/documents/37343/993134/IRDAN102RP0004V02201617A0001V01202021_GEN4200.pdf/d27ad49c-7901-16fe-bc54-0c5f9354ca13",
+   "note": "Replacement-value cover add-on for the Car Shield package policy."
+  },
+  {
+   "name": "Vehicle Replacement Value Plus (Bundled Long Term)",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN102RP0005V01201819/A0002V01202021",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Car-Insurance-Addons_4122024.pdf",
+   "note": "Replacement-value cover add-on for the bundled long-term car policy."
+  },
+  {
+   "name": "Loss of Income Cover (Goods Carrying Vehicle)",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN102RP0005V02201617/A0005V01202021",
+   "url": "https://irdai.gov.in/documents/37343/993134/IRDAN102RP0005V02201617A0005V01202021_GEN4203.pdf/35fec7a3-8e90-7871-b454-70f8a0b9f569",
+   "note": "Pays daily income loss while a goods vehicle is under covered repair."
+  },
+  {
+   "name": "Depreciation Waiver",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Car-Insurance-Addons_4122024.pdf",
+   "note": "Waives depreciation on replaced parts in own-damage claims."
+  },
+  {
+   "name": "Nil Depreciation",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Car-Insurance-Addons_4122024.pdf",
+   "note": "Zero-depreciation style cover for private cars."
+  },
+  {
+   "name": "Hybrid Electric Battery Cover",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Car-Insurance-Addons_4122024.pdf",
+   "note": "Covers damage to hybrid/electric vehicle battery."
+  },
+  {
+   "name": "Engine Protector",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://www.royalsundaram.in/assets/forms-central/Two_Wheeler_Addons_prospectus.pdf",
+   "note": "Covers engine damage such as from water ingress (two-wheeler)."
+  },
+  {
+   "name": "Windshield Glass Cover",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Covers windshield glass replacement for commercial vehicles."
+  },
+  {
+   "name": "EMI Protector",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Pays vehicle loan EMIs during covered repair period."
+  },
+  {
+   "name": "Enhanced Personal Accident Cover",
+   "provider": "Royal Sundaram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cityunionbank.bank.in/royal-sundaram-commercial-vehicle-insurance",
+   "note": "Higher personal accident sum insured for owner-driver/occupants."
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN058RP0034V01100001",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Comprehensive one-year own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Long Term Private Car Bundled Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN058RP0006V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "New car cover with 1-year own damage and 3-year third-party liability."
+  },
+  {
+   "name": "Long Term Private Car Package Policy for 3 years",
+   "provider": "National Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN058RP0004V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Three-year package cover (own damage and third party) for private cars."
+  },
+  {
+   "name": "National Stand Alone Private Car Own Damage Cover",
+   "provider": "National Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN058RP0004V01201920",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Own damage-only cover for cars that already have a separate third-party policy."
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN058RP0036V01100001",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Comprehensive one-year own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Long Term Two Wheeler Bundled Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN058RP0005V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "New two-wheeler cover with 1-year own damage and 5-year third-party liability."
+  },
+  {
+   "name": "Long Term Two Wheelers Package Policy for 5 years",
+   "provider": "National Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN058RP0003V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Five-year package cover (own damage and third party) for two-wheelers."
+  },
+  {
+   "name": "National Stand Alone Two Wheeler Own Damage Cover",
+   "provider": "National Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN058RP0003V01201920",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Own damage-only cover for two-wheelers with a separate third-party policy."
+  },
+  {
+   "name": "Private Car Liability Only Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Third party",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Statutory third-party liability-only cover for private cars."
+  },
+  {
+   "name": "Two Wheeler Liability Only Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Third party",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Statutory third-party liability-only cover for two-wheelers."
+  },
+  {
+   "name": "Commercial Vehicle Liability Only Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Third party",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/commercial-vehicle",
+   "note": "Statutory third-party liability-only cover for commercial vehicles."
+  },
+  {
+   "name": "Commercial Vehicle Package Policy",
+   "provider": "National Insurance Co.",
+   "kind": "Commercial vehicle",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/commercial-vehicle",
+   "note": "Own damage plus third-party cover for goods carrying, passenger carrying and miscellaneous vehicles."
+  },
+  {
+   "name": "Nil Depreciation (Add-on to Private Car Package Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://irdai.gov.in/documents/37343/993134/675_Nil_Depreciation_Add_on_to_Private_Car_Package_Policy_GEN1839.pdf/9d3b3769-e4da-5042-5e6a-399aea5a243c?version=1.1&t=1668400387550&download=true",
+   "note": "Pays claims without deducting depreciation on replaced parts."
+  },
+  {
+   "name": "Nil Depreciation Plus (Add-on to Private Car Package Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://irdai.gov.in/documents/37343/993134/669_Nil_Depreciation_Plus__PC_GEN1833.pdf/f59f72d9-bed9-fe5d-131d-69c7f9799a3d?version=1.1&t=1668400037371&download=true",
+   "note": "Enhanced nil depreciation cover for private cars."
+  },
+  {
+   "name": "Nil Depreciation (Add-on to Two Wheeler Package Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://irdai.gov.in/documents/37343/993134/673_Nil_Depreciation_Add_on_to_Two_Wheeler_Package_Policy_GEN1837.pdf/fe05aff6-3a5e-a5ba-1efd-866ec1e40f89?version=1.1&t=1668400286149&download=true",
+   "note": "Pays two-wheeler claims without deducting depreciation on replaced parts."
+  },
+  {
+   "name": "Lock & Key Protect Add-on (Private Car Package Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0034V01100001/A0001V01202021",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Covers replacement of lost or damaged car keys and locks."
+  },
+  {
+   "name": "Lock & Key Protect Add-on (Long Term Private Car Bundled Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0006V01201819/A0002V01202021",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Key and lock replacement cover for the bundled new-car policy."
+  },
+  {
+   "name": "Lock & Key Protect Add-on (Stand Alone Private Car OD Cover)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0004V01201920/A0003V01202021",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Key and lock replacement cover for the standalone own damage car policy."
+  },
+  {
+   "name": "Invoice Protect (Add-on to Long Term Private Car Package Policy for 3 years)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0004V01201819/A0015V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Pays the gap to invoice value on total loss or theft."
+  },
+  {
+   "name": "Engine Protect (Add-on to Long Term Two Wheeler Bundled Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0005V01201819/A0020V01201819",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Covers engine damage from water ingress or oil leakage."
+  },
+  {
+   "name": "EMI Protect Add-on (Two Wheeler Package Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0036V01100001/A0006V01202122",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "Pays loan EMIs while the insured two-wheeler is under accident repair."
+  },
+  {
+   "name": "EMI Protect Add-on (Long Term Two Wheeler Bundled Policy)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0005V01201819/A0005V01202122",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "EMI cover during accident repairs for the bundled new two-wheeler policy."
+  },
+  {
+   "name": "EMI Protect Add-on (Stand Alone Two Wheeler OD Cover)",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN058RP0003V01201920/A0004V01202122",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/two-wheeler",
+   "note": "EMI cover during accident repairs for the standalone own damage two-wheeler policy."
+  },
+  {
+   "name": "NCB Protect",
+   "provider": "National Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://nationalinsurance.nic.co.in/en/motor-insurance/private-car",
+   "note": "Keeps the no claim bonus after a claim; listed by aggregators as a National car add-on."
+  },
+  {
+   "name": "Package Policy - Private Car",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RP0047V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Annual comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Private Car - 1 Year Own Damage Cover Bundled with 3 Years Liability Cover",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RP0012V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Bundled new car policy: 1-year own damage with 3-year third-party liability."
+  },
+  {
+   "name": "Long Term Package Policy - Private Cars - 3 Years",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RP0010V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Three-year package policy covering own damage and third-party liability for private cars."
+  },
+  {
+   "name": "Standalone Motor OD (Private Car)",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RP0001V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Own damage only cover for private cars that already have a separate third-party policy."
+  },
+  {
+   "name": "Pay As You Drive - Private Car Package Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RPMT0004V01202425",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Usage-based (kilometre-linked) private car package policy, launched 2025."
+  },
+  {
+   "name": "Pay As You Drive - Private Car Bundled Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RPMT0005V01202425",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Usage-based private car bundled policy (1-year OD with 3-year liability), launched 2025."
+  },
+  {
+   "name": "Pay As You Drive - Private Car SAOD Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN545RPMT0006V01202425",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Usage-based standalone own damage policy for private cars, launched 2025."
+  },
+  {
+   "name": "Two Wheeler Package Policy",
+   "provider": "United India Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN545RP0222V01200708",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Annual comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Two Wheeler - 1 Year Own Damage Cover Bundled with 5 Years Liability Cover",
+   "provider": "United India Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN545RP0011V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Bundled new two-wheeler policy: 1-year own damage with 5-year third-party liability."
+  },
+  {
+   "name": "Long Term Package Policy - Two Wheeler - 5 Years",
+   "provider": "United India Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN545RP0009V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Five-year package policy covering own damage and third-party liability for two-wheelers."
+  },
+  {
+   "name": "Standalone Motor OD (Two Wheeler)",
+   "provider": "United India Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN545RP0002V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Own damage only cover for two-wheelers that already have a separate third-party policy."
+  },
+  {
+   "name": "Liability Policy - Private Car (Motor TP)",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0043V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Mandatory annual third-party liability only cover for private cars."
+  },
+  {
+   "name": "Liability Policy - Private Car - 3 Years",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0008V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Three-year third-party liability only cover for new private cars."
+  },
+  {
+   "name": "Motor Two Wheeler Liability Only",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0046V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Annual third-party liability only cover for two-wheelers."
+  },
+  {
+   "name": "Liability Policy - Two Wheeler - 5 Years",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0007V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Five-year third-party liability only cover for new two-wheelers."
+  },
+  {
+   "name": "Liability Policy - Commercial Vehicle",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0044V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Third-party liability only cover for goods and passenger carrying commercial vehicles."
+  },
+  {
+   "name": "Liability Policy - Miscellaneous Type of Vehicles",
+   "provider": "United India Insurance Co.",
+   "kind": "Third party",
+   "uin": "IRDAN545RP0045V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Third-party liability only cover for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Package Policy - Commercial Vehicle",
+   "provider": "United India Insurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN545RP0048V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Comprehensive own damage plus third-party cover for goods and passenger carrying commercial vehicles."
+  },
+  {
+   "name": "Package Policy - Miscellaneous Type of Vehicles",
+   "provider": "United India Insurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN545RP0049V01199900",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Comprehensive cover for miscellaneous and special type vehicles such as tractors and construction equipment."
+  },
+  {
+   "name": "Compulsory Personal Accident (Owner-Driver) under Motor Insurance Policies",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0013V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Mandatory owner-driver personal accident cover, sold with or separately from motor policies."
+  },
+  {
+   "name": "Nil Depreciation Without Excess",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0001V01201415",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Pays parts claims without depreciation deduction; UIN shown is for private car package, separate UINs for TW, CV, bundled and SAOD."
+  },
+  {
+   "name": "Engine & Gear Box Protection Cover - Standard",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0222V01200708/A0002V01201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers engine and gearbox damage from water ingress or oil leakage; standard variant (private car UIN shown)."
+  },
+  {
+   "name": "Engine & Gear Box Protection Cover - Platinum",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0222V01200708/A0005V02201819",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Higher engine and gearbox protection variant (private car UIN shown); also for TW, PCV and SAOD."
+  },
+  {
+   "name": "Return to Invoice",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0001V01201920/A0004V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Pays gap between insured value and invoice price on total loss or theft (private car SAOD UIN shown)."
+  },
+  {
+   "name": "Consumables",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0038V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers consumables such as oils, nuts and bolts in a claim (private car package UIN shown)."
+  },
+  {
+   "name": "Loss of Keys",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0039V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers replacement of lost or stolen vehicle keys and locks (private car package UIN shown)."
+  },
+  {
+   "name": "Tyre and Rim Protector",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0040V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers accidental damage to tyres and rims (private car package UIN shown)."
+  },
+  {
+   "name": "Road Side Assistance",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0002V01202122",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "24x7 breakdown help such as towing, battery jump-start and flat tyre (private car package UIN shown)."
+  },
+  {
+   "name": "No Claim Bonus (NCB) Protect",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0005V01202324",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Retains no claim bonus after a claim (private car package UIN shown)."
+  },
+  {
+   "name": "Road Tax & Registration Charges (RTR)",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0002V01202324",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Reimburses road tax and registration charges on total loss (private car package UIN shown)."
+  },
+  {
+   "name": "EMI Protect",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0002V02202021",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Pays vehicle loan EMIs while the vehicle is under repair after an accident (private car package UIN shown)."
+  },
+  {
+   "name": "EV Protect",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0002V01202425",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers electric vehicle battery, charger and motor risks (private car package UIN shown)."
+  },
+  {
+   "name": "Courtesy Car",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0001V01201920/A0005V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Provides a substitute car or allowance while the insured car is under repair (private car SAOD UIN shown)."
+  },
+  {
+   "name": "Medical Expenses",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0001V01201920/A0006V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers medical expenses of occupants after an accident (private car SAOD UIN shown)."
+  },
+  {
+   "name": "Personal Effects",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0001V01201920/A0007V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers personal belongings lost or damaged in the vehicle (private car SAOD UIN shown)."
+  },
+  {
+   "name": "Platinum PA for Occupants",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0041V01201920",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Enhanced personal accident cover for car occupants (private car package UIN shown)."
+  },
+  {
+   "name": "Pet Cover",
+   "provider": "United India Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN545RP0047V01199900/A0009V01202021",
+   "url": "https://uiic.co.in/en/downloadforms/downloads",
+   "note": "Covers pets travelling in the insured car against accidental injury (private car package UIN shown)."
+  },
+  {
+   "name": "Private Car Package Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN556RP0077V01200506",
+   "url": "https://orientalinsurance.org.in/policy/motor/PVT_CAR",
+   "note": "Comprehensive one-year cover for own damage plus third-party liability for private cars."
+  },
+  {
+   "name": "Private Car Policy - Bundled",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN556RP0005V02201819",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "For new cars: 1-year own damage with 3-year third-party liability."
+  },
+  {
+   "name": "Stand-alone Own Damage Policy - Private Car",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Car",
+   "uin": "IRDAN556RP0001V01201920",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "Own-damage-only cover for cars that already hold a valid third-party policy."
+  },
+  {
+   "name": "Motorised Two Wheeler Package Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN556RP0078V01200506",
+   "url": "https://orientalinsurance.org.in/policy/motor/TWO_WHEELER",
+   "note": "Comprehensive one-year own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Two Wheeler Policy - Bundled",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN556RP0006V02201819",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "For new two-wheelers: 1-year own damage with 5-year third-party liability."
+  },
+  {
+   "name": "Stand-alone Own Damage Policy - Motorised Two Wheeler",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN556RP0002V01201920",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "Own-damage-only cover for two-wheelers with a separate valid third-party policy."
+  },
+  {
+   "name": "Private Car Liability Only Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Third party",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "Statutory third-party liability-only cover for private cars."
+  },
+  {
+   "name": "Two Wheeler Liability Only Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Third party",
+   "url": "https://orientalinsurance.org.in/policy/motor/TWO_WHEELER",
+   "note": "Statutory third-party liability-only cover for two-wheelers."
+  },
+  {
+   "name": "Commercial Vehicle Liability Only Policy (GCCV/PCCV)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Third party",
+   "url": "https://orientalinsurance.org.in/policies-related-document",
+   "note": "Third-party liability-only cover for goods and passenger carrying commercial vehicles."
+  },
+  {
+   "name": "GCCV Package Policy (Goods Carrying Commercial Vehicle)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN556RP0079V01200506",
+   "url": "https://orientalinsurance.org.in/policy/motor/GCCV",
+   "note": "Package cover for goods carrying commercial vehicles."
+  },
+  {
+   "name": "PCCV Package Policy (Passenger Carrying Commercial Vehicle)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN556RP0081V01200506",
+   "url": "https://orientalinsurance.org.in/Policy/motor/PCCV",
+   "note": "Package cover for passenger carrying commercial vehicles such as taxis and buses."
+  },
+  {
+   "name": "Miscellaneous Class D Package Policy",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN556RP0082V01200506",
+   "url": "https://orientalinsurance.org.in/policy/motor/MISCELLANEOUS",
+   "note": "Package cover for miscellaneous and special type vehicles (Class D)."
+  },
+  {
+   "name": "Nil Depreciation Add-on (Private Car Package)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0077V01200506/A0026V02202122",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "No depreciation deducted on parts in partial-loss claims; also filed for bundled, SAOD, two-wheeler, PCCV, GCCV and Misc D policies."
+  },
+  {
+   "name": "Nil Depreciation Add-on (Two Wheeler Package)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0078V01200506/A0025V02202122",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_7b29d07b9d.pdf",
+   "note": "Zero-depreciation cover for two-wheeler package policies."
+  },
+  {
+   "name": "Engine Protect Cover (Private Car)",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0001V01201920/A0006V01201920",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Covers engine/gearbox damage from water ingress or oil leakage; UIN shown is the SAOD version, also sold with package and bundled car policies."
+  },
+  {
+   "name": "Consumables Cover",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0077V01200506/A0021V01201819",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Reimburses consumables like oils, nuts and bolts used in accident repairs; cars up to 5 years old, also for PCCV/GCCV."
+  },
+  {
+   "name": "Return to Invoice",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0001V01201920/A0004V01201920",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Pays the gap between IDV and invoice value on total loss or theft; UIN shown is the private car SAOD version."
+  },
+  {
+   "name": "Key Replacement Add-on",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0077V01200506/A0020V01201819",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Covers replacement of lost or damaged vehicle keys and locks; also for two-wheelers and PCCV."
+  },
+  {
+   "name": "Tyre and Rim Protect",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0077V01200506/A0003V01202021",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Covers accidental damage to tyres and rims; also for two-wheelers and PCCV."
+  },
+  {
+   "name": "EMI Protector",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0077V01200506/A0004V01202122",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Pays loan EMIs while the vehicle is under repair after an accident; also for commercial vehicles."
+  },
+  {
+   "name": "Personal Effects Cover",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "uin": "IRDAN556RP0001V01201920/A0005V01201920",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Reimburses loss of personal belongings in the car up to Rs 5,000 or Rs 10,000 with a valid OD claim."
+  },
+  {
+   "name": "Alternative Car Benefit",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Daily allowance of Rs 400 or Rs 650 while the insured car is under repair or stolen."
+  },
+  {
+   "name": "Additional Towing Charges",
+   "provider": "The Oriental Insurance Co.",
+   "kind": "Add-on",
+   "url": "https://oicl-cms-media.s3.ap-south-1.amazonaws.com/Add_on_cover_744d675aea.pdf",
+   "note": "Raises the towing charge limit above the standard policy limit for all vehicle types."
+  },
+  {
+   "name": "Kshema Two-Wheeler Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0007V01202425",
+   "url": "https://kshema.co/kshema-two-wheeler-liability-only-policy/",
+   "note": "Annual third-party liability cover for two-wheelers."
+  },
+  {
+   "name": "Kshema Two Wheeler Long Term Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0008V01202425",
+   "url": "https://kshema.co/kshema-two-wheeler-long-term-liability-only-policy/",
+   "note": "Five-year third-party liability cover for new two-wheelers."
+  },
+  {
+   "name": "Kshema Private Car Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0009V01202425",
+   "url": "https://kshema.co/kshema-private-car-liability-only-policy/",
+   "note": "Annual third-party liability cover for private cars."
+  },
+  {
+   "name": "Kshema Private Car Long Term Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0010V01202425",
+   "url": "https://kshema.co/kshema-private-car-long-term-liability-only-policy/",
+   "note": "Three-year third-party liability cover for new private cars."
+  },
+  {
+   "name": "Kshema Passenger Carrying Vehicle Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0011V01202425",
+   "url": "https://kshema.co/kshema-passenger-carrying-vehicle-liability-only-policy/",
+   "note": "Third-party liability cover for passenger carrying commercial vehicles."
+  },
+  {
+   "name": "Kshema Goods Carrying Vehicle Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0012V01202425",
+   "url": "https://kshema.co/kshema-goods-carrying-vehicle-liability/",
+   "note": "Third-party liability cover for goods carrying commercial vehicles."
+  },
+  {
+   "name": "Kshema Miscellaneous Vehicles Liability Only Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN162RPMT0013V01202425",
+   "url": "https://kshema.co/kshema-miscellaneous-vehicle-liability/",
+   "note": "Third-party liability cover for miscellaneous and special type vehicles."
+  },
+  {
+   "name": "Kshema Compulsory Personal Accident Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN162RPMT0014V01202425",
+   "url": "https://kshema.co/kshema-compulsory-personal-accident-policy/",
+   "note": "Standalone compulsory personal accident cover for owner-drivers of motor vehicles."
+  },
+  {
+   "name": "Kshema Passenger Carrying Vehicle Package Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN162RPMT0024V01202627",
+   "url": "https://kshema.co/kshema-passenger-carrying-vehicle-package-policy/",
+   "note": "Own damage plus third-party cover for passenger carrying commercial vehicles."
+  },
+  {
+   "name": "Kshema Two-Wheeler Bundled Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN162RPMT0026V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-bundled-policy/",
+   "note": "New two-wheeler cover with 1-year own damage and 5-year third-party liability."
+  },
+  {
+   "name": "Kshema Two-Wheeler Package Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN162RPMT0027V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Kshema Two-Wheeler SAOD Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN162RPMT0028V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-standalone-own-damage-policy/",
+   "note": "Standalone own damage cover for two-wheelers with separate third-party policy."
+  },
+  {
+   "name": "Kshema Private Car Bundled Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN162RPMT0032V01202627",
+   "url": "https://kshema.co/kshema-private-car-bundled-policy/",
+   "note": "New car cover with 1-year own damage and 3-year third-party liability."
+  },
+  {
+   "name": "Kshema Private Car Stand-Alone Own Damage Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN162RPMT0033V01202627",
+   "url": "https://kshema.co/kshema-private-car-saod-policy/",
+   "note": "Standalone own damage cover for private cars with separate third-party policy."
+  },
+  {
+   "name": "Kshema Private Car Package Policy",
+   "provider": "Kshema General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN162RPMT0034V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Kshema Nil Depreciation (Two-Wheeler)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0027V01202627/A0001V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Claims paid without depreciation on replaced parts. Also on two-wheeler bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Nil Depreciation (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0001V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Claims paid without depreciation on replaced parts. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema No Claim Bonus Protection (Two-Wheeler)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0027V01202627/A0002V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Retains no claim bonus after an eligible claim. Also on two-wheeler bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema No Claim Bonus Protection (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0002V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Retains no claim bonus after an eligible claim. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Engine Protection Cover (Two-Wheeler)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0027V01202627/A0003V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Covers engine damage from water ingress or oil leakage. Also on two-wheeler bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Engine Protection Cover (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0003V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Covers engine damage from water ingress or oil leakage. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Return to Invoice (Two-Wheeler)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0027V01202627/A0004V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Pays gap between insured value and invoice price on total loss or theft. Also on two-wheeler bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Return to Invoice (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0004V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Pays gap between insured value and invoice price on total loss or theft. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Roadside Assistance Cover (Two-Wheeler)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0027V01202627/A0005V01202627",
+   "url": "https://kshema.co/kshema-two-wheeler-package-policy/",
+   "note": "Breakdown help such as towing, battery jump-start and flat tyre support. Also on two-wheeler bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Roadside Assistance Cover (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0005V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Breakdown help such as towing, battery jump-start and flat tyre support. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Consumables Cover (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0006V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Covers consumables like oil, nuts and bolts used in repairs. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Additional Towing Charges (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0007V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Extra towing cost cover beyond the base policy limit. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Kshema Keys & Locks Replacement Cover (Private Car)",
+   "provider": "Kshema General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN162RPMT0034V01202627/A0008V01202627",
+   "url": "https://kshema.co/kshema-private-car-package-policy/",
+   "note": "Covers replacement of lost or damaged vehicle keys and locks. Also on private car bundled and SAOD policies."
+  },
+  {
+   "name": "Shriram Motor Private Car Package Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN137RP0016V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Annual comprehensive own damage plus third-party cover for private cars."
+  },
+  {
+   "name": "Shriram Bundled Motor Private Car Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN137RP0006V01201819",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "New car cover with 1-year own damage and 3-year third-party liability."
+  },
+  {
+   "name": "Shriram 3 Years Motor Private Car Package Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN137RPMT0003V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Three-year long-term comprehensive package policy for private cars."
+  },
+  {
+   "name": "Shriram Stand-alone Motor OD (Private Car) Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN137RP0002V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Standalone own damage cover for private cars with separate third-party policy."
+  },
+  {
+   "name": "Shriram Motor 2 Wheeler Package Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN137RP0017V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Annual comprehensive own damage plus third-party cover for two-wheelers."
+  },
+  {
+   "name": "Shriram Bundled Motor 2 Wheeler Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "New two-wheeler cover with 1-year own damage and 5-year third-party liability."
+  },
+  {
+   "name": "Shriram 5 Years Motor 2 Wheeler Package Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN137RPMT0004V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Five-year long-term comprehensive package policy for two-wheelers."
+  },
+  {
+   "name": "Shriram Stand-alone Motor OD (Two Wheeler) Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN137RP0003V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Standalone own damage cover for two-wheelers with separate third-party policy."
+  },
+  {
+   "name": "Shriram Motor Private Car Liability Only Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN137RP0020V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Annual third-party liability cover for private cars."
+  },
+  {
+   "name": "Shriram Motor 2 Wheeler Liability Only Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN137RP0021V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Annual third-party liability cover for two-wheelers."
+  },
+  {
+   "name": "Shriram Motor Commercial Vehicle Liability Only Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN137RP0022V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Third-party liability cover for goods, passenger and miscellaneous commercial vehicles."
+  },
+  {
+   "name": "Shriram 3 Years Motor Private Car Liability Only Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Third party",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Three-year third-party liability cover for new private cars."
+  },
+  {
+   "name": "Shriram 5 Years Motor 2 Wheeler Liability Only Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Third party",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Five-year third-party liability cover for new two-wheelers."
+  },
+  {
+   "name": "Shriram Motor Commercial Vehicle Package Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Commercial vehicle",
+   "uin": "IRDAN137RP0018V01200809",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Own damage plus third-party cover for goods carrying, passenger carrying and miscellaneous vehicles."
+  },
+  {
+   "name": "Shriram Compulsory Personal Accident (Owner-Driver) Policy",
+   "provider": "Shriram General Insurance",
+   "kind": "Car",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Standalone compulsory personal accident cover for owner-drivers under motor policies."
+  },
+  {
+   "name": "Shriram Shri Motor Protection - Private Car Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Bundled add-on pack for private car package policy."
+  },
+  {
+   "name": "Shriram Shri Motor Protection - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0006V02202223",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Bundled add-on pack for private car standalone own damage policy."
+  },
+  {
+   "name": "Shriram Tyre Protect - Private Car Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0016V01200809/A0002V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Covers tyre and tube damage on private car package policy; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram Driving License & Registration Certificate Cover - Private Car Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0016V01200809/A0001V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Covers cost of replacing lost driving licence and RC; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram Multi Cover Pack - Private Car Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0016V01200809/A0003V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Multi-benefit add-on pack for private car package policy."
+  },
+  {
+   "name": "Shriram Road Side Assistance (OEM) - Private Car Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0016V01200809/A0003V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "OEM roadside assistance for private cars; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram Depreciation Waiver - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0004V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation cover on private car standalone own damage policy."
+  },
+  {
+   "name": "Shriram Invoice Return - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0006V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Return to invoice cover on private car standalone own damage policy."
+  },
+  {
+   "name": "Shriram Key Replacement - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0010V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Key replacement cover on private car standalone own damage policy."
+  },
+  {
+   "name": "Shriram Daily Expense Reimbursement - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0005V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Daily allowance while the car is under repair, on SAOD policy."
+  },
+  {
+   "name": "Shriram Personal Belongings - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0008V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Covers personal belongings lost from the car, on SAOD policy."
+  },
+  {
+   "name": "Shriram Repair of Glass, Fiber, Plastic & Rubber Parts - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0007V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Repair of such parts without affecting NCB, on SAOD policy."
+  },
+  {
+   "name": "Shriram Multi Car Benefit - Stand-alone OD Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0002V02201920/A0011V02201920",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Multi car benefit on private car standalone own damage policy."
+  },
+  {
+   "name": "Shriram Bundled Invoice Return - Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0006V01201819/A0019V02201819",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Return to invoice cover on bundled new private car policy."
+  },
+  {
+   "name": "Shriram Shri Pay As You Drive - Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0006V01201819/A0029V03202324",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Usage-based own damage add-on for private cars; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram 3 Years Depreciation Waiver",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0010V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 3 Years Invoice Return",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0008V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Return to invoice for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 3 Years Key Replacement",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0004V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Key replacement for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 3 Years Engine Protection",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0011V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Engine protection for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 3 Years Road Side Assistance",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0012V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Roadside assistance for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 3 Years Consumable",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0003V01202425/A0013V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Consumables cover for the 3-year private car package policy."
+  },
+  {
+   "name": "Shriram 5 Years Nil Depreciation - Two-Wheeler Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RPMT0004V01202425/A0003V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation for the 5-year two-wheeler package policy."
+  },
+  {
+   "name": "Shriram Return To Invoice - Commercial Vehicle Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0001V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Return to invoice cover for commercial vehicles."
+  },
+  {
+   "name": "Shriram Consumable - Commercial Vehicle Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0002V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Consumables cover for commercial vehicles."
+  },
+  {
+   "name": "Shriram Tyre Protect - Commercial Vehicle Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0005V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Tyre and tube damage cover for commercial vehicles."
+  },
+  {
+   "name": "Shriram Jack Cover - Commercial Vehicle Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0006V01202526",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Jack cover add-on for commercial vehicle package policy."
+  },
+  {
+   "name": "Shriram Engine Protector - Commercial Vehicle Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0001V01202627",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Engine protection cover for commercial vehicles."
+  },
+  {
+   "name": "Shriram Nil Depreciation - Passenger Carrying Commercial Vehicle (except Taxi/Maxi)",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0003V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation for passenger carrying commercial vehicles other than taxis."
+  },
+  {
+   "name": "Shriram Additional Towing Reimbursement - Commercial Vehicle",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0004V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Extra towing cost reimbursement for commercial vehicles."
+  },
+  {
+   "name": "Shriram Road Side Assistance (OEM) - Commercial Vehicle",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0018V01200809/A0005V01202425",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "OEM roadside assistance for commercial vehicles."
+  },
+  {
+   "name": "Shriram Engine Protector - Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Engine protection for private cars; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram Consumables - Private Car",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Consumables cover for private cars; also on bundled and SAOD car policies."
+  },
+  {
+   "name": "Shriram Road Side Assistance - Two Wheeler",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Roadside assistance for two-wheeler package, bundled and SAOD policies."
+  },
+  {
+   "name": "Shriram Engine Protector - Two Wheeler",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Engine protection for two-wheeler package, bundled and SAOD policies."
+  },
+  {
+   "name": "Shriram Return To Invoice - Two Wheeler",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Return to invoice for two-wheeler package, bundled and SAOD policies."
+  },
+  {
+   "name": "Shriram Nil Depreciation - Two Wheeler Package",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation for the annual two-wheeler package policy."
+  },
+  {
+   "name": "Shriram Nil Depreciation - Goods Carrying Commercial Vehicle",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Zero depreciation for goods carrying commercial vehicle package policy."
+  },
+  {
+   "name": "Shriram Private Car Package Policy Add-ons",
+   "provider": "Shriram General Insurance",
+   "kind": "Add-on",
+   "uin": "IRDAN137RP0016V01200809/A0006V02200910",
+   "url": "https://cdn.shriramgi.com/webassets/download/agent/3f360008-dc57-4e61-9b9a-8a910c1d8c91_SGI_Products_AUG_24.pdf",
+   "note": "Filed set of optional add-on covers for the private car package policy."
+  },
+  {
+   "name": "Navi Private Car Package Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN155RP0002V02201819",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Comprehensive own damage plus third-party cover for private cars, bought on the Navi app."
+  },
+  {
+   "name": "Navi Private Car Own-Damage Only Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Car",
+   "uin": "IRDAN155RP0002V02201920",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Standalone own damage cover for private cars with a separate third-party policy."
+  },
+  {
+   "name": "Navi Two-Wheeler Package Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Two-wheeler",
+   "uin": "IRDAN155RP0001V02201819",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Comprehensive own damage plus third-party cover for two-wheelers, bought on the Navi app."
+  },
+  {
+   "name": "Navi Two-Wheeler Own-Damage Only Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Two-wheeler",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Standalone own damage cover for two-wheelers with a separate third-party policy."
+  },
+  {
+   "name": "Navi Private Car Liability Only Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Third party",
+   "uin": "IRDAN155RP0001V02201718",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Third-party liability only cover for private cars."
+  },
+  {
+   "name": "Navi Two-Wheeler Liability Only Insurance",
+   "provider": "Navi General Insurance",
+   "kind": "Third party",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Third-party liability only cover for two-wheelers."
+  },
+  {
+   "name": "Navi Zero Depreciation Add-on",
+   "provider": "Navi General Insurance",
+   "kind": "Add-on",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Pays claims without deducting depreciation on replaced parts."
+  },
+  {
+   "name": "Navi Engine Protection Add-on",
+   "provider": "Navi General Insurance",
+   "kind": "Add-on",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Covers engine damage from water ingress or oil leakage."
+  },
+  {
+   "name": "Navi No Claim Bonus Protection Add-on",
+   "provider": "Navi General Insurance",
+   "kind": "Add-on",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Keeps the no claim bonus after a claim."
+  },
+  {
+   "name": "Navi Roadside Assistance Add-on",
+   "provider": "Navi General Insurance",
+   "kind": "Add-on",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Breakdown help such as towing, battery jump-start and flat tyre support."
+  },
+  {
+   "name": "Navi Consumables Cover Add-on",
+   "provider": "Navi General Insurance",
+   "kind": "Add-on",
+   "url": "https://navi.com/insurance/motor",
+   "note": "Pays for consumables like oil, nuts and bolts used in repairs."
   }
  ]
 }
