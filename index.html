@@ -82,6 +82,7 @@
   .utbl tr{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--gw-line)}
   .utbl td{border:0;padding:0}
   .utbl td.c-act{grid-column:1/-1;margin-top:6px}.utbl .act{justify-content:flex-start}
+  .utbl td.c-seen::before{content:"Last active: ";color:var(--gw-muted,#888)}.utbl td.c-seen br{display:none}.utbl td.c-seen .muted::before{content:" · "}
 }
 [hidden]{display:none!important}
 </style>
@@ -202,7 +203,7 @@
       '<div class="gw-err" id="n-err" role="alert"></div>' +
       '<div style="display:flex;gap:8px"><button class="gw-btn" style="flex:1" type="submit" id="n-save">Give access</button><button class="gw-btn ghost" type="button" id="n-cancel" hidden>Cancel</button></div></form></section>' +
       '<section class="gw-card"><div class="admin-head" style="margin:0 0 10px"><h2 style="margin:0">Users</h2><input class="gw-input" id="u-q" placeholder="Search mobile, name or ID" style="max-width:240px;height:38px;font-size:14px"></div>' +
-      '<div class="gw-tbl-wrap"><table class="gw-tbl utbl"><thead><tr><th>User</th><th>Device ID</th><th>Valid till</th><th>Status</th><th class="r">Actions</th></tr></thead><tbody id="u-body"><tr><td colspan="5" class="empty"><span class="gw-spin dark" style="display:inline-block"></span></td></tr></tbody></table></div></section></div>' +
+      '<div class="gw-tbl-wrap"><table class="gw-tbl utbl"><thead><tr><th>User</th><th>Device ID</th><th>Valid till</th><th>Last active</th><th>Status</th><th class="r">Actions</th></tr></thead><tbody id="u-body"><tr><td colspan="6" class="empty"><span class="gw-spin dark" style="display:inline-block"></span></td></tr></tbody></table></div></section></div>' +
       '<section class="gw-card" id="pw-card" hidden style="margin-top:16px;max-width:520px"><h2>Change admin password</h2><form id="f-pw" novalidate>' +
       '<div class="gw-field"><label for="p-old">Current password</label><input class="gw-input" id="p-old" type="password" autocomplete="current-password"></div>' +
       '<div class="gw-field"><label for="p-new">New password</label><input class="gw-input" id="p-new" type="password" autocomplete="new-password" placeholder="At least 10 characters, letters and numbers"></div>' +
@@ -229,7 +230,7 @@
   }
   function loadUsers() {
     GW.api('listUsers').then(function (r) { users = r.users || []; drawUsers(); })
-      .catch(function (e) { $('#u-body').innerHTML = '<tr><td colspan="5" class="empty">' + esc(e.message) + '</td></tr>'; });
+      .catch(function (e) { $('#u-body').innerHTML = '<tr><td colspan="6" class="empty">' + esc(e.message) + '</td></tr>'; });
   }
   function status(u) {
     if (u.status === 'blocked') return ['Paused', 'amber'];
@@ -237,6 +238,12 @@
     if (d < 0) return ['Expired', 'red'];
     if (d <= 7) return [d + ' day' + (d === 1 ? '' : 's') + ' left', 'amber'];
     return ['Active', 'green'];
+  }
+  function seen(t) {
+    if (!t) return '<span class="muted">Never</span>';
+    var d = new Date(t), ago = (Date.now() - t) / 6e4;
+    var rel = ago < 15 ? 'Active now' : ago < 60 ? Math.round(ago) + ' min ago' : ago < 1440 ? Math.round(ago / 60) + ' hr ago' : Math.round(ago / 1440) + ' day' + (ago < 2880 ? '' : 's') + ' ago';
+    return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }) + '<br><span class="muted">' + rel + '</span>';
   }
   function drawUsers() {
     var act = 0, exp = 0, soon = 0;
@@ -249,13 +256,13 @@
     $('#u-body').innerHTML = list.length ? list.map(function (u, i) {
       var st = status(u), k = users.indexOf(u);
       return '<tr><td><b>' + esc(u.name || 'User') + '</b><br><span class="muted mono">' + esc(u.mobile) + '</span></td>' +
-        '<td class="mono">' + GW.prettyId(u.deviceId) + '</td><td>' + fmtDate(u.expiry) + '</td>' +
+        '<td class="mono">' + GW.prettyId(u.deviceId) + '</td><td>' + fmtDate(u.expiry) + '</td><td class="c-seen">' + seen(u.lastSeen) + '</td>' +
         '<td><span class="gw-chip ' + st[1] + '">' + st[0] + '</span></td>' +
         '<td class="c-act"><div class="act"><button type="button" data-a="edit" data-k="' + k + '">Edit</button>' +
         '<button type="button" data-a="extend" data-k="' + k + '">+1 month</button>' +
         '<button type="button" data-a="pause" data-k="' + k + '">' + (u.status === 'blocked' ? 'Resume' : 'Pause') + '</button>' +
         '<button type="button" class="del" data-a="del" data-k="' + k + '">Remove</button></div></td></tr>';
-    }).join('') : '<tr><td colspan="5" class="empty">' + (users.length ? 'No match.' : 'No users yet. Give access using the form.') + '</td></tr>';
+    }).join('') : '<tr><td colspan="6" class="empty">' + (users.length ? 'No match.' : 'No users yet. Give access using the form.') + '</td></tr>';
   }
   function resetForm() {
     editing = null; $('#f-add').reset(); $('#n-exp').value = addMonths(1);

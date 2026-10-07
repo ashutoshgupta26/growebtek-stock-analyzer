@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v11' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v12' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   var tp = e && e.parameter && e.parameter.topic;
@@ -120,6 +120,7 @@ function userLogin_(q) {
   var end = endOfDayIst_(u.expiry);
   if (end < Date.now()) throw fail_('denied', 'Your access expired on ' + u.expiry + '. Please contact the admin to renew.');
   var exp = Math.min(end, Date.now() + USER_SESSION_DAYS * 864e5);
+  touch_(m, d, true);
   return { token: sign_({ r: 'user', m: m, d: d, e: exp }), role: 'user', mobile: m, name: u.name || '', expiry: u.expiry, exp: exp };
 }
 // Validates the token; for users also re-checks the access list (removed/expired/blocked users are signed out).
@@ -133,6 +134,7 @@ function session_(q, strict) {
     if (!u || u.status === 'blocked' || endOfDayIst_(u.expiry) < Date.now()) throw fail_('auth', 'Your access has ended. Please contact the admin.');
     p.expiry = u.expiry; p.name = u.name || '';
   }
+  if (p.r === 'user') touch_(p.m, p.d);
   return p;
 }
 function admin_(q) { var p = session_(q, true); if (p.r !== 'admin') throw fail_('auth', 'Admin only.'); return p; }
@@ -151,11 +153,21 @@ function changePassword_(q) {
 
 // ---------------------------------------------------------------- users (one script property per user+device)
 function ukey_(m, d) { return 'u:' + m + ':' + d; }
+// Last-active time per user+device, kept in its own property (written at most once per 5 minutes per device).
+function lkey_(m, d) { return 'ls:' + m + ':' + d; }
+function touch_(m, d, force) {
+  try {
+    var c = CacheService.getScriptCache(), ck = 'ls' + m + d;
+    if (!force && c.get(ck)) return;
+    props_().setProperty(lkey_(m, d), String(Date.now()));
+    c.put(ck, '1', 300);
+  } catch (e) {}
+}
 function listUsers_() {
   var all = props_().getProperties(), out = [];
   Object.keys(all).forEach(function (k) {
     if (k.indexOf('u:') !== 0) return;
-    try { out.push(JSON.parse(all[k])); } catch (e) {}
+    try { var u = JSON.parse(all[k]); u.lastSeen = Number(all[lkey_(u.mobile, u.deviceId)]) || null; out.push(u); } catch (e) {}
   });
   return out.sort(function (a, b) { return (b.created || 0) - (a.created || 0); });
 }
@@ -182,6 +194,7 @@ function saveUser_(q) {
 }
 function deleteUser_(q) {
   props_().deleteProperty(ukey_(mobile_(q.mobile), device_(q.targetDeviceId)));
+  props_().deleteProperty(lkey_(mobile_(q.mobile), device_(q.targetDeviceId)));
   return { ok: true };
 }
 
