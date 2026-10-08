@@ -169,6 +169,9 @@ td.why{color:var(--ink-3);font-size:12.5px;min-width:160px}
 .chip{border:1px solid var(--line);background:var(--card);color:var(--ink-2);font:650 12.5px var(--sans);padding:7px 12px;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--page);border-color:var(--ink)}
 .empty{color:var(--ink-3);font-size:13px;padding:10px 6px}
+.ipo-c{padding:10px 0;border-top:1px solid var(--line)}.ipo-c:first-of-type{border-top:0;padding-top:2px}
+.ipo-f{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px;margin-top:8px}.ipo-f div{display:flex;flex-direction:column;min-width:0}.ipo-f span{font-size:11.5px;color:var(--ink-3)}.ipo-f b{font-size:13.5px;font-weight:650}
+@media(max-width:560px){.ipo-f{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* sectors */
 .sec{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr) 64px;align-items:center;gap:10px;padding:6px 4px;font-size:13px;border-radius:8px}
@@ -262,6 +265,7 @@ footer p+p{margin-top:6px}
     <button class="tab" role="tab" id="t-stocks" aria-controls="stocks" data-tab="stocks">Stocks</button>
     <button class="tab" role="tab" id="t-sectors" aria-controls="sectors" data-tab="sectors">Sectors</button>
     <button class="tab" role="tab" id="t-news" aria-controls="news" data-tab="news">News</button>
+    <button class="tab" role="tab" id="t-ipo" aria-controls="ipo" data-tab="ipo">IPO &amp; Dividends</button>
     <button class="tab" role="tab" id="t-outlook" aria-controls="outlook" data-tab="outlook">Outlook</button>
   </nav>
 </header>
@@ -284,10 +288,11 @@ footer p+p{margin-top:6px}
   </section>
   <section class="panel" id="sectors" role="tabpanel" aria-labelledby="t-sectors" hidden></section>
   <section class="panel" id="news" role="tabpanel" aria-labelledby="t-news" hidden></section>
+  <section class="panel" id="ipo" role="tabpanel" aria-labelledby="t-ipo" hidden></section>
   <section class="panel" id="outlook" role="tabpanel" aria-labelledby="t-outlook" hidden></section>
 </main>
 <footer class="wrap">
-  <p id="src">Prices: Yahoo Finance (may be delayed up to 15 minutes). Bullion: IBJA. News: Economic Times, Mint, Business Standard and Google News headlines. FII/DII, IPOs and corporate actions: NSE. Summary, mood and key levels (classic pivot points) are computed automatically from prices.</p>
+  <p id="src">Prices: Yahoo Finance (may be delayed up to 15 minutes). Bullion: IBJA. News: Economic Times, Mint, Business Standard and Google News headlines. FII/DII: Moneycontrol. IPOs: Groww. Dividends, bonus, splits and board meetings: Moneycontrol. Summary, mood and key levels (classic pivot points) are computed automatically from prices.</p>
   <p><b>Not investment advice.</b> For information only; verify before trading.</p>
 </footer>
 <div id="tip" role="tooltip"></div>
@@ -330,7 +335,7 @@ setTheme(saved||'light');
 $('#theme').addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
 
 /* ---------- tabs ---------- */
-var TABS=['overview','stocks','sectors','news','outlook'];
+var TABS=['overview','stocks','sectors','news','ipo','outlook'];
 function showTab(id,focus){if(TABS.indexOf(id)<0)id='overview';TABS.forEach(function(x){var on=x===id;$('#'+x).hidden=!on||!D;var b=$('#t-'+x);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on&&focus)b.focus()});
   if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id);if(id==='overview'&&D)drawChart()}
 $$('.tab').forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab);window.scrollTo({top:0})});
@@ -533,12 +538,43 @@ function renderNews(){
   h+='<div class="grid g-2"><div class="card reveal"><h2>Mutual funds</h2>'+list(N.mfNews)+'</div><div class="card reveal"><h2>Finance &amp; flows</h2>'+list(N.finNews)+'</div></div>';
   var ipos=N.ipos||[];
   h+='<div class="grid g-2"><div class="card reveal"><h2>IPO update</h2>'+(N.ipoNote?'<p style="color:var(--ink-2);font-size:14px;margin-bottom:10px">'+t(N.ipoNote)+'</p>':'')+
-    (ipos.length?'<div class="tbl-wrap"><table><thead><tr><th>Issue</th><th>Price band</th><th>Closes</th><th class="r">Subscribed</th></tr></thead><tbody>'+ipos.map(function(i){return '<tr><td><b>'+esc(i.name)+'</b></td><td class="num">'+t(i.price||'–')+'</td><td class="num">'+esc((i.close||'').slice(0,6))+'</td><td class="r num">'+(i.subs!=null?nf(i.subs)+'x':'–')+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Subscription as of the report time.</div>':'')+'</div>'+
+    (ipos.length?'<div class="tbl-wrap"><table><thead><tr><th>Issue</th><th>Price band</th><th>Closes</th><th class="r">Subscribed</th></tr></thead><tbody>'+ipos.map(function(i){return '<tr><td><b>'+esc(i.name)+'</b></td><td class="num">'+t(i.price||'–')+'</td><td class="num">'+esc((i.close||'').slice(0,6))+'</td><td class="r num">'+(i.subs!=null?nf(i.subs)+'x':'–')+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Subscription as of the report time.</div>':'')+'<button class="more" data-goto="ipo">IPO details &amp; dividends →</button></div>'+
     '<div class="card reveal"><h2>Earnings &amp; corporate actions</h2>'+list(N.earnings)+((N.corpActions||[]).length?'<div class="tbl-wrap" style="margin-top:8px"><table><thead><tr><th>Stock</th><th>Action</th><th>Ex-date</th></tr></thead><tbody>'+N.corpActions.map(function(c){return '<tr><td><b>'+esc(c.symbol)+'</b>'+((stock(c.symbol)||{}).name?'<div class="fn">'+esc(stock(c.symbol).name)+'</div>':'')+'</td><td>'+t(c.subject)+'</td><td class="num" style="white-space:nowrap">'+esc((c.exDate||'').slice(0,6))+'</td></tr>'}).join('')+'</tbody></table></div>':'')+'</div></div>';
   var an=N.analyst||[];
   if(an.length)h+='<div class="card reveal"><h2>Analyst views</h2><div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>View</th><th>Target / theme</th><th>Broker</th></tr></thead><tbody>'+an.map(function(a){if(typeof a==='string'||a.title)return '<tr><td colspan="4">'+item(a)+'</td></tr>';
     return '<tr><td><b>'+t(a.stock)+'</b></td><td><span class="badge '+(/sell|under|reduce/i.test(a.view)?'dn':'up')+'">'+t(a.view)+'</span></td><td class="num">'+t(a.target)+'</td><td>'+t(a.broker)+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Brokerage and analyst calls as reported in the news; not recommendations.</div></div>';
   $('#news').innerHTML=h;
+}
+
+/* ---------- IPO & dividends ---------- */
+function lnk(name,url){return /^https?:\/\//.test(url||'')?'<a href="'+esc(url)+'" target="_blank" rel="noopener"><b>'+esc(name)+'</b></a>':'<b>'+esc(name)+'</b>'}
+function d6(s){return esc((s||'').slice(0,6))}
+function cr(v){return v==null?'–':'₹'+nf(v,v>=100?0:1)+' Cr'}
+function rup(v){return v==null?'–':'₹'+nf(v,0)}
+function xs(v){return v==null?'–':nf(v)+'x'}
+function ipoCard(i,live){
+  var f=[['Price band',t(i.price||'–')],['Lot',i.lot?nf(i.lot,0)+' shares':'–'],['Min. investment',rup(i.minInv)],['Issue size',cr(i.sizeCr)],
+    ['Opens',d6(i.open)||'–'],['Closes',d6(i.close)||'–'],['Allotment',d6(i.allot)||'–'],['Listing',d6(i.listDate)||'–']];
+  if(i.revCr!=null)f.push(['Revenue '+esc(i.finYear||''),cr(i.revCr)+(i.revGrowth!=null?' <span class="badge '+(i.revGrowth>=0?'up':'dn')+'">'+pct(i.revGrowth)+'</span>':'')]);
+  if(i.patCr!=null)f.push(['Profit '+esc(i.finYear||''),cr(i.patCr)]);
+  var subs=live&&i.subs!=null?'<div class="note" style="margin-top:8px">Subscribed <b>'+xs(i.subs)+'</b> overall'+(i.subsQib!=null?' · QIB '+xs(i.subsQib):'')+(i.subsNii!=null?' · NII '+xs(i.subsNii):'')+(i.subsRetail!=null?' · Retail '+xs(i.subsRetail):'')+'</div>':'';
+  return '<div class="ipo-c"><div>'+lnk(i.name,i.url)+(i.sme?' <span class="badge">SME</span>':'')+(i.sector?'<div class="fn">'+esc(i.sector)+'</div>':'')+'</div>'+
+    '<div class="ipo-f">'+f.map(function(x){return '<div><span>'+x[0]+'</span><b class="num">'+x[1]+'</b></div>'}).join('')+'</div>'+subs+'</div>';
+}
+function renderIpo(){
+  var h='<div class="note" style="margin:0">Updates automatically, about every 10 minutes during market hours'+(N.asOfLabel?' · '+esc(N.asOfLabel):'')+'</div>';
+  var open=N.ipos||[],up=N.ipoUpcoming||[],al=N.ipoAllot||[],ls=N.ipoListed||[],pipe=N.ipoPipeline||[];
+  h+='<div class="grid g-2"><div class="card reveal"><h2>IPOs open now <span class="sub">'+open.length+'</span></h2>'+(open.length?open.map(function(i){return ipoCard(i,true)}).join(''):'<div class="empty">No mainboard or SME IPO is open for bidding today.</div>')+'</div>'+
+    '<div class="card reveal"><h2>Upcoming IPOs</h2>'+(up.length?up.map(function(i){return ipoCard(i,false)}).join(''):'<div class="empty">No IPO dates announced yet.</div>')+
+    (pipe.length?'<div class="note" style="margin-top:10px"><b>In the pipeline (dates not announced):</b> '+pipe.map(esc).join(', ')+'</div>':'')+'</div></div>';
+  h+='<div class="grid g-2"><div class="card reveal"><h2>Allotment &amp; listing soon</h2>'+(al.length?'<div class="tbl-wrap"><table><thead><tr><th>Issue</th><th class="r">Price</th><th class="r">Subscribed</th><th>Allotment</th><th>Listing</th></tr></thead><tbody>'+al.map(function(i){return '<tr><td>'+lnk(i.name,i.url)+'</td><td class="r num">'+rup(i.issuePrice)+'</td><td class="r num">'+xs(i.subs)+'</td><td class="num">'+d6(i.allot)+'</td><td class="num">'+d6(i.listDate)+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">Nothing waiting to list.</div>')+'</div>'+
+    '<div class="card reveal"><h2>Recent listings <span class="sub">last 2 weeks</span></h2>'+(ls.length?'<div class="tbl-wrap"><table><thead><tr><th>Issue</th><th>Listed</th><th class="r">Issue</th><th class="r">Listing</th><th class="r">Gain</th></tr></thead><tbody>'+ls.map(function(i){return '<tr><td>'+lnk(i.name,i.url)+(i.subs?'<div class="fn">Subscribed '+xs(i.subs)+'</div>':'')+'</td><td class="num">'+d6(i.listDate)+'</td><td class="r num">'+rup(i.issuePrice)+'</td><td class="r num">'+rup(i.listPrice)+'</td><td class="r"><span class="badge '+((i.gain||0)>=0?'up':'dn')+' num">'+pct(i.gain)+'</span></td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">No listings in the last two weeks.</div>')+'</div></div>';
+  var dv=N.dividends||[],mt=N.divMeetings||[],co=N.corpOther||[];
+  h+='<div class="card reveal"><h2>Upcoming dividends <span class="sub">ex-date in the next 30 days</span></h2>'+(dv.length?'<div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>Type</th><th>Ex-date</th><th class="r">Dividend</th><th class="r">Price</th><th class="r">Yield</th><th class="r">Last 12 months</th></tr></thead><tbody>'+dv.map(function(d){
+    return '<tr><td>'+lnk(d.name,d.url)+(d.mcapCr?'<div class="fn">M-cap '+cr(d.mcapCr)+'</div>':'')+'</td><td>'+esc(d.type)+'</td><td class="num" style="white-space:nowrap">'+d6(d.exDate)+'</td><td class="r num">'+(d.amount!=null?'₹'+nf(d.amount)+'/sh':'–')+'</td><td class="r num">'+(d.price!=null?'₹'+nf(d.price):'–')+'</td><td class="r num">'+(d.yieldPct!=null?nf(d.yieldPct)+'%':'–')+'</td><td class="r num">'+(d.ttm!=null?'₹'+nf(d.ttm)+(d.ttmYield!=null?' · '+nf(d.ttmYield)+'%':'')+(d.count12m?'<div class="fn">'+d.count12m+' payout'+(d.count12m>1?'s':'')+'</div>':''):'–')+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Buy before the ex-date to get the dividend. Yield = dividend ÷ current price.</div>':'<div class="empty">No dividend ex-dates in the next 30 days.</div>')+'</div>';
+  h+='<div class="grid g-2"><div class="card reveal"><h2>Board meetings on dividends <span class="sub">next 2 weeks</span></h2>'+(mt.length?'<div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>Date</th><th>Agenda</th></tr></thead><tbody>'+mt.map(function(m){return '<tr><td>'+lnk(m.name,m.url)+'</td><td class="num" style="white-space:nowrap">'+d6(m.date)+'</td><td>'+t(m.purpose)+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">No dividend board meetings scheduled.</div>')+'</div>'+
+    '<div class="card reveal"><h2>Bonus, splits &amp; rights</h2>'+(co.length?'<div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>Action</th><th>Ex-date</th><th class="r">Price</th></tr></thead><tbody>'+co.map(function(c){return '<tr><td>'+lnk(c.name,c.url)+'</td><td>'+esc(c.action)+(c.ratio?' '+esc(c.ratio):'')+(c.premium?'<div class="fn">Premium ₹'+esc(c.premium)+'</div>':'')+'</td><td class="num" style="white-space:nowrap">'+d6(c.exDate)+'</td><td class="r num">'+(c.price!=null?'₹'+nf(c.price):'–')+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">No bonus, split or rights ex-dates coming up.</div>')+'</div></div>';
+  $('#ipo').innerHTML=h;
 }
 
 /* ---------- outlook ---------- */
@@ -570,7 +606,7 @@ function flashChanges(){
 /* ---------- load loop ---------- */
 function render(){
   $('#loading').hidden=true;
-  renderStatus();renderTape();renderOverview();renderStocks();renderSectors();renderNews();renderOutlook();
+  renderStatus();renderTape();renderOverview();renderStocks();renderSectors();renderNews();renderIpo();renderOutlook();
   showTab(location.hash.slice(1)||'overview');flashChanges();
   var bx=$('#chart');if(bx){ro.disconnect();ro.observe(bx)}
 }
