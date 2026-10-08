@@ -15,7 +15,7 @@ var UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 // ---------------------------------------------------------------- entry points
 function doGet(e) {
   var feed = e && e.parameter && e.parameter.feed;
-  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v15' });
+  if (e && e.parameter && e.parameter.ping) return json_({ ok: true, version: 'v16' });
   var ns = e && e.parameter && e.parameter.news;
   if (ns) { try { var nk = 'n81:' + ns; var hit = cacheGet_(nk); if (hit) return json_(hit); var nr = { symbol: ns, news: stockNews_(String(ns).toUpperCase().slice(0, 20), String(e.parameter.name || ns).slice(0, 80)) }; cachePut_(nk, nr, 600); return json_(nr); } catch (err) { return json_({ ok: false }); } }
   var tp = e && e.parameter && e.parameter.topic;
@@ -1854,7 +1854,7 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
     return __result;
   }
   function usNews(__in) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _A, _B, _C, _D, _E, _F;
     const readJson = (x) => x;
     const DATA = __in.data, NEWS = __in.news;
     let __result = null;
@@ -2299,11 +2299,185 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
       "USD/INR": /\brupee\b/i
     };
     const assetReasons = Object.fromEntries(Object.entries(ASSET_KEYS).map(([k, re]) => [k, firstHit(re)]).filter(([, v]) => v));
+    const NQ = "https://api.nasdaq.com/api";
+    const NQH = { headers: { "User-Agent": UA, Accept: "application/json, text/plain, */*", Origin: "https://www.nasdaq.com", Referer: "https://www.nasdaq.com/" } };
+    const PUB = "https://ashutoshgupta26.github.io/growebtek-stock-analyzer/us/news.json";
+    let pubCache;
+    function pubNews() {
+      if (pubCache === void 0) {
+        pubCache = null;
+        try {
+          const r = get2(PUB + "?t=" + Math.floor(Date.now() / 6e5), { headers: { Accept: "application/json" } }, 1);
+          if (r) pubCache = r.json();
+        } catch (e) {
+        }
+      }
+      return pubCache;
+    }
+    function nq(path) {
+      var _a2;
+      try {
+        const r = get2(NQ + path, NQH, 2);
+        if (!r) return null;
+        const j = r.json();
+        return (_a2 = j == null ? void 0 : j.data) != null ? _a2 : null;
+      } catch (e) {
+        return null;
+      }
+    }
+    const mdy = (s) => {
+      const m = String(s != null ? s : "").match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+      return m ? `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}` : null;
+    };
+    const num = (s) => {
+      const x = parseFloat(String(s != null ? s : "").replace(/[$,]/g, ""));
+      return Number.isFinite(x) ? x : null;
+    };
+    const ym = (iso) => iso.slice(0, 7);
+    const months = [ym(addDays(etNow.date, -20)), ym(etNow.date), ym(addDays(etNow.date, 25))].filter((m, i, a) => a.indexOf(m) === i);
+    const divDays = [];
+    for (let i = 0; divDays.length < 10 && i < 20; i++) {
+      const d = addDays(etNow.date, i);
+      if (isTrading(d)) divDays.push(d);
+    }
+    typeof prefetch === "function" && prefetch([...months.map((m) => NQ + "/ipo/calendar?date=" + m), ...divDays.map((d) => NQ + "/calendar/dividends?date=" + d), NQ + "/calendar/splits"].map((u) => [u, NQH]));
+    const ipoCal = Promise_all(months.map((m) => nq("/ipo/calendar?date=" + m)));
+    const divCal = Promise_all(divDays.map((d) => nq("/calendar/dividends?date=" + d)));
+    const splitCal = nq("/calendar/splits");
+    const ipoOk = ipoCal.some(Boolean), divOk = divCal.some(Boolean);
+    const ipoName = (s) => String(s != null ? s : "").replace(/\s+(Common Stock.*|Class [A-Z] (?:Common|Ordinary).*|Ordinary Shares.*|American Depositary Shares.*)$/i, "").trim();
+    const SPAC = /Acquisition|SPAC|Capital Corp\.? [IVX]+\b|Merger Corp/i;
+    const ipoBase = (r) => {
+      var _a2;
+      return {
+        symbol: r.proposedTickerSymbol || null,
+        name: ipoName(r.companyName),
+        exchange: r.proposedExchange || null,
+        spac: SPAC.test((_a2 = r.companyName) != null ? _a2 : ""),
+        shares: num(r.sharesOffered),
+        sizeM: num(r.dollarValueOfSharesOffered) != null ? Math.round(num(r.dollarValueOfSharesOffered) / 1e5) / 10 : null,
+        url: r.proposedTickerSymbol ? `https://www.nasdaq.com/market-activity/ipos/overview?dealId=${r.dealID}` : null
+      };
+    };
+    const seenDeal = /* @__PURE__ */ new Set();
+    const once = (r) => {
+      if (seenDeal.has(r.dealID)) return false;
+      seenDeal.add(r.dealID);
+      return true;
+    };
+    let usIpoPriced = ipoCal.flatMap((c) => {
+      var _a2, _b2;
+      return (_b2 = (_a2 = c == null ? void 0 : c.priced) == null ? void 0 : _a2.rows) != null ? _b2 : [];
+    }).filter(once).map((r) => __spreadProps(__spreadValues({}, ipoBase(r)), { price: num(r.proposedSharePrice), date: mdy(r.pricedDate) })).filter((r) => r.date && r.date >= addDays(etNow.date, -21) && r.date <= etNow.date).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 15);
+    let usIpoUpcoming = ipoCal.flatMap((c) => {
+      var _a2, _b2, _c2;
+      return (_c2 = (_b2 = (_a2 = c == null ? void 0 : c.upcoming) == null ? void 0 : _a2.upcomingTable) == null ? void 0 : _b2.rows) != null ? _c2 : [];
+    }).filter(once).map((r) => __spreadProps(__spreadValues({}, ipoBase(r)), { priceRange: r.proposedSharePrice || null, date: mdy(r.expectedPriceDate) })).filter((r) => !r.date || r.date >= addDays(etNow.date, -1)).sort((a, b) => {
+      var _a2, _b2;
+      return ((_a2 = a.date) != null ? _a2 : "9").localeCompare((_b2 = b.date) != null ? _b2 : "9");
+    }).slice(0, 15);
+    let usIpoFiled = ipoCal.flatMap((c) => {
+      var _a2, _b2;
+      return (_b2 = (_a2 = c == null ? void 0 : c.filed) == null ? void 0 : _a2.rows) != null ? _b2 : [];
+    }).filter(once).map((r) => __spreadProps(__spreadValues({}, ipoBase(r)), { date: mdy(r.filedDate) })).filter((r) => r.date).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
+    const trackedSet = new Set(tracked.map((s) => s.symbol));
+    const NOT_COMMON = /Preferred|Depositary Shares? Represent|Notes? due|\bNotes\b|Debentures|Perpetual|Senior|Subordinated|Trust Preferred|Warrant|\bUnits?\b|Baby Bond|Fixed[- ]to[- ]Floating|Series [A-Z]\b/i;
+    const FUND = /\bETF\b|\bFund\b|Trust\b.*(?:Income|Municipal|Opportunit)|Shares Trust|Strategy|Portfolio|Closed[- ]End|BDC|Municipal|Income Fund|Calamos|Strategic Total Return|Income Builder|Long\/Short|Opportunit(?:y|ies)\b|Dynamic Income|Covered Call|Closed End/i;
+    let usDividends = divCal.flatMap((c) => {
+      var _a2, _b2;
+      return (_b2 = (_a2 = c == null ? void 0 : c.calendar) == null ? void 0 : _a2.rows) != null ? _b2 : [];
+    }).filter((r) => {
+      var _a2, _b2;
+      return r.symbol && !/[\^\/.]/.test(r.symbol) && !NOT_COMMON.test((_a2 = r.companyName) != null ? _a2 : "") && !FUND.test((_b2 = r.companyName) != null ? _b2 : "") && r.dividend_Rate > 0;
+    }).map((r) => ({
+      symbol: r.symbol,
+      name: ipoName(r.companyName),
+      exDate: mdy(r.dividend_Ex_Date),
+      payDate: mdy(r.payment_Date),
+      recDate: mdy(r.record_Date),
+      annDate: mdy(r.announcement_Date),
+      amount: r.dividend_Rate,
+      annual: r.indicated_Annual_Dividend > 0 ? r.indicated_Annual_Dividend : null,
+      tracked: trackedSet.has(r.symbol)
+    })).filter((r, i, a) => r.exDate && a.findIndex((x) => x.symbol === r.symbol) === i);
+    let usSplits = ((_o = splitCal == null ? void 0 : splitCal.rows) != null ? _o : []).map((r) => {
+      var _a2;
+      const m = String((_a2 = r.ratio) != null ? _a2 : "").match(/([\d.]+)\s*:\s*([\d.]+)/);
+      const a = m ? +m[1] : null, b = m ? +m[2] : null;
+      return {
+        symbol: r.symbol,
+        name: ipoName(r.name),
+        ratio: a && b ? `${a}-for-${b}` : r.ratio,
+        kind: a && b ? a > b ? "Forward split" : a < b ? "Reverse split" : "Split" : "Split",
+        date: mdy(r.executionDate),
+        tracked: trackedSet.has(r.symbol),
+        url: `https://www.nasdaq.com/market-activity/stocks/${String(r.symbol).toLowerCase()}`
+      };
+    }).filter((r) => r.symbol && r.date && r.date >= addDays(etNow.date, -7)).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 15);
+    const YQ = "https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=5m&symbols=";
+    const pxOf = {};
+    for (const s of tracked) if (s.ltp) pxOf[s.symbol] = s.ltp;
+    const needPx = [...new Set([...usDividends.map((r) => r.symbol), ...usIpoPriced.map((r) => r.symbol), ...usSplits.map((r) => r.symbol)].filter((s) => s && !pxOf[s]))].slice(0, 100);
+    const pxUrls = [];
+    for (let i = 0; i < needPx.length; i += 20) pxUrls.push(YQ + encodeURIComponent(needPx.slice(i, i + 20).join(",")));
+    typeof prefetch === "function" && prefetch(pxUrls.map((u) => [u, { headers: { "User-Agent": UA, Accept: "application/json" } }]));
+    const pxPct = {};
+    for (const u of pxUrls) {
+      try {
+        const r = get2(u, { headers: { Accept: "application/json" } }, 1);
+        if (!r) continue;
+        const j = r.json();
+        for (const x of (_q = (_p = j == null ? void 0 : j.spark) == null ? void 0 : _p.result) != null ? _q : []) {
+          const m = (_s = (_r = x.response) == null ? void 0 : _r[0]) == null ? void 0 : _s.meta;
+          if ((m == null ? void 0 : m.regularMarketPrice) != null) {
+            pxOf[x.symbol] = m.regularMarketPrice;
+            const p2 = (_t = m.chartPreviousClose) != null ? _t : m.previousClose;
+            if (p2) pxPct[x.symbol] = (m.regularMarketPrice - p2) / p2 * 100;
+          }
+        }
+      } catch (e) {
+      }
+    }
+    for (const s of tracked) if (s.pct != null) pxPct[s.symbol] = s.pct;
+    const r2 = (x) => x == null ? null : Math.round(x * 100) / 100;
+    usIpoPriced = usIpoPriced.map((r) => {
+      var _a2;
+      return __spreadProps(__spreadValues({}, r), { last: (_a2 = pxOf[r.symbol]) != null ? _a2 : null, gainPct: pxOf[r.symbol] && r.price ? r2((pxOf[r.symbol] - r.price) / r.price * 100) : null });
+    });
+    usDividends = usDividends.map((r) => {
+      var _a2;
+      return __spreadProps(__spreadValues({}, r), { price: (_a2 = pxOf[r.symbol]) != null ? _a2 : null, pctChg: r2(pxPct[r.symbol]), yieldPct: pxOf[r.symbol] && r.annual ? r2(r.annual / pxOf[r.symbol] * 100) : null });
+    }).filter((r) => r.tracked || r.price != null && r.price >= 5).sort((a, b) => {
+      var _a2, _b2;
+      return a.exDate.localeCompare(b.exDate) || b.tracked - a.tracked || ((_a2 = b.yieldPct) != null ? _a2 : 0) - ((_b2 = a.yieldPct) != null ? _b2 : 0);
+    }).slice(0, 30);
+    usSplits = usSplits.map((r) => {
+      var _a2;
+      return __spreadProps(__spreadValues({}, r), { price: (_a2 = pxOf[r.symbol]) != null ? _a2 : null });
+    });
+    if (!ipoOk || !divOk || !splitCal) {
+      const pub = pubNews();
+      const live = (a, k = "date") => (a != null ? a : []).filter((r) => !r[k] || r[k] >= addDays(etNow.date, -21));
+      if (!ipoOk) {
+        errors.push("ipo calendar");
+        usIpoPriced = live((_u = pub == null ? void 0 : pub.usIpoPriced) != null ? _u : prev.usIpoPriced);
+        usIpoUpcoming = live((_v = pub == null ? void 0 : pub.usIpoUpcoming) != null ? _v : prev.usIpoUpcoming);
+        usIpoFiled = (_x = (_w = pub == null ? void 0 : pub.usIpoFiled) != null ? _w : prev.usIpoFiled) != null ? _x : [];
+      }
+      if (!divOk) {
+        errors.push("dividend calendar");
+        usDividends = ((_z = (_y = pub == null ? void 0 : pub.usDividends) != null ? _y : prev.usDividends) != null ? _z : []).filter((r) => r.exDate >= etNow.date);
+      }
+      if (!splitCal) {
+        errors.push("split calendar");
+        usSplits = live((_A = pub == null ? void 0 : pub.usSplits) != null ? _A : prev.usSplits);
+      }
+    }
     const hhmm = clock(etNow.min);
     const out = {
-      asOf: (_p = (_o = D.market) == null ? void 0 : _o.sessionDate) != null ? _p : null,
+      asOf: (_C = (_B = D.market) == null ? void 0 : _B.sessionDate) != null ? _C : null,
       asOfLabel: open ? `${sdLabel}, ${hhmm} ET` : `${sdLabel}, ${closeLbl}`,
-      session: open ? `Live \xB7 ${hhmm} ET` : ((_q = D.market) == null ? void 0 : _q.status) === "pre" ? "Pre-market \xB7 last session report" : ((_r = D.market) == null ? void 0 : _r.sessionDate) === etNow.date ? `Closing Report \xB7 ${closeLbl}` : "Last session report",
+      session: open ? `Live \xB7 ${hhmm} ET` : ((_D = D.market) == null ? void 0 : _D.status) === "pre" ? "Pre-market \xB7 last session report" : ((_E = D.market) == null ? void 0 : _E.sessionDate) === etNow.date ? `Closing Report \xB7 ${closeLbl}` : "Last session report",
       mood,
       summary,
       conclusion,
@@ -2323,10 +2497,15 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
       analyst: analyst.map(slim),
       ipoNews: ipoNews.map(slim),
       commodNews: commodNews.map(slim),
+      usIpoPriced,
+      usIpoUpcoming,
+      usIpoFiled,
+      usDividends,
+      usSplits,
       nextSession: nextSession(),
-      generated: "Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; summary, mood and levels computed from prices."
+      generated: "Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; IPO, dividend and split calendars from Nasdaq; summary, mood and levels computed from prices."
     };
-    for (const k of ["stockNews", "econNews", "earnings", "analyst", "ipoNews", "commodNews"]) if (!out[k].length && ((_s = prev[k]) == null ? void 0 : _s.length)) out[k] = prev[k];
+    for (const k of ["stockNews", "econNews", "earnings", "analyst", "ipoNews", "commodNews"]) if (!out[k].length && ((_F = prev[k]) == null ? void 0 : _F.length)) out[k] = prev[k];
     const strip = (o) => {
       const _a2 = o != null ? o : {}, { asOfLabel, session, updated, errors: _e2 } = _a2, rest = __objRest(_a2, ["asOfLabel", "session", "updated", "errors"]);
       return JSON.stringify(rest);
@@ -2338,7 +2517,7 @@ DDOG NET ZS RBLX CVNA RDDT`.split(/\s+/).filter(Boolean);
     out.updated = (/* @__PURE__ */ new Date()).toISOString();
     out.errors = errors;
     __result = out;
-    console.log(`Wrote us/news.json: ${stockNews.length} stock, ${econNews.length} econ, ${earnings.length} earnings, ${analyst.length} analyst, ${ipoNews.length} IPO, ${commodNews.length} commodities headlines; mood=${mood}${errors.length ? "; errors: " + errors.join(", ") : ""}`);
+    console.log(`Wrote us/news.json: ${stockNews.length} stock, ${econNews.length} econ, ${earnings.length} earnings, ${analyst.length} analyst, ${ipoNews.length} IPO, ${commodNews.length} commodities headlines; ${usIpoPriced.length}/${usIpoUpcoming.length} IPOs, ${usDividends.length} dividends, ${usSplits.length} splits; mood=${mood}${errors.length ? "; errors: " + errors.join(", ") : ""}`);
     return __result;
   }
   const cache = () => CacheService.getScriptCache();

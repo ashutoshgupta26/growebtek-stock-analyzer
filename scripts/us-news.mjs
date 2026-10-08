@@ -264,6 +264,83 @@ const ASSET_KEYS = { Gold: /\bgold\b/i, Silver: /\bsilver\b/i, Brent: /\b(oil|cr
   'EUR/USD': /\beuro\b/i, 'USD/JPY': /\byen\b/i, 'USD/INR': /\brupee\b/i };
 const assetReasons = Object.fromEntries(Object.entries(ASSET_KEYS).map(([k, re]) => [k, firstHit(re)]).filter(([, v]) => v));
 
+// ---------- IPOs, dividends and stock splits (Nasdaq calendars) ----------
+// Nasdaq may refuse Google's servers; then the copy published on GitHub Pages (refreshed by the workflow) is used.
+const NQ = 'https://api.nasdaq.com/api';
+const NQH = { headers: { 'User-Agent': UA, Accept: 'application/json, text/plain, */*', Origin: 'https://www.nasdaq.com', Referer: 'https://www.nasdaq.com/' } };
+const PUB = 'https://ashutoshgupta26.github.io/growebtek-stock-analyzer/us/news.json';
+let pubCache;
+async function pubNews() { if (pubCache === undefined) { pubCache = null; try { const r = await get(PUB + '?t=' + Math.floor(Date.now() / 6e5), { headers: { Accept: 'application/json' } }, 1); if (r) pubCache = await r.json(); } catch {} } return pubCache; }
+async function nq(path) { try { const r = await get(NQ + path, NQH, 2); if (!r) return null; const j = await r.json(); return j?.data ?? null; } catch { return null; } }
+const mdy = (s) => { const m = String(s ?? '').match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/); return m ? `${m[3]}-${m[1].padStart(2, '0')}-${m[2].padStart(2, '0')}` : null; };
+const num = (s) => { const x = parseFloat(String(s ?? '').replace(/[$,]/g, '')); return Number.isFinite(x) ? x : null; };
+const ym = (iso) => iso.slice(0, 7);
+const months = [ym(addDays(etNow.date, -20)), ym(etNow.date), ym(addDays(etNow.date, 25))].filter((m, i, a) => a.indexOf(m) === i);
+const divDays = []; for (let i = 0; divDays.length < 10 && i < 20; i++) { const d = addDays(etNow.date, i); if (isTrading(d)) divDays.push(d); }
+typeof prefetch === 'function' && prefetch([...months.map((m) => NQ + '/ipo/calendar?date=' + m), ...divDays.map((d) => NQ + '/calendar/dividends?date=' + d), NQ + '/calendar/splits'].map((u) => [u, NQH]));
+const ipoCal = await Promise.all(months.map((m) => nq('/ipo/calendar?date=' + m)));
+const divCal = await Promise.all(divDays.map((d) => nq('/calendar/dividends?date=' + d)));
+const splitCal = await nq('/calendar/splits');
+const ipoOk = ipoCal.some(Boolean), divOk = divCal.some(Boolean);
+const ipoName = (s) => String(s ?? '').replace(/\s+(Common Stock.*|Class [A-Z] (?:Common|Ordinary).*|Ordinary Shares.*|American Depositary Shares.*)$/i, '').trim();
+const SPAC = /Acquisition|SPAC|Capital Corp\.? [IVX]+\b|Merger Corp/i;
+const ipoBase = (r) => ({ symbol: r.proposedTickerSymbol || null, name: ipoName(r.companyName), exchange: r.proposedExchange || null, spac: SPAC.test(r.companyName ?? ''),
+  shares: num(r.sharesOffered), sizeM: num(r.dollarValueOfSharesOffered) != null ? Math.round(num(r.dollarValueOfSharesOffered) / 1e5) / 10 : null,
+  url: r.proposedTickerSymbol ? `https://www.nasdaq.com/market-activity/ipos/overview?dealId=${r.dealID}` : null });
+const seenDeal = new Set();
+const once = (r) => { if (seenDeal.has(r.dealID)) return false; seenDeal.add(r.dealID); return true; };
+let usIpoPriced = ipoCal.flatMap((c) => c?.priced?.rows ?? []).filter(once)
+  .map((r) => ({ ...ipoBase(r), price: num(r.proposedSharePrice), date: mdy(r.pricedDate) }))
+  .filter((r) => r.date && r.date >= addDays(etNow.date, -21) && r.date <= etNow.date).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 15);
+let usIpoUpcoming = ipoCal.flatMap((c) => c?.upcoming?.upcomingTable?.rows ?? []).filter(once)
+  .map((r) => ({ ...ipoBase(r), priceRange: r.proposedSharePrice || null, date: mdy(r.expectedPriceDate) }))
+  .filter((r) => !r.date || r.date >= addDays(etNow.date, -1)).sort((a, b) => (a.date ?? '9').localeCompare(b.date ?? '9')).slice(0, 15);
+let usIpoFiled = ipoCal.flatMap((c) => c?.filed?.rows ?? []).filter(once)
+  .map((r) => ({ ...ipoBase(r), date: mdy(r.filedDate) })).filter((r) => r.date).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
+const trackedSet = new Set(tracked.map((s) => s.symbol));
+const NOT_COMMON = /Preferred|Depositary Shares? Represent|Notes? due|\bNotes\b|Debentures|Perpetual|Senior|Subordinated|Trust Preferred|Warrant|\bUnits?\b|Baby Bond|Fixed[- ]to[- ]Floating|Series [A-Z]\b/i;
+const FUND = /\bETF\b|\bFund\b|Trust\b.*(?:Income|Municipal|Opportunit)|Shares Trust|Strategy|Portfolio|Closed[- ]End|BDC|Municipal|Income Fund|Calamos|Strategic Total Return|Income Builder|Long\/Short|Opportunit(?:y|ies)\b|Dynamic Income|Covered Call|Closed End/i;
+let usDividends = divCal.flatMap((c) => c?.calendar?.rows ?? [])
+  .filter((r) => r.symbol && !/[\^\/.]/.test(r.symbol) && !NOT_COMMON.test(r.companyName ?? '') && !FUND.test(r.companyName ?? '') && r.dividend_Rate > 0)
+  .map((r) => ({ symbol: r.symbol, name: ipoName(r.companyName), exDate: mdy(r.dividend_Ex_Date), payDate: mdy(r.payment_Date), recDate: mdy(r.record_Date),
+    annDate: mdy(r.announcement_Date), amount: r.dividend_Rate, annual: r.indicated_Annual_Dividend > 0 ? r.indicated_Annual_Dividend : null, tracked: trackedSet.has(r.symbol) }))
+  .filter((r, i, a) => r.exDate && a.findIndex((x) => x.symbol === r.symbol) === i);
+let usSplits = (splitCal?.rows ?? []).map((r) => {
+  const m = String(r.ratio ?? '').match(/([\d.]+)\s*:\s*([\d.]+)/); const a = m ? +m[1] : null, b = m ? +m[2] : null;
+  return { symbol: r.symbol, name: ipoName(r.name), ratio: a && b ? `${a}-for-${b}` : r.ratio, kind: a && b ? (a > b ? 'Forward split' : a < b ? 'Reverse split' : 'Split') : 'Split',
+    date: mdy(r.executionDate), tracked: trackedSet.has(r.symbol), url: `https://www.nasdaq.com/market-activity/stocks/${String(r.symbol).toLowerCase()}` };
+}).filter((r) => r.symbol && r.date && r.date >= addDays(etNow.date, -7)).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 15);
+// Live prices: yield for dividend payers, return since IPO price for new listings
+const YQ = 'https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=5m&symbols=';
+const pxOf = {};
+for (const s of tracked) if (s.ltp) pxOf[s.symbol] = s.ltp;
+const needPx = [...new Set([...usDividends.map((r) => r.symbol), ...usIpoPriced.map((r) => r.symbol), ...usSplits.map((r) => r.symbol)].filter((s) => s && !pxOf[s]))].slice(0, 100);
+const pxUrls = []; for (let i = 0; i < needPx.length; i += 20) pxUrls.push(YQ + encodeURIComponent(needPx.slice(i, i + 20).join(',')));
+typeof prefetch === 'function' && prefetch(pxUrls.map((u) => [u, { headers: { 'User-Agent': UA, Accept: 'application/json' } }]));
+const pxPct = {};
+for (const u of pxUrls) {
+  try {
+    const r = await get(u, { headers: { Accept: 'application/json' } }, 1); if (!r) continue;
+    const j = await r.json();
+    for (const x of j?.spark?.result ?? []) { const m = x.response?.[0]?.meta; if (m?.regularMarketPrice != null) { pxOf[x.symbol] = m.regularMarketPrice; const p = m.chartPreviousClose ?? m.previousClose; if (p) pxPct[x.symbol] = (m.regularMarketPrice - p) / p * 100; } }
+  } catch {}
+}
+for (const s of tracked) if (s.pct != null) pxPct[s.symbol] = s.pct;
+const r2 = (x) => x == null ? null : Math.round(x * 100) / 100;
+usIpoPriced = usIpoPriced.map((r) => ({ ...r, last: pxOf[r.symbol] ?? null, gainPct: pxOf[r.symbol] && r.price ? r2((pxOf[r.symbol] - r.price) / r.price * 100) : null }));
+usDividends = usDividends.map((r) => ({ ...r, price: pxOf[r.symbol] ?? null, pctChg: r2(pxPct[r.symbol]), yieldPct: pxOf[r.symbol] && r.annual ? r2(r.annual / pxOf[r.symbol] * 100) : null }))
+  .filter((r) => r.tracked || (r.price != null && r.price >= 5))
+  .sort((a, b) => a.exDate.localeCompare(b.exDate) || (b.tracked - a.tracked) || ((b.yieldPct ?? 0) - (a.yieldPct ?? 0))).slice(0, 30);
+usSplits = usSplits.map((r) => ({ ...r, price: pxOf[r.symbol] ?? null }));
+// Fall back to the last good copy if Nasdaq did not answer
+if (!ipoOk || !divOk || !splitCal) {
+  const pub = await pubNews();
+  const live = (a, k = 'date') => (a ?? []).filter((r) => !r[k] || r[k] >= addDays(etNow.date, -21));
+  if (!ipoOk) { errors.push('ipo calendar'); usIpoPriced = live(pub?.usIpoPriced ?? prev.usIpoPriced); usIpoUpcoming = live(pub?.usIpoUpcoming ?? prev.usIpoUpcoming); usIpoFiled = pub?.usIpoFiled ?? prev.usIpoFiled ?? []; }
+  if (!divOk) { errors.push('dividend calendar'); usDividends = (pub?.usDividends ?? prev.usDividends ?? []).filter((r) => r.exDate >= etNow.date); }
+  if (!splitCal) { errors.push('split calendar'); usSplits = live(pub?.usSplits ?? prev.usSplits); }
+}
+
 const hhmm = clock(etNow.min);
 const out = {
   asOf: D.market?.sessionDate ?? null,
@@ -274,8 +351,9 @@ const out = {
   trending, gainerReasons, loserReasons, sectorReasons, assetReasons,
   stockNews: stockNews.map(slim), econNews: econNews.map(slim), earnings: earnings.map(slim), analyst: analyst.map(slim),
   ipoNews: ipoNews.map(slim), commodNews: commodNews.map(slim),
+  usIpoPriced, usIpoUpcoming, usIpoFiled, usDividends, usSplits,
   nextSession: nextSession(),
-  generated: 'Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; summary, mood and levels computed from prices.',
+  generated: 'Automatic: headlines from CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News RSS; IPO, dividend and split calendars from Nasdaq; summary, mood and levels computed from prices.',
 };
 // Keep the previous headlines for any section that came back empty this run
 for (const k of ['stockNews', 'econNews', 'earnings', 'analyst', 'ipoNews', 'commodNews']) if (!out[k].length && prev[k]?.length) out[k] = prev[k];
@@ -286,4 +364,4 @@ out.updated = new Date().toISOString();
 out.errors = errors;
 writeFileSync(NEWS, JSON.stringify(out, null, 1) + '\n');
 console.log(`Wrote us/news.json: ${stockNews.length} stock, ${econNews.length} econ, ${earnings.length} earnings, ${analyst.length} analyst, ` +
-  `${ipoNews.length} IPO, ${commodNews.length} commodities headlines; mood=${mood}${errors.length ? '; errors: ' + errors.join(', ') : ''}`);
+  `${ipoNews.length} IPO, ${commodNews.length} commodities headlines; ${usIpoPriced.length}/${usIpoUpcoming.length} IPOs, ${usDividends.length} dividends, ${usSplits.length} splits; mood=${mood}${errors.length ? '; errors: ' + errors.join(', ') : ''}`);

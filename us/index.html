@@ -169,6 +169,8 @@ td.why{color:var(--ink-3);font-size:12.5px;min-width:160px}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{border:1px solid var(--line);background:var(--card);color:var(--ink-2);font:650 12.5px var(--sans);padding:7px 12px;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--page);border-color:var(--ink)}
+.tg{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:5px;background:var(--card-2);color:var(--ink-2);vertical-align:1px}
+#ipo td .fn{display:block;font-size:12px;color:var(--ink-3);white-space:nowrap}#ipo td .fn.up{color:var(--up)}#ipo td .fn.dn{color:var(--dn)}
 .empty{color:var(--ink-3);font-size:13px;padding:10px 6px}
 
 /* sectors */
@@ -264,6 +266,7 @@ footer p+p{margin-top:6px}
     <button class="tab" role="tab" id="t-stocks" aria-controls="stocks" data-tab="stocks">Stocks</button>
     <button class="tab" role="tab" id="t-sectors" aria-controls="sectors" data-tab="sectors">Sectors</button>
     <button class="tab" role="tab" id="t-news" aria-controls="news" data-tab="news">News</button>
+    <button class="tab" role="tab" id="t-ipo" aria-controls="ipo" data-tab="ipo">IPO &amp; Dividends</button>
     <button class="tab" role="tab" id="t-outlook" aria-controls="outlook" data-tab="outlook">Outlook</button>
   </nav>
 </header>
@@ -286,10 +289,11 @@ footer p+p{margin-top:6px}
   </section>
   <section class="panel" id="sectors" role="tabpanel" aria-labelledby="t-sectors" hidden></section>
   <section class="panel" id="news" role="tabpanel" aria-labelledby="t-news" hidden></section>
+  <section class="panel" id="ipo" role="tabpanel" aria-labelledby="t-ipo" hidden></section>
   <section class="panel" id="outlook" role="tabpanel" aria-labelledby="t-outlook" hidden></section>
 </main>
 <footer class="wrap">
-  <p id="src">Prices, indices, sector ETFs, yields and global markets: Yahoo Finance (may be delayed up to 15 minutes). News: CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News headlines. Market hours and holidays: NYSE; Fed meeting dates: Federal Reserve. Summary, mood and key levels (classic pivot points) are computed automatically from prices. Times are US Eastern (ET) with India time (IST) in brackets.</p>
+  <p id="src">Prices, indices, sector ETFs, yields and global markets: Yahoo Finance (may be delayed up to 15 minutes). News: CNBC, MarketWatch, Seeking Alpha, Nasdaq, Yahoo Finance and Google News headlines. IPO, dividend and stock split calendars: Nasdaq. Market hours and holidays: NYSE; Fed meeting dates: Federal Reserve. Summary, mood and key levels (classic pivot points) are computed automatically from prices. Times are US Eastern (ET) with India time (IST) in brackets.</p>
   <p><b>Not investment advice.</b> For information only; verify before trading.</p>
 </footer>
 <div id="tip" role="tooltip"></div>
@@ -334,7 +338,7 @@ setTheme(saved||'light');
 $('#theme').addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
 
 /* ---------- tabs ---------- */
-var TABS=['overview','stocks','sectors','news','outlook'];
+var TABS=['overview','stocks','sectors','news','ipo','outlook'];
 function showTab(id,focus){if(TABS.indexOf(id)<0)id='overview';TABS.forEach(function(x){var on=x===id;$('#'+x).hidden=!on||!D;var b=$('#t-'+x);b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;if(on&&focus)b.focus()});
   if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id);if(id==='overview'&&D)drawChart()}
 $$('.tab').forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab);window.scrollTo({top:0})});
@@ -534,9 +538,31 @@ function renderNews(){
   var card=function(title,arr){return '<div class="card reveal"><h2>'+title+'</h2>'+((arr||[]).length?list(arr):'<div class="empty">No fresh headlines right now.</div>')+'</div>'};
   h+='<div class="grid g-2">'+card('Stock news',N.stockNews)+card('Economy &amp; Fed',N.econNews)+'</div>';
   h+='<div class="grid g-2">'+card('Earnings',N.earnings)+card('Analyst views',N.analyst)+'</div>';
-  h+='<div class="grid g-2">'+card('IPOs',N.ipoNews)+card('Crypto &amp; commodities',N.commodNews)+'</div>';
+  h+='<div class="grid g-2">'+card('IPOs',N.ipoNews).replace(/<\/div>$/,'<button class="more" data-goto="ipo">IPO calendar, dividends &amp; splits →</button></div>')+card('Crypto &amp; commodities',N.commodNews)+'</div>';
   h+='<div class="note">Headlines link to the original publishers. Analyst calls are as reported in the news; not recommendations.</div>';
   $('#news').innerHTML=h;
+}
+/* ---------- IPOs, dividends & splits ---------- */
+function lnk(name,url){return /^https?:\/\//.test(url||'')?'<a href="'+esc(url)+'" target="_blank" rel="noopener"><b>'+esc(name)+'</b></a>':'<b>'+esc(name)+'</b>'}
+function dd(s){if(!s)return '–';var d=new Date(s+'T12:00:00Z');return isNaN(d)?'–':['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()]+' '+d.getUTCDate()}
+function mn(v){return v==null?'–':v>=1000?'$'+nf(v/1000,1)+'B':'$'+nf(v,v<10?1:0)+'M'}
+function sym(s,name,url){return '<td class="sym">'+lnk(s||name,url)+(s?'<span class="fn">'+esc(name)+'</span>':'')+'</td>'}
+function tg(x){return '<span class="tg">'+esc(x)+'</span>'}
+function renderIpo(){
+  var h='<div class="note" style="margin:0">Updates automatically, about every 10 minutes during market hours'+(N.asOfLabel?' · '+esc(N.asOfLabel):'')+'</div>';
+  var up=N.usIpoUpcoming||[],pr=N.usIpoPriced||[],fl=N.usIpoFiled||[],dv=N.usDividends||[],sp=N.usSplits||[];
+  var nq=function(s){return 'https://www.nasdaq.com/market-activity/stocks/'+String(s).toLowerCase()};
+  h+='<div class="grid g-2"><div class="card reveal"><h2>Upcoming IPOs <span class="sub">expected to price soon</span></h2>'+(up.length?'<div class="tbl-wrap"><table><thead><tr><th>Company</th><th>Expected</th><th class="r">Price range</th><th class="r">Size</th></tr></thead><tbody>'+up.map(function(i){
+    return '<tr>'+sym(i.symbol,i.name,i.url)+'<td class="num" style="white-space:nowrap">'+dd(i.date)+'</td><td class="r num" style="white-space:nowrap">'+(i.priceRange?'$'+esc(i.priceRange):'–')+'</td><td class="r num">'+mn(i.sizeM)+(i.exchange?'<span class="fn">'+esc(i.exchange)+'</span>':'')+(i.spac?tg('SPAC'):'')+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">No IPOs scheduled to price this week.</div>')+'</div>'+
+    '<div class="card reveal"><h2>Recently priced IPOs <span class="sub">last 3 weeks</span></h2>'+(pr.length?'<div class="tbl-wrap"><table><thead><tr><th>Company</th><th>Priced</th><th class="r">IPO price</th><th class="r">Now</th><th class="r">Return</th></tr></thead><tbody>'+pr.map(function(i){
+    return '<tr>'+sym(i.symbol,i.name,i.url)+'<td class="num" style="white-space:nowrap">'+dd(i.date)+'</td><td class="r num">'+usd(i.price)+'<span class="fn">'+mn(i.sizeM)+'</span></td><td class="r num">'+usd(i.last)+'</td><td class="r">'+(i.gainPct!=null?'<span class="badge '+(i.gainPct>=0?'up':'dn')+' num">'+pct(i.gainPct)+'</span>':'–')+(i.spac?tg('SPAC'):'')+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Return = current price vs IPO price. SPACs usually trade near $10.</div>':'<div class="empty">No IPOs priced in the last 3 weeks.</div>')+'</div></div>';
+  h+='<div class="card reveal"><h2>Upcoming dividends <span class="sub">ex-date in the next 2 weeks · S&amp;P tag = large cap we track</span></h2>'+(dv.length?'<div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>Ex-date</th><th>Pay date</th><th class="r">Dividend</th><th class="r">Per year</th><th class="r">Price</th><th class="r">Yield</th></tr></thead><tbody>'+dv.map(function(d){
+    return '<tr>'+(d.tracked?sym(d.symbol,d.name,nq(d.symbol)+'/dividend-history').replace('</b></a>','</b></a>'+tg('S&amp;P')):sym(d.symbol,d.name,nq(d.symbol)+'/dividend-history'))+'<td class="num" style="white-space:nowrap">'+dd(d.exDate)+'</td><td class="num" style="white-space:nowrap">'+dd(d.payDate)+'</td><td class="r num">'+(d.amount!=null?'$'+nf(d.amount,d.amount<0.1?3:2):'–')+'</td><td class="r num">'+(d.annual!=null?'$'+nf(d.annual):'–')+'</td><td class="r num">'+usd(d.price)+(d.pctChg!=null?'<span class="fn '+(d.pctChg>=0?'up':'dn')+'">'+pct(d.pctChg)+'</span>':'')+'</td><td class="r num">'+(d.yieldPct!=null?nf(d.yieldPct)+'%':'–')+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Own the stock before the ex-date to get the dividend. Yield = yearly dividend ÷ current price. Funds and preferred shares are left out.</div>':'<div class="empty">No dividend ex-dates in the next 2 weeks.</div>')+'</div>';
+  h+='<div class="grid g-2"><div class="card reveal"><h2>Stock splits</h2>'+(sp.length?'<div class="tbl-wrap"><table><thead><tr><th>Stock</th><th>Split</th><th>Date</th><th class="r">Price</th></tr></thead><tbody>'+sp.map(function(s){
+    return '<tr>'+sym(s.symbol,s.name,s.url).replace('</b></a>','</b></a>'+(s.tracked?tg('S&amp;P'):''))+'<td>'+esc(s.ratio)+'<span class="fn">'+esc(s.kind)+'</span></td><td class="num" style="white-space:nowrap">'+dd(s.date)+'</td><td class="r num">'+usd(s.price)+'</td></tr>'}).join('')+'</tbody></table></div><div class="note">Forward split: more shares at a lower price. Reverse split: fewer shares at a higher price. Value held stays the same.</div>':'<div class="empty">No stock splits coming up.</div>')+'</div>'+
+    '<div class="card reveal"><h2>New IPO filings <span class="sub">dates not set yet</span></h2>'+(fl.length?'<div class="tbl-wrap"><table><thead><tr><th>Company</th><th>Filed</th><th class="r">Size</th></tr></thead><tbody>'+fl.map(function(i){
+    return '<tr>'+sym(i.symbol,i.name,i.url)+'<td class="num" style="white-space:nowrap">'+dd(i.date)+'</td><td class="r num">'+mn(i.sizeM)+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="empty">No new filings.</div>')+'</div></div>';
+  $('#ipo').innerHTML=h;
 }
 /* ---------- outlook ---------- */
 function renderOutlook(){
@@ -571,7 +597,7 @@ function flashChanges(){
 /* ---------- load loop ---------- */
 function render(){
   $('#loading').hidden=true;
-  renderStatus();renderTape();renderOverview();renderStocks();renderSectors();renderNews();renderOutlook();
+  renderStatus();renderTape();renderOverview();renderStocks();renderSectors();renderNews();renderIpo();renderOutlook();
   showTab(location.hash.slice(1)||'overview');flashChanges();
   var bx=$('#chart');if(bx){ro.disconnect();ro.observe(bx)}
 }
