@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   # Weekdays 9:00 AM and 5:00 PM New York (EDT): refreshes the IPO, dividend and split calendars used as the live feed's fallback
   schedule:
-    - cron: "0 13,21 * * 1-5"
+    - cron: "0 13-21/2 * * 1-5"
 
 # The whole site is published from here. US data goes straight to GitHub Pages and is never committed, so the repo does not grow.
 permissions:
