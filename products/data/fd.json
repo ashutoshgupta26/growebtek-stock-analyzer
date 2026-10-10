@@ -10,7 +10,8 @@
   "ICICI Bank official FD page (minimum deposit)",
   "Bajaj Finance official FD page (rates w.e.f. 7 Oct 2026)",
   "Paisabazaar corporate FD page (credit ratings)",
-  "DICGC: deposit insurance up to ₹5 lakh per bank (banks only)"
+  "DICGC: deposit insurance up to ₹5 lakh per bank (banks only)",
+  "Shriram Finance FD rate revision (w.e.f. 11 Oct 2026, via Business Standard / BusinessToday)"
  ],
  "groups": [
   {
@@ -899,12 +900,12 @@
     "AAA"
    ],
    "v": {
-    "r1y": 6.85,
-    "r2y": null,
-    "r3y": 7.5,
-    "r5y": 7.5,
-    "rmax": 7.5,
-    "rmaxTenure": "3 to 5 years",
+    "r1y": 7,
+    "r2y": 7.5,
+    "r3y": 7.85,
+    "r5y": 7.85,
+    "rmax": 7.85,
+    "rmaxTenure": "36 to 60 months",
     "srExtra": 0.5,
     "dicgc": false,
     "rating": "AAA/Stable (ICRA, CARE, CRISIL)",
@@ -913,13 +914,13 @@
     "taxSaver": null
    },
    "pros": [
-    "7.50% for 3-5 years",
+    "7.85% for 36-60 months (w.e.f. 11 Oct 2026)",
     "Rated AAA by ICRA, CARE and CRISIL",
     "Extra for renewals and women depositors"
    ],
    "cons": [
     "No DICGC insurance",
-    "Aggregator tables disagree on current rates"
+    "Rates revised often; raised 15-40 bps from 11 Oct 2026"
    ],
    "best": "Senior citizens wanting a higher rate from a AAA NBFC",
    "url": "https://www.shriramfinance.in/fixed-deposit",

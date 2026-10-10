@@ -250,6 +250,12 @@
    "kind": "Private general insurer",
    "url": "https://navi.com/insurance",
    "v": {}
+  },
+  {
+   "provider": "Kiwi General Insurance",
+   "kind": "Private general insurer",
+   "url": "https://www.kiwiinsurance.com",
+   "v": {}
   }
  ],
  "entries": [
@@ -5381,6 +5387,13 @@
    "kind": "Add-on",
    "url": "https://navi.com/insurance/motor",
    "note": "Pays for consumables like oil, nuts and bolts used in repairs."
+  },
+  {
+   "name": "Kiwi Car Insurance",
+   "provider": "Kiwi General Insurance",
+   "kind": "Car",
+   "url": "https://www.kiwiinsurance.com/car-insurance/",
+   "note": "New insurer (launched Jun 2026), private cars only; Super NCB drops one step after a claim, Flexi Repair, InstaCash payout on repair booking."
   }
  ]
 }

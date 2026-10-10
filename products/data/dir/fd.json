@@ -9,7 +9,9 @@
   "Wikipedia: List of banks in India",
   "NHB list of HFCs accepting public deposits",
   "canfinhomes.com",
-  "indiapost.gov.in"
+  "indiapost.gov.in",
+  "Bajaj Finance FD rates (w.e.f. 7 Oct 2026)",
+  "Shriram Finance FD rates (w.e.f. 11 Oct 2026)"
  ],
  "companies": [
   {
@@ -726,11 +728,11 @@
    "kind": "NBFC (corporate FD)",
    "url": "https://www.bajajfinserv.in",
    "v": {
-    "r1y": 6.6,
-    "r3y": 7.4,
-    "r5y": 7.4,
-    "rmax": 7.4,
-    "srExtra": 0.35,
+    "r1y": 6.8,
+    "r3y": 7.75,
+    "r5y": 7.75,
+    "rmax": 7.75,
+    "srExtra": 0.4,
     "rating": "AAA (CRISIL, ICRA)",
     "dicgc": false
    }
@@ -740,10 +742,10 @@
    "kind": "NBFC (corporate FD)",
    "url": "https://www.shriramfinance.in",
    "v": {
-    "r1y": 6.85,
-    "r3y": 7.5,
-    "r5y": 7.5,
-    "rmax": 7.5,
+    "r1y": 7,
+    "r3y": 7.85,
+    "r5y": 7.85,
+    "rmax": 7.85,
     "srExtra": 0.5,
     "rating": "AA+ (ICRA)",
     "dicgc": false
@@ -1707,13 +1709,13 @@
    "name": "Bajaj Finance Fixed Deposit",
    "provider": "Bajaj Finance",
    "kind": "Corporate FD",
-   "note": "Up to 7.40% general; senior +0.35%; not DICGC insured"
+   "note": "Up to 7.75% general (w.e.f. 7 Oct 2026); senior +0.40%; not DICGC insured"
   },
   {
    "name": "Shriram Finance Fixed Deposit",
    "provider": "Shriram Finance",
    "kind": "Corporate FD",
-   "note": "Up to 7.50% general; senior +0.50%"
+   "note": "Up to 7.85% general (w.e.f. 11 Oct 2026); senior +0.50%"
   },
   {
    "name": "Mahindra Finance Fixed Deposit",

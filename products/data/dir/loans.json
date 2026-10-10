@@ -4,7 +4,8 @@
  "sources": [
   "BankBazaar home/personal/car/education/used-car/LAP/two-wheeler/business loan rate pages (Oct 2026)",
   "Paisabazaar personal/business/gold/LAP/two-wheeler/LAS loan pages (Sep-Oct 2026)",
-  "Lender websites (sbi.co.in, bankofbaroda.in, pnbindia.in)"
+  "Lender websites (sbi.co.in, bankofbaroda.in, pnbindia.in)",
+  "RBI repo hike to 5.50% (7 Oct 2026) and lender RLLR revisions (w.e.f. 8 Oct 2026)"
  ],
  "companies": [
   {
@@ -688,7 +689,7 @@
    "name": "Baroda Home Loan",
    "provider": "Bank of Baroda",
    "kind": "Home loan",
-   "note": "Rate from 7.20% p.a. (floating), fee Rs 8,500 to Rs 25,000"
+   "note": "Rate from 7.45% p.a. (floating), fee Rs 8,500 to Rs 25,000"
   },
   {
    "name": "Baroda Yoddha Home Loan",
@@ -715,13 +716,13 @@
    "name": "Baroda Personal Loan",
    "provider": "Bank of Baroda",
    "kind": "Personal loan",
-   "note": "Rate from 10.15% p.a., fee up to 2%"
+   "note": "Rate from 10.40% p.a., fee up to 2%"
   },
   {
    "name": "Baroda Car Loan",
    "provider": "Bank of Baroda",
    "kind": "Car loan",
-   "note": "Rate from 7.60% p.a. (floating)"
+   "note": "Rate from 7.85% p.a. (floating)"
   },
   {
    "name": "Baroda Pre-Owned Car Loan",
@@ -1267,7 +1268,7 @@
    "name": "HDFC Bank Home Loan",
    "provider": "HDFC Bank",
    "kind": "Home loan",
-   "note": "Rate from 7.75% p.a., fee up to 0.50% (min Rs 4,000)"
+   "note": "Rate from 8.00% p.a., fee up to 0.50% (min Rs 4,000)"
   },
   {
    "name": "HDFC Bank Plot Loan",
@@ -1288,7 +1289,7 @@
    "name": "HDFC Bank Loan Against Property",
    "provider": "HDFC Bank",
    "kind": "Loan against property",
-   "note": "Rate from 8.30% p.a., fee up to 1% (min Rs 7,500)"
+   "note": "Rate from 8.55% p.a., fee up to 1% (min Rs 7,500)"
   },
   {
    "name": "HDFC Bank Personal Loan",
@@ -1411,7 +1412,7 @@
    "name": "Axis Bank Home Loan",
    "provider": "Axis Bank",
    "kind": "Home loan",
-   "note": "Rate from 8.00% p.a. (floating), fee up to 1% (min Rs 10,000)"
+   "note": "Rate from 8.25% p.a. (floating), fee up to 1% (min Rs 10,000)"
   },
   {
    "name": "Axis Bank Shubh Aarambh Home Loan",

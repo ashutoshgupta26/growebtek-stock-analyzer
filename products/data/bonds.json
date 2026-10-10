@@ -11,7 +11,7 @@
   "FRSB 2020 (T) rate for Jul-Dec 2026 (Stable Investor / news, Jul 2026; RBI formula NSC + 0.35%)",
   "GoldenPi: Section 54EC (now Section 85) bonds, Aug 2026",
   "IndiaBonds PSU bond listings (checked 6 Oct 2026)",
-  "GoldenPi NCD issue notes: Muthoot Fincorp Tranche V (Sep 2026), SMC Global Securities (Oct 2026)"
+  "GoldenPi NCD issue notes: Muthoot Fincorp Tranche V (Sep 2026), SMC Global Securities (Oct 2026); Chittorgarh SMC Global NCD Oct 2026 issue page (closed 9 Oct, checked 11 Oct 2026)"
  ],
  "groups": [
   {
@@ -690,7 +690,6 @@
    "tags": [
     "NCD",
     "A rated",
-    "open issue",
     "broker"
    ],
    "v": {
@@ -705,8 +704,8 @@
    },
    "pros": [
     "Yields 9.50%-10.00% across 24-60 month series",
-    "Open 5-16 Oct 2026",
-    "Secured, to be listed on BSE"
+    "Public issue closed 9 Oct 2026, subscribed 2.63 times",
+    "Secured, to be listed on BSE and NSE"
    ],
    "cons": [
     "Single-A rating means moderate credit risk",

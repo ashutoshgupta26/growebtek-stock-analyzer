@@ -162,7 +162,7 @@
     },
     {
       "id": "icici-pru-life",
-      "name": "ICICI Prudential Life",
+      "name": "ICICI Life (formerly ICICI Prudential Life)",
       "provider": "ICICI Prudential Life Insurance Company Ltd.",
       "kind": "Private life insurer",
       "tags": [
@@ -191,7 +191,7 @@
       ],
       "best": "Buyers who want a large, established insurer",
       "url": "https://www.iciciprulife.com",
-      "news": "ICICI Prudential Life insurance"
+      "news": "ICICI Life Insurance"
     },
     {
       "id": "sbi-life",

@@ -1,6 +1,6 @@
 // Makes the app installable as a desktop / home-screen shortcut.
 // Always loads fresh pages from the network; the last copy is used only when offline.
-var CACHE = 'gw-pages-v9';
+var CACHE = 'gw-pages-v10';
 self.addEventListener('install', function () { self.skipWaiting(); });
 self.addEventListener('activate', function (e) { e.waitUntil(self.clients.claim()); });
 self.addEventListener('fetch', function (e) {

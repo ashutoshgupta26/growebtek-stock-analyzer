@@ -62,6 +62,11 @@
    "url": "https://www.smctradeonline.com/"
   },
   {
+   "provider": "IBL Finance Ltd",
+   "kind": "NBFC",
+   "url": "https://www.chittorgarh.com/calendar/ncd-calendar-october-2026/3/"
+  },
+  {
    "provider": "National Housing Bank",
    "kind": "Government (development finance institution)",
    "url": "https://nhb.org.in/"
@@ -1668,7 +1673,14 @@
    "provider": "SMC Global Securities Ltd",
    "kind": "Corporate NCD",
    "url": "https://www.chittorgarh.com/bond/smc-global-securities-ncd-october-2026/397/",
-   "note": "Open now: public issue Oct 5 to Oct 16, 2026; coupon 9.50-10.00% p.a.; rated A Stable; up to Rs 150 cr"
+   "note": "Public issue Oct 5 to Oct 9, 2026 (subscribed 2.63x); coupon 9.50-10.00% p.a.; rated A Stable; up to Rs 150 cr; listing BSE, NSE"
+  },
+  {
+   "name": "IBL Finance NCD October 2026",
+   "provider": "IBL Finance Ltd",
+   "kind": "Corporate NCD",
+   "url": "https://www.chittorgarh.com/calendar/ncd-calendar-october-2026/3/",
+   "note": "Public issue Oct 12 to Oct 26, 2026; coupon up to 11.50% p.a. (effective yield up to 12.12%); 13-60 month series; rated Acuite BBB- Stable; up to Rs 50 cr; listing BSE, NSE"
   }
  ]
 }
