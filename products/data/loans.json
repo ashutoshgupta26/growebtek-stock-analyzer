@@ -15,7 +15,8 @@
   "RBI Monetary Policy Statement, 7 Oct 2026 (repo 5.50%)",
   "Lender interest-rate and charges pages (checked Oct 2026)",
   "BankBazaar / Paisabazaar rate tables citing lenders (Oct 2026)",
-  "Bank RLLR revisions after the repo hike (Bank of Baroda BRLLR 8.15% w.e.f. 8 Oct 2026)"
+  "Bank RLLR revisions after the repo hike (Bank of Baroda BRLLR 8.15% w.e.f. 8 Oct 2026)",
+  "Official bank pages: SBI EBLR 8.15% and MCLR revision w.e.f. 15 Oct 2026; PNB RLLR 8.35% w.e.f. 8 Oct 2026; Canara RLLR 8.25% w.e.f. 9 Oct 2026; ICICI home loan slabs (repo 5.50% from 8 Oct 2026)"
  ],
  "groups": [
   {
@@ -129,8 +130,8 @@
     "public sector bank"
    ],
    "v": {
-    "rateMin": 7.25,
-    "rateMax": 8.45,
+    "rateMin": 7.5,
+    "rateMax": 8.7,
     "feeText": "0.35% of loan amount + GST, subject to min/max caps",
     "feePctMax": 0.35,
     "tenureMax": 30,
@@ -141,7 +142,7 @@
     "cibilMin": null
    },
    "pros": [
-    "Rates from 7.25% p.a. (effective 1 Apr 2026)",
+    "Rates from 7.50% p.a. (effective 15 Oct 2026, EBLR 8.15%)",
     "Low processing fee of 0.35%",
     "Tenure up to 30 years",
     "0.05% concession for women borrowers"
@@ -215,7 +216,7 @@
     "Tenure up to 30 years"
    ],
    "cons": [
-    "Standard floating slabs start at 8.50%",
+    "Standard floating slabs start at 8.75% (from 8 Oct 2026)",
     "Full-term fixed rates up to 11.20%"
    ],
    "best": "Existing ICICI customers with a pre-approved offer",
@@ -337,25 +338,25 @@
     "public sector bank"
    ],
    "v": {
-    "rateMin": 7.2,
-    "rateMax": 10.6,
+    "rateMin": 7.45,
+    "rateMax": 10.85,
     "feeText": "0.35%, min Rs 2,500, max Rs 15,000",
     "feePctMax": 0.35,
     "tenureMax": 30,
     "amountMax": "Need-based",
     "prepay": "Nil on floating rate for individuals (RBI rule)",
-    "rateType": "Floating, RLLR-linked; fixed 8.20-10.60%",
+    "rateType": "Floating, RLLR-linked (RLLR 8.35% w.e.f. 8 Oct 2026); fixed 8.45-10.85%",
     "disbursal": null,
     "cibilMin": null
    },
    "pros": [
-    "Floating from 7.20% under UTSAV offer (1 Oct-31 Dec 2026)",
+    "Floating from 7.45% under UTSAV offer (1 Oct-31 Dec 2026)",
     "Rate grid covers CIBIL 600+",
     "Low fee capped at Rs 15,000"
    ],
    "cons": [
     "Lowest rate needs CIBIL 800+, loan above Rs 30 lakh and LTV up to 80%",
-    "Fixed rates up to 10.60%"
+    "Fixed rates up to 10.85%"
    ],
    "best": "High-score borrowers taking a larger loan during the festive offer",
    "url": "https://pnb.bank.in/housingloanforpublic.html",
@@ -371,26 +372,26 @@
     "public sector bank"
    ],
    "v": {
-    "rateMin": 7.15,
-    "rateMax": 10,
+    "rateMin": 7.4,
+    "rateMax": 10.25,
     "feeText": "0.50% (min Rs 1,500, max Rs 10,000) + GST; 100% waived 1 Oct-31 Dec 2026",
     "feePctMax": 0.5,
     "tenureMax": 30,
     "amountMax": "No upper limit; based on income",
     "prepay": "No prepayment penalty",
-    "rateType": "Floating, RLLR-linked (RLLR 8.00%)",
+    "rateType": "Floating, RLLR-linked (RLLR 8.25% w.e.f. 9 Oct 2026)",
     "disbursal": "Up to Rs 25 lakh: 21 days; above: 30 days (bank time norms)",
     "cibilMin": null
    },
    "pros": [
-    "Rates from 7.15%",
+    "Rates from 7.40%",
     "Processing fee waived till 31 Dec 2026",
     "No upper loan limit",
     "Tenure up to 30 years or age 75"
    ],
    "cons": [
     "Bank time norms of 21-30 days",
-    "Top of grid is 10.00%"
+    "Top of grid is 10.25%"
    ],
    "best": "Borrowers wanting the lowest PSU rate and zero fee this quarter",
    "url": "https://www.canarabank.bank.in/pages/housing-loan",
@@ -1205,8 +1206,8 @@
     "public sector bank"
    ],
    "v": {
-    "rateMin": 8.4,
-    "rateMax": 9.35,
+    "rateMin": 8.55,
+    "rateMax": 9.5,
     "feeText": "Salaried Rs 1,000-3,000 + GST; non-salaried Rs 1,500-4,000 + GST (slab by loan size)",
     "feePctMax": null,
     "tenureMax": 7,
@@ -1219,8 +1220,8 @@
    "pros": [
     "Low flat processing fee in rupees, not a percentage",
     "Funds up to 100% of on-road price",
-    "Green car variant from 8.30%",
-    "Rate range is narrow (8.40-9.35%)"
+    "Green car variant from 8.45% (w.e.f. 15 Oct 2026)",
+    "Rate range is narrow (8.55-9.50%)"
    ],
    "cons": [
     "Foreclosure charge if closed within 2 years",
@@ -1376,8 +1377,8 @@
     "public sector bank"
    ],
    "v": {
-    "rateMin": 7.45,
-    "rateMax": null,
+    "rateMin": 7.7,
+    "rateMax": 10.95,
     "feeText": "0.25%, min Rs 1,000, max Rs 5,000",
     "feePctMax": 0.25,
     "tenureMax": 7,
@@ -1388,13 +1389,13 @@
     "cibilMin": null
    },
    "pros": [
-    "Starting rate 7.45%, among the lowest",
+    "Starting rate 7.70% (EV; regular cars from 7.75%), among the lowest",
     "Low processing fee capped at Rs 5,000",
     "No prepayment charges"
    ],
    "cons": [
     "Funds only 80-90% of on-road price",
-    "Rate range ceiling not published"
+    "Rates go up to 10.95%"
    ],
    "best": "Cost-conscious buyers who can pay a 10-20% down payment",
    "url": "https://www.canarabank.bank.in",

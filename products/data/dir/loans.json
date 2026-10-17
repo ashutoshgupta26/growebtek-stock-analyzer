@@ -5,7 +5,8 @@
   "BankBazaar home/personal/car/education/used-car/LAP/two-wheeler/business loan rate pages (Oct 2026)",
   "Paisabazaar personal/business/gold/LAP/two-wheeler/LAS loan pages (Sep-Oct 2026)",
   "Lender websites (sbi.co.in, bankofbaroda.in, pnbindia.in)",
-  "RBI repo hike to 5.50% (7 Oct 2026) and lender RLLR revisions (w.e.f. 8 Oct 2026)"
+  "RBI repo hike to 5.50% (7 Oct 2026) and lender RLLR revisions (w.e.f. 8 Oct 2026)",
+  "Official pages: SBI rates w.e.f. 15 Oct 2026, PNB (RLLR 8.35% w.e.f. 8 Oct 2026), Canara (RLLR 8.25% w.e.f. 9 Oct 2026)"
  ],
  "companies": [
   {
@@ -580,7 +581,7 @@
    "provider": "State Bank of India",
    "kind": "Home loan",
    "url": "https://homeloans.sbi",
-   "note": "Rate from 7.25% p.a., fee 0.35% (max Rs 12,000 + GST)"
+   "note": "Rate from 7.50% p.a. (w.e.f. 15 Oct 2026), fee 0.35% (max Rs 12,000 + GST)"
   },
   {
    "name": "SBI Privilege Home Loan",
@@ -633,7 +634,7 @@
    "name": "SBI Car Loan",
    "provider": "State Bank of India",
    "kind": "Car loan",
-   "note": "Rate from 8.80% p.a."
+   "note": "Rate from 8.55% p.a. (w.e.f. 15 Oct 2026)"
   },
   {
    "name": "SBI Green Car Loan",
@@ -644,7 +645,7 @@
    "name": "SBI Certified Pre-Owned Car Loan",
    "provider": "State Bank of India",
    "kind": "Used car loan",
-   "note": "Rate from 10.45% p.a."
+   "note": "Rate from 10.60% p.a. (w.e.f. 15 Oct 2026)"
   },
   {
    "name": "SBI Easy Ride Two Wheeler Loan",
@@ -770,7 +771,7 @@
    "name": "PNB Housing Loan",
    "provider": "Punjab National Bank",
    "kind": "Home loan",
-   "note": "Rate from 7.25% p.a. (floating), fee 0.35% (Rs 2,500 to Rs 15,000)"
+   "note": "Rate from 7.45% p.a. (floating), fee 0.35% (Rs 2,500 to Rs 15,000)"
   },
   {
    "name": "PNB Property Loan",
@@ -781,19 +782,19 @@
    "name": "PNB Personal Loan",
    "provider": "Punjab National Bank",
    "kind": "Personal loan",
-   "note": "Rate from 10.25% p.a. (floating), fee 0.35%"
+   "note": "Rate from 10.50% p.a. (floating), fee 0.35%"
   },
   {
    "name": "PNB Car Loan",
    "provider": "Punjab National Bank",
    "kind": "Car loan",
-   "note": "Rate from 7.60% p.a. (floating)"
+   "note": "Rate from 7.80% p.a. (floating)"
   },
   {
    "name": "PNB Used Car Loan",
    "provider": "Punjab National Bank",
    "kind": "Used car loan",
-   "note": "Rate from 9.45% p.a."
+   "note": "Rate from 9.65% p.a."
   },
   {
    "name": "PNB Two Wheeler Loan",
@@ -863,7 +864,7 @@
    "name": "Canara Vehicle Loan (Car)",
    "provider": "Canara Bank",
    "kind": "Car loan",
-   "note": "Rate from 7.45% p.a. (electric cars)"
+   "note": "Rate from 7.70% p.a. (electric cars)"
   },
   {
    "name": "Canara Vehicle Loan (Two Wheeler)",

@@ -5,7 +5,7 @@
  "intro": "Government securities, tax-saving capital gains bonds, tax-free PSU bonds and corporate NCDs; compare post-tax yield, who backs the bond, how long your money is locked in and whether you can sell before maturity.",
  "newsQuery": "India bond yields G-Sec T-bill NCD",
  "sources": [
-  "RBI press release: 91/182/364-day T-bill auction cut-off, 30 Sep 2026 (prid=63694)",
+  "RBI press release: 91/182/364-day T-bill auction cut-off, 14 Oct 2026 (prid=63804)",
   "RBI press release: State Government Securities full auction result, 6 Oct 2026 (prid=63738)",
   "Trading Economics: India 10-year G-Sec yield, 6 Oct 2026",
   "FRSB 2020 (T) rate for Jul-Dec 2026 (Stable Investor / news, Jul 2026; RBI formula NSC + 0.35%)",
@@ -178,7 +178,7 @@
     "parking money"
    ],
    "v": {
-    "yield": 5.52,
+    "yield": 5.73,
     "freq": "None (issued at discount, repaid at face value)",
     "tax": "Discount taxable at slab",
     "safety": "Sovereign",
@@ -189,7 +189,7 @@
    },
    "pros": [
     "Sovereign safety for 3 months",
-    "Cut-off yield 5.52% at 30 Sep 2026 auction",
+    "Cut-off yield 5.73% at 14 Oct 2026 auction",
     "Weekly auctions via RBI Retail Direct"
    ],
    "cons": [
@@ -198,7 +198,7 @@
     "Gain taxed at slab"
    ],
    "best": "Parking emergency or near-term money with zero credit risk.",
-   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63804",
    "news": "91-day treasury bill yield India"
   },
   {
@@ -210,7 +210,7 @@
     "short term"
    ],
    "v": {
-    "yield": 5.96,
+    "yield": 6.29,
     "freq": "None (issued at discount, repaid at face value)",
     "tax": "Discount taxable at slab",
     "safety": "Sovereign",
@@ -221,7 +221,7 @@
    },
    "pros": [
     "Sovereign safety for 6 months",
-    "Cut-off yield 5.96% at 30 Sep 2026 auction",
+    "Cut-off yield 6.29% at 14 Oct 2026 auction",
     "Buy via RBI Retail Direct with no fees"
    ],
    "cons": [
@@ -230,7 +230,7 @@
     "Reinvestment risk at maturity"
    ],
    "best": "Money needed in about six months.",
-   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63804",
    "news": "182-day treasury bill yield India"
   },
   {
@@ -243,7 +243,7 @@
     "1 year"
    ],
    "v": {
-    "yield": 6.18,
+    "yield": 6.49,
     "freq": "None (issued at discount, repaid at face value)",
     "tax": "Discount taxable at slab",
     "safety": "Sovereign",
@@ -253,7 +253,7 @@
     "minInv": 10000
    },
    "pros": [
-    "Highest of the T-bill yields: 6.18% at 30 Sep 2026 auction",
+    "Highest of the T-bill yields: 6.49% at 14 Oct 2026 auction",
     "Sovereign safety",
     "Simple FD-like alternative for one year"
    ],
@@ -263,7 +263,7 @@
     "Secondary market selling is less convenient than breaking an FD"
    ],
    "best": "A one-year, zero-credit-risk alternative to a bank FD.",
-   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63694",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63804",
    "news": "364-day treasury bill yield India"
   },
   {
