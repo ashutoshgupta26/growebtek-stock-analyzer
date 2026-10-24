@@ -7,7 +7,7 @@
  "sources": [
   "Paisabazaar FD rate tables (as of 1 Oct 2026) and per-bank pages (rates w.e.f. Dec 2025 to Sep 2026)",
   "SBI official rate page (w.e.f. 15 Dec 2025)",
-  "ICICI Bank official FD page (minimum deposit)",
+  "ICICI Bank official FD page (rates w.e.f. 24 Oct 2026; minimum deposit)",
   "Bajaj Finance official FD page (rates w.e.f. 7 Oct 2026)",
   "Paisabazaar corporate FD page (credit ratings)",
   "DICGC: deposit insurance up to ₹5 lakh per bank (banks only)",
@@ -220,21 +220,21 @@
    "v": {
     "r1y": 6.25,
     "r2y": 6.3,
-    "r3y": 6.45,
-    "r5y": 6.5,
-    "rmax": 6.5,
+    "r3y": 6.55,
+    "r5y": 6.6,
+    "rmax": 6.6,
     "rmaxTenure": "3 years 1 day to 10 years",
     "srExtra": 0.5,
     "dicgc": true,
     "rating": null,
     "minDep": 10000,
     "penalty": null,
-    "taxSaver": 6.5
+    "taxSaver": 6.6
    },
    "pros": [
-    "6.50% locked in for long tenures up to 10 years",
+    "6.60% locked in for long tenures up to 10 years",
     "Seniors get 0.60% extra on 3 years 1 day to 5 years",
-    "Tax-saver at 6.50%"
+    "Tax-saver at 6.60%"
    ],
    "cons": [
     "₹10,000 minimum deposit",

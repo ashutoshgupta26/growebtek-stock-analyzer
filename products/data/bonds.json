@@ -7,11 +7,11 @@
  "sources": [
   "RBI press release: 91/182/364-day T-bill auction cut-off, 14 Oct 2026 (prid=63804)",
   "RBI press release: State Government Securities full auction result, 6 Oct 2026 (prid=63738)",
-  "Trading Economics: India 10-year G-Sec yield, 6 Oct 2026",
+  "RBI press release: 6.94% GS 2036 auction result, cut-off yield 7.3955%, 16 Oct 2026 (prid=63817)",
   "FRSB 2020 (T) rate for Jul-Dec 2026 (Stable Investor / news, Jul 2026; RBI formula NSC + 0.35%)",
   "GoldenPi: Section 54EC (now Section 85) bonds, Aug 2026",
   "IndiaBonds PSU bond listings (checked 6 Oct 2026)",
-  "GoldenPi NCD issue notes: Muthoot Fincorp Tranche V (Sep 2026), SMC Global Securities (Oct 2026); Chittorgarh SMC Global NCD Oct 2026 issue page (closed 9 Oct, checked 11 Oct 2026)"
+  "GoldenPi NCD issue notes: Muthoot Fincorp Tranche V (Sep 2026) and Tranche I (Oct 2026; Chittorgarh issue page, checked 25 Oct 2026), SMC Global Securities (Oct 2026); Chittorgarh SMC Global NCD Oct 2026 issue page (closed 9 Oct, checked 11 Oct 2026)"
  ],
  "groups": [
   {
@@ -144,7 +144,7 @@
     "tradable"
    ],
    "v": {
-    "yield": 7.2,
+    "yield": 7.4,
     "freq": "Half-yearly",
     "tax": "Interest taxable at slab; gains on sale taxed as capital gains",
     "safety": "Sovereign",
@@ -155,7 +155,7 @@
    },
    "pros": [
     "Zero credit risk",
-    "Benchmark 10-year yield about 7.20% on 6 Oct 2026",
+    "Benchmark 10-year yield about 7.40% (7.3955% cut-off at the 16 Oct 2026 auction)",
     "Buy direct at auctions or on NDS-OM via RBI Retail Direct with no fees",
     "Can be sold before maturity"
    ],
@@ -649,7 +649,7 @@
   },
   {
    "id": "muthoot-fincorp-ncd",
-   "name": "Muthoot Fincorp NCD (Tranche V, Sep 2026)",
+   "name": "Muthoot Fincorp NCD (Tranche I, Oct 2026)",
    "provider": "Muthoot Fincorp Ltd",
    "kind": "Corporate NCD",
    "tags": [
@@ -674,7 +674,7 @@
     "Listed on BSE after issue"
    ],
    "cons": [
-    "Public issue closed 22 Sep 2026; now only in secondary market",
+    "Public issue open 23 Oct to 5 Nov 2026 (up to Rs 500 crore); early closure possible",
     "Credit risk of a private NBFC",
     "Interest taxable; resale liquidity limited"
    ],
