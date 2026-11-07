@@ -1,7 +1,7 @@
 {
  "id": "fd",
  "title": "Fixed Deposits",
- "asOf": "Oct 2026",
+ "asOf": "Nov 2026",
  "intro": "Fixed deposits from banks, small finance banks and NBFCs, compared on rates, safety and terms. The rate for your tenure and DICGC cover (₹5 lakh per bank) matter most.",
  "newsQuery": "fixed deposit rates India",
  "sources": [
@@ -11,7 +11,8 @@
   "Bajaj Finance official FD page (rates w.e.f. 7 Oct 2026)",
   "Paisabazaar corporate FD page (credit ratings)",
   "DICGC: deposit insurance up to ₹5 lakh per bank (banks only)",
-  "Shriram Finance FD rate revision (w.e.f. 11 Oct 2026, via Business Standard / BusinessToday)"
+  "Shriram Finance FD rate revision (w.e.f. 11 Oct 2026, via Business Standard / BusinessToday)",
+  "HDFC Bank official FD page (rates w.e.f. 4 Nov 2026)"
  ],
  "groups": [
   {
@@ -183,25 +184,25 @@
    ],
    "v": {
     "r1y": 6.25,
-    "r2y": 6.45,
-    "r3y": 6.45,
-    "r5y": 6.4,
-    "rmax": 6.5,
-    "rmaxTenure": "3 years 1 day to under 4 years 7 months",
+    "r2y": 6.5,
+    "r3y": 6.55,
+    "r5y": 6.6,
+    "rmax": 6.6,
+    "rmaxTenure": "4 years 7 months 1 day to 5 years",
     "srExtra": 0.5,
     "dicgc": true,
     "rating": null,
     "minDep": null,
     "penalty": null,
-    "taxSaver": 6.4
+    "taxSaver": 6.6
    },
    "pros": [
     "India's largest private bank",
     "Even rates across 2-5 years",
-    "Tax-saver at 6.40%"
+    "Tax-saver at 6.60%"
    ],
    "cons": [
-    "Top rate only 6.50%",
+    "Top rate only 6.60%",
     "1-year rate (6.25%) trails small finance banks"
    ],
    "best": "Long-term savers who want a large private bank",
